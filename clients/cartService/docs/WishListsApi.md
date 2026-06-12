@@ -12,6 +12,7 @@ Method | HTTP request | Description
 [**getCartWishListItemsAsync**](WishListsApi.md#getCartWishListItemsAsync) | **GET** /api/v2/CartService/WishLists/{wishListId}/Records | Get wish list item records
 [**getWishListAsync**](WishListsApi.md#getWishListAsync) | **GET** /api/v2/CartService/WishLists/{cartId} | Get wish lists for a cart
 [**isProductInWishLists**](WishListsApi.md#isProductInWishLists) | **GET** /api/v2/CartService/WishLists/Contains | Check if a product is in any wish list
+[**patchWishList**](WishListsApi.md#patchWishList) | **PATCH** /api/v2/CartService/WishLists/{wishListId} | Patch a wish list
 [**updateProductToWishList**](WishListsApi.md#updateProductToWishList) | **PUT** /api/v2/CartService/WishLists/{wishListId} | Update a wish list
 [**wishListExists**](WishListsApi.md#wishListExists) | **GET** /api/v2/CartService/WishLists/Exists | Check if a wish list exists
 [**wishListExistsHeadAsync**](WishListsApi.md#wishListExistsHeadAsync) | **HEAD** /api/v2/CartService/WishLists/Exists | Check if a wish list exists (HEAD)
@@ -310,6 +311,44 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchWishList
+
+Patch a wish list
+
+Partially updates the specified wish list using a JSON Patch document.
+
+### Example
+
+```bash
+ patchWishList wishListId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **wishListId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

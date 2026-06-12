@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **markup** | **string** |  | [optional] [default to null]
 **featuredImageUrl** | **string** |  | [optional] [default to null]
 **codeType** | **string** |  | [optional] [default to null]
+**slug** | **string** |  | [optional] [default to null]
 **blogPostCategoryId** | **string** |  | [optional] [default to null]
 **webTemplateId** | **string** |  | [optional] [default to null]
 

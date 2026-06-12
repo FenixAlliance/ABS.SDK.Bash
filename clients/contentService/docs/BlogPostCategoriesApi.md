@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteBlogPostCategoryAsync**](BlogPostCategoriesApi.md#deleteBlogPostCategoryAsync) | **DELETE** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Delete a blog post category
 [**getBlogPostCategoriesAsync**](BlogPostCategoriesApi.md#getBlogPostCategoriesAsync) | **GET** /api/v2/ContentService/BlogPostCategories | Get blog post categories
 [**getBlogPostCategoryByIdAsync**](BlogPostCategoriesApi.md#getBlogPostCategoryByIdAsync) | **GET** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Get blog post category by ID
+[**patchBlogPostCategoryAsync**](BlogPostCategoriesApi.md#patchBlogPostCategoryAsync) | **PATCH** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Patch a blog post category
 [**updateBlogPostCategoryAsync**](BlogPostCategoriesApi.md#updateBlogPostCategoryAsync) | **PUT** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Update a blog post category
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchBlogPostCategoryAsync
+
+Patch a blog post category
+
+Partially updates an existing blog post category for the specified tenant.
+
+### Example
+
+```bash
+ patchBlogPostCategoryAsync  tenantId=value blogPostCategoryId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **blogPostCategoryId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

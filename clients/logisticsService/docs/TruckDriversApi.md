@@ -11,6 +11,7 @@ Method | HTTP request | Description
 [**getTruckDriverByIdAsync**](TruckDriversApi.md#getTruckDriverByIdAsync) | **GET** /api/v2/LogisticsService/TruckDrivers/{driverId} | Get truck driver by ID
 [**getTruckDriversAsync**](TruckDriversApi.md#getTruckDriversAsync) | **GET** /api/v2/LogisticsService/TruckDrivers | Get all truck drivers
 [**getTruckDriversCountAsync**](TruckDriversApi.md#getTruckDriversCountAsync) | **GET** /api/v2/LogisticsService/TruckDrivers/Count | Get truck drivers count
+[**patchTruckDriverAsync**](TruckDriversApi.md#patchTruckDriverAsync) | **PATCH** /api/v2/LogisticsService/TruckDrivers/{driverId} | Patch a truck driver
 [**updateTruckDriverAsync**](TruckDriversApi.md#updateTruckDriverAsync) | **PUT** /api/v2/LogisticsService/TruckDrivers/{driverId} | Update a truck driver
 
 
@@ -274,6 +275,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTruckDriverAsync
+
+Patch a truck driver
+
+Partially updates an existing truck driver using JSON Patch.
+
+### Example
+
+```bash
+ patchTruckDriverAsync  tenantId=value driverId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **driverId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

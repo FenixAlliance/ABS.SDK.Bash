@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getTrainingProgramCourseByIdAsync**](TrainingProgramCoursesApi.md#getTrainingProgramCourseByIdAsync) | **GET** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Get training program course by ID
 [**getTrainingProgramCoursesAsync**](TrainingProgramCoursesApi.md#getTrainingProgramCoursesAsync) | **GET** /api/v2/HrmsService/TrainingProgramCourses | Get training program courses
 [**getTrainingProgramCoursesCountAsync**](TrainingProgramCoursesApi.md#getTrainingProgramCoursesCountAsync) | **GET** /api/v2/HrmsService/TrainingProgramCourses/Count | Count training program courses
+[**patchTrainingProgramCourseAsync**](TrainingProgramCoursesApi.md#patchTrainingProgramCourseAsync) | **PATCH** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Patch a training program course
 [**updateTrainingProgramCourseAsync**](TrainingProgramCoursesApi.md#updateTrainingProgramCourseAsync) | **PUT** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Update a training program course
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTrainingProgramCourseAsync
+
+Patch a training program course
+
+Partially updates an existing training program course for the specified tenant.
+
+### Example
+
+```bash
+ patchTrainingProgramCourseAsync  tenantId=value courseId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **courseId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

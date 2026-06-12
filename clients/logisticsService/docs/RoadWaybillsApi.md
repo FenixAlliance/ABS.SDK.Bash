@@ -17,6 +17,8 @@ Method | HTTP request | Description
 [**issueRoadWaybillAsync**](RoadWaybillsApi.md#issueRoadWaybillAsync) | **POST** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Issue | Issue a road waybill
 [**markRoadWaybillDeliveredAsync**](RoadWaybillsApi.md#markRoadWaybillDeliveredAsync) | **POST** /api/v2/LogisticsService/RoadWaybills/{waybillId}/MarkDelivered | Mark road waybill delivered
 [**markRoadWaybillInTransitAsync**](RoadWaybillsApi.md#markRoadWaybillInTransitAsync) | **POST** /api/v2/LogisticsService/RoadWaybills/{waybillId}/MarkInTransit | Mark road waybill in transit
+[**patchRoadWaybillAsync**](RoadWaybillsApi.md#patchRoadWaybillAsync) | **PATCH** /api/v2/LogisticsService/RoadWaybills/{waybillId} | Patch a road waybill
+[**patchRoadWaybillLineAsync**](RoadWaybillsApi.md#patchRoadWaybillLineAsync) | **PATCH** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId} | Patch a road waybill line
 [**removeRoadWaybillLineAsync**](RoadWaybillsApi.md#removeRoadWaybillLineAsync) | **DELETE** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId} | Remove a road waybill line
 [**updateRoadWaybillAsync**](RoadWaybillsApi.md#updateRoadWaybillAsync) | **PUT** /api/v2/LogisticsService/RoadWaybills/{waybillId} | Update a road waybill
 [**updateRoadWaybillLineAsync**](RoadWaybillsApi.md#updateRoadWaybillLineAsync) | **PUT** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId} | Update a road waybill line
@@ -511,6 +513,85 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchRoadWaybillAsync
+
+Patch a road waybill
+
+Partially updates an existing road waybill using a JSON Patch document.
+
+### Example
+
+```bash
+ patchRoadWaybillAsync  tenantId=value waybillId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **waybillId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchRoadWaybillLineAsync
+
+Patch a road waybill line
+
+Partially updates a line on a road waybill using a JSON Patch document.
+
+### Example
+
+```bash
+ patchRoadWaybillLineAsync  tenantId=value waybillId=value lineId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **waybillId** | **string** |  | [default to null]
+ **lineId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

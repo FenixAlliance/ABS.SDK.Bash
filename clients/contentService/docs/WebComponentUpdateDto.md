@@ -1,0 +1,20 @@
+# WebComponentUpdateDto
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **string** |  | [optional] [default to null]
+**title** | **string** |  | [optional] [default to null]
+**description** | **string** |  | [optional] [default to null]
+**code** | **string** |  | [optional] [default to null]
+**htmlContent** | **string** |  | [optional] [default to null]
+**cssContent** | **string** |  | [optional] [default to null]
+**jsContent** | **string** |  | [optional] [default to null]
+**codeType** | **string** |  | [optional] [default to null]
+**published** | **boolean** |  | [optional] [default to null]
+**enable** | **boolean** |  | [optional] [default to null]
+**featuredImageUrl** | **string** |  | [optional] [default to null]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

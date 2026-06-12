@@ -112,12 +112,14 @@ Class | Method | HTTP request | Description
 *BlogPostCategoriesApi* | [**deleteBlogPostCategoryAsync**](docs/BlogPostCategoriesApi.md#deleteblogpostcategoryasync) | **DELETE** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Delete a blog post category
 *BlogPostCategoriesApi* | [**getBlogPostCategoriesAsync**](docs/BlogPostCategoriesApi.md#getblogpostcategoriesasync) | **GET** /api/v2/ContentService/BlogPostCategories | Get blog post categories
 *BlogPostCategoriesApi* | [**getBlogPostCategoryByIdAsync**](docs/BlogPostCategoriesApi.md#getblogpostcategorybyidasync) | **GET** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Get blog post category by ID
+*BlogPostCategoriesApi* | [**patchBlogPostCategoryAsync**](docs/BlogPostCategoriesApi.md#patchblogpostcategoryasync) | **PATCH** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Patch a blog post category
 *BlogPostCategoriesApi* | [**updateBlogPostCategoryAsync**](docs/BlogPostCategoriesApi.md#updateblogpostcategoryasync) | **PUT** /api/v2/ContentService/BlogPostCategories/{blogPostCategoryId} | Update a blog post category
 *BlogPostTagsApi* | [**countBlogPostTagsAsync**](docs/BlogPostTagsApi.md#countblogposttagsasync) | **GET** /api/v2/ContentService/BlogPostTags/Count | Count blog post tags
 *BlogPostTagsApi* | [**createBlogPostTagAsync**](docs/BlogPostTagsApi.md#createblogposttagasync) | **POST** /api/v2/ContentService/BlogPostTags | Create a blog post tag
 *BlogPostTagsApi* | [**deleteBlogPostTagAsync**](docs/BlogPostTagsApi.md#deleteblogposttagasync) | **DELETE** /api/v2/ContentService/BlogPostTags/{blogPostTagId} | Delete a blog post tag
 *BlogPostTagsApi* | [**getBlogPostTagByIdAsync**](docs/BlogPostTagsApi.md#getblogposttagbyidasync) | **GET** /api/v2/ContentService/BlogPostTags/{blogPostTagId} | Get blog post tag by ID
 *BlogPostTagsApi* | [**getBlogPostTagsAsync**](docs/BlogPostTagsApi.md#getblogposttagsasync) | **GET** /api/v2/ContentService/BlogPostTags | Get blog post tags
+*BlogPostTagsApi* | [**patchBlogPostTagAsync**](docs/BlogPostTagsApi.md#patchblogposttagasync) | **PATCH** /api/v2/ContentService/BlogPostTags/{blogPostTagId} | Patch a blog post tag
 *BlogPostTagsApi* | [**updateBlogPostTagAsync**](docs/BlogPostTagsApi.md#updateblogposttagasync) | **PUT** /api/v2/ContentService/BlogPostTags/{blogPostTagId} | Update a blog post tag
 *BlogPostsApi* | [**createBlogPostAsync**](docs/BlogPostsApi.md#createblogpostasync) | **POST** /api/v2/ContentService/BlogPosts | Create a new blog post
 *BlogPostsApi* | [**createCategoryForBlogPostAsync**](docs/BlogPostsApi.md#createcategoryforblogpostasync) | **POST** /api/v2/ContentService/BlogPosts/{blogPostId}/Categories | Create a category for a blog post
@@ -132,15 +134,20 @@ Class | Method | HTTP request | Description
 *BlogPostsApi* | [**getCommentsForBlogPostAsync**](docs/BlogPostsApi.md#getcommentsforblogpostasync) | **GET** /api/v2/ContentService/BlogPosts/{blogPostId}/Comments | Get comments for a blog post
 *BlogPostsApi* | [**getRepliesForCommentAsync**](docs/BlogPostsApi.md#getrepliesforcommentasync) | **GET** /api/v2/ContentService/BlogPosts/{blogPostId}/Comments/{commentId}/Replies | Get replies for a comment
 *BlogPostsApi* | [**getTagsForBlogPostAsync**](docs/BlogPostsApi.md#gettagsforblogpostasync) | **GET** /api/v2/ContentService/BlogPosts/{blogPostId}/Tags | Get tags for a blog post
+*BlogPostsApi* | [**patchBlogPostAsync**](docs/BlogPostsApi.md#patchblogpostasync) | **PATCH** /api/v2/ContentService/BlogPosts/{blogPostId} | Patch a blog post
 *BlogPostsApi* | [**relateCategoryToBlogPostAsync**](docs/BlogPostsApi.md#relatecategorytoblogpostasync) | **POST** /api/v2/ContentService/BlogPosts/{blogPostId}/Categories/{categoryId} | Relate an existing category to a blog post
 *BlogPostsApi* | [**relateTagToBlogPostAsync**](docs/BlogPostsApi.md#relatetagtoblogpostasync) | **POST** /api/v2/ContentService/BlogPosts/{blogPostId}/Tags/{tagId} | Relate an existing tag to a blog post
 *BlogPostsApi* | [**replyToCommentAsync**](docs/BlogPostsApi.md#replytocommentasync) | **POST** /api/v2/ContentService/BlogPosts/{blogPostId}/Comments/{commentId}/Reply | Reply to a blog post comment
 *BlogPostsApi* | [**unrelateCategoryFromBlogPostAsync**](docs/BlogPostsApi.md#unrelatecategoryfromblogpostasync) | **DELETE** /api/v2/ContentService/BlogPosts/{blogPostId}/Categories/{categoryId} | Remove a category from a blog post
 *BlogPostsApi* | [**unrelateTagFromBlogPostAsync**](docs/BlogPostsApi.md#unrelatetagfromblogpostasync) | **DELETE** /api/v2/ContentService/BlogPosts/{blogPostId}/Tags/{tagId} | Remove a tag from a blog post
 *BlogPostsApi* | [**updateBlogPostAsync**](docs/BlogPostsApi.md#updateblogpostasync) | **PUT** /api/v2/ContentService/BlogPosts/{blogPostId} | Update a blog post
+*BusinessDomainsApi* | [**createBusinessDomainAsync**](docs/BusinessDomainsApi.md#createbusinessdomainasync) | **POST** /api/v2/ContentService/BusinessDomains | Register a business domain
+*BusinessDomainsApi* | [**deleteBusinessDomainAsync**](docs/BusinessDomainsApi.md#deletebusinessdomainasync) | **DELETE** /api/v2/ContentService/BusinessDomains/{businessDomainId} | Delete a business domain
 *BusinessDomainsApi* | [**getBusinessDomainByIdAsync**](docs/BusinessDomainsApi.md#getbusinessdomainbyidasync) | **GET** /api/v2/ContentService/BusinessDomains/{businessDomainId} | Get business domain by ID
 *BusinessDomainsApi* | [**getBusinessDomainsAsync**](docs/BusinessDomainsApi.md#getbusinessdomainsasync) | **GET** /api/v2/ContentService/BusinessDomains | Get business domains
 *BusinessDomainsApi* | [**getBusinessDomainsCountAsync**](docs/BusinessDomainsApi.md#getbusinessdomainscountasync) | **GET** /api/v2/ContentService/BusinessDomains/Count | Get business domains count
+*BusinessDomainsApi* | [**updateBusinessDomainAsync**](docs/BusinessDomainsApi.md#updatebusinessdomainasync) | **PUT** /api/v2/ContentService/BusinessDomains/{businessDomainId} | Update a business domain
+*BusinessDomainsApi* | [**verifyBusinessDomainAsync**](docs/BusinessDomainsApi.md#verifybusinessdomainasync) | **POST** /api/v2/ContentService/BusinessDomains/{businessDomainId}/Verify | Verify a business domain
 *CompletionsApi* | [**apiV2AiServiceCompletionsCompleteGet**](docs/CompletionsApi.md#apiv2aiservicecompletionscompleteget) | **GET** /api/v2/AiService/Completions/Complete | 
 *FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
 *FenixAlliancePortalsWebsiteApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
@@ -159,6 +166,19 @@ Class | Method | HTTP request | Description
 *FenixAlliancePortalsWebsiteApi* | [**resendConfirmationEmailPost**](docs/FenixAlliancePortalsWebsiteApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
 *FenixAlliancePortalsWebsiteApi* | [**resetPasswordPost**](docs/FenixAlliancePortalsWebsiteApi.md#resetpasswordpost) | **POST** /resetPassword | 
 *FenixAlliancePortalsWebsiteApi* | [**versionGet**](docs/FenixAlliancePortalsWebsiteApi.md#versionget) | **GET** /version | 
+*LocalizationStringsApi* | [**countLocalizationStringsAsync**](docs/LocalizationStringsApi.md#countlocalizationstringsasync) | **GET** /api/v2/ContentService/LocalizationStrings/Count | Count localization strings
+*LocalizationStringsApi* | [**createLocalizationStringAsync**](docs/LocalizationStringsApi.md#createlocalizationstringasync) | **POST** /api/v2/ContentService/LocalizationStrings | Create a localization string
+*LocalizationStringsApi* | [**deleteLocalizationStringAsync**](docs/LocalizationStringsApi.md#deletelocalizationstringasync) | **DELETE** /api/v2/ContentService/LocalizationStrings/{localizationStringId} | Delete a localization string
+*LocalizationStringsApi* | [**getLocalizationStringByIdAsync**](docs/LocalizationStringsApi.md#getlocalizationstringbyidasync) | **GET** /api/v2/ContentService/LocalizationStrings/{localizationStringId} | Get localization string by ID
+*LocalizationStringsApi* | [**getLocalizationStringsAsync**](docs/LocalizationStringsApi.md#getlocalizationstringsasync) | **GET** /api/v2/ContentService/LocalizationStrings | Get localization strings
+*LocalizationStringsApi* | [**updateLocalizationStringAsync**](docs/LocalizationStringsApi.md#updatelocalizationstringasync) | **PUT** /api/v2/ContentService/LocalizationStrings/{localizationStringId} | Update a localization string
+*MenuContextsApi* | [**countMenuContextsAsync**](docs/MenuContextsApi.md#countmenucontextsasync) | **GET** /api/v2/ContentService/MenuContexts/Count | Count menu contexts
+*MenuContextsApi* | [**createMenuContextAsync**](docs/MenuContextsApi.md#createmenucontextasync) | **POST** /api/v2/ContentService/MenuContexts | Create a menu context
+*MenuContextsApi* | [**deleteMenuContextAsync**](docs/MenuContextsApi.md#deletemenucontextasync) | **DELETE** /api/v2/ContentService/MenuContexts/{menuContextId} | Delete a menu context
+*MenuContextsApi* | [**getMenuContextByIdAsync**](docs/MenuContextsApi.md#getmenucontextbyidasync) | **GET** /api/v2/ContentService/MenuContexts/{menuContextId} | Get menu context by ID
+*MenuContextsApi* | [**getMenuContextsAsync**](docs/MenuContextsApi.md#getmenucontextsasync) | **GET** /api/v2/ContentService/MenuContexts | Get menu contexts
+*MenuContextsApi* | [**updateMenuContextAsync**](docs/MenuContextsApi.md#updatemenucontextasync) | **PUT** /api/v2/ContentService/MenuContexts/{menuContextId} | Update a menu context
+*PortalsApi* | [**bindWebPortalDomainAsync**](docs/PortalsApi.md#bindwebportaldomainasync) | **POST** /api/v2/ContentService/Portals/{portalId}/DomainBindings/{businessDomainId} | Bind a domain to a web portal
 *PortalsApi* | [**countPortalsAsync**](docs/PortalsApi.md#countportalsasync) | **GET** /api/v2/ContentService/Portals/Count | Count portals
 *PortalsApi* | [**createWebPortalAsync**](docs/PortalsApi.md#createwebportalasync) | **POST** /api/v2/ContentService/Portals | Create a new web portal
 *PortalsApi* | [**deleteWebPortalAsync**](docs/PortalsApi.md#deletewebportalasync) | **DELETE** /api/v2/ContentService/Portals/{portalId} | Delete a web portal
@@ -167,30 +187,42 @@ Class | Method | HTTP request | Description
 *PortalsApi* | [**getPortalsAsync**](docs/PortalsApi.md#getportalsasync) | **GET** /api/v2/ContentService/Portals | Get portals
 *PortalsApi* | [**getRootWebPortalAsync**](docs/PortalsApi.md#getrootwebportalasync) | **GET** /api/v2/ContentService/Portals/Root | Get the root portal
 *PortalsApi* | [**getWebPortalByIdAsync**](docs/PortalsApi.md#getwebportalbyidasync) | **GET** /api/v2/ContentService/Portals/{portalId} | Get a web portal by its ID
+*PortalsApi* | [**getWebPortalDomainBindingsAsync**](docs/PortalsApi.md#getwebportaldomainbindingsasync) | **GET** /api/v2/ContentService/Portals/{portalId}/DomainBindings | Get a web portal&#39;s bound domains
 *PortalsApi* | [**getWebPortalOptionsAsync**](docs/PortalsApi.md#getwebportaloptionsasync) | **GET** /api/v2/ContentService/Portals/{portalId}/Options | Get a web portal&#39;s options by its ID
 *PortalsApi* | [**getWebPortalSettingsAsync**](docs/PortalsApi.md#getwebportalsettingsasync) | **GET** /api/v2/ContentService/Portals/{portalId}/Settings | Get a web portal&#39;s settings by its ID
 *PortalsApi* | [**initializeCurrentWebPortalAsync**](docs/PortalsApi.md#initializecurrentwebportalasync) | **POST** /api/v2/ContentService/Portals/Initialize | Initialize the current portal
 *PortalsApi* | [**patchWebPortalAsync**](docs/PortalsApi.md#patchwebportalasync) | **PATCH** /api/v2/ContentService/Portals/{portalId} | Partially update a web portal
 *PortalsApi* | [**searchWebPortalAsync**](docs/PortalsApi.md#searchwebportalasync) | **GET** /api/v2/ContentService/Portals/Search | Search for a portal by its domain
+*PortalsApi* | [**unbindWebPortalDomainAsync**](docs/PortalsApi.md#unbindwebportaldomainasync) | **DELETE** /api/v2/ContentService/Portals/{portalId}/DomainBindings/{businessDomainId} | Unbind a domain from a web portal
 *PortalsApi* | [**updateWebPortalAsync**](docs/PortalsApi.md#updatewebportalasync) | **PUT** /api/v2/ContentService/Portals/{portalId} | Update an existing web portal
+*PortalsApi* | [**updateWebPortalSettingsAsync**](docs/PortalsApi.md#updatewebportalsettingsasync) | **PUT** /api/v2/ContentService/Portals/{portalId}/Settings | Update a web portal&#39;s settings
 *ThemesApi* | [**getLatestCurrencyRatesModelAsync**](docs/ThemesApi.md#getlatestcurrencyratesmodelasync) | **GET** /api/v2/ContentService/Themes/Update | Update base web content themes
+*WebComponentsApi* | [**countWebComponentsAsync**](docs/WebComponentsApi.md#countwebcomponentsasync) | **GET** /api/v2/ContentService/WebComponents/Count | Count web components
+*WebComponentsApi* | [**createWebComponentAsync**](docs/WebComponentsApi.md#createwebcomponentasync) | **POST** /api/v2/ContentService/WebComponents | Create a web component
+*WebComponentsApi* | [**deleteWebComponentAsync**](docs/WebComponentsApi.md#deletewebcomponentasync) | **DELETE** /api/v2/ContentService/WebComponents/{webComponentId} | Delete a web component
+*WebComponentsApi* | [**getWebComponentByIdAsync**](docs/WebComponentsApi.md#getwebcomponentbyidasync) | **GET** /api/v2/ContentService/WebComponents/{webComponentId} | Get web component by ID
+*WebComponentsApi* | [**getWebComponentsAsync**](docs/WebComponentsApi.md#getwebcomponentsasync) | **GET** /api/v2/ContentService/WebComponents | Get web components
+*WebComponentsApi* | [**updateWebComponentAsync**](docs/WebComponentsApi.md#updatewebcomponentasync) | **PUT** /api/v2/ContentService/WebComponents/{webComponentId} | Update a web component
 *WebContentsApi* | [**countWebContentsAsync**](docs/WebContentsApi.md#countwebcontentsasync) | **GET** /api/v2/ContentService/WebContents/Count | Count web contents
 *WebContentsApi* | [**createWebContentAsync**](docs/WebContentsApi.md#createwebcontentasync) | **POST** /api/v2/ContentService/WebContents | Create a web content
 *WebContentsApi* | [**deleteWebContentAsync**](docs/WebContentsApi.md#deletewebcontentasync) | **DELETE** /api/v2/ContentService/WebContents/{webContentId} | Delete a web content
 *WebContentsApi* | [**getWebContentByIdAsync**](docs/WebContentsApi.md#getwebcontentbyidasync) | **GET** /api/v2/ContentService/WebContents/{webContentId} | Get web content by ID
 *WebContentsApi* | [**getWebContentsAsync**](docs/WebContentsApi.md#getwebcontentsasync) | **GET** /api/v2/ContentService/WebContents | Get web contents
+*WebContentsApi* | [**patchWebContentAsync**](docs/WebContentsApi.md#patchwebcontentasync) | **PATCH** /api/v2/ContentService/WebContents/{webContentId} | Patch a web content
 *WebContentsApi* | [**updateWebContentAsync**](docs/WebContentsApi.md#updatewebcontentasync) | **PUT** /api/v2/ContentService/WebContents/{webContentId} | Update a web content
 *WebPageCategoriesApi* | [**countWebPageCategoriesAsync**](docs/WebPageCategoriesApi.md#countwebpagecategoriesasync) | **GET** /api/v2/ContentService/WebPageCategories/Count | Count web page categories
 *WebPageCategoriesApi* | [**createWebPageCategoryAsync**](docs/WebPageCategoriesApi.md#createwebpagecategoryasync) | **POST** /api/v2/ContentService/WebPageCategories | Create a web page category
 *WebPageCategoriesApi* | [**deleteWebPageCategoryAsync**](docs/WebPageCategoriesApi.md#deletewebpagecategoryasync) | **DELETE** /api/v2/ContentService/WebPageCategories/{webPageCategoryId} | Delete a web page category
 *WebPageCategoriesApi* | [**getWebPageCategoriesAsync**](docs/WebPageCategoriesApi.md#getwebpagecategoriesasync) | **GET** /api/v2/ContentService/WebPageCategories | Get web page categories
 *WebPageCategoriesApi* | [**getWebPageCategoryByIdAsync**](docs/WebPageCategoriesApi.md#getwebpagecategorybyidasync) | **GET** /api/v2/ContentService/WebPageCategories/{webPageCategoryId} | Get web page category by ID
+*WebPageCategoriesApi* | [**patchWebPageCategoryAsync**](docs/WebPageCategoriesApi.md#patchwebpagecategoryasync) | **PATCH** /api/v2/ContentService/WebPageCategories/{webPageCategoryId} | Patch a web page category
 *WebPageCategoriesApi* | [**updateWebPageCategoryAsync**](docs/WebPageCategoriesApi.md#updatewebpagecategoryasync) | **PUT** /api/v2/ContentService/WebPageCategories/{webPageCategoryId} | Update a web page category
 *WebPageTagsApi* | [**countWebPageTagsAsync**](docs/WebPageTagsApi.md#countwebpagetagsasync) | **GET** /api/v2/ContentService/WebPageTags/Count | Count web page tags
 *WebPageTagsApi* | [**createWebPageTagAsync**](docs/WebPageTagsApi.md#createwebpagetagasync) | **POST** /api/v2/ContentService/WebPageTags | Create a web page tag
 *WebPageTagsApi* | [**deleteWebPageTagAsync**](docs/WebPageTagsApi.md#deletewebpagetagasync) | **DELETE** /api/v2/ContentService/WebPageTags/{webPageTagId} | Delete a web page tag
 *WebPageTagsApi* | [**getWebPageTagByIdAsync**](docs/WebPageTagsApi.md#getwebpagetagbyidasync) | **GET** /api/v2/ContentService/WebPageTags/{webPageTagId} | Get web page tag by ID
 *WebPageTagsApi* | [**getWebPageTagsAsync**](docs/WebPageTagsApi.md#getwebpagetagsasync) | **GET** /api/v2/ContentService/WebPageTags | Get web page tags
+*WebPageTagsApi* | [**patchWebPageTagAsync**](docs/WebPageTagsApi.md#patchwebpagetagasync) | **PATCH** /api/v2/ContentService/WebPageTags/{webPageTagId} | Patch a web page tag
 *WebPageTagsApi* | [**updateWebPageTagAsync**](docs/WebPageTagsApi.md#updatewebpagetagasync) | **PUT** /api/v2/ContentService/WebPageTags/{webPageTagId} | Update a web page tag
 *WebPagesApi* | [**countWebPagesAsync**](docs/WebPagesApi.md#countwebpagesasync) | **GET** /api/v2/ContentService/WebPages/Count | Count web pages
 *WebPagesApi* | [**createWebPageAsync**](docs/WebPagesApi.md#createwebpageasync) | **POST** /api/v2/ContentService/WebPages | Create a web page
@@ -201,6 +233,7 @@ Class | Method | HTTP request | Description
 *WebPagesApi* | [**getTagsByWebPageAsync**](docs/WebPagesApi.md#gettagsbywebpageasync) | **GET** /api/v2/ContentService/WebPages/{webPageId}/Tags | Get tags by web page
 *WebPagesApi* | [**getWebPageByIdAsync**](docs/WebPagesApi.md#getwebpagebyidasync) | **GET** /api/v2/ContentService/WebPages/{webPageId} | Get web page by ID
 *WebPagesApi* | [**getWebPagesAsync**](docs/WebPagesApi.md#getwebpagesasync) | **GET** /api/v2/ContentService/WebPages | Get web pages
+*WebPagesApi* | [**patchWebPageAsync**](docs/WebPagesApi.md#patchwebpageasync) | **PATCH** /api/v2/ContentService/WebPages/{webPageId} | Patch a web page
 *WebPagesApi* | [**relateWebPageToCategoryAsync**](docs/WebPagesApi.md#relatewebpagetocategoryasync) | **POST** /api/v2/ContentService/WebPages/{webPageId}/Categories/{categoryId} | Relate web page to category
 *WebPagesApi* | [**relateWebPageToTagAsync**](docs/WebPagesApi.md#relatewebpagetotagasync) | **POST** /api/v2/ContentService/WebPages/{webPageId}/Tags/{tagId} | Relate web page to tag
 *WebPagesApi* | [**unrelateWebPageCategoryAsync**](docs/WebPagesApi.md#unrelatewebpagecategoryasync) | **DELETE** /api/v2/ContentService/WebPages/{webPageId}/Categories/{categoryId} | Unrelate web page from category
@@ -211,12 +244,14 @@ Class | Method | HTTP request | Description
 *WebTemplatesApi* | [**deleteWebTemplateAsync**](docs/WebTemplatesApi.md#deletewebtemplateasync) | **DELETE** /api/v2/ContentService/WebTemplates/{webTemplateId} | Delete a web template
 *WebTemplatesApi* | [**getWebTemplateByIdAsync**](docs/WebTemplatesApi.md#getwebtemplatebyidasync) | **GET** /api/v2/ContentService/WebTemplates/{webTemplateId} | Get web template by ID
 *WebTemplatesApi* | [**getWebTemplatesAsync**](docs/WebTemplatesApi.md#getwebtemplatesasync) | **GET** /api/v2/ContentService/WebTemplates | Get web templates
+*WebTemplatesApi* | [**patchWebTemplateAsync**](docs/WebTemplatesApi.md#patchwebtemplateasync) | **PATCH** /api/v2/ContentService/WebTemplates/{webTemplateId} | Patch a web template
 *WebTemplatesApi* | [**updateWebTemplateAsync**](docs/WebTemplatesApi.md#updatewebtemplateasync) | **PUT** /api/v2/ContentService/WebTemplates/{webTemplateId} | Update a web template
 *WebsiteThemesApi* | [**createWebsiteThemeAsync**](docs/WebsiteThemesApi.md#createwebsitethemeasync) | **POST** /api/v2/ContentService/WebsiteThemes | Create a new website theme
 *WebsiteThemesApi* | [**deleteWebsiteThemeAsync**](docs/WebsiteThemesApi.md#deletewebsitethemeasync) | **DELETE** /api/v2/ContentService/WebsiteThemes/{id} | Delete a website theme
 *WebsiteThemesApi* | [**getWebsiteThemeByIdAsync**](docs/WebsiteThemesApi.md#getwebsitethemebyidasync) | **GET** /api/v2/ContentService/WebsiteThemes/{id} | Get website theme by ID
 *WebsiteThemesApi* | [**getWebsiteThemesAsync**](docs/WebsiteThemesApi.md#getwebsitethemesasync) | **GET** /api/v2/ContentService/WebsiteThemes | Get all website themes
 *WebsiteThemesApi* | [**getWebsiteThemesCountAsync**](docs/WebsiteThemesApi.md#getwebsitethemescountasync) | **GET** /api/v2/ContentService/WebsiteThemes/Count | Get website themes count
+*WebsiteThemesApi* | [**patchWebsiteThemeAsync**](docs/WebsiteThemesApi.md#patchwebsitethemeasync) | **PATCH** /api/v2/ContentService/WebsiteThemes/{id} | Patch a website theme
 *WebsiteThemesApi* | [**updateWebsiteThemeAsync**](docs/WebsiteThemesApi.md#updatewebsitethemeasync) | **PUT** /api/v2/ContentService/WebsiteThemes/{id} | Update a website theme
 
 
@@ -259,9 +294,11 @@ Class | Method | HTTP request | Description
  - [BlogPostUpdateDto](docs/BlogPostUpdateDto.md)
  - [BrandingOptions](docs/BrandingOptions.md)
  - [BreadcrumbsOptions](docs/BreadcrumbsOptions.md)
+ - [BusinessDomainCreateDto](docs/BusinessDomainCreateDto.md)
  - [BusinessDomainDto](docs/BusinessDomainDto.md)
  - [BusinessDomainDtoEnvelope](docs/BusinessDomainDtoEnvelope.md)
  - [BusinessDomainDtoListEnvelope](docs/BusinessDomainDtoListEnvelope.md)
+ - [BusinessDomainUpdateDto](docs/BusinessDomainUpdateDto.md)
  - [ByteReadOnlyMemory](docs/ByteReadOnlyMemory.md)
  - [ByteReadOnlySpan](docs/ByteReadOnlySpan.md)
  - [CancellationToken](docs/CancellationToken.md)
@@ -350,12 +387,23 @@ Class | Method | HTTP request | Description
  - [InventoryOptions](docs/InventoryOptions.md)
  - [KeySizes](docs/KeySizes.md)
  - [LayoutOptions](docs/LayoutOptions.md)
+ - [LocalizationStringCreateDto](docs/LocalizationStringCreateDto.md)
+ - [LocalizationStringDto](docs/LocalizationStringDto.md)
+ - [LocalizationStringDtoEnvelope](docs/LocalizationStringDtoEnvelope.md)
+ - [LocalizationStringDtoListEnvelope](docs/LocalizationStringDtoListEnvelope.md)
+ - [LocalizationStringUpdateDto](docs/LocalizationStringUpdateDto.md)
  - [LoginRequest](docs/LoginRequest.md)
  - [Logo](docs/Logo.md)
  - [MSAppTile](docs/MSAppTile.md)
  - [Margin](docs/Margin.md)
  - [MeasurementOptions](docs/MeasurementOptions.md)
  - [MemberInfo](docs/MemberInfo.md)
+ - [MenuContextCreateDto](docs/MenuContextCreateDto.md)
+ - [MenuContextDto](docs/MenuContextDto.md)
+ - [MenuContextDtoEnvelope](docs/MenuContextDtoEnvelope.md)
+ - [MenuContextDtoListEnvelope](docs/MenuContextDtoListEnvelope.md)
+ - [MenuContextItemDto](docs/MenuContextItemDto.md)
+ - [MenuContextUpdateDto](docs/MenuContextUpdateDto.md)
  - [MenuOptions](docs/MenuOptions.md)
  - [MethodBase](docs/MethodBase.md)
  - [MethodInfo](docs/MethodInfo.md)
@@ -432,6 +480,11 @@ Class | Method | HTTP request | Description
  - [Typography](docs/Typography.md)
  - [TypographyOptions](docs/TypographyOptions.md)
  - [WaitHandle](docs/WaitHandle.md)
+ - [WebComponentCreateDto](docs/WebComponentCreateDto.md)
+ - [WebComponentDto](docs/WebComponentDto.md)
+ - [WebComponentDtoEnvelope](docs/WebComponentDtoEnvelope.md)
+ - [WebComponentDtoListEnvelope](docs/WebComponentDtoListEnvelope.md)
+ - [WebComponentUpdateDto](docs/WebComponentUpdateDto.md)
  - [WebContentCreateDto](docs/WebContentCreateDto.md)
  - [WebContentDto](docs/WebContentDto.md)
  - [WebContentDtoEnvelope](docs/WebContentDtoEnvelope.md)

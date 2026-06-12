@@ -137,6 +137,10 @@ operation_parameters_minimum_occurrences["getUserOptions:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getUserOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getUserOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getUserOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchUserOption:::optionId"]=1
+operation_parameters_minimum_occurrences["patchUserOption:::api-version"]=0
+operation_parameters_minimum_occurrences["patchUserOption:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchUserOption:::Operation"]=0
 operation_parameters_minimum_occurrences["updateUserOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateUserOption:::api-version"]=0
 operation_parameters_minimum_occurrences["updateUserOption:::x-api-version"]=0
@@ -250,6 +254,10 @@ operation_parameters_maximum_occurrences["getUserOptions:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getUserOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getUserOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getUserOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchUserOption:::optionId"]=0
+operation_parameters_maximum_occurrences["patchUserOption:::api-version"]=0
+operation_parameters_maximum_occurrences["patchUserOption:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchUserOption:::Operation"]=0
 operation_parameters_maximum_occurrences["updateUserOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateUserOption:::api-version"]=0
 operation_parameters_maximum_occurrences["updateUserOption:::x-api-version"]=0
@@ -360,6 +368,10 @@ operation_parameters_collection_type["getUserOptions:::x-api-version"]=""
 operation_parameters_collection_type["getUserOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getUserOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getUserOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchUserOption:::optionId"]=""
+operation_parameters_collection_type["patchUserOption:::api-version"]=""
+operation_parameters_collection_type["patchUserOption:::x-api-version"]=""
+operation_parameters_collection_type["patchUserOption:::Operation"]=
 operation_parameters_collection_type["updateUserOption:::optionId"]=""
 operation_parameters_collection_type["updateUserOption:::api-version"]=""
 operation_parameters_collection_type["updateUserOption:::x-api-version"]=""
@@ -781,7 +793,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}UsersService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}UsersService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -846,6 +858,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getUserOptionByKey${OFF};Retrieve a single user option by its key
   ${CYAN}getUserOptions${OFF};Retrieve a list of user options
   ${CYAN}getUserOptionsCount${OFF};Get the count of user options
+  ${CYAN}patchUserOption${OFF};Patch a user option
   ${CYAN}updateUserOption${OFF};Update a user option
   ${CYAN}upsertUserOption${OFF};Create or update a user option by key
 EOF
@@ -907,7 +920,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}UsersService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}UsersService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -927,7 +940,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}UsersService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}UsersService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1400,6 +1413,33 @@ print_getUserOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchUserOption operation
+#
+##############################################################################
+print_patchUserOption_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchUserOption - Patch a user option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a user option using a JSON Patch document" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3279,6 +3319,82 @@ call_getUserOptionsCount() {
 
 ##############################################################################
 #
+# Call patchUserOption operation
+#
+##############################################################################
+call_patchUserOption() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/Me/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateUserOption operation
 #
 ##############################################################################
@@ -4622,6 +4738,9 @@ case $key in
     getUserOptionsCount)
     operation="getUserOptionsCount"
     ;;
+    patchUserOption)
+    operation="patchUserOption"
+    ;;
     updateUserOption)
     operation="updateUserOption"
     ;;
@@ -4861,6 +4980,9 @@ case $operation in
     ;;
     getUserOptionsCount)
     call_getUserOptionsCount
+    ;;
+    patchUserOption)
+    call_patchUserOption
     ;;
     updateUserOption)
     call_updateUserOption

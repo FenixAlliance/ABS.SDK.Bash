@@ -349,6 +349,11 @@ case $state in
             "getInvoiceReferencesCount[Get the count of invoice references.]" \
             "getInvoices[Get a list of invoices.]" \
             "getInvoicesCount[Get the count of invoices.]" \
+            "patchInvoice[Patch an invoice.]" \
+            "patchInvoiceAdjustment[Patch an invoice adjustment.]" \
+            "patchInvoiceLine[Patch an invoice line.]" \
+            "patchInvoiceLineTax[Patch a tax for an invoice line.]" \
+            "patchInvoiceReference[Patch an invoice reference.]" \
             "previewInvoiceEmail[Preview the rendered email for an invoice.]" \
             "sendInvoiceEmail[Send an invoice transactional email to recipients.]" \
             "updateInvoice[Update an invoice.]" \
@@ -774,6 +779,51 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchInvoice)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchInvoiceAdjustment)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceAdjustmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchInvoiceLine)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchInvoiceLineTax)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceLineId=:[PATH] "
+"invoiceLineTaxId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchInvoiceReference)
+        local -a _op_arguments
+        _op_arguments=(
+          "invoiceId=:[PATH] "
+"invoiceReferenceId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

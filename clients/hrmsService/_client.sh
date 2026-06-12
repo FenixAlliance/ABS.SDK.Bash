@@ -312,21 +312,25 @@ case $state in
             "getEmployeeAppraisalSessionByIdAsync[Get employee appraisal session by ID]" \
             "getEmployeeAppraisalSessionsAsync[Get employee appraisal sessions]" \
             "getEmployeeAppraisalSessionsCountAsync[Count employee appraisal sessions]" \
+            "patchEmployeeAppraisalSessionAsync[Patch an employee appraisal session]" \
             "updateEmployeeAppraisalSessionAsync[Update an employee appraisal session]"             "createEmployeeTypeAsync[Create an employee type]" \
             "deleteEmployeeTypeAsync[Delete an employee type]" \
             "getEmployeeTypeByIdAsync[Get employee type by ID]" \
             "getEmployeeTypesAsync[Get employee types]" \
             "getEmployeeTypesCountAsync[Count employee types]" \
+            "patchEmployeeTypeAsync[Patch an employee type]" \
             "updateEmployeeTypeAsync[Update an employee type]"             "createEmployeeAsync[Create an employee]" \
             "deleteEmployeeAsync[Delete an employee]" \
             "getEmployeeByIdAsync[Get employee by ID]" \
             "getEmployeesAsync[Get employees]" \
             "getEmployeesCountAsync[Count employees]" \
+            "patchEmployeeAsync[Patch an employee]" \
             "updateEmployeeAsync[Update an employee]"             "createEmployerAsync[Create an employer]" \
             "deleteEmployerAsync[Delete an employer]" \
             "getEmployerByIdAsync[Get employer by ID]" \
             "getEmployersAsync[Get employers]" \
             "getEmployersCountAsync[Count employers]" \
+            "patchEmployerAsync[Patch an employer]" \
             "updateEmployerAsync[Update an employer]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
@@ -348,21 +352,25 @@ case $state in
             "getGigByIdAsync[Get gig by ID]" \
             "getGigsAsync[Get gigs]" \
             "getGigsCountAsync[Count gigs]" \
+            "patchGigAsync[Patch a gig]" \
             "updateGigAsync[Update a gig]"             "createJobOfferAsync[Create a job offer]" \
             "deleteJobOfferAsync[Delete a job offer]" \
             "getJobOfferByIdAsync[Get job offer by ID]" \
             "getJobOffersAsync[Get job offers]" \
             "getJobOffersCountAsync[Count job offers]" \
+            "patchJobOfferAsync[Patch a job offer]" \
             "updateJobOfferAsync[Update a job offer]"             "createJobTitleAsync[Create a job title]" \
             "deleteJobTitleAsync[Delete a job title]" \
             "getJobTitleByIdAsync[Get job title by ID]" \
             "getJobTitlesAsync[Get job titles]" \
             "getJobTitlesCountAsync[Count job titles]" \
+            "patchJobTitleAsync[Patch a job title]" \
             "updateJobTitleAsync[Update a job title]"             "createLeaveApplicationAsync[Create a leave application]" \
             "deleteLeaveApplicationAsync[Delete a leave application]" \
             "getLeaveApplicationByIdAsync[Get leave application by ID]" \
             "getLeaveApplicationsAsync[Get leave applications]" \
             "getLeaveApplicationsCountAsync[Count leave applications]" \
+            "patchLeaveApplicationAsync[Patch a leave application]" \
             "updateLeaveApplicationAsync[Update a leave application]"             "createLeaveTypeAsync[Create a leave type]" \
             "deleteLeaveTypeAsync[Delete a leave type]" \
             "getLeaveTypeByIdAsync[Get leave type by ID]" \
@@ -378,36 +386,43 @@ case $state in
             "getPayrollByIdAsync[Get payroll by ID]" \
             "getPayrollsAsync[Get payrolls]" \
             "getPayrollsCountAsync[Count payrolls]" \
+            "patchPayrollAsync[Patch a payroll]" \
             "updatePayrollAsync[Update a payroll]"             "createSalaryAsync[Create a salary]" \
             "deleteSalaryAsync[Delete a salary]" \
             "getSalariesAsync[Get salaries]" \
             "getSalariesCountAsync[Count salaries]" \
             "getSalaryByIdAsync[Get salary by ID]" \
+            "patchSalaryAsync[Patch a salary]" \
             "updateSalaryAsync[Update a salary]"             "createScheduleAsync[Create a schedule]" \
             "deleteScheduleAsync[Delete a schedule]" \
             "getScheduleByIdAsync[Get schedule by ID]" \
             "getSchedulesAsync[Get schedules]" \
             "getSchedulesCountAsync[Count schedules]" \
+            "patchScheduleAsync[Patch a schedule]" \
             "updateScheduleAsync[Update a schedule]"             "createShiftAsync[Create a shift]" \
             "deleteShiftAsync[Delete a shift]" \
             "getShiftByIdAsync[Get shift by ID]" \
             "getShiftsAsync[Get shifts]" \
             "getShiftsCountAsync[Count shifts]" \
+            "patchShiftAsync[Patch a shift]" \
             "updateShiftAsync[Update a shift]"             "createTimeIntervalAsync[Create a time interval]" \
             "deleteTimeIntervalAsync[Delete a time interval]" \
             "getTimeIntervalByIdAsync[Get time interval by ID]" \
             "getTimeIntervalsAsync[Get time intervals]" \
             "getTimeIntervalsCountAsync[Count time intervals]" \
+            "patchTimeIntervalAsync[Patch a time interval]" \
             "updateTimeIntervalAsync[Update a time interval]"             "createTrainingProgramCourseAsync[Create a training program course]" \
             "deleteTrainingProgramCourseAsync[Delete a training program course]" \
             "getTrainingProgramCourseByIdAsync[Get training program course by ID]" \
             "getTrainingProgramCoursesAsync[Get training program courses]" \
             "getTrainingProgramCoursesCountAsync[Count training program courses]" \
+            "patchTrainingProgramCourseAsync[Patch a training program course]" \
             "updateTrainingProgramCourseAsync[Update a training program course]"             "createTrainingProgramEventAsync[Create a training program event]" \
             "deleteTrainingProgramEventAsync[Delete a training program event]" \
             "getTrainingProgramEventByIdAsync[Get training program event by ID]" \
             "getTrainingProgramEventsAsync[Get training program events]" \
             "getTrainingProgramEventsCountAsync[Count training program events]" \
+            "patchTrainingProgramEventAsync[Patch a training program event]" \
             "updateTrainingProgramEventAsync[Update a training program event]"             "createTrainingProgramAsync[Create a training program]" \
             "deleteTrainingProgramAsync[Delete a training program]" \
             "getTrainingProgramByIdAsync[Get training program by ID]" \
@@ -591,6 +606,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchEmployeeAppraisalSessionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "sessionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateEmployeeAppraisalSessionAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -643,6 +668,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchEmployeeTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "employeeTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -705,6 +740,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchEmployeeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "employeeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateEmployeeAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -757,6 +802,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchEmployerAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "employerId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -928,6 +983,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchGigAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "gigId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateGigAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -980,6 +1045,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchJobOfferAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "jobOfferId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1042,6 +1117,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchJobTitleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "jobTitleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateJobTitleAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1094,6 +1179,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchLeaveApplicationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "leaveApplicationId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1270,6 +1365,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchPayrollAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "payrollId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updatePayrollAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1318,6 +1423,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getSalaryByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "salaryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSalaryAsync)
         local -a _op_arguments
         _op_arguments=(
           "salaryId=:[PATH] "
@@ -1384,6 +1499,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchScheduleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "scheduleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateScheduleAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1436,6 +1561,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchShiftAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "shiftId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1498,6 +1633,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTimeIntervalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeIntervalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTimeIntervalAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1555,6 +1700,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTrainingProgramCourseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "courseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTrainingProgramCourseAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1607,6 +1762,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTrainingProgramEventAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "eventId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

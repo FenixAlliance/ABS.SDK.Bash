@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getEmployeeTypeByIdAsync**](EmployeeTypesApi.md#getEmployeeTypeByIdAsync) | **GET** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Get employee type by ID
 [**getEmployeeTypesAsync**](EmployeeTypesApi.md#getEmployeeTypesAsync) | **GET** /api/v2/HrmsService/EmployeeTypes | Get employee types
 [**getEmployeeTypesCountAsync**](EmployeeTypesApi.md#getEmployeeTypesCountAsync) | **GET** /api/v2/HrmsService/EmployeeTypes/Count | Count employee types
+[**patchEmployeeTypeAsync**](EmployeeTypesApi.md#patchEmployeeTypeAsync) | **PATCH** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Patch an employee type
 [**updateEmployeeTypeAsync**](EmployeeTypesApi.md#updateEmployeeTypeAsync) | **PUT** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Update an employee type
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchEmployeeTypeAsync
+
+Patch an employee type
+
+Partially updates an existing employee type for the specified tenant.
+
+### Example
+
+```bash
+ patchEmployeeTypeAsync  tenantId=value employeeTypeId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **employeeTypeId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

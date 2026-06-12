@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getNewsletterDetailsAsync**](NewslettersApi.md#getNewsletterDetailsAsync) | **GET** /api/v2/MarketingService/Newsletters/{newsletterId} | Get newsletter by ID
 [**getNewsletterODataAsync**](NewslettersApi.md#getNewsletterODataAsync) | **GET** /api/v2/MarketingService/Newsletters | Get newsletters
 [**getNewslettersCountAsync**](NewslettersApi.md#getNewslettersCountAsync) | **GET** /api/v2/MarketingService/Newsletters/Count | Get newsletters count
+[**patchNewsletterAsync**](NewslettersApi.md#patchNewsletterAsync) | **PATCH** /api/v2/MarketingService/Newsletters/{newsletterId} | Patch a newsletter
 [**updateNewsletterAsync**](NewslettersApi.md#updateNewsletterAsync) | **PUT** /api/v2/MarketingService/Newsletters/{newsletterId} | Update a newsletter
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchNewsletterAsync
+
+Patch a newsletter
+
+Partially updates a newsletter by its ID using JSON Patch.
+
+### Example
+
+```bash
+ patchNewsletterAsync  tenantId=value newsletterId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **newsletterId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

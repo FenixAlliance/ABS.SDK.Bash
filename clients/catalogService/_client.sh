@@ -317,35 +317,42 @@ case $state in
             "deleteItemAttachmentAsync[Delete an item attachment]" \
             "getItemAttachmentByIdAsync[Get item attachment by ID]" \
             "getItemAttachmentsAsync[Get all item attachments]" \
+            "patchItemAttachmentAsync[Patch an item attachment]" \
             "updateItemAttachmentAsync[Update an item attachment]"             "createItemAttributeOptionAsync[Create a new item attribute option]" \
             "deleteItemAttributeOptionAsync[Delete an item attribute option]" \
             "getItemAttributeOptionByIdAsync[Get item attribute option by ID]" \
             "getItemAttributeOptionsAsync[Get all item attribute options]" \
             "getItemAttributeOptionsCountAsync[Get item attribute options count]" \
+            "patchItemAttributeOptionAsync[Patch an item attribute option]" \
             "updateItemAttributeOptionAsync[Update an item attribute option]"             "countItemAttributesAsync[Count item attributes]" \
             "createItemAttributeAsync[Create a new item attribute]" \
             "deleteItemAttributeAsync[Delete an item attribute]" \
             "getItemAttributeByIdAsync[Get item attribute by ID]" \
             "getItemAttributesAsync[Get all item attributes]" \
+            "patchItemAttributeAsync[Patch an item attribute]" \
             "updateItemAttributeAsync[Update an item attribute]"             "createItemBrandAsync[Create a new item brand]" \
             "deleteItemBrandAsync[Delete an item brand]" \
             "getItemBrandByIdAsync[Get item brand by ID]" \
             "getItemBrandsAsync[Get all item brands]" \
+            "patchItemBrandAsync[Patch an item brand]" \
             "updateItemBrandAsync[Update an item brand]"             "createItemBundleAsync[Create a new item bundle]" \
             "deleteItemBundleAsync[Delete an item bundle]" \
             "getItemBundleByIdAsync[Get item bundle by ID]" \
             "getItemBundlesAsync[Get all item bundles]" \
             "getItemBundlesCountAsync[Get item bundles count]" \
+            "patchItemBundleAsync[Patch an item bundle]" \
             "updateItemBundleAsync[Update an item bundle]"             "countItemCategoriesAsync[Count item categories]" \
             "createItemCategoryAsync[Create a new item category]" \
             "deleteItemCategoryAsync[Delete an item category]" \
             "getItemCategoriesAsync[Get all item categories]" \
             "getItemCategoryByIdAsync[Get item category by ID]" \
+            "patchItemCategoryAsync[Patch an item category]" \
             "updateItemCategoryAsync[Update an item category]"             "createItemFamilyAsync[Create a new item family]" \
             "deleteItemFamilyAsync[Delete an item family]" \
             "getItemFamiliesAsync[Get all item families]" \
             "getItemFamiliesCountAsync[Get item families count]" \
             "getItemFamilyByIdAsync[Get item family by ID]" \
+            "patchItemFamilyAsync[Patch an item family]" \
             "updateItemFamilyAsync[Update an item family]"             "getAllItemGoogleCategoriesAsync[Get all Google item categories (all)]" \
             "getChildrenItemGoogleCategoriesByIdAsync[Get children Google item categories by ID]" \
             "getItemGoogleCategoriesAsync[Get all Google item categories]" \
@@ -357,10 +364,12 @@ case $state in
             "deleteItemImageAsync[Delete an item image]" \
             "getItemImageByIdAsync[Get item image by ID]" \
             "getItemImagesAsync[Get all item images]" \
+            "patchItemImageAsync[Patch an item image]" \
             "updateItemImageAsync[Update an item image]"             "createItemQuestionAsync[Create a new item question]" \
             "deleteItemQuestionAsync[Delete an item question]" \
             "getItemQuestionByIdAsync[Get item question by ID]" \
             "getItemQuestionsAsync[Get all item questions]" \
+            "patchItemQuestionAsync[Patch an item question]" \
             "updateItemQuestionAsync[Update an item question]"             "countItemRefundPoliciesAsync[Count item refund policies]" \
             "getItemRefundPoliciesAsync[Get item refund policies]" \
             "getItemRefundPolicyByIdAsync[Get item refund policy by ID]" \
@@ -373,6 +382,7 @@ case $state in
             "deleteItemReviewAsync[Delete an item review]" \
             "getItemReviewByIdAsync[Get item review by ID]" \
             "getItemReviewsAsync[Get all item reviews]" \
+            "patchItemReviewAsync[Patch an item review]" \
             "updateItemReviewAsync[Update an item review]"             "countItemShippingPoliciesAsync[Count item shipping policies]" \
             "getItemShippingPoliciesAsync[Get item shipping policies]" \
             "getItemShippingPolicyByIdAsync[Get item shipping policy by ID]" \
@@ -381,6 +391,7 @@ case $state in
             "deleteItemTagAsync[Delete an item tag]" \
             "getItemTagByIdAsync[Get item tag by ID]" \
             "getItemTagsAsync[Get all item tags]" \
+            "patchItemTagAsync[Patch an item tag]" \
             "updateItemTagAsync[Update an item tag]"             "countItemTaxPoliciesAsync[Count item tax policies]" \
             "getItemTaxPoliciesAsync[Get item tax policies]" \
             "getItemTaxPolicyByIdAsync[Get item tax policy by ID]" \
@@ -390,11 +401,14 @@ case $state in
             "deleteItemTypeAsync[Delete an item type]" \
             "getItemTypeByIdAsync[Get item type by ID]" \
             "getItemTypesAsync[Get all item types]" \
+            "patchItemTypeAsync[Patch an item type]" \
             "updateItemTypeAsync[Update an item type]"             "countItemWarrantyPoliciesAsync[Count item warranty policies]" \
             "getItemWarrantyPoliciesAsync[Get item warranty policies]" \
             "getItemWarrantyPolicyByIdAsync[Get item warranty policy by ID]" \
             "relateItemToWarrantyPolicyAsync[Relate item to warranty policy]" \
-            "removeWarrantyPolicyFromItemAsync[Remove warranty policy from item]"             "countStockItemTagsByItemId[Count tags for a stock item]" \
+            "removeWarrantyPolicyFromItemAsync[Remove warranty policy from item]"             "batchUpdateStockItems[Bulk-update stock items]" \
+            "bulkUpsertStockItems[Bulk upsert stock items from rows]" \
+            "countStockItemTagsByItemId[Count tags for a stock item]" \
             "countStockItemsByBusiness[Count stock items by business]" \
             "createStockItem[Create a new stock item]" \
             "deleteStockItem[Delete a stock item]" \
@@ -436,6 +450,8 @@ case $state in
             "getStockItemsOdataMaxPrice[Get max price of stock items]" \
             "getStockItemsOdataMinPrice[Get min price of stock items]" \
             "getStockItemsQuery[Get all stock items]" \
+            "patchStockItem[Patch a stock item]" \
+            "recalculateStockItemPrices[Recalculate stock item prices]" \
             "relateAttachmentToStockItem[Relate attachment to stock item]" \
             "relateAttributeOptionToStockItem[Relate attribute option to stock item]" \
             "relateBrandToStockItem[Relate brand to stock item]" \
@@ -635,6 +651,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemAttachmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemAttachmentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemAttachmentAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -687,6 +713,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemAttributeOptionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemAttributeOptionId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -749,6 +785,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemAttributeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemAttributeId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemAttributeAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -792,6 +838,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemBrandAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemBrandId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -854,6 +910,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemBundleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemBundleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemBundleAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -911,6 +977,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemCategoryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemCategoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -959,6 +1035,16 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getItemFamilyByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemFamilyId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemFamilyAsync)
         local -a _op_arguments
         _op_arguments=(
           "itemFamilyId=:[PATH] "
@@ -1083,6 +1169,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemImageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemImageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemImageAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1126,6 +1222,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemQuestionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemQuestionId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1285,6 +1391,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemReviewAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemReviewId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemReviewAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1381,6 +1497,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemTagAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemTagId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1496,6 +1622,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemTypeID=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemTypeAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1554,6 +1690,24 @@ case $state in
           "itemWarrantyPolicyId=:[PATH] "
           "tenantId=:[QUERY] "
 "itemId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      batchUpdateStockItems)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      bulkUpsertStockItems)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1951,6 +2105,25 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getStockItemsQuery)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchStockItem)
+        local -a _op_arguments
+        _op_arguments=(
+          "itemId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      recalculateStockItemPrices)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "

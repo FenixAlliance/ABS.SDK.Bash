@@ -131,6 +131,8 @@ Class | Method | HTTP request | Description
 *LocationsApi* | [**getWalletLocationAsync**](docs/LocationsApi.md#getwalletlocationasync) | **GET** /api/v2/LocationsService/Locations/wallet/{walletId}/{locationId} | Get Wallet Location
 *LocationsApi* | [**getWalletLocationsAsync**](docs/LocationsApi.md#getwalletlocationsasync) | **GET** /api/v2/LocationsService/Locations/wallet/{walletId} | Get Wallet Locations
 *LocationsApi* | [**getWalletLocationsCountAsync**](docs/LocationsApi.md#getwalletlocationscountasync) | **GET** /api/v2/LocationsService/Locations/wallet/{walletId}/count | Get Wallet Locations Count
+*LocationsApi* | [**patchLocationAsync**](docs/LocationsApi.md#patchlocationasync) | **PATCH** /api/v2/LocationsService/Locations/{locationId} | Patch a location
+*LocationsApi* | [**patchWalletLocationAsync**](docs/LocationsApi.md#patchwalletlocationasync) | **PATCH** /api/v2/LocationsService/Locations/wallet/{walletId}/{locationId} | Patch a wallet location
 *LocationsApi* | [**updateLocationAsync**](docs/LocationsApi.md#updatelocationasync) | **PUT** /api/v2/LocationsService/Locations/{locationId} | Update Location
 *LocationsApi* | [**updateWalletLocationAsync**](docs/LocationsApi.md#updatewalletlocationasync) | **PUT** /api/v2/LocationsService/Locations/wallet/{walletId}/{locationId} | Update Wallet Location
 
@@ -151,6 +153,7 @@ Class | Method | HTTP request | Description
  - [LocationDtoIReadOnlyListEnvelope](docs/LocationDtoIReadOnlyListEnvelope.md)
  - [LocationUpdateDto](docs/LocationUpdateDto.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)

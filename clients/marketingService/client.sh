@@ -117,6 +117,11 @@ operation_parameters_minimum_occurrences["getEmailGroupsCountAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getEmailGroupsODataAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmailGroupsODataAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmailGroupsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmailGroupAsync:::emailgroupId"]=1
+operation_parameters_minimum_occurrences["patchEmailGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailGroupAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmailGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmailGroupAsync:::emailgroupId"]=1
 operation_parameters_minimum_occurrences["updateEmailGroupAsync:::EmailGroupUpdateDto"]=1
@@ -140,6 +145,11 @@ operation_parameters_minimum_occurrences["getEmailSignaturesCountAsync:::x-api-v
 operation_parameters_minimum_occurrences["getEmailSignaturesODataAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmailSignaturesODataAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmailSignaturesODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailSignatureAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmailSignatureAsync:::emailsignatureId"]=1
+operation_parameters_minimum_occurrences["patchEmailSignatureAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailSignatureAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::emailsignatureId"]=1
 operation_parameters_minimum_occurrences["updateEmailSignatureAsync:::EmailSignatureUpdateDto"]=1
@@ -163,6 +173,11 @@ operation_parameters_minimum_occurrences["getEmailTemplatesCountAsync:::x-api-ve
 operation_parameters_minimum_occurrences["getEmailTemplatesODataAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmailTemplatesODataAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmailTemplatesODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmailTemplateAsync:::emailTemplateId"]=1
+operation_parameters_minimum_occurrences["patchEmailTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmailTemplateAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::emailTemplateId"]=1
 operation_parameters_minimum_occurrences["updateEmailTemplateAsync:::EmailTemplateUpdateDto"]=1
@@ -203,6 +218,11 @@ operation_parameters_minimum_occurrences["getMarketingAreasAsync:::x-api-version
 operation_parameters_minimum_occurrences["getMarketingAreasCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getMarketingAreasCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMarketingAreasCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingAreaAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchMarketingAreaAsync:::marketingAreaId"]=1
+operation_parameters_minimum_occurrences["patchMarketingAreaAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingAreaAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::marketingAreaId"]=1
 operation_parameters_minimum_occurrences["updateMarketingAreaAsync:::api-version"]=0
@@ -226,6 +246,11 @@ operation_parameters_minimum_occurrences["getMarketingCampaignODataAsync:::x-api
 operation_parameters_minimum_occurrences["getMarketingCampaignsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getMarketingCampaignsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMarketingCampaignsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingCampaignAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchMarketingCampaignAsync:::marketingcampaignId"]=1
+operation_parameters_minimum_occurrences["patchMarketingCampaignAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingCampaignAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::marketingcampaignId"]=1
 operation_parameters_minimum_occurrences["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=1
@@ -249,6 +274,11 @@ operation_parameters_minimum_occurrences["getMarketingLeadsCountAsync:::x-api-ve
 operation_parameters_minimum_occurrences["getMarketingLeadsODataAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getMarketingLeadsODataAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMarketingLeadsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingLeadAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchMarketingLeadAsync:::marketingLeadId"]=1
+operation_parameters_minimum_occurrences["patchMarketingLeadAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingLeadAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingLeadAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::marketingLeadId"]=1
 operation_parameters_minimum_occurrences["updateMarketingLeadAsync:::MarketingLeadUpdateDto"]=1
@@ -272,6 +302,11 @@ operation_parameters_minimum_occurrences["getMarketingListODataAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getMarketingListsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getMarketingListsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMarketingListsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingListAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchMarketingListAsync:::marketinglistId"]=1
+operation_parameters_minimum_occurrences["patchMarketingListAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchMarketingListAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::marketinglistId"]=1
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=1
@@ -295,6 +330,11 @@ operation_parameters_minimum_occurrences["getNewsletterODataAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getNewslettersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getNewslettersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNewslettersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchNewsletterAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchNewsletterAsync:::newsletterId"]=1
+operation_parameters_minimum_occurrences["patchNewsletterAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchNewsletterAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchNewsletterAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateNewsletterAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateNewsletterAsync:::newsletterId"]=1
 operation_parameters_minimum_occurrences["updateNewsletterAsync:::NewsletterUpdateDto"]=1
@@ -318,6 +358,11 @@ operation_parameters_minimum_occurrences["getSocialMediaPostsCountAsync:::x-api-
 operation_parameters_minimum_occurrences["getSocialMediaPostsODataAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSocialMediaPostsODataAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialMediaPostsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialMediaPostAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSocialMediaPostAsync:::socialmediapostId"]=1
+operation_parameters_minimum_occurrences["patchSocialMediaPostAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialMediaPostAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::socialmediapostId"]=1
 operation_parameters_minimum_occurrences["updateSocialMediaPostAsync:::SocialMediaPostUpdateDto"]=1
@@ -341,6 +386,11 @@ operation_parameters_minimum_occurrences["getSocialPostBucketsCountAsync:::x-api
 operation_parameters_minimum_occurrences["getSocialPostBucketsODataAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSocialPostBucketsODataAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostBucketsODataAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialPostBucketAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSocialPostBucketAsync:::socialpostbucketId"]=1
+operation_parameters_minimum_occurrences["patchSocialPostBucketAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSocialPostBucketAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::socialpostbucketId"]=1
 operation_parameters_minimum_occurrences["updateSocialPostBucketAsync:::SocialPostBucketUpdateDto"]=1
@@ -378,6 +428,11 @@ operation_parameters_maximum_occurrences["getEmailGroupsCountAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getEmailGroupsODataAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmailGroupsODataAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmailGroupsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmailGroupAsync:::emailgroupId"]=0
+operation_parameters_maximum_occurrences["patchEmailGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailGroupAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmailGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmailGroupAsync:::emailgroupId"]=0
 operation_parameters_maximum_occurrences["updateEmailGroupAsync:::EmailGroupUpdateDto"]=0
@@ -401,6 +456,11 @@ operation_parameters_maximum_occurrences["getEmailSignaturesCountAsync:::x-api-v
 operation_parameters_maximum_occurrences["getEmailSignaturesODataAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmailSignaturesODataAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmailSignaturesODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailSignatureAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmailSignatureAsync:::emailsignatureId"]=0
+operation_parameters_maximum_occurrences["patchEmailSignatureAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailSignatureAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailSignatureAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::emailsignatureId"]=0
 operation_parameters_maximum_occurrences["updateEmailSignatureAsync:::EmailSignatureUpdateDto"]=0
@@ -424,6 +484,11 @@ operation_parameters_maximum_occurrences["getEmailTemplatesCountAsync:::x-api-ve
 operation_parameters_maximum_occurrences["getEmailTemplatesODataAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmailTemplatesODataAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmailTemplatesODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmailTemplateAsync:::emailTemplateId"]=0
+operation_parameters_maximum_occurrences["patchEmailTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmailTemplateAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::emailTemplateId"]=0
 operation_parameters_maximum_occurrences["updateEmailTemplateAsync:::EmailTemplateUpdateDto"]=0
@@ -464,6 +529,11 @@ operation_parameters_maximum_occurrences["getMarketingAreasAsync:::x-api-version
 operation_parameters_maximum_occurrences["getMarketingAreasCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getMarketingAreasCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMarketingAreasCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingAreaAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchMarketingAreaAsync:::marketingAreaId"]=0
+operation_parameters_maximum_occurrences["patchMarketingAreaAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingAreaAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingAreaAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::marketingAreaId"]=0
 operation_parameters_maximum_occurrences["updateMarketingAreaAsync:::api-version"]=0
@@ -487,6 +557,11 @@ operation_parameters_maximum_occurrences["getMarketingCampaignODataAsync:::x-api
 operation_parameters_maximum_occurrences["getMarketingCampaignsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getMarketingCampaignsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMarketingCampaignsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingCampaignAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchMarketingCampaignAsync:::marketingcampaignId"]=0
+operation_parameters_maximum_occurrences["patchMarketingCampaignAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingCampaignAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingCampaignAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::marketingcampaignId"]=0
 operation_parameters_maximum_occurrences["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=0
@@ -510,6 +585,11 @@ operation_parameters_maximum_occurrences["getMarketingLeadsCountAsync:::x-api-ve
 operation_parameters_maximum_occurrences["getMarketingLeadsODataAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getMarketingLeadsODataAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMarketingLeadsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingLeadAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchMarketingLeadAsync:::marketingLeadId"]=0
+operation_parameters_maximum_occurrences["patchMarketingLeadAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingLeadAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingLeadAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::marketingLeadId"]=0
 operation_parameters_maximum_occurrences["updateMarketingLeadAsync:::MarketingLeadUpdateDto"]=0
@@ -533,6 +613,11 @@ operation_parameters_maximum_occurrences["getMarketingListODataAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getMarketingListsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getMarketingListsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMarketingListsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingListAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchMarketingListAsync:::marketinglistId"]=0
+operation_parameters_maximum_occurrences["patchMarketingListAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchMarketingListAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::marketinglistId"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=0
@@ -556,6 +641,11 @@ operation_parameters_maximum_occurrences["getNewsletterODataAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getNewslettersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getNewslettersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNewslettersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchNewsletterAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchNewsletterAsync:::newsletterId"]=0
+operation_parameters_maximum_occurrences["patchNewsletterAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchNewsletterAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchNewsletterAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateNewsletterAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateNewsletterAsync:::newsletterId"]=0
 operation_parameters_maximum_occurrences["updateNewsletterAsync:::NewsletterUpdateDto"]=0
@@ -579,6 +669,11 @@ operation_parameters_maximum_occurrences["getSocialMediaPostsCountAsync:::x-api-
 operation_parameters_maximum_occurrences["getSocialMediaPostsODataAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSocialMediaPostsODataAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialMediaPostsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialMediaPostAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSocialMediaPostAsync:::socialmediapostId"]=0
+operation_parameters_maximum_occurrences["patchSocialMediaPostAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialMediaPostAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialMediaPostAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::socialmediapostId"]=0
 operation_parameters_maximum_occurrences["updateSocialMediaPostAsync:::SocialMediaPostUpdateDto"]=0
@@ -602,6 +697,11 @@ operation_parameters_maximum_occurrences["getSocialPostBucketsCountAsync:::x-api
 operation_parameters_maximum_occurrences["getSocialPostBucketsODataAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSocialPostBucketsODataAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostBucketsODataAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialPostBucketAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSocialPostBucketAsync:::socialpostbucketId"]=0
+operation_parameters_maximum_occurrences["patchSocialPostBucketAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialPostBucketAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSocialPostBucketAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::socialpostbucketId"]=0
 operation_parameters_maximum_occurrences["updateSocialPostBucketAsync:::SocialPostBucketUpdateDto"]=0
@@ -636,6 +736,11 @@ operation_parameters_collection_type["getEmailGroupsCountAsync:::x-api-version"]
 operation_parameters_collection_type["getEmailGroupsODataAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmailGroupsODataAsync:::api-version"]=""
 operation_parameters_collection_type["getEmailGroupsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmailGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmailGroupAsync:::emailgroupId"]=""
+operation_parameters_collection_type["patchEmailGroupAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmailGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmailGroupAsync:::Operation"]=
 operation_parameters_collection_type["updateEmailGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmailGroupAsync:::emailgroupId"]=""
 operation_parameters_collection_type["updateEmailGroupAsync:::EmailGroupUpdateDto"]=""
@@ -659,6 +764,11 @@ operation_parameters_collection_type["getEmailSignaturesCountAsync:::x-api-versi
 operation_parameters_collection_type["getEmailSignaturesODataAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmailSignaturesODataAsync:::api-version"]=""
 operation_parameters_collection_type["getEmailSignaturesODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmailSignatureAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmailSignatureAsync:::emailsignatureId"]=""
+operation_parameters_collection_type["patchEmailSignatureAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmailSignatureAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmailSignatureAsync:::Operation"]=
 operation_parameters_collection_type["updateEmailSignatureAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmailSignatureAsync:::emailsignatureId"]=""
 operation_parameters_collection_type["updateEmailSignatureAsync:::EmailSignatureUpdateDto"]=""
@@ -682,6 +792,11 @@ operation_parameters_collection_type["getEmailTemplatesCountAsync:::x-api-versio
 operation_parameters_collection_type["getEmailTemplatesODataAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmailTemplatesODataAsync:::api-version"]=""
 operation_parameters_collection_type["getEmailTemplatesODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmailTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmailTemplateAsync:::emailTemplateId"]=""
+operation_parameters_collection_type["patchEmailTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmailTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmailTemplateAsync:::Operation"]=
 operation_parameters_collection_type["updateEmailTemplateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmailTemplateAsync:::emailTemplateId"]=""
 operation_parameters_collection_type["updateEmailTemplateAsync:::EmailTemplateUpdateDto"]=""
@@ -722,6 +837,11 @@ operation_parameters_collection_type["getMarketingAreasAsync:::x-api-version"]="
 operation_parameters_collection_type["getMarketingAreasCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getMarketingAreasCountAsync:::api-version"]=""
 operation_parameters_collection_type["getMarketingAreasCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingAreaAsync:::tenantId"]=""
+operation_parameters_collection_type["patchMarketingAreaAsync:::marketingAreaId"]=""
+operation_parameters_collection_type["patchMarketingAreaAsync:::api-version"]=""
+operation_parameters_collection_type["patchMarketingAreaAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingAreaAsync:::Operation"]=
 operation_parameters_collection_type["updateMarketingAreaAsync:::tenantId"]=""
 operation_parameters_collection_type["updateMarketingAreaAsync:::marketingAreaId"]=""
 operation_parameters_collection_type["updateMarketingAreaAsync:::api-version"]=""
@@ -745,6 +865,11 @@ operation_parameters_collection_type["getMarketingCampaignODataAsync:::x-api-ver
 operation_parameters_collection_type["getMarketingCampaignsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getMarketingCampaignsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getMarketingCampaignsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingCampaignAsync:::tenantId"]=""
+operation_parameters_collection_type["patchMarketingCampaignAsync:::marketingcampaignId"]=""
+operation_parameters_collection_type["patchMarketingCampaignAsync:::api-version"]=""
+operation_parameters_collection_type["patchMarketingCampaignAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingCampaignAsync:::Operation"]=
 operation_parameters_collection_type["updateMarketingCampaignAsync:::tenantId"]=""
 operation_parameters_collection_type["updateMarketingCampaignAsync:::marketingcampaignId"]=""
 operation_parameters_collection_type["updateMarketingCampaignAsync:::MarketingCampaignUpdateDto"]=""
@@ -768,6 +893,11 @@ operation_parameters_collection_type["getMarketingLeadsCountAsync:::x-api-versio
 operation_parameters_collection_type["getMarketingLeadsODataAsync:::tenantId"]=""
 operation_parameters_collection_type["getMarketingLeadsODataAsync:::api-version"]=""
 operation_parameters_collection_type["getMarketingLeadsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingLeadAsync:::tenantId"]=""
+operation_parameters_collection_type["patchMarketingLeadAsync:::marketingLeadId"]=""
+operation_parameters_collection_type["patchMarketingLeadAsync:::api-version"]=""
+operation_parameters_collection_type["patchMarketingLeadAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingLeadAsync:::Operation"]=
 operation_parameters_collection_type["updateMarketingLeadAsync:::tenantId"]=""
 operation_parameters_collection_type["updateMarketingLeadAsync:::marketingLeadId"]=""
 operation_parameters_collection_type["updateMarketingLeadAsync:::MarketingLeadUpdateDto"]=""
@@ -791,6 +921,11 @@ operation_parameters_collection_type["getMarketingListODataAsync:::x-api-version
 operation_parameters_collection_type["getMarketingListsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getMarketingListsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getMarketingListsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingListAsync:::tenantId"]=""
+operation_parameters_collection_type["patchMarketingListAsync:::marketinglistId"]=""
+operation_parameters_collection_type["patchMarketingListAsync:::api-version"]=""
+operation_parameters_collection_type["patchMarketingListAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchMarketingListAsync:::Operation"]=
 operation_parameters_collection_type["updateMarketingListAsync:::tenantId"]=""
 operation_parameters_collection_type["updateMarketingListAsync:::marketinglistId"]=""
 operation_parameters_collection_type["updateMarketingListAsync:::MarketingListUpdateDto"]=""
@@ -814,6 +949,11 @@ operation_parameters_collection_type["getNewsletterODataAsync:::x-api-version"]=
 operation_parameters_collection_type["getNewslettersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getNewslettersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getNewslettersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchNewsletterAsync:::tenantId"]=""
+operation_parameters_collection_type["patchNewsletterAsync:::newsletterId"]=""
+operation_parameters_collection_type["patchNewsletterAsync:::api-version"]=""
+operation_parameters_collection_type["patchNewsletterAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchNewsletterAsync:::Operation"]=
 operation_parameters_collection_type["updateNewsletterAsync:::tenantId"]=""
 operation_parameters_collection_type["updateNewsletterAsync:::newsletterId"]=""
 operation_parameters_collection_type["updateNewsletterAsync:::NewsletterUpdateDto"]=""
@@ -837,6 +977,11 @@ operation_parameters_collection_type["getSocialMediaPostsCountAsync:::x-api-vers
 operation_parameters_collection_type["getSocialMediaPostsODataAsync:::tenantId"]=""
 operation_parameters_collection_type["getSocialMediaPostsODataAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialMediaPostsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialMediaPostAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSocialMediaPostAsync:::socialmediapostId"]=""
+operation_parameters_collection_type["patchSocialMediaPostAsync:::api-version"]=""
+operation_parameters_collection_type["patchSocialMediaPostAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialMediaPostAsync:::Operation"]=
 operation_parameters_collection_type["updateSocialMediaPostAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSocialMediaPostAsync:::socialmediapostId"]=""
 operation_parameters_collection_type["updateSocialMediaPostAsync:::SocialMediaPostUpdateDto"]=""
@@ -860,6 +1005,11 @@ operation_parameters_collection_type["getSocialPostBucketsCountAsync:::x-api-ver
 operation_parameters_collection_type["getSocialPostBucketsODataAsync:::tenantId"]=""
 operation_parameters_collection_type["getSocialPostBucketsODataAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostBucketsODataAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialPostBucketAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSocialPostBucketAsync:::socialpostbucketId"]=""
+operation_parameters_collection_type["patchSocialPostBucketAsync:::api-version"]=""
+operation_parameters_collection_type["patchSocialPostBucketAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSocialPostBucketAsync:::Operation"]=
 operation_parameters_collection_type["updateSocialPostBucketAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSocialPostBucketAsync:::socialpostbucketId"]=""
 operation_parameters_collection_type["updateSocialPostBucketAsync:::SocialPostBucketUpdateDto"]=""
@@ -1225,7 +1375,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1267,6 +1417,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmailGroupDetailsAsync${OFF};Get email group by ID
   ${CYAN}getEmailGroupsCountAsync${OFF};Get email groups count
   ${CYAN}getEmailGroupsODataAsync${OFF};Get email groups
+  ${CYAN}patchEmailGroupAsync${OFF};Patch an email group
   ${CYAN}updateEmailGroupAsync${OFF};Update an email group
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1278,6 +1429,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmailSignatureDetailsAsync${OFF};Get email signature by ID
   ${CYAN}getEmailSignaturesCountAsync${OFF};Get email signatures count
   ${CYAN}getEmailSignaturesODataAsync${OFF};Get email signatures
+  ${CYAN}patchEmailSignatureAsync${OFF};Patch an email signature
   ${CYAN}updateEmailSignatureAsync${OFF};Update an email signature
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1289,6 +1441,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmailTemplateDetailsAsync${OFF};Get email template by ID
   ${CYAN}getEmailTemplatesCountAsync${OFF};Get email templates count
   ${CYAN}getEmailTemplatesODataAsync${OFF};Get email templates
+  ${CYAN}patchEmailTemplateAsync${OFF};Patch an email template
   ${CYAN}updateEmailTemplateAsync${OFF};Update an email template
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1322,6 +1475,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getMarketingAreaByIdAsync${OFF};Get marketing area by ID
   ${CYAN}getMarketingAreasAsync${OFF};Get marketing areas
   ${CYAN}getMarketingAreasCountAsync${OFF};Count marketing areas
+  ${CYAN}patchMarketingAreaAsync${OFF};Patch a marketing area
   ${CYAN}updateMarketingAreaAsync${OFF};Update a marketing area
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1333,6 +1487,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getMarketingCampaignDetailsAsync${OFF};Get marketing campaign by ID
   ${CYAN}getMarketingCampaignODataAsync${OFF};Get marketing campaigns
   ${CYAN}getMarketingCampaignsCountAsync${OFF};Get marketing campaigns count
+  ${CYAN}patchMarketingCampaignAsync${OFF};Patch a marketing campaign
   ${CYAN}updateMarketingCampaignAsync${OFF};Update a marketing campaign
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1344,6 +1499,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getMarketingLeadDetailsAsync${OFF};Get marketing lead by ID
   ${CYAN}getMarketingLeadsCountAsync${OFF};Get marketing leads count
   ${CYAN}getMarketingLeadsODataAsync${OFF};Get marketing leads
+  ${CYAN}patchMarketingLeadAsync${OFF};Patch a marketing lead
   ${CYAN}updateMarketingLeadAsync${OFF};Update a marketing lead
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1355,6 +1511,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getMarketingListDetailsAsync${OFF};Get marketing list by ID
   ${CYAN}getMarketingListODataAsync${OFF};Get marketing lists
   ${CYAN}getMarketingListsCountAsync${OFF};Get marketing lists count
+  ${CYAN}patchMarketingListAsync${OFF};Patch a marketing list
   ${CYAN}updateMarketingListAsync${OFF};Update a marketing list
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1366,6 +1523,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getNewsletterDetailsAsync${OFF};Get newsletter by ID
   ${CYAN}getNewsletterODataAsync${OFF};Get newsletters
   ${CYAN}getNewslettersCountAsync${OFF};Get newsletters count
+  ${CYAN}patchNewsletterAsync${OFF};Patch a newsletter
   ${CYAN}updateNewsletterAsync${OFF};Update a newsletter
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1377,6 +1535,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSocialMediaPostDetailsAsync${OFF};Get social media post by ID
   ${CYAN}getSocialMediaPostsCountAsync${OFF};Get social media posts count
   ${CYAN}getSocialMediaPostsODataAsync${OFF};Get social media posts
+  ${CYAN}patchSocialMediaPostAsync${OFF};Patch a social media post
   ${CYAN}updateSocialMediaPostAsync${OFF};Update a social media post
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1388,6 +1547,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSocialPostBucketDetailsAsync${OFF};Get social post bucket by ID
   ${CYAN}getSocialPostBucketsCountAsync${OFF};Get social post buckets count
   ${CYAN}getSocialPostBucketsODataAsync${OFF};Get social post buckets
+  ${CYAN}patchSocialPostBucketAsync${OFF};Patch a social post bucket
   ${CYAN}updateSocialPostBucketAsync${OFF};Update a social post bucket
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1424,7 +1584,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1444,7 +1604,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}MarketingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}MarketingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1606,6 +1766,35 @@ print_getEmailGroupsODataAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchEmailGroupAsync operation
+#
+##############################################################################
+print_patchEmailGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmailGroupAsync - Patch an email group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an email group by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailgroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailgroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1790,6 +1979,35 @@ print_getEmailSignaturesODataAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchEmailSignatureAsync operation
+#
+##############################################################################
+print_patchEmailSignatureAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmailSignatureAsync - Patch an email signature${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an email signature by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailsignatureId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailsignatureId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateEmailSignatureAsync operation
 #
 ##############################################################################
@@ -1952,6 +2170,35 @@ print_getEmailTemplatesODataAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchEmailTemplateAsync operation
+#
+##############################################################################
+print_patchEmailTemplateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmailTemplateAsync - Patch an email template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an email template by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2426,6 +2673,35 @@ print_getMarketingAreasCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchMarketingAreaAsync operation
+#
+##############################################################################
+print_patchMarketingAreaAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchMarketingAreaAsync - Patch a marketing area${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a marketing area by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingAreaId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingAreaId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateMarketingAreaAsync operation
 #
 ##############################################################################
@@ -2599,6 +2875,35 @@ print_getMarketingCampaignsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchMarketingCampaignAsync operation
+#
+##############################################################################
+print_patchMarketingCampaignAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchMarketingCampaignAsync - Patch a marketing campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a marketing campaign by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingcampaignId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingcampaignId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateMarketingCampaignAsync operation
 #
 ##############################################################################
@@ -2731,6 +3036,35 @@ print_getMarketingLeadsODataAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchMarketingLeadAsync operation
+#
+##############################################################################
+print_patchMarketingLeadAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchMarketingLeadAsync - Patch a marketing lead${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a marketing lead by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketingLeadId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketingLeadId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2896,6 +3230,35 @@ print_getMarketingListsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchMarketingListAsync operation
+#
+##############################################################################
+print_patchMarketingListAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchMarketingListAsync - Patch a marketing list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a marketing list by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}marketinglistId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: marketinglistId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3074,6 +3437,35 @@ print_getNewslettersCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchNewsletterAsync operation
+#
+##############################################################################
+print_patchNewsletterAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchNewsletterAsync - Patch a newsletter${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a newsletter by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}newsletterId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: newsletterId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateNewsletterAsync operation
 #
 ##############################################################################
@@ -3247,6 +3639,35 @@ print_getSocialMediaPostsODataAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchSocialMediaPostAsync operation
+#
+##############################################################################
+print_patchSocialMediaPostAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSocialMediaPostAsync - Patch a social media post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a social media post by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialmediapostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialmediapostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateSocialMediaPostAsync operation
 #
 ##############################################################################
@@ -3409,6 +3830,35 @@ print_getSocialPostBucketsODataAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSocialPostBucketAsync operation
+#
+##############################################################################
+print_patchSocialPostBucketAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSocialPostBucketAsync - Patch a social post bucket${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a social post bucket by its ID using JSON Patch." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialpostbucketId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialpostbucketId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3730,6 +4180,82 @@ call_getEmailGroupsODataAsync() {
 
 ##############################################################################
 #
+# Call patchEmailGroupAsync operation
+#
+##############################################################################
+call_patchEmailGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailgroupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailGroups/{emailgroupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateEmailGroupAsync operation
 #
 ##############################################################################
@@ -4026,6 +4552,82 @@ call_getEmailSignaturesODataAsync() {
 
 ##############################################################################
 #
+# Call patchEmailSignatureAsync operation
+#
+##############################################################################
+call_patchEmailSignatureAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailsignatureId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailSignatures/{emailsignatureId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateEmailSignatureAsync operation
 #
 ##############################################################################
@@ -4317,6 +4919,82 @@ call_getEmailTemplatesODataAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchEmailTemplateAsync operation
+#
+##############################################################################
+call_patchEmailTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(emailTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/EmailTemplates/{emailTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5569,6 +6247,82 @@ call_getMarketingAreasCountAsync() {
 
 ##############################################################################
 #
+# Call patchMarketingAreaAsync operation
+#
+##############################################################################
+call_patchMarketingAreaAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingAreaId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingAreas/{marketingAreaId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateMarketingAreaAsync operation
 #
 ##############################################################################
@@ -5860,6 +6614,82 @@ call_getMarketingCampaignsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchMarketingCampaignAsync operation
+#
+##############################################################################
+call_patchMarketingCampaignAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingcampaignId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6161,6 +6991,82 @@ call_getMarketingLeadsODataAsync() {
 
 ##############################################################################
 #
+# Call patchMarketingLeadAsync operation
+#
+##############################################################################
+call_patchMarketingLeadAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketingLeadId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLeads/{marketingLeadId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateMarketingLeadAsync operation
 #
 ##############################################################################
@@ -6452,6 +7358,82 @@ call_getMarketingListsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchMarketingListAsync operation
+#
+##############################################################################
+call_patchMarketingListAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(marketinglistId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/MarketingLists/{marketinglistId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6753,6 +7735,82 @@ call_getNewslettersCountAsync() {
 
 ##############################################################################
 #
+# Call patchNewsletterAsync operation
+#
+##############################################################################
+call_patchNewsletterAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(newsletterId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/Newsletters/{newsletterId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateNewsletterAsync operation
 #
 ##############################################################################
@@ -7044,6 +8102,82 @@ call_getSocialMediaPostsODataAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSocialMediaPostAsync operation
+#
+##############################################################################
+call_patchSocialMediaPostAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialmediapostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialMediaPosts/{socialmediapostId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7345,6 +8479,82 @@ call_getSocialPostBucketsODataAsync() {
 
 ##############################################################################
 #
+# Call patchSocialPostBucketAsync operation
+#
+##############################################################################
+call_patchSocialPostBucketAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialpostbucketId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateSocialPostBucketAsync operation
 #
 ##############################################################################
@@ -7570,6 +8780,9 @@ case $key in
     getEmailGroupsODataAsync)
     operation="getEmailGroupsODataAsync"
     ;;
+    patchEmailGroupAsync)
+    operation="patchEmailGroupAsync"
+    ;;
     updateEmailGroupAsync)
     operation="updateEmailGroupAsync"
     ;;
@@ -7588,6 +8801,9 @@ case $key in
     getEmailSignaturesODataAsync)
     operation="getEmailSignaturesODataAsync"
     ;;
+    patchEmailSignatureAsync)
+    operation="patchEmailSignatureAsync"
+    ;;
     updateEmailSignatureAsync)
     operation="updateEmailSignatureAsync"
     ;;
@@ -7605,6 +8821,9 @@ case $key in
     ;;
     getEmailTemplatesODataAsync)
     operation="getEmailTemplatesODataAsync"
+    ;;
+    patchEmailTemplateAsync)
+    operation="patchEmailTemplateAsync"
     ;;
     updateEmailTemplateAsync)
     operation="updateEmailTemplateAsync"
@@ -7675,6 +8894,9 @@ case $key in
     getMarketingAreasCountAsync)
     operation="getMarketingAreasCountAsync"
     ;;
+    patchMarketingAreaAsync)
+    operation="patchMarketingAreaAsync"
+    ;;
     updateMarketingAreaAsync)
     operation="updateMarketingAreaAsync"
     ;;
@@ -7692,6 +8914,9 @@ case $key in
     ;;
     getMarketingCampaignsCountAsync)
     operation="getMarketingCampaignsCountAsync"
+    ;;
+    patchMarketingCampaignAsync)
+    operation="patchMarketingCampaignAsync"
     ;;
     updateMarketingCampaignAsync)
     operation="updateMarketingCampaignAsync"
@@ -7711,6 +8936,9 @@ case $key in
     getMarketingLeadsODataAsync)
     operation="getMarketingLeadsODataAsync"
     ;;
+    patchMarketingLeadAsync)
+    operation="patchMarketingLeadAsync"
+    ;;
     updateMarketingLeadAsync)
     operation="updateMarketingLeadAsync"
     ;;
@@ -7728,6 +8956,9 @@ case $key in
     ;;
     getMarketingListsCountAsync)
     operation="getMarketingListsCountAsync"
+    ;;
+    patchMarketingListAsync)
+    operation="patchMarketingListAsync"
     ;;
     updateMarketingListAsync)
     operation="updateMarketingListAsync"
@@ -7747,6 +8978,9 @@ case $key in
     getNewslettersCountAsync)
     operation="getNewslettersCountAsync"
     ;;
+    patchNewsletterAsync)
+    operation="patchNewsletterAsync"
+    ;;
     updateNewsletterAsync)
     operation="updateNewsletterAsync"
     ;;
@@ -7765,6 +8999,9 @@ case $key in
     getSocialMediaPostsODataAsync)
     operation="getSocialMediaPostsODataAsync"
     ;;
+    patchSocialMediaPostAsync)
+    operation="patchSocialMediaPostAsync"
+    ;;
     updateSocialMediaPostAsync)
     operation="updateSocialMediaPostAsync"
     ;;
@@ -7782,6 +9019,9 @@ case $key in
     ;;
     getSocialPostBucketsODataAsync)
     operation="getSocialPostBucketsODataAsync"
+    ;;
+    patchSocialPostBucketAsync)
+    operation="patchSocialPostBucketAsync"
     ;;
     updateSocialPostBucketAsync)
     operation="updateSocialPostBucketAsync"
@@ -7894,6 +9134,9 @@ case $operation in
     getEmailGroupsODataAsync)
     call_getEmailGroupsODataAsync
     ;;
+    patchEmailGroupAsync)
+    call_patchEmailGroupAsync
+    ;;
     updateEmailGroupAsync)
     call_updateEmailGroupAsync
     ;;
@@ -7912,6 +9155,9 @@ case $operation in
     getEmailSignaturesODataAsync)
     call_getEmailSignaturesODataAsync
     ;;
+    patchEmailSignatureAsync)
+    call_patchEmailSignatureAsync
+    ;;
     updateEmailSignatureAsync)
     call_updateEmailSignatureAsync
     ;;
@@ -7929,6 +9175,9 @@ case $operation in
     ;;
     getEmailTemplatesODataAsync)
     call_getEmailTemplatesODataAsync
+    ;;
+    patchEmailTemplateAsync)
+    call_patchEmailTemplateAsync
     ;;
     updateEmailTemplateAsync)
     call_updateEmailTemplateAsync
@@ -7999,6 +9248,9 @@ case $operation in
     getMarketingAreasCountAsync)
     call_getMarketingAreasCountAsync
     ;;
+    patchMarketingAreaAsync)
+    call_patchMarketingAreaAsync
+    ;;
     updateMarketingAreaAsync)
     call_updateMarketingAreaAsync
     ;;
@@ -8016,6 +9268,9 @@ case $operation in
     ;;
     getMarketingCampaignsCountAsync)
     call_getMarketingCampaignsCountAsync
+    ;;
+    patchMarketingCampaignAsync)
+    call_patchMarketingCampaignAsync
     ;;
     updateMarketingCampaignAsync)
     call_updateMarketingCampaignAsync
@@ -8035,6 +9290,9 @@ case $operation in
     getMarketingLeadsODataAsync)
     call_getMarketingLeadsODataAsync
     ;;
+    patchMarketingLeadAsync)
+    call_patchMarketingLeadAsync
+    ;;
     updateMarketingLeadAsync)
     call_updateMarketingLeadAsync
     ;;
@@ -8052,6 +9310,9 @@ case $operation in
     ;;
     getMarketingListsCountAsync)
     call_getMarketingListsCountAsync
+    ;;
+    patchMarketingListAsync)
+    call_patchMarketingListAsync
     ;;
     updateMarketingListAsync)
     call_updateMarketingListAsync
@@ -8071,6 +9332,9 @@ case $operation in
     getNewslettersCountAsync)
     call_getNewslettersCountAsync
     ;;
+    patchNewsletterAsync)
+    call_patchNewsletterAsync
+    ;;
     updateNewsletterAsync)
     call_updateNewsletterAsync
     ;;
@@ -8089,6 +9353,9 @@ case $operation in
     getSocialMediaPostsODataAsync)
     call_getSocialMediaPostsODataAsync
     ;;
+    patchSocialMediaPostAsync)
+    call_patchSocialMediaPostAsync
+    ;;
     updateSocialMediaPostAsync)
     call_updateSocialMediaPostAsync
     ;;
@@ -8106,6 +9373,9 @@ case $operation in
     ;;
     getSocialPostBucketsODataAsync)
     call_getSocialPostBucketsODataAsync
+    ;;
+    patchSocialPostBucketAsync)
+    call_patchSocialPostBucketAsync
     ;;
     updateSocialPostBucketAsync)
     call_updateSocialPostBucketAsync

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseHandoutByIdAsync**](CourseHandoutsApi.md#getCourseHandoutByIdAsync) | **GET** /api/v2/LearningService/CourseHandouts/{handoutId} | Get course handout by ID
 [**getCourseHandoutsAsync**](CourseHandoutsApi.md#getCourseHandoutsAsync) | **GET** /api/v2/LearningService/CourseHandouts | Get all course handouts
 [**getCourseHandoutsCountAsync**](CourseHandoutsApi.md#getCourseHandoutsCountAsync) | **GET** /api/v2/LearningService/CourseHandouts/Count | Get course handouts count
+[**patchCourseHandoutAsync**](CourseHandoutsApi.md#patchCourseHandoutAsync) | **PATCH** /api/v2/LearningService/CourseHandouts/{handoutId} | Patch a course handout
 [**updateCourseHandoutAsync**](CourseHandoutsApi.md#updateCourseHandoutAsync) | **PUT** /api/v2/LearningService/CourseHandouts/{handoutId} | Update a course handout
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseHandoutAsync
+
+Patch a course handout
+
+Partially updates an existing course handout.
+
+### Example
+
+```bash
+ patchCourseHandoutAsync  tenantId=value handoutId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **handoutId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

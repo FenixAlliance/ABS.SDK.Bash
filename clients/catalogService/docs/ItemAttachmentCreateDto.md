@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **validResponse** | **boolean** |  | [optional] [default to null]
 **parentFileUploadId** | **string** |  | [optional] [default to null]
 **filePath** | **string** |  | [optional] [default to null]
-**itemID** | **string** |  | [optional] [default to null]
+**itemId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -305,11 +305,13 @@ case $state in
             "deleteBlogPostCategoryAsync[Delete a blog post category]" \
             "getBlogPostCategoriesAsync[Get blog post categories]" \
             "getBlogPostCategoryByIdAsync[Get blog post category by ID]" \
+            "patchBlogPostCategoryAsync[Patch a blog post category]" \
             "updateBlogPostCategoryAsync[Update a blog post category]"             "countBlogPostTagsAsync[Count blog post tags]" \
             "createBlogPostTagAsync[Create a blog post tag]" \
             "deleteBlogPostTagAsync[Delete a blog post tag]" \
             "getBlogPostTagByIdAsync[Get blog post tag by ID]" \
             "getBlogPostTagsAsync[Get blog post tags]" \
+            "patchBlogPostTagAsync[Patch a blog post tag]" \
             "updateBlogPostTagAsync[Update a blog post tag]"             "createBlogPostAsync[Create a new blog post]" \
             "createCategoryForBlogPostAsync[Create a category for a blog post]" \
             "createCommentForBlogPostAsync[Create a comment for a blog post]" \
@@ -323,14 +325,19 @@ case $state in
             "getCommentsForBlogPostAsync[Get comments for a blog post]" \
             "getRepliesForCommentAsync[Get replies for a comment]" \
             "getTagsForBlogPostAsync[Get tags for a blog post]" \
+            "patchBlogPostAsync[Patch a blog post]" \
             "relateCategoryToBlogPostAsync[Relate an existing category to a blog post]" \
             "relateTagToBlogPostAsync[Relate an existing tag to a blog post]" \
             "replyToCommentAsync[Reply to a blog post comment]" \
             "unrelateCategoryFromBlogPostAsync[Remove a category from a blog post]" \
             "unrelateTagFromBlogPostAsync[Remove a tag from a blog post]" \
-            "updateBlogPostAsync[Update a blog post]"             "getBusinessDomainByIdAsync[Get business domain by ID]" \
+            "updateBlogPostAsync[Update a blog post]"             "createBusinessDomainAsync[Register a business domain]" \
+            "deleteBusinessDomainAsync[Delete a business domain]" \
+            "getBusinessDomainByIdAsync[Get business domain by ID]" \
             "getBusinessDomainsAsync[Get business domains]" \
-            "getBusinessDomainsCountAsync[Get business domains count]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "getBusinessDomainsCountAsync[Get business domains count]" \
+            "updateBusinessDomainAsync[Update a business domain]" \
+            "verifyBusinessDomainAsync[Verify a business domain]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -346,7 +353,18 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "countPortalsAsync[Count portals]" \
+            "versionGet[]"             "countLocalizationStringsAsync[Count localization strings]" \
+            "createLocalizationStringAsync[Create a localization string]" \
+            "deleteLocalizationStringAsync[Delete a localization string]" \
+            "getLocalizationStringByIdAsync[Get localization string by ID]" \
+            "getLocalizationStringsAsync[Get localization strings]" \
+            "updateLocalizationStringAsync[Update a localization string]"             "countMenuContextsAsync[Count menu contexts]" \
+            "createMenuContextAsync[Create a menu context]" \
+            "deleteMenuContextAsync[Delete a menu context]" \
+            "getMenuContextByIdAsync[Get menu context by ID]" \
+            "getMenuContextsAsync[Get menu contexts]" \
+            "updateMenuContextAsync[Update a menu context]"             "bindWebPortalDomainAsync[Bind a domain to a web portal]" \
+            "countPortalsAsync[Count portals]" \
             "createWebPortalAsync[Create a new web portal]" \
             "deleteWebPortalAsync[Delete a web portal]" \
             "getCurrentWebPortalAsync[Get the current portal]" \
@@ -354,26 +372,37 @@ case $state in
             "getPortalsAsync[Get portals]" \
             "getRootWebPortalAsync[Get the root portal]" \
             "getWebPortalByIdAsync[Get a web portal by its ID]" \
+            "getWebPortalDomainBindingsAsync[Get a web portal's bound domains]" \
             "getWebPortalOptionsAsync[Get a web portal's options by its ID]" \
             "getWebPortalSettingsAsync[Get a web portal's settings by its ID]" \
             "initializeCurrentWebPortalAsync[Initialize the current portal]" \
             "patchWebPortalAsync[Partially update a web portal]" \
             "searchWebPortalAsync[Search for a portal by its domain]" \
-            "updateWebPortalAsync[Update an existing web portal]"             "getLatestCurrencyRatesModelAsync[Update base web content themes]"             "countWebContentsAsync[Count web contents]" \
+            "unbindWebPortalDomainAsync[Unbind a domain from a web portal]" \
+            "updateWebPortalAsync[Update an existing web portal]" \
+            "updateWebPortalSettingsAsync[Update a web portal's settings]"             "getLatestCurrencyRatesModelAsync[Update base web content themes]"             "countWebComponentsAsync[Count web components]" \
+            "createWebComponentAsync[Create a web component]" \
+            "deleteWebComponentAsync[Delete a web component]" \
+            "getWebComponentByIdAsync[Get web component by ID]" \
+            "getWebComponentsAsync[Get web components]" \
+            "updateWebComponentAsync[Update a web component]"             "countWebContentsAsync[Count web contents]" \
             "createWebContentAsync[Create a web content]" \
             "deleteWebContentAsync[Delete a web content]" \
             "getWebContentByIdAsync[Get web content by ID]" \
             "getWebContentsAsync[Get web contents]" \
+            "patchWebContentAsync[Patch a web content]" \
             "updateWebContentAsync[Update a web content]"             "countWebPageCategoriesAsync[Count web page categories]" \
             "createWebPageCategoryAsync[Create a web page category]" \
             "deleteWebPageCategoryAsync[Delete a web page category]" \
             "getWebPageCategoriesAsync[Get web page categories]" \
             "getWebPageCategoryByIdAsync[Get web page category by ID]" \
+            "patchWebPageCategoryAsync[Patch a web page category]" \
             "updateWebPageCategoryAsync[Update a web page category]"             "countWebPageTagsAsync[Count web page tags]" \
             "createWebPageTagAsync[Create a web page tag]" \
             "deleteWebPageTagAsync[Delete a web page tag]" \
             "getWebPageTagByIdAsync[Get web page tag by ID]" \
             "getWebPageTagsAsync[Get web page tags]" \
+            "patchWebPageTagAsync[Patch a web page tag]" \
             "updateWebPageTagAsync[Update a web page tag]"             "countWebPagesAsync[Count web pages]" \
             "createWebPageAsync[Create a web page]" \
             "createWebPageCategoryRelationAsync[Create a web page category relation]" \
@@ -383,6 +412,7 @@ case $state in
             "getTagsByWebPageAsync[Get tags by web page]" \
             "getWebPageByIdAsync[Get web page by ID]" \
             "getWebPagesAsync[Get web pages]" \
+            "patchWebPageAsync[Patch a web page]" \
             "relateWebPageToCategoryAsync[Relate web page to category]" \
             "relateWebPageToTagAsync[Relate web page to tag]" \
             "unrelateWebPageCategoryAsync[Unrelate web page from category]" \
@@ -392,11 +422,13 @@ case $state in
             "deleteWebTemplateAsync[Delete a web template]" \
             "getWebTemplateByIdAsync[Get web template by ID]" \
             "getWebTemplatesAsync[Get web templates]" \
+            "patchWebTemplateAsync[Patch a web template]" \
             "updateWebTemplateAsync[Update a web template]"             "createWebsiteThemeAsync[Create a new website theme]" \
             "deleteWebsiteThemeAsync[Delete a website theme]" \
             "getWebsiteThemeByIdAsync[Get website theme by ID]" \
             "getWebsiteThemesAsync[Get all website themes]" \
             "getWebsiteThemesCountAsync[Get website themes count]" \
+            "patchWebsiteThemeAsync[Patch a website theme]" \
             "updateWebsiteThemeAsync[Update a website theme]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -488,6 +520,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchBlogPostCategoryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "blogPostCategoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateBlogPostCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -540,6 +582,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchBlogPostTagAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "blogPostTagId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -653,6 +705,14 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchBlogPostAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "blogPostId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       relateCategoryToBlogPostAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -706,6 +766,25 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createBusinessDomainAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBusinessDomainAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessDomainId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getBusinessDomainByIdAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -729,6 +808,26 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBusinessDomainAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessDomainId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      verifyBusinessDomainAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessDomainId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -852,6 +951,131 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      countLocalizationStringsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createLocalizationStringAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteLocalizationStringAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "localizationStringId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLocalizationStringByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "localizationStringId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLocalizationStringsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateLocalizationStringAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "localizationStringId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countMenuContextsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createMenuContextAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteMenuContextAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "menuContextId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMenuContextByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "menuContextId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMenuContextsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMenuContextAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "menuContextId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      bindWebPortalDomainAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portalId=:[PATH] "
+"businessDomainId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       countPortalsAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -922,6 +1146,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getWebPortalDomainBindingsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getWebPortalOptionsAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -967,7 +1201,28 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      unbindWebPortalDomainAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portalId=:[PATH] "
+"businessDomainId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateWebPortalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateWebPortalSettingsAsync)
         local -a _op_arguments
         _op_arguments=(
           "portalId=:[PATH] "
@@ -981,6 +1236,63 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countWebComponentsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createWebComponentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteWebComponentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webComponentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebComponentByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webComponentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getWebComponentsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateWebComponentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webComponentId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1027,6 +1339,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWebContentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webContentId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1089,6 +1411,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchWebPageCategoryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webPageCategoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateWebPageCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1141,6 +1473,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWebPageTagAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webPageTagId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1236,6 +1578,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWebPageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webPageId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1342,6 +1694,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchWebTemplateAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "webTemplateId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateWebTemplateAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1396,6 +1758,16 @@ case $state in
         _op_arguments=(
                     "tenantId=:[QUERY] "
 "oDataQueryOptions=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWebsiteThemeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

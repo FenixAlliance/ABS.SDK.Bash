@@ -60,6 +60,7 @@ docs/JobOfferCreateDto.md
 docs/JobOfferDto.md
 docs/JobOfferDtoEnvelope.md
 docs/JobOfferDtoListEnvelope.md
+docs/JobOfferUpdateDto.md
 docs/JobOffersApi.md
 docs/JobTitleCreateDto.md
 docs/JobTitleDto.md
@@ -80,6 +81,7 @@ docs/LeaveTypeDtoListEnvelope.md
 docs/LeaveTypeUpdateDto.md
 docs/LeaveTypesApi.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/PayrollCreateDto.md
 docs/PayrollDto.md
 docs/PayrollDtoEnvelope.md

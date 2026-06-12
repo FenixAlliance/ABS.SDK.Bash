@@ -4,6 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **currencyId** | **string** |  | [optional] [default to null]
+**priority** | **integer** |  | [optional] [default to null]
+**code** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
 **surchargePercent** | **float** |  | [optional] [default to null]
 **surchargeAmount** | **float** |  | [optional] [default to null]

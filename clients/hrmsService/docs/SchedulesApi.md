@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getScheduleByIdAsync**](SchedulesApi.md#getScheduleByIdAsync) | **GET** /api/v2/HrmsService/Schedules/{scheduleId} | Get schedule by ID
 [**getSchedulesAsync**](SchedulesApi.md#getSchedulesAsync) | **GET** /api/v2/HrmsService/Schedules | Get schedules
 [**getSchedulesCountAsync**](SchedulesApi.md#getSchedulesCountAsync) | **GET** /api/v2/HrmsService/Schedules/Count | Count schedules
+[**patchScheduleAsync**](SchedulesApi.md#patchScheduleAsync) | **PATCH** /api/v2/HrmsService/Schedules/{scheduleId} | Patch a schedule
 [**updateScheduleAsync**](SchedulesApi.md#updateScheduleAsync) | **PUT** /api/v2/HrmsService/Schedules/{scheduleId} | Update a schedule
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchScheduleAsync
+
+Patch a schedule
+
+Partially updates an existing schedule for the specified tenant.
+
+### Example
+
+```bash
+ patchScheduleAsync  tenantId=value scheduleId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **scheduleId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

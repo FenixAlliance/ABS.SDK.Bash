@@ -18,6 +18,8 @@ Method | HTTP request | Description
 [**getTruckTripsCountAsync**](TrucksApi.md#getTruckTripsCountAsync) | **GET** /api/v2/LogisticsService/Trucks/{truckId}/Trips/Count | Get truck trips count
 [**getTrucksAsync**](TrucksApi.md#getTrucksAsync) | **GET** /api/v2/LogisticsService/Trucks | Get all trucks
 [**getTrucksCountAsync**](TrucksApi.md#getTrucksCountAsync) | **GET** /api/v2/LogisticsService/Trucks/Count | Get trucks count
+[**patchTruckAsync**](TrucksApi.md#patchTruckAsync) | **PATCH** /api/v2/LogisticsService/Trucks/{truckId} | Patch a truck
+[**patchTruckTripAsync**](TrucksApi.md#patchTruckTripAsync) | **PATCH** /api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId} | Patch a truck trip
 [**updateTruckAsync**](TrucksApi.md#updateTruckAsync) | **PUT** /api/v2/LogisticsService/Trucks/{truckId} | Update a truck
 [**updateTruckTripAsync**](TrucksApi.md#updateTruckTripAsync) | **PUT** /api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId} | Update a truck trip
 
@@ -555,6 +557,85 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTruckAsync
+
+Patch a truck
+
+Partially updates an existing truck using JSON Patch.
+
+### Example
+
+```bash
+ patchTruckAsync  tenantId=value truckId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **truckId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchTruckTripAsync
+
+Patch a truck trip
+
+Partially updates an existing truck trip using JSON Patch.
+
+### Example
+
+```bash
+ patchTruckTripAsync  tenantId=value truckId=value tripId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **truckId** | **string** |  | [default to null]
+ **tripId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

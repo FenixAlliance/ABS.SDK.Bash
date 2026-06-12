@@ -319,6 +319,7 @@ case $state in
             "getUserOptionByKey[Retrieve a single user option by its key]" \
             "getUserOptions[Retrieve a list of user options]" \
             "getUserOptionsCount[Get the count of user options]" \
+            "patchUserOption[Patch a user option]" \
             "updateUserOption[Update a user option]" \
             "upsertUserOption[Create or update a user option by key]"             "countCurrentUserFollowersAsync[Count the social profiles that follow the current user]" \
             "countCurrentUserFollowsAsync[Count the social profiles that the current user follows]" \
@@ -522,6 +523,15 @@ case $state in
         _op_arguments=(
                     "portalId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchUserOption)
+        local -a _op_arguments
+        _op_arguments=(
+          "optionId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

@@ -302,16 +302,19 @@ case $state in
             "getEmailGroupDetailsAsync[Get email group by ID]" \
             "getEmailGroupsCountAsync[Get email groups count]" \
             "getEmailGroupsODataAsync[Get email groups]" \
+            "patchEmailGroupAsync[Patch an email group]" \
             "updateEmailGroupAsync[Update an email group]"             "createEmailSignatureAsync[Create an email signature]" \
             "deleteEmailSignatureAsync[Delete an email signature]" \
             "getEmailSignatureDetailsAsync[Get email signature by ID]" \
             "getEmailSignaturesCountAsync[Get email signatures count]" \
             "getEmailSignaturesODataAsync[Get email signatures]" \
+            "patchEmailSignatureAsync[Patch an email signature]" \
             "updateEmailSignatureAsync[Update an email signature]"             "createEmailTemplateAsync[Create an email template]" \
             "deleteEmailTemplateAsync[Delete an email template]" \
             "getEmailTemplateDetailsAsync[Get email template by ID]" \
             "getEmailTemplatesCountAsync[Get email templates count]" \
             "getEmailTemplatesODataAsync[Get email templates]" \
+            "patchEmailTemplateAsync[Patch an email template]" \
             "updateEmailTemplateAsync[Update an email template]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
@@ -333,36 +336,43 @@ case $state in
             "getMarketingAreaByIdAsync[Get marketing area by ID]" \
             "getMarketingAreasAsync[Get marketing areas]" \
             "getMarketingAreasCountAsync[Count marketing areas]" \
+            "patchMarketingAreaAsync[Patch a marketing area]" \
             "updateMarketingAreaAsync[Update a marketing area]"             "createMarketingCampaignAsync[Create a marketing campaign]" \
             "deleteMarketingCampaignAsync[Delete a marketing campaign]" \
             "getMarketingCampaignDetailsAsync[Get marketing campaign by ID]" \
             "getMarketingCampaignODataAsync[Get marketing campaigns]" \
             "getMarketingCampaignsCountAsync[Get marketing campaigns count]" \
+            "patchMarketingCampaignAsync[Patch a marketing campaign]" \
             "updateMarketingCampaignAsync[Update a marketing campaign]"             "createMarketingLeadAsync[Create a marketing lead]" \
             "deleteMarketingLeadAsync[Delete a marketing lead]" \
             "getMarketingLeadDetailsAsync[Get marketing lead by ID]" \
             "getMarketingLeadsCountAsync[Get marketing leads count]" \
             "getMarketingLeadsODataAsync[Get marketing leads]" \
+            "patchMarketingLeadAsync[Patch a marketing lead]" \
             "updateMarketingLeadAsync[Update a marketing lead]"             "createMarketingListAsync[Create a marketing list]" \
             "deleteMarketingListAsync[Delete a marketing list]" \
             "getMarketingListDetailsAsync[Get marketing list by ID]" \
             "getMarketingListODataAsync[Get marketing lists]" \
             "getMarketingListsCountAsync[Get marketing lists count]" \
+            "patchMarketingListAsync[Patch a marketing list]" \
             "updateMarketingListAsync[Update a marketing list]"             "createNewsletterAsync[Create a newsletter]" \
             "deleteNewsletterAsync[Delete a newsletter]" \
             "getNewsletterDetailsAsync[Get newsletter by ID]" \
             "getNewsletterODataAsync[Get newsletters]" \
             "getNewslettersCountAsync[Get newsletters count]" \
+            "patchNewsletterAsync[Patch a newsletter]" \
             "updateNewsletterAsync[Update a newsletter]"             "createSocialMediaPostAsync[Create a social media post]" \
             "deleteSocialMediaPostAsync[Delete a social media post]" \
             "getSocialMediaPostDetailsAsync[Get social media post by ID]" \
             "getSocialMediaPostsCountAsync[Get social media posts count]" \
             "getSocialMediaPostsODataAsync[Get social media posts]" \
+            "patchSocialMediaPostAsync[Patch a social media post]" \
             "updateSocialMediaPostAsync[Update a social media post]"             "createSocialPostBucketAsync[Create a social post bucket]" \
             "deleteSocialPostBucketAsync[Delete a social post bucket]" \
             "getSocialPostBucketDetailsAsync[Get social post bucket by ID]" \
             "getSocialPostBucketsCountAsync[Get social post buckets count]" \
             "getSocialPostBucketsODataAsync[Get social post buckets]" \
+            "patchSocialPostBucketAsync[Patch a social post bucket]" \
             "updateSocialPostBucketAsync[Update a social post bucket]"             "getTrackingPixelAsync[Get a tracking pixel]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -427,6 +437,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchEmailGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "emailgroupId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateEmailGroupAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -484,6 +504,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchEmailSignatureAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "emailsignatureId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateEmailSignatureAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -536,6 +566,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchEmailTemplateAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "emailTemplateId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -707,6 +747,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchMarketingAreaAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingAreaId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateMarketingAreaAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -759,6 +809,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchMarketingCampaignAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingcampaignId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -821,6 +881,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchMarketingLeadAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketingLeadId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateMarketingLeadAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -873,6 +943,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchMarketingListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "marketinglistId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -935,6 +1015,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchNewsletterAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "newsletterId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateNewsletterAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -992,6 +1082,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSocialMediaPostAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialmediapostId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSocialMediaPostAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1044,6 +1144,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSocialPostBucketAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialpostbucketId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

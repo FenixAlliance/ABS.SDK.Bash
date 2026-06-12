@@ -323,6 +323,8 @@ case $state in
             "getWalletLocationAsync[Get Wallet Location]" \
             "getWalletLocationsAsync[Get Wallet Locations]" \
             "getWalletLocationsCountAsync[Get Wallet Locations Count]" \
+            "patchLocationAsync[Patch a location]" \
+            "patchWalletLocationAsync[Patch a wallet location]" \
             "updateLocationAsync[Update Location]" \
             "updateWalletLocationAsync[Update Wallet Location]" \
 
@@ -521,6 +523,22 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchLocationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "locationId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWalletLocationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "walletId=:[PATH] "
+"locationId=:[PATH] "
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

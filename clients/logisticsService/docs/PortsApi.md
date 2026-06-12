@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getPortByIdAsync**](PortsApi.md#getPortByIdAsync) | **GET** /api/v2/LogisticsService/Ports/{portId} | Get port by ID
 [**getPortsAsync**](PortsApi.md#getPortsAsync) | **GET** /api/v2/LogisticsService/Ports | Get all ports
 [**getPortsCountAsync**](PortsApi.md#getPortsCountAsync) | **GET** /api/v2/LogisticsService/Ports/Count | Get ports count
+[**patchPortAsync**](PortsApi.md#patchPortAsync) | **PATCH** /api/v2/LogisticsService/Ports/{portId} | Patch a port
 [**updatePortAsync**](PortsApi.md#updatePortAsync) | **PUT** /api/v2/LogisticsService/Ports/{portId} | Update a port
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchPortAsync
+
+Patch a port
+
+Partially updates an existing port using JSON Patch.
+
+### Example
+
+```bash
+ patchPortAsync  tenantId=value portId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **portId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

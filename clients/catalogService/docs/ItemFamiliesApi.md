@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getItemFamiliesAsync**](ItemFamiliesApi.md#getItemFamiliesAsync) | **GET** /api/v2/CatalogService/ItemFamilies | Get all item families
 [**getItemFamiliesCountAsync**](ItemFamiliesApi.md#getItemFamiliesCountAsync) | **GET** /api/v2/CatalogService/ItemFamilies/Count | Get item families count
 [**getItemFamilyByIdAsync**](ItemFamiliesApi.md#getItemFamilyByIdAsync) | **GET** /api/v2/CatalogService/ItemFamilies/{itemFamilyId} | Get item family by ID
+[**patchItemFamilyAsync**](ItemFamiliesApi.md#patchItemFamilyAsync) | **PATCH** /api/v2/CatalogService/ItemFamilies/{itemFamilyId} | Patch an item family
 [**updateItemFamilyAsync**](ItemFamiliesApi.md#updateItemFamilyAsync) | **PUT** /api/v2/CatalogService/ItemFamilies/{itemFamilyId} | Update an item family
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchItemFamilyAsync
+
+Patch an item family
+
+Partially updates an existing item family for the specified tenant using a JSON Patch document.
+
+### Example
+
+```bash
+ patchItemFamilyAsync  tenantId=value itemFamilyId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **itemFamilyId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

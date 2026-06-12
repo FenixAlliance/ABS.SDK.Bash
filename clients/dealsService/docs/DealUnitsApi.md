@@ -18,6 +18,8 @@ Method | HTTP request | Description
 [**getDealUnitsCountAsync**](DealUnitsApi.md#getDealUnitsCountAsync) | **GET** /api/v2/DealsService/DealUnits/Count | Get deal units count
 [**getExtendedDealUnitAsync**](DealUnitsApi.md#getExtendedDealUnitAsync) | **GET** /api/v2/DealsService/DealUnits/{dealUnitId}/Extended | Get extended deal unit by ID
 [**getExtendedDealUnitsAsync**](DealUnitsApi.md#getExtendedDealUnitsAsync) | **GET** /api/v2/DealsService/DealUnits/Extended | Get extended deal units
+[**patchDealUnitAsync**](DealUnitsApi.md#patchDealUnitAsync) | **PATCH** /api/v2/DealsService/DealUnits/{dealUnitId} | Patch a deal unit
+[**patchDealUnitLineAsync**](DealUnitsApi.md#patchDealUnitLineAsync) | **PATCH** /api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId} | Patch a deal unit line
 [**updateDealUnitAsync**](DealUnitsApi.md#updateDealUnitAsync) | **PUT** /api/v2/DealsService/DealUnits/{dealUnitId} | Update a deal unit
 [**updateDealUnitPriceAsync**](DealUnitsApi.md#updateDealUnitPriceAsync) | **PUT** /api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId} | Update a deal unit line
 
@@ -524,6 +526,81 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchDealUnitAsync
+
+Patch a deal unit
+
+Partially updates an existing deal unit by its unique identifier using a JSON Patch document.
+
+### Example
+
+```bash
+ patchDealUnitAsync  tenantId=value dealUnitId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **dealUnitId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchDealUnitLineAsync
+
+Patch a deal unit line
+
+Partially updates an existing line within a specific deal unit using a JSON Patch document.
+
+### Example
+
+```bash
+ patchDealUnitLineAsync  tenantId=value dealUnitId=value dealUnitLineId=value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **dealUnitId** | **string** |  | [default to null]
+ **dealUnitLineId** | **string** |  | [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getMarketingAreaByIdAsync**](MarketingAreasApi.md#getMarketingAreaByIdAsync) | **GET** /api/v2/MarketingService/MarketingAreas/{marketingAreaId} | Get marketing area by ID
 [**getMarketingAreasAsync**](MarketingAreasApi.md#getMarketingAreasAsync) | **GET** /api/v2/MarketingService/MarketingAreas | Get marketing areas
 [**getMarketingAreasCountAsync**](MarketingAreasApi.md#getMarketingAreasCountAsync) | **GET** /api/v2/MarketingService/MarketingAreas/Count | Count marketing areas
+[**patchMarketingAreaAsync**](MarketingAreasApi.md#patchMarketingAreaAsync) | **PATCH** /api/v2/MarketingService/MarketingAreas/{marketingAreaId} | Patch a marketing area
 [**updateMarketingAreaAsync**](MarketingAreasApi.md#updateMarketingAreaAsync) | **PUT** /api/v2/MarketingService/MarketingAreas/{marketingAreaId} | Update a marketing area
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchMarketingAreaAsync
+
+Patch a marketing area
+
+Partially updates a marketing area by its ID using JSON Patch.
+
+### Example
+
+```bash
+ patchMarketingAreaAsync  tenantId=value marketingAreaId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **marketingAreaId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

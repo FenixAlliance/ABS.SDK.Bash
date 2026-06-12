@@ -60,6 +60,7 @@ docs/NewsletterDto.md
 docs/NewsletterDtoEnvelope.md
 docs/NewsletterUpdateDto.md
 docs/NewslettersApi.md
+docs/Operation.md
 docs/OrderDto.md
 docs/OrderDtoEnvelope.md
 docs/RefreshRequest.md

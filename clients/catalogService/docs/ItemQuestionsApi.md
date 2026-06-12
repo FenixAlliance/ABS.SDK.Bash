@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**deleteItemQuestionAsync**](ItemQuestionsApi.md#deleteItemQuestionAsync) | **DELETE** /api/v2/CatalogService/ItemQuestions/{itemQuestionId} | Delete an item question
 [**getItemQuestionByIdAsync**](ItemQuestionsApi.md#getItemQuestionByIdAsync) | **GET** /api/v2/CatalogService/ItemQuestions/{itemQuestionId} | Get item question by ID
 [**getItemQuestionsAsync**](ItemQuestionsApi.md#getItemQuestionsAsync) | **GET** /api/v2/CatalogService/ItemQuestions | Get all item questions
+[**patchItemQuestionAsync**](ItemQuestionsApi.md#patchItemQuestionAsync) | **PATCH** /api/v2/CatalogService/ItemQuestions/{itemQuestionId} | Patch an item question
 [**updateItemQuestionAsync**](ItemQuestionsApi.md#updateItemQuestionAsync) | **PUT** /api/v2/CatalogService/ItemQuestions/{itemQuestionId} | Update an item question
 
 
@@ -158,6 +159,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchItemQuestionAsync
+
+Patch an item question
+
+Partially updates an existing item question for the specified tenant using a JSON Patch document.
+
+### Example
+
+```bash
+ patchItemQuestionAsync  tenantId=value itemQuestionId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **itemQuestionId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

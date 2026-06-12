@@ -8,9 +8,9 @@ Name | Type | Description | Notes
 **domain** | **string** |  | [optional] [default to null]
 **disabled** | **boolean** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
-**websiteThemeID** | **string** |  | [optional] [default to null]
-**businessDomainID** | **string** |  | [optional] [default to null]
-**businessPortalApplicationID** | **string** |  | [optional] [default to null]
+**websiteThemeId** | **string** |  | [optional] [default to null]
+**businessDomainId** | **string** |  | [optional] [default to null]
+**businessPortalApplicationId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

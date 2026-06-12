@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getShiftByIdAsync**](ShiftsApi.md#getShiftByIdAsync) | **GET** /api/v2/HrmsService/Shifts/{shiftId} | Get shift by ID
 [**getShiftsAsync**](ShiftsApi.md#getShiftsAsync) | **GET** /api/v2/HrmsService/Shifts | Get shifts
 [**getShiftsCountAsync**](ShiftsApi.md#getShiftsCountAsync) | **GET** /api/v2/HrmsService/Shifts/Count | Count shifts
+[**patchShiftAsync**](ShiftsApi.md#patchShiftAsync) | **PATCH** /api/v2/HrmsService/Shifts/{shiftId} | Patch a shift
 [**updateShiftAsync**](ShiftsApi.md#updateShiftAsync) | **PUT** /api/v2/HrmsService/Shifts/{shiftId} | Update a shift
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchShiftAsync
+
+Patch a shift
+
+Partially updates an existing shift for the specified tenant.
+
+### Example
+
+```bash
+ patchShiftAsync  tenantId=value shiftId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **shiftId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

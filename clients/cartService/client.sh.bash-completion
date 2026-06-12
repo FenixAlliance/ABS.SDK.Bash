@@ -100,6 +100,7 @@ _()
     operations["isItemAlreadyInCartAsync"]=1
     operations["isItemInCompareTableAsync"]=1
     operations["isItemInWishLists"]=1
+    operations["patchCartAsync"]=1
     operations["removeCartLineAsync"]=1
     operations["removeItemFromCartAsync"]=1
     operations["removeItemFromCompareTableAsync"]=1
@@ -141,6 +142,7 @@ _()
     operations["getItemsInCartAsync"]=1
     operations["increaseItemCartRecord"]=1
     operations["isItemAlreadyInCart"]=1
+    operations["patchItemCartRecord"]=1
     operations["removeProductFromCartByParams"]=1
     operations["removeProductFromCartByRecordId"]=1
     operations["updateItemCartRecord"]=1
@@ -152,6 +154,7 @@ _()
     operations["getCartWishListItemsAsync"]=1
     operations["getWishListAsync"]=1
     operations["isProductInWishLists"]=1
+    operations["patchWishList"]=1
     operations["updateProductToWishList"]=1
     operations["wishListExists"]=1
     operations["wishListExistsHeadAsync"]=1
@@ -190,6 +193,7 @@ _()
     operation_parameters["isItemAlreadyInCartAsync"]="cartId= itemId= api-version= x-api-version: "
     operation_parameters["isItemInCompareTableAsync"]="cartId= itemId= api-version= x-api-version: "
     operation_parameters["isItemInWishLists"]="cartId= itemId= api-version= x-api-version: "
+    operation_parameters["patchCartAsync"]="cartId= api-version= x-api-version: "
     operation_parameters["removeCartLineAsync"]="cartId= lineId= api-version= x-api-version: "
     operation_parameters["removeItemFromCartAsync"]="cartId= itemId= api-version= x-api-version: "
     operation_parameters["removeItemFromCompareTableAsync"]="cartId= itemId= api-version= x-api-version: "
@@ -231,6 +235,7 @@ _()
     operation_parameters["getItemsInCartAsync"]="cartId= api-version= x-api-version: "
     operation_parameters["increaseItemCartRecord"]="recordId= quantity= api-version= x-api-version: "
     operation_parameters["isItemAlreadyInCart"]="itemID= cartID= api-version= x-api-version: "
+    operation_parameters["patchItemCartRecord"]="recordId= api-version= x-api-version: "
     operation_parameters["removeProductFromCartByParams"]="cartId= productId= api-version= x-api-version: "
     operation_parameters["removeProductFromCartByRecordId"]="recordId= api-version= x-api-version: "
     operation_parameters["updateItemCartRecord"]="recordId= api-version= x-api-version: "
@@ -242,6 +247,7 @@ _()
     operation_parameters["getCartWishListItemsAsync"]="wishListId= api-version= x-api-version: "
     operation_parameters["getWishListAsync"]="cartId= api-version= x-api-version: "
     operation_parameters["isProductInWishLists"]="cartId= productId= api-version= x-api-version: "
+    operation_parameters["patchWishList"]="wishListId= api-version= x-api-version: "
     operation_parameters["updateProductToWishList"]="wishListId= api-version= x-api-version: "
     operation_parameters["wishListExists"]="wishListId= api-version= x-api-version: "
     operation_parameters["wishListExistsHeadAsync"]="wishListId= api-version= x-api-version: "

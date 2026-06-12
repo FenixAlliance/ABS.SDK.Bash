@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**itemID** | **string** |  | [default to null]
+**itemId** | **string** |  | [default to null]
 **isItemMozaicBG** | **boolean** |  | [optional] [default to null]
 **mD5Hash** | **string** |  | [default to null]
 **metadata** | **string** |  | [optional] [default to null]
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **contentType** | **string** |  | [default to null]
 **fileLength** | **integer** |  | [optional] [default to null]
 **validResponse** | **boolean** |  | [optional] [default to null]
-**parentFileUploadID** | **string** |  | [optional] [default to null]
+**parentFileUploadId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

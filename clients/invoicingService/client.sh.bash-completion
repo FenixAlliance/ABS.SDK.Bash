@@ -123,6 +123,11 @@ _()
     operations["getInvoiceReferencesCount"]=1
     operations["getInvoices"]=1
     operations["getInvoicesCount"]=1
+    operations["patchInvoice"]=1
+    operations["patchInvoiceAdjustment"]=1
+    operations["patchInvoiceLine"]=1
+    operations["patchInvoiceLineTax"]=1
+    operations["patchInvoiceReference"]=1
     operations["previewInvoiceEmail"]=1
     operations["sendInvoiceEmail"]=1
     operations["updateInvoice"]=1
@@ -188,6 +193,11 @@ _()
     operation_parameters["getInvoiceReferencesCount"]="invoiceId= tenantId= "
     operation_parameters["getInvoices"]="tenantId= "
     operation_parameters["getInvoicesCount"]="tenantId= "
+    operation_parameters["patchInvoice"]="invoiceId= tenantId= "
+    operation_parameters["patchInvoiceAdjustment"]="invoiceId= invoiceAdjustmentId= tenantId= "
+    operation_parameters["patchInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "
+    operation_parameters["patchInvoiceLineTax"]="invoiceId= invoiceLineId= invoiceLineTaxId= tenantId= "
+    operation_parameters["patchInvoiceReference"]="invoiceId= invoiceReferenceId= tenantId= "
     operation_parameters["previewInvoiceEmail"]="invoiceId= tenantId= "
     operation_parameters["sendInvoiceEmail"]="invoiceId= tenantId= "
     operation_parameters["updateInvoice"]="invoiceId= tenantId= "

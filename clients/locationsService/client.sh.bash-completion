@@ -97,6 +97,8 @@ _()
     operations["getWalletLocationAsync"]=1
     operations["getWalletLocationsAsync"]=1
     operations["getWalletLocationsCountAsync"]=1
+    operations["patchLocationAsync"]=1
+    operations["patchWalletLocationAsync"]=1
     operations["updateLocationAsync"]=1
     operations["updateWalletLocationAsync"]=1
 
@@ -131,6 +133,8 @@ _()
     operation_parameters["getWalletLocationAsync"]="walletId= locationId= "
     operation_parameters["getWalletLocationsAsync"]="walletId= "
     operation_parameters["getWalletLocationsCountAsync"]="walletId= "
+    operation_parameters["patchLocationAsync"]="locationId= tenantId= "
+    operation_parameters["patchWalletLocationAsync"]="walletId= locationId= "
     operation_parameters["updateLocationAsync"]="locationId= tenantId= "
     operation_parameters["updateWalletLocationAsync"]="walletId= locationId= "
 

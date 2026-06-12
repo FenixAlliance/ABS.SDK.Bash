@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteWebContentAsync**](WebContentsApi.md#deleteWebContentAsync) | **DELETE** /api/v2/ContentService/WebContents/{webContentId} | Delete a web content
 [**getWebContentByIdAsync**](WebContentsApi.md#getWebContentByIdAsync) | **GET** /api/v2/ContentService/WebContents/{webContentId} | Get web content by ID
 [**getWebContentsAsync**](WebContentsApi.md#getWebContentsAsync) | **GET** /api/v2/ContentService/WebContents | Get web contents
+[**patchWebContentAsync**](WebContentsApi.md#patchWebContentAsync) | **PATCH** /api/v2/ContentService/WebContents/{webContentId} | Patch a web content
 [**updateWebContentAsync**](WebContentsApi.md#updateWebContentAsync) | **PUT** /api/v2/ContentService/WebContents/{webContentId} | Update a web content
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchWebContentAsync
+
+Patch a web content
+
+Partially updates an existing web content for the specified tenant.
+
+### Example
+
+```bash
+ patchWebContentAsync  tenantId=value webContentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **webContentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

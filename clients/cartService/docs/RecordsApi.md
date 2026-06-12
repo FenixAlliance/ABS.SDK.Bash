@@ -12,6 +12,7 @@ Method | HTTP request | Description
 [**getItemsInCartAsync**](RecordsApi.md#getItemsInCartAsync) | **GET** /api/v2/CartService/Records/{cartId} | Get all items in a cart
 [**increaseItemCartRecord**](RecordsApi.md#increaseItemCartRecord) | **PUT** /api/v2/CartService/Records/{recordId}/Increase | Increase cart record quantity
 [**isItemAlreadyInCart**](RecordsApi.md#isItemAlreadyInCart) | **GET** /api/v2/CartService/Records/IsInCart | Check if an item is in a cart
+[**patchItemCartRecord**](RecordsApi.md#patchItemCartRecord) | **PATCH** /api/v2/CartService/Records/{recordId} | Patch a cart record
 [**removeProductFromCartByParams**](RecordsApi.md#removeProductFromCartByParams) | **DELETE** /api/v2/CartService/Records | Remove a product from a cart
 [**removeProductFromCartByRecordId**](RecordsApi.md#removeProductFromCartByRecordId) | **DELETE** /api/v2/CartService/Records/{recordId} | Remove a product from a cart by record ID
 [**updateItemCartRecord**](RecordsApi.md#updateItemCartRecord) | **PUT** /api/v2/CartService/Records/{recordId} | Update a cart record
@@ -314,6 +315,44 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchItemCartRecord
+
+Patch a cart record
+
+Partially updates the specified item cart record using a JSON Patch document.
+
+### Example
+
+```bash
+ patchItemCartRecord recordId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **recordId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

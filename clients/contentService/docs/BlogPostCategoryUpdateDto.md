@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **canonicalUrl** | **string** |  | [optional] [default to null]
 **imageURL** | **string** |  | [optional] [default to null]
 **image** | **string** |  | [optional] [default to null]
-**webPortalID** | **string** |  | [optional] [default to null]
+**webPortalId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

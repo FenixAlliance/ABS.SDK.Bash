@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseCohortByIdAsync**](CourseCohortsApi.md#getCourseCohortByIdAsync) | **GET** /api/v2/LearningService/CourseCohorts/{cohortId} | Get course cohort by ID
 [**getCourseCohortsAsync**](CourseCohortsApi.md#getCourseCohortsAsync) | **GET** /api/v2/LearningService/CourseCohorts | Get all course cohorts
 [**getCourseCohortsCountAsync**](CourseCohortsApi.md#getCourseCohortsCountAsync) | **GET** /api/v2/LearningService/CourseCohorts/Count | Get course cohorts count
+[**patchCourseCohortAsync**](CourseCohortsApi.md#patchCourseCohortAsync) | **PATCH** /api/v2/LearningService/CourseCohorts/{cohortId} | Patch a course cohort
 [**updateCourseCohortAsync**](CourseCohortsApi.md#updateCourseCohortAsync) | **PUT** /api/v2/LearningService/CourseCohorts/{cohortId} | Update a course cohort
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseCohortAsync
+
+Patch a course cohort
+
+Partially updates a course cohort for the specified tenant.
+
+### Example
+
+```bash
+ patchCourseCohortAsync  tenantId=value cohortId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **cohortId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -213,6 +213,10 @@ operation_parameters_minimum_occurrences["isItemInWishLists:::cartId"]=1
 operation_parameters_minimum_occurrences["isItemInWishLists:::itemId"]=1
 operation_parameters_minimum_occurrences["isItemInWishLists:::api-version"]=0
 operation_parameters_minimum_occurrences["isItemInWishLists:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCartAsync:::cartId"]=1
+operation_parameters_minimum_occurrences["patchCartAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCartAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCartAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["removeCartLineAsync:::cartId"]=1
 operation_parameters_minimum_occurrences["removeCartLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["removeCartLineAsync:::api-version"]=0
@@ -321,6 +325,10 @@ operation_parameters_minimum_occurrences["isItemAlreadyInCart:::itemID"]=1
 operation_parameters_minimum_occurrences["isItemAlreadyInCart:::cartID"]=1
 operation_parameters_minimum_occurrences["isItemAlreadyInCart:::api-version"]=0
 operation_parameters_minimum_occurrences["isItemAlreadyInCart:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemCartRecord:::recordId"]=1
+operation_parameters_minimum_occurrences["patchItemCartRecord:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemCartRecord:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemCartRecord:::Operation"]=0
 operation_parameters_minimum_occurrences["removeProductFromCartByParams:::cartId"]=0
 operation_parameters_minimum_occurrences["removeProductFromCartByParams:::productId"]=0
 operation_parameters_minimum_occurrences["removeProductFromCartByParams:::api-version"]=0
@@ -357,6 +365,10 @@ operation_parameters_minimum_occurrences["isProductInWishLists:::cartId"]=0
 operation_parameters_minimum_occurrences["isProductInWishLists:::productId"]=0
 operation_parameters_minimum_occurrences["isProductInWishLists:::api-version"]=0
 operation_parameters_minimum_occurrences["isProductInWishLists:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWishList:::wishListId"]=1
+operation_parameters_minimum_occurrences["patchWishList:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWishList:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWishList:::Operation"]=0
 operation_parameters_minimum_occurrences["updateProductToWishList:::wishListId"]=1
 operation_parameters_minimum_occurrences["updateProductToWishList:::api-version"]=0
 operation_parameters_minimum_occurrences["updateProductToWishList:::x-api-version"]=0
@@ -492,6 +504,10 @@ operation_parameters_maximum_occurrences["isItemInWishLists:::cartId"]=0
 operation_parameters_maximum_occurrences["isItemInWishLists:::itemId"]=0
 operation_parameters_maximum_occurrences["isItemInWishLists:::api-version"]=0
 operation_parameters_maximum_occurrences["isItemInWishLists:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCartAsync:::cartId"]=0
+operation_parameters_maximum_occurrences["patchCartAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCartAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCartAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["removeCartLineAsync:::cartId"]=0
 operation_parameters_maximum_occurrences["removeCartLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["removeCartLineAsync:::api-version"]=0
@@ -600,6 +616,10 @@ operation_parameters_maximum_occurrences["isItemAlreadyInCart:::itemID"]=0
 operation_parameters_maximum_occurrences["isItemAlreadyInCart:::cartID"]=0
 operation_parameters_maximum_occurrences["isItemAlreadyInCart:::api-version"]=0
 operation_parameters_maximum_occurrences["isItemAlreadyInCart:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemCartRecord:::recordId"]=0
+operation_parameters_maximum_occurrences["patchItemCartRecord:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemCartRecord:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemCartRecord:::Operation"]=0
 operation_parameters_maximum_occurrences["removeProductFromCartByParams:::cartId"]=0
 operation_parameters_maximum_occurrences["removeProductFromCartByParams:::productId"]=0
 operation_parameters_maximum_occurrences["removeProductFromCartByParams:::api-version"]=0
@@ -636,6 +656,10 @@ operation_parameters_maximum_occurrences["isProductInWishLists:::cartId"]=0
 operation_parameters_maximum_occurrences["isProductInWishLists:::productId"]=0
 operation_parameters_maximum_occurrences["isProductInWishLists:::api-version"]=0
 operation_parameters_maximum_occurrences["isProductInWishLists:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWishList:::wishListId"]=0
+operation_parameters_maximum_occurrences["patchWishList:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWishList:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWishList:::Operation"]=0
 operation_parameters_maximum_occurrences["updateProductToWishList:::wishListId"]=0
 operation_parameters_maximum_occurrences["updateProductToWishList:::api-version"]=0
 operation_parameters_maximum_occurrences["updateProductToWishList:::x-api-version"]=0
@@ -768,6 +792,10 @@ operation_parameters_collection_type["isItemInWishLists:::cartId"]=""
 operation_parameters_collection_type["isItemInWishLists:::itemId"]=""
 operation_parameters_collection_type["isItemInWishLists:::api-version"]=""
 operation_parameters_collection_type["isItemInWishLists:::x-api-version"]=""
+operation_parameters_collection_type["patchCartAsync:::cartId"]=""
+operation_parameters_collection_type["patchCartAsync:::api-version"]=""
+operation_parameters_collection_type["patchCartAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCartAsync:::Operation"]=
 operation_parameters_collection_type["removeCartLineAsync:::cartId"]=""
 operation_parameters_collection_type["removeCartLineAsync:::lineId"]=""
 operation_parameters_collection_type["removeCartLineAsync:::api-version"]=""
@@ -876,6 +904,10 @@ operation_parameters_collection_type["isItemAlreadyInCart:::itemID"]=""
 operation_parameters_collection_type["isItemAlreadyInCart:::cartID"]=""
 operation_parameters_collection_type["isItemAlreadyInCart:::api-version"]=""
 operation_parameters_collection_type["isItemAlreadyInCart:::x-api-version"]=""
+operation_parameters_collection_type["patchItemCartRecord:::recordId"]=""
+operation_parameters_collection_type["patchItemCartRecord:::api-version"]=""
+operation_parameters_collection_type["patchItemCartRecord:::x-api-version"]=""
+operation_parameters_collection_type["patchItemCartRecord:::Operation"]=
 operation_parameters_collection_type["removeProductFromCartByParams:::cartId"]=""
 operation_parameters_collection_type["removeProductFromCartByParams:::productId"]=""
 operation_parameters_collection_type["removeProductFromCartByParams:::api-version"]=""
@@ -912,6 +944,10 @@ operation_parameters_collection_type["isProductInWishLists:::cartId"]=""
 operation_parameters_collection_type["isProductInWishLists:::productId"]=""
 operation_parameters_collection_type["isProductInWishLists:::api-version"]=""
 operation_parameters_collection_type["isProductInWishLists:::x-api-version"]=""
+operation_parameters_collection_type["patchWishList:::wishListId"]=""
+operation_parameters_collection_type["patchWishList:::api-version"]=""
+operation_parameters_collection_type["patchWishList:::x-api-version"]=""
+operation_parameters_collection_type["patchWishList:::Operation"]=
 operation_parameters_collection_type["updateProductToWishList:::wishListId"]=""
 operation_parameters_collection_type["updateProductToWishList:::api-version"]=""
 operation_parameters_collection_type["updateProductToWishList:::x-api-version"]=""
@@ -1279,7 +1315,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}CartService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}CartService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1341,6 +1377,7 @@ read -r -d '' ops <<EOF
   ${CYAN}isItemAlreadyInCartAsync${OFF};Assesses if an Item is already in a cart
   ${CYAN}isItemInCompareTableAsync${OFF};Assesses if an Item is already in the compare table
   ${CYAN}isItemInWishLists${OFF};Assesses if an Item is already in any of the cart's wishlists
+  ${CYAN}patchCartAsync${OFF};Patch a cart
   ${CYAN}removeCartLineAsync${OFF};Remove a cart line
   ${CYAN}removeItemFromCartAsync${OFF};Remove an Item from a cart
   ${CYAN}removeItemFromCompareTableAsync${OFF};Remove an item from the compare table
@@ -1402,6 +1439,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getItemsInCartAsync${OFF};Get all items in a cart
   ${CYAN}increaseItemCartRecord${OFF};Increase cart record quantity
   ${CYAN}isItemAlreadyInCart${OFF};Check if an item is in a cart
+  ${CYAN}patchItemCartRecord${OFF};Patch a cart record
   ${CYAN}removeProductFromCartByParams${OFF};Remove a product from a cart
   ${CYAN}removeProductFromCartByRecordId${OFF};Remove a product from a cart by record ID
   ${CYAN}updateItemCartRecord${OFF};Update a cart record
@@ -1418,6 +1456,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCartWishListItemsAsync${OFF};Get wish list item records
   ${CYAN}getWishListAsync${OFF};Get wish lists for a cart
   ${CYAN}isProductInWishLists${OFF};Check if a product is in any wish list
+  ${CYAN}patchWishList${OFF};Patch a wish list
   ${CYAN}updateProductToWishList${OFF};Update a wish list
   ${CYAN}wishListExists${OFF};Check if a wish list exists
   ${CYAN}wishListExistsHeadAsync${OFF};Check if a wish list exists (HEAD)
@@ -1450,7 +1489,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}CartService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}CartService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1470,7 +1509,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}CartService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}CartService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2277,6 +2316,33 @@ print_isItemInWishLists_help() {
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=404
     echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCartAsync operation
+#
+##############################################################################
+print_patchCartAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCartAsync - Patch a cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a cart using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}cartId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cartId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3206,6 +3272,33 @@ print_isItemAlreadyInCart_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemCartRecord operation
+#
+##############################################################################
+print_patchItemCartRecord_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemCartRecord - Patch a cart record${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified item cart record using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}recordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for removeProductFromCartByParams operation
 #
 ##############################################################################
@@ -3452,6 +3545,29 @@ print_isProductInWishLists_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWishList operation
+#
+##############################################################################
+print_patchWishList_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWishList - Patch a wish list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified wish list using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}wishListId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wishListId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -4799,6 +4915,82 @@ call_isItemInWishLists() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCartAsync operation
+#
+##############################################################################
+call_patchCartAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cartId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CartService/Carts/{cartId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6939,6 +7131,82 @@ call_isItemAlreadyInCart() {
 
 ##############################################################################
 #
+# Call patchItemCartRecord operation
+#
+##############################################################################
+call_patchItemCartRecord() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(recordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CartService/Records/{recordId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call removeProductFromCartByParams operation
 #
 ##############################################################################
@@ -7455,6 +7723,82 @@ call_isProductInWishLists() {
 
 ##############################################################################
 #
+# Call patchWishList operation
+#
+##############################################################################
+call_patchWishList() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(wishListId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CartService/WishLists/{wishListId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateProductToWishList operation
 #
 ##############################################################################
@@ -7791,6 +8135,9 @@ case $key in
     isItemInWishLists)
     operation="isItemInWishLists"
     ;;
+    patchCartAsync)
+    operation="patchCartAsync"
+    ;;
     removeCartLineAsync)
     operation="removeCartLineAsync"
     ;;
@@ -7914,6 +8261,9 @@ case $key in
     isItemAlreadyInCart)
     operation="isItemAlreadyInCart"
     ;;
+    patchItemCartRecord)
+    operation="patchItemCartRecord"
+    ;;
     removeProductFromCartByParams)
     operation="removeProductFromCartByParams"
     ;;
@@ -7946,6 +8296,9 @@ case $key in
     ;;
     isProductInWishLists)
     operation="isProductInWishLists"
+    ;;
+    patchWishList)
+    operation="patchWishList"
     ;;
     updateProductToWishList)
     operation="updateProductToWishList"
@@ -8136,6 +8489,9 @@ case $operation in
     isItemInWishLists)
     call_isItemInWishLists
     ;;
+    patchCartAsync)
+    call_patchCartAsync
+    ;;
     removeCartLineAsync)
     call_removeCartLineAsync
     ;;
@@ -8259,6 +8615,9 @@ case $operation in
     isItemAlreadyInCart)
     call_isItemAlreadyInCart
     ;;
+    patchItemCartRecord)
+    call_patchItemCartRecord
+    ;;
     removeProductFromCartByParams)
     call_removeProductFromCartByParams
     ;;
@@ -8291,6 +8650,9 @@ case $operation in
     ;;
     isProductInWishLists)
     call_isProductInWishLists
+    ;;
+    patchWishList)
+    call_patchWishList
     ;;
     updateProductToWishList)
     call_updateProductToWishList

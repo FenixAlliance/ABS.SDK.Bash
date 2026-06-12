@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseUnitByIdAsync**](CourseUnitsApi.md#getCourseUnitByIdAsync) | **GET** /api/v2/LearningService/CourseUnits/{unitId} | Get course unit by ID
 [**getCourseUnitsAsync**](CourseUnitsApi.md#getCourseUnitsAsync) | **GET** /api/v2/LearningService/CourseUnits | Get all course units
 [**getCourseUnitsCountAsync**](CourseUnitsApi.md#getCourseUnitsCountAsync) | **GET** /api/v2/LearningService/CourseUnits/Count | Get course units count
+[**patchCourseUnitAsync**](CourseUnitsApi.md#patchCourseUnitAsync) | **PATCH** /api/v2/LearningService/CourseUnits/{unitId} | Patch a course unit
 [**updateCourseUnitAsync**](CourseUnitsApi.md#updateCourseUnitAsync) | **PUT** /api/v2/LearningService/CourseUnits/{unitId} | Update a course unit
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseUnitAsync
+
+Patch a course unit
+
+Partially updates a course unit for the specified tenant.
+
+### Example
+
+```bash
+ patchCourseUnitAsync  tenantId=value unitId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **unitId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

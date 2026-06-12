@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getEmployeeAppraisalSessionByIdAsync**](EmployeeAppraisalSessionsApi.md#getEmployeeAppraisalSessionByIdAsync) | **GET** /api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId} | Get employee appraisal session by ID
 [**getEmployeeAppraisalSessionsAsync**](EmployeeAppraisalSessionsApi.md#getEmployeeAppraisalSessionsAsync) | **GET** /api/v2/HrmsService/EmployeeAppraisalSessions | Get employee appraisal sessions
 [**getEmployeeAppraisalSessionsCountAsync**](EmployeeAppraisalSessionsApi.md#getEmployeeAppraisalSessionsCountAsync) | **GET** /api/v2/HrmsService/EmployeeAppraisalSessions/Count | Count employee appraisal sessions
+[**patchEmployeeAppraisalSessionAsync**](EmployeeAppraisalSessionsApi.md#patchEmployeeAppraisalSessionAsync) | **PATCH** /api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId} | Patch an employee appraisal session
 [**updateEmployeeAppraisalSessionAsync**](EmployeeAppraisalSessionsApi.md#updateEmployeeAppraisalSessionAsync) | **PUT** /api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId} | Update an employee appraisal session
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchEmployeeAppraisalSessionAsync
+
+Patch an employee appraisal session
+
+Partially updates an existing employee appraisal session for the specified tenant.
+
+### Example
+
+```bash
+ patchEmployeeAppraisalSessionAsync  tenantId=value sessionId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **sessionId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

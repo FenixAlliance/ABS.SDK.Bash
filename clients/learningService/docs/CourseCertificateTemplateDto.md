@@ -5,14 +5,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**courseID** | **string** |  | [optional] [default to null]
-**businessID** | **string** |  | [optional] [default to null]
-**webPortalID** | **string** |  | [optional] [default to null]
-**websiteThemeID** | **string** |  | [optional] [default to null]
-**businessProfileRecordID** | **string** |  | [optional] [default to null]
-**socialProfileID** | **string** |  | [optional] [default to null]
-**parentWebContentID** | **string** |  | [optional] [default to null]
-**parentWebContentVersionID** | **string** |  | [optional] [default to null]
+**courseId** | **string** |  | [optional] [default to null]
+**tenantId** | **string** |  | [optional] [default to null]
+**webPortalId** | **string** |  | [optional] [default to null]
+**websiteThemeId** | **string** |  | [optional] [default to null]
+**enrollmentId** | **string** |  | [optional] [default to null]
+**socialProfileId** | **string** |  | [optional] [default to null]
+**parentWebContentId** | **string** |  | [optional] [default to null]
+**parentWebContentVersionId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

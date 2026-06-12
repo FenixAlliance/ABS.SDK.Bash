@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getEmailGroupDetailsAsync**](EmailGroupsApi.md#getEmailGroupDetailsAsync) | **GET** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Get email group by ID
 [**getEmailGroupsCountAsync**](EmailGroupsApi.md#getEmailGroupsCountAsync) | **GET** /api/v2/MarketingService/EmailGroups/Count | Get email groups count
 [**getEmailGroupsODataAsync**](EmailGroupsApi.md#getEmailGroupsODataAsync) | **GET** /api/v2/MarketingService/EmailGroups | Get email groups
+[**patchEmailGroupAsync**](EmailGroupsApi.md#patchEmailGroupAsync) | **PATCH** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Patch an email group
 [**updateEmailGroupAsync**](EmailGroupsApi.md#updateEmailGroupAsync) | **PUT** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Update an email group
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchEmailGroupAsync
+
+Patch an email group
+
+Partially updates an email group by its ID using JSON Patch.
+
+### Example
+
+```bash
+ patchEmailGroupAsync  tenantId=value emailgroupId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **emailgroupId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

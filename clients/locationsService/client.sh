@@ -132,6 +132,12 @@ operation_parameters_minimum_occurrences["getWalletLocationAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletLocationAsync:::locationId"]=1
 operation_parameters_minimum_occurrences["getWalletLocationsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletLocationsCountAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["patchLocationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLocationAsync:::locationId"]=1
+operation_parameters_minimum_occurrences["patchLocationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWalletLocationAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["patchWalletLocationAsync:::locationId"]=1
+operation_parameters_minimum_occurrences["patchWalletLocationAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateLocationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLocationAsync:::locationId"]=1
 operation_parameters_minimum_occurrences["updateLocationAsync:::LocationUpdateDto"]=0
@@ -182,6 +188,12 @@ operation_parameters_maximum_occurrences["getWalletLocationAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletLocationAsync:::locationId"]=0
 operation_parameters_maximum_occurrences["getWalletLocationsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletLocationsCountAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["patchLocationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLocationAsync:::locationId"]=0
+operation_parameters_maximum_occurrences["patchLocationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWalletLocationAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["patchWalletLocationAsync:::locationId"]=0
+operation_parameters_maximum_occurrences["patchWalletLocationAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateLocationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLocationAsync:::locationId"]=0
 operation_parameters_maximum_occurrences["updateLocationAsync:::LocationUpdateDto"]=0
@@ -229,6 +241,12 @@ operation_parameters_collection_type["getWalletLocationAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletLocationAsync:::locationId"]=""
 operation_parameters_collection_type["getWalletLocationsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletLocationsCountAsync:::walletId"]=""
+operation_parameters_collection_type["patchLocationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLocationAsync:::locationId"]=""
+operation_parameters_collection_type["patchLocationAsync:::Operation"]=
+operation_parameters_collection_type["patchWalletLocationAsync:::walletId"]=""
+operation_parameters_collection_type["patchWalletLocationAsync:::locationId"]=""
+operation_parameters_collection_type["patchWalletLocationAsync:::Operation"]=
 operation_parameters_collection_type["updateLocationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLocationAsync:::locationId"]=""
 operation_parameters_collection_type["updateLocationAsync:::LocationUpdateDto"]=""
@@ -592,7 +610,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}LocationsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}LocationsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -661,6 +679,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getWalletLocationAsync${OFF};Get Wallet Location
   ${CYAN}getWalletLocationsAsync${OFF};Get Wallet Locations
   ${CYAN}getWalletLocationsCountAsync${OFF};Get Wallet Locations Count
+  ${CYAN}patchLocationAsync${OFF};Patch a location
+  ${CYAN}patchWalletLocationAsync${OFF};Patch a wallet location
   ${CYAN}updateLocationAsync${OFF};Update Location
   ${CYAN}updateWalletLocationAsync${OFF};Update Wallet Location
 EOF
@@ -692,7 +712,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}LocationsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}LocationsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -712,7 +732,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}LocationsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}LocationsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1259,6 +1279,57 @@ print_getWalletLocationsCountAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchLocationAsync operation
+#
+##############################################################################
+print_patchLocationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLocationAsync - Patch a location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a location" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWalletLocationAsync operation
+#
+##############################################################################
+print_patchWalletLocationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWalletLocationAsync - Patch a wallet location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a wallet location" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2750,6 +2821,158 @@ call_getWalletLocationsCountAsync() {
 
 ##############################################################################
 #
+# Call patchLocationAsync operation
+#
+##############################################################################
+call_patchLocationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(locationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LocationsService/Locations/{locationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchWalletLocationAsync operation
+#
+##############################################################################
+call_patchWalletLocationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(walletId locationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LocationsService/Locations/wallet/{walletId}/{locationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateLocationAsync operation
 #
 ##############################################################################
@@ -3081,6 +3304,12 @@ case $key in
     getWalletLocationsCountAsync)
     operation="getWalletLocationsCountAsync"
     ;;
+    patchLocationAsync)
+    operation="patchLocationAsync"
+    ;;
+    patchWalletLocationAsync)
+    operation="patchWalletLocationAsync"
+    ;;
     updateLocationAsync)
     operation="updateLocationAsync"
     ;;
@@ -3257,6 +3486,12 @@ case $operation in
     ;;
     getWalletLocationsCountAsync)
     call_getWalletLocationsCountAsync
+    ;;
+    patchLocationAsync)
+    call_patchLocationAsync
+    ;;
+    patchWalletLocationAsync)
+    call_patchWalletLocationAsync
     ;;
     updateLocationAsync)
     call_updateLocationAsync

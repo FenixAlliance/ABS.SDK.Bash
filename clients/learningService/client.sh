@@ -116,6 +116,11 @@ operation_parameters_minimum_occurrences["getCourseArticlesAsync:::x-api-version
 operation_parameters_minimum_occurrences["getCourseArticlesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseArticlesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseArticlesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseArticleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseArticleAsync:::articleId"]=1
+operation_parameters_minimum_occurrences["patchCourseArticleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseArticleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseArticleAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseArticleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseArticleAsync:::articleId"]=1
 operation_parameters_minimum_occurrences["updateCourseArticleAsync:::api-version"]=0
@@ -138,6 +143,11 @@ operation_parameters_minimum_occurrences["getCourseAssignmentComponentsAsync:::x
 operation_parameters_minimum_occurrences["getCourseAssignmentComponentsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseAssignmentComponentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseAssignmentComponentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseAssignmentComponentAsync:::componentId"]=1
+operation_parameters_minimum_occurrences["patchCourseAssignmentComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentComponentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseAssignmentComponentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseAssignmentComponentAsync:::componentId"]=1
 operation_parameters_minimum_occurrences["updateCourseAssignmentComponentAsync:::api-version"]=0
@@ -160,6 +170,11 @@ operation_parameters_minimum_occurrences["getCourseAssignmentTypesAsync:::x-api-
 operation_parameters_minimum_occurrences["getCourseAssignmentTypesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseAssignmentTypesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseAssignmentTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseAssignmentTypeAsync:::assignmentTypeId"]=1
+operation_parameters_minimum_occurrences["patchCourseAssignmentTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseAssignmentTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseAssignmentTypeAsync:::assignmentTypeId"]=1
 operation_parameters_minimum_occurrences["updateCourseAssignmentTypeAsync:::api-version"]=0
@@ -182,6 +197,11 @@ operation_parameters_minimum_occurrences["getCourseAssignmentsAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getCourseAssignmentsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseAssignmentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseAssignmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseAssignmentAsync:::assignmentId"]=1
+operation_parameters_minimum_occurrences["patchCourseAssignmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAssignmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::assignmentId"]=1
 operation_parameters_minimum_occurrences["updateCourseAssignmentAsync:::api-version"]=0
@@ -204,6 +224,11 @@ operation_parameters_minimum_occurrences["getCourseCategoriesCountAsync:::x-api-
 operation_parameters_minimum_occurrences["getCourseCategoryByIdAsync:::categoryId"]=1
 operation_parameters_minimum_occurrences["getCourseCategoryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseCategoryAsync:::categoryId"]=1
+operation_parameters_minimum_occurrences["patchCourseCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCategoryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::categoryId"]=1
 operation_parameters_minimum_occurrences["updateCourseCategoryAsync:::api-version"]=0
@@ -245,6 +270,16 @@ operation_parameters_minimum_occurrences["getCourseCertificatesAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getCourseCertificatesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseCertificatesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCertificateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseCertificateAsync:::courseCertificateId"]=1
+operation_parameters_minimum_occurrences["patchCourseCertificateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCertificateAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchCourseCertificateTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=1
+operation_parameters_minimum_occurrences["patchCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCertificateTemplateAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::courseCertificateId"]=1
 operation_parameters_minimum_occurrences["updateCourseCertificateAsync:::api-version"]=0
@@ -272,6 +307,11 @@ operation_parameters_minimum_occurrences["getCourseCohortsAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getCourseCohortsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseCohortsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseCohortsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCohortAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseCohortAsync:::cohortId"]=1
+operation_parameters_minimum_occurrences["patchCourseCohortAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCohortAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseCohortAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseCohortAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseCohortAsync:::cohortId"]=1
 operation_parameters_minimum_occurrences["updateCourseCohortAsync:::api-version"]=0
@@ -300,6 +340,11 @@ operation_parameters_minimum_occurrences["getCourseContentGroupsByCourseCountAsy
 operation_parameters_minimum_occurrences["getCourseContentGroupsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseContentGroupsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseContentGroupsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseContentGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseContentGroupAsync:::groupId"]=1
+operation_parameters_minimum_occurrences["patchCourseContentGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseContentGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseContentGroupAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseContentGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseContentGroupAsync:::groupId"]=1
 operation_parameters_minimum_occurrences["updateCourseContentGroupAsync:::api-version"]=0
@@ -327,6 +372,11 @@ operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::ten
 operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::studentProfileId"]=1
 operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getStudentCourseEnrollmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseEnrollmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseEnrollmentAsync:::courseEnrollmentId"]=1
+operation_parameters_minimum_occurrences["patchCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseEnrollmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::courseEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateCourseEnrollmentAsync:::api-version"]=0
@@ -349,6 +399,11 @@ operation_parameters_minimum_occurrences["getCourseFilesAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getCourseFilesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseFilesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseFilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseFileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseFileAsync:::fileId"]=1
+operation_parameters_minimum_occurrences["patchCourseFileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseFileAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseFileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseFileAsync:::fileId"]=1
 operation_parameters_minimum_occurrences["updateCourseFileAsync:::api-version"]=0
@@ -371,6 +426,11 @@ operation_parameters_minimum_occurrences["getCourseForumsAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getCourseForumsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseForumsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseForumsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseForumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseForumAsync:::forumId"]=1
+operation_parameters_minimum_occurrences["patchCourseForumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseForumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseForumAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseForumAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseForumAsync:::forumId"]=1
 operation_parameters_minimum_occurrences["updateCourseForumAsync:::api-version"]=0
@@ -393,6 +453,11 @@ operation_parameters_minimum_occurrences["getCourseGradingRubricsAsync:::x-api-v
 operation_parameters_minimum_occurrences["getCourseGradingRubricsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseGradingRubricsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseGradingRubricsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseGradingRubricAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseGradingRubricAsync:::rubricId"]=1
+operation_parameters_minimum_occurrences["patchCourseGradingRubricAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseGradingRubricAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseGradingRubricAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseGradingRubricAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseGradingRubricAsync:::rubricId"]=1
 operation_parameters_minimum_occurrences["updateCourseGradingRubricAsync:::api-version"]=0
@@ -415,6 +480,11 @@ operation_parameters_minimum_occurrences["getCourseHandoutsAsync:::x-api-version
 operation_parameters_minimum_occurrences["getCourseHandoutsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseHandoutsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseHandoutsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseHandoutAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseHandoutAsync:::handoutId"]=1
+operation_parameters_minimum_occurrences["patchCourseHandoutAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseHandoutAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::handoutId"]=1
 operation_parameters_minimum_occurrences["updateCourseHandoutAsync:::api-version"]=0
@@ -437,6 +507,11 @@ operation_parameters_minimum_occurrences["getCourseLibrariesCountAsync:::x-api-v
 operation_parameters_minimum_occurrences["getCourseLibraryByIdAsync:::libraryId"]=1
 operation_parameters_minimum_occurrences["getCourseLibraryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseLibraryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseLibraryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseLibraryAsync:::libraryId"]=1
+operation_parameters_minimum_occurrences["patchCourseLibraryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseLibraryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::libraryId"]=1
 operation_parameters_minimum_occurrences["updateCourseLibraryAsync:::api-version"]=0
@@ -459,6 +534,11 @@ operation_parameters_minimum_occurrences["getCoursePagesAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getCoursePagesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCoursePagesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCoursePagesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCoursePageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCoursePageAsync:::pageId"]=1
+operation_parameters_minimum_occurrences["patchCoursePageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCoursePageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCoursePageAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCoursePageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCoursePageAsync:::pageId"]=1
 operation_parameters_minimum_occurrences["updateCoursePageAsync:::api-version"]=0
@@ -481,6 +561,11 @@ operation_parameters_minimum_occurrences["getCourseProblemSetsAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getCourseProblemSetsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseProblemSetsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseProblemSetsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseProblemSetAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseProblemSetAsync:::problemSetId"]=1
+operation_parameters_minimum_occurrences["patchCourseProblemSetAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseProblemSetAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::problemSetId"]=1
 operation_parameters_minimum_occurrences["updateCourseProblemSetAsync:::api-version"]=0
@@ -503,6 +588,11 @@ operation_parameters_minimum_occurrences["getCourseSectionsAsync:::x-api-version
 operation_parameters_minimum_occurrences["getCourseSectionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseSectionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseSectionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseSectionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseSectionAsync:::sectionId"]=1
+operation_parameters_minimum_occurrences["patchCourseSectionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseSectionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseSectionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseSectionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseSectionAsync:::sectionId"]=1
 operation_parameters_minimum_occurrences["updateCourseSectionAsync:::api-version"]=0
@@ -525,6 +615,11 @@ operation_parameters_minimum_occurrences["getCourseTeamMembershipsAsync:::x-api-
 operation_parameters_minimum_occurrences["getCourseTeamMembershipsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseTeamMembershipsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseTeamMembershipsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseTeamMembershipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseTeamMembershipAsync:::membershipId"]=1
+operation_parameters_minimum_occurrences["patchCourseTeamMembershipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseTeamMembershipAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseTeamMembershipAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseTeamMembershipAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseTeamMembershipAsync:::membershipId"]=1
 operation_parameters_minimum_occurrences["updateCourseTeamMembershipAsync:::api-version"]=0
@@ -547,6 +642,11 @@ operation_parameters_minimum_occurrences["getCourseUnitComponentsAsync:::x-api-v
 operation_parameters_minimum_occurrences["getCourseUnitComponentsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseUnitComponentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseUnitComponentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUnitComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseUnitComponentAsync:::componentId"]=1
+operation_parameters_minimum_occurrences["patchCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUnitComponentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::componentId"]=1
 operation_parameters_minimum_occurrences["updateCourseUnitComponentAsync:::api-version"]=0
@@ -569,6 +669,11 @@ operation_parameters_minimum_occurrences["getCourseUnitsAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getCourseUnitsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseUnitsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseUnitsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseUnitAsync:::unitId"]=1
+operation_parameters_minimum_occurrences["patchCourseUnitAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUnitAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUnitAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseUnitAsync:::unitId"]=1
 operation_parameters_minimum_occurrences["updateCourseUnitAsync:::api-version"]=0
@@ -591,6 +696,11 @@ operation_parameters_minimum_occurrences["getCourseUpdatesAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getCourseUpdatesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseUpdatesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseUpdatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUpdateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseUpdateAsync:::updateId"]=1
+operation_parameters_minimum_occurrences["patchCourseUpdateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseUpdateAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::updateId"]=1
 operation_parameters_minimum_occurrences["updateCourseUpdateAsync:::api-version"]=0
@@ -613,6 +723,11 @@ operation_parameters_minimum_occurrences["getCourseWikisAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getCourseWikisCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCourseWikisCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCourseWikisCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseWikiAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseWikiAsync:::wikiId"]=1
+operation_parameters_minimum_occurrences["patchCourseWikiAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseWikiAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseWikiAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseWikiAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseWikiAsync:::wikiId"]=1
 operation_parameters_minimum_occurrences["updateCourseWikiAsync:::api-version"]=0
@@ -746,6 +861,11 @@ operation_parameters_minimum_occurrences["getStudentProfilesByCourseAsync:::x-ap
 operation_parameters_minimum_occurrences["getStudentProfilesByCourseCountAsync:::courseId"]=1
 operation_parameters_minimum_occurrences["getStudentProfilesByCourseCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getStudentProfilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["patchCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCourseAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateCourseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateCourseAsync:::courseId"]=1
 operation_parameters_minimum_occurrences["updateCourseAsync:::api-version"]=0
@@ -782,6 +902,11 @@ operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfiles
 operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::instructorProfileId"]=1
 operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::api-version"]=0
 operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::instructorProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::Operation"]=0
 operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::tenantId"]=1
 operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::instructorProfileId"]=1
 operation_parameters_minimum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::api-version"]=0
@@ -847,6 +972,11 @@ operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStu
 operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::studentProfileId"]=1
 operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::api-version"]=0
 operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::studentProfileId"]=1
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::x-api-version"]=0
+operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::Operation"]=0
 operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::tenantId"]=1
 operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::studentProfileId"]=1
 operation_parameters_minimum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::api-version"]=0
@@ -880,6 +1010,11 @@ operation_parameters_maximum_occurrences["getCourseArticlesAsync:::x-api-version
 operation_parameters_maximum_occurrences["getCourseArticlesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseArticlesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseArticlesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseArticleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseArticleAsync:::articleId"]=0
+operation_parameters_maximum_occurrences["patchCourseArticleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseArticleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseArticleAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseArticleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseArticleAsync:::articleId"]=0
 operation_parameters_maximum_occurrences["updateCourseArticleAsync:::api-version"]=0
@@ -902,6 +1037,11 @@ operation_parameters_maximum_occurrences["getCourseAssignmentComponentsAsync:::x
 operation_parameters_maximum_occurrences["getCourseAssignmentComponentsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseAssignmentComponentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseAssignmentComponentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentComponentAsync:::componentId"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentComponentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentComponentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentComponentAsync:::componentId"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentComponentAsync:::api-version"]=0
@@ -924,6 +1064,11 @@ operation_parameters_maximum_occurrences["getCourseAssignmentTypesAsync:::x-api-
 operation_parameters_maximum_occurrences["getCourseAssignmentTypesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseAssignmentTypesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseAssignmentTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentTypeAsync:::assignmentTypeId"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentTypeAsync:::assignmentTypeId"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentTypeAsync:::api-version"]=0
@@ -946,6 +1091,11 @@ operation_parameters_maximum_occurrences["getCourseAssignmentsAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getCourseAssignmentsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseAssignmentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseAssignmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentAsync:::assignmentId"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAssignmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::assignmentId"]=0
 operation_parameters_maximum_occurrences["updateCourseAssignmentAsync:::api-version"]=0
@@ -968,6 +1118,11 @@ operation_parameters_maximum_occurrences["getCourseCategoriesCountAsync:::x-api-
 operation_parameters_maximum_occurrences["getCourseCategoryByIdAsync:::categoryId"]=0
 operation_parameters_maximum_occurrences["getCourseCategoryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseCategoryAsync:::categoryId"]=0
+operation_parameters_maximum_occurrences["patchCourseCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCategoryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::categoryId"]=0
 operation_parameters_maximum_occurrences["updateCourseCategoryAsync:::api-version"]=0
@@ -1009,6 +1164,16 @@ operation_parameters_maximum_occurrences["getCourseCertificatesAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getCourseCertificatesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseCertificatesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateAsync:::courseCertificateId"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCertificateTemplateAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::courseCertificateId"]=0
 operation_parameters_maximum_occurrences["updateCourseCertificateAsync:::api-version"]=0
@@ -1036,6 +1201,11 @@ operation_parameters_maximum_occurrences["getCourseCohortsAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getCourseCohortsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseCohortsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseCohortsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCohortAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseCohortAsync:::cohortId"]=0
+operation_parameters_maximum_occurrences["patchCourseCohortAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCohortAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseCohortAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseCohortAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseCohortAsync:::cohortId"]=0
 operation_parameters_maximum_occurrences["updateCourseCohortAsync:::api-version"]=0
@@ -1064,6 +1234,11 @@ operation_parameters_maximum_occurrences["getCourseContentGroupsByCourseCountAsy
 operation_parameters_maximum_occurrences["getCourseContentGroupsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseContentGroupsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseContentGroupsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseContentGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseContentGroupAsync:::groupId"]=0
+operation_parameters_maximum_occurrences["patchCourseContentGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseContentGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseContentGroupAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseContentGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseContentGroupAsync:::groupId"]=0
 operation_parameters_maximum_occurrences["updateCourseContentGroupAsync:::api-version"]=0
@@ -1091,6 +1266,11 @@ operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::ten
 operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::studentProfileId"]=0
 operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getStudentCourseEnrollmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseEnrollmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseEnrollmentAsync:::courseEnrollmentId"]=0
+operation_parameters_maximum_occurrences["patchCourseEnrollmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseEnrollmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseEnrollmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::courseEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateCourseEnrollmentAsync:::api-version"]=0
@@ -1113,6 +1293,11 @@ operation_parameters_maximum_occurrences["getCourseFilesAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getCourseFilesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseFilesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseFilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseFileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseFileAsync:::fileId"]=0
+operation_parameters_maximum_occurrences["patchCourseFileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseFileAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseFileAsync:::fileId"]=0
 operation_parameters_maximum_occurrences["updateCourseFileAsync:::api-version"]=0
@@ -1135,6 +1320,11 @@ operation_parameters_maximum_occurrences["getCourseForumsAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getCourseForumsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseForumsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseForumsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseForumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseForumAsync:::forumId"]=0
+operation_parameters_maximum_occurrences["patchCourseForumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseForumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseForumAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseForumAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseForumAsync:::forumId"]=0
 operation_parameters_maximum_occurrences["updateCourseForumAsync:::api-version"]=0
@@ -1157,6 +1347,11 @@ operation_parameters_maximum_occurrences["getCourseGradingRubricsAsync:::x-api-v
 operation_parameters_maximum_occurrences["getCourseGradingRubricsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseGradingRubricsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseGradingRubricsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseGradingRubricAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseGradingRubricAsync:::rubricId"]=0
+operation_parameters_maximum_occurrences["patchCourseGradingRubricAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseGradingRubricAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseGradingRubricAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseGradingRubricAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseGradingRubricAsync:::rubricId"]=0
 operation_parameters_maximum_occurrences["updateCourseGradingRubricAsync:::api-version"]=0
@@ -1179,6 +1374,11 @@ operation_parameters_maximum_occurrences["getCourseHandoutsAsync:::x-api-version
 operation_parameters_maximum_occurrences["getCourseHandoutsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseHandoutsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseHandoutsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseHandoutAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseHandoutAsync:::handoutId"]=0
+operation_parameters_maximum_occurrences["patchCourseHandoutAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseHandoutAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseHandoutAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::handoutId"]=0
 operation_parameters_maximum_occurrences["updateCourseHandoutAsync:::api-version"]=0
@@ -1201,6 +1401,11 @@ operation_parameters_maximum_occurrences["getCourseLibrariesCountAsync:::x-api-v
 operation_parameters_maximum_occurrences["getCourseLibraryByIdAsync:::libraryId"]=0
 operation_parameters_maximum_occurrences["getCourseLibraryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseLibraryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseLibraryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseLibraryAsync:::libraryId"]=0
+operation_parameters_maximum_occurrences["patchCourseLibraryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseLibraryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseLibraryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::libraryId"]=0
 operation_parameters_maximum_occurrences["updateCourseLibraryAsync:::api-version"]=0
@@ -1223,6 +1428,11 @@ operation_parameters_maximum_occurrences["getCoursePagesAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getCoursePagesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCoursePagesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCoursePagesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCoursePageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCoursePageAsync:::pageId"]=0
+operation_parameters_maximum_occurrences["patchCoursePageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCoursePageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCoursePageAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCoursePageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCoursePageAsync:::pageId"]=0
 operation_parameters_maximum_occurrences["updateCoursePageAsync:::api-version"]=0
@@ -1245,6 +1455,11 @@ operation_parameters_maximum_occurrences["getCourseProblemSetsAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getCourseProblemSetsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseProblemSetsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseProblemSetsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseProblemSetAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseProblemSetAsync:::problemSetId"]=0
+operation_parameters_maximum_occurrences["patchCourseProblemSetAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseProblemSetAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseProblemSetAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::problemSetId"]=0
 operation_parameters_maximum_occurrences["updateCourseProblemSetAsync:::api-version"]=0
@@ -1267,6 +1482,11 @@ operation_parameters_maximum_occurrences["getCourseSectionsAsync:::x-api-version
 operation_parameters_maximum_occurrences["getCourseSectionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseSectionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseSectionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseSectionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseSectionAsync:::sectionId"]=0
+operation_parameters_maximum_occurrences["patchCourseSectionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseSectionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseSectionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseSectionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseSectionAsync:::sectionId"]=0
 operation_parameters_maximum_occurrences["updateCourseSectionAsync:::api-version"]=0
@@ -1289,6 +1509,11 @@ operation_parameters_maximum_occurrences["getCourseTeamMembershipsAsync:::x-api-
 operation_parameters_maximum_occurrences["getCourseTeamMembershipsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseTeamMembershipsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseTeamMembershipsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseTeamMembershipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseTeamMembershipAsync:::membershipId"]=0
+operation_parameters_maximum_occurrences["patchCourseTeamMembershipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseTeamMembershipAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseTeamMembershipAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseTeamMembershipAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseTeamMembershipAsync:::membershipId"]=0
 operation_parameters_maximum_occurrences["updateCourseTeamMembershipAsync:::api-version"]=0
@@ -1311,6 +1536,11 @@ operation_parameters_maximum_occurrences["getCourseUnitComponentsAsync:::x-api-v
 operation_parameters_maximum_occurrences["getCourseUnitComponentsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseUnitComponentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseUnitComponentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitComponentAsync:::componentId"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitComponentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::componentId"]=0
 operation_parameters_maximum_occurrences["updateCourseUnitComponentAsync:::api-version"]=0
@@ -1333,6 +1563,11 @@ operation_parameters_maximum_occurrences["getCourseUnitsAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getCourseUnitsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseUnitsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseUnitsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitAsync:::unitId"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUnitAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseUnitAsync:::unitId"]=0
 operation_parameters_maximum_occurrences["updateCourseUnitAsync:::api-version"]=0
@@ -1355,6 +1590,11 @@ operation_parameters_maximum_occurrences["getCourseUpdatesAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getCourseUpdatesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseUpdatesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseUpdatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUpdateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseUpdateAsync:::updateId"]=0
+operation_parameters_maximum_occurrences["patchCourseUpdateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUpdateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseUpdateAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::updateId"]=0
 operation_parameters_maximum_occurrences["updateCourseUpdateAsync:::api-version"]=0
@@ -1377,6 +1617,11 @@ operation_parameters_maximum_occurrences["getCourseWikisAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getCourseWikisCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCourseWikisCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCourseWikisCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseWikiAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseWikiAsync:::wikiId"]=0
+operation_parameters_maximum_occurrences["patchCourseWikiAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseWikiAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseWikiAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseWikiAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseWikiAsync:::wikiId"]=0
 operation_parameters_maximum_occurrences["updateCourseWikiAsync:::api-version"]=0
@@ -1510,6 +1755,11 @@ operation_parameters_maximum_occurrences["getStudentProfilesByCourseAsync:::x-ap
 operation_parameters_maximum_occurrences["getStudentProfilesByCourseCountAsync:::courseId"]=0
 operation_parameters_maximum_occurrences["getStudentProfilesByCourseCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getStudentProfilesByCourseCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["patchCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCourseAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateCourseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateCourseAsync:::courseId"]=0
 operation_parameters_maximum_occurrences["updateCourseAsync:::api-version"]=0
@@ -1546,6 +1796,11 @@ operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfiles
 operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::instructorProfileId"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::api-version"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::instructorProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::Operation"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::tenantId"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::instructorProfileId"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::api-version"]=0
@@ -1611,6 +1866,11 @@ operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStu
 operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::studentProfileId"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::api-version"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::studentProfileId"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::x-api-version"]=0
+operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::Operation"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::tenantId"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::studentProfileId"]=0
 operation_parameters_maximum_occurrences["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::api-version"]=0
@@ -1641,6 +1901,11 @@ operation_parameters_collection_type["getCourseArticlesAsync:::x-api-version"]="
 operation_parameters_collection_type["getCourseArticlesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseArticlesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseArticlesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseArticleAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseArticleAsync:::articleId"]=""
+operation_parameters_collection_type["patchCourseArticleAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseArticleAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseArticleAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseArticleAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseArticleAsync:::articleId"]=""
 operation_parameters_collection_type["updateCourseArticleAsync:::api-version"]=""
@@ -1663,6 +1928,11 @@ operation_parameters_collection_type["getCourseAssignmentComponentsAsync:::x-api
 operation_parameters_collection_type["getCourseAssignmentComponentsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseAssignmentComponentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseAssignmentComponentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseAssignmentComponentAsync:::componentId"]=""
+operation_parameters_collection_type["patchCourseAssignmentComponentAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentComponentAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseAssignmentComponentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseAssignmentComponentAsync:::componentId"]=""
 operation_parameters_collection_type["updateCourseAssignmentComponentAsync:::api-version"]=""
@@ -1685,6 +1955,11 @@ operation_parameters_collection_type["getCourseAssignmentTypesAsync:::x-api-vers
 operation_parameters_collection_type["getCourseAssignmentTypesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseAssignmentTypesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseAssignmentTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseAssignmentTypeAsync:::assignmentTypeId"]=""
+operation_parameters_collection_type["patchCourseAssignmentTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseAssignmentTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseAssignmentTypeAsync:::assignmentTypeId"]=""
 operation_parameters_collection_type["updateCourseAssignmentTypeAsync:::api-version"]=""
@@ -1707,6 +1982,11 @@ operation_parameters_collection_type["getCourseAssignmentsAsync:::x-api-version"
 operation_parameters_collection_type["getCourseAssignmentsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseAssignmentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseAssignmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseAssignmentAsync:::assignmentId"]=""
+operation_parameters_collection_type["patchCourseAssignmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAssignmentAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseAssignmentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseAssignmentAsync:::assignmentId"]=""
 operation_parameters_collection_type["updateCourseAssignmentAsync:::api-version"]=""
@@ -1729,6 +2009,11 @@ operation_parameters_collection_type["getCourseCategoriesCountAsync:::x-api-vers
 operation_parameters_collection_type["getCourseCategoryByIdAsync:::categoryId"]=""
 operation_parameters_collection_type["getCourseCategoryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseCategoryAsync:::categoryId"]=""
+operation_parameters_collection_type["patchCourseCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCategoryAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseCategoryAsync:::categoryId"]=""
 operation_parameters_collection_type["updateCourseCategoryAsync:::api-version"]=""
@@ -1770,6 +2055,16 @@ operation_parameters_collection_type["getCourseCertificatesAsync:::x-api-version
 operation_parameters_collection_type["getCourseCertificatesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseCertificatesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseCertificatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCertificateAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseCertificateAsync:::courseCertificateId"]=""
+operation_parameters_collection_type["patchCourseCertificateAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseCertificateAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCertificateAsync:::Operation"]=
+operation_parameters_collection_type["patchCourseCertificateTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseCertificateTemplateAsync:::courseCertificateTemplateId"]=""
+operation_parameters_collection_type["patchCourseCertificateTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseCertificateTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCertificateTemplateAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseCertificateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseCertificateAsync:::courseCertificateId"]=""
 operation_parameters_collection_type["updateCourseCertificateAsync:::api-version"]=""
@@ -1797,6 +2092,11 @@ operation_parameters_collection_type["getCourseCohortsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCourseCohortsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseCohortsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseCohortsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCohortAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseCohortAsync:::cohortId"]=""
+operation_parameters_collection_type["patchCourseCohortAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseCohortAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseCohortAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseCohortAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseCohortAsync:::cohortId"]=""
 operation_parameters_collection_type["updateCourseCohortAsync:::api-version"]=""
@@ -1825,6 +2125,11 @@ operation_parameters_collection_type["getCourseContentGroupsByCourseCountAsync::
 operation_parameters_collection_type["getCourseContentGroupsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseContentGroupsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseContentGroupsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseContentGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseContentGroupAsync:::groupId"]=""
+operation_parameters_collection_type["patchCourseContentGroupAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseContentGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseContentGroupAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseContentGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseContentGroupAsync:::groupId"]=""
 operation_parameters_collection_type["updateCourseContentGroupAsync:::api-version"]=""
@@ -1852,6 +2157,11 @@ operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::tenantI
 operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::studentProfileId"]=""
 operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::api-version"]=""
 operation_parameters_collection_type["getStudentCourseEnrollmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseEnrollmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseEnrollmentAsync:::courseEnrollmentId"]=""
+operation_parameters_collection_type["patchCourseEnrollmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseEnrollmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseEnrollmentAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseEnrollmentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseEnrollmentAsync:::courseEnrollmentId"]=""
 operation_parameters_collection_type["updateCourseEnrollmentAsync:::api-version"]=""
@@ -1874,6 +2184,11 @@ operation_parameters_collection_type["getCourseFilesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCourseFilesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseFilesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseFilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseFileAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseFileAsync:::fileId"]=""
+operation_parameters_collection_type["patchCourseFileAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseFileAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseFileAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseFileAsync:::fileId"]=""
 operation_parameters_collection_type["updateCourseFileAsync:::api-version"]=""
@@ -1896,6 +2211,11 @@ operation_parameters_collection_type["getCourseForumsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCourseForumsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseForumsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseForumsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseForumAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseForumAsync:::forumId"]=""
+operation_parameters_collection_type["patchCourseForumAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseForumAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseForumAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseForumAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseForumAsync:::forumId"]=""
 operation_parameters_collection_type["updateCourseForumAsync:::api-version"]=""
@@ -1918,6 +2238,11 @@ operation_parameters_collection_type["getCourseGradingRubricsAsync:::x-api-versi
 operation_parameters_collection_type["getCourseGradingRubricsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseGradingRubricsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseGradingRubricsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseGradingRubricAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseGradingRubricAsync:::rubricId"]=""
+operation_parameters_collection_type["patchCourseGradingRubricAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseGradingRubricAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseGradingRubricAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseGradingRubricAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseGradingRubricAsync:::rubricId"]=""
 operation_parameters_collection_type["updateCourseGradingRubricAsync:::api-version"]=""
@@ -1940,6 +2265,11 @@ operation_parameters_collection_type["getCourseHandoutsAsync:::x-api-version"]="
 operation_parameters_collection_type["getCourseHandoutsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseHandoutsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseHandoutsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseHandoutAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseHandoutAsync:::handoutId"]=""
+operation_parameters_collection_type["patchCourseHandoutAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseHandoutAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseHandoutAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseHandoutAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseHandoutAsync:::handoutId"]=""
 operation_parameters_collection_type["updateCourseHandoutAsync:::api-version"]=""
@@ -1962,6 +2292,11 @@ operation_parameters_collection_type["getCourseLibrariesCountAsync:::x-api-versi
 operation_parameters_collection_type["getCourseLibraryByIdAsync:::libraryId"]=""
 operation_parameters_collection_type["getCourseLibraryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseLibraryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseLibraryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseLibraryAsync:::libraryId"]=""
+operation_parameters_collection_type["patchCourseLibraryAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseLibraryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseLibraryAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseLibraryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseLibraryAsync:::libraryId"]=""
 operation_parameters_collection_type["updateCourseLibraryAsync:::api-version"]=""
@@ -1984,6 +2319,11 @@ operation_parameters_collection_type["getCoursePagesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCoursePagesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCoursePagesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCoursePagesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCoursePageAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCoursePageAsync:::pageId"]=""
+operation_parameters_collection_type["patchCoursePageAsync:::api-version"]=""
+operation_parameters_collection_type["patchCoursePageAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCoursePageAsync:::Operation"]=
 operation_parameters_collection_type["updateCoursePageAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCoursePageAsync:::pageId"]=""
 operation_parameters_collection_type["updateCoursePageAsync:::api-version"]=""
@@ -2006,6 +2346,11 @@ operation_parameters_collection_type["getCourseProblemSetsAsync:::x-api-version"
 operation_parameters_collection_type["getCourseProblemSetsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseProblemSetsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseProblemSetsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseProblemSetAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseProblemSetAsync:::problemSetId"]=""
+operation_parameters_collection_type["patchCourseProblemSetAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseProblemSetAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseProblemSetAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseProblemSetAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseProblemSetAsync:::problemSetId"]=""
 operation_parameters_collection_type["updateCourseProblemSetAsync:::api-version"]=""
@@ -2028,6 +2373,11 @@ operation_parameters_collection_type["getCourseSectionsAsync:::x-api-version"]="
 operation_parameters_collection_type["getCourseSectionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseSectionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseSectionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseSectionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseSectionAsync:::sectionId"]=""
+operation_parameters_collection_type["patchCourseSectionAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseSectionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseSectionAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseSectionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseSectionAsync:::sectionId"]=""
 operation_parameters_collection_type["updateCourseSectionAsync:::api-version"]=""
@@ -2050,6 +2400,11 @@ operation_parameters_collection_type["getCourseTeamMembershipsAsync:::x-api-vers
 operation_parameters_collection_type["getCourseTeamMembershipsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseTeamMembershipsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseTeamMembershipsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseTeamMembershipAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseTeamMembershipAsync:::membershipId"]=""
+operation_parameters_collection_type["patchCourseTeamMembershipAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseTeamMembershipAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseTeamMembershipAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseTeamMembershipAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseTeamMembershipAsync:::membershipId"]=""
 operation_parameters_collection_type["updateCourseTeamMembershipAsync:::api-version"]=""
@@ -2072,6 +2427,11 @@ operation_parameters_collection_type["getCourseUnitComponentsAsync:::x-api-versi
 operation_parameters_collection_type["getCourseUnitComponentsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseUnitComponentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseUnitComponentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseUnitComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseUnitComponentAsync:::componentId"]=""
+operation_parameters_collection_type["patchCourseUnitComponentAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseUnitComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseUnitComponentAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseUnitComponentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseUnitComponentAsync:::componentId"]=""
 operation_parameters_collection_type["updateCourseUnitComponentAsync:::api-version"]=""
@@ -2094,6 +2454,11 @@ operation_parameters_collection_type["getCourseUnitsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCourseUnitsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseUnitsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseUnitsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseUnitAsync:::unitId"]=""
+operation_parameters_collection_type["patchCourseUnitAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseUnitAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseUnitAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseUnitAsync:::unitId"]=""
 operation_parameters_collection_type["updateCourseUnitAsync:::api-version"]=""
@@ -2116,6 +2481,11 @@ operation_parameters_collection_type["getCourseUpdatesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCourseUpdatesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseUpdatesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseUpdatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseUpdateAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseUpdateAsync:::updateId"]=""
+operation_parameters_collection_type["patchCourseUpdateAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseUpdateAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseUpdateAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseUpdateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseUpdateAsync:::updateId"]=""
 operation_parameters_collection_type["updateCourseUpdateAsync:::api-version"]=""
@@ -2138,6 +2508,11 @@ operation_parameters_collection_type["getCourseWikisAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCourseWikisCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCourseWikisCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCourseWikisCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseWikiAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseWikiAsync:::wikiId"]=""
+operation_parameters_collection_type["patchCourseWikiAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseWikiAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseWikiAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseWikiAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseWikiAsync:::wikiId"]=""
 operation_parameters_collection_type["updateCourseWikiAsync:::api-version"]=""
@@ -2271,6 +2646,11 @@ operation_parameters_collection_type["getStudentProfilesByCourseAsync:::x-api-ve
 operation_parameters_collection_type["getStudentProfilesByCourseCountAsync:::courseId"]=""
 operation_parameters_collection_type["getStudentProfilesByCourseCountAsync:::api-version"]=""
 operation_parameters_collection_type["getStudentProfilesByCourseCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCourseAsync:::courseId"]=""
+operation_parameters_collection_type["patchCourseAsync:::api-version"]=""
+operation_parameters_collection_type["patchCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCourseAsync:::Operation"]=
 operation_parameters_collection_type["updateCourseAsync:::tenantId"]=""
 operation_parameters_collection_type["updateCourseAsync:::courseId"]=""
 operation_parameters_collection_type["updateCourseAsync:::api-version"]=""
@@ -2307,6 +2687,11 @@ operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInst
 operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::instructorProfileId"]=""
 operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::api-version"]=""
 operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::instructorProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch:::Operation"]=
 operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::tenantId"]=""
 operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::instructorProfileId"]=""
 operation_parameters_collection_type["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut:::api-version"]=""
@@ -2372,6 +2757,11 @@ operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudent
 operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::studentProfileId"]=""
 operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::api-version"]=""
 operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::tenantId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::studentProfileId"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::x-api-version"]=""
+operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPatch:::Operation"]=
 operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::tenantId"]=""
 operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::studentProfileId"]=""
 operation_parameters_collection_type["apiV2LearningServiceStudentProfilesStudentProfileIdPut:::api-version"]=""
@@ -2734,7 +3124,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}LearningService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}LearningService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -2776,6 +3166,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseArticleByIdAsync${OFF};Get course article by ID
   ${CYAN}getCourseArticlesAsync${OFF};Get all course articles
   ${CYAN}getCourseArticlesCountAsync${OFF};Get course articles count
+  ${CYAN}patchCourseArticleAsync${OFF};Patch a course article
   ${CYAN}updateCourseArticleAsync${OFF};Update a course article
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2787,6 +3178,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseAssignmentComponentByIdAsync${OFF};Get course assignment component by ID
   ${CYAN}getCourseAssignmentComponentsAsync${OFF};Get all course assignment components
   ${CYAN}getCourseAssignmentComponentsCountAsync${OFF};Get course assignment components count
+  ${CYAN}patchCourseAssignmentComponentAsync${OFF};Patch a course assignment component
   ${CYAN}updateCourseAssignmentComponentAsync${OFF};Update a course assignment component
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2798,6 +3190,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseAssignmentTypeByIdAsync${OFF};Get course assignment type by ID
   ${CYAN}getCourseAssignmentTypesAsync${OFF};Get all course assignment types
   ${CYAN}getCourseAssignmentTypesCountAsync${OFF};Get course assignment types count
+  ${CYAN}patchCourseAssignmentTypeAsync${OFF};Patch a course assignment type
   ${CYAN}updateCourseAssignmentTypeAsync${OFF};Update a course assignment type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2809,6 +3202,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseAssignmentByIdAsync${OFF};Get course assignment by ID
   ${CYAN}getCourseAssignmentsAsync${OFF};Get all course assignments
   ${CYAN}getCourseAssignmentsCountAsync${OFF};Get course assignments count
+  ${CYAN}patchCourseAssignmentAsync${OFF};Patch a course assignment
   ${CYAN}updateCourseAssignmentAsync${OFF};Update a course assignment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2820,6 +3214,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseCategoriesAsync${OFF};Get all course categories
   ${CYAN}getCourseCategoriesCountAsync${OFF};Get course categories count
   ${CYAN}getCourseCategoryByIdAsync${OFF};Get course category by ID
+  ${CYAN}patchCourseCategoryAsync${OFF};Patch a course category
   ${CYAN}updateCourseCategoryAsync${OFF};Update a course category
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2836,6 +3231,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseCertificateTemplatesCountAsync${OFF};Get certificate templates count
   ${CYAN}getCourseCertificatesAsync${OFF};Get all course certificates
   ${CYAN}getCourseCertificatesCountAsync${OFF};Get course certificates count
+  ${CYAN}patchCourseCertificateAsync${OFF};Patch a course certificate
+  ${CYAN}patchCourseCertificateTemplateAsync${OFF};Patch a certificate template
   ${CYAN}updateCourseCertificateAsync${OFF};Update a course certificate
   ${CYAN}updateCourseCertificateTemplateAsync${OFF};Update a certificate template
 EOF
@@ -2848,6 +3245,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseCohortByIdAsync${OFF};Get course cohort by ID
   ${CYAN}getCourseCohortsAsync${OFF};Get all course cohorts
   ${CYAN}getCourseCohortsCountAsync${OFF};Get course cohorts count
+  ${CYAN}patchCourseCohortAsync${OFF};Patch a course cohort
   ${CYAN}updateCourseCohortAsync${OFF};Update a course cohort
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2861,6 +3259,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseContentGroupsByCourseAsync${OFF};Get course content groups by course
   ${CYAN}getCourseContentGroupsByCourseCountAsync${OFF};Get course content groups count by course
   ${CYAN}getCourseContentGroupsCountAsync${OFF};Get course content groups count
+  ${CYAN}patchCourseContentGroupAsync${OFF};Patch a course content group
   ${CYAN}updateCourseContentGroupAsync${OFF};Update a course content group
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2873,6 +3272,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEnrollmentsAsync${OFF};Get all course enrollments
   ${CYAN}getEnrollmentsCountAsync${OFF};Get course enrollments count
   ${CYAN}getStudentCourseEnrollmentsAsync${OFF};Get enrollments by student
+  ${CYAN}patchCourseEnrollmentAsync${OFF};Patch a course enrollment
   ${CYAN}updateCourseEnrollmentAsync${OFF};Update a course enrollment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2884,6 +3284,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseFileByIdAsync${OFF};Get course file by ID
   ${CYAN}getCourseFilesAsync${OFF};Get all course files
   ${CYAN}getCourseFilesCountAsync${OFF};Get course files count
+  ${CYAN}patchCourseFileAsync${OFF};Patch a course file
   ${CYAN}updateCourseFileAsync${OFF};Update a course file
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2895,6 +3296,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseForumByIdAsync${OFF};Get course forum by ID
   ${CYAN}getCourseForumsAsync${OFF};Get all course forums
   ${CYAN}getCourseForumsCountAsync${OFF};Get course forums count
+  ${CYAN}patchCourseForumAsync${OFF};Patch a course forum
   ${CYAN}updateCourseForumAsync${OFF};Update a course forum
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2906,6 +3308,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseGradingRubricByIdAsync${OFF};Get course grading rubric by ID
   ${CYAN}getCourseGradingRubricsAsync${OFF};Get all course grading rubrics
   ${CYAN}getCourseGradingRubricsCountAsync${OFF};Get course grading rubrics count
+  ${CYAN}patchCourseGradingRubricAsync${OFF};Patch a course grading rubric
   ${CYAN}updateCourseGradingRubricAsync${OFF};Update a course grading rubric
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2917,6 +3320,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseHandoutByIdAsync${OFF};Get course handout by ID
   ${CYAN}getCourseHandoutsAsync${OFF};Get all course handouts
   ${CYAN}getCourseHandoutsCountAsync${OFF};Get course handouts count
+  ${CYAN}patchCourseHandoutAsync${OFF};Patch a course handout
   ${CYAN}updateCourseHandoutAsync${OFF};Update a course handout
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2928,6 +3332,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseLibrariesAsync${OFF};Get all course libraries
   ${CYAN}getCourseLibrariesCountAsync${OFF};Get course libraries count
   ${CYAN}getCourseLibraryByIdAsync${OFF};Get course library by ID
+  ${CYAN}patchCourseLibraryAsync${OFF};Patch a course library
   ${CYAN}updateCourseLibraryAsync${OFF};Update a course library
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2939,6 +3344,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCoursePageByIdAsync${OFF};Get course page by ID
   ${CYAN}getCoursePagesAsync${OFF};Get all course pages
   ${CYAN}getCoursePagesCountAsync${OFF};Get course pages count
+  ${CYAN}patchCoursePageAsync${OFF};Patch a course page
   ${CYAN}updateCoursePageAsync${OFF};Update a course page
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2950,6 +3356,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseProblemSetByIdAsync${OFF};Get course problem set by ID
   ${CYAN}getCourseProblemSetsAsync${OFF};Get all course problem sets
   ${CYAN}getCourseProblemSetsCountAsync${OFF};Get course problem sets count
+  ${CYAN}patchCourseProblemSetAsync${OFF};Patch a course problem set
   ${CYAN}updateCourseProblemSetAsync${OFF};Update a course problem set
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2961,6 +3368,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseSectionByIdAsync${OFF};Get course section by ID
   ${CYAN}getCourseSectionsAsync${OFF};Get all course sections
   ${CYAN}getCourseSectionsCountAsync${OFF};Get course sections count
+  ${CYAN}patchCourseSectionAsync${OFF};Patch a course section
   ${CYAN}updateCourseSectionAsync${OFF};Update a course section
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2972,6 +3380,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseTeamMembershipByIdAsync${OFF};Get course team membership by ID
   ${CYAN}getCourseTeamMembershipsAsync${OFF};Get all course team memberships
   ${CYAN}getCourseTeamMembershipsCountAsync${OFF};Get course team memberships count
+  ${CYAN}patchCourseTeamMembershipAsync${OFF};Patch a course team membership
   ${CYAN}updateCourseTeamMembershipAsync${OFF};Update a course team membership
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2983,6 +3392,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseUnitComponentByIdAsync${OFF};Get course unit component by ID
   ${CYAN}getCourseUnitComponentsAsync${OFF};Get all course unit components
   ${CYAN}getCourseUnitComponentsCountAsync${OFF};Get course unit components count
+  ${CYAN}patchCourseUnitComponentAsync${OFF};Patch a course unit component
   ${CYAN}updateCourseUnitComponentAsync${OFF};Update a course unit component
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2994,6 +3404,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseUnitByIdAsync${OFF};Get course unit by ID
   ${CYAN}getCourseUnitsAsync${OFF};Get all course units
   ${CYAN}getCourseUnitsCountAsync${OFF};Get course units count
+  ${CYAN}patchCourseUnitAsync${OFF};Patch a course unit
   ${CYAN}updateCourseUnitAsync${OFF};Update a course unit
 EOF
 echo "  $ops" | column -t -s ';'
@@ -3005,6 +3416,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseUpdateByIdAsync${OFF};Get course update by ID
   ${CYAN}getCourseUpdatesAsync${OFF};Get all course updates
   ${CYAN}getCourseUpdatesCountAsync${OFF};Get course updates count
+  ${CYAN}patchCourseUpdateAsync${OFF};Patch a course update
   ${CYAN}updateCourseUpdateAsync${OFF};Update a course update
 EOF
 echo "  $ops" | column -t -s ';'
@@ -3016,6 +3428,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCourseWikiByIdAsync${OFF};Get course wiki by ID
   ${CYAN}getCourseWikisAsync${OFF};Get all course wikis
   ${CYAN}getCourseWikisCountAsync${OFF};Get course wikis count
+  ${CYAN}patchCourseWikiAsync${OFF};Patch a course wiki
   ${CYAN}updateCourseWikiAsync${OFF};Update a course wiki
 EOF
 echo "  $ops" | column -t -s ';'
@@ -3062,6 +3475,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getInstructorProfilesByCourseCountAsync${OFF};Get instructor profiles by course count
   ${CYAN}getStudentProfilesByCourseAsync${OFF};Get student profiles by course
   ${CYAN}getStudentProfilesByCourseCountAsync${OFF};Get student profiles by course count
+  ${CYAN}patchCourseAsync${OFF};Patch a course
   ${CYAN}updateCourseAsync${OFF};Update a course
 EOF
 echo "  $ops" | column -t -s ';'
@@ -3094,6 +3508,7 @@ read -r -d '' ops <<EOF
   ${CYAN}apiV2LearningServiceInstructorProfilesGet${OFF};
   ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete${OFF};
   ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdGet${OFF};
+  ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch${OFF};
   ${CYAN}apiV2LearningServiceInstructorProfilesInstructorProfileIdPut${OFF};
   ${CYAN}apiV2LearningServiceInstructorProfilesPost${OFF};
 EOF
@@ -3128,6 +3543,7 @@ read -r -d '' ops <<EOF
   ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdDelete${OFF};
   ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdGet${OFF};
   ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet${OFF};
+  ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdPatch${OFF};
   ${CYAN}apiV2LearningServiceStudentProfilesStudentProfileIdPut${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
@@ -3158,7 +3574,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}LearningService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}LearningService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -3178,7 +3594,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}LearningService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}LearningService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -3322,6 +3738,33 @@ print_getCourseArticlesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseArticleAsync operation
+#
+##############################################################################
+print_patchCourseArticleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseArticleAsync - Patch a course article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course article for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}articleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: articleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3480,6 +3923,33 @@ print_getCourseAssignmentComponentsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseAssignmentComponentAsync operation
+#
+##############################################################################
+print_patchCourseAssignmentComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseAssignmentComponentAsync - Patch a course assignment component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course assignment component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}componentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: componentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseAssignmentComponentAsync operation
 #
 ##############################################################################
@@ -3620,6 +4090,33 @@ print_getCourseAssignmentTypesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseAssignmentTypeAsync operation
+#
+##############################################################################
+print_patchCourseAssignmentTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseAssignmentTypeAsync - Patch a course assignment type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course assignment type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assignmentTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assignmentTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3778,6 +4275,33 @@ print_getCourseAssignmentsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseAssignmentAsync operation
+#
+##############################################################################
+print_patchCourseAssignmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseAssignmentAsync - Patch a course assignment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course assignment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}assignmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assignmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseAssignmentAsync operation
 #
 ##############################################################################
@@ -3922,6 +4446,33 @@ print_getCourseCategoryByIdAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
     echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseCategoryAsync operation
+#
+##############################################################################
+print_patchCourseCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseCategoryAsync - Patch a course category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}categoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: categoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -4202,6 +4753,60 @@ print_getCourseCertificatesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseCertificateAsync operation
+#
+##############################################################################
+print_patchCourseCertificateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseCertificateAsync - Patch a course certificate${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course certificate for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseCertificateTemplateAsync operation
+#
+##############################################################################
+print_patchCourseCertificateTemplateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseCertificateTemplateAsync - Patch a certificate template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course certificate template for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseCertificateTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseCertificateTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseCertificateAsync operation
 #
 ##############################################################################
@@ -4369,6 +4974,33 @@ print_getCourseCohortsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseCohortAsync operation
+#
+##############################################################################
+print_patchCourseCohortAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseCohortAsync - Patch a course cohort${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course cohort for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}cohortId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: cohortId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4573,6 +5205,33 @@ print_getCourseContentGroupsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseContentGroupAsync operation
+#
+##############################################################################
+print_patchCourseContentGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseContentGroupAsync - Patch a course content group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course content group for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}groupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: groupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseContentGroupAsync operation
 #
 ##############################################################################
@@ -4749,6 +5408,33 @@ print_getStudentCourseEnrollmentsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseEnrollmentAsync operation
+#
+##############################################################################
+print_patchCourseEnrollmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseEnrollmentAsync - Patch a course enrollment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course enrollment for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseEnrollmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseEnrollmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseEnrollmentAsync operation
 #
 ##############################################################################
@@ -4889,6 +5575,33 @@ print_getCourseFilesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseFileAsync operation
+#
+##############################################################################
+print_patchCourseFileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseFileAsync - Patch a course file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course file for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5047,6 +5760,33 @@ print_getCourseForumsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseForumAsync operation
+#
+##############################################################################
+print_patchCourseForumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseForumAsync - Patch a course forum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course forum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}forumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: forumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseForumAsync operation
 #
 ##############################################################################
@@ -5187,6 +5927,33 @@ print_getCourseGradingRubricsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseGradingRubricAsync operation
+#
+##############################################################################
+print_patchCourseGradingRubricAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseGradingRubricAsync - Patch a course grading rubric${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course grading rubric." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}rubricId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: rubricId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5345,6 +6112,33 @@ print_getCourseHandoutsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseHandoutAsync operation
+#
+##############################################################################
+print_patchCourseHandoutAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseHandoutAsync - Patch a course handout${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course handout." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}handoutId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: handoutId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseHandoutAsync operation
 #
 ##############################################################################
@@ -5494,6 +6288,33 @@ print_getCourseLibraryByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseLibraryAsync operation
+#
+##############################################################################
+print_patchCourseLibraryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseLibraryAsync - Patch a course library${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course library." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}libraryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: libraryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseLibraryAsync operation
 #
 ##############################################################################
@@ -5634,6 +6455,33 @@ print_getCoursePagesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCoursePageAsync operation
+#
+##############################################################################
+print_patchCoursePageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCoursePageAsync - Patch a course page${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing course page for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}pageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: pageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5792,6 +6640,33 @@ print_getCourseProblemSetsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseProblemSetAsync operation
+#
+##############################################################################
+print_patchCourseProblemSetAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseProblemSetAsync - Patch a course problem set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course problem set for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}problemSetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: problemSetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseProblemSetAsync operation
 #
 ##############################################################################
@@ -5932,6 +6807,33 @@ print_getCourseSectionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseSectionAsync operation
+#
+##############################################################################
+print_patchCourseSectionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseSectionAsync - Patch a course section${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course section for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sectionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sectionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6090,6 +6992,33 @@ print_getCourseTeamMembershipsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseTeamMembershipAsync operation
+#
+##############################################################################
+print_patchCourseTeamMembershipAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseTeamMembershipAsync - Patch a course team membership${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course team membership for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}membershipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: membershipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseTeamMembershipAsync operation
 #
 ##############################################################################
@@ -6230,6 +7159,33 @@ print_getCourseUnitComponentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseUnitComponentAsync operation
+#
+##############################################################################
+print_patchCourseUnitComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseUnitComponentAsync - Patch a course unit component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course unit component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}componentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: componentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6388,6 +7344,33 @@ print_getCourseUnitsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseUnitAsync operation
+#
+##############################################################################
+print_patchCourseUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseUnitAsync - Patch a course unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course unit for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}unitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: unitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseUnitAsync operation
 #
 ##############################################################################
@@ -6537,6 +7520,33 @@ print_getCourseUpdatesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseUpdateAsync operation
+#
+##############################################################################
+print_patchCourseUpdateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseUpdateAsync - Patch a course update${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course update for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}updateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: updateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseUpdateAsync operation
 #
 ##############################################################################
@@ -6677,6 +7687,33 @@ print_getCourseWikisCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCourseWikiAsync operation
+#
+##############################################################################
+print_patchCourseWikiAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseWikiAsync - Patch a course wiki${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course wiki for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}wikiId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: wikiId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7648,6 +8685,33 @@ print_getStudentProfilesByCourseCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchCourseAsync operation
+#
+##############################################################################
+print_patchCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCourseAsync - Patch a course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates a course for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateCourseAsync operation
 #
 ##############################################################################
@@ -8050,6 +9114,31 @@ print_apiV2LearningServiceInstructorProfilesInstructorProfileIdGet_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch operation
+#
+##############################################################################
+print_apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}instructorProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: instructorProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8568,6 +9657,31 @@ print_apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet_help(
 }
 ##############################################################################
 #
+# Print help for apiV2LearningServiceStudentProfilesStudentProfileIdPatch operation
+#
+##############################################################################
+print_apiV2LearningServiceStudentProfilesStudentProfileIdPatch_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2LearningServiceStudentProfilesStudentProfileIdPatch - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}studentProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: studentProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for apiV2LearningServiceStudentProfilesStudentProfileIdPut operation
 #
 ##############################################################################
@@ -8846,6 +9960,82 @@ call_getCourseArticlesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseArticleAsync operation
+#
+##############################################################################
+call_patchCourseArticleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(articleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseArticles/{articleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9147,6 +10337,82 @@ call_getCourseAssignmentComponentsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseAssignmentComponentAsync operation
+#
+##############################################################################
+call_patchCourseAssignmentComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(componentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignmentComponents/{componentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseAssignmentComponentAsync operation
 #
 ##############################################################################
@@ -9438,6 +10704,82 @@ call_getCourseAssignmentTypesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseAssignmentTypeAsync operation
+#
+##############################################################################
+call_patchCourseAssignmentTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assignmentTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignmentTypes/{assignmentTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9739,6 +11081,82 @@ call_getCourseAssignmentsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseAssignmentAsync operation
+#
+##############################################################################
+call_patchCourseAssignmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(assignmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseAssignments/{assignmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseAssignmentAsync operation
 #
 ##############################################################################
@@ -10030,6 +11448,82 @@ call_getCourseCategoryByIdAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseCategoryAsync operation
+#
+##############################################################################
+call_patchCourseCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(categoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCategories/{categoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10551,6 +12045,158 @@ call_getCourseCertificatesCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseCertificateAsync operation
+#
+##############################################################################
+call_patchCourseCertificateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/{courseCertificateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseCertificateTemplateAsync operation
+#
+##############################################################################
+call_patchCourseCertificateTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseCertificateTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCertificates/Template/{courseCertificateTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseCertificateAsync operation
 #
 ##############################################################################
@@ -10918,6 +12564,82 @@ call_getCourseCohortsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseCohortAsync operation
+#
+##############################################################################
+call_patchCourseCohortAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(cohortId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseCohorts/{cohortId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11291,6 +13013,82 @@ call_getCourseContentGroupsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseContentGroupAsync operation
+#
+##############################################################################
+call_patchCourseContentGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(groupId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseContentGroups/{groupId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseContentGroupAsync operation
 #
 ##############################################################################
@@ -11623,6 +13421,82 @@ call_getStudentCourseEnrollmentsAsync() {
 
 ##############################################################################
 #
+# Call patchCourseEnrollmentAsync operation
+#
+##############################################################################
+call_patchCourseEnrollmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseEnrollmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseEnrollments/{courseEnrollmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseEnrollmentAsync operation
 #
 ##############################################################################
@@ -11914,6 +13788,82 @@ call_getCourseFilesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseFileAsync operation
+#
+##############################################################################
+call_patchCourseFileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseFiles/{fileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12215,6 +14165,82 @@ call_getCourseForumsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseForumAsync operation
+#
+##############################################################################
+call_patchCourseForumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(forumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseForums/{forumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseForumAsync operation
 #
 ##############################################################################
@@ -12506,6 +14532,82 @@ call_getCourseGradingRubricsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseGradingRubricAsync operation
+#
+##############################################################################
+call_patchCourseGradingRubricAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(rubricId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseGradingRubrics/{rubricId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12807,6 +14909,82 @@ call_getCourseHandoutsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseHandoutAsync operation
+#
+##############################################################################
+call_patchCourseHandoutAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(handoutId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseHandouts/{handoutId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseHandoutAsync operation
 #
 ##############################################################################
@@ -13098,6 +15276,82 @@ call_getCourseLibraryByIdAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseLibraryAsync operation
+#
+##############################################################################
+call_patchCourseLibraryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(libraryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseLibraries/{libraryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13399,6 +15653,82 @@ call_getCoursePagesCountAsync() {
 
 ##############################################################################
 #
+# Call patchCoursePageAsync operation
+#
+##############################################################################
+call_patchCoursePageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(pageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CoursePages/{pageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCoursePageAsync operation
 #
 ##############################################################################
@@ -13690,6 +16020,82 @@ call_getCourseProblemSetsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseProblemSetAsync operation
+#
+##############################################################################
+call_patchCourseProblemSetAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(problemSetId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseProblemSets/{problemSetId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13991,6 +16397,82 @@ call_getCourseSectionsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseSectionAsync operation
+#
+##############################################################################
+call_patchCourseSectionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(sectionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseSections/{sectionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseSectionAsync operation
 #
 ##############################################################################
@@ -14282,6 +16764,82 @@ call_getCourseTeamMembershipsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseTeamMembershipAsync operation
+#
+##############################################################################
+call_patchCourseTeamMembershipAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(membershipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseTeamMemberships/{membershipId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14583,6 +17141,82 @@ call_getCourseUnitComponentsCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseUnitComponentAsync operation
+#
+##############################################################################
+call_patchCourseUnitComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(componentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnitComponents/{componentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseUnitComponentAsync operation
 #
 ##############################################################################
@@ -14874,6 +17508,82 @@ call_getCourseUnitsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseUnitAsync operation
+#
+##############################################################################
+call_patchCourseUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(unitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUnits/{unitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15175,6 +17885,82 @@ call_getCourseUpdatesCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseUpdateAsync operation
+#
+##############################################################################
+call_patchCourseUpdateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(updateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseUpdates/{updateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseUpdateAsync operation
 #
 ##############################################################################
@@ -15466,6 +18252,82 @@ call_getCourseWikisCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCourseWikiAsync operation
+#
+##############################################################################
+call_patchCourseWikiAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(wikiId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/CourseWikis/{wikiId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17027,6 +19889,82 @@ call_getStudentProfilesByCourseCountAsync() {
 
 ##############################################################################
 #
+# Call patchCourseAsync operation
+#
+##############################################################################
+call_patchCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/Courses/{courseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateCourseAsync operation
 #
 ##############################################################################
@@ -18198,6 +21136,82 @@ call_apiV2LearningServiceInstructorProfilesInstructorProfileIdGet() {
 
 ##############################################################################
 #
+# Call apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch operation
+#
+##############################################################################
+call_apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(instructorProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/InstructorProfiles/{instructorProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call apiV2LearningServiceInstructorProfilesInstructorProfileIdPut operation
 #
 ##############################################################################
@@ -19182,6 +22196,82 @@ call_apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet() {
 
 ##############################################################################
 #
+# Call apiV2LearningServiceStudentProfilesStudentProfileIdPatch operation
+#
+##############################################################################
+call_apiV2LearningServiceStudentProfilesStudentProfileIdPatch() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(studentProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/LearningService/StudentProfiles/{studentProfileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call apiV2LearningServiceStudentProfilesStudentProfileIdPut operation
 #
 ##############################################################################
@@ -19371,6 +22461,9 @@ case $key in
     getCourseArticlesCountAsync)
     operation="getCourseArticlesCountAsync"
     ;;
+    patchCourseArticleAsync)
+    operation="patchCourseArticleAsync"
+    ;;
     updateCourseArticleAsync)
     operation="updateCourseArticleAsync"
     ;;
@@ -19388,6 +22481,9 @@ case $key in
     ;;
     getCourseAssignmentComponentsCountAsync)
     operation="getCourseAssignmentComponentsCountAsync"
+    ;;
+    patchCourseAssignmentComponentAsync)
+    operation="patchCourseAssignmentComponentAsync"
     ;;
     updateCourseAssignmentComponentAsync)
     operation="updateCourseAssignmentComponentAsync"
@@ -19407,6 +22503,9 @@ case $key in
     getCourseAssignmentTypesCountAsync)
     operation="getCourseAssignmentTypesCountAsync"
     ;;
+    patchCourseAssignmentTypeAsync)
+    operation="patchCourseAssignmentTypeAsync"
+    ;;
     updateCourseAssignmentTypeAsync)
     operation="updateCourseAssignmentTypeAsync"
     ;;
@@ -19425,6 +22524,9 @@ case $key in
     getCourseAssignmentsCountAsync)
     operation="getCourseAssignmentsCountAsync"
     ;;
+    patchCourseAssignmentAsync)
+    operation="patchCourseAssignmentAsync"
+    ;;
     updateCourseAssignmentAsync)
     operation="updateCourseAssignmentAsync"
     ;;
@@ -19442,6 +22544,9 @@ case $key in
     ;;
     getCourseCategoryByIdAsync)
     operation="getCourseCategoryByIdAsync"
+    ;;
+    patchCourseCategoryAsync)
+    operation="patchCourseCategoryAsync"
     ;;
     updateCourseCategoryAsync)
     operation="updateCourseCategoryAsync"
@@ -19476,6 +22581,12 @@ case $key in
     getCourseCertificatesCountAsync)
     operation="getCourseCertificatesCountAsync"
     ;;
+    patchCourseCertificateAsync)
+    operation="patchCourseCertificateAsync"
+    ;;
+    patchCourseCertificateTemplateAsync)
+    operation="patchCourseCertificateTemplateAsync"
+    ;;
     updateCourseCertificateAsync)
     operation="updateCourseCertificateAsync"
     ;;
@@ -19496,6 +22607,9 @@ case $key in
     ;;
     getCourseCohortsCountAsync)
     operation="getCourseCohortsCountAsync"
+    ;;
+    patchCourseCohortAsync)
+    operation="patchCourseCohortAsync"
     ;;
     updateCourseCohortAsync)
     operation="updateCourseCohortAsync"
@@ -19521,6 +22635,9 @@ case $key in
     getCourseContentGroupsCountAsync)
     operation="getCourseContentGroupsCountAsync"
     ;;
+    patchCourseContentGroupAsync)
+    operation="patchCourseContentGroupAsync"
+    ;;
     updateCourseContentGroupAsync)
     operation="updateCourseContentGroupAsync"
     ;;
@@ -19542,6 +22659,9 @@ case $key in
     getStudentCourseEnrollmentsAsync)
     operation="getStudentCourseEnrollmentsAsync"
     ;;
+    patchCourseEnrollmentAsync)
+    operation="patchCourseEnrollmentAsync"
+    ;;
     updateCourseEnrollmentAsync)
     operation="updateCourseEnrollmentAsync"
     ;;
@@ -19559,6 +22679,9 @@ case $key in
     ;;
     getCourseFilesCountAsync)
     operation="getCourseFilesCountAsync"
+    ;;
+    patchCourseFileAsync)
+    operation="patchCourseFileAsync"
     ;;
     updateCourseFileAsync)
     operation="updateCourseFileAsync"
@@ -19578,6 +22701,9 @@ case $key in
     getCourseForumsCountAsync)
     operation="getCourseForumsCountAsync"
     ;;
+    patchCourseForumAsync)
+    operation="patchCourseForumAsync"
+    ;;
     updateCourseForumAsync)
     operation="updateCourseForumAsync"
     ;;
@@ -19595,6 +22721,9 @@ case $key in
     ;;
     getCourseGradingRubricsCountAsync)
     operation="getCourseGradingRubricsCountAsync"
+    ;;
+    patchCourseGradingRubricAsync)
+    operation="patchCourseGradingRubricAsync"
     ;;
     updateCourseGradingRubricAsync)
     operation="updateCourseGradingRubricAsync"
@@ -19614,6 +22743,9 @@ case $key in
     getCourseHandoutsCountAsync)
     operation="getCourseHandoutsCountAsync"
     ;;
+    patchCourseHandoutAsync)
+    operation="patchCourseHandoutAsync"
+    ;;
     updateCourseHandoutAsync)
     operation="updateCourseHandoutAsync"
     ;;
@@ -19631,6 +22763,9 @@ case $key in
     ;;
     getCourseLibraryByIdAsync)
     operation="getCourseLibraryByIdAsync"
+    ;;
+    patchCourseLibraryAsync)
+    operation="patchCourseLibraryAsync"
     ;;
     updateCourseLibraryAsync)
     operation="updateCourseLibraryAsync"
@@ -19650,6 +22785,9 @@ case $key in
     getCoursePagesCountAsync)
     operation="getCoursePagesCountAsync"
     ;;
+    patchCoursePageAsync)
+    operation="patchCoursePageAsync"
+    ;;
     updateCoursePageAsync)
     operation="updateCoursePageAsync"
     ;;
@@ -19667,6 +22805,9 @@ case $key in
     ;;
     getCourseProblemSetsCountAsync)
     operation="getCourseProblemSetsCountAsync"
+    ;;
+    patchCourseProblemSetAsync)
+    operation="patchCourseProblemSetAsync"
     ;;
     updateCourseProblemSetAsync)
     operation="updateCourseProblemSetAsync"
@@ -19686,6 +22827,9 @@ case $key in
     getCourseSectionsCountAsync)
     operation="getCourseSectionsCountAsync"
     ;;
+    patchCourseSectionAsync)
+    operation="patchCourseSectionAsync"
+    ;;
     updateCourseSectionAsync)
     operation="updateCourseSectionAsync"
     ;;
@@ -19703,6 +22847,9 @@ case $key in
     ;;
     getCourseTeamMembershipsCountAsync)
     operation="getCourseTeamMembershipsCountAsync"
+    ;;
+    patchCourseTeamMembershipAsync)
+    operation="patchCourseTeamMembershipAsync"
     ;;
     updateCourseTeamMembershipAsync)
     operation="updateCourseTeamMembershipAsync"
@@ -19722,6 +22869,9 @@ case $key in
     getCourseUnitComponentsCountAsync)
     operation="getCourseUnitComponentsCountAsync"
     ;;
+    patchCourseUnitComponentAsync)
+    operation="patchCourseUnitComponentAsync"
+    ;;
     updateCourseUnitComponentAsync)
     operation="updateCourseUnitComponentAsync"
     ;;
@@ -19739,6 +22889,9 @@ case $key in
     ;;
     getCourseUnitsCountAsync)
     operation="getCourseUnitsCountAsync"
+    ;;
+    patchCourseUnitAsync)
+    operation="patchCourseUnitAsync"
     ;;
     updateCourseUnitAsync)
     operation="updateCourseUnitAsync"
@@ -19758,6 +22911,9 @@ case $key in
     getCourseUpdatesCountAsync)
     operation="getCourseUpdatesCountAsync"
     ;;
+    patchCourseUpdateAsync)
+    operation="patchCourseUpdateAsync"
+    ;;
     updateCourseUpdateAsync)
     operation="updateCourseUpdateAsync"
     ;;
@@ -19775,6 +22931,9 @@ case $key in
     ;;
     getCourseWikisCountAsync)
     operation="getCourseWikisCountAsync"
+    ;;
+    patchCourseWikiAsync)
+    operation="patchCourseWikiAsync"
     ;;
     updateCourseWikiAsync)
     operation="updateCourseWikiAsync"
@@ -19899,6 +23058,9 @@ case $key in
     getStudentProfilesByCourseCountAsync)
     operation="getStudentProfilesByCourseCountAsync"
     ;;
+    patchCourseAsync)
+    operation="patchCourseAsync"
+    ;;
     updateCourseAsync)
     operation="updateCourseAsync"
     ;;
@@ -19964,6 +23126,9 @@ case $key in
     ;;
     apiV2LearningServiceInstructorProfilesInstructorProfileIdGet)
     operation="apiV2LearningServiceInstructorProfilesInstructorProfileIdGet"
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch)
+    operation="apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch"
     ;;
     apiV2LearningServiceInstructorProfilesInstructorProfileIdPut)
     operation="apiV2LearningServiceInstructorProfilesInstructorProfileIdPut"
@@ -20036,6 +23201,9 @@ case $key in
     ;;
     apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet)
     operation="apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet"
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdPatch)
+    operation="apiV2LearningServiceStudentProfilesStudentProfileIdPatch"
     ;;
     apiV2LearningServiceStudentProfilesStudentProfileIdPut)
     operation="apiV2LearningServiceStudentProfilesStudentProfileIdPut"
@@ -20145,6 +23313,9 @@ case $operation in
     getCourseArticlesCountAsync)
     call_getCourseArticlesCountAsync
     ;;
+    patchCourseArticleAsync)
+    call_patchCourseArticleAsync
+    ;;
     updateCourseArticleAsync)
     call_updateCourseArticleAsync
     ;;
@@ -20162,6 +23333,9 @@ case $operation in
     ;;
     getCourseAssignmentComponentsCountAsync)
     call_getCourseAssignmentComponentsCountAsync
+    ;;
+    patchCourseAssignmentComponentAsync)
+    call_patchCourseAssignmentComponentAsync
     ;;
     updateCourseAssignmentComponentAsync)
     call_updateCourseAssignmentComponentAsync
@@ -20181,6 +23355,9 @@ case $operation in
     getCourseAssignmentTypesCountAsync)
     call_getCourseAssignmentTypesCountAsync
     ;;
+    patchCourseAssignmentTypeAsync)
+    call_patchCourseAssignmentTypeAsync
+    ;;
     updateCourseAssignmentTypeAsync)
     call_updateCourseAssignmentTypeAsync
     ;;
@@ -20199,6 +23376,9 @@ case $operation in
     getCourseAssignmentsCountAsync)
     call_getCourseAssignmentsCountAsync
     ;;
+    patchCourseAssignmentAsync)
+    call_patchCourseAssignmentAsync
+    ;;
     updateCourseAssignmentAsync)
     call_updateCourseAssignmentAsync
     ;;
@@ -20216,6 +23396,9 @@ case $operation in
     ;;
     getCourseCategoryByIdAsync)
     call_getCourseCategoryByIdAsync
+    ;;
+    patchCourseCategoryAsync)
+    call_patchCourseCategoryAsync
     ;;
     updateCourseCategoryAsync)
     call_updateCourseCategoryAsync
@@ -20250,6 +23433,12 @@ case $operation in
     getCourseCertificatesCountAsync)
     call_getCourseCertificatesCountAsync
     ;;
+    patchCourseCertificateAsync)
+    call_patchCourseCertificateAsync
+    ;;
+    patchCourseCertificateTemplateAsync)
+    call_patchCourseCertificateTemplateAsync
+    ;;
     updateCourseCertificateAsync)
     call_updateCourseCertificateAsync
     ;;
@@ -20270,6 +23459,9 @@ case $operation in
     ;;
     getCourseCohortsCountAsync)
     call_getCourseCohortsCountAsync
+    ;;
+    patchCourseCohortAsync)
+    call_patchCourseCohortAsync
     ;;
     updateCourseCohortAsync)
     call_updateCourseCohortAsync
@@ -20295,6 +23487,9 @@ case $operation in
     getCourseContentGroupsCountAsync)
     call_getCourseContentGroupsCountAsync
     ;;
+    patchCourseContentGroupAsync)
+    call_patchCourseContentGroupAsync
+    ;;
     updateCourseContentGroupAsync)
     call_updateCourseContentGroupAsync
     ;;
@@ -20316,6 +23511,9 @@ case $operation in
     getStudentCourseEnrollmentsAsync)
     call_getStudentCourseEnrollmentsAsync
     ;;
+    patchCourseEnrollmentAsync)
+    call_patchCourseEnrollmentAsync
+    ;;
     updateCourseEnrollmentAsync)
     call_updateCourseEnrollmentAsync
     ;;
@@ -20333,6 +23531,9 @@ case $operation in
     ;;
     getCourseFilesCountAsync)
     call_getCourseFilesCountAsync
+    ;;
+    patchCourseFileAsync)
+    call_patchCourseFileAsync
     ;;
     updateCourseFileAsync)
     call_updateCourseFileAsync
@@ -20352,6 +23553,9 @@ case $operation in
     getCourseForumsCountAsync)
     call_getCourseForumsCountAsync
     ;;
+    patchCourseForumAsync)
+    call_patchCourseForumAsync
+    ;;
     updateCourseForumAsync)
     call_updateCourseForumAsync
     ;;
@@ -20369,6 +23573,9 @@ case $operation in
     ;;
     getCourseGradingRubricsCountAsync)
     call_getCourseGradingRubricsCountAsync
+    ;;
+    patchCourseGradingRubricAsync)
+    call_patchCourseGradingRubricAsync
     ;;
     updateCourseGradingRubricAsync)
     call_updateCourseGradingRubricAsync
@@ -20388,6 +23595,9 @@ case $operation in
     getCourseHandoutsCountAsync)
     call_getCourseHandoutsCountAsync
     ;;
+    patchCourseHandoutAsync)
+    call_patchCourseHandoutAsync
+    ;;
     updateCourseHandoutAsync)
     call_updateCourseHandoutAsync
     ;;
@@ -20405,6 +23615,9 @@ case $operation in
     ;;
     getCourseLibraryByIdAsync)
     call_getCourseLibraryByIdAsync
+    ;;
+    patchCourseLibraryAsync)
+    call_patchCourseLibraryAsync
     ;;
     updateCourseLibraryAsync)
     call_updateCourseLibraryAsync
@@ -20424,6 +23637,9 @@ case $operation in
     getCoursePagesCountAsync)
     call_getCoursePagesCountAsync
     ;;
+    patchCoursePageAsync)
+    call_patchCoursePageAsync
+    ;;
     updateCoursePageAsync)
     call_updateCoursePageAsync
     ;;
@@ -20441,6 +23657,9 @@ case $operation in
     ;;
     getCourseProblemSetsCountAsync)
     call_getCourseProblemSetsCountAsync
+    ;;
+    patchCourseProblemSetAsync)
+    call_patchCourseProblemSetAsync
     ;;
     updateCourseProblemSetAsync)
     call_updateCourseProblemSetAsync
@@ -20460,6 +23679,9 @@ case $operation in
     getCourseSectionsCountAsync)
     call_getCourseSectionsCountAsync
     ;;
+    patchCourseSectionAsync)
+    call_patchCourseSectionAsync
+    ;;
     updateCourseSectionAsync)
     call_updateCourseSectionAsync
     ;;
@@ -20477,6 +23699,9 @@ case $operation in
     ;;
     getCourseTeamMembershipsCountAsync)
     call_getCourseTeamMembershipsCountAsync
+    ;;
+    patchCourseTeamMembershipAsync)
+    call_patchCourseTeamMembershipAsync
     ;;
     updateCourseTeamMembershipAsync)
     call_updateCourseTeamMembershipAsync
@@ -20496,6 +23721,9 @@ case $operation in
     getCourseUnitComponentsCountAsync)
     call_getCourseUnitComponentsCountAsync
     ;;
+    patchCourseUnitComponentAsync)
+    call_patchCourseUnitComponentAsync
+    ;;
     updateCourseUnitComponentAsync)
     call_updateCourseUnitComponentAsync
     ;;
@@ -20513,6 +23741,9 @@ case $operation in
     ;;
     getCourseUnitsCountAsync)
     call_getCourseUnitsCountAsync
+    ;;
+    patchCourseUnitAsync)
+    call_patchCourseUnitAsync
     ;;
     updateCourseUnitAsync)
     call_updateCourseUnitAsync
@@ -20532,6 +23763,9 @@ case $operation in
     getCourseUpdatesCountAsync)
     call_getCourseUpdatesCountAsync
     ;;
+    patchCourseUpdateAsync)
+    call_patchCourseUpdateAsync
+    ;;
     updateCourseUpdateAsync)
     call_updateCourseUpdateAsync
     ;;
@@ -20549,6 +23783,9 @@ case $operation in
     ;;
     getCourseWikisCountAsync)
     call_getCourseWikisCountAsync
+    ;;
+    patchCourseWikiAsync)
+    call_patchCourseWikiAsync
     ;;
     updateCourseWikiAsync)
     call_updateCourseWikiAsync
@@ -20673,6 +23910,9 @@ case $operation in
     getStudentProfilesByCourseCountAsync)
     call_getStudentProfilesByCourseCountAsync
     ;;
+    patchCourseAsync)
+    call_patchCourseAsync
+    ;;
     updateCourseAsync)
     call_updateCourseAsync
     ;;
@@ -20738,6 +23978,9 @@ case $operation in
     ;;
     apiV2LearningServiceInstructorProfilesInstructorProfileIdGet)
     call_apiV2LearningServiceInstructorProfilesInstructorProfileIdGet
+    ;;
+    apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch)
+    call_apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch
     ;;
     apiV2LearningServiceInstructorProfilesInstructorProfileIdPut)
     call_apiV2LearningServiceInstructorProfilesInstructorProfileIdPut
@@ -20810,6 +24053,9 @@ case $operation in
     ;;
     apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet)
     call_apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet
+    ;;
+    apiV2LearningServiceStudentProfilesStudentProfileIdPatch)
+    call_apiV2LearningServiceStudentProfilesStudentProfileIdPatch
     ;;
     apiV2LearningServiceStudentProfilesStudentProfileIdPut)
     call_apiV2LearningServiceStudentProfilesStudentProfileIdPut

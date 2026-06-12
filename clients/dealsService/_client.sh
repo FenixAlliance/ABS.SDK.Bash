@@ -307,6 +307,8 @@ case $state in
             "getDealUnitFlowStagesCountAsync[Get stages count for a deal unit flow]" \
             "getDealUnitFlowsAsync[Get deal unit flows]" \
             "getDealUnitFlowsCountAsync[Get deal unit flows count]" \
+            "patchDealUnitFlowAsync[Patch a deal unit flow]" \
+            "patchDealUnitFlowStageAsync[Patch a deal unit flow stage]" \
             "updateDealUnitFlowAsync[Update a deal unit flow]" \
             "updateDealUnitFlowStageAsync[Update a deal unit flow stage]"             "calculateDealUnitAsync[Calculate a deal unit]" \
             "calculateDealUnitLineAsync[Calculate a deal unit line]" \
@@ -322,6 +324,8 @@ case $state in
             "getDealUnitsCountAsync[Get deal units count]" \
             "getExtendedDealUnitAsync[Get extended deal unit by ID]" \
             "getExtendedDealUnitsAsync[Get extended deal units]" \
+            "patchDealUnitAsync[Patch a deal unit]" \
+            "patchDealUnitLineAsync[Patch a deal unit line]" \
             "updateDealUnitAsync[Update a deal unit]" \
             "updateDealUnitPriceAsync[Update a deal unit line]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
@@ -432,6 +436,23 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchDealUnitFlowAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitFlowId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchDealUnitFlowStageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitFlowId=:[PATH] "
+"dealUnitFlowStageId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -561,6 +582,23 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchDealUnitAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchDealUnitLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "dealUnitId=:[PATH] "
+"dealUnitLineId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

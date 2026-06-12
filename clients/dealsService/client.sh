@@ -120,6 +120,13 @@ operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::tena
 operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=1
 operation_parameters_minimum_occurrences["getDealUnitFlowsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitFlowsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowStageId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::dealUnitFlowId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=0
@@ -157,6 +164,13 @@ operation_parameters_minimum_occurrences["getDealUnitsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExtendedDealUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExtendedDealUnitAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["getExtendedDealUnitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::dealUnitLineId"]=1
+operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateDealUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitAsync:::DealUnitUpdateDto"]=0
@@ -213,6 +227,13 @@ operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::tena
 operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowStageId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::dealUnitFlowId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=0
@@ -250,6 +271,13 @@ operation_parameters_maximum_occurrences["getDealUnitsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExtendedDealUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExtendedDealUnitAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["getExtendedDealUnitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::dealUnitLineId"]=0
+operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateDealUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitAsync:::DealUnitUpdateDto"]=0
@@ -303,6 +331,13 @@ operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::tenantId
 operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=""
 operation_parameters_collection_type["getDealUnitFlowsAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitFlowsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["patchDealUnitFlowAsync:::tenantId"]=""
+operation_parameters_collection_type["patchDealUnitFlowAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["patchDealUnitFlowAsync:::Operation"]=
+operation_parameters_collection_type["patchDealUnitFlowStageAsync:::tenantId"]=""
+operation_parameters_collection_type["patchDealUnitFlowStageAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["patchDealUnitFlowStageAsync:::dealUnitFlowStageId"]=""
+operation_parameters_collection_type["patchDealUnitFlowStageAsync:::Operation"]=
 operation_parameters_collection_type["updateDealUnitFlowAsync:::tenantId"]=""
 operation_parameters_collection_type["updateDealUnitFlowAsync:::dealUnitFlowId"]=""
 operation_parameters_collection_type["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=""
@@ -340,6 +375,13 @@ operation_parameters_collection_type["getDealUnitsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getExtendedDealUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["getExtendedDealUnitAsync:::dealUnitId"]=""
 operation_parameters_collection_type["getExtendedDealUnitsAsync:::tenantId"]=""
+operation_parameters_collection_type["patchDealUnitAsync:::tenantId"]=""
+operation_parameters_collection_type["patchDealUnitAsync:::dealUnitId"]=""
+operation_parameters_collection_type["patchDealUnitAsync:::Operation"]=
+operation_parameters_collection_type["patchDealUnitLineAsync:::tenantId"]=""
+operation_parameters_collection_type["patchDealUnitLineAsync:::dealUnitId"]=""
+operation_parameters_collection_type["patchDealUnitLineAsync:::dealUnitLineId"]=""
+operation_parameters_collection_type["patchDealUnitLineAsync:::Operation"]=
 operation_parameters_collection_type["updateDealUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["updateDealUnitAsync:::dealUnitId"]=""
 operation_parameters_collection_type["updateDealUnitAsync:::DealUnitUpdateDto"]=""
@@ -721,7 +763,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}DealsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}DealsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -768,6 +810,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getDealUnitFlowStagesCountAsync${OFF};Get stages count for a deal unit flow
   ${CYAN}getDealUnitFlowsAsync${OFF};Get deal unit flows
   ${CYAN}getDealUnitFlowsCountAsync${OFF};Get deal unit flows count
+  ${CYAN}patchDealUnitFlowAsync${OFF};Patch a deal unit flow
+  ${CYAN}patchDealUnitFlowStageAsync${OFF};Patch a deal unit flow stage
   ${CYAN}updateDealUnitFlowAsync${OFF};Update a deal unit flow
   ${CYAN}updateDealUnitFlowStageAsync${OFF};Update a deal unit flow stage
 EOF
@@ -789,6 +833,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getDealUnitsCountAsync${OFF};Get deal units count
   ${CYAN}getExtendedDealUnitAsync${OFF};Get extended deal unit by ID
   ${CYAN}getExtendedDealUnitsAsync${OFF};Get extended deal units
+  ${CYAN}patchDealUnitAsync${OFF};Patch a deal unit
+  ${CYAN}patchDealUnitLineAsync${OFF};Patch a deal unit line
   ${CYAN}updateDealUnitAsync${OFF};Update a deal unit
   ${CYAN}updateDealUnitPriceAsync${OFF};Update a deal unit line
 EOF
@@ -842,7 +888,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}DealsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}DealsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -862,7 +908,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}DealsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}DealsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -1107,6 +1153,55 @@ print_getDealUnitFlowsCountAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchDealUnitFlowAsync operation
+#
+##############################################################################
+print_patchDealUnitFlowAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchDealUnitFlowAsync - Patch a deal unit flow${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing deal unit flow by its unique identifier using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchDealUnitFlowStageAsync operation
+#
+##############################################################################
+print_patchDealUnitFlowStageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchDealUnitFlowStageAsync - Patch a deal unit flow stage${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing stage within a specific deal unit flow using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitFlowStageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowStageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1469,6 +1564,55 @@ print_getExtendedDealUnitsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchDealUnitAsync operation
+#
+##############################################################################
+print_patchDealUnitAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchDealUnitAsync - Patch a deal unit${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing deal unit by its unique identifier using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchDealUnitLineAsync operation
+#
+##############################################################################
+print_patchDealUnitLineAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchDealUnitLineAsync - Patch a deal unit line${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing line within a specific deal unit using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}dealUnitLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -2299,6 +2443,158 @@ call_getDealUnitFlowsCountAsync() {
 
 ##############################################################################
 #
+# Call patchDealUnitFlowAsync operation
+#
+##############################################################################
+call_patchDealUnitFlowAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchDealUnitFlowStageAsync operation
+#
+##############################################################################
+call_patchDealUnitFlowStageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitFlowId dealUnitFlowStageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateDealUnitFlowAsync operation
 #
 ##############################################################################
@@ -3030,6 +3326,158 @@ call_getExtendedDealUnitsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchDealUnitAsync operation
+#
+##############################################################################
+call_patchDealUnitAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchDealUnitLineAsync operation
+#
+##############################################################################
+call_patchDealUnitLineAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(dealUnitId dealUnitLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4266,6 +4714,12 @@ case $key in
     getDealUnitFlowsCountAsync)
     operation="getDealUnitFlowsCountAsync"
     ;;
+    patchDealUnitFlowAsync)
+    operation="patchDealUnitFlowAsync"
+    ;;
+    patchDealUnitFlowStageAsync)
+    operation="patchDealUnitFlowStageAsync"
+    ;;
     updateDealUnitFlowAsync)
     operation="updateDealUnitFlowAsync"
     ;;
@@ -4313,6 +4767,12 @@ case $key in
     ;;
     getExtendedDealUnitsAsync)
     operation="getExtendedDealUnitsAsync"
+    ;;
+    patchDealUnitAsync)
+    operation="patchDealUnitAsync"
+    ;;
+    patchDealUnitLineAsync)
+    operation="patchDealUnitLineAsync"
     ;;
     updateDealUnitAsync)
     operation="updateDealUnitAsync"
@@ -4491,6 +4951,12 @@ case $operation in
     getDealUnitFlowsCountAsync)
     call_getDealUnitFlowsCountAsync
     ;;
+    patchDealUnitFlowAsync)
+    call_patchDealUnitFlowAsync
+    ;;
+    patchDealUnitFlowStageAsync)
+    call_patchDealUnitFlowStageAsync
+    ;;
     updateDealUnitFlowAsync)
     call_updateDealUnitFlowAsync
     ;;
@@ -4538,6 +5004,12 @@ case $operation in
     ;;
     getExtendedDealUnitsAsync)
     call_getExtendedDealUnitsAsync
+    ;;
+    patchDealUnitAsync)
+    call_patchDealUnitAsync
+    ;;
+    patchDealUnitLineAsync)
+    call_patchDealUnitLineAsync
     ;;
     updateDealUnitAsync)
     call_updateDealUnitAsync

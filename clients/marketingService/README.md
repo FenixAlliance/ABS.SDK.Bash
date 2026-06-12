@@ -109,18 +109,21 @@ Class | Method | HTTP request | Description
 *EmailGroupsApi* | [**getEmailGroupDetailsAsync**](docs/EmailGroupsApi.md#getemailgroupdetailsasync) | **GET** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Get email group by ID
 *EmailGroupsApi* | [**getEmailGroupsCountAsync**](docs/EmailGroupsApi.md#getemailgroupscountasync) | **GET** /api/v2/MarketingService/EmailGroups/Count | Get email groups count
 *EmailGroupsApi* | [**getEmailGroupsODataAsync**](docs/EmailGroupsApi.md#getemailgroupsodataasync) | **GET** /api/v2/MarketingService/EmailGroups | Get email groups
+*EmailGroupsApi* | [**patchEmailGroupAsync**](docs/EmailGroupsApi.md#patchemailgroupasync) | **PATCH** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Patch an email group
 *EmailGroupsApi* | [**updateEmailGroupAsync**](docs/EmailGroupsApi.md#updateemailgroupasync) | **PUT** /api/v2/MarketingService/EmailGroups/{emailgroupId} | Update an email group
 *EmailSignaturesApi* | [**createEmailSignatureAsync**](docs/EmailSignaturesApi.md#createemailsignatureasync) | **POST** /api/v2/MarketingService/EmailSignatures | Create an email signature
 *EmailSignaturesApi* | [**deleteEmailSignatureAsync**](docs/EmailSignaturesApi.md#deleteemailsignatureasync) | **DELETE** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Delete an email signature
 *EmailSignaturesApi* | [**getEmailSignatureDetailsAsync**](docs/EmailSignaturesApi.md#getemailsignaturedetailsasync) | **GET** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Get email signature by ID
 *EmailSignaturesApi* | [**getEmailSignaturesCountAsync**](docs/EmailSignaturesApi.md#getemailsignaturescountasync) | **GET** /api/v2/MarketingService/EmailSignatures/Count | Get email signatures count
 *EmailSignaturesApi* | [**getEmailSignaturesODataAsync**](docs/EmailSignaturesApi.md#getemailsignaturesodataasync) | **GET** /api/v2/MarketingService/EmailSignatures | Get email signatures
+*EmailSignaturesApi* | [**patchEmailSignatureAsync**](docs/EmailSignaturesApi.md#patchemailsignatureasync) | **PATCH** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Patch an email signature
 *EmailSignaturesApi* | [**updateEmailSignatureAsync**](docs/EmailSignaturesApi.md#updateemailsignatureasync) | **PUT** /api/v2/MarketingService/EmailSignatures/{emailsignatureId} | Update an email signature
 *EmailTemplatesApi* | [**createEmailTemplateAsync**](docs/EmailTemplatesApi.md#createemailtemplateasync) | **POST** /api/v2/MarketingService/EmailTemplates | Create an email template
 *EmailTemplatesApi* | [**deleteEmailTemplateAsync**](docs/EmailTemplatesApi.md#deleteemailtemplateasync) | **DELETE** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Delete an email template
 *EmailTemplatesApi* | [**getEmailTemplateDetailsAsync**](docs/EmailTemplatesApi.md#getemailtemplatedetailsasync) | **GET** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Get email template by ID
 *EmailTemplatesApi* | [**getEmailTemplatesCountAsync**](docs/EmailTemplatesApi.md#getemailtemplatescountasync) | **GET** /api/v2/MarketingService/EmailTemplates/Count | Get email templates count
 *EmailTemplatesApi* | [**getEmailTemplatesODataAsync**](docs/EmailTemplatesApi.md#getemailtemplatesodataasync) | **GET** /api/v2/MarketingService/EmailTemplates | Get email templates
+*EmailTemplatesApi* | [**patchEmailTemplateAsync**](docs/EmailTemplatesApi.md#patchemailtemplateasync) | **PATCH** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Patch an email template
 *EmailTemplatesApi* | [**updateEmailTemplateAsync**](docs/EmailTemplatesApi.md#updateemailtemplateasync) | **PUT** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Update an email template
 *FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
 *FenixAlliancePortalsWebsiteApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
@@ -144,42 +147,49 @@ Class | Method | HTTP request | Description
 *MarketingAreasApi* | [**getMarketingAreaByIdAsync**](docs/MarketingAreasApi.md#getmarketingareabyidasync) | **GET** /api/v2/MarketingService/MarketingAreas/{marketingAreaId} | Get marketing area by ID
 *MarketingAreasApi* | [**getMarketingAreasAsync**](docs/MarketingAreasApi.md#getmarketingareasasync) | **GET** /api/v2/MarketingService/MarketingAreas | Get marketing areas
 *MarketingAreasApi* | [**getMarketingAreasCountAsync**](docs/MarketingAreasApi.md#getmarketingareascountasync) | **GET** /api/v2/MarketingService/MarketingAreas/Count | Count marketing areas
+*MarketingAreasApi* | [**patchMarketingAreaAsync**](docs/MarketingAreasApi.md#patchmarketingareaasync) | **PATCH** /api/v2/MarketingService/MarketingAreas/{marketingAreaId} | Patch a marketing area
 *MarketingAreasApi* | [**updateMarketingAreaAsync**](docs/MarketingAreasApi.md#updatemarketingareaasync) | **PUT** /api/v2/MarketingService/MarketingAreas/{marketingAreaId} | Update a marketing area
 *MarketingCampaignsApi* | [**createMarketingCampaignAsync**](docs/MarketingCampaignsApi.md#createmarketingcampaignasync) | **POST** /api/v2/MarketingService/MarketingCampaigns | Create a marketing campaign
 *MarketingCampaignsApi* | [**deleteMarketingCampaignAsync**](docs/MarketingCampaignsApi.md#deletemarketingcampaignasync) | **DELETE** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Delete a marketing campaign
 *MarketingCampaignsApi* | [**getMarketingCampaignDetailsAsync**](docs/MarketingCampaignsApi.md#getmarketingcampaigndetailsasync) | **GET** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Get marketing campaign by ID
 *MarketingCampaignsApi* | [**getMarketingCampaignODataAsync**](docs/MarketingCampaignsApi.md#getmarketingcampaignodataasync) | **GET** /api/v2/MarketingService/MarketingCampaigns | Get marketing campaigns
 *MarketingCampaignsApi* | [**getMarketingCampaignsCountAsync**](docs/MarketingCampaignsApi.md#getmarketingcampaignscountasync) | **GET** /api/v2/MarketingService/MarketingCampaigns/Count | Get marketing campaigns count
+*MarketingCampaignsApi* | [**patchMarketingCampaignAsync**](docs/MarketingCampaignsApi.md#patchmarketingcampaignasync) | **PATCH** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Patch a marketing campaign
 *MarketingCampaignsApi* | [**updateMarketingCampaignAsync**](docs/MarketingCampaignsApi.md#updatemarketingcampaignasync) | **PUT** /api/v2/MarketingService/MarketingCampaigns/{marketingcampaignId} | Update a marketing campaign
 *MarketingLeadsApi* | [**createMarketingLeadAsync**](docs/MarketingLeadsApi.md#createmarketingleadasync) | **POST** /api/v2/MarketingService/MarketingLeads | Create a marketing lead
 *MarketingLeadsApi* | [**deleteMarketingLeadAsync**](docs/MarketingLeadsApi.md#deletemarketingleadasync) | **DELETE** /api/v2/MarketingService/MarketingLeads/{marketingLeadId} | Delete a marketing lead
 *MarketingLeadsApi* | [**getMarketingLeadDetailsAsync**](docs/MarketingLeadsApi.md#getmarketingleaddetailsasync) | **GET** /api/v2/MarketingService/MarketingLeads/{marketingLeadId} | Get marketing lead by ID
 *MarketingLeadsApi* | [**getMarketingLeadsCountAsync**](docs/MarketingLeadsApi.md#getmarketingleadscountasync) | **GET** /api/v2/MarketingService/MarketingLeads/Count | Get marketing leads count
 *MarketingLeadsApi* | [**getMarketingLeadsODataAsync**](docs/MarketingLeadsApi.md#getmarketingleadsodataasync) | **GET** /api/v2/MarketingService/MarketingLeads | Get marketing leads
+*MarketingLeadsApi* | [**patchMarketingLeadAsync**](docs/MarketingLeadsApi.md#patchmarketingleadasync) | **PATCH** /api/v2/MarketingService/MarketingLeads/{marketingLeadId} | Patch a marketing lead
 *MarketingLeadsApi* | [**updateMarketingLeadAsync**](docs/MarketingLeadsApi.md#updatemarketingleadasync) | **PUT** /api/v2/MarketingService/MarketingLeads/{marketingLeadId} | Update a marketing lead
 *MarketingListsApi* | [**createMarketingListAsync**](docs/MarketingListsApi.md#createmarketinglistasync) | **POST** /api/v2/MarketingService/MarketingLists | Create a marketing list
 *MarketingListsApi* | [**deleteMarketingListAsync**](docs/MarketingListsApi.md#deletemarketinglistasync) | **DELETE** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Delete a marketing list
 *MarketingListsApi* | [**getMarketingListDetailsAsync**](docs/MarketingListsApi.md#getmarketinglistdetailsasync) | **GET** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Get marketing list by ID
 *MarketingListsApi* | [**getMarketingListODataAsync**](docs/MarketingListsApi.md#getmarketinglistodataasync) | **GET** /api/v2/MarketingService/MarketingLists | Get marketing lists
 *MarketingListsApi* | [**getMarketingListsCountAsync**](docs/MarketingListsApi.md#getmarketinglistscountasync) | **GET** /api/v2/MarketingService/MarketingLists/Count | Get marketing lists count
+*MarketingListsApi* | [**patchMarketingListAsync**](docs/MarketingListsApi.md#patchmarketinglistasync) | **PATCH** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Patch a marketing list
 *MarketingListsApi* | [**updateMarketingListAsync**](docs/MarketingListsApi.md#updatemarketinglistasync) | **PUT** /api/v2/MarketingService/MarketingLists/{marketinglistId} | Update a marketing list
 *NewslettersApi* | [**createNewsletterAsync**](docs/NewslettersApi.md#createnewsletterasync) | **POST** /api/v2/MarketingService/Newsletters | Create a newsletter
 *NewslettersApi* | [**deleteNewsletterAsync**](docs/NewslettersApi.md#deletenewsletterasync) | **DELETE** /api/v2/MarketingService/Newsletters/{newsletterId} | Delete a newsletter
 *NewslettersApi* | [**getNewsletterDetailsAsync**](docs/NewslettersApi.md#getnewsletterdetailsasync) | **GET** /api/v2/MarketingService/Newsletters/{newsletterId} | Get newsletter by ID
 *NewslettersApi* | [**getNewsletterODataAsync**](docs/NewslettersApi.md#getnewsletterodataasync) | **GET** /api/v2/MarketingService/Newsletters | Get newsletters
 *NewslettersApi* | [**getNewslettersCountAsync**](docs/NewslettersApi.md#getnewsletterscountasync) | **GET** /api/v2/MarketingService/Newsletters/Count | Get newsletters count
+*NewslettersApi* | [**patchNewsletterAsync**](docs/NewslettersApi.md#patchnewsletterasync) | **PATCH** /api/v2/MarketingService/Newsletters/{newsletterId} | Patch a newsletter
 *NewslettersApi* | [**updateNewsletterAsync**](docs/NewslettersApi.md#updatenewsletterasync) | **PUT** /api/v2/MarketingService/Newsletters/{newsletterId} | Update a newsletter
 *SocialMediaPostsApi* | [**createSocialMediaPostAsync**](docs/SocialMediaPostsApi.md#createsocialmediapostasync) | **POST** /api/v2/MarketingService/SocialMediaPosts | Create a social media post
 *SocialMediaPostsApi* | [**deleteSocialMediaPostAsync**](docs/SocialMediaPostsApi.md#deletesocialmediapostasync) | **DELETE** /api/v2/MarketingService/SocialMediaPosts/{socialmediapostId} | Delete a social media post
 *SocialMediaPostsApi* | [**getSocialMediaPostDetailsAsync**](docs/SocialMediaPostsApi.md#getsocialmediapostdetailsasync) | **GET** /api/v2/MarketingService/SocialMediaPosts/{socialmediapostId} | Get social media post by ID
 *SocialMediaPostsApi* | [**getSocialMediaPostsCountAsync**](docs/SocialMediaPostsApi.md#getsocialmediapostscountasync) | **GET** /api/v2/MarketingService/SocialMediaPosts/Count | Get social media posts count
 *SocialMediaPostsApi* | [**getSocialMediaPostsODataAsync**](docs/SocialMediaPostsApi.md#getsocialmediapostsodataasync) | **GET** /api/v2/MarketingService/SocialMediaPosts | Get social media posts
+*SocialMediaPostsApi* | [**patchSocialMediaPostAsync**](docs/SocialMediaPostsApi.md#patchsocialmediapostasync) | **PATCH** /api/v2/MarketingService/SocialMediaPosts/{socialmediapostId} | Patch a social media post
 *SocialMediaPostsApi* | [**updateSocialMediaPostAsync**](docs/SocialMediaPostsApi.md#updatesocialmediapostasync) | **PUT** /api/v2/MarketingService/SocialMediaPosts/{socialmediapostId} | Update a social media post
 *SocialPostBucketsApi* | [**createSocialPostBucketAsync**](docs/SocialPostBucketsApi.md#createsocialpostbucketasync) | **POST** /api/v2/MarketingService/SocialPostBuckets | Create a social post bucket
 *SocialPostBucketsApi* | [**deleteSocialPostBucketAsync**](docs/SocialPostBucketsApi.md#deletesocialpostbucketasync) | **DELETE** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Delete a social post bucket
 *SocialPostBucketsApi* | [**getSocialPostBucketDetailsAsync**](docs/SocialPostBucketsApi.md#getsocialpostbucketdetailsasync) | **GET** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Get social post bucket by ID
 *SocialPostBucketsApi* | [**getSocialPostBucketsCountAsync**](docs/SocialPostBucketsApi.md#getsocialpostbucketscountasync) | **GET** /api/v2/MarketingService/SocialPostBuckets/Count | Get social post buckets count
 *SocialPostBucketsApi* | [**getSocialPostBucketsODataAsync**](docs/SocialPostBucketsApi.md#getsocialpostbucketsodataasync) | **GET** /api/v2/MarketingService/SocialPostBuckets | Get social post buckets
+*SocialPostBucketsApi* | [**patchSocialPostBucketAsync**](docs/SocialPostBucketsApi.md#patchsocialpostbucketasync) | **PATCH** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Patch a social post bucket
 *SocialPostBucketsApi* | [**updateSocialPostBucketAsync**](docs/SocialPostBucketsApi.md#updatesocialpostbucketasync) | **PUT** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Update a social post bucket
 *TrackingPixelsApi* | [**getTrackingPixelAsync**](docs/TrackingPixelsApi.md#gettrackingpixelasync) | **GET** /api/v2/MarketingService/TrackingPixels/{pixelId} | Get a tracking pixel
 
@@ -233,6 +243,7 @@ Class | Method | HTTP request | Description
  - [NewsletterDto](docs/NewsletterDto.md)
  - [NewsletterDtoEnvelope](docs/NewsletterDtoEnvelope.md)
  - [NewsletterUpdateDto](docs/NewsletterUpdateDto.md)
+ - [Operation](docs/Operation.md)
  - [OrderDto](docs/OrderDto.md)
  - [OrderDtoEnvelope](docs/OrderDtoEnvelope.md)
  - [RefreshRequest](docs/RefreshRequest.md)

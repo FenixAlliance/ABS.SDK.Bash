@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseSectionByIdAsync**](CourseSectionsApi.md#getCourseSectionByIdAsync) | **GET** /api/v2/LearningService/CourseSections/{sectionId} | Get course section by ID
 [**getCourseSectionsAsync**](CourseSectionsApi.md#getCourseSectionsAsync) | **GET** /api/v2/LearningService/CourseSections | Get all course sections
 [**getCourseSectionsCountAsync**](CourseSectionsApi.md#getCourseSectionsCountAsync) | **GET** /api/v2/LearningService/CourseSections/Count | Get course sections count
+[**patchCourseSectionAsync**](CourseSectionsApi.md#patchCourseSectionAsync) | **PATCH** /api/v2/LearningService/CourseSections/{sectionId} | Patch a course section
 [**updateCourseSectionAsync**](CourseSectionsApi.md#updateCourseSectionAsync) | **PUT** /api/v2/LearningService/CourseSections/{sectionId} | Update a course section
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseSectionAsync
+
+Patch a course section
+
+Partially updates a course section for the specified tenant.
+
+### Example
+
+```bash
+ patchCourseSectionAsync  tenantId=value sectionId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **sectionId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

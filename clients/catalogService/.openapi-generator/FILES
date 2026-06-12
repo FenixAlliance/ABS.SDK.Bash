@@ -4,6 +4,8 @@ _client.sh
 client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
+docs/BatchStockItemUpdateRequest.md
+docs/BulkProduct.md
 docs/CatalogItemCreateDto.md
 docs/CatalogItemDto.md
 docs/CatalogItemDtoEnvelope.md
@@ -125,6 +127,7 @@ docs/MerchantDtoListEnvelope.md
 docs/MerchantsApi.md
 docs/Money.md
 docs/MoneyEnvelope.md
+docs/Operation.md
 docs/PricingRuleDto.md
 docs/PricingRuleDtoEnvelope.md
 docs/PricingRuleDtoListEnvelope.md

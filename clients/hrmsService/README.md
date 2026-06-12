@@ -121,24 +121,28 @@ Class | Method | HTTP request | Description
 *EmployeeAppraisalSessionsApi* | [**getEmployeeAppraisalSessionByIdAsync**](docs/EmployeeAppraisalSessionsApi.md#getemployeeappraisalsessionbyidasync) | **GET** /api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId} | Get employee appraisal session by ID
 *EmployeeAppraisalSessionsApi* | [**getEmployeeAppraisalSessionsAsync**](docs/EmployeeAppraisalSessionsApi.md#getemployeeappraisalsessionsasync) | **GET** /api/v2/HrmsService/EmployeeAppraisalSessions | Get employee appraisal sessions
 *EmployeeAppraisalSessionsApi* | [**getEmployeeAppraisalSessionsCountAsync**](docs/EmployeeAppraisalSessionsApi.md#getemployeeappraisalsessionscountasync) | **GET** /api/v2/HrmsService/EmployeeAppraisalSessions/Count | Count employee appraisal sessions
+*EmployeeAppraisalSessionsApi* | [**patchEmployeeAppraisalSessionAsync**](docs/EmployeeAppraisalSessionsApi.md#patchemployeeappraisalsessionasync) | **PATCH** /api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId} | Patch an employee appraisal session
 *EmployeeAppraisalSessionsApi* | [**updateEmployeeAppraisalSessionAsync**](docs/EmployeeAppraisalSessionsApi.md#updateemployeeappraisalsessionasync) | **PUT** /api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId} | Update an employee appraisal session
 *EmployeeTypesApi* | [**createEmployeeTypeAsync**](docs/EmployeeTypesApi.md#createemployeetypeasync) | **POST** /api/v2/HrmsService/EmployeeTypes | Create an employee type
 *EmployeeTypesApi* | [**deleteEmployeeTypeAsync**](docs/EmployeeTypesApi.md#deleteemployeetypeasync) | **DELETE** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Delete an employee type
 *EmployeeTypesApi* | [**getEmployeeTypeByIdAsync**](docs/EmployeeTypesApi.md#getemployeetypebyidasync) | **GET** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Get employee type by ID
 *EmployeeTypesApi* | [**getEmployeeTypesAsync**](docs/EmployeeTypesApi.md#getemployeetypesasync) | **GET** /api/v2/HrmsService/EmployeeTypes | Get employee types
 *EmployeeTypesApi* | [**getEmployeeTypesCountAsync**](docs/EmployeeTypesApi.md#getemployeetypescountasync) | **GET** /api/v2/HrmsService/EmployeeTypes/Count | Count employee types
+*EmployeeTypesApi* | [**patchEmployeeTypeAsync**](docs/EmployeeTypesApi.md#patchemployeetypeasync) | **PATCH** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Patch an employee type
 *EmployeeTypesApi* | [**updateEmployeeTypeAsync**](docs/EmployeeTypesApi.md#updateemployeetypeasync) | **PUT** /api/v2/HrmsService/EmployeeTypes/{employeeTypeId} | Update an employee type
 *EmployeesApi* | [**createEmployeeAsync**](docs/EmployeesApi.md#createemployeeasync) | **POST** /api/v2/HrmsService/Employees | Create an employee
 *EmployeesApi* | [**deleteEmployeeAsync**](docs/EmployeesApi.md#deleteemployeeasync) | **DELETE** /api/v2/HrmsService/Employees/{employeeId} | Delete an employee
 *EmployeesApi* | [**getEmployeeByIdAsync**](docs/EmployeesApi.md#getemployeebyidasync) | **GET** /api/v2/HrmsService/Employees/{employeeId} | Get employee by ID
 *EmployeesApi* | [**getEmployeesAsync**](docs/EmployeesApi.md#getemployeesasync) | **GET** /api/v2/HrmsService/Employees | Get employees
 *EmployeesApi* | [**getEmployeesCountAsync**](docs/EmployeesApi.md#getemployeescountasync) | **GET** /api/v2/HrmsService/Employees/Count | Count employees
+*EmployeesApi* | [**patchEmployeeAsync**](docs/EmployeesApi.md#patchemployeeasync) | **PATCH** /api/v2/HrmsService/Employees/{employeeId} | Patch an employee
 *EmployeesApi* | [**updateEmployeeAsync**](docs/EmployeesApi.md#updateemployeeasync) | **PUT** /api/v2/HrmsService/Employees/{employeeId} | Update an employee
 *EmployersApi* | [**createEmployerAsync**](docs/EmployersApi.md#createemployerasync) | **POST** /api/v2/HrmsService/Employers | Create an employer
 *EmployersApi* | [**deleteEmployerAsync**](docs/EmployersApi.md#deleteemployerasync) | **DELETE** /api/v2/HrmsService/Employers/{employerId} | Delete an employer
 *EmployersApi* | [**getEmployerByIdAsync**](docs/EmployersApi.md#getemployerbyidasync) | **GET** /api/v2/HrmsService/Employers/{employerId} | Get employer by ID
 *EmployersApi* | [**getEmployersAsync**](docs/EmployersApi.md#getemployersasync) | **GET** /api/v2/HrmsService/Employers | Get employers
 *EmployersApi* | [**getEmployersCountAsync**](docs/EmployersApi.md#getemployerscountasync) | **GET** /api/v2/HrmsService/Employers/Count | Count employers
+*EmployersApi* | [**patchEmployerAsync**](docs/EmployersApi.md#patchemployerasync) | **PATCH** /api/v2/HrmsService/Employers/{employerId} | Patch an employer
 *EmployersApi* | [**updateEmployerAsync**](docs/EmployersApi.md#updateemployerasync) | **PUT** /api/v2/HrmsService/Employers/{employerId} | Update an employer
 *FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
 *FenixAlliancePortalsWebsiteApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
@@ -162,24 +166,28 @@ Class | Method | HTTP request | Description
 *GigsApi* | [**getGigByIdAsync**](docs/GigsApi.md#getgigbyidasync) | **GET** /api/v2/HrmsService/Gigs/{gigId} | Get gig by ID
 *GigsApi* | [**getGigsAsync**](docs/GigsApi.md#getgigsasync) | **GET** /api/v2/HrmsService/Gigs | Get gigs
 *GigsApi* | [**getGigsCountAsync**](docs/GigsApi.md#getgigscountasync) | **GET** /api/v2/HrmsService/Gigs/Count | Count gigs
+*GigsApi* | [**patchGigAsync**](docs/GigsApi.md#patchgigasync) | **PATCH** /api/v2/HrmsService/Gigs/{gigId} | Patch a gig
 *GigsApi* | [**updateGigAsync**](docs/GigsApi.md#updategigasync) | **PUT** /api/v2/HrmsService/Gigs/{gigId} | Update a gig
 *JobOffersApi* | [**createJobOfferAsync**](docs/JobOffersApi.md#createjobofferasync) | **POST** /api/v2/HrmsService/JobOffers | Create a job offer
 *JobOffersApi* | [**deleteJobOfferAsync**](docs/JobOffersApi.md#deletejobofferasync) | **DELETE** /api/v2/HrmsService/JobOffers/{jobOfferId} | Delete a job offer
 *JobOffersApi* | [**getJobOfferByIdAsync**](docs/JobOffersApi.md#getjobofferbyidasync) | **GET** /api/v2/HrmsService/JobOffers/{jobOfferId} | Get job offer by ID
 *JobOffersApi* | [**getJobOffersAsync**](docs/JobOffersApi.md#getjoboffersasync) | **GET** /api/v2/HrmsService/JobOffers | Get job offers
 *JobOffersApi* | [**getJobOffersCountAsync**](docs/JobOffersApi.md#getjobofferscountasync) | **GET** /api/v2/HrmsService/JobOffers/Count | Count job offers
+*JobOffersApi* | [**patchJobOfferAsync**](docs/JobOffersApi.md#patchjobofferasync) | **PATCH** /api/v2/HrmsService/JobOffers/{jobOfferId} | Patch a job offer
 *JobOffersApi* | [**updateJobOfferAsync**](docs/JobOffersApi.md#updatejobofferasync) | **PUT** /api/v2/HrmsService/JobOffers/{jobOfferId} | Update a job offer
 *JobTitlesApi* | [**createJobTitleAsync**](docs/JobTitlesApi.md#createjobtitleasync) | **POST** /api/v2/HrmsService/JobTitles | Create a job title
 *JobTitlesApi* | [**deleteJobTitleAsync**](docs/JobTitlesApi.md#deletejobtitleasync) | **DELETE** /api/v2/HrmsService/JobTitles/{jobTitleId} | Delete a job title
 *JobTitlesApi* | [**getJobTitleByIdAsync**](docs/JobTitlesApi.md#getjobtitlebyidasync) | **GET** /api/v2/HrmsService/JobTitles/{jobTitleId} | Get job title by ID
 *JobTitlesApi* | [**getJobTitlesAsync**](docs/JobTitlesApi.md#getjobtitlesasync) | **GET** /api/v2/HrmsService/JobTitles | Get job titles
 *JobTitlesApi* | [**getJobTitlesCountAsync**](docs/JobTitlesApi.md#getjobtitlescountasync) | **GET** /api/v2/HrmsService/JobTitles/Count | Count job titles
+*JobTitlesApi* | [**patchJobTitleAsync**](docs/JobTitlesApi.md#patchjobtitleasync) | **PATCH** /api/v2/HrmsService/JobTitles/{jobTitleId} | Patch a job title
 *JobTitlesApi* | [**updateJobTitleAsync**](docs/JobTitlesApi.md#updatejobtitleasync) | **PUT** /api/v2/HrmsService/JobTitles/{jobTitleId} | Update a job title
 *LeaveApplicationsApi* | [**createLeaveApplicationAsync**](docs/LeaveApplicationsApi.md#createleaveapplicationasync) | **POST** /api/v2/HrmsService/LeaveApplications | Create a leave application
 *LeaveApplicationsApi* | [**deleteLeaveApplicationAsync**](docs/LeaveApplicationsApi.md#deleteleaveapplicationasync) | **DELETE** /api/v2/HrmsService/LeaveApplications/{leaveApplicationId} | Delete a leave application
 *LeaveApplicationsApi* | [**getLeaveApplicationByIdAsync**](docs/LeaveApplicationsApi.md#getleaveapplicationbyidasync) | **GET** /api/v2/HrmsService/LeaveApplications/{leaveApplicationId} | Get leave application by ID
 *LeaveApplicationsApi* | [**getLeaveApplicationsAsync**](docs/LeaveApplicationsApi.md#getleaveapplicationsasync) | **GET** /api/v2/HrmsService/LeaveApplications | Get leave applications
 *LeaveApplicationsApi* | [**getLeaveApplicationsCountAsync**](docs/LeaveApplicationsApi.md#getleaveapplicationscountasync) | **GET** /api/v2/HrmsService/LeaveApplications/Count | Count leave applications
+*LeaveApplicationsApi* | [**patchLeaveApplicationAsync**](docs/LeaveApplicationsApi.md#patchleaveapplicationasync) | **PATCH** /api/v2/HrmsService/LeaveApplications/{leaveApplicationId} | Patch a leave application
 *LeaveApplicationsApi* | [**updateLeaveApplicationAsync**](docs/LeaveApplicationsApi.md#updateleaveapplicationasync) | **PUT** /api/v2/HrmsService/LeaveApplications/{leaveApplicationId} | Update a leave application
 *LeaveTypesApi* | [**createLeaveTypeAsync**](docs/LeaveTypesApi.md#createleavetypeasync) | **POST** /api/v2/HrmsService/LeaveTypes | Create a leave type
 *LeaveTypesApi* | [**deleteLeaveTypeAsync**](docs/LeaveTypesApi.md#deleteleavetypeasync) | **DELETE** /api/v2/HrmsService/LeaveTypes/{leaveTypeId} | Delete a leave type
@@ -198,42 +206,49 @@ Class | Method | HTTP request | Description
 *PayrollsApi* | [**getPayrollByIdAsync**](docs/PayrollsApi.md#getpayrollbyidasync) | **GET** /api/v2/HrmsService/Payrolls/{payrollId} | Get payroll by ID
 *PayrollsApi* | [**getPayrollsAsync**](docs/PayrollsApi.md#getpayrollsasync) | **GET** /api/v2/HrmsService/Payrolls | Get payrolls
 *PayrollsApi* | [**getPayrollsCountAsync**](docs/PayrollsApi.md#getpayrollscountasync) | **GET** /api/v2/HrmsService/Payrolls/Count | Count payrolls
+*PayrollsApi* | [**patchPayrollAsync**](docs/PayrollsApi.md#patchpayrollasync) | **PATCH** /api/v2/HrmsService/Payrolls/{payrollId} | Patch a payroll
 *PayrollsApi* | [**updatePayrollAsync**](docs/PayrollsApi.md#updatepayrollasync) | **PUT** /api/v2/HrmsService/Payrolls/{payrollId} | Update a payroll
 *SalariesApi* | [**createSalaryAsync**](docs/SalariesApi.md#createsalaryasync) | **POST** /api/v2/HrmsService/Salaries | Create a salary
 *SalariesApi* | [**deleteSalaryAsync**](docs/SalariesApi.md#deletesalaryasync) | **DELETE** /api/v2/HrmsService/Salaries/{salaryId} | Delete a salary
 *SalariesApi* | [**getSalariesAsync**](docs/SalariesApi.md#getsalariesasync) | **GET** /api/v2/HrmsService/Salaries | Get salaries
 *SalariesApi* | [**getSalariesCountAsync**](docs/SalariesApi.md#getsalariescountasync) | **GET** /api/v2/HrmsService/Salaries/Count | Count salaries
 *SalariesApi* | [**getSalaryByIdAsync**](docs/SalariesApi.md#getsalarybyidasync) | **GET** /api/v2/HrmsService/Salaries/{salaryId} | Get salary by ID
+*SalariesApi* | [**patchSalaryAsync**](docs/SalariesApi.md#patchsalaryasync) | **PATCH** /api/v2/HrmsService/Salaries/{salaryId} | Patch a salary
 *SalariesApi* | [**updateSalaryAsync**](docs/SalariesApi.md#updatesalaryasync) | **PUT** /api/v2/HrmsService/Salaries/{salaryId} | Update a salary
 *SchedulesApi* | [**createScheduleAsync**](docs/SchedulesApi.md#createscheduleasync) | **POST** /api/v2/HrmsService/Schedules | Create a schedule
 *SchedulesApi* | [**deleteScheduleAsync**](docs/SchedulesApi.md#deletescheduleasync) | **DELETE** /api/v2/HrmsService/Schedules/{scheduleId} | Delete a schedule
 *SchedulesApi* | [**getScheduleByIdAsync**](docs/SchedulesApi.md#getschedulebyidasync) | **GET** /api/v2/HrmsService/Schedules/{scheduleId} | Get schedule by ID
 *SchedulesApi* | [**getSchedulesAsync**](docs/SchedulesApi.md#getschedulesasync) | **GET** /api/v2/HrmsService/Schedules | Get schedules
 *SchedulesApi* | [**getSchedulesCountAsync**](docs/SchedulesApi.md#getschedulescountasync) | **GET** /api/v2/HrmsService/Schedules/Count | Count schedules
+*SchedulesApi* | [**patchScheduleAsync**](docs/SchedulesApi.md#patchscheduleasync) | **PATCH** /api/v2/HrmsService/Schedules/{scheduleId} | Patch a schedule
 *SchedulesApi* | [**updateScheduleAsync**](docs/SchedulesApi.md#updatescheduleasync) | **PUT** /api/v2/HrmsService/Schedules/{scheduleId} | Update a schedule
 *ShiftsApi* | [**createShiftAsync**](docs/ShiftsApi.md#createshiftasync) | **POST** /api/v2/HrmsService/Shifts | Create a shift
 *ShiftsApi* | [**deleteShiftAsync**](docs/ShiftsApi.md#deleteshiftasync) | **DELETE** /api/v2/HrmsService/Shifts/{shiftId} | Delete a shift
 *ShiftsApi* | [**getShiftByIdAsync**](docs/ShiftsApi.md#getshiftbyidasync) | **GET** /api/v2/HrmsService/Shifts/{shiftId} | Get shift by ID
 *ShiftsApi* | [**getShiftsAsync**](docs/ShiftsApi.md#getshiftsasync) | **GET** /api/v2/HrmsService/Shifts | Get shifts
 *ShiftsApi* | [**getShiftsCountAsync**](docs/ShiftsApi.md#getshiftscountasync) | **GET** /api/v2/HrmsService/Shifts/Count | Count shifts
+*ShiftsApi* | [**patchShiftAsync**](docs/ShiftsApi.md#patchshiftasync) | **PATCH** /api/v2/HrmsService/Shifts/{shiftId} | Patch a shift
 *ShiftsApi* | [**updateShiftAsync**](docs/ShiftsApi.md#updateshiftasync) | **PUT** /api/v2/HrmsService/Shifts/{shiftId} | Update a shift
 *TimeIntervalsApi* | [**createTimeIntervalAsync**](docs/TimeIntervalsApi.md#createtimeintervalasync) | **POST** /api/v2/HrmsService/TimeIntervals | Create a time interval
 *TimeIntervalsApi* | [**deleteTimeIntervalAsync**](docs/TimeIntervalsApi.md#deletetimeintervalasync) | **DELETE** /api/v2/HrmsService/TimeIntervals/{timeIntervalId} | Delete a time interval
 *TimeIntervalsApi* | [**getTimeIntervalByIdAsync**](docs/TimeIntervalsApi.md#gettimeintervalbyidasync) | **GET** /api/v2/HrmsService/TimeIntervals/{timeIntervalId} | Get time interval by ID
 *TimeIntervalsApi* | [**getTimeIntervalsAsync**](docs/TimeIntervalsApi.md#gettimeintervalsasync) | **GET** /api/v2/HrmsService/TimeIntervals | Get time intervals
 *TimeIntervalsApi* | [**getTimeIntervalsCountAsync**](docs/TimeIntervalsApi.md#gettimeintervalscountasync) | **GET** /api/v2/HrmsService/TimeIntervals/Count | Count time intervals
+*TimeIntervalsApi* | [**patchTimeIntervalAsync**](docs/TimeIntervalsApi.md#patchtimeintervalasync) | **PATCH** /api/v2/HrmsService/TimeIntervals/{timeIntervalId} | Patch a time interval
 *TimeIntervalsApi* | [**updateTimeIntervalAsync**](docs/TimeIntervalsApi.md#updatetimeintervalasync) | **PUT** /api/v2/HrmsService/TimeIntervals/{timeIntervalId} | Update a time interval
 *TrainingProgramCoursesApi* | [**createTrainingProgramCourseAsync**](docs/TrainingProgramCoursesApi.md#createtrainingprogramcourseasync) | **POST** /api/v2/HrmsService/TrainingProgramCourses | Create a training program course
 *TrainingProgramCoursesApi* | [**deleteTrainingProgramCourseAsync**](docs/TrainingProgramCoursesApi.md#deletetrainingprogramcourseasync) | **DELETE** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Delete a training program course
 *TrainingProgramCoursesApi* | [**getTrainingProgramCourseByIdAsync**](docs/TrainingProgramCoursesApi.md#gettrainingprogramcoursebyidasync) | **GET** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Get training program course by ID
 *TrainingProgramCoursesApi* | [**getTrainingProgramCoursesAsync**](docs/TrainingProgramCoursesApi.md#gettrainingprogramcoursesasync) | **GET** /api/v2/HrmsService/TrainingProgramCourses | Get training program courses
 *TrainingProgramCoursesApi* | [**getTrainingProgramCoursesCountAsync**](docs/TrainingProgramCoursesApi.md#gettrainingprogramcoursescountasync) | **GET** /api/v2/HrmsService/TrainingProgramCourses/Count | Count training program courses
+*TrainingProgramCoursesApi* | [**patchTrainingProgramCourseAsync**](docs/TrainingProgramCoursesApi.md#patchtrainingprogramcourseasync) | **PATCH** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Patch a training program course
 *TrainingProgramCoursesApi* | [**updateTrainingProgramCourseAsync**](docs/TrainingProgramCoursesApi.md#updatetrainingprogramcourseasync) | **PUT** /api/v2/HrmsService/TrainingProgramCourses/{courseId} | Update a training program course
 *TrainingProgramEventsApi* | [**createTrainingProgramEventAsync**](docs/TrainingProgramEventsApi.md#createtrainingprogrameventasync) | **POST** /api/v2/HrmsService/TrainingProgramEvents | Create a training program event
 *TrainingProgramEventsApi* | [**deleteTrainingProgramEventAsync**](docs/TrainingProgramEventsApi.md#deletetrainingprogrameventasync) | **DELETE** /api/v2/HrmsService/TrainingProgramEvents/{eventId} | Delete a training program event
 *TrainingProgramEventsApi* | [**getTrainingProgramEventByIdAsync**](docs/TrainingProgramEventsApi.md#gettrainingprogrameventbyidasync) | **GET** /api/v2/HrmsService/TrainingProgramEvents/{eventId} | Get training program event by ID
 *TrainingProgramEventsApi* | [**getTrainingProgramEventsAsync**](docs/TrainingProgramEventsApi.md#gettrainingprogrameventsasync) | **GET** /api/v2/HrmsService/TrainingProgramEvents | Get training program events
 *TrainingProgramEventsApi* | [**getTrainingProgramEventsCountAsync**](docs/TrainingProgramEventsApi.md#gettrainingprogrameventscountasync) | **GET** /api/v2/HrmsService/TrainingProgramEvents/Count | Count training program events
+*TrainingProgramEventsApi* | [**patchTrainingProgramEventAsync**](docs/TrainingProgramEventsApi.md#patchtrainingprogrameventasync) | **PATCH** /api/v2/HrmsService/TrainingProgramEvents/{eventId} | Patch a training program event
 *TrainingProgramEventsApi* | [**updateTrainingProgramEventAsync**](docs/TrainingProgramEventsApi.md#updatetrainingprogrameventasync) | **PUT** /api/v2/HrmsService/TrainingProgramEvents/{eventId} | Update a training program event
 *TrainingProgramsApi* | [**createTrainingProgramAsync**](docs/TrainingProgramsApi.md#createtrainingprogramasync) | **POST** /api/v2/HrmsService/TrainingPrograms | Create a training program
 *TrainingProgramsApi* | [**deleteTrainingProgramAsync**](docs/TrainingProgramsApi.md#deletetrainingprogramasync) | **DELETE** /api/v2/HrmsService/TrainingPrograms/{programId} | Delete a training program
@@ -293,6 +308,7 @@ Class | Method | HTTP request | Description
  - [JobOfferDto](docs/JobOfferDto.md)
  - [JobOfferDtoEnvelope](docs/JobOfferDtoEnvelope.md)
  - [JobOfferDtoListEnvelope](docs/JobOfferDtoListEnvelope.md)
+ - [JobOfferUpdateDto](docs/JobOfferUpdateDto.md)
  - [JobTitleCreateDto](docs/JobTitleCreateDto.md)
  - [JobTitleDto](docs/JobTitleDto.md)
  - [JobTitleDtoEnvelope](docs/JobTitleDtoEnvelope.md)
@@ -309,6 +325,7 @@ Class | Method | HTTP request | Description
  - [LeaveTypeDtoListEnvelope](docs/LeaveTypeDtoListEnvelope.md)
  - [LeaveTypeUpdateDto](docs/LeaveTypeUpdateDto.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [PayrollCreateDto](docs/PayrollCreateDto.md)
  - [PayrollDto](docs/PayrollDto.md)
  - [PayrollDtoEnvelope](docs/PayrollDtoEnvelope.md)

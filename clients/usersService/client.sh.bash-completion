@@ -93,6 +93,7 @@ _()
     operations["getUserOptionByKey"]=1
     operations["getUserOptions"]=1
     operations["getUserOptionsCount"]=1
+    operations["patchUserOption"]=1
     operations["updateUserOption"]=1
     operations["upsertUserOption"]=1
     operations["countCurrentUserFollowersAsync"]=1
@@ -148,6 +149,7 @@ _()
     operation_parameters["getUserOptionByKey"]="key= portalId= api-version= x-api-version: "
     operation_parameters["getUserOptions"]="portalId= api-version= x-api-version: "
     operation_parameters["getUserOptionsCount"]="portalId= api-version= x-api-version: "
+    operation_parameters["patchUserOption"]="optionId= api-version= x-api-version: "
     operation_parameters["updateUserOption"]="optionId= api-version= x-api-version: "
     operation_parameters["upsertUserOption"]="key= portalId= api-version= x-api-version: "
     operation_parameters["countCurrentUserFollowersAsync"]="api-version= x-api-version: "

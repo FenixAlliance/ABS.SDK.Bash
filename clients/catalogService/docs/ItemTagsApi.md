@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**deleteItemTagAsync**](ItemTagsApi.md#deleteItemTagAsync) | **DELETE** /api/v2/CatalogService/ItemTags/{itemTagId} | Delete an item tag
 [**getItemTagByIdAsync**](ItemTagsApi.md#getItemTagByIdAsync) | **GET** /api/v2/CatalogService/ItemTags/{itemTagId} | Get item tag by ID
 [**getItemTagsAsync**](ItemTagsApi.md#getItemTagsAsync) | **GET** /api/v2/CatalogService/ItemTags | Get all item tags
+[**patchItemTagAsync**](ItemTagsApi.md#patchItemTagAsync) | **PATCH** /api/v2/CatalogService/ItemTags/{itemTagId} | Patch an item tag
 [**updateItemTagAsync**](ItemTagsApi.md#updateItemTagAsync) | **PUT** /api/v2/CatalogService/ItemTags/{itemTagId} | Update an item tag
 
 
@@ -158,6 +159,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchItemTagAsync
+
+Patch an item tag
+
+Partially updates an existing item tag for the specified tenant.
+
+### Example
+
+```bash
+ patchItemTagAsync  tenantId=value itemTagId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **itemTagId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

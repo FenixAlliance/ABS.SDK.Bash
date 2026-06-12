@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getEmailTemplateDetailsAsync**](EmailTemplatesApi.md#getEmailTemplateDetailsAsync) | **GET** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Get email template by ID
 [**getEmailTemplatesCountAsync**](EmailTemplatesApi.md#getEmailTemplatesCountAsync) | **GET** /api/v2/MarketingService/EmailTemplates/Count | Get email templates count
 [**getEmailTemplatesODataAsync**](EmailTemplatesApi.md#getEmailTemplatesODataAsync) | **GET** /api/v2/MarketingService/EmailTemplates | Get email templates
+[**patchEmailTemplateAsync**](EmailTemplatesApi.md#patchEmailTemplateAsync) | **PATCH** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Patch an email template
 [**updateEmailTemplateAsync**](EmailTemplatesApi.md#updateEmailTemplateAsync) | **PUT** /api/v2/MarketingService/EmailTemplates/{emailTemplateId} | Update an email template
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchEmailTemplateAsync
+
+Patch an email template
+
+Partially updates an email template by its ID using JSON Patch.
+
+### Example
+
+```bash
+ patchEmailTemplateAsync  tenantId=value emailTemplateId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **emailTemplateId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

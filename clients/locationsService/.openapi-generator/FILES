@@ -20,6 +20,7 @@ docs/LocationDtoIReadOnlyListEnvelope.md
 docs/LocationUpdateDto.md
 docs/LocationsApi.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

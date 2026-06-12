@@ -114,6 +114,8 @@ Class | Method | HTTP request | Description
 *DealUnitFlowsApi* | [**getDealUnitFlowStagesCountAsync**](docs/DealUnitFlowsApi.md#getdealunitflowstagescountasync) | **GET** /api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/Count | Get stages count for a deal unit flow
 *DealUnitFlowsApi* | [**getDealUnitFlowsAsync**](docs/DealUnitFlowsApi.md#getdealunitflowsasync) | **GET** /api/v2/DealsService/DealUnitFlows | Get deal unit flows
 *DealUnitFlowsApi* | [**getDealUnitFlowsCountAsync**](docs/DealUnitFlowsApi.md#getdealunitflowscountasync) | **GET** /api/v2/DealsService/DealUnitFlows/Count | Get deal unit flows count
+*DealUnitFlowsApi* | [**patchDealUnitFlowAsync**](docs/DealUnitFlowsApi.md#patchdealunitflowasync) | **PATCH** /api/v2/DealsService/DealUnitFlows/{dealUnitFlowId} | Patch a deal unit flow
+*DealUnitFlowsApi* | [**patchDealUnitFlowStageAsync**](docs/DealUnitFlowsApi.md#patchdealunitflowstageasync) | **PATCH** /api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId} | Patch a deal unit flow stage
 *DealUnitFlowsApi* | [**updateDealUnitFlowAsync**](docs/DealUnitFlowsApi.md#updatedealunitflowasync) | **PUT** /api/v2/DealsService/DealUnitFlows/{dealUnitFlowId} | Update a deal unit flow
 *DealUnitFlowsApi* | [**updateDealUnitFlowStageAsync**](docs/DealUnitFlowsApi.md#updatedealunitflowstageasync) | **PUT** /api/v2/DealsService/DealUnitFlows/{dealUnitFlowId}/Stages/{dealUnitFlowStageId} | Update a deal unit flow stage
 *DealUnitsApi* | [**calculateDealUnitAsync**](docs/DealUnitsApi.md#calculatedealunitasync) | **PUT** /api/v2/DealsService/DealUnits/{dealUnitId}/Calculate | Calculate a deal unit
@@ -130,6 +132,8 @@ Class | Method | HTTP request | Description
 *DealUnitsApi* | [**getDealUnitsCountAsync**](docs/DealUnitsApi.md#getdealunitscountasync) | **GET** /api/v2/DealsService/DealUnits/Count | Get deal units count
 *DealUnitsApi* | [**getExtendedDealUnitAsync**](docs/DealUnitsApi.md#getextendeddealunitasync) | **GET** /api/v2/DealsService/DealUnits/{dealUnitId}/Extended | Get extended deal unit by ID
 *DealUnitsApi* | [**getExtendedDealUnitsAsync**](docs/DealUnitsApi.md#getextendeddealunitsasync) | **GET** /api/v2/DealsService/DealUnits/Extended | Get extended deal units
+*DealUnitsApi* | [**patchDealUnitAsync**](docs/DealUnitsApi.md#patchdealunitasync) | **PATCH** /api/v2/DealsService/DealUnits/{dealUnitId} | Patch a deal unit
+*DealUnitsApi* | [**patchDealUnitLineAsync**](docs/DealUnitsApi.md#patchdealunitlineasync) | **PATCH** /api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId} | Patch a deal unit line
 *DealUnitsApi* | [**updateDealUnitAsync**](docs/DealUnitsApi.md#updatedealunitasync) | **PUT** /api/v2/DealsService/DealUnits/{dealUnitId} | Update a deal unit
 *DealUnitsApi* | [**updateDealUnitPriceAsync**](docs/DealUnitsApi.md#updatedealunitpriceasync) | **PUT** /api/v2/DealsService/DealUnits/{dealUnitId}/Lines/{dealUnitLineId} | Update a deal unit line
 *FenixAlliancePortalsWebsiteApi* | [**accountLogoutPost**](docs/FenixAlliancePortalsWebsiteApi.md#accountlogoutpost) | **POST** /Account/Logout | 
@@ -186,6 +190,7 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)
  - [ResendConfirmationEmailRequest](docs/ResendConfirmationEmailRequest.md)

@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseAssignmentByIdAsync**](CourseAssignmentsApi.md#getCourseAssignmentByIdAsync) | **GET** /api/v2/LearningService/CourseAssignments/{assignmentId} | Get course assignment by ID
 [**getCourseAssignmentsAsync**](CourseAssignmentsApi.md#getCourseAssignmentsAsync) | **GET** /api/v2/LearningService/CourseAssignments | Get all course assignments
 [**getCourseAssignmentsCountAsync**](CourseAssignmentsApi.md#getCourseAssignmentsCountAsync) | **GET** /api/v2/LearningService/CourseAssignments/Count | Get course assignments count
+[**patchCourseAssignmentAsync**](CourseAssignmentsApi.md#patchCourseAssignmentAsync) | **PATCH** /api/v2/LearningService/CourseAssignments/{assignmentId} | Patch a course assignment
 [**updateCourseAssignmentAsync**](CourseAssignmentsApi.md#updateCourseAssignmentAsync) | **PUT** /api/v2/LearningService/CourseAssignments/{assignmentId} | Update a course assignment
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseAssignmentAsync
+
+Patch a course assignment
+
+Partially updates a course assignment for the specified tenant.
+
+### Example
+
+```bash
+ patchCourseAssignmentAsync  tenantId=value assignmentId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **assignmentId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

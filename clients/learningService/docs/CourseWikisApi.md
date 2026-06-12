@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseWikiByIdAsync**](CourseWikisApi.md#getCourseWikiByIdAsync) | **GET** /api/v2/LearningService/CourseWikis/{wikiId} | Get course wiki by ID
 [**getCourseWikisAsync**](CourseWikisApi.md#getCourseWikisAsync) | **GET** /api/v2/LearningService/CourseWikis | Get all course wikis
 [**getCourseWikisCountAsync**](CourseWikisApi.md#getCourseWikisCountAsync) | **GET** /api/v2/LearningService/CourseWikis/Count | Get course wikis count
+[**patchCourseWikiAsync**](CourseWikisApi.md#patchCourseWikiAsync) | **PATCH** /api/v2/LearningService/CourseWikis/{wikiId} | Patch a course wiki
 [**updateCourseWikiAsync**](CourseWikisApi.md#updateCourseWikiAsync) | **PUT** /api/v2/LearningService/CourseWikis/{wikiId} | Update a course wiki
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseWikiAsync
+
+Patch a course wiki
+
+Partially updates a course wiki for the specified tenant.
+
+### Example
+
+```bash
+ patchCourseWikiAsync  tenantId=value wikiId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **wikiId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

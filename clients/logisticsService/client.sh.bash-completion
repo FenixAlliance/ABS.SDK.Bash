@@ -82,6 +82,8 @@ _()
     operations["markAirwayBillArrivedAsync"]=1
     operations["markAirwayBillDeliveredAsync"]=1
     operations["markAirwayBillInTransitAsync"]=1
+    operations["patchAirwayBillAsync"]=1
+    operations["patchAirwayBillLineAsync"]=1
     operations["removeAirwayBillLineAsync"]=1
     operations["updateAirwayBillAsync"]=1
     operations["updateAirwayBillLineAsync"]=1
@@ -119,6 +121,8 @@ _()
     operations["getItemPackingSlipEntryByIdAsync"]=1
     operations["getItemPackingSlipsAsync"]=1
     operations["getItemPackingSlipsCountAsync"]=1
+    operations["patchItemPackingSlipAsync"]=1
+    operations["patchItemPackingSlipEntryAsync"]=1
     operations["updateItemPackingSlipAsync"]=1
     operations["updateItemPackingSlipEntryAsync"]=1
     operations["createItemPickListAsync"]=1
@@ -131,6 +135,8 @@ _()
     operations["getItemPickListEntryByIdAsync"]=1
     operations["getItemPickListsAsync"]=1
     operations["getItemPickListsCountAsync"]=1
+    operations["patchItemPickListAsync"]=1
+    operations["patchItemPickListEntryAsync"]=1
     operations["updateItemPickListAsync"]=1
     operations["updateItemPickListEntryAsync"]=1
     operations["createItemRestockAsync"]=1
@@ -143,6 +149,8 @@ _()
     operations["getItemRestockEntryByIdAsync"]=1
     operations["getItemRestocksAsync"]=1
     operations["getItemRestocksCountAsync"]=1
+    operations["patchItemRestockAsync"]=1
+    operations["patchItemRestockEntryAsync"]=1
     operations["updateItemRestockAsync"]=1
     operations["updateItemRestockEntryAsync"]=1
     operations["createItemRetainSampleAsync"]=1
@@ -150,12 +158,14 @@ _()
     operations["getItemRetainSampleByIdAsync"]=1
     operations["getItemRetainSamplesAsync"]=1
     operations["getItemRetainSamplesCountAsync"]=1
+    operations["patchItemRetainSampleAsync"]=1
     operations["updateItemRetainSampleAsync"]=1
     operations["createPortAsync"]=1
     operations["deletePortAsync"]=1
     operations["getPortByIdAsync"]=1
     operations["getPortsAsync"]=1
     operations["getPortsCountAsync"]=1
+    operations["patchPortAsync"]=1
     operations["updatePortAsync"]=1
     operations["addProofOfDeliveryLineAsync"]=1
     operations["attachDeliveryNoteAsync"]=1
@@ -170,6 +180,8 @@ _()
     operations["getProofOfDeliveryLinesCountAsync"]=1
     operations["getProofsOfDeliveryAsync"]=1
     operations["getProofsOfDeliveryCountAsync"]=1
+    operations["patchProofOfDeliveryAsync"]=1
+    operations["patchProofOfDeliveryLineAsync"]=1
     operations["rejectProofOfDeliveryAsync"]=1
     operations["removeProofOfDeliveryLineAsync"]=1
     operations["signProofOfDeliveryAsync"]=1
@@ -187,6 +199,8 @@ _()
     operations["issueRailWaybillAsync"]=1
     operations["markRailWaybillDeliveredAsync"]=1
     operations["markRailWaybillInTransitAsync"]=1
+    operations["patchRailWaybillAsync"]=1
+    operations["patchRailWaybillLineAsync"]=1
     operations["removeRailWaybillLineAsync"]=1
     operations["updateRailWaybillAsync"]=1
     operations["updateRailWaybillLineAsync"]=1
@@ -203,6 +217,8 @@ _()
     operations["issueRoadWaybillAsync"]=1
     operations["markRoadWaybillDeliveredAsync"]=1
     operations["markRoadWaybillInTransitAsync"]=1
+    operations["patchRoadWaybillAsync"]=1
+    operations["patchRoadWaybillLineAsync"]=1
     operations["removeRoadWaybillLineAsync"]=1
     operations["updateRoadWaybillAsync"]=1
     operations["updateRoadWaybillLineAsync"]=1
@@ -218,6 +234,8 @@ _()
     operations["issueSeawayBillAsync"]=1
     operations["markSeawayBillArrivedAsync"]=1
     operations["markSeawayBillInTransitAsync"]=1
+    operations["patchSeawayBillAsync"]=1
+    operations["patchSeawayBillLineAsync"]=1
     operations["releaseSeawayBillAsync"]=1
     operations["removeSeawayBillLineAsync"]=1
     operations["updateSeawayBillAsync"]=1
@@ -227,6 +245,7 @@ _()
     operations["getSupplierProfileByIdAsync"]=1
     operations["getSupplierProfilesAsync"]=1
     operations["getSupplierProfilesCountAsync"]=1
+    operations["patchSupplierProfileAsync"]=1
     operations["updateSupplierProfileAsync"]=1
     operations["activateTruckDriverAsync"]=1
     operations["createTruckDriverAsync"]=1
@@ -235,6 +254,7 @@ _()
     operations["getTruckDriverByIdAsync"]=1
     operations["getTruckDriversAsync"]=1
     operations["getTruckDriversCountAsync"]=1
+    operations["patchTruckDriverAsync"]=1
     operations["updateTruckDriverAsync"]=1
     operations["arriveTripAsync"]=1
     operations["cancelTripAsync"]=1
@@ -250,6 +270,8 @@ _()
     operations["getTruckTripsCountAsync"]=1
     operations["getTrucksAsync"]=1
     operations["getTrucksCountAsync"]=1
+    operations["patchTruckAsync"]=1
+    operations["patchTruckTripAsync"]=1
     operations["updateTruckAsync"]=1
     operations["updateTruckTripAsync"]=1
     operations["createVesselAsync"]=1
@@ -257,6 +279,7 @@ _()
     operations["getVesselByIdAsync"]=1
     operations["getVesselsAsync"]=1
     operations["getVesselsCountAsync"]=1
+    operations["patchVesselAsync"]=1
     operations["updateVesselAsync"]=1
     operations["cancelVoyageAsync"]=1
     operations["completeVoyageAsync"]=1
@@ -269,6 +292,8 @@ _()
     operations["getVoyagePortCallsCountAsync"]=1
     operations["getVoyagesAsync"]=1
     operations["getVoyagesCountAsync"]=1
+    operations["patchVoyageAsync"]=1
+    operations["patchVoyagePortCallAsync"]=1
     operations["startVoyageAsync"]=1
     operations["updateVoyageAsync"]=1
     operations["updateVoyagePortCallAsync"]=1
@@ -277,6 +302,7 @@ _()
     operations["getWarehouseByIdAsync"]=1
     operations["getWarehousesAsync"]=1
     operations["getWarehousesCountAsync"]=1
+    operations["patchWarehouseAsync"]=1
     operations["updateWarehouseAsync"]=1
 
     # An associative array of operations to their parameters
@@ -295,6 +321,8 @@ _()
     operation_parameters["markAirwayBillArrivedAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["markAirwayBillDeliveredAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["markAirwayBillInTransitAsync"]="billId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchAirwayBillAsync"]="billId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchAirwayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["removeAirwayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAirwayBillAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAirwayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
@@ -332,6 +360,8 @@ _()
     operation_parameters["getItemPackingSlipEntryByIdAsync"]="packingSlipId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemPackingSlipsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getItemPackingSlipsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemPackingSlipAsync"]="packingSlipId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemPackingSlipEntryAsync"]="packingSlipId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemPackingSlipAsync"]="packingSlipId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemPackingSlipEntryAsync"]="packingSlipId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["createItemPickListAsync"]="tenantId= api-version= x-api-version: "
@@ -344,6 +374,8 @@ _()
     operation_parameters["getItemPickListEntryByIdAsync"]="pickListId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemPickListsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getItemPickListsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemPickListAsync"]="pickListId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemPickListEntryAsync"]="pickListId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemPickListAsync"]="pickListId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemPickListEntryAsync"]="pickListId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["createItemRestockAsync"]="tenantId= api-version= x-api-version: "
@@ -356,6 +388,8 @@ _()
     operation_parameters["getItemRestockEntryByIdAsync"]="restockId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemRestocksAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getItemRestocksCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemRestockAsync"]="restockId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemRestockEntryAsync"]="restockId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemRestockAsync"]="restockId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemRestockEntryAsync"]="restockId= entryId= tenantId= api-version= x-api-version: "
     operation_parameters["createItemRetainSampleAsync"]="tenantId= api-version= x-api-version: "
@@ -363,12 +397,14 @@ _()
     operation_parameters["getItemRetainSampleByIdAsync"]="retainSampleId= tenantId= api-version= x-api-version: "
     operation_parameters["getItemRetainSamplesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getItemRetainSamplesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchItemRetainSampleAsync"]="retainSampleId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemRetainSampleAsync"]="retainSampleId= tenantId= api-version= x-api-version: "
     operation_parameters["createPortAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deletePortAsync"]="portId= tenantId= api-version= x-api-version: "
     operation_parameters["getPortByIdAsync"]="portId= tenantId= api-version= x-api-version: "
     operation_parameters["getPortsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPortsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchPortAsync"]="portId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePortAsync"]="portId= tenantId= api-version= x-api-version: "
     operation_parameters["addProofOfDeliveryLineAsync"]="podId= tenantId= api-version= x-api-version: "
     operation_parameters["attachDeliveryNoteAsync"]="podId= noteId= tenantId= api-version= x-api-version: "
@@ -383,6 +419,8 @@ _()
     operation_parameters["getProofOfDeliveryLinesCountAsync"]="podId= tenantId= api-version= x-api-version: "
     operation_parameters["getProofsOfDeliveryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getProofsOfDeliveryCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchProofOfDeliveryAsync"]="podId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchProofOfDeliveryLineAsync"]="podId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["rejectProofOfDeliveryAsync"]="podId= tenantId= api-version= x-api-version: "
     operation_parameters["removeProofOfDeliveryLineAsync"]="podId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["signProofOfDeliveryAsync"]="podId= tenantId= api-version= x-api-version: "
@@ -400,6 +438,8 @@ _()
     operation_parameters["issueRailWaybillAsync"]="waybillId= tenantId= api-version= x-api-version: "
     operation_parameters["markRailWaybillDeliveredAsync"]="waybillId= tenantId= api-version= x-api-version: "
     operation_parameters["markRailWaybillInTransitAsync"]="waybillId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchRailWaybillAsync"]="waybillId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchRailWaybillLineAsync"]="waybillId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["removeRailWaybillLineAsync"]="waybillId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRailWaybillAsync"]="waybillId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRailWaybillLineAsync"]="waybillId= lineId= tenantId= api-version= x-api-version: "
@@ -416,6 +456,8 @@ _()
     operation_parameters["issueRoadWaybillAsync"]="waybillId= tenantId= api-version= x-api-version: "
     operation_parameters["markRoadWaybillDeliveredAsync"]="waybillId= tenantId= api-version= x-api-version: "
     operation_parameters["markRoadWaybillInTransitAsync"]="waybillId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchRoadWaybillAsync"]="waybillId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchRoadWaybillLineAsync"]="waybillId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["removeRoadWaybillLineAsync"]="waybillId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRoadWaybillAsync"]="waybillId= tenantId= api-version= x-api-version: "
     operation_parameters["updateRoadWaybillLineAsync"]="waybillId= lineId= tenantId= api-version= x-api-version: "
@@ -431,6 +473,8 @@ _()
     operation_parameters["issueSeawayBillAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["markSeawayBillArrivedAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["markSeawayBillInTransitAsync"]="billId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchSeawayBillAsync"]="billId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchSeawayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["releaseSeawayBillAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["removeSeawayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSeawayBillAsync"]="billId= tenantId= api-version= x-api-version: "
@@ -440,6 +484,7 @@ _()
     operation_parameters["getSupplierProfileByIdAsync"]="supplierProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["getSupplierProfilesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSupplierProfilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchSupplierProfileAsync"]="supplierProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSupplierProfileAsync"]="supplierProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["activateTruckDriverAsync"]="driverId= tenantId= api-version= x-api-version: "
     operation_parameters["createTruckDriverAsync"]="tenantId= api-version= x-api-version: "
@@ -448,6 +493,7 @@ _()
     operation_parameters["getTruckDriverByIdAsync"]="driverId= tenantId= api-version= x-api-version: "
     operation_parameters["getTruckDriversAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTruckDriversCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTruckDriverAsync"]="driverId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTruckDriverAsync"]="driverId= tenantId= api-version= x-api-version: "
     operation_parameters["arriveTripAsync"]="truckId= tripId= tenantId= api-version= x-api-version: "
     operation_parameters["cancelTripAsync"]="truckId= tripId= tenantId= api-version= x-api-version: "
@@ -463,6 +509,8 @@ _()
     operation_parameters["getTruckTripsCountAsync"]="truckId= tenantId= api-version= x-api-version: "
     operation_parameters["getTrucksAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTrucksCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTruckAsync"]="truckId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchTruckTripAsync"]="truckId= tripId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTruckAsync"]="truckId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTruckTripAsync"]="truckId= tripId= tenantId= api-version= x-api-version: "
     operation_parameters["createVesselAsync"]="tenantId= api-version= x-api-version: "
@@ -470,6 +518,7 @@ _()
     operation_parameters["getVesselByIdAsync"]="vesselId= tenantId= api-version= x-api-version: "
     operation_parameters["getVesselsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getVesselsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchVesselAsync"]="vesselId= tenantId= api-version= x-api-version: "
     operation_parameters["updateVesselAsync"]="vesselId= tenantId= api-version= x-api-version: "
     operation_parameters["cancelVoyageAsync"]="voyageId= tenantId= api-version= x-api-version: "
     operation_parameters["completeVoyageAsync"]="voyageId= tenantId= api-version= x-api-version: "
@@ -482,6 +531,8 @@ _()
     operation_parameters["getVoyagePortCallsCountAsync"]="voyageId= tenantId= api-version= x-api-version: "
     operation_parameters["getVoyagesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getVoyagesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchVoyageAsync"]="voyageId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchVoyagePortCallAsync"]="voyageId= portCallId= tenantId= api-version= x-api-version: "
     operation_parameters["startVoyageAsync"]="voyageId= tenantId= api-version= x-api-version: "
     operation_parameters["updateVoyageAsync"]="voyageId= tenantId= api-version= x-api-version: "
     operation_parameters["updateVoyagePortCallAsync"]="voyageId= portCallId= tenantId= api-version= x-api-version: "
@@ -490,6 +541,7 @@ _()
     operation_parameters["getWarehouseByIdAsync"]="warehouseId= tenantId= api-version= x-api-version: "
     operation_parameters["getWarehousesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getWarehousesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchWarehouseAsync"]="warehouseId= tenantId= api-version= x-api-version: "
     operation_parameters["updateWarehouseAsync"]="warehouseId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

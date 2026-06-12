@@ -1,0 +1,4354 @@
+#!/usr/bin/env bash
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! openapi-generator (https://openapi-generator.tech)
+# ! FROM OPENAPI SPECIFICATION IN JSON.
+# !
+# ! Generator version: 7.9.0
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+#
+# This is a Bash client for BlockchainsService.
+#
+# LICENSE:
+# https://fenix-alliance.com.co/Legal/Policies/eula
+#
+# CONTACT:
+# support@fenix-alliance.com
+#
+# MORE INFORMATION:
+# 
+#
+
+# For improved pattern matching in case statements
+shopt -s extglob
+
+###############################################################################
+#
+# Make sure Bash is at least in version 4.3
+#
+###############################################################################
+if ! ( (("${BASH_VERSION:0:1}" == "4")) && (("${BASH_VERSION:2:1}" >= "3")) ) \
+  && ! (("${BASH_VERSION:0:1}" >= "5")); then
+    echo ""
+    echo "Sorry - your Bash version is ${BASH_VERSION}"
+    echo ""
+    echo "You need at least Bash 4.3 to run this script."
+    echo ""
+    exit 1
+fi
+
+###############################################################################
+#
+# Global variables
+#
+###############################################################################
+
+##
+# The filename of this script for help messages
+script_name=$(basename "$0")
+
+##
+# Map for headers passed after operation as KEY:VALUE
+declare -A header_arguments
+
+
+##
+# Map for operation parameters passed after operation as PARAMETER=VALUE
+# These will be mapped to appropriate path or query parameters
+# The values in operation_parameters are arrays, so that multiple values
+# can be provided for the same parameter if allowed by API specification
+declare -A operation_parameters
+
+##
+# Declare colors with autodetection if output is terminal
+if [ -t 1 ]; then
+    RED="$(tput setaf 1)"
+    GREEN="$(tput setaf 2)"
+    YELLOW="$(tput setaf 3)"
+    BLUE="$(tput setaf 4)"
+    MAGENTA="$(tput setaf 5)"
+    CYAN="$(tput setaf 6)"
+    WHITE="$(tput setaf 7)"
+    BOLD="$(tput bold)"
+    OFF="$(tput sgr0)"
+else
+    RED=""
+    GREEN=""
+    YELLOW=""
+    BLUE=""
+    MAGENTA=""
+    CYAN=""
+    WHITE=""
+    BOLD=""
+    OFF=""
+fi
+
+declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$MAGENTA" "$WHITE" )
+
+##
+# This array stores the minimum number of required occurrences for parameter
+# 0 - optional
+# 1 - required
+declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["createBlockchainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createBlockchainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createBlockchainAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createBlockchainAsync:::BlockchainCreateDto"]=0
+operation_parameters_minimum_occurrences["createBlockchainBlockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createBlockchainBlockAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["createBlockchainBlockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createBlockchainBlockAsync:::BlockchainBlockCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteBlockchainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteBlockchainAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteBlockchainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteBlockchainAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteBlockchainBlockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteBlockchainBlockAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["deleteBlockchainBlockAsync:::blockId"]=1
+operation_parameters_minimum_occurrences["deleteBlockchainBlockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::blockId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBlockchainsAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getBlockchainsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlockchainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBlockchainAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchBlockchainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBlockchainAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlockchainAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBlockchainBlockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBlockchainBlockAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["patchBlockchainBlockAsync:::blockId"]=1
+operation_parameters_minimum_occurrences["patchBlockchainBlockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlockchainBlockAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateBlockchainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateBlockchainAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateBlockchainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateBlockchainAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateBlockchainAsync:::BlockchainUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateBlockchainBlockAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateBlockchainBlockAsync:::blockchainId"]=1
+operation_parameters_minimum_occurrences["updateBlockchainBlockAsync:::blockId"]=1
+operation_parameters_minimum_occurrences["updateBlockchainBlockAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateBlockchainBlockAsync:::BlockchainBlockUpdateDto"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
+operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
+operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
+operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_minimum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_minimum_occurrences["manage2faPost:::TwoFactorRequest"]=1
+operation_parameters_minimum_occurrences["manageInfoPost:::InfoRequest"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::userId"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::code"]=1
+operation_parameters_minimum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
+operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
+operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
+operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createNonFungibleTokenAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createNonFungibleTokenAsync:::NonFungibleTokenCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteNonFungibleTokenAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteNonFungibleTokenAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::oDataQueryOptions"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchNonFungibleTokenAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchNonFungibleTokenAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchNonFungibleTokenAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateNonFungibleTokenAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateNonFungibleTokenAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateNonFungibleTokenAsync:::NonFungibleTokenUpdateDto"]=0
+
+##
+# This array stores the maximum number of allowed occurrences for parameter
+# 1 - single value
+# 2 - 2 values
+# N - N values
+# 0 - unlimited
+declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["createBlockchainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createBlockchainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createBlockchainAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createBlockchainAsync:::BlockchainCreateDto"]=0
+operation_parameters_maximum_occurrences["createBlockchainBlockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createBlockchainBlockAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["createBlockchainBlockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createBlockchainBlockAsync:::BlockchainBlockCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainBlockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainBlockAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainBlockAsync:::blockId"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainBlockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::blockId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlockchainsAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getBlockchainsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlockchainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBlockchainAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchBlockchainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBlockchainAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlockchainAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBlockchainBlockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBlockchainBlockAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["patchBlockchainBlockAsync:::blockId"]=0
+operation_parameters_maximum_occurrences["patchBlockchainBlockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlockchainBlockAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateBlockchainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateBlockchainAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateBlockchainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateBlockchainAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateBlockchainAsync:::BlockchainUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateBlockchainBlockAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateBlockchainBlockAsync:::blockchainId"]=0
+operation_parameters_maximum_occurrences["updateBlockchainBlockAsync:::blockId"]=0
+operation_parameters_maximum_occurrences["updateBlockchainBlockAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateBlockchainBlockAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateBlockchainBlockAsync:::BlockchainBlockUpdateDto"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
+operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
+operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
+operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
+operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
+operation_parameters_maximum_occurrences["loginPost:::useSessionCookies"]=0
+operation_parameters_maximum_occurrences["manage2faPost:::TwoFactorRequest"]=0
+operation_parameters_maximum_occurrences["manageInfoPost:::InfoRequest"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::userId"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::code"]=0
+operation_parameters_maximum_occurrences["mapIdentityApiConfirmEmail:::changedEmail"]=0
+operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
+operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
+operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
+operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createNonFungibleTokenAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createNonFungibleTokenAsync:::NonFungibleTokenCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteNonFungibleTokenAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteNonFungibleTokenAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::oDataQueryOptions"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchNonFungibleTokenAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchNonFungibleTokenAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchNonFungibleTokenAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateNonFungibleTokenAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateNonFungibleTokenAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateNonFungibleTokenAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateNonFungibleTokenAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateNonFungibleTokenAsync:::NonFungibleTokenUpdateDto"]=0
+
+##
+# The type of collection for specifying multiple values for parameter:
+# - multi, csv, ssv, tsv
+declare -A operation_parameters_collection_type
+operation_parameters_collection_type["createBlockchainAsync:::tenantId"]=""
+operation_parameters_collection_type["createBlockchainAsync:::api-version"]=""
+operation_parameters_collection_type["createBlockchainAsync:::x-api-version"]=""
+operation_parameters_collection_type["createBlockchainAsync:::BlockchainCreateDto"]=""
+operation_parameters_collection_type["createBlockchainBlockAsync:::tenantId"]=""
+operation_parameters_collection_type["createBlockchainBlockAsync:::blockchainId"]=""
+operation_parameters_collection_type["createBlockchainBlockAsync:::api-version"]=""
+operation_parameters_collection_type["createBlockchainBlockAsync:::x-api-version"]=""
+operation_parameters_collection_type["createBlockchainBlockAsync:::BlockchainBlockCreateDto"]=""
+operation_parameters_collection_type["deleteBlockchainAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteBlockchainAsync:::id"]=""
+operation_parameters_collection_type["deleteBlockchainAsync:::api-version"]=""
+operation_parameters_collection_type["deleteBlockchainAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteBlockchainBlockAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteBlockchainBlockAsync:::blockchainId"]=""
+operation_parameters_collection_type["deleteBlockchainBlockAsync:::blockId"]=""
+operation_parameters_collection_type["deleteBlockchainBlockAsync:::api-version"]=""
+operation_parameters_collection_type["deleteBlockchainBlockAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlockchainBlockByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlockchainBlockByIdAsync:::blockchainId"]=""
+operation_parameters_collection_type["getBlockchainBlockByIdAsync:::blockId"]=""
+operation_parameters_collection_type["getBlockchainBlockByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getBlockchainBlockByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlockchainBlocksAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlockchainBlocksAsync:::blockchainId"]=""
+operation_parameters_collection_type["getBlockchainBlocksAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getBlockchainBlocksAsync:::api-version"]=""
+operation_parameters_collection_type["getBlockchainBlocksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlockchainBlocksCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlockchainBlocksCountAsync:::blockchainId"]=""
+operation_parameters_collection_type["getBlockchainBlocksCountAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getBlockchainBlocksCountAsync:::api-version"]=""
+operation_parameters_collection_type["getBlockchainBlocksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlockchainByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlockchainByIdAsync:::id"]=""
+operation_parameters_collection_type["getBlockchainByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getBlockchainByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlockchainsAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlockchainsAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getBlockchainsAsync:::api-version"]=""
+operation_parameters_collection_type["getBlockchainsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlockchainsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlockchainsCountAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getBlockchainsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getBlockchainsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlockchainAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBlockchainAsync:::id"]=""
+operation_parameters_collection_type["patchBlockchainAsync:::api-version"]=""
+operation_parameters_collection_type["patchBlockchainAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlockchainAsync:::Operation"]=
+operation_parameters_collection_type["patchBlockchainBlockAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBlockchainBlockAsync:::blockchainId"]=""
+operation_parameters_collection_type["patchBlockchainBlockAsync:::blockId"]=""
+operation_parameters_collection_type["patchBlockchainBlockAsync:::api-version"]=""
+operation_parameters_collection_type["patchBlockchainBlockAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlockchainBlockAsync:::Operation"]=
+operation_parameters_collection_type["updateBlockchainAsync:::tenantId"]=""
+operation_parameters_collection_type["updateBlockchainAsync:::id"]=""
+operation_parameters_collection_type["updateBlockchainAsync:::api-version"]=""
+operation_parameters_collection_type["updateBlockchainAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateBlockchainAsync:::BlockchainUpdateDto"]=""
+operation_parameters_collection_type["updateBlockchainBlockAsync:::tenantId"]=""
+operation_parameters_collection_type["updateBlockchainBlockAsync:::blockchainId"]=""
+operation_parameters_collection_type["updateBlockchainBlockAsync:::blockId"]=""
+operation_parameters_collection_type["updateBlockchainBlockAsync:::api-version"]=""
+operation_parameters_collection_type["updateBlockchainBlockAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateBlockchainBlockAsync:::BlockchainBlockUpdateDto"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
+operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
+operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
+operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
+operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
+operation_parameters_collection_type["loginPost:::LoginRequest"]=""
+operation_parameters_collection_type["loginPost:::useCookies"]=""
+operation_parameters_collection_type["loginPost:::useSessionCookies"]=""
+operation_parameters_collection_type["manage2faPost:::TwoFactorRequest"]=""
+operation_parameters_collection_type["manageInfoPost:::InfoRequest"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::userId"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::code"]=""
+operation_parameters_collection_type["mapIdentityApiConfirmEmail:::changedEmail"]=""
+operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
+operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
+operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
+operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createNonFungibleTokenAsync:::tenantId"]=""
+operation_parameters_collection_type["createNonFungibleTokenAsync:::api-version"]=""
+operation_parameters_collection_type["createNonFungibleTokenAsync:::x-api-version"]=""
+operation_parameters_collection_type["createNonFungibleTokenAsync:::NonFungibleTokenCreateDto"]=""
+operation_parameters_collection_type["deleteNonFungibleTokenAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteNonFungibleTokenAsync:::id"]=""
+operation_parameters_collection_type["deleteNonFungibleTokenAsync:::api-version"]=""
+operation_parameters_collection_type["deleteNonFungibleTokenAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::id"]=""
+operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNonFungibleTokensAsync:::tenantId"]=""
+operation_parameters_collection_type["getNonFungibleTokensAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getNonFungibleTokensAsync:::api-version"]=""
+operation_parameters_collection_type["getNonFungibleTokensAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNonFungibleTokensCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getNonFungibleTokensCountAsync:::oDataQueryOptions"]=""
+operation_parameters_collection_type["getNonFungibleTokensCountAsync:::api-version"]=""
+operation_parameters_collection_type["getNonFungibleTokensCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchNonFungibleTokenAsync:::tenantId"]=""
+operation_parameters_collection_type["patchNonFungibleTokenAsync:::id"]=""
+operation_parameters_collection_type["patchNonFungibleTokenAsync:::api-version"]=""
+operation_parameters_collection_type["patchNonFungibleTokenAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchNonFungibleTokenAsync:::Operation"]=
+operation_parameters_collection_type["updateNonFungibleTokenAsync:::tenantId"]=""
+operation_parameters_collection_type["updateNonFungibleTokenAsync:::id"]=""
+operation_parameters_collection_type["updateNonFungibleTokenAsync:::api-version"]=""
+operation_parameters_collection_type["updateNonFungibleTokenAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateNonFungibleTokenAsync:::NonFungibleTokenUpdateDto"]=""
+
+
+##
+# Map for body parameters passed after operation as
+# PARAMETER==STRING_VALUE or PARAMETER:=NUMERIC_VALUE
+# These will be mapped to top level json keys ( { "PARAMETER": "VALUE" })
+declare -A body_parameters
+
+##
+# These arguments will be directly passed to cURL
+curl_arguments=""
+
+##
+# The host for making the request
+host=""
+
+##
+# The user credentials for basic authentication
+basic_auth_credential=""
+
+
+##
+# If true, the script will only output the actual cURL command that would be
+# used
+print_curl=false
+
+##
+# The operation ID passed on the command line
+operation=""
+
+##
+# The provided Accept header value
+header_accept=""
+
+##
+# The provided Content-type header value
+header_content_type=""
+
+##
+# If there is any body content on the stdin pass it to the body of the request
+body_content_temp_file=""
+
+##
+# If this variable is set to true, the request will be performed even
+# if parameters for required query, header or body values are not provided
+# (path parameters are still required).
+force=false
+
+##
+# Declare some mime types abbreviations for easier content-type and accepts
+# headers specification
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+##############################################################################
+#
+# Escape special URL characters
+# Based on table at http://www.w3schools.com/tags/ref_urlencode.asp
+#
+##############################################################################
+url_escape() {
+    local raw_url="$1"
+
+    value=$(sed -e 's/ /%20/g' \
+       -e 's/!/%21/g' \
+       -e 's/"/%22/g' \
+       -e 's/#/%23/g' \
+       -e 's/\&/%26/g' \
+       -e 's/'\''/%28/g' \
+       -e 's/(/%28/g' \
+       -e 's/)/%29/g' \
+       -e 's/:/%3A/g' \
+       -e 's/\\t/%09/g' \
+       -e 's/?/%3F/g' <<<"$raw_url");
+
+    echo "$value"
+}
+
+##############################################################################
+#
+# Lookup the mime type abbreviation in the mime_type_abbreviations array.
+# If not present assume the user provided a valid mime type
+#
+##############################################################################
+lookup_mime_type() {
+    local mime_type="$1"
+
+    if [[ ${mime_type_abbreviations[$mime_type]} ]]; then
+        echo "${mime_type_abbreviations[$mime_type]}"
+    else
+        echo "$mime_type"
+    fi
+}
+
+##############################################################################
+#
+# Converts an associative array into a list of cURL header
+# arguments (-H "KEY: VALUE")
+#
+##############################################################################
+header_arguments_to_curl() {
+    local headers_curl=""
+
+    for key in "${!header_arguments[@]}"; do
+        headers_curl+="-H \"${key}: ${header_arguments[${key}]}\" "
+    done
+    headers_curl+=" "
+
+    echo "${headers_curl}"
+}
+
+##############################################################################
+#
+# Converts an associative array into a simple JSON with keys as top
+# level object attributes
+#
+# \todo Add conversion of more complex attributes using paths
+#
+##############################################################################
+body_parameters_to_json() {
+    if [[ $RAW_BODY == "1" ]]; then
+        echo "-d '${body_parameters["RAW_BODY"]}'"
+    else
+        local body_json="-d '{"
+        local count=0
+        for key in "${!body_parameters[@]}"; do
+            if [[ $((count++)) -gt 0 ]]; then
+                body_json+=", "
+            fi
+            body_json+="\"${key}\": ${body_parameters[${key}]}"
+        done
+        body_json+="}'"
+
+        if [[ "${#body_parameters[@]}" -eq 0 ]]; then
+            echo ""
+        else
+            echo "${body_json}"
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Converts an associative array into form urlencoded string
+#
+##############################################################################
+body_parameters_to_form_urlencoded() {
+    local body_form_urlencoded="-d '"
+    local count=0
+    for key in "${!body_parameters[@]}"; do
+        if [[ $((count++)) -gt 0 ]]; then
+            body_form_urlencoded+="&"
+        fi
+        body_form_urlencoded+="${key}=${body_parameters[${key}]}"
+    done
+    body_form_urlencoded+="'"
+
+    if [[ "${#body_parameters[@]}" -eq 0 ]]; then
+        echo ""
+    else
+        echo "${body_form_urlencoded}"
+    fi
+}
+
+##############################################################################
+#
+# Helper method for showing error because for example echo in
+# build_request_path() is evaluated as part of command line not printed on
+# output. Anyway better idea for resource clean up ;-).
+#
+##############################################################################
+ERROR_MSG=""
+function finish {
+    if [[ -n "$ERROR_MSG" ]]; then
+        echo >&2 "${OFF}${RED}$ERROR_MSG"
+        echo >&2 "${OFF}Check usage: '${script_name} --help'"
+    fi
+}
+trap finish EXIT
+
+
+##############################################################################
+#
+# Validate and build request path including query parameters
+#
+##############################################################################
+build_request_path() {
+    local path_template=$1
+    local -n path_params=$2
+    local -n query_params=$3
+
+
+    #
+    # Check input parameters count against minimum and maximum required
+    #
+    if [[ "$force" = false ]]; then
+        local was_error=""
+        for qparam in "${query_params[@]}" "${path_params[@]}"; do
+            local parameter_values
+            mapfile -t parameter_values < <(sed -e 's/'":::"'/\n/g' <<<"${operation_parameters[$qparam]}")
+
+            #
+            # Check if the number of provided values is not less than minimum required
+            #
+            if [[ ${#parameter_values[@]} -lt ${operation_parameters_minimum_occurrences["${operation}:::${qparam}"]} ]]; then
+                echo "ERROR: Too few values provided for '${qparam}' parameter."
+                was_error=true
+            fi
+
+            #
+            # Check if the number of provided values is not more than maximum
+            #
+            if [[ ${operation_parameters_maximum_occurrences["${operation}:::${qparam}"]} -gt 0 \
+                  && ${#parameter_values[@]} -gt ${operation_parameters_maximum_occurrences["${operation}:::${qparam}"]} ]]; then
+                echo "ERROR: Too many values provided for '${qparam}' parameter"
+                was_error=true
+            fi
+        done
+        if [[ -n "$was_error" ]]; then
+            exit 1
+        fi
+    fi
+
+    # First replace all path parameters in the path
+    for pparam in "${path_params[@]}"; do
+        local path_regex="(.*)(\\{$pparam\\})(.*)"
+        if [[ $path_template =~ $path_regex ]]; then
+            path_template=${BASH_REMATCH[1]}${operation_parameters[$pparam]}${BASH_REMATCH[3]}
+        fi
+    done
+
+    local query_request_part=""
+
+    for qparam in "${query_params[@]}"; do
+        if [[ "${operation_parameters[$qparam]}" == "" ]]; then
+            continue
+        fi
+
+        # Get the array of parameter values
+        local parameter_value=""
+        local parameter_values
+        mapfile -t parameter_values < <(sed -e 's/'":::"'/\n/g' <<<"${operation_parameters[$qparam]}")
+
+
+
+        #
+        # Append parameters without specific cardinality
+        #
+        local collection_type="${operation_parameters_collection_type["${operation}:::${qparam}"]}"
+        if [[ "${collection_type}" == "" ]]; then
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="&"
+                fi
+                parameter_value+="${qparam}=${qvalue}"
+            done
+        #
+        # Append parameters specified as 'multi' collections i.e. param=value1&param=value2&...
+        #
+        elif [[ "${collection_type}" == "multi" ]]; then
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="&"
+                fi
+                parameter_value+="${qparam}=${qvalue}"
+            done
+        #
+        # Append parameters specified as 'csv' collections i.e. param=value1,value2,...
+        #
+        elif [[ "${collection_type}" == "csv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+=","
+                fi
+                parameter_value+="${qvalue}"
+            done
+        #
+        # Append parameters specified as 'ssv' collections i.e. param="value1 value2 ..."
+        #
+        elif [[ "${collection_type}" == "ssv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+=" "
+                fi
+                parameter_value+="${qvalue}"
+            done
+        #
+        # Append parameters specified as 'tsv' collections i.e. param="value1\tvalue2\t..."
+        #
+        elif [[ "${collection_type}" == "tsv" ]]; then
+            parameter_value+="${qparam}="
+            local vcount=0
+            for qvalue in "${parameter_values[@]}"; do
+                if [[ $((vcount++)) -gt 0 ]]; then
+                    parameter_value+="\\t"
+                fi
+                parameter_value+="${qvalue}"
+            done
+        else
+            echo "Unsupported collection format \"${collection_type}\""
+            exit 1
+        fi
+
+        if [[ -n "${parameter_value}" ]]; then
+            if [[ -n "${query_request_part}" ]]; then
+                query_request_part+="&"
+            fi
+            query_request_part+="${parameter_value}"
+        fi
+
+    done
+
+
+    # Now append query parameters - if any
+    if [[ -n "${query_request_part}" ]]; then
+        path_template+="?${query_request_part}"
+    fi
+
+    echo "$path_template"
+}
+
+
+
+###############################################################################
+#
+# Print main help message
+#
+###############################################################################
+print_help() {
+cat <<EOF
+
+${BOLD}${WHITE}BlockchainsService command line client (API version 2.1.2.5532)${OFF}
+
+${BOLD}${WHITE}Usage${OFF}
+
+  ${GREEN}${script_name}${OFF} [-h|--help] [-V|--version] [--about] [${RED}<curl-options>${OFF}]
+           [-ac|--accept ${GREEN}<mime-type>${OFF}] [-ct,--content-type ${GREEN}<mime-type>${OFF}]
+           [--host ${CYAN}<url>${OFF}] [--dry-run] [-nc|--no-colors] ${YELLOW}<operation>${OFF} [-h|--help]
+           [${BLUE}<headers>${OFF}] [${MAGENTA}<parameters>${OFF}] [${MAGENTA}<body-parameters>${OFF}]
+
+  - ${CYAN}<url>${OFF} - endpoint of the REST service without basepath
+
+  - ${RED}<curl-options>${OFF} - any valid cURL options can be passed before ${YELLOW}<operation>${OFF}
+  - ${GREEN}<mime-type>${OFF} - either full mime-type or one of supported abbreviations:
+                   (text, html, md, csv, css, rtf, json, xml, yaml, js, bin,
+                    rdf, jpg, png, gif, bmp, tiff)
+  - ${BLUE}<headers>${OFF} - HTTP headers can be passed in the form ${YELLOW}HEADER${OFF}:${BLUE}VALUE${OFF}
+  - ${MAGENTA}<parameters>${OFF} - REST operation parameters can be passed in the following
+                   forms:
+                   * ${YELLOW}KEY${OFF}=${BLUE}VALUE${OFF} - path or query parameters
+  - ${MAGENTA}<body-parameters>${OFF} - simple JSON body content (first level only) can be build
+                        using the following arguments:
+                        * ${YELLOW}KEY${OFF}==${BLUE}VALUE${OFF} - body parameters which will be added to body
+                                      JSON as '{ ..., "${YELLOW}KEY${OFF}": "${BLUE}VALUE${OFF}", ... }'
+                        * ${YELLOW}KEY${OFF}:=${BLUE}VALUE${OFF} - body parameters which will be added to body
+                                      JSON as '{ ..., "${YELLOW}KEY${OFF}": ${BLUE}VALUE${OFF}, ... }'
+
+EOF
+    echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}[blockchains]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createBlockchainAsync${OFF};Create a new blockchain
+  ${CYAN}createBlockchainBlockAsync${OFF};Add a block to a blockchain
+  ${CYAN}deleteBlockchainAsync${OFF};Delete a blockchain
+  ${CYAN}deleteBlockchainBlockAsync${OFF};Delete a blockchain block
+  ${CYAN}getBlockchainBlockByIdAsync${OFF};Get a specific block
+  ${CYAN}getBlockchainBlocksAsync${OFF};Get blocks for a blockchain
+  ${CYAN}getBlockchainBlocksCountAsync${OFF};Get block count for a blockchain
+  ${CYAN}getBlockchainByIdAsync${OFF};Get blockchain by ID
+  ${CYAN}getBlockchainsAsync${OFF};Get all blockchains
+  ${CYAN}getBlockchainsCountAsync${OFF};Get blockchains count
+  ${CYAN}patchBlockchainAsync${OFF};Patch a blockchain
+  ${CYAN}patchBlockchainBlockAsync${OFF};Patch a blockchain block
+  ${CYAN}updateBlockchainAsync${OFF};Update a blockchain
+  ${CYAN}updateBlockchainBlockAsync${OFF};Update a blockchain block
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}accountLogoutPost${OFF};
+  ${CYAN}accountManageDownloadPersonalDataPost${OFF};
+  ${CYAN}accountManageLinkExternalLoginPost${OFF};
+  ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}forgotPasswordPost${OFF};
+  ${CYAN}healthGet${OFF};
+  ${CYAN}helloGet${OFF};
+  ${CYAN}loginPost${OFF};
+  ${CYAN}manage2faPost${OFF};
+  ${CYAN}manageInfoGet${OFF};
+  ${CYAN}manageInfoPost${OFF};
+  ${CYAN}mapIdentityApiConfirmEmail${OFF};
+  ${CYAN}refreshPost${OFF};
+  ${CYAN}registerPost${OFF};
+  ${CYAN}resendConfirmationEmailPost${OFF};
+  ${CYAN}resetPasswordPost${OFF};
+  ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[nonFungibleTokens]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createNonFungibleTokenAsync${OFF};Create a new NFT
+  ${CYAN}deleteNonFungibleTokenAsync${OFF};Delete an NFT
+  ${CYAN}getNonFungibleTokenByIdAsync${OFF};Get NFT by ID
+  ${CYAN}getNonFungibleTokensAsync${OFF};Get all non-fungible tokens
+  ${CYAN}getNonFungibleTokensCountAsync${OFF};Get NFTs count
+  ${CYAN}patchNonFungibleTokenAsync${OFF};Patch a non-fungible token
+  ${CYAN}updateNonFungibleTokenAsync${OFF};Update an NFT
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}Options${OFF}"
+    echo -e "  -h,--help\\t\\t\\t\\tPrint this help"
+    echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
+    echo -e "  --about\\t\\t\\t\\tPrint the information about service"
+    echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
+echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+
+    echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
+    echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
+    echo -e "  --dry-run\\t\\t\\t\\tPrint out the cURL command without"
+    echo -e "           \\t\\t\\t\\texecuting it"
+    echo -e "  -nc,--no-colors\\t\\t\\tEnforce print without colors, otherwise autodetected"
+    echo -e "  -ac,--accept ${YELLOW}<mime-type>${OFF}\\t\\tSet the 'Accept' header in the request"
+    echo -e "  -ct,--content-type ${YELLOW}<mime-type>${OFF}\\tSet the 'Content-type' header in "
+    echo -e "                                \\tthe request"
+    echo ""
+}
+
+
+##############################################################################
+#
+# Print REST service description
+#
+##############################################################################
+print_about() {
+    echo ""
+    echo -e "${BOLD}${WHITE}BlockchainsService command line client (API version 2.1.2.5532)${OFF}"
+    echo ""
+    echo -e "License: Fenix Alliance Inc."
+    echo -e "Contact: support@fenix-alliance.com"
+    echo ""
+read -r -d '' appdescription <<EOF
+
+No description provided (generated by Openapi Generator https://github.com/openapitools/openapi-generator)
+EOF
+echo "$appdescription" | paste -sd' ' | fold -sw 80
+}
+
+
+##############################################################################
+#
+# Print REST api version
+#
+##############################################################################
+print_version() {
+    echo ""
+    echo -e "${BOLD}BlockchainsService command line client (API version 2.1.2.5532)${OFF}"
+    echo ""
+}
+
+##############################################################################
+#
+# Print help for createBlockchainAsync operation
+#
+##############################################################################
+print_createBlockchainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBlockchainAsync - Create a new blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new blockchain for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createBlockchainBlockAsync operation
+#
+##############################################################################
+print_createBlockchainBlockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBlockchainBlockAsync - Add a block to a blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBlockchainAsync operation
+#
+##############################################################################
+print_deleteBlockchainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBlockchainAsync - Delete a blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a blockchain for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBlockchainBlockAsync operation
+#
+##############################################################################
+print_deleteBlockchainBlockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBlockchainBlockAsync - Delete a blockchain block${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBlockchainBlockByIdAsync operation
+#
+##############################################################################
+print_getBlockchainBlockByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBlockchainBlockByIdAsync - Get a specific block${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBlockchainBlocksAsync operation
+#
+##############################################################################
+print_getBlockchainBlocksAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBlockchainBlocksAsync - Get blocks for a blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainBlockDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBlockchainBlocksCountAsync operation
+#
+##############################################################################
+print_getBlockchainBlocksCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBlockchainBlocksCountAsync - Get block count for a blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainBlockDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBlockchainByIdAsync operation
+#
+##############################################################################
+print_getBlockchainByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBlockchainByIdAsync - Get blockchain by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific blockchain by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBlockchainsAsync operation
+#
+##############################################################################
+print_getBlockchainsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBlockchainsAsync - Get all blockchains${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all blockchains for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBlockchainsCountAsync operation
+#
+##############################################################################
+print_getBlockchainsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBlockchainsCountAsync - Get blockchains count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of blockchains for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBlockchainAsync operation
+#
+##############################################################################
+print_patchBlockchainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBlockchainAsync - Patch a blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a blockchain" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBlockchainBlockAsync operation
+#
+##############################################################################
+print_patchBlockchainBlockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBlockchainBlockAsync - Patch a blockchain block${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a blockchain block" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBlockchainAsync operation
+#
+##############################################################################
+print_updateBlockchainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBlockchainAsync - Update a blockchain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing blockchain for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBlockchainBlockAsync operation
+#
+##############################################################################
+print_updateBlockchainBlockAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBlockchainBlockAsync - Update a blockchain block${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blockId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+print_apiV2AiServiceCompletionsCompleteGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountLogoutPost operation
+#
+##############################################################################
+print_accountLogoutPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountLogoutPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountManageDownloadPersonalDataPost operation
+#
+##############################################################################
+print_accountManageDownloadPersonalDataPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountManageDownloadPersonalDataPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountManageLinkExternalLoginPost operation
+#
+##############################################################################
+print_accountManageLinkExternalLoginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountManageLinkExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for accountPerformExternalLoginPost operation
+#
+##############################################################################
+print_accountPerformExternalLoginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for forgotPasswordPost operation
+#
+##############################################################################
+print_forgotPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}forgotPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for healthGet operation
+#
+##############################################################################
+print_healthGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}healthGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for helloGet operation
+#
+##############################################################################
+print_helloGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}helloGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for loginPost operation
+#
+##############################################################################
+print_loginPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}loginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}useCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}useSessionCookies${OFF} ${BLUE}[boolean]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: useSessionCookies=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manage2faPost operation
+#
+##############################################################################
+print_manage2faPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manage2faPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoGet operation
+#
+##############################################################################
+print_manageInfoGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for manageInfoPost operation
+#
+##############################################################################
+print_manageInfoPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}manageInfoPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+print_mapIdentityApiConfirmEmail_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}mapIdentityApiConfirmEmail - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: userId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}code${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}changedEmail${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: changedEmail=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for refreshPost operation
+#
+##############################################################################
+print_refreshPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}refreshPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for registerPost operation
+#
+##############################################################################
+print_registerPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}registerPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resendConfirmationEmailPost operation
+#
+##############################################################################
+print_resendConfirmationEmailPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resendConfirmationEmailPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for resetPasswordPost operation
+#
+##############################################################################
+print_resetPasswordPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}resetPasswordPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for versionGet operation
+#
+##############################################################################
+print_versionGet_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}versionGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createNonFungibleTokenAsync operation
+#
+##############################################################################
+print_createNonFungibleTokenAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createNonFungibleTokenAsync - Create a new NFT${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new non-fungible token for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteNonFungibleTokenAsync operation
+#
+##############################################################################
+print_deleteNonFungibleTokenAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteNonFungibleTokenAsync - Delete an NFT${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a non-fungible token for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNonFungibleTokenByIdAsync operation
+#
+##############################################################################
+print_getNonFungibleTokenByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNonFungibleTokenByIdAsync - Get NFT by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific non-fungible token by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNonFungibleTokensAsync operation
+#
+##############################################################################
+print_getNonFungibleTokensAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNonFungibleTokensAsync - Get all non-fungible tokens${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all NFTs for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[NonFungibleTokenDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNonFungibleTokensCountAsync operation
+#
+##############################################################################
+print_getNonFungibleTokensCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNonFungibleTokensCountAsync - Get NFTs count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of NFTs for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[NonFungibleTokenDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchNonFungibleTokenAsync operation
+#
+##############################################################################
+print_patchNonFungibleTokenAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchNonFungibleTokenAsync - Patch a non-fungible token${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a non-fungible token" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateNonFungibleTokenAsync operation
+#
+##############################################################################
+print_updateNonFungibleTokenAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateNonFungibleTokenAsync - Update an NFT${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing non-fungible token for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+
+
+##############################################################################
+#
+# Call createBlockchainAsync operation
+#
+##############################################################################
+call_createBlockchainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createBlockchainBlockAsync operation
+#
+##############################################################################
+call_createBlockchainBlockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBlockchainAsync operation
+#
+##############################################################################
+call_deleteBlockchainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBlockchainBlockAsync operation
+#
+##############################################################################
+call_deleteBlockchainBlockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId blockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks/{blockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBlockchainBlockByIdAsync operation
+#
+##############################################################################
+call_getBlockchainBlockByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId blockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks/{blockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBlockchainBlocksAsync operation
+#
+##############################################################################
+call_getBlockchainBlocksAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBlockchainBlocksCountAsync operation
+#
+##############################################################################
+call_getBlockchainBlocksCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBlockchainByIdAsync operation
+#
+##############################################################################
+call_getBlockchainByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBlockchainsAsync operation
+#
+##############################################################################
+call_getBlockchainsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBlockchainsCountAsync operation
+#
+##############################################################################
+call_getBlockchainsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchBlockchainAsync operation
+#
+##############################################################################
+call_patchBlockchainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchBlockchainBlockAsync operation
+#
+##############################################################################
+call_patchBlockchainBlockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId blockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks/{blockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateBlockchainAsync operation
+#
+##############################################################################
+call_updateBlockchainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateBlockchainBlockAsync operation
+#
+##############################################################################
+call_updateBlockchainBlockAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blockchainId blockId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks/{blockId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AiServiceCompletionsCompleteGet operation
+#
+##############################################################################
+call_apiV2AiServiceCompletionsCompleteGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId conversationId message)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountLogoutPost operation
+#
+##############################################################################
+call_accountLogoutPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/Logout" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountManageDownloadPersonalDataPost operation
+#
+##############################################################################
+call_accountManageDownloadPersonalDataPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/Manage/DownloadPersonalData" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountManageLinkExternalLoginPost operation
+#
+##############################################################################
+call_accountManageLinkExternalLoginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/Manage/LinkExternalLogin" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call accountPerformExternalLoginPost operation
+#
+##############################################################################
+call_accountPerformExternalLoginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/Account/PerformExternalLogin" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call forgotPasswordPost operation
+#
+##############################################################################
+call_forgotPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/forgotPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call healthGet operation
+#
+##############################################################################
+call_healthGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call helloGet operation
+#
+##############################################################################
+call_helloGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/hello" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call loginPost operation
+#
+##############################################################################
+call_loginPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(useCookies useSessionCookies)
+    local path
+
+    if ! path=$(build_request_path "/login" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manage2faPost operation
+#
+##############################################################################
+call_manage2faPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/2fa" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoGet operation
+#
+##############################################################################
+call_manageInfoGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call manageInfoPost operation
+#
+##############################################################################
+call_manageInfoPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/manage/info" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call mapIdentityApiConfirmEmail operation
+#
+##############################################################################
+call_mapIdentityApiConfirmEmail() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(userId code changedEmail)
+    local path
+
+    if ! path=$(build_request_path "/confirmEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call refreshPost operation
+#
+##############################################################################
+call_refreshPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/refresh" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call registerPost operation
+#
+##############################################################################
+call_registerPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/register" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resendConfirmationEmailPost operation
+#
+##############################################################################
+call_resendConfirmationEmailPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resendConfirmationEmail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call resetPasswordPost operation
+#
+##############################################################################
+call_resetPasswordPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/resetPassword" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call versionGet operation
+#
+##############################################################################
+call_versionGet() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/version" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createNonFungibleTokenAsync operation
+#
+##############################################################################
+call_createNonFungibleTokenAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteNonFungibleTokenAsync operation
+#
+##############################################################################
+call_deleteNonFungibleTokenAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNonFungibleTokenByIdAsync operation
+#
+##############################################################################
+call_getNonFungibleTokenByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNonFungibleTokensAsync operation
+#
+##############################################################################
+call_getNonFungibleTokensAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNonFungibleTokensCountAsync operation
+#
+##############################################################################
+call_getNonFungibleTokensCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchNonFungibleTokenAsync operation
+#
+##############################################################################
+call_patchNonFungibleTokenAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateNonFungibleTokenAsync operation
+#
+##############################################################################
+call_updateNonFungibleTokenAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+
+
+##############################################################################
+#
+# Main
+#
+##############################################################################
+
+
+# Check dependencies
+type curl >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'cURL' installed."; exit 1; }
+type sed >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'sed' installed."; exit 1; }
+type column >/dev/null 2>&1 || { echo >&2 "ERROR: You do not have 'bsdmainutils' installed."; exit 1; }
+
+#
+# Process command line
+#
+# Pass all arguments before 'operation' to cURL except the ones we override
+#
+take_user=false
+take_host=false
+take_accept_header=false
+take_contenttype_header=false
+
+for key in "$@"; do
+# Take the value of -u|--user argument
+if [[ "$take_user" = true ]]; then
+    basic_auth_credential="$key"
+    take_user=false
+    continue
+fi
+# Take the value of --host argument
+if [[ "$take_host" = true ]]; then
+    host="$key"
+    take_host=false
+    continue
+fi
+# Take the value of --accept argument
+if [[ "$take_accept_header" = true ]]; then
+    header_accept=$(lookup_mime_type "$key")
+    take_accept_header=false
+    continue
+fi
+# Take the value of --content-type argument
+if [[ "$take_contenttype_header" = true ]]; then
+    header_content_type=$(lookup_mime_type "$key")
+    take_contenttype_header=false
+    continue
+fi
+case $key in
+    -h|--help)
+    if [[ "x$operation" == "x" ]]; then
+        print_help
+        exit 0
+    else
+        eval "print_${operation}_help"
+        exit 0
+    fi
+    ;;
+    -V|--version)
+    print_version
+    exit 0
+    ;;
+    --about)
+    print_about
+    exit 0
+    ;;
+    -u|--user)
+    take_user=true
+    ;;
+    --host)
+    take_host=true
+    ;;
+    --force)
+    force=true
+    ;;
+    -ac|--accept)
+    take_accept_header=true
+    ;;
+    -ct|--content-type)
+    take_contenttype_header=true
+    ;;
+    --dry-run)
+    print_curl=true
+    ;;
+    -nc|--no-colors)
+        RED=""
+        GREEN=""
+        YELLOW=""
+        BLUE=""
+        MAGENTA=""
+        CYAN=""
+        WHITE=""
+        BOLD=""
+        OFF=""
+        result_color_table=( "" "" "" "" "" "" "" )
+    ;;
+    createBlockchainAsync)
+    operation="createBlockchainAsync"
+    ;;
+    createBlockchainBlockAsync)
+    operation="createBlockchainBlockAsync"
+    ;;
+    deleteBlockchainAsync)
+    operation="deleteBlockchainAsync"
+    ;;
+    deleteBlockchainBlockAsync)
+    operation="deleteBlockchainBlockAsync"
+    ;;
+    getBlockchainBlockByIdAsync)
+    operation="getBlockchainBlockByIdAsync"
+    ;;
+    getBlockchainBlocksAsync)
+    operation="getBlockchainBlocksAsync"
+    ;;
+    getBlockchainBlocksCountAsync)
+    operation="getBlockchainBlocksCountAsync"
+    ;;
+    getBlockchainByIdAsync)
+    operation="getBlockchainByIdAsync"
+    ;;
+    getBlockchainsAsync)
+    operation="getBlockchainsAsync"
+    ;;
+    getBlockchainsCountAsync)
+    operation="getBlockchainsCountAsync"
+    ;;
+    patchBlockchainAsync)
+    operation="patchBlockchainAsync"
+    ;;
+    patchBlockchainBlockAsync)
+    operation="patchBlockchainBlockAsync"
+    ;;
+    updateBlockchainAsync)
+    operation="updateBlockchainAsync"
+    ;;
+    updateBlockchainBlockAsync)
+    operation="updateBlockchainBlockAsync"
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    operation="apiV2AiServiceCompletionsCompleteGet"
+    ;;
+    accountLogoutPost)
+    operation="accountLogoutPost"
+    ;;
+    accountManageDownloadPersonalDataPost)
+    operation="accountManageDownloadPersonalDataPost"
+    ;;
+    accountManageLinkExternalLoginPost)
+    operation="accountManageLinkExternalLoginPost"
+    ;;
+    accountPerformExternalLoginPost)
+    operation="accountPerformExternalLoginPost"
+    ;;
+    forgotPasswordPost)
+    operation="forgotPasswordPost"
+    ;;
+    healthGet)
+    operation="healthGet"
+    ;;
+    helloGet)
+    operation="helloGet"
+    ;;
+    loginPost)
+    operation="loginPost"
+    ;;
+    manage2faPost)
+    operation="manage2faPost"
+    ;;
+    manageInfoGet)
+    operation="manageInfoGet"
+    ;;
+    manageInfoPost)
+    operation="manageInfoPost"
+    ;;
+    mapIdentityApiConfirmEmail)
+    operation="mapIdentityApiConfirmEmail"
+    ;;
+    refreshPost)
+    operation="refreshPost"
+    ;;
+    registerPost)
+    operation="registerPost"
+    ;;
+    resendConfirmationEmailPost)
+    operation="resendConfirmationEmailPost"
+    ;;
+    resetPasswordPost)
+    operation="resetPasswordPost"
+    ;;
+    versionGet)
+    operation="versionGet"
+    ;;
+    createNonFungibleTokenAsync)
+    operation="createNonFungibleTokenAsync"
+    ;;
+    deleteNonFungibleTokenAsync)
+    operation="deleteNonFungibleTokenAsync"
+    ;;
+    getNonFungibleTokenByIdAsync)
+    operation="getNonFungibleTokenByIdAsync"
+    ;;
+    getNonFungibleTokensAsync)
+    operation="getNonFungibleTokensAsync"
+    ;;
+    getNonFungibleTokensCountAsync)
+    operation="getNonFungibleTokensCountAsync"
+    ;;
+    patchNonFungibleTokenAsync)
+    operation="patchNonFungibleTokenAsync"
+    ;;
+    updateNonFungibleTokenAsync)
+    operation="updateNonFungibleTokenAsync"
+    ;;
+    *==*)
+    # Parse body arguments and convert them into top level
+    # JSON properties passed in the body content as strings
+    if [[ "$operation" ]]; then
+        IFS='==' read -r body_key sep body_value <<< "$key"
+        body_parameters[${body_key}]="\"${body_value}\""
+    fi
+    ;;
+    --body=*)
+    # Parse value of body as argument and convert it into only
+    # the raw body content
+    if [[ "$operation" ]]; then
+        IFS='--body=' read -r body_value <<< "$key"
+        body_value=${body_value##--body=}
+        body_parameters["RAW_BODY"]="${body_value}"
+        RAW_BODY=1
+    fi
+    ;;
+    *:=*)
+    # Parse body arguments and convert them into top level
+    # JSON properties passed in the body content without quotes
+    if [[ "$operation" ]]; then
+        # ignore error about 'sep' being unused
+        # shellcheck disable=SC2034
+        IFS=':=' read -r body_key sep body_value <<< "$key"
+        body_parameters[${body_key}]=${body_value}
+    fi
+    ;;
+    +([^=]):*)
+    # Parse header arguments and convert them into curl
+    # only after the operation argument
+    if [[ "$operation" ]]; then
+        IFS=':' read -r header_name header_value <<< "$key"
+        header_arguments[$header_name]=$header_value
+    else
+        curl_arguments+=" $key"
+    fi
+    ;;
+    -)
+    body_content_temp_file=$(mktemp)
+    cat - > "$body_content_temp_file"
+    ;;
+    *=*)
+    # Parse operation arguments and convert them into curl
+    # only after the operation argument
+    if [[ "$operation" ]]; then
+        IFS='=' read -r parameter_name parameter_value <<< "$key"
+        if [[ -z "${operation_parameters[$parameter_name]+foo}" ]]; then
+            operation_parameters[$parameter_name]=$(url_escape "${parameter_value}")
+        else
+            operation_parameters[$parameter_name]+=":::"$(url_escape "${parameter_value}")
+        fi
+    else
+        curl_arguments+=" $key"
+    fi
+    ;;
+    *)
+    # If we are before the operation, treat the arguments as cURL arguments
+    if [[ "x$operation" == "x" ]]; then
+        # Maintain quotes around cURL arguments if necessary
+        space_regexp="[[:space:]]"
+        if [[ $key =~ $space_regexp ]]; then
+            curl_arguments+=" \"$key\""
+        else
+            curl_arguments+=" $key"
+        fi
+    fi
+    ;;
+esac
+done
+
+
+# Check if user provided host name
+if [[ -z "$host" ]]; then
+    ERROR_MSG="ERROR: No hostname provided!!! You have to  provide on command line option '--host ...'"
+    exit 1
+fi
+
+# Check if user specified operation ID
+if [[ -z "$operation" ]]; then
+    ERROR_MSG="ERROR: No operation specified!!!"
+    exit 1
+fi
+
+
+# Run cURL command based on the operation ID
+case $operation in
+    createBlockchainAsync)
+    call_createBlockchainAsync
+    ;;
+    createBlockchainBlockAsync)
+    call_createBlockchainBlockAsync
+    ;;
+    deleteBlockchainAsync)
+    call_deleteBlockchainAsync
+    ;;
+    deleteBlockchainBlockAsync)
+    call_deleteBlockchainBlockAsync
+    ;;
+    getBlockchainBlockByIdAsync)
+    call_getBlockchainBlockByIdAsync
+    ;;
+    getBlockchainBlocksAsync)
+    call_getBlockchainBlocksAsync
+    ;;
+    getBlockchainBlocksCountAsync)
+    call_getBlockchainBlocksCountAsync
+    ;;
+    getBlockchainByIdAsync)
+    call_getBlockchainByIdAsync
+    ;;
+    getBlockchainsAsync)
+    call_getBlockchainsAsync
+    ;;
+    getBlockchainsCountAsync)
+    call_getBlockchainsCountAsync
+    ;;
+    patchBlockchainAsync)
+    call_patchBlockchainAsync
+    ;;
+    patchBlockchainBlockAsync)
+    call_patchBlockchainBlockAsync
+    ;;
+    updateBlockchainAsync)
+    call_updateBlockchainAsync
+    ;;
+    updateBlockchainBlockAsync)
+    call_updateBlockchainBlockAsync
+    ;;
+    apiV2AiServiceCompletionsCompleteGet)
+    call_apiV2AiServiceCompletionsCompleteGet
+    ;;
+    accountLogoutPost)
+    call_accountLogoutPost
+    ;;
+    accountManageDownloadPersonalDataPost)
+    call_accountManageDownloadPersonalDataPost
+    ;;
+    accountManageLinkExternalLoginPost)
+    call_accountManageLinkExternalLoginPost
+    ;;
+    accountPerformExternalLoginPost)
+    call_accountPerformExternalLoginPost
+    ;;
+    forgotPasswordPost)
+    call_forgotPasswordPost
+    ;;
+    healthGet)
+    call_healthGet
+    ;;
+    helloGet)
+    call_helloGet
+    ;;
+    loginPost)
+    call_loginPost
+    ;;
+    manage2faPost)
+    call_manage2faPost
+    ;;
+    manageInfoGet)
+    call_manageInfoGet
+    ;;
+    manageInfoPost)
+    call_manageInfoPost
+    ;;
+    mapIdentityApiConfirmEmail)
+    call_mapIdentityApiConfirmEmail
+    ;;
+    refreshPost)
+    call_refreshPost
+    ;;
+    registerPost)
+    call_registerPost
+    ;;
+    resendConfirmationEmailPost)
+    call_resendConfirmationEmailPost
+    ;;
+    resetPasswordPost)
+    call_resetPasswordPost
+    ;;
+    versionGet)
+    call_versionGet
+    ;;
+    createNonFungibleTokenAsync)
+    call_createNonFungibleTokenAsync
+    ;;
+    deleteNonFungibleTokenAsync)
+    call_deleteNonFungibleTokenAsync
+    ;;
+    getNonFungibleTokenByIdAsync)
+    call_getNonFungibleTokenByIdAsync
+    ;;
+    getNonFungibleTokensAsync)
+    call_getNonFungibleTokensAsync
+    ;;
+    getNonFungibleTokensCountAsync)
+    call_getNonFungibleTokensCountAsync
+    ;;
+    patchNonFungibleTokenAsync)
+    call_patchNonFungibleTokenAsync
+    ;;
+    updateNonFungibleTokenAsync)
+    call_updateNonFungibleTokenAsync
+    ;;
+    *)
+    ERROR_MSG="ERROR: Unknown operation: $operation"
+    exit 1
+esac

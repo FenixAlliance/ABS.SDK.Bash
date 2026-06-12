@@ -67,6 +67,7 @@ docs/ItemRetainSampleDtoListEnvelope.md
 docs/ItemRetainSampleUpdateDto.md
 docs/ItemRetainSamplesApi.md
 docs/LoginRequest.md
+docs/Operation.md
 docs/PortCreateDto.md
 docs/PortDto.md
 docs/PortDtoEnvelope.md

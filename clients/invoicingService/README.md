@@ -157,6 +157,11 @@ Class | Method | HTTP request | Description
 *InvoicesApi* | [**getInvoiceReferencesCount**](docs/InvoicesApi.md#getinvoicereferencescount) | **GET** /api/v2/InvoicingService/Invoices/{invoiceId}/References/Count | Get the count of invoice references.
 *InvoicesApi* | [**getInvoices**](docs/InvoicesApi.md#getinvoices) | **GET** /api/v2/InvoicingService/Invoices | Get a list of invoices.
 *InvoicesApi* | [**getInvoicesCount**](docs/InvoicesApi.md#getinvoicescount) | **GET** /api/v2/InvoicingService/Invoices/Count | Get the count of invoices.
+*InvoicesApi* | [**patchInvoice**](docs/InvoicesApi.md#patchinvoice) | **PATCH** /api/v2/InvoicingService/Invoices/{invoiceId} | Patch an invoice.
+*InvoicesApi* | [**patchInvoiceAdjustment**](docs/InvoicesApi.md#patchinvoiceadjustment) | **PATCH** /api/v2/InvoicingService/Invoices/{invoiceId}/Adjustments/{invoiceAdjustmentId} | Patch an invoice adjustment.
+*InvoicesApi* | [**patchInvoiceLine**](docs/InvoicesApi.md#patchinvoiceline) | **PATCH** /api/v2/InvoicingService/Invoices/{invoiceId}/Lines/{invoiceLineId} | Patch an invoice line.
+*InvoicesApi* | [**patchInvoiceLineTax**](docs/InvoicesApi.md#patchinvoicelinetax) | **PATCH** /api/v2/InvoicingService/Invoices/{invoiceId}/Lines/{invoiceLineId}/Taxes/{invoiceLineTaxId} | Patch a tax for an invoice line.
+*InvoicesApi* | [**patchInvoiceReference**](docs/InvoicesApi.md#patchinvoicereference) | **PATCH** /api/v2/InvoicingService/Invoices/{invoiceId}/References/{invoiceReferenceId} | Patch an invoice reference.
 *InvoicesApi* | [**previewInvoiceEmail**](docs/InvoicesApi.md#previewinvoiceemail) | **POST** /api/v2/InvoicingService/Invoices/{invoiceId}/Emails/Preview | Preview the rendered email for an invoice.
 *InvoicesApi* | [**sendInvoiceEmail**](docs/InvoicesApi.md#sendinvoiceemail) | **POST** /api/v2/InvoicingService/Invoices/{invoiceId}/Emails/Send | Send an invoice transactional email to recipients.
 *InvoicesApi* | [**updateInvoice**](docs/InvoicesApi.md#updateinvoice) | **PUT** /api/v2/InvoicingService/Invoices/{invoiceId} | Update an invoice.
@@ -209,6 +214,7 @@ Class | Method | HTTP request | Description
  - [LoginRequest](docs/LoginRequest.md)
  - [Money](docs/Money.md)
  - [MoneyEnvelope](docs/MoneyEnvelope.md)
+ - [Operation](docs/Operation.md)
  - [PaymentDto](docs/PaymentDto.md)
  - [PaymentDtoIReadOnlyListEnvelope](docs/PaymentDtoIReadOnlyListEnvelope.md)
  - [RefreshRequest](docs/RefreshRequest.md)

@@ -328,6 +328,7 @@ case $state in
             "isItemAlreadyInCartAsync[Assesses if an Item is already in a cart]" \
             "isItemInCompareTableAsync[Assesses if an Item is already in the compare table]" \
             "isItemInWishLists[Assesses if an Item is already in any of the cart's wishlists]" \
+            "patchCartAsync[Patch a cart]" \
             "removeCartLineAsync[Remove a cart line]" \
             "removeItemFromCartAsync[Remove an Item from a cart]" \
             "removeItemFromCompareTableAsync[Remove an item from the compare table]" \
@@ -365,6 +366,7 @@ case $state in
             "getItemsInCartAsync[Get all items in a cart]" \
             "increaseItemCartRecord[Increase cart record quantity]" \
             "isItemAlreadyInCart[Check if an item is in a cart]" \
+            "patchItemCartRecord[Patch a cart record]" \
             "removeProductFromCartByParams[Remove a product from a cart]" \
             "removeProductFromCartByRecordId[Remove a product from a cart by record ID]" \
             "updateItemCartRecord[Update a cart record]"             "addProductToWishList[Add a product to a wish list]" \
@@ -375,6 +377,7 @@ case $state in
             "getCartWishListItemsAsync[Get wish list item records]" \
             "getWishListAsync[Get wish lists for a cart]" \
             "isProductInWishLists[Check if a product is in any wish list]" \
+            "patchWishList[Patch a wish list]" \
             "updateProductToWishList[Update a wish list]" \
             "wishListExists[Check if a wish list exists]" \
             "wishListExistsHeadAsync[Check if a wish list exists (HEAD)]" \
@@ -679,6 +682,15 @@ case $state in
         _op_arguments=(
           "cartId=:[PATH] "
 "itemId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchCartAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "cartId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1020,6 +1032,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemCartRecord)
+        local -a _op_arguments
+        _op_arguments=(
+          "recordId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       removeProductFromCartByParams)
         local -a _op_arguments
         _op_arguments=(
@@ -1115,6 +1136,15 @@ case $state in
                     "cartId=:[QUERY] "
 "productId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWishList)
+        local -a _op_arguments
+        _op_arguments=(
+          "wishListId=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

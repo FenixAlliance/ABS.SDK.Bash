@@ -87,24 +87,28 @@ _()
     operations["getEmployeeAppraisalSessionByIdAsync"]=1
     operations["getEmployeeAppraisalSessionsAsync"]=1
     operations["getEmployeeAppraisalSessionsCountAsync"]=1
+    operations["patchEmployeeAppraisalSessionAsync"]=1
     operations["updateEmployeeAppraisalSessionAsync"]=1
     operations["createEmployeeTypeAsync"]=1
     operations["deleteEmployeeTypeAsync"]=1
     operations["getEmployeeTypeByIdAsync"]=1
     operations["getEmployeeTypesAsync"]=1
     operations["getEmployeeTypesCountAsync"]=1
+    operations["patchEmployeeTypeAsync"]=1
     operations["updateEmployeeTypeAsync"]=1
     operations["createEmployeeAsync"]=1
     operations["deleteEmployeeAsync"]=1
     operations["getEmployeeByIdAsync"]=1
     operations["getEmployeesAsync"]=1
     operations["getEmployeesCountAsync"]=1
+    operations["patchEmployeeAsync"]=1
     operations["updateEmployeeAsync"]=1
     operations["createEmployerAsync"]=1
     operations["deleteEmployerAsync"]=1
     operations["getEmployerByIdAsync"]=1
     operations["getEmployersAsync"]=1
     operations["getEmployersCountAsync"]=1
+    operations["patchEmployerAsync"]=1
     operations["updateEmployerAsync"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
@@ -128,24 +132,28 @@ _()
     operations["getGigByIdAsync"]=1
     operations["getGigsAsync"]=1
     operations["getGigsCountAsync"]=1
+    operations["patchGigAsync"]=1
     operations["updateGigAsync"]=1
     operations["createJobOfferAsync"]=1
     operations["deleteJobOfferAsync"]=1
     operations["getJobOfferByIdAsync"]=1
     operations["getJobOffersAsync"]=1
     operations["getJobOffersCountAsync"]=1
+    operations["patchJobOfferAsync"]=1
     operations["updateJobOfferAsync"]=1
     operations["createJobTitleAsync"]=1
     operations["deleteJobTitleAsync"]=1
     operations["getJobTitleByIdAsync"]=1
     operations["getJobTitlesAsync"]=1
     operations["getJobTitlesCountAsync"]=1
+    operations["patchJobTitleAsync"]=1
     operations["updateJobTitleAsync"]=1
     operations["createLeaveApplicationAsync"]=1
     operations["deleteLeaveApplicationAsync"]=1
     operations["getLeaveApplicationByIdAsync"]=1
     operations["getLeaveApplicationsAsync"]=1
     operations["getLeaveApplicationsCountAsync"]=1
+    operations["patchLeaveApplicationAsync"]=1
     operations["updateLeaveApplicationAsync"]=1
     operations["createLeaveTypeAsync"]=1
     operations["deleteLeaveTypeAsync"]=1
@@ -164,42 +172,49 @@ _()
     operations["getPayrollByIdAsync"]=1
     operations["getPayrollsAsync"]=1
     operations["getPayrollsCountAsync"]=1
+    operations["patchPayrollAsync"]=1
     operations["updatePayrollAsync"]=1
     operations["createSalaryAsync"]=1
     operations["deleteSalaryAsync"]=1
     operations["getSalariesAsync"]=1
     operations["getSalariesCountAsync"]=1
     operations["getSalaryByIdAsync"]=1
+    operations["patchSalaryAsync"]=1
     operations["updateSalaryAsync"]=1
     operations["createScheduleAsync"]=1
     operations["deleteScheduleAsync"]=1
     operations["getScheduleByIdAsync"]=1
     operations["getSchedulesAsync"]=1
     operations["getSchedulesCountAsync"]=1
+    operations["patchScheduleAsync"]=1
     operations["updateScheduleAsync"]=1
     operations["createShiftAsync"]=1
     operations["deleteShiftAsync"]=1
     operations["getShiftByIdAsync"]=1
     operations["getShiftsAsync"]=1
     operations["getShiftsCountAsync"]=1
+    operations["patchShiftAsync"]=1
     operations["updateShiftAsync"]=1
     operations["createTimeIntervalAsync"]=1
     operations["deleteTimeIntervalAsync"]=1
     operations["getTimeIntervalByIdAsync"]=1
     operations["getTimeIntervalsAsync"]=1
     operations["getTimeIntervalsCountAsync"]=1
+    operations["patchTimeIntervalAsync"]=1
     operations["updateTimeIntervalAsync"]=1
     operations["createTrainingProgramCourseAsync"]=1
     operations["deleteTrainingProgramCourseAsync"]=1
     operations["getTrainingProgramCourseByIdAsync"]=1
     operations["getTrainingProgramCoursesAsync"]=1
     operations["getTrainingProgramCoursesCountAsync"]=1
+    operations["patchTrainingProgramCourseAsync"]=1
     operations["updateTrainingProgramCourseAsync"]=1
     operations["createTrainingProgramEventAsync"]=1
     operations["deleteTrainingProgramEventAsync"]=1
     operations["getTrainingProgramEventByIdAsync"]=1
     operations["getTrainingProgramEventsAsync"]=1
     operations["getTrainingProgramEventsCountAsync"]=1
+    operations["patchTrainingProgramEventAsync"]=1
     operations["updateTrainingProgramEventAsync"]=1
     operations["createTrainingProgramAsync"]=1
     operations["deleteTrainingProgramAsync"]=1
@@ -229,24 +244,28 @@ _()
     operation_parameters["getEmployeeAppraisalSessionByIdAsync"]="sessionId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeAppraisalSessionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeAppraisalSessionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchEmployeeAppraisalSessionAsync"]="sessionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateEmployeeAppraisalSessionAsync"]="sessionId= tenantId= api-version= x-api-version: "
     operation_parameters["createEmployeeTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteEmployeeTypeAsync"]="employeeTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeTypeByIdAsync"]="employeeTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchEmployeeTypeAsync"]="employeeTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateEmployeeTypeAsync"]="employeeTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createEmployeeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteEmployeeAsync"]="employeeId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeByIdAsync"]="employeeId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchEmployeeAsync"]="employeeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateEmployeeAsync"]="employeeId= tenantId= api-version= x-api-version: "
     operation_parameters["createEmployerAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteEmployerAsync"]="employerId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployerByIdAsync"]="employerId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployersAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEmployersCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchEmployerAsync"]="employerId= tenantId= api-version= x-api-version: "
     operation_parameters["updateEmployerAsync"]="employerId= tenantId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
@@ -270,24 +289,28 @@ _()
     operation_parameters["getGigByIdAsync"]="gigId= tenantId= api-version= x-api-version: "
     operation_parameters["getGigsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getGigsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchGigAsync"]="gigId= tenantId= api-version= x-api-version: "
     operation_parameters["updateGigAsync"]="gigId= tenantId= api-version= x-api-version: "
     operation_parameters["createJobOfferAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["getJobOfferByIdAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["getJobOffersAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getJobOffersCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["updateJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["createJobTitleAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteJobTitleAsync"]="jobTitleId= tenantId= api-version= x-api-version: "
     operation_parameters["getJobTitleByIdAsync"]="jobTitleId= tenantId= api-version= x-api-version: "
     operation_parameters["getJobTitlesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getJobTitlesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchJobTitleAsync"]="jobTitleId= tenantId= api-version= x-api-version: "
     operation_parameters["updateJobTitleAsync"]="jobTitleId= tenantId= api-version= x-api-version: "
     operation_parameters["createLeaveApplicationAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteLeaveApplicationAsync"]="leaveApplicationId= tenantId= api-version= x-api-version: "
     operation_parameters["getLeaveApplicationByIdAsync"]="leaveApplicationId= tenantId= api-version= x-api-version: "
     operation_parameters["getLeaveApplicationsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLeaveApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchLeaveApplicationAsync"]="leaveApplicationId= tenantId= api-version= x-api-version: "
     operation_parameters["updateLeaveApplicationAsync"]="leaveApplicationId= tenantId= api-version= x-api-version: "
     operation_parameters["createLeaveTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteLeaveTypeAsync"]="leaveTypeId= tenantId= api-version= x-api-version: "
@@ -306,42 +329,49 @@ _()
     operation_parameters["getPayrollByIdAsync"]="payrollId= tenantId= api-version= x-api-version: "
     operation_parameters["getPayrollsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getPayrollsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchPayrollAsync"]="payrollId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePayrollAsync"]="payrollId= tenantId= api-version= x-api-version: "
     operation_parameters["createSalaryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSalaryAsync"]="salaryId= tenantId= api-version= x-api-version: "
     operation_parameters["getSalariesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSalariesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSalaryByIdAsync"]="salaryId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchSalaryAsync"]="salaryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateSalaryAsync"]="salaryId= tenantId= api-version= x-api-version: "
     operation_parameters["createScheduleAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteScheduleAsync"]="scheduleId= tenantId= api-version= x-api-version: "
     operation_parameters["getScheduleByIdAsync"]="scheduleId= tenantId= api-version= x-api-version: "
     operation_parameters["getSchedulesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getSchedulesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchScheduleAsync"]="scheduleId= tenantId= api-version= x-api-version: "
     operation_parameters["updateScheduleAsync"]="scheduleId= tenantId= api-version= x-api-version: "
     operation_parameters["createShiftAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteShiftAsync"]="shiftId= tenantId= api-version= x-api-version: "
     operation_parameters["getShiftByIdAsync"]="shiftId= tenantId= api-version= x-api-version: "
     operation_parameters["getShiftsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShiftsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchShiftAsync"]="shiftId= tenantId= api-version= x-api-version: "
     operation_parameters["updateShiftAsync"]="shiftId= tenantId= api-version= x-api-version: "
     operation_parameters["createTimeIntervalAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTimeIntervalAsync"]="timeIntervalId= tenantId= api-version= x-api-version: "
     operation_parameters["getTimeIntervalByIdAsync"]="timeIntervalId= tenantId= api-version= x-api-version: "
     operation_parameters["getTimeIntervalsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTimeIntervalsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTimeIntervalAsync"]="timeIntervalId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTimeIntervalAsync"]="timeIntervalId= tenantId= api-version= x-api-version: "
     operation_parameters["createTrainingProgramCourseAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTrainingProgramCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
     operation_parameters["getTrainingProgramCourseByIdAsync"]="courseId= tenantId= api-version= x-api-version: "
     operation_parameters["getTrainingProgramCoursesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTrainingProgramCoursesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTrainingProgramCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTrainingProgramCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
     operation_parameters["createTrainingProgramEventAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTrainingProgramEventAsync"]="eventId= tenantId= api-version= x-api-version: "
     operation_parameters["getTrainingProgramEventByIdAsync"]="eventId= tenantId= api-version= x-api-version: "
     operation_parameters["getTrainingProgramEventsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTrainingProgramEventsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchTrainingProgramEventAsync"]="eventId= tenantId= api-version= x-api-version: "
     operation_parameters["updateTrainingProgramEventAsync"]="eventId= tenantId= api-version= x-api-version: "
     operation_parameters["createTrainingProgramAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTrainingProgramAsync"]="programId= tenantId= api-version= x-api-version: "

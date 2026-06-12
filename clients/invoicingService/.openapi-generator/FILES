@@ -47,6 +47,7 @@ docs/InvoicesApi.md
 docs/LoginRequest.md
 docs/Money.md
 docs/MoneyEnvelope.md
+docs/Operation.md
 docs/PaymentDto.md
 docs/PaymentDtoIReadOnlyListEnvelope.md
 docs/RefreshRequest.md

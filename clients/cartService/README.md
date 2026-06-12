@@ -134,6 +134,7 @@ Class | Method | HTTP request | Description
 *CartsApi* | [**isItemAlreadyInCartAsync**](docs/CartsApi.md#isitemalreadyincartasync) | **GET** /api/v2/CartService/Carts/{cartId}/Contains/{itemId} | Assesses if an Item is already in a cart
 *CartsApi* | [**isItemInCompareTableAsync**](docs/CartsApi.md#isitemincomparetableasync) | **GET** /api/v2/CartService/Carts/{cartId}/Compare/Contains/{itemId} | Assesses if an Item is already in the compare table
 *CartsApi* | [**isItemInWishLists**](docs/CartsApi.md#isiteminwishlists) | **GET** /api/v2/CartService/Carts/{cartId}/WishLists/Contains/{itemId} | Assesses if an Item is already in any of the cart&#39;s wishlists
+*CartsApi* | [**patchCartAsync**](docs/CartsApi.md#patchcartasync) | **PATCH** /api/v2/CartService/Carts/{cartId} | Patch a cart
 *CartsApi* | [**removeCartLineAsync**](docs/CartsApi.md#removecartlineasync) | **DELETE** /api/v2/CartService/Carts/{cartId}/Lines/{lineId} | Remove a cart line
 *CartsApi* | [**removeItemFromCartAsync**](docs/CartsApi.md#removeitemfromcartasync) | **DELETE** /api/v2/CartService/Carts/{cartId}/Items/{itemId} | Remove an Item from a cart
 *CartsApi* | [**removeItemFromCompareTableAsync**](docs/CartsApi.md#removeitemfromcomparetableasync) | **DELETE** /api/v2/CartService/Carts/{cartId}/Compare/{itemId} | Remove an item from the compare table
@@ -175,6 +176,7 @@ Class | Method | HTTP request | Description
 *RecordsApi* | [**getItemsInCartAsync**](docs/RecordsApi.md#getitemsincartasync) | **GET** /api/v2/CartService/Records/{cartId} | Get all items in a cart
 *RecordsApi* | [**increaseItemCartRecord**](docs/RecordsApi.md#increaseitemcartrecord) | **PUT** /api/v2/CartService/Records/{recordId}/Increase | Increase cart record quantity
 *RecordsApi* | [**isItemAlreadyInCart**](docs/RecordsApi.md#isitemalreadyincart) | **GET** /api/v2/CartService/Records/IsInCart | Check if an item is in a cart
+*RecordsApi* | [**patchItemCartRecord**](docs/RecordsApi.md#patchitemcartrecord) | **PATCH** /api/v2/CartService/Records/{recordId} | Patch a cart record
 *RecordsApi* | [**removeProductFromCartByParams**](docs/RecordsApi.md#removeproductfromcartbyparams) | **DELETE** /api/v2/CartService/Records | Remove a product from a cart
 *RecordsApi* | [**removeProductFromCartByRecordId**](docs/RecordsApi.md#removeproductfromcartbyrecordid) | **DELETE** /api/v2/CartService/Records/{recordId} | Remove a product from a cart by record ID
 *RecordsApi* | [**updateItemCartRecord**](docs/RecordsApi.md#updateitemcartrecord) | **PUT** /api/v2/CartService/Records/{recordId} | Update a cart record
@@ -186,6 +188,7 @@ Class | Method | HTTP request | Description
 *WishListsApi* | [**getCartWishListItemsAsync**](docs/WishListsApi.md#getcartwishlistitemsasync) | **GET** /api/v2/CartService/WishLists/{wishListId}/Records | Get wish list item records
 *WishListsApi* | [**getWishListAsync**](docs/WishListsApi.md#getwishlistasync) | **GET** /api/v2/CartService/WishLists/{cartId} | Get wish lists for a cart
 *WishListsApi* | [**isProductInWishLists**](docs/WishListsApi.md#isproductinwishlists) | **GET** /api/v2/CartService/WishLists/Contains | Check if a product is in any wish list
+*WishListsApi* | [**patchWishList**](docs/WishListsApi.md#patchwishlist) | **PATCH** /api/v2/CartService/WishLists/{wishListId} | Patch a wish list
 *WishListsApi* | [**updateProductToWishList**](docs/WishListsApi.md#updateproducttowishlist) | **PUT** /api/v2/CartService/WishLists/{wishListId} | Update a wish list
 *WishListsApi* | [**wishListExists**](docs/WishListsApi.md#wishlistexists) | **GET** /api/v2/CartService/WishLists/Exists | Check if a wish list exists
 *WishListsApi* | [**wishListExistsHeadAsync**](docs/WishListsApi.md#wishlistexistsheadasync) | **HEAD** /api/v2/CartService/WishLists/Exists | Check if a wish list exists (HEAD)
@@ -221,6 +224,7 @@ Class | Method | HTTP request | Description
  - [ItemToCompareCartRecordDtoListEnvelope](docs/ItemToCompareCartRecordDtoListEnvelope.md)
  - [LoginRequest](docs/LoginRequest.md)
  - [NewWishListRequest](docs/NewWishListRequest.md)
+ - [Operation](docs/Operation.md)
  - [ProductToWishListRequest](docs/ProductToWishListRequest.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)

@@ -108,6 +108,7 @@ docs/CourseWikiDto.md
 docs/CourseWikiUpdateDto.md
 docs/CourseWikisApi.md
 docs/CoursesApi.md
+docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/FenixAlliancePortalsWebsiteApi.md
 docs/ForgotPasswordRequest.md
@@ -121,6 +122,7 @@ docs/InstructorProfileUpdateDto.md
 docs/InstructorProfilesApi.md
 docs/LoginRequest.md
 docs/MeApi.md
+docs/Operation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

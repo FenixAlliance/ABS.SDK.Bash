@@ -116,6 +116,8 @@ Class | Method | HTTP request | Description
 *AirwayBillsApi* | [**markAirwayBillArrivedAsync**](docs/AirwayBillsApi.md#markairwaybillarrivedasync) | **POST** /api/v2/LogisticsService/AirwayBills/{billId}/MarkArrived | Mark airway bill arrived
 *AirwayBillsApi* | [**markAirwayBillDeliveredAsync**](docs/AirwayBillsApi.md#markairwaybilldeliveredasync) | **POST** /api/v2/LogisticsService/AirwayBills/{billId}/MarkDelivered | Mark airway bill delivered
 *AirwayBillsApi* | [**markAirwayBillInTransitAsync**](docs/AirwayBillsApi.md#markairwaybillintransitasync) | **POST** /api/v2/LogisticsService/AirwayBills/{billId}/MarkInTransit | Mark airway bill in transit
+*AirwayBillsApi* | [**patchAirwayBillAsync**](docs/AirwayBillsApi.md#patchairwaybillasync) | **PATCH** /api/v2/LogisticsService/AirwayBills/{billId} | Patch an airway bill
+*AirwayBillsApi* | [**patchAirwayBillLineAsync**](docs/AirwayBillsApi.md#patchairwaybilllineasync) | **PATCH** /api/v2/LogisticsService/AirwayBills/{billId}/Lines/{lineId} | Patch an airway bill line
 *AirwayBillsApi* | [**removeAirwayBillLineAsync**](docs/AirwayBillsApi.md#removeairwaybilllineasync) | **DELETE** /api/v2/LogisticsService/AirwayBills/{billId}/Lines/{lineId} | Remove an airway bill line
 *AirwayBillsApi* | [**updateAirwayBillAsync**](docs/AirwayBillsApi.md#updateairwaybillasync) | **PUT** /api/v2/LogisticsService/AirwayBills/{billId} | Update an airway bill
 *AirwayBillsApi* | [**updateAirwayBillLineAsync**](docs/AirwayBillsApi.md#updateairwaybilllineasync) | **PUT** /api/v2/LogisticsService/AirwayBills/{billId}/Lines/{lineId} | Update an airway bill line
@@ -153,6 +155,8 @@ Class | Method | HTTP request | Description
 *ItemPackingSlipsApi* | [**getItemPackingSlipEntryByIdAsync**](docs/ItemPackingSlipsApi.md#getitempackingslipentrybyidasync) | **GET** /api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/{entryId} | Get packing slip entry by ID
 *ItemPackingSlipsApi* | [**getItemPackingSlipsAsync**](docs/ItemPackingSlipsApi.md#getitempackingslipsasync) | **GET** /api/v2/LogisticsService/ItemPackingSlips | Get all item packing slips
 *ItemPackingSlipsApi* | [**getItemPackingSlipsCountAsync**](docs/ItemPackingSlipsApi.md#getitempackingslipscountasync) | **GET** /api/v2/LogisticsService/ItemPackingSlips/Count | Get item packing slips count
+*ItemPackingSlipsApi* | [**patchItemPackingSlipAsync**](docs/ItemPackingSlipsApi.md#patchitempackingslipasync) | **PATCH** /api/v2/LogisticsService/ItemPackingSlips/{packingSlipId} | Patch an item packing slip
+*ItemPackingSlipsApi* | [**patchItemPackingSlipEntryAsync**](docs/ItemPackingSlipsApi.md#patchitempackingslipentryasync) | **PATCH** /api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/{entryId} | Patch a packing slip entry
 *ItemPackingSlipsApi* | [**updateItemPackingSlipAsync**](docs/ItemPackingSlipsApi.md#updateitempackingslipasync) | **PUT** /api/v2/LogisticsService/ItemPackingSlips/{packingSlipId} | Update an item packing slip
 *ItemPackingSlipsApi* | [**updateItemPackingSlipEntryAsync**](docs/ItemPackingSlipsApi.md#updateitempackingslipentryasync) | **PUT** /api/v2/LogisticsService/ItemPackingSlips/{packingSlipId}/Entries/{entryId} | Update a packing slip entry
 *ItemPickListsApi* | [**createItemPickListAsync**](docs/ItemPickListsApi.md#createitempicklistasync) | **POST** /api/v2/LogisticsService/ItemPickLists | Create an item pick list
@@ -165,6 +169,8 @@ Class | Method | HTTP request | Description
 *ItemPickListsApi* | [**getItemPickListEntryByIdAsync**](docs/ItemPickListsApi.md#getitempicklistentrybyidasync) | **GET** /api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/{entryId} | Get pick list entry by ID
 *ItemPickListsApi* | [**getItemPickListsAsync**](docs/ItemPickListsApi.md#getitempicklistsasync) | **GET** /api/v2/LogisticsService/ItemPickLists | Get all item pick lists
 *ItemPickListsApi* | [**getItemPickListsCountAsync**](docs/ItemPickListsApi.md#getitempicklistscountasync) | **GET** /api/v2/LogisticsService/ItemPickLists/Count | Get item pick lists count
+*ItemPickListsApi* | [**patchItemPickListAsync**](docs/ItemPickListsApi.md#patchitempicklistasync) | **PATCH** /api/v2/LogisticsService/ItemPickLists/{pickListId} | Patch an item pick list
+*ItemPickListsApi* | [**patchItemPickListEntryAsync**](docs/ItemPickListsApi.md#patchitempicklistentryasync) | **PATCH** /api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/{entryId} | Patch a pick list entry
 *ItemPickListsApi* | [**updateItemPickListAsync**](docs/ItemPickListsApi.md#updateitempicklistasync) | **PUT** /api/v2/LogisticsService/ItemPickLists/{pickListId} | Update an item pick list
 *ItemPickListsApi* | [**updateItemPickListEntryAsync**](docs/ItemPickListsApi.md#updateitempicklistentryasync) | **PUT** /api/v2/LogisticsService/ItemPickLists/{pickListId}/Entries/{entryId} | Update a pick list entry
 *ItemRestocksApi* | [**createItemRestockAsync**](docs/ItemRestocksApi.md#createitemrestockasync) | **POST** /api/v2/LogisticsService/ItemRestocks | Create an item restock
@@ -177,6 +183,8 @@ Class | Method | HTTP request | Description
 *ItemRestocksApi* | [**getItemRestockEntryByIdAsync**](docs/ItemRestocksApi.md#getitemrestockentrybyidasync) | **GET** /api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/{entryId} | Get restock entry by ID
 *ItemRestocksApi* | [**getItemRestocksAsync**](docs/ItemRestocksApi.md#getitemrestocksasync) | **GET** /api/v2/LogisticsService/ItemRestocks | Get all item restocks
 *ItemRestocksApi* | [**getItemRestocksCountAsync**](docs/ItemRestocksApi.md#getitemrestockscountasync) | **GET** /api/v2/LogisticsService/ItemRestocks/Count | Get item restocks count
+*ItemRestocksApi* | [**patchItemRestockAsync**](docs/ItemRestocksApi.md#patchitemrestockasync) | **PATCH** /api/v2/LogisticsService/ItemRestocks/{restockId} | Patch an item restock
+*ItemRestocksApi* | [**patchItemRestockEntryAsync**](docs/ItemRestocksApi.md#patchitemrestockentryasync) | **PATCH** /api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/{entryId} | Patch a restock entry
 *ItemRestocksApi* | [**updateItemRestockAsync**](docs/ItemRestocksApi.md#updateitemrestockasync) | **PUT** /api/v2/LogisticsService/ItemRestocks/{restockId} | Update an item restock
 *ItemRestocksApi* | [**updateItemRestockEntryAsync**](docs/ItemRestocksApi.md#updateitemrestockentryasync) | **PUT** /api/v2/LogisticsService/ItemRestocks/{restockId}/Entries/{entryId} | Update a restock entry
 *ItemRetainSamplesApi* | [**createItemRetainSampleAsync**](docs/ItemRetainSamplesApi.md#createitemretainsampleasync) | **POST** /api/v2/LogisticsService/ItemRetainSamples | Create an item retain sample
@@ -184,12 +192,14 @@ Class | Method | HTTP request | Description
 *ItemRetainSamplesApi* | [**getItemRetainSampleByIdAsync**](docs/ItemRetainSamplesApi.md#getitemretainsamplebyidasync) | **GET** /api/v2/LogisticsService/ItemRetainSamples/{retainSampleId} | Get item retain sample by ID
 *ItemRetainSamplesApi* | [**getItemRetainSamplesAsync**](docs/ItemRetainSamplesApi.md#getitemretainsamplesasync) | **GET** /api/v2/LogisticsService/ItemRetainSamples | Get all item retain samples
 *ItemRetainSamplesApi* | [**getItemRetainSamplesCountAsync**](docs/ItemRetainSamplesApi.md#getitemretainsamplescountasync) | **GET** /api/v2/LogisticsService/ItemRetainSamples/Count | Get item retain samples count
+*ItemRetainSamplesApi* | [**patchItemRetainSampleAsync**](docs/ItemRetainSamplesApi.md#patchitemretainsampleasync) | **PATCH** /api/v2/LogisticsService/ItemRetainSamples/{retainSampleId} | Patch an item retain sample
 *ItemRetainSamplesApi* | [**updateItemRetainSampleAsync**](docs/ItemRetainSamplesApi.md#updateitemretainsampleasync) | **PUT** /api/v2/LogisticsService/ItemRetainSamples/{retainSampleId} | Update an item retain sample
 *PortsApi* | [**createPortAsync**](docs/PortsApi.md#createportasync) | **POST** /api/v2/LogisticsService/Ports | Create a port
 *PortsApi* | [**deletePortAsync**](docs/PortsApi.md#deleteportasync) | **DELETE** /api/v2/LogisticsService/Ports/{portId} | Delete a port
 *PortsApi* | [**getPortByIdAsync**](docs/PortsApi.md#getportbyidasync) | **GET** /api/v2/LogisticsService/Ports/{portId} | Get port by ID
 *PortsApi* | [**getPortsAsync**](docs/PortsApi.md#getportsasync) | **GET** /api/v2/LogisticsService/Ports | Get all ports
 *PortsApi* | [**getPortsCountAsync**](docs/PortsApi.md#getportscountasync) | **GET** /api/v2/LogisticsService/Ports/Count | Get ports count
+*PortsApi* | [**patchPortAsync**](docs/PortsApi.md#patchportasync) | **PATCH** /api/v2/LogisticsService/Ports/{portId} | Patch a port
 *PortsApi* | [**updatePortAsync**](docs/PortsApi.md#updateportasync) | **PUT** /api/v2/LogisticsService/Ports/{portId} | Update a port
 *ProofsOfDeliveryApi* | [**addProofOfDeliveryLineAsync**](docs/ProofsOfDeliveryApi.md#addproofofdeliverylineasync) | **POST** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines | Add a line to proof of delivery
 *ProofsOfDeliveryApi* | [**attachDeliveryNoteAsync**](docs/ProofsOfDeliveryApi.md#attachdeliverynoteasync) | **POST** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/DeliveryNotes/{noteId} | Attach a delivery note
@@ -204,6 +214,8 @@ Class | Method | HTTP request | Description
 *ProofsOfDeliveryApi* | [**getProofOfDeliveryLinesCountAsync**](docs/ProofsOfDeliveryApi.md#getproofofdeliverylinescountasync) | **GET** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines/Count | Get proof of delivery lines count
 *ProofsOfDeliveryApi* | [**getProofsOfDeliveryAsync**](docs/ProofsOfDeliveryApi.md#getproofsofdeliveryasync) | **GET** /api/v2/LogisticsService/ProofsOfDelivery | Get all proofs of delivery
 *ProofsOfDeliveryApi* | [**getProofsOfDeliveryCountAsync**](docs/ProofsOfDeliveryApi.md#getproofsofdeliverycountasync) | **GET** /api/v2/LogisticsService/ProofsOfDelivery/Count | Get proofs of delivery count
+*ProofsOfDeliveryApi* | [**patchProofOfDeliveryAsync**](docs/ProofsOfDeliveryApi.md#patchproofofdeliveryasync) | **PATCH** /api/v2/LogisticsService/ProofsOfDelivery/{podId} | Patch a proof of delivery
+*ProofsOfDeliveryApi* | [**patchProofOfDeliveryLineAsync**](docs/ProofsOfDeliveryApi.md#patchproofofdeliverylineasync) | **PATCH** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines/{lineId} | Patch a proof of delivery line
 *ProofsOfDeliveryApi* | [**rejectProofOfDeliveryAsync**](docs/ProofsOfDeliveryApi.md#rejectproofofdeliveryasync) | **POST** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/Reject | Reject a proof of delivery
 *ProofsOfDeliveryApi* | [**removeProofOfDeliveryLineAsync**](docs/ProofsOfDeliveryApi.md#removeproofofdeliverylineasync) | **DELETE** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/Lines/{lineId} | Remove a proof of delivery line
 *ProofsOfDeliveryApi* | [**signProofOfDeliveryAsync**](docs/ProofsOfDeliveryApi.md#signproofofdeliveryasync) | **POST** /api/v2/LogisticsService/ProofsOfDelivery/{podId}/Sign | Sign a proof of delivery
@@ -221,6 +233,8 @@ Class | Method | HTTP request | Description
 *RailWaybillsApi* | [**issueRailWaybillAsync**](docs/RailWaybillsApi.md#issuerailwaybillasync) | **POST** /api/v2/LogisticsService/RailWaybills/{waybillId}/Issue | Issue a rail waybill
 *RailWaybillsApi* | [**markRailWaybillDeliveredAsync**](docs/RailWaybillsApi.md#markrailwaybilldeliveredasync) | **POST** /api/v2/LogisticsService/RailWaybills/{waybillId}/MarkDelivered | Mark rail waybill delivered
 *RailWaybillsApi* | [**markRailWaybillInTransitAsync**](docs/RailWaybillsApi.md#markrailwaybillintransitasync) | **POST** /api/v2/LogisticsService/RailWaybills/{waybillId}/MarkInTransit | Mark rail waybill in transit
+*RailWaybillsApi* | [**patchRailWaybillAsync**](docs/RailWaybillsApi.md#patchrailwaybillasync) | **PATCH** /api/v2/LogisticsService/RailWaybills/{waybillId} | Patch a rail waybill
+*RailWaybillsApi* | [**patchRailWaybillLineAsync**](docs/RailWaybillsApi.md#patchrailwaybilllineasync) | **PATCH** /api/v2/LogisticsService/RailWaybills/{waybillId}/Lines/{lineId} | Patch a rail waybill line
 *RailWaybillsApi* | [**removeRailWaybillLineAsync**](docs/RailWaybillsApi.md#removerailwaybilllineasync) | **DELETE** /api/v2/LogisticsService/RailWaybills/{waybillId}/Lines/{lineId} | Remove a rail waybill line
 *RailWaybillsApi* | [**updateRailWaybillAsync**](docs/RailWaybillsApi.md#updaterailwaybillasync) | **PUT** /api/v2/LogisticsService/RailWaybills/{waybillId} | Update a rail waybill
 *RailWaybillsApi* | [**updateRailWaybillLineAsync**](docs/RailWaybillsApi.md#updaterailwaybilllineasync) | **PUT** /api/v2/LogisticsService/RailWaybills/{waybillId}/Lines/{lineId} | Update a rail waybill line
@@ -237,6 +251,8 @@ Class | Method | HTTP request | Description
 *RoadWaybillsApi* | [**issueRoadWaybillAsync**](docs/RoadWaybillsApi.md#issueroadwaybillasync) | **POST** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Issue | Issue a road waybill
 *RoadWaybillsApi* | [**markRoadWaybillDeliveredAsync**](docs/RoadWaybillsApi.md#markroadwaybilldeliveredasync) | **POST** /api/v2/LogisticsService/RoadWaybills/{waybillId}/MarkDelivered | Mark road waybill delivered
 *RoadWaybillsApi* | [**markRoadWaybillInTransitAsync**](docs/RoadWaybillsApi.md#markroadwaybillintransitasync) | **POST** /api/v2/LogisticsService/RoadWaybills/{waybillId}/MarkInTransit | Mark road waybill in transit
+*RoadWaybillsApi* | [**patchRoadWaybillAsync**](docs/RoadWaybillsApi.md#patchroadwaybillasync) | **PATCH** /api/v2/LogisticsService/RoadWaybills/{waybillId} | Patch a road waybill
+*RoadWaybillsApi* | [**patchRoadWaybillLineAsync**](docs/RoadWaybillsApi.md#patchroadwaybilllineasync) | **PATCH** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId} | Patch a road waybill line
 *RoadWaybillsApi* | [**removeRoadWaybillLineAsync**](docs/RoadWaybillsApi.md#removeroadwaybilllineasync) | **DELETE** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId} | Remove a road waybill line
 *RoadWaybillsApi* | [**updateRoadWaybillAsync**](docs/RoadWaybillsApi.md#updateroadwaybillasync) | **PUT** /api/v2/LogisticsService/RoadWaybills/{waybillId} | Update a road waybill
 *RoadWaybillsApi* | [**updateRoadWaybillLineAsync**](docs/RoadWaybillsApi.md#updateroadwaybilllineasync) | **PUT** /api/v2/LogisticsService/RoadWaybills/{waybillId}/Lines/{lineId} | Update a road waybill line
@@ -252,6 +268,8 @@ Class | Method | HTTP request | Description
 *SeawayBillsApi* | [**issueSeawayBillAsync**](docs/SeawayBillsApi.md#issueseawaybillasync) | **POST** /api/v2/LogisticsService/SeawayBills/{billId}/Issue | Issue a seaway bill
 *SeawayBillsApi* | [**markSeawayBillArrivedAsync**](docs/SeawayBillsApi.md#markseawaybillarrivedasync) | **POST** /api/v2/LogisticsService/SeawayBills/{billId}/MarkArrived | Mark seaway bill arrived
 *SeawayBillsApi* | [**markSeawayBillInTransitAsync**](docs/SeawayBillsApi.md#markseawaybillintransitasync) | **POST** /api/v2/LogisticsService/SeawayBills/{billId}/MarkInTransit | Mark seaway bill in transit
+*SeawayBillsApi* | [**patchSeawayBillAsync**](docs/SeawayBillsApi.md#patchseawaybillasync) | **PATCH** /api/v2/LogisticsService/SeawayBills/{billId} | Patch a seaway bill
+*SeawayBillsApi* | [**patchSeawayBillLineAsync**](docs/SeawayBillsApi.md#patchseawaybilllineasync) | **PATCH** /api/v2/LogisticsService/SeawayBills/{billId}/Lines/{lineId} | Patch a seaway bill line
 *SeawayBillsApi* | [**releaseSeawayBillAsync**](docs/SeawayBillsApi.md#releaseseawaybillasync) | **POST** /api/v2/LogisticsService/SeawayBills/{billId}/Release | Release a seaway bill
 *SeawayBillsApi* | [**removeSeawayBillLineAsync**](docs/SeawayBillsApi.md#removeseawaybilllineasync) | **DELETE** /api/v2/LogisticsService/SeawayBills/{billId}/Lines/{lineId} | Remove a seaway bill line
 *SeawayBillsApi* | [**updateSeawayBillAsync**](docs/SeawayBillsApi.md#updateseawaybillasync) | **PUT** /api/v2/LogisticsService/SeawayBills/{billId} | Update a seaway bill
@@ -261,6 +279,7 @@ Class | Method | HTTP request | Description
 *SupplierProfilesApi* | [**getSupplierProfileByIdAsync**](docs/SupplierProfilesApi.md#getsupplierprofilebyidasync) | **GET** /api/v2/LogisticsService/SupplierProfiles/{supplierProfileId} | Get supplier profile by ID
 *SupplierProfilesApi* | [**getSupplierProfilesAsync**](docs/SupplierProfilesApi.md#getsupplierprofilesasync) | **GET** /api/v2/LogisticsService/SupplierProfiles | Get all supplier profiles
 *SupplierProfilesApi* | [**getSupplierProfilesCountAsync**](docs/SupplierProfilesApi.md#getsupplierprofilescountasync) | **GET** /api/v2/LogisticsService/SupplierProfiles/Count | Get supplier profiles count
+*SupplierProfilesApi* | [**patchSupplierProfileAsync**](docs/SupplierProfilesApi.md#patchsupplierprofileasync) | **PATCH** /api/v2/LogisticsService/SupplierProfiles/{supplierProfileId} | Patch a supplier profile
 *SupplierProfilesApi* | [**updateSupplierProfileAsync**](docs/SupplierProfilesApi.md#updatesupplierprofileasync) | **PUT** /api/v2/LogisticsService/SupplierProfiles/{supplierProfileId} | Update a supplier profile
 *TruckDriversApi* | [**activateTruckDriverAsync**](docs/TruckDriversApi.md#activatetruckdriverasync) | **POST** /api/v2/LogisticsService/TruckDrivers/{driverId}/Activate | Activate a truck driver
 *TruckDriversApi* | [**createTruckDriverAsync**](docs/TruckDriversApi.md#createtruckdriverasync) | **POST** /api/v2/LogisticsService/TruckDrivers | Create a truck driver
@@ -269,6 +288,7 @@ Class | Method | HTTP request | Description
 *TruckDriversApi* | [**getTruckDriverByIdAsync**](docs/TruckDriversApi.md#gettruckdriverbyidasync) | **GET** /api/v2/LogisticsService/TruckDrivers/{driverId} | Get truck driver by ID
 *TruckDriversApi* | [**getTruckDriversAsync**](docs/TruckDriversApi.md#gettruckdriversasync) | **GET** /api/v2/LogisticsService/TruckDrivers | Get all truck drivers
 *TruckDriversApi* | [**getTruckDriversCountAsync**](docs/TruckDriversApi.md#gettruckdriverscountasync) | **GET** /api/v2/LogisticsService/TruckDrivers/Count | Get truck drivers count
+*TruckDriversApi* | [**patchTruckDriverAsync**](docs/TruckDriversApi.md#patchtruckdriverasync) | **PATCH** /api/v2/LogisticsService/TruckDrivers/{driverId} | Patch a truck driver
 *TruckDriversApi* | [**updateTruckDriverAsync**](docs/TruckDriversApi.md#updatetruckdriverasync) | **PUT** /api/v2/LogisticsService/TruckDrivers/{driverId} | Update a truck driver
 *TrucksApi* | [**arriveTripAsync**](docs/TrucksApi.md#arrivetripasync) | **POST** /api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Arrive | Arrive a trip
 *TrucksApi* | [**cancelTripAsync**](docs/TrucksApi.md#canceltripasync) | **POST** /api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId}/Cancel | Cancel a trip
@@ -284,6 +304,8 @@ Class | Method | HTTP request | Description
 *TrucksApi* | [**getTruckTripsCountAsync**](docs/TrucksApi.md#gettrucktripscountasync) | **GET** /api/v2/LogisticsService/Trucks/{truckId}/Trips/Count | Get truck trips count
 *TrucksApi* | [**getTrucksAsync**](docs/TrucksApi.md#gettrucksasync) | **GET** /api/v2/LogisticsService/Trucks | Get all trucks
 *TrucksApi* | [**getTrucksCountAsync**](docs/TrucksApi.md#gettruckscountasync) | **GET** /api/v2/LogisticsService/Trucks/Count | Get trucks count
+*TrucksApi* | [**patchTruckAsync**](docs/TrucksApi.md#patchtruckasync) | **PATCH** /api/v2/LogisticsService/Trucks/{truckId} | Patch a truck
+*TrucksApi* | [**patchTruckTripAsync**](docs/TrucksApi.md#patchtrucktripasync) | **PATCH** /api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId} | Patch a truck trip
 *TrucksApi* | [**updateTruckAsync**](docs/TrucksApi.md#updatetruckasync) | **PUT** /api/v2/LogisticsService/Trucks/{truckId} | Update a truck
 *TrucksApi* | [**updateTruckTripAsync**](docs/TrucksApi.md#updatetrucktripasync) | **PUT** /api/v2/LogisticsService/Trucks/{truckId}/Trips/{tripId} | Update a truck trip
 *VesselsApi* | [**createVesselAsync**](docs/VesselsApi.md#createvesselasync) | **POST** /api/v2/LogisticsService/Vessels | Create a vessel
@@ -291,6 +313,7 @@ Class | Method | HTTP request | Description
 *VesselsApi* | [**getVesselByIdAsync**](docs/VesselsApi.md#getvesselbyidasync) | **GET** /api/v2/LogisticsService/Vessels/{vesselId} | Get vessel by ID
 *VesselsApi* | [**getVesselsAsync**](docs/VesselsApi.md#getvesselsasync) | **GET** /api/v2/LogisticsService/Vessels | Get all vessels
 *VesselsApi* | [**getVesselsCountAsync**](docs/VesselsApi.md#getvesselscountasync) | **GET** /api/v2/LogisticsService/Vessels/Count | Get vessels count
+*VesselsApi* | [**patchVesselAsync**](docs/VesselsApi.md#patchvesselasync) | **PATCH** /api/v2/LogisticsService/Vessels/{vesselId} | Patch a vessel
 *VesselsApi* | [**updateVesselAsync**](docs/VesselsApi.md#updatevesselasync) | **PUT** /api/v2/LogisticsService/Vessels/{vesselId} | Update a vessel
 *VoyagesApi* | [**cancelVoyageAsync**](docs/VoyagesApi.md#cancelvoyageasync) | **POST** /api/v2/LogisticsService/Voyages/{voyageId}/Cancel | Cancel a voyage
 *VoyagesApi* | [**completeVoyageAsync**](docs/VoyagesApi.md#completevoyageasync) | **POST** /api/v2/LogisticsService/Voyages/{voyageId}/Complete | Complete a voyage
@@ -303,6 +326,8 @@ Class | Method | HTTP request | Description
 *VoyagesApi* | [**getVoyagePortCallsCountAsync**](docs/VoyagesApi.md#getvoyageportcallscountasync) | **GET** /api/v2/LogisticsService/Voyages/{voyageId}/PortCalls/Count | Get voyage port calls count
 *VoyagesApi* | [**getVoyagesAsync**](docs/VoyagesApi.md#getvoyagesasync) | **GET** /api/v2/LogisticsService/Voyages | Get all voyages
 *VoyagesApi* | [**getVoyagesCountAsync**](docs/VoyagesApi.md#getvoyagescountasync) | **GET** /api/v2/LogisticsService/Voyages/Count | Get voyages count
+*VoyagesApi* | [**patchVoyageAsync**](docs/VoyagesApi.md#patchvoyageasync) | **PATCH** /api/v2/LogisticsService/Voyages/{voyageId} | Patch a voyage
+*VoyagesApi* | [**patchVoyagePortCallAsync**](docs/VoyagesApi.md#patchvoyageportcallasync) | **PATCH** /api/v2/LogisticsService/Voyages/{voyageId}/PortCalls/{portCallId} | Patch a voyage port call
 *VoyagesApi* | [**startVoyageAsync**](docs/VoyagesApi.md#startvoyageasync) | **POST** /api/v2/LogisticsService/Voyages/{voyageId}/Start | Start a voyage
 *VoyagesApi* | [**updateVoyageAsync**](docs/VoyagesApi.md#updatevoyageasync) | **PUT** /api/v2/LogisticsService/Voyages/{voyageId} | Update a voyage
 *VoyagesApi* | [**updateVoyagePortCallAsync**](docs/VoyagesApi.md#updatevoyageportcallasync) | **PUT** /api/v2/LogisticsService/Voyages/{voyageId}/PortCalls/{portCallId} | Update a port call
@@ -311,6 +336,7 @@ Class | Method | HTTP request | Description
 *WarehousesApi* | [**getWarehouseByIdAsync**](docs/WarehousesApi.md#getwarehousebyidasync) | **GET** /api/v2/LogisticsService/Warehouses/{warehouseId} | Get warehouse by ID
 *WarehousesApi* | [**getWarehousesAsync**](docs/WarehousesApi.md#getwarehousesasync) | **GET** /api/v2/LogisticsService/Warehouses | Get all warehouses
 *WarehousesApi* | [**getWarehousesCountAsync**](docs/WarehousesApi.md#getwarehousescountasync) | **GET** /api/v2/LogisticsService/Warehouses/Count | Get warehouses count
+*WarehousesApi* | [**patchWarehouseAsync**](docs/WarehousesApi.md#patchwarehouseasync) | **PATCH** /api/v2/LogisticsService/Warehouses/{warehouseId} | Patch a warehouse
 *WarehousesApi* | [**updateWarehouseAsync**](docs/WarehousesApi.md#updatewarehouseasync) | **PUT** /api/v2/LogisticsService/Warehouses/{warehouseId} | Update a warehouse
 
 
@@ -372,6 +398,7 @@ Class | Method | HTTP request | Description
  - [ItemRetainSampleDtoListEnvelope](docs/ItemRetainSampleDtoListEnvelope.md)
  - [ItemRetainSampleUpdateDto](docs/ItemRetainSampleUpdateDto.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [PortCreateDto](docs/PortCreateDto.md)
  - [PortDto](docs/PortDto.md)
  - [PortDtoEnvelope](docs/PortDtoEnvelope.md)

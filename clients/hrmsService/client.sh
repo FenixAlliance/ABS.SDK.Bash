@@ -163,6 +163,11 @@ operation_parameters_minimum_occurrences["getEmployeeAppraisalSessionsAsync:::x-
 operation_parameters_minimum_occurrences["getEmployeeAppraisalSessionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmployeeAppraisalSessionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmployeeAppraisalSessionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeAppraisalSessionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmployeeAppraisalSessionAsync:::sessionId"]=1
+operation_parameters_minimum_occurrences["patchEmployeeAppraisalSessionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeAppraisalSessionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeAppraisalSessionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmployeeAppraisalSessionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmployeeAppraisalSessionAsync:::sessionId"]=1
 operation_parameters_minimum_occurrences["updateEmployeeAppraisalSessionAsync:::api-version"]=0
@@ -186,6 +191,11 @@ operation_parameters_minimum_occurrences["getEmployeeTypesAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getEmployeeTypesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmployeeTypesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmployeeTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmployeeTypeAsync:::employeeTypeId"]=1
+operation_parameters_minimum_occurrences["patchEmployeeTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmployeeTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmployeeTypeAsync:::employeeTypeId"]=1
 operation_parameters_minimum_occurrences["updateEmployeeTypeAsync:::api-version"]=0
@@ -209,6 +219,11 @@ operation_parameters_minimum_occurrences["getEmployeesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getEmployeesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmployeesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmployeesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmployeeAsync:::employeeId"]=1
+operation_parameters_minimum_occurrences["patchEmployeeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployeeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmployeeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmployeeAsync:::employeeId"]=1
 operation_parameters_minimum_occurrences["updateEmployeeAsync:::api-version"]=0
@@ -232,6 +247,11 @@ operation_parameters_minimum_occurrences["getEmployersAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getEmployersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getEmployersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEmployersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployerAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchEmployerAsync:::employerId"]=1
+operation_parameters_minimum_occurrences["patchEmployerAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployerAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchEmployerAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateEmployerAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateEmployerAsync:::employerId"]=1
 operation_parameters_minimum_occurrences["updateEmployerAsync:::api-version"]=0
@@ -272,6 +292,11 @@ operation_parameters_minimum_occurrences["getGigsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getGigsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getGigsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getGigsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchGigAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchGigAsync:::gigId"]=1
+operation_parameters_minimum_occurrences["patchGigAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchGigAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchGigAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateGigAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateGigAsync:::gigId"]=1
 operation_parameters_minimum_occurrences["updateGigAsync:::api-version"]=0
@@ -295,11 +320,16 @@ operation_parameters_minimum_occurrences["getJobOffersAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getJobOffersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJobOffersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJobOffersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobOfferAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJobOfferAsync:::jobOfferId"]=1
+operation_parameters_minimum_occurrences["patchJobOfferAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJobOfferAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobOfferAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::jobOfferId"]=1
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["updateJobOfferAsync:::body"]=0
+operation_parameters_minimum_occurrences["updateJobOfferAsync:::JobOfferUpdateDto"]=0
 operation_parameters_minimum_occurrences["createJobTitleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createJobTitleAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createJobTitleAsync:::x-api-version"]=0
@@ -318,6 +348,11 @@ operation_parameters_minimum_occurrences["getJobTitlesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getJobTitlesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJobTitlesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJobTitlesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobTitleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJobTitleAsync:::jobTitleId"]=1
+operation_parameters_minimum_occurrences["patchJobTitleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJobTitleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobTitleAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateJobTitleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateJobTitleAsync:::jobTitleId"]=1
 operation_parameters_minimum_occurrences["updateJobTitleAsync:::api-version"]=0
@@ -341,6 +376,11 @@ operation_parameters_minimum_occurrences["getLeaveApplicationsAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getLeaveApplicationsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLeaveApplicationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLeaveApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLeaveApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchLeaveApplicationAsync:::leaveApplicationId"]=1
+operation_parameters_minimum_occurrences["patchLeaveApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchLeaveApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchLeaveApplicationAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateLeaveApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLeaveApplicationAsync:::leaveApplicationId"]=1
 operation_parameters_minimum_occurrences["updateLeaveApplicationAsync:::api-version"]=0
@@ -410,6 +450,11 @@ operation_parameters_minimum_occurrences["getPayrollsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getPayrollsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPayrollsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPayrollsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPayrollAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchPayrollAsync:::payrollId"]=1
+operation_parameters_minimum_occurrences["patchPayrollAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchPayrollAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchPayrollAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updatePayrollAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePayrollAsync:::payrollId"]=1
 operation_parameters_minimum_occurrences["updatePayrollAsync:::api-version"]=0
@@ -433,6 +478,11 @@ operation_parameters_minimum_occurrences["getSalaryByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSalaryByIdAsync:::salaryId"]=1
 operation_parameters_minimum_occurrences["getSalaryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSalaryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSalaryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSalaryAsync:::salaryId"]=1
+operation_parameters_minimum_occurrences["patchSalaryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSalaryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSalaryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateSalaryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSalaryAsync:::salaryId"]=1
 operation_parameters_minimum_occurrences["updateSalaryAsync:::api-version"]=0
@@ -456,6 +506,11 @@ operation_parameters_minimum_occurrences["getSchedulesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSchedulesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSchedulesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSchedulesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchScheduleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchScheduleAsync:::scheduleId"]=1
+operation_parameters_minimum_occurrences["patchScheduleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchScheduleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchScheduleAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateScheduleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateScheduleAsync:::scheduleId"]=1
 operation_parameters_minimum_occurrences["updateScheduleAsync:::api-version"]=0
@@ -479,6 +534,11 @@ operation_parameters_minimum_occurrences["getShiftsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getShiftsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShiftsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getShiftsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShiftAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchShiftAsync:::shiftId"]=1
+operation_parameters_minimum_occurrences["patchShiftAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchShiftAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchShiftAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateShiftAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateShiftAsync:::shiftId"]=1
 operation_parameters_minimum_occurrences["updateShiftAsync:::api-version"]=0
@@ -502,6 +562,11 @@ operation_parameters_minimum_occurrences["getTimeIntervalsAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getTimeIntervalsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTimeIntervalsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTimeIntervalsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTimeIntervalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTimeIntervalAsync:::timeIntervalId"]=1
+operation_parameters_minimum_occurrences["patchTimeIntervalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTimeIntervalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTimeIntervalAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTimeIntervalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTimeIntervalAsync:::timeIntervalId"]=1
 operation_parameters_minimum_occurrences["updateTimeIntervalAsync:::api-version"]=0
@@ -525,6 +590,11 @@ operation_parameters_minimum_occurrences["getTrainingProgramCoursesAsync:::x-api
 operation_parameters_minimum_occurrences["getTrainingProgramCoursesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTrainingProgramCoursesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTrainingProgramCoursesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTrainingProgramCourseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTrainingProgramCourseAsync:::courseId"]=1
+operation_parameters_minimum_occurrences["patchTrainingProgramCourseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTrainingProgramCourseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTrainingProgramCourseAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTrainingProgramCourseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTrainingProgramCourseAsync:::courseId"]=1
 operation_parameters_minimum_occurrences["updateTrainingProgramCourseAsync:::api-version"]=0
@@ -548,6 +618,11 @@ operation_parameters_minimum_occurrences["getTrainingProgramEventsAsync:::x-api-
 operation_parameters_minimum_occurrences["getTrainingProgramEventsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTrainingProgramEventsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTrainingProgramEventsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTrainingProgramEventAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTrainingProgramEventAsync:::eventId"]=1
+operation_parameters_minimum_occurrences["patchTrainingProgramEventAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchTrainingProgramEventAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchTrainingProgramEventAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTrainingProgramEventAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTrainingProgramEventAsync:::eventId"]=1
 operation_parameters_minimum_occurrences["updateTrainingProgramEventAsync:::api-version"]=0
@@ -651,6 +726,11 @@ operation_parameters_maximum_occurrences["getEmployeeAppraisalSessionsAsync:::x-
 operation_parameters_maximum_occurrences["getEmployeeAppraisalSessionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmployeeAppraisalSessionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmployeeAppraisalSessionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAppraisalSessionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAppraisalSessionAsync:::sessionId"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAppraisalSessionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAppraisalSessionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAppraisalSessionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmployeeAppraisalSessionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmployeeAppraisalSessionAsync:::sessionId"]=0
 operation_parameters_maximum_occurrences["updateEmployeeAppraisalSessionAsync:::api-version"]=0
@@ -674,6 +754,11 @@ operation_parameters_maximum_occurrences["getEmployeeTypesAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getEmployeeTypesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmployeeTypesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmployeeTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmployeeTypeAsync:::employeeTypeId"]=0
+operation_parameters_maximum_occurrences["patchEmployeeTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmployeeTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmployeeTypeAsync:::employeeTypeId"]=0
 operation_parameters_maximum_occurrences["updateEmployeeTypeAsync:::api-version"]=0
@@ -697,6 +782,11 @@ operation_parameters_maximum_occurrences["getEmployeesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getEmployeesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmployeesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmployeesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAsync:::employeeId"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployeeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmployeeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmployeeAsync:::employeeId"]=0
 operation_parameters_maximum_occurrences["updateEmployeeAsync:::api-version"]=0
@@ -720,6 +810,11 @@ operation_parameters_maximum_occurrences["getEmployersAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getEmployersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getEmployersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEmployersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployerAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchEmployerAsync:::employerId"]=0
+operation_parameters_maximum_occurrences["patchEmployerAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployerAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchEmployerAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateEmployerAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateEmployerAsync:::employerId"]=0
 operation_parameters_maximum_occurrences["updateEmployerAsync:::api-version"]=0
@@ -760,6 +855,11 @@ operation_parameters_maximum_occurrences["getGigsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getGigsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getGigsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getGigsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchGigAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchGigAsync:::gigId"]=0
+operation_parameters_maximum_occurrences["patchGigAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchGigAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchGigAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateGigAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateGigAsync:::gigId"]=0
 operation_parameters_maximum_occurrences["updateGigAsync:::api-version"]=0
@@ -783,11 +883,16 @@ operation_parameters_maximum_occurrences["getJobOffersAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getJobOffersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJobOffersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJobOffersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobOfferAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJobOfferAsync:::jobOfferId"]=0
+operation_parameters_maximum_occurrences["patchJobOfferAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJobOfferAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobOfferAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::jobOfferId"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["updateJobOfferAsync:::body"]=0
+operation_parameters_maximum_occurrences["updateJobOfferAsync:::JobOfferUpdateDto"]=0
 operation_parameters_maximum_occurrences["createJobTitleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createJobTitleAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createJobTitleAsync:::x-api-version"]=0
@@ -806,6 +911,11 @@ operation_parameters_maximum_occurrences["getJobTitlesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getJobTitlesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJobTitlesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJobTitlesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobTitleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJobTitleAsync:::jobTitleId"]=0
+operation_parameters_maximum_occurrences["patchJobTitleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJobTitleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobTitleAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateJobTitleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateJobTitleAsync:::jobTitleId"]=0
 operation_parameters_maximum_occurrences["updateJobTitleAsync:::api-version"]=0
@@ -829,6 +939,11 @@ operation_parameters_maximum_occurrences["getLeaveApplicationsAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getLeaveApplicationsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLeaveApplicationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLeaveApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLeaveApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchLeaveApplicationAsync:::leaveApplicationId"]=0
+operation_parameters_maximum_occurrences["patchLeaveApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchLeaveApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchLeaveApplicationAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateLeaveApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLeaveApplicationAsync:::leaveApplicationId"]=0
 operation_parameters_maximum_occurrences["updateLeaveApplicationAsync:::api-version"]=0
@@ -898,6 +1013,11 @@ operation_parameters_maximum_occurrences["getPayrollsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getPayrollsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPayrollsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPayrollsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPayrollAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchPayrollAsync:::payrollId"]=0
+operation_parameters_maximum_occurrences["patchPayrollAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchPayrollAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchPayrollAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updatePayrollAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePayrollAsync:::payrollId"]=0
 operation_parameters_maximum_occurrences["updatePayrollAsync:::api-version"]=0
@@ -921,6 +1041,11 @@ operation_parameters_maximum_occurrences["getSalaryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSalaryByIdAsync:::salaryId"]=0
 operation_parameters_maximum_occurrences["getSalaryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSalaryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSalaryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSalaryAsync:::salaryId"]=0
+operation_parameters_maximum_occurrences["patchSalaryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSalaryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSalaryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateSalaryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSalaryAsync:::salaryId"]=0
 operation_parameters_maximum_occurrences["updateSalaryAsync:::api-version"]=0
@@ -944,6 +1069,11 @@ operation_parameters_maximum_occurrences["getSchedulesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSchedulesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSchedulesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSchedulesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchScheduleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchScheduleAsync:::scheduleId"]=0
+operation_parameters_maximum_occurrences["patchScheduleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchScheduleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchScheduleAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateScheduleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateScheduleAsync:::scheduleId"]=0
 operation_parameters_maximum_occurrences["updateScheduleAsync:::api-version"]=0
@@ -967,6 +1097,11 @@ operation_parameters_maximum_occurrences["getShiftsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getShiftsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShiftsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getShiftsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShiftAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchShiftAsync:::shiftId"]=0
+operation_parameters_maximum_occurrences["patchShiftAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchShiftAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchShiftAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateShiftAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateShiftAsync:::shiftId"]=0
 operation_parameters_maximum_occurrences["updateShiftAsync:::api-version"]=0
@@ -990,6 +1125,11 @@ operation_parameters_maximum_occurrences["getTimeIntervalsAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getTimeIntervalsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTimeIntervalsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTimeIntervalsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTimeIntervalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTimeIntervalAsync:::timeIntervalId"]=0
+operation_parameters_maximum_occurrences["patchTimeIntervalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTimeIntervalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTimeIntervalAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTimeIntervalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTimeIntervalAsync:::timeIntervalId"]=0
 operation_parameters_maximum_occurrences["updateTimeIntervalAsync:::api-version"]=0
@@ -1013,6 +1153,11 @@ operation_parameters_maximum_occurrences["getTrainingProgramCoursesAsync:::x-api
 operation_parameters_maximum_occurrences["getTrainingProgramCoursesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTrainingProgramCoursesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTrainingProgramCoursesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramCourseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramCourseAsync:::courseId"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramCourseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramCourseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramCourseAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTrainingProgramCourseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTrainingProgramCourseAsync:::courseId"]=0
 operation_parameters_maximum_occurrences["updateTrainingProgramCourseAsync:::api-version"]=0
@@ -1036,6 +1181,11 @@ operation_parameters_maximum_occurrences["getTrainingProgramEventsAsync:::x-api-
 operation_parameters_maximum_occurrences["getTrainingProgramEventsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTrainingProgramEventsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTrainingProgramEventsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramEventAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramEventAsync:::eventId"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramEventAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramEventAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchTrainingProgramEventAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTrainingProgramEventAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTrainingProgramEventAsync:::eventId"]=0
 operation_parameters_maximum_occurrences["updateTrainingProgramEventAsync:::api-version"]=0
@@ -1136,6 +1286,11 @@ operation_parameters_collection_type["getEmployeeAppraisalSessionsAsync:::x-api-
 operation_parameters_collection_type["getEmployeeAppraisalSessionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmployeeAppraisalSessionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getEmployeeAppraisalSessionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployeeAppraisalSessionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmployeeAppraisalSessionAsync:::sessionId"]=""
+operation_parameters_collection_type["patchEmployeeAppraisalSessionAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmployeeAppraisalSessionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployeeAppraisalSessionAsync:::Operation"]=
 operation_parameters_collection_type["updateEmployeeAppraisalSessionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmployeeAppraisalSessionAsync:::sessionId"]=""
 operation_parameters_collection_type["updateEmployeeAppraisalSessionAsync:::api-version"]=""
@@ -1159,6 +1314,11 @@ operation_parameters_collection_type["getEmployeeTypesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getEmployeeTypesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmployeeTypesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getEmployeeTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployeeTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmployeeTypeAsync:::employeeTypeId"]=""
+operation_parameters_collection_type["patchEmployeeTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmployeeTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployeeTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateEmployeeTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmployeeTypeAsync:::employeeTypeId"]=""
 operation_parameters_collection_type["updateEmployeeTypeAsync:::api-version"]=""
@@ -1182,6 +1342,11 @@ operation_parameters_collection_type["getEmployeesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getEmployeesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmployeesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getEmployeesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployeeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmployeeAsync:::employeeId"]=""
+operation_parameters_collection_type["patchEmployeeAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmployeeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployeeAsync:::Operation"]=
 operation_parameters_collection_type["updateEmployeeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmployeeAsync:::employeeId"]=""
 operation_parameters_collection_type["updateEmployeeAsync:::api-version"]=""
@@ -1205,6 +1370,11 @@ operation_parameters_collection_type["getEmployersAsync:::x-api-version"]=""
 operation_parameters_collection_type["getEmployersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getEmployersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getEmployersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployerAsync:::tenantId"]=""
+operation_parameters_collection_type["patchEmployerAsync:::employerId"]=""
+operation_parameters_collection_type["patchEmployerAsync:::api-version"]=""
+operation_parameters_collection_type["patchEmployerAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchEmployerAsync:::Operation"]=
 operation_parameters_collection_type["updateEmployerAsync:::tenantId"]=""
 operation_parameters_collection_type["updateEmployerAsync:::employerId"]=""
 operation_parameters_collection_type["updateEmployerAsync:::api-version"]=""
@@ -1245,6 +1415,11 @@ operation_parameters_collection_type["getGigsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getGigsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getGigsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getGigsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchGigAsync:::tenantId"]=""
+operation_parameters_collection_type["patchGigAsync:::gigId"]=""
+operation_parameters_collection_type["patchGigAsync:::api-version"]=""
+operation_parameters_collection_type["patchGigAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchGigAsync:::Operation"]=
 operation_parameters_collection_type["updateGigAsync:::tenantId"]=""
 operation_parameters_collection_type["updateGigAsync:::gigId"]=""
 operation_parameters_collection_type["updateGigAsync:::api-version"]=""
@@ -1268,11 +1443,16 @@ operation_parameters_collection_type["getJobOffersAsync:::x-api-version"]=""
 operation_parameters_collection_type["getJobOffersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getJobOffersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getJobOffersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobOfferAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJobOfferAsync:::jobOfferId"]=""
+operation_parameters_collection_type["patchJobOfferAsync:::api-version"]=""
+operation_parameters_collection_type["patchJobOfferAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobOfferAsync:::Operation"]=
 operation_parameters_collection_type["updateJobOfferAsync:::tenantId"]=""
 operation_parameters_collection_type["updateJobOfferAsync:::jobOfferId"]=""
 operation_parameters_collection_type["updateJobOfferAsync:::api-version"]=""
 operation_parameters_collection_type["updateJobOfferAsync:::x-api-version"]=""
-operation_parameters_collection_type["updateJobOfferAsync:::body"]=""
+operation_parameters_collection_type["updateJobOfferAsync:::JobOfferUpdateDto"]=""
 operation_parameters_collection_type["createJobTitleAsync:::tenantId"]=""
 operation_parameters_collection_type["createJobTitleAsync:::api-version"]=""
 operation_parameters_collection_type["createJobTitleAsync:::x-api-version"]=""
@@ -1291,6 +1471,11 @@ operation_parameters_collection_type["getJobTitlesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getJobTitlesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getJobTitlesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getJobTitlesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobTitleAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJobTitleAsync:::jobTitleId"]=""
+operation_parameters_collection_type["patchJobTitleAsync:::api-version"]=""
+operation_parameters_collection_type["patchJobTitleAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobTitleAsync:::Operation"]=
 operation_parameters_collection_type["updateJobTitleAsync:::tenantId"]=""
 operation_parameters_collection_type["updateJobTitleAsync:::jobTitleId"]=""
 operation_parameters_collection_type["updateJobTitleAsync:::api-version"]=""
@@ -1314,6 +1499,11 @@ operation_parameters_collection_type["getLeaveApplicationsAsync:::x-api-version"
 operation_parameters_collection_type["getLeaveApplicationsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLeaveApplicationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLeaveApplicationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLeaveApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchLeaveApplicationAsync:::leaveApplicationId"]=""
+operation_parameters_collection_type["patchLeaveApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["patchLeaveApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchLeaveApplicationAsync:::Operation"]=
 operation_parameters_collection_type["updateLeaveApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLeaveApplicationAsync:::leaveApplicationId"]=""
 operation_parameters_collection_type["updateLeaveApplicationAsync:::api-version"]=""
@@ -1383,6 +1573,11 @@ operation_parameters_collection_type["getPayrollsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPayrollsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPayrollsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPayrollsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPayrollAsync:::tenantId"]=""
+operation_parameters_collection_type["patchPayrollAsync:::payrollId"]=""
+operation_parameters_collection_type["patchPayrollAsync:::api-version"]=""
+operation_parameters_collection_type["patchPayrollAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchPayrollAsync:::Operation"]=
 operation_parameters_collection_type["updatePayrollAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePayrollAsync:::payrollId"]=""
 operation_parameters_collection_type["updatePayrollAsync:::api-version"]=""
@@ -1406,6 +1601,11 @@ operation_parameters_collection_type["getSalaryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getSalaryByIdAsync:::salaryId"]=""
 operation_parameters_collection_type["getSalaryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getSalaryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSalaryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSalaryAsync:::salaryId"]=""
+operation_parameters_collection_type["patchSalaryAsync:::api-version"]=""
+operation_parameters_collection_type["patchSalaryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSalaryAsync:::Operation"]=
 operation_parameters_collection_type["updateSalaryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSalaryAsync:::salaryId"]=""
 operation_parameters_collection_type["updateSalaryAsync:::api-version"]=""
@@ -1429,6 +1629,11 @@ operation_parameters_collection_type["getSchedulesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSchedulesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSchedulesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSchedulesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchScheduleAsync:::tenantId"]=""
+operation_parameters_collection_type["patchScheduleAsync:::scheduleId"]=""
+operation_parameters_collection_type["patchScheduleAsync:::api-version"]=""
+operation_parameters_collection_type["patchScheduleAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchScheduleAsync:::Operation"]=
 operation_parameters_collection_type["updateScheduleAsync:::tenantId"]=""
 operation_parameters_collection_type["updateScheduleAsync:::scheduleId"]=""
 operation_parameters_collection_type["updateScheduleAsync:::api-version"]=""
@@ -1452,6 +1657,11 @@ operation_parameters_collection_type["getShiftsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getShiftsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getShiftsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getShiftsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShiftAsync:::tenantId"]=""
+operation_parameters_collection_type["patchShiftAsync:::shiftId"]=""
+operation_parameters_collection_type["patchShiftAsync:::api-version"]=""
+operation_parameters_collection_type["patchShiftAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchShiftAsync:::Operation"]=
 operation_parameters_collection_type["updateShiftAsync:::tenantId"]=""
 operation_parameters_collection_type["updateShiftAsync:::shiftId"]=""
 operation_parameters_collection_type["updateShiftAsync:::api-version"]=""
@@ -1475,6 +1685,11 @@ operation_parameters_collection_type["getTimeIntervalsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getTimeIntervalsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTimeIntervalsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTimeIntervalsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTimeIntervalAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTimeIntervalAsync:::timeIntervalId"]=""
+operation_parameters_collection_type["patchTimeIntervalAsync:::api-version"]=""
+operation_parameters_collection_type["patchTimeIntervalAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTimeIntervalAsync:::Operation"]=
 operation_parameters_collection_type["updateTimeIntervalAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTimeIntervalAsync:::timeIntervalId"]=""
 operation_parameters_collection_type["updateTimeIntervalAsync:::api-version"]=""
@@ -1498,6 +1713,11 @@ operation_parameters_collection_type["getTrainingProgramCoursesAsync:::x-api-ver
 operation_parameters_collection_type["getTrainingProgramCoursesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTrainingProgramCoursesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTrainingProgramCoursesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTrainingProgramCourseAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTrainingProgramCourseAsync:::courseId"]=""
+operation_parameters_collection_type["patchTrainingProgramCourseAsync:::api-version"]=""
+operation_parameters_collection_type["patchTrainingProgramCourseAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTrainingProgramCourseAsync:::Operation"]=
 operation_parameters_collection_type["updateTrainingProgramCourseAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTrainingProgramCourseAsync:::courseId"]=""
 operation_parameters_collection_type["updateTrainingProgramCourseAsync:::api-version"]=""
@@ -1521,6 +1741,11 @@ operation_parameters_collection_type["getTrainingProgramEventsAsync:::x-api-vers
 operation_parameters_collection_type["getTrainingProgramEventsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTrainingProgramEventsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTrainingProgramEventsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTrainingProgramEventAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTrainingProgramEventAsync:::eventId"]=""
+operation_parameters_collection_type["patchTrainingProgramEventAsync:::api-version"]=""
+operation_parameters_collection_type["patchTrainingProgramEventAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchTrainingProgramEventAsync:::Operation"]=
 operation_parameters_collection_type["updateTrainingProgramEventAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTrainingProgramEventAsync:::eventId"]=""
 operation_parameters_collection_type["updateTrainingProgramEventAsync:::api-version"]=""
@@ -1906,7 +2131,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}HrmsService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}HrmsService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1970,6 +2195,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmployeeAppraisalSessionByIdAsync${OFF};Get employee appraisal session by ID
   ${CYAN}getEmployeeAppraisalSessionsAsync${OFF};Get employee appraisal sessions
   ${CYAN}getEmployeeAppraisalSessionsCountAsync${OFF};Count employee appraisal sessions
+  ${CYAN}patchEmployeeAppraisalSessionAsync${OFF};Patch an employee appraisal session
   ${CYAN}updateEmployeeAppraisalSessionAsync${OFF};Update an employee appraisal session
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1981,6 +2207,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmployeeTypeByIdAsync${OFF};Get employee type by ID
   ${CYAN}getEmployeeTypesAsync${OFF};Get employee types
   ${CYAN}getEmployeeTypesCountAsync${OFF};Count employee types
+  ${CYAN}patchEmployeeTypeAsync${OFF};Patch an employee type
   ${CYAN}updateEmployeeTypeAsync${OFF};Update an employee type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1992,6 +2219,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmployeeByIdAsync${OFF};Get employee by ID
   ${CYAN}getEmployeesAsync${OFF};Get employees
   ${CYAN}getEmployeesCountAsync${OFF};Count employees
+  ${CYAN}patchEmployeeAsync${OFF};Patch an employee
   ${CYAN}updateEmployeeAsync${OFF};Update an employee
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2003,6 +2231,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getEmployerByIdAsync${OFF};Get employer by ID
   ${CYAN}getEmployersAsync${OFF};Get employers
   ${CYAN}getEmployersCountAsync${OFF};Count employers
+  ${CYAN}patchEmployerAsync${OFF};Patch an employer
   ${CYAN}updateEmployerAsync${OFF};Update an employer
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2036,6 +2265,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getGigByIdAsync${OFF};Get gig by ID
   ${CYAN}getGigsAsync${OFF};Get gigs
   ${CYAN}getGigsCountAsync${OFF};Count gigs
+  ${CYAN}patchGigAsync${OFF};Patch a gig
   ${CYAN}updateGigAsync${OFF};Update a gig
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2047,6 +2277,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getJobOfferByIdAsync${OFF};Get job offer by ID
   ${CYAN}getJobOffersAsync${OFF};Get job offers
   ${CYAN}getJobOffersCountAsync${OFF};Count job offers
+  ${CYAN}patchJobOfferAsync${OFF};Patch a job offer
   ${CYAN}updateJobOfferAsync${OFF};Update a job offer
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2058,6 +2289,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getJobTitleByIdAsync${OFF};Get job title by ID
   ${CYAN}getJobTitlesAsync${OFF};Get job titles
   ${CYAN}getJobTitlesCountAsync${OFF};Count job titles
+  ${CYAN}patchJobTitleAsync${OFF};Patch a job title
   ${CYAN}updateJobTitleAsync${OFF};Update a job title
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2069,6 +2301,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getLeaveApplicationByIdAsync${OFF};Get leave application by ID
   ${CYAN}getLeaveApplicationsAsync${OFF};Get leave applications
   ${CYAN}getLeaveApplicationsCountAsync${OFF};Count leave applications
+  ${CYAN}patchLeaveApplicationAsync${OFF};Patch a leave application
   ${CYAN}updateLeaveApplicationAsync${OFF};Update a leave application
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2102,6 +2335,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getPayrollByIdAsync${OFF};Get payroll by ID
   ${CYAN}getPayrollsAsync${OFF};Get payrolls
   ${CYAN}getPayrollsCountAsync${OFF};Count payrolls
+  ${CYAN}patchPayrollAsync${OFF};Patch a payroll
   ${CYAN}updatePayrollAsync${OFF};Update a payroll
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2113,6 +2347,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSalariesAsync${OFF};Get salaries
   ${CYAN}getSalariesCountAsync${OFF};Count salaries
   ${CYAN}getSalaryByIdAsync${OFF};Get salary by ID
+  ${CYAN}patchSalaryAsync${OFF};Patch a salary
   ${CYAN}updateSalaryAsync${OFF};Update a salary
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2124,6 +2359,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getScheduleByIdAsync${OFF};Get schedule by ID
   ${CYAN}getSchedulesAsync${OFF};Get schedules
   ${CYAN}getSchedulesCountAsync${OFF};Count schedules
+  ${CYAN}patchScheduleAsync${OFF};Patch a schedule
   ${CYAN}updateScheduleAsync${OFF};Update a schedule
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2135,6 +2371,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShiftByIdAsync${OFF};Get shift by ID
   ${CYAN}getShiftsAsync${OFF};Get shifts
   ${CYAN}getShiftsCountAsync${OFF};Count shifts
+  ${CYAN}patchShiftAsync${OFF};Patch a shift
   ${CYAN}updateShiftAsync${OFF};Update a shift
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2146,6 +2383,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTimeIntervalByIdAsync${OFF};Get time interval by ID
   ${CYAN}getTimeIntervalsAsync${OFF};Get time intervals
   ${CYAN}getTimeIntervalsCountAsync${OFF};Count time intervals
+  ${CYAN}patchTimeIntervalAsync${OFF};Patch a time interval
   ${CYAN}updateTimeIntervalAsync${OFF};Update a time interval
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2157,6 +2395,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTrainingProgramCourseByIdAsync${OFF};Get training program course by ID
   ${CYAN}getTrainingProgramCoursesAsync${OFF};Get training program courses
   ${CYAN}getTrainingProgramCoursesCountAsync${OFF};Count training program courses
+  ${CYAN}patchTrainingProgramCourseAsync${OFF};Patch a training program course
   ${CYAN}updateTrainingProgramCourseAsync${OFF};Update a training program course
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2168,6 +2407,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTrainingProgramEventByIdAsync${OFF};Get training program event by ID
   ${CYAN}getTrainingProgramEventsAsync${OFF};Get training program events
   ${CYAN}getTrainingProgramEventsCountAsync${OFF};Count training program events
+  ${CYAN}patchTrainingProgramEventAsync${OFF};Patch a training program event
   ${CYAN}updateTrainingProgramEventAsync${OFF};Update a training program event
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2209,7 +2449,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}HrmsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}HrmsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -2229,7 +2469,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}HrmsService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}HrmsService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2736,6 +2976,37 @@ print_getEmployeeAppraisalSessionsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchEmployeeAppraisalSessionAsync operation
+#
+##############################################################################
+print_patchEmployeeAppraisalSessionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmployeeAppraisalSessionAsync - Patch an employee appraisal session${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing employee appraisal session for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}sessionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: sessionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateEmployeeAppraisalSessionAsync operation
 #
 ##############################################################################
@@ -2900,6 +3171,37 @@ print_getEmployeeTypesCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchEmployeeTypeAsync operation
+#
+##############################################################################
+print_patchEmployeeTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmployeeTypeAsync - Patch an employee type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing employee type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}employeeTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: employeeTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3074,6 +3376,37 @@ print_getEmployeesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchEmployeeAsync operation
+#
+##############################################################################
+print_patchEmployeeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmployeeAsync - Patch an employee${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing employee for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}employeeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: employeeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateEmployeeAsync operation
 #
 ##############################################################################
@@ -3238,6 +3571,37 @@ print_getEmployersCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchEmployerAsync operation
+#
+##############################################################################
+print_patchEmployerAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchEmployerAsync - Patch an employer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing employer for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}employerId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: employerId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3706,6 +4070,37 @@ print_getGigsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchGigAsync operation
+#
+##############################################################################
+print_patchGigAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchGigAsync - Patch a gig${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing gig for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gigId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gigId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateGigAsync operation
 #
 ##############################################################################
@@ -3870,6 +4265,37 @@ print_getJobOffersCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJobOfferAsync operation
+#
+##############################################################################
+print_patchJobOfferAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJobOfferAsync - Patch a job offer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing job offer for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -4044,6 +4470,37 @@ print_getJobTitlesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchJobTitleAsync operation
+#
+##############################################################################
+print_patchJobTitleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJobTitleAsync - Patch a job title${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing job title for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobTitleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobTitleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateJobTitleAsync operation
 #
 ##############################################################################
@@ -4208,6 +4665,37 @@ print_getLeaveApplicationsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchLeaveApplicationAsync operation
+#
+##############################################################################
+print_patchLeaveApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchLeaveApplicationAsync - Patch a leave application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing leave application for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}leaveApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: leaveApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -4720,6 +5208,37 @@ print_getPayrollsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchPayrollAsync operation
+#
+##############################################################################
+print_patchPayrollAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchPayrollAsync - Patch a payroll${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing payroll for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}payrollId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: payrollId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updatePayrollAsync operation
 #
 ##############################################################################
@@ -4884,6 +5403,37 @@ print_getSalaryByIdAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSalaryAsync operation
+#
+##############################################################################
+print_patchSalaryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSalaryAsync - Patch a salary${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing salary for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}salaryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: salaryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -5058,6 +5608,37 @@ print_getSchedulesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchScheduleAsync operation
+#
+##############################################################################
+print_patchScheduleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchScheduleAsync - Patch a schedule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing schedule for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}scheduleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: scheduleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateScheduleAsync operation
 #
 ##############################################################################
@@ -5222,6 +5803,37 @@ print_getShiftsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchShiftAsync operation
+#
+##############################################################################
+print_patchShiftAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchShiftAsync - Patch a shift${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing shift for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}shiftId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: shiftId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -5396,6 +6008,37 @@ print_getTimeIntervalsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchTimeIntervalAsync operation
+#
+##############################################################################
+print_patchTimeIntervalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTimeIntervalAsync - Patch a time interval${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing time interval for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}timeIntervalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeIntervalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTimeIntervalAsync operation
 #
 ##############################################################################
@@ -5565,6 +6208,37 @@ print_getTrainingProgramCoursesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchTrainingProgramCourseAsync operation
+#
+##############################################################################
+print_patchTrainingProgramCourseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTrainingProgramCourseAsync - Patch a training program course${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing training program course for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}courseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: courseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTrainingProgramCourseAsync operation
 #
 ##############################################################################
@@ -5729,6 +6403,37 @@ print_getTrainingProgramEventsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTrainingProgramEventAsync operation
+#
+##############################################################################
+print_patchTrainingProgramEventAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTrainingProgramEventAsync - Patch a training program event${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing training program event for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}eventId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: eventId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -6784,6 +7489,82 @@ call_getEmployeeAppraisalSessionsCountAsync() {
 
 ##############################################################################
 #
+# Call patchEmployeeAppraisalSessionAsync operation
+#
+##############################################################################
+call_patchEmployeeAppraisalSessionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(sessionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/EmployeeAppraisalSessions/{sessionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateEmployeeAppraisalSessionAsync operation
 #
 ##############################################################################
@@ -7075,6 +7856,82 @@ call_getEmployeeTypesCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchEmployeeTypeAsync operation
+#
+##############################################################################
+call_patchEmployeeTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(employeeTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/EmployeeTypes/{employeeTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7376,6 +8233,82 @@ call_getEmployeesCountAsync() {
 
 ##############################################################################
 #
+# Call patchEmployeeAsync operation
+#
+##############################################################################
+call_patchEmployeeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(employeeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Employees/{employeeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateEmployeeAsync operation
 #
 ##############################################################################
@@ -7667,6 +8600,82 @@ call_getEmployersCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchEmployerAsync operation
+#
+##############################################################################
+call_patchEmployerAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(employerId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Employers/{employerId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8919,6 +9928,82 @@ call_getGigsCountAsync() {
 
 ##############################################################################
 #
+# Call patchGigAsync operation
+#
+##############################################################################
+call_patchGigAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(gigId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Gigs/{gigId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateGigAsync operation
 #
 ##############################################################################
@@ -9210,6 +10295,82 @@ call_getJobOffersCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchJobOfferAsync operation
+#
+##############################################################################
+call_patchJobOfferAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/{jobOfferId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9511,6 +10672,82 @@ call_getJobTitlesCountAsync() {
 
 ##############################################################################
 #
+# Call patchJobTitleAsync operation
+#
+##############################################################################
+call_patchJobTitleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobTitleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobTitles/{jobTitleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateJobTitleAsync operation
 #
 ##############################################################################
@@ -9802,6 +11039,82 @@ call_getLeaveApplicationsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchLeaveApplicationAsync operation
+#
+##############################################################################
+call_patchLeaveApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(leaveApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/LeaveApplications/{leaveApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10695,6 +12008,82 @@ call_getPayrollsCountAsync() {
 
 ##############################################################################
 #
+# Call patchPayrollAsync operation
+#
+##############################################################################
+call_patchPayrollAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(payrollId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Payrolls/{payrollId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updatePayrollAsync operation
 #
 ##############################################################################
@@ -10986,6 +12375,82 @@ call_getSalaryByIdAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSalaryAsync operation
+#
+##############################################################################
+call_patchSalaryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(salaryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Salaries/{salaryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11287,6 +12752,82 @@ call_getSchedulesCountAsync() {
 
 ##############################################################################
 #
+# Call patchScheduleAsync operation
+#
+##############################################################################
+call_patchScheduleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(scheduleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Schedules/{scheduleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateScheduleAsync operation
 #
 ##############################################################################
@@ -11578,6 +13119,82 @@ call_getShiftsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchShiftAsync operation
+#
+##############################################################################
+call_patchShiftAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(shiftId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/Shifts/{shiftId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11879,6 +13496,82 @@ call_getTimeIntervalsCountAsync() {
 
 ##############################################################################
 #
+# Call patchTimeIntervalAsync operation
+#
+##############################################################################
+call_patchTimeIntervalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(timeIntervalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/TimeIntervals/{timeIntervalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTimeIntervalAsync operation
 #
 ##############################################################################
@@ -12175,6 +13868,82 @@ call_getTrainingProgramCoursesCountAsync() {
 
 ##############################################################################
 #
+# Call patchTrainingProgramCourseAsync operation
+#
+##############################################################################
+call_patchTrainingProgramCourseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(courseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/TrainingProgramCourses/{courseId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTrainingProgramCourseAsync operation
 #
 ##############################################################################
@@ -12466,6 +14235,82 @@ call_getTrainingProgramEventsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchTrainingProgramEventAsync operation
+#
+##############################################################################
+call_patchTrainingProgramEventAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(eventId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/TrainingProgramEvents/{eventId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12992,6 +14837,9 @@ case $key in
     getEmployeeAppraisalSessionsCountAsync)
     operation="getEmployeeAppraisalSessionsCountAsync"
     ;;
+    patchEmployeeAppraisalSessionAsync)
+    operation="patchEmployeeAppraisalSessionAsync"
+    ;;
     updateEmployeeAppraisalSessionAsync)
     operation="updateEmployeeAppraisalSessionAsync"
     ;;
@@ -13009,6 +14857,9 @@ case $key in
     ;;
     getEmployeeTypesCountAsync)
     operation="getEmployeeTypesCountAsync"
+    ;;
+    patchEmployeeTypeAsync)
+    operation="patchEmployeeTypeAsync"
     ;;
     updateEmployeeTypeAsync)
     operation="updateEmployeeTypeAsync"
@@ -13028,6 +14879,9 @@ case $key in
     getEmployeesCountAsync)
     operation="getEmployeesCountAsync"
     ;;
+    patchEmployeeAsync)
+    operation="patchEmployeeAsync"
+    ;;
     updateEmployeeAsync)
     operation="updateEmployeeAsync"
     ;;
@@ -13045,6 +14899,9 @@ case $key in
     ;;
     getEmployersCountAsync)
     operation="getEmployersCountAsync"
+    ;;
+    patchEmployerAsync)
+    operation="patchEmployerAsync"
     ;;
     updateEmployerAsync)
     operation="updateEmployerAsync"
@@ -13115,6 +14972,9 @@ case $key in
     getGigsCountAsync)
     operation="getGigsCountAsync"
     ;;
+    patchGigAsync)
+    operation="patchGigAsync"
+    ;;
     updateGigAsync)
     operation="updateGigAsync"
     ;;
@@ -13132,6 +14992,9 @@ case $key in
     ;;
     getJobOffersCountAsync)
     operation="getJobOffersCountAsync"
+    ;;
+    patchJobOfferAsync)
+    operation="patchJobOfferAsync"
     ;;
     updateJobOfferAsync)
     operation="updateJobOfferAsync"
@@ -13151,6 +15014,9 @@ case $key in
     getJobTitlesCountAsync)
     operation="getJobTitlesCountAsync"
     ;;
+    patchJobTitleAsync)
+    operation="patchJobTitleAsync"
+    ;;
     updateJobTitleAsync)
     operation="updateJobTitleAsync"
     ;;
@@ -13168,6 +15034,9 @@ case $key in
     ;;
     getLeaveApplicationsCountAsync)
     operation="getLeaveApplicationsCountAsync"
+    ;;
+    patchLeaveApplicationAsync)
+    operation="patchLeaveApplicationAsync"
     ;;
     updateLeaveApplicationAsync)
     operation="updateLeaveApplicationAsync"
@@ -13223,6 +15092,9 @@ case $key in
     getPayrollsCountAsync)
     operation="getPayrollsCountAsync"
     ;;
+    patchPayrollAsync)
+    operation="patchPayrollAsync"
+    ;;
     updatePayrollAsync)
     operation="updatePayrollAsync"
     ;;
@@ -13240,6 +15112,9 @@ case $key in
     ;;
     getSalaryByIdAsync)
     operation="getSalaryByIdAsync"
+    ;;
+    patchSalaryAsync)
+    operation="patchSalaryAsync"
     ;;
     updateSalaryAsync)
     operation="updateSalaryAsync"
@@ -13259,6 +15134,9 @@ case $key in
     getSchedulesCountAsync)
     operation="getSchedulesCountAsync"
     ;;
+    patchScheduleAsync)
+    operation="patchScheduleAsync"
+    ;;
     updateScheduleAsync)
     operation="updateScheduleAsync"
     ;;
@@ -13276,6 +15154,9 @@ case $key in
     ;;
     getShiftsCountAsync)
     operation="getShiftsCountAsync"
+    ;;
+    patchShiftAsync)
+    operation="patchShiftAsync"
     ;;
     updateShiftAsync)
     operation="updateShiftAsync"
@@ -13295,6 +15176,9 @@ case $key in
     getTimeIntervalsCountAsync)
     operation="getTimeIntervalsCountAsync"
     ;;
+    patchTimeIntervalAsync)
+    operation="patchTimeIntervalAsync"
+    ;;
     updateTimeIntervalAsync)
     operation="updateTimeIntervalAsync"
     ;;
@@ -13313,6 +15197,9 @@ case $key in
     getTrainingProgramCoursesCountAsync)
     operation="getTrainingProgramCoursesCountAsync"
     ;;
+    patchTrainingProgramCourseAsync)
+    operation="patchTrainingProgramCourseAsync"
+    ;;
     updateTrainingProgramCourseAsync)
     operation="updateTrainingProgramCourseAsync"
     ;;
@@ -13330,6 +15217,9 @@ case $key in
     ;;
     getTrainingProgramEventsCountAsync)
     operation="getTrainingProgramEventsCountAsync"
+    ;;
+    patchTrainingProgramEventAsync)
+    operation="patchTrainingProgramEventAsync"
     ;;
     updateTrainingProgramEventAsync)
     operation="updateTrainingProgramEventAsync"
@@ -13493,6 +15383,9 @@ case $operation in
     getEmployeeAppraisalSessionsCountAsync)
     call_getEmployeeAppraisalSessionsCountAsync
     ;;
+    patchEmployeeAppraisalSessionAsync)
+    call_patchEmployeeAppraisalSessionAsync
+    ;;
     updateEmployeeAppraisalSessionAsync)
     call_updateEmployeeAppraisalSessionAsync
     ;;
@@ -13510,6 +15403,9 @@ case $operation in
     ;;
     getEmployeeTypesCountAsync)
     call_getEmployeeTypesCountAsync
+    ;;
+    patchEmployeeTypeAsync)
+    call_patchEmployeeTypeAsync
     ;;
     updateEmployeeTypeAsync)
     call_updateEmployeeTypeAsync
@@ -13529,6 +15425,9 @@ case $operation in
     getEmployeesCountAsync)
     call_getEmployeesCountAsync
     ;;
+    patchEmployeeAsync)
+    call_patchEmployeeAsync
+    ;;
     updateEmployeeAsync)
     call_updateEmployeeAsync
     ;;
@@ -13546,6 +15445,9 @@ case $operation in
     ;;
     getEmployersCountAsync)
     call_getEmployersCountAsync
+    ;;
+    patchEmployerAsync)
+    call_patchEmployerAsync
     ;;
     updateEmployerAsync)
     call_updateEmployerAsync
@@ -13616,6 +15518,9 @@ case $operation in
     getGigsCountAsync)
     call_getGigsCountAsync
     ;;
+    patchGigAsync)
+    call_patchGigAsync
+    ;;
     updateGigAsync)
     call_updateGigAsync
     ;;
@@ -13633,6 +15538,9 @@ case $operation in
     ;;
     getJobOffersCountAsync)
     call_getJobOffersCountAsync
+    ;;
+    patchJobOfferAsync)
+    call_patchJobOfferAsync
     ;;
     updateJobOfferAsync)
     call_updateJobOfferAsync
@@ -13652,6 +15560,9 @@ case $operation in
     getJobTitlesCountAsync)
     call_getJobTitlesCountAsync
     ;;
+    patchJobTitleAsync)
+    call_patchJobTitleAsync
+    ;;
     updateJobTitleAsync)
     call_updateJobTitleAsync
     ;;
@@ -13669,6 +15580,9 @@ case $operation in
     ;;
     getLeaveApplicationsCountAsync)
     call_getLeaveApplicationsCountAsync
+    ;;
+    patchLeaveApplicationAsync)
+    call_patchLeaveApplicationAsync
     ;;
     updateLeaveApplicationAsync)
     call_updateLeaveApplicationAsync
@@ -13724,6 +15638,9 @@ case $operation in
     getPayrollsCountAsync)
     call_getPayrollsCountAsync
     ;;
+    patchPayrollAsync)
+    call_patchPayrollAsync
+    ;;
     updatePayrollAsync)
     call_updatePayrollAsync
     ;;
@@ -13741,6 +15658,9 @@ case $operation in
     ;;
     getSalaryByIdAsync)
     call_getSalaryByIdAsync
+    ;;
+    patchSalaryAsync)
+    call_patchSalaryAsync
     ;;
     updateSalaryAsync)
     call_updateSalaryAsync
@@ -13760,6 +15680,9 @@ case $operation in
     getSchedulesCountAsync)
     call_getSchedulesCountAsync
     ;;
+    patchScheduleAsync)
+    call_patchScheduleAsync
+    ;;
     updateScheduleAsync)
     call_updateScheduleAsync
     ;;
@@ -13777,6 +15700,9 @@ case $operation in
     ;;
     getShiftsCountAsync)
     call_getShiftsCountAsync
+    ;;
+    patchShiftAsync)
+    call_patchShiftAsync
     ;;
     updateShiftAsync)
     call_updateShiftAsync
@@ -13796,6 +15722,9 @@ case $operation in
     getTimeIntervalsCountAsync)
     call_getTimeIntervalsCountAsync
     ;;
+    patchTimeIntervalAsync)
+    call_patchTimeIntervalAsync
+    ;;
     updateTimeIntervalAsync)
     call_updateTimeIntervalAsync
     ;;
@@ -13814,6 +15743,9 @@ case $operation in
     getTrainingProgramCoursesCountAsync)
     call_getTrainingProgramCoursesCountAsync
     ;;
+    patchTrainingProgramCourseAsync)
+    call_patchTrainingProgramCourseAsync
+    ;;
     updateTrainingProgramCourseAsync)
     call_updateTrainingProgramCourseAsync
     ;;
@@ -13831,6 +15763,9 @@ case $operation in
     ;;
     getTrainingProgramEventsCountAsync)
     call_getTrainingProgramEventsCountAsync
+    ;;
+    patchTrainingProgramEventAsync)
+    call_patchTrainingProgramEventAsync
     ;;
     updateTrainingProgramEventAsync)
     call_updateTrainingProgramEventAsync

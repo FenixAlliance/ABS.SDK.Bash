@@ -80,6 +80,8 @@ _()
     operations["getDealUnitFlowStagesCountAsync"]=1
     operations["getDealUnitFlowsAsync"]=1
     operations["getDealUnitFlowsCountAsync"]=1
+    operations["patchDealUnitFlowAsync"]=1
+    operations["patchDealUnitFlowStageAsync"]=1
     operations["updateDealUnitFlowAsync"]=1
     operations["updateDealUnitFlowStageAsync"]=1
     operations["calculateDealUnitAsync"]=1
@@ -96,6 +98,8 @@ _()
     operations["getDealUnitsCountAsync"]=1
     operations["getExtendedDealUnitAsync"]=1
     operations["getExtendedDealUnitsAsync"]=1
+    operations["patchDealUnitAsync"]=1
+    operations["patchDealUnitLineAsync"]=1
     operations["updateDealUnitAsync"]=1
     operations["updateDealUnitPriceAsync"]=1
     operations["accountLogoutPost"]=1
@@ -130,6 +134,8 @@ _()
     operation_parameters["getDealUnitFlowStagesCountAsync"]="dealUnitFlowId= tenantId= "
     operation_parameters["getDealUnitFlowsAsync"]="tenantId= "
     operation_parameters["getDealUnitFlowsCountAsync"]="tenantId= "
+    operation_parameters["patchDealUnitFlowAsync"]="dealUnitFlowId= tenantId= "
+    operation_parameters["patchDealUnitFlowStageAsync"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= "
     operation_parameters["updateDealUnitFlowAsync"]="dealUnitFlowId= tenantId= "
     operation_parameters["updateDealUnitFlowStageAsync"]="dealUnitFlowId= dealUnitFlowStageId= tenantId= "
     operation_parameters["calculateDealUnitAsync"]="dealUnitId= tenantId= "
@@ -146,6 +152,8 @@ _()
     operation_parameters["getDealUnitsCountAsync"]="tenantId= "
     operation_parameters["getExtendedDealUnitAsync"]="dealUnitId= tenantId= "
     operation_parameters["getExtendedDealUnitsAsync"]="tenantId= "
+    operation_parameters["patchDealUnitAsync"]="dealUnitId= tenantId= "
+    operation_parameters["patchDealUnitLineAsync"]="dealUnitId= dealUnitLineId= tenantId= "
     operation_parameters["updateDealUnitAsync"]="dealUnitId= tenantId= "
     operation_parameters["updateDealUnitPriceAsync"]="dealUnitId= dealUnitLineId= tenantId= "
     operation_parameters["accountLogoutPost"]=""

@@ -75,30 +75,35 @@ _()
     operations["getCourseArticleByIdAsync"]=1
     operations["getCourseArticlesAsync"]=1
     operations["getCourseArticlesCountAsync"]=1
+    operations["patchCourseArticleAsync"]=1
     operations["updateCourseArticleAsync"]=1
     operations["createCourseAssignmentComponentAsync"]=1
     operations["deleteCourseAssignmentComponentAsync"]=1
     operations["getCourseAssignmentComponentByIdAsync"]=1
     operations["getCourseAssignmentComponentsAsync"]=1
     operations["getCourseAssignmentComponentsCountAsync"]=1
+    operations["patchCourseAssignmentComponentAsync"]=1
     operations["updateCourseAssignmentComponentAsync"]=1
     operations["createCourseAssignmentTypeAsync"]=1
     operations["deleteCourseAssignmentTypeAsync"]=1
     operations["getCourseAssignmentTypeByIdAsync"]=1
     operations["getCourseAssignmentTypesAsync"]=1
     operations["getCourseAssignmentTypesCountAsync"]=1
+    operations["patchCourseAssignmentTypeAsync"]=1
     operations["updateCourseAssignmentTypeAsync"]=1
     operations["createCourseAssignmentAsync"]=1
     operations["deleteCourseAssignmentAsync"]=1
     operations["getCourseAssignmentByIdAsync"]=1
     operations["getCourseAssignmentsAsync"]=1
     operations["getCourseAssignmentsCountAsync"]=1
+    operations["patchCourseAssignmentAsync"]=1
     operations["updateCourseAssignmentAsync"]=1
     operations["createCourseCategoryAsync"]=1
     operations["deleteCourseCategoryAsync"]=1
     operations["getCourseCategoriesAsync"]=1
     operations["getCourseCategoriesCountAsync"]=1
     operations["getCourseCategoryByIdAsync"]=1
+    operations["patchCourseCategoryAsync"]=1
     operations["updateCourseCategoryAsync"]=1
     operations["createCourseCertificateAsync"]=1
     operations["createCourseCertificateTemplateAsync"]=1
@@ -110,6 +115,8 @@ _()
     operations["getCourseCertificateTemplatesCountAsync"]=1
     operations["getCourseCertificatesAsync"]=1
     operations["getCourseCertificatesCountAsync"]=1
+    operations["patchCourseCertificateAsync"]=1
+    operations["patchCourseCertificateTemplateAsync"]=1
     operations["updateCourseCertificateAsync"]=1
     operations["updateCourseCertificateTemplateAsync"]=1
     operations["createCourseCohortAsync"]=1
@@ -117,6 +124,7 @@ _()
     operations["getCourseCohortByIdAsync"]=1
     operations["getCourseCohortsAsync"]=1
     operations["getCourseCohortsCountAsync"]=1
+    operations["patchCourseCohortAsync"]=1
     operations["updateCourseCohortAsync"]=1
     operations["createCourseContentGroupAsync"]=1
     operations["deleteCourseContentGroupAsync"]=1
@@ -125,6 +133,7 @@ _()
     operations["getCourseContentGroupsByCourseAsync"]=1
     operations["getCourseContentGroupsByCourseCountAsync"]=1
     operations["getCourseContentGroupsCountAsync"]=1
+    operations["patchCourseContentGroupAsync"]=1
     operations["updateCourseContentGroupAsync"]=1
     operations["createCourseEnrollmentAsync"]=1
     operations["deleteCourseEnrollmentAsync"]=1
@@ -132,84 +141,98 @@ _()
     operations["getEnrollmentsAsync"]=1
     operations["getEnrollmentsCountAsync"]=1
     operations["getStudentCourseEnrollmentsAsync"]=1
+    operations["patchCourseEnrollmentAsync"]=1
     operations["updateCourseEnrollmentAsync"]=1
     operations["createCourseFileAsync"]=1
     operations["deleteCourseFileAsync"]=1
     operations["getCourseFileByIdAsync"]=1
     operations["getCourseFilesAsync"]=1
     operations["getCourseFilesCountAsync"]=1
+    operations["patchCourseFileAsync"]=1
     operations["updateCourseFileAsync"]=1
     operations["createCourseForumAsync"]=1
     operations["deleteCourseForumAsync"]=1
     operations["getCourseForumByIdAsync"]=1
     operations["getCourseForumsAsync"]=1
     operations["getCourseForumsCountAsync"]=1
+    operations["patchCourseForumAsync"]=1
     operations["updateCourseForumAsync"]=1
     operations["createCourseGradingRubricAsync"]=1
     operations["deleteCourseGradingRubricAsync"]=1
     operations["getCourseGradingRubricByIdAsync"]=1
     operations["getCourseGradingRubricsAsync"]=1
     operations["getCourseGradingRubricsCountAsync"]=1
+    operations["patchCourseGradingRubricAsync"]=1
     operations["updateCourseGradingRubricAsync"]=1
     operations["createCourseHandoutAsync"]=1
     operations["deleteCourseHandoutAsync"]=1
     operations["getCourseHandoutByIdAsync"]=1
     operations["getCourseHandoutsAsync"]=1
     operations["getCourseHandoutsCountAsync"]=1
+    operations["patchCourseHandoutAsync"]=1
     operations["updateCourseHandoutAsync"]=1
     operations["createCourseLibraryAsync"]=1
     operations["deleteCourseLibraryAsync"]=1
     operations["getCourseLibrariesAsync"]=1
     operations["getCourseLibrariesCountAsync"]=1
     operations["getCourseLibraryByIdAsync"]=1
+    operations["patchCourseLibraryAsync"]=1
     operations["updateCourseLibraryAsync"]=1
     operations["createCoursePageAsync"]=1
     operations["deleteCoursePageAsync"]=1
     operations["getCoursePageByIdAsync"]=1
     operations["getCoursePagesAsync"]=1
     operations["getCoursePagesCountAsync"]=1
+    operations["patchCoursePageAsync"]=1
     operations["updateCoursePageAsync"]=1
     operations["createCourseProblemSetAsync"]=1
     operations["deleteCourseProblemSetAsync"]=1
     operations["getCourseProblemSetByIdAsync"]=1
     operations["getCourseProblemSetsAsync"]=1
     operations["getCourseProblemSetsCountAsync"]=1
+    operations["patchCourseProblemSetAsync"]=1
     operations["updateCourseProblemSetAsync"]=1
     operations["createCourseSectionAsync"]=1
     operations["deleteCourseSectionAsync"]=1
     operations["getCourseSectionByIdAsync"]=1
     operations["getCourseSectionsAsync"]=1
     operations["getCourseSectionsCountAsync"]=1
+    operations["patchCourseSectionAsync"]=1
     operations["updateCourseSectionAsync"]=1
     operations["createCourseTeamMembershipAsync"]=1
     operations["deleteCourseTeamMembershipAsync"]=1
     operations["getCourseTeamMembershipByIdAsync"]=1
     operations["getCourseTeamMembershipsAsync"]=1
     operations["getCourseTeamMembershipsCountAsync"]=1
+    operations["patchCourseTeamMembershipAsync"]=1
     operations["updateCourseTeamMembershipAsync"]=1
     operations["createCourseUnitComponentAsync"]=1
     operations["deleteCourseUnitComponentAsync"]=1
     operations["getCourseUnitComponentByIdAsync"]=1
     operations["getCourseUnitComponentsAsync"]=1
     operations["getCourseUnitComponentsCountAsync"]=1
+    operations["patchCourseUnitComponentAsync"]=1
     operations["updateCourseUnitComponentAsync"]=1
     operations["createCourseUnitAsync"]=1
     operations["deleteCourseUnitAsync"]=1
     operations["getCourseUnitByIdAsync"]=1
     operations["getCourseUnitsAsync"]=1
     operations["getCourseUnitsCountAsync"]=1
+    operations["patchCourseUnitAsync"]=1
     operations["updateCourseUnitAsync"]=1
     operations["createCourseUpdateAsync"]=1
     operations["deleteCourseUpdateAsync"]=1
     operations["getCourseUpdateByIdAsync"]=1
     operations["getCourseUpdatesAsync"]=1
     operations["getCourseUpdatesCountAsync"]=1
+    operations["patchCourseUpdateAsync"]=1
     operations["updateCourseUpdateAsync"]=1
     operations["createCourseWikiAsync"]=1
     operations["deleteCourseWikiAsync"]=1
     operations["getCourseWikiByIdAsync"]=1
     operations["getCourseWikisAsync"]=1
     operations["getCourseWikisCountAsync"]=1
+    operations["patchCourseWikiAsync"]=1
     operations["updateCourseWikiAsync"]=1
     operations["createCourseAsync"]=1
     operations["deleteCourseAsync"]=1
@@ -251,6 +274,7 @@ _()
     operations["getInstructorProfilesByCourseCountAsync"]=1
     operations["getStudentProfilesByCourseAsync"]=1
     operations["getStudentProfilesByCourseCountAsync"]=1
+    operations["patchCourseAsync"]=1
     operations["updateCourseAsync"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
@@ -273,6 +297,7 @@ _()
     operations["apiV2LearningServiceInstructorProfilesGet"]=1
     operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete"]=1
     operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet"]=1
+    operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch"]=1
     operations["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut"]=1
     operations["apiV2LearningServiceInstructorProfilesPost"]=1
     operations["getMyAverageScoreAsync"]=1
@@ -297,6 +322,7 @@ _()
     operations["apiV2LearningServiceStudentProfilesStudentProfileIdDelete"]=1
     operations["apiV2LearningServiceStudentProfilesStudentProfileIdGet"]=1
     operations["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet"]=1
+    operations["apiV2LearningServiceStudentProfilesStudentProfileIdPatch"]=1
     operations["apiV2LearningServiceStudentProfilesStudentProfileIdPut"]=1
 
     # An associative array of operations to their parameters
@@ -308,30 +334,35 @@ _()
     operation_parameters["getCourseArticleByIdAsync"]="articleId= api-version= x-api-version: "
     operation_parameters["getCourseArticlesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseArticlesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseArticleAsync"]="articleId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseArticleAsync"]="articleId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseAssignmentComponentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseAssignmentComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentComponentByIdAsync"]="componentId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentComponentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentComponentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseAssignmentComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseAssignmentComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseAssignmentTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseAssignmentTypeAsync"]="assignmentTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentTypeByIdAsync"]="assignmentTypeId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentTypesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseAssignmentTypeAsync"]="assignmentTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseAssignmentTypeAsync"]="assignmentTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseAssignmentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseAssignmentAsync"]="assignmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentByIdAsync"]="assignmentId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseAssignmentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseAssignmentAsync"]="assignmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseAssignmentAsync"]="assignmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseCategoryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseCategoryAsync"]="categoryId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseCategoriesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseCategoriesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseCategoryByIdAsync"]="categoryId= api-version= x-api-version: "
+    operation_parameters["patchCourseCategoryAsync"]="categoryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseCategoryAsync"]="categoryId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseCertificateAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createCourseCertificateTemplateAsync"]="tenantId= api-version= x-api-version: "
@@ -343,6 +374,8 @@ _()
     operation_parameters["getCourseCertificateTemplatesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseCertificatesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseCertificatesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseCertificateAsync"]="courseCertificateId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseCertificateTemplateAsync"]="courseCertificateTemplateId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseCertificateAsync"]="courseCertificateId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseCertificateTemplateAsync"]="courseCertificateTemplateId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseCohortAsync"]="tenantId= api-version= x-api-version: "
@@ -350,6 +383,7 @@ _()
     operation_parameters["getCourseCohortByIdAsync"]="cohortId= api-version= x-api-version: "
     operation_parameters["getCourseCohortsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseCohortsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseCohortAsync"]="cohortId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseCohortAsync"]="cohortId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseContentGroupAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseContentGroupAsync"]="groupId= tenantId= api-version= x-api-version: "
@@ -358,6 +392,7 @@ _()
     operation_parameters["getCourseContentGroupsByCourseAsync"]="courseId= api-version= x-api-version: "
     operation_parameters["getCourseContentGroupsByCourseCountAsync"]="courseId= api-version= x-api-version: "
     operation_parameters["getCourseContentGroupsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseContentGroupAsync"]="groupId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseContentGroupAsync"]="groupId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseEnrollmentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseEnrollmentAsync"]="courseEnrollmentId= tenantId= api-version= x-api-version: "
@@ -365,84 +400,98 @@ _()
     operation_parameters["getEnrollmentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEnrollmentsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getStudentCourseEnrollmentsAsync"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseEnrollmentAsync"]="courseEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseEnrollmentAsync"]="courseEnrollmentId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseFileAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseFileByIdAsync"]="fileId= api-version= x-api-version: "
     operation_parameters["getCourseFilesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseFilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseForumAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseForumAsync"]="forumId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseForumByIdAsync"]="forumId= api-version= x-api-version: "
     operation_parameters["getCourseForumsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseForumsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseForumAsync"]="forumId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseForumAsync"]="forumId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseGradingRubricAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseGradingRubricAsync"]="rubricId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseGradingRubricByIdAsync"]="rubricId= api-version= x-api-version: "
     operation_parameters["getCourseGradingRubricsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseGradingRubricsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseGradingRubricAsync"]="rubricId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseGradingRubricAsync"]="rubricId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseHandoutAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseHandoutAsync"]="handoutId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseHandoutByIdAsync"]="handoutId= api-version= x-api-version: "
     operation_parameters["getCourseHandoutsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseHandoutsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseHandoutAsync"]="handoutId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseHandoutAsync"]="handoutId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseLibraryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseLibraryAsync"]="libraryId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseLibrariesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseLibrariesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseLibraryByIdAsync"]="libraryId= api-version= x-api-version: "
+    operation_parameters["patchCourseLibraryAsync"]="libraryId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseLibraryAsync"]="libraryId= tenantId= api-version= x-api-version: "
     operation_parameters["createCoursePageAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCoursePageAsync"]="pageId= tenantId= api-version= x-api-version: "
     operation_parameters["getCoursePageByIdAsync"]="pageId= api-version= x-api-version: "
     operation_parameters["getCoursePagesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCoursePagesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCoursePageAsync"]="pageId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCoursePageAsync"]="pageId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseProblemSetAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseProblemSetAsync"]="problemSetId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseProblemSetByIdAsync"]="problemSetId= api-version= x-api-version: "
     operation_parameters["getCourseProblemSetsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseProblemSetsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseProblemSetAsync"]="problemSetId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseProblemSetAsync"]="problemSetId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseSectionAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseSectionAsync"]="sectionId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseSectionByIdAsync"]="sectionId= api-version= x-api-version: "
     operation_parameters["getCourseSectionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseSectionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseSectionAsync"]="sectionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseSectionAsync"]="sectionId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseTeamMembershipAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseTeamMembershipAsync"]="membershipId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseTeamMembershipByIdAsync"]="membershipId= api-version= x-api-version: "
     operation_parameters["getCourseTeamMembershipsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseTeamMembershipsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseTeamMembershipAsync"]="membershipId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseTeamMembershipAsync"]="membershipId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseUnitComponentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseUnitComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseUnitComponentByIdAsync"]="componentId= api-version= x-api-version: "
     operation_parameters["getCourseUnitComponentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseUnitComponentsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseUnitComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseUnitComponentAsync"]="componentId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseUnitAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseUnitAsync"]="unitId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseUnitByIdAsync"]="unitId= api-version= x-api-version: "
     operation_parameters["getCourseUnitsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseUnitsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseUnitAsync"]="unitId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseUnitAsync"]="unitId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseUpdateAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseUpdateAsync"]="updateId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseUpdateByIdAsync"]="updateId= api-version= x-api-version: "
     operation_parameters["getCourseUpdatesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseUpdatesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseUpdateAsync"]="updateId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseUpdateAsync"]="updateId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseWikiAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseWikiAsync"]="wikiId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseWikiByIdAsync"]="wikiId= api-version= x-api-version: "
     operation_parameters["getCourseWikisAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCourseWikisCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchCourseWikiAsync"]="wikiId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseWikiAsync"]="wikiId= tenantId= api-version= x-api-version: "
     operation_parameters["createCourseAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
@@ -484,6 +533,7 @@ _()
     operation_parameters["getInstructorProfilesByCourseCountAsync"]="courseId= api-version= x-api-version: "
     operation_parameters["getStudentProfilesByCourseAsync"]="courseId= api-version= x-api-version: "
     operation_parameters["getStudentProfilesByCourseCountAsync"]="courseId= api-version= x-api-version: "
+    operation_parameters["patchCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCourseAsync"]="courseId= tenantId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
@@ -506,6 +556,7 @@ _()
     operation_parameters["apiV2LearningServiceInstructorProfilesGet"]="tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdDelete"]="instructorProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdGet"]="instructorProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdPatch"]="instructorProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceInstructorProfilesInstructorProfileIdPut"]="instructorProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceInstructorProfilesPost"]="tenantId= api-version= x-api-version: "
     operation_parameters["getMyAverageScoreAsync"]="api-version= x-api-version: "
@@ -530,6 +581,7 @@ _()
     operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdDelete"]="studentProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdGet"]="studentProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdHoursCompletedGet"]="studentProfileId= tenantId= api-version= x-api-version: "
+    operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdPatch"]="studentProfileId= tenantId= api-version= x-api-version: "
     operation_parameters["apiV2LearningServiceStudentProfilesStudentProfileIdPut"]="studentProfileId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

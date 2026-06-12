@@ -310,6 +310,8 @@ case $state in
             "markAirwayBillArrivedAsync[Mark airway bill arrived]" \
             "markAirwayBillDeliveredAsync[Mark airway bill delivered]" \
             "markAirwayBillInTransitAsync[Mark airway bill in transit]" \
+            "patchAirwayBillAsync[Patch an airway bill]" \
+            "patchAirwayBillLineAsync[Patch an airway bill line]" \
             "removeAirwayBillLineAsync[Remove an airway bill line]" \
             "updateAirwayBillAsync[Update an airway bill]" \
             "updateAirwayBillLineAsync[Update an airway bill line]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createDeliveryNoteAsync[Create a delivery note]" \
@@ -343,6 +345,8 @@ case $state in
             "getItemPackingSlipEntryByIdAsync[Get packing slip entry by ID]" \
             "getItemPackingSlipsAsync[Get all item packing slips]" \
             "getItemPackingSlipsCountAsync[Get item packing slips count]" \
+            "patchItemPackingSlipAsync[Patch an item packing slip]" \
+            "patchItemPackingSlipEntryAsync[Patch a packing slip entry]" \
             "updateItemPackingSlipAsync[Update an item packing slip]" \
             "updateItemPackingSlipEntryAsync[Update a packing slip entry]"             "createItemPickListAsync[Create an item pick list]" \
             "createItemPickListEntryAsync[Create a pick list entry]" \
@@ -354,6 +358,8 @@ case $state in
             "getItemPickListEntryByIdAsync[Get pick list entry by ID]" \
             "getItemPickListsAsync[Get all item pick lists]" \
             "getItemPickListsCountAsync[Get item pick lists count]" \
+            "patchItemPickListAsync[Patch an item pick list]" \
+            "patchItemPickListEntryAsync[Patch a pick list entry]" \
             "updateItemPickListAsync[Update an item pick list]" \
             "updateItemPickListEntryAsync[Update a pick list entry]"             "createItemRestockAsync[Create an item restock]" \
             "createItemRestockEntryAsync[Create a restock entry]" \
@@ -365,17 +371,21 @@ case $state in
             "getItemRestockEntryByIdAsync[Get restock entry by ID]" \
             "getItemRestocksAsync[Get all item restocks]" \
             "getItemRestocksCountAsync[Get item restocks count]" \
+            "patchItemRestockAsync[Patch an item restock]" \
+            "patchItemRestockEntryAsync[Patch a restock entry]" \
             "updateItemRestockAsync[Update an item restock]" \
             "updateItemRestockEntryAsync[Update a restock entry]"             "createItemRetainSampleAsync[Create an item retain sample]" \
             "deleteItemRetainSampleAsync[Delete an item retain sample]" \
             "getItemRetainSampleByIdAsync[Get item retain sample by ID]" \
             "getItemRetainSamplesAsync[Get all item retain samples]" \
             "getItemRetainSamplesCountAsync[Get item retain samples count]" \
+            "patchItemRetainSampleAsync[Patch an item retain sample]" \
             "updateItemRetainSampleAsync[Update an item retain sample]"             "createPortAsync[Create a port]" \
             "deletePortAsync[Delete a port]" \
             "getPortByIdAsync[Get port by ID]" \
             "getPortsAsync[Get all ports]" \
             "getPortsCountAsync[Get ports count]" \
+            "patchPortAsync[Patch a port]" \
             "updatePortAsync[Update a port]"             "addProofOfDeliveryLineAsync[Add a line to proof of delivery]" \
             "attachDeliveryNoteAsync[Attach a delivery note]" \
             "createProofOfDeliveryAsync[Create a proof of delivery]" \
@@ -389,6 +399,8 @@ case $state in
             "getProofOfDeliveryLinesCountAsync[Get proof of delivery lines count]" \
             "getProofsOfDeliveryAsync[Get all proofs of delivery]" \
             "getProofsOfDeliveryCountAsync[Get proofs of delivery count]" \
+            "patchProofOfDeliveryAsync[Patch a proof of delivery]" \
+            "patchProofOfDeliveryLineAsync[Patch a proof of delivery line]" \
             "rejectProofOfDeliveryAsync[Reject a proof of delivery]" \
             "removeProofOfDeliveryLineAsync[Remove a proof of delivery line]" \
             "signProofOfDeliveryAsync[Sign a proof of delivery]" \
@@ -405,6 +417,8 @@ case $state in
             "issueRailWaybillAsync[Issue a rail waybill]" \
             "markRailWaybillDeliveredAsync[Mark rail waybill delivered]" \
             "markRailWaybillInTransitAsync[Mark rail waybill in transit]" \
+            "patchRailWaybillAsync[Patch a rail waybill]" \
+            "patchRailWaybillLineAsync[Patch a rail waybill line]" \
             "removeRailWaybillLineAsync[Remove a rail waybill line]" \
             "updateRailWaybillAsync[Update a rail waybill]" \
             "updateRailWaybillLineAsync[Update a rail waybill line]"             "addRoadWaybillLineAsync[Add a line to road waybill]" \
@@ -420,6 +434,8 @@ case $state in
             "issueRoadWaybillAsync[Issue a road waybill]" \
             "markRoadWaybillDeliveredAsync[Mark road waybill delivered]" \
             "markRoadWaybillInTransitAsync[Mark road waybill in transit]" \
+            "patchRoadWaybillAsync[Patch a road waybill]" \
+            "patchRoadWaybillLineAsync[Patch a road waybill line]" \
             "removeRoadWaybillLineAsync[Remove a road waybill line]" \
             "updateRoadWaybillAsync[Update a road waybill]" \
             "updateRoadWaybillLineAsync[Update a road waybill line]"             "addSeawayBillLineAsync[Add a line to seaway bill]" \
@@ -434,6 +450,8 @@ case $state in
             "issueSeawayBillAsync[Issue a seaway bill]" \
             "markSeawayBillArrivedAsync[Mark seaway bill arrived]" \
             "markSeawayBillInTransitAsync[Mark seaway bill in transit]" \
+            "patchSeawayBillAsync[Patch a seaway bill]" \
+            "patchSeawayBillLineAsync[Patch a seaway bill line]" \
             "releaseSeawayBillAsync[Release a seaway bill]" \
             "removeSeawayBillLineAsync[Remove a seaway bill line]" \
             "updateSeawayBillAsync[Update a seaway bill]" \
@@ -442,6 +460,7 @@ case $state in
             "getSupplierProfileByIdAsync[Get supplier profile by ID]" \
             "getSupplierProfilesAsync[Get all supplier profiles]" \
             "getSupplierProfilesCountAsync[Get supplier profiles count]" \
+            "patchSupplierProfileAsync[Patch a supplier profile]" \
             "updateSupplierProfileAsync[Update a supplier profile]"             "activateTruckDriverAsync[Activate a truck driver]" \
             "createTruckDriverAsync[Create a truck driver]" \
             "deactivateTruckDriverAsync[Deactivate a truck driver]" \
@@ -449,6 +468,7 @@ case $state in
             "getTruckDriverByIdAsync[Get truck driver by ID]" \
             "getTruckDriversAsync[Get all truck drivers]" \
             "getTruckDriversCountAsync[Get truck drivers count]" \
+            "patchTruckDriverAsync[Patch a truck driver]" \
             "updateTruckDriverAsync[Update a truck driver]"             "arriveTripAsync[Arrive a trip]" \
             "cancelTripAsync[Cancel a trip]" \
             "createTruckAsync[Create a truck]" \
@@ -463,12 +483,15 @@ case $state in
             "getTruckTripsCountAsync[Get truck trips count]" \
             "getTrucksAsync[Get all trucks]" \
             "getTrucksCountAsync[Get trucks count]" \
+            "patchTruckAsync[Patch a truck]" \
+            "patchTruckTripAsync[Patch a truck trip]" \
             "updateTruckAsync[Update a truck]" \
             "updateTruckTripAsync[Update a truck trip]"             "createVesselAsync[Create a vessel]" \
             "deleteVesselAsync[Delete a vessel]" \
             "getVesselByIdAsync[Get vessel by ID]" \
             "getVesselsAsync[Get all vessels]" \
             "getVesselsCountAsync[Get vessels count]" \
+            "patchVesselAsync[Patch a vessel]" \
             "updateVesselAsync[Update a vessel]"             "cancelVoyageAsync[Cancel a voyage]" \
             "completeVoyageAsync[Complete a voyage]" \
             "createVoyageAsync[Create a voyage]" \
@@ -480,6 +503,8 @@ case $state in
             "getVoyagePortCallsCountAsync[Get voyage port calls count]" \
             "getVoyagesAsync[Get all voyages]" \
             "getVoyagesCountAsync[Get voyages count]" \
+            "patchVoyageAsync[Patch a voyage]" \
+            "patchVoyagePortCallAsync[Patch a voyage port call]" \
             "startVoyageAsync[Start a voyage]" \
             "updateVoyageAsync[Update a voyage]" \
             "updateVoyagePortCallAsync[Update a port call]"             "createWarehouseAsync[Create a warehouse]" \
@@ -487,6 +512,7 @@ case $state in
             "getWarehouseByIdAsync[Get warehouse by ID]" \
             "getWarehousesAsync[Get all warehouses]" \
             "getWarehousesCountAsync[Get warehouses count]" \
+            "patchWarehouseAsync[Patch a warehouse]" \
             "updateWarehouseAsync[Update a warehouse]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -616,6 +642,27 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAirwayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchAirwayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+"lineId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -928,6 +975,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemPackingSlipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemPackingSlipEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "packingSlipId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemPackingSlipAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1043,6 +1111,27 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemPickListAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemPickListEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "pickListId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1168,6 +1257,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemRestockAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchItemRestockEntryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "restockId=:[PATH] "
+"entryId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemRestockAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1236,6 +1346,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchItemRetainSampleAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "retainSampleId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateItemRetainSampleAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1288,6 +1408,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchPortAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "portId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1427,6 +1557,27 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchProofOfDeliveryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchProofOfDeliveryLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "podId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1601,6 +1752,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchRailWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchRailWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       removeRailWaybillLineAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1760,6 +1932,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchRoadWaybillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchRoadWaybillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "waybillId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       removeRoadWaybillLineAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1909,6 +2102,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSeawayBillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSeawayBillLineAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "billId=:[PATH] "
+"lineId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       releaseSeawayBillAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1998,6 +2212,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchSupplierProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "supplierProfileId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSupplierProfileAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -2070,6 +2294,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTruckDriverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "driverId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -2228,6 +2462,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTruckAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTruckTripAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "truckId=:[PATH] "
+"tripId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTruckAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -2291,6 +2546,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchVesselAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "vesselId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -2414,6 +2679,27 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchVoyageAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchVoyagePortCallAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "voyageId=:[PATH] "
+"portCallId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       startVoyageAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -2487,6 +2773,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchWarehouseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "warehouseId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

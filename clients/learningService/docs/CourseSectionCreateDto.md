@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [default to null]
 **icon** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
-**courseID** | **string** |  | [default to null]
+**courseId** | **string** |  | [default to null]
 **releaseDateTime** | **string** |  | [optional] [default to null]
 **hideFromStudents** | **boolean** |  | [optional] [default to null]
 

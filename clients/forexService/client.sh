@@ -604,7 +604,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ForexService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}ForexService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -710,7 +710,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ForexService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}ForexService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -730,7 +730,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ForexService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}ForexService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 

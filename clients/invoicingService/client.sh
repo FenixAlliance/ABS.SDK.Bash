@@ -206,6 +206,26 @@ operation_parameters_minimum_occurrences["getInvoiceReferencesCount:::tenantId"]
 operation_parameters_minimum_occurrences["getInvoiceReferencesCount:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoices:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoicesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoice:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoice:::invoiceId"]=1
+operation_parameters_minimum_occurrences["patchInvoice:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::invoiceId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::invoiceAdjustmentId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceLine:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLine:::invoiceId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLine:::invoiceLineId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLine:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceLineTax:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLineTax:::invoiceId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLineTax:::invoiceLineId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLineTax:::invoiceLineTaxId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceLineTax:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceReference:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceReference:::invoiceId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceReference:::invoiceReferenceId"]=1
+operation_parameters_minimum_occurrences["patchInvoiceReference:::Operation"]=0
 operation_parameters_minimum_occurrences["previewInvoiceEmail:::invoiceId"]=1
 operation_parameters_minimum_occurrences["previewInvoiceEmail:::tenantId"]=1
 operation_parameters_minimum_occurrences["previewInvoiceEmail:::EmailDispatchRequest"]=0
@@ -350,6 +370,26 @@ operation_parameters_maximum_occurrences["getInvoiceReferencesCount:::tenantId"]
 operation_parameters_maximum_occurrences["getInvoiceReferencesCount:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoices:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoicesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoice:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoice:::invoiceId"]=0
+operation_parameters_maximum_occurrences["patchInvoice:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::invoiceId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::invoiceAdjustmentId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLine:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLine:::invoiceId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLine:::invoiceLineId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLine:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLineTax:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLineTax:::invoiceId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLineTax:::invoiceLineId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLineTax:::invoiceLineTaxId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLineTax:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceReference:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceReference:::invoiceId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceReference:::invoiceReferenceId"]=0
+operation_parameters_maximum_occurrences["patchInvoiceReference:::Operation"]=0
 operation_parameters_maximum_occurrences["previewInvoiceEmail:::invoiceId"]=0
 operation_parameters_maximum_occurrences["previewInvoiceEmail:::tenantId"]=0
 operation_parameters_maximum_occurrences["previewInvoiceEmail:::EmailDispatchRequest"]=0
@@ -491,6 +531,26 @@ operation_parameters_collection_type["getInvoiceReferencesCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceReferencesCount:::invoiceId"]=""
 operation_parameters_collection_type["getInvoices:::tenantId"]=""
 operation_parameters_collection_type["getInvoicesCount:::tenantId"]=""
+operation_parameters_collection_type["patchInvoice:::tenantId"]=""
+operation_parameters_collection_type["patchInvoice:::invoiceId"]=""
+operation_parameters_collection_type["patchInvoice:::Operation"]=
+operation_parameters_collection_type["patchInvoiceAdjustment:::tenantId"]=""
+operation_parameters_collection_type["patchInvoiceAdjustment:::invoiceId"]=""
+operation_parameters_collection_type["patchInvoiceAdjustment:::invoiceAdjustmentId"]=""
+operation_parameters_collection_type["patchInvoiceAdjustment:::Operation"]=
+operation_parameters_collection_type["patchInvoiceLine:::tenantId"]=""
+operation_parameters_collection_type["patchInvoiceLine:::invoiceId"]=""
+operation_parameters_collection_type["patchInvoiceLine:::invoiceLineId"]=""
+operation_parameters_collection_type["patchInvoiceLine:::Operation"]=
+operation_parameters_collection_type["patchInvoiceLineTax:::tenantId"]=""
+operation_parameters_collection_type["patchInvoiceLineTax:::invoiceId"]=""
+operation_parameters_collection_type["patchInvoiceLineTax:::invoiceLineId"]=""
+operation_parameters_collection_type["patchInvoiceLineTax:::invoiceLineTaxId"]=""
+operation_parameters_collection_type["patchInvoiceLineTax:::Operation"]=
+operation_parameters_collection_type["patchInvoiceReference:::tenantId"]=""
+operation_parameters_collection_type["patchInvoiceReference:::invoiceId"]=""
+operation_parameters_collection_type["patchInvoiceReference:::invoiceReferenceId"]=""
+operation_parameters_collection_type["patchInvoiceReference:::Operation"]=
 operation_parameters_collection_type["previewInvoiceEmail:::invoiceId"]=""
 operation_parameters_collection_type["previewInvoiceEmail:::tenantId"]=""
 operation_parameters_collection_type["previewInvoiceEmail:::EmailDispatchRequest"]=""
@@ -874,7 +934,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}InvoicingService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}InvoicingService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -969,6 +1029,11 @@ read -r -d '' ops <<EOF
   ${CYAN}getInvoiceReferencesCount${OFF};Get the count of invoice references.
   ${CYAN}getInvoices${OFF};Get a list of invoices.
   ${CYAN}getInvoicesCount${OFF};Get the count of invoices.
+  ${CYAN}patchInvoice${OFF};Patch an invoice.
+  ${CYAN}patchInvoiceAdjustment${OFF};Patch an invoice adjustment.
+  ${CYAN}patchInvoiceLine${OFF};Patch an invoice line.
+  ${CYAN}patchInvoiceLineTax${OFF};Patch a tax for an invoice line.
+  ${CYAN}patchInvoiceReference${OFF};Patch an invoice reference.
   ${CYAN}previewInvoiceEmail${OFF};Preview the rendered email for an invoice.
   ${CYAN}sendInvoiceEmail${OFF};Send an invoice transactional email to recipients.
   ${CYAN}updateInvoice${OFF};Update an invoice.
@@ -1005,7 +1070,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}InvoicingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}InvoicingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1025,7 +1090,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}InvoicingService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}InvoicingService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2117,6 +2182,127 @@ print_getInvoicesCount_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
     echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchInvoice operation
+#
+##############################################################################
+print_patchInvoice_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchInvoice - Patch an invoice.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified invoice for the tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchInvoiceAdjustment operation
+#
+##############################################################################
+print_patchInvoiceAdjustment_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchInvoiceAdjustment - Patch an invoice adjustment.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified adjustment for the invoice." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceAdjustmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceAdjustmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchInvoiceLine operation
+#
+##############################################################################
+print_patchInvoiceLine_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchInvoiceLine - Patch an invoice line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified invoice line." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchInvoiceLineTax operation
+#
+##############################################################################
+print_patchInvoiceLineTax_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchInvoiceLineTax - Patch a tax for an invoice line.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified tax entry for the invoice line." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceLineTaxId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceLineTaxId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchInvoiceReference operation
+#
+##############################################################################
+print_patchInvoiceReference_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchInvoiceReference - Patch an invoice reference.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified reference for the invoice." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}invoiceReferenceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceReferenceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -4968,6 +5154,386 @@ call_getInvoicesCount() {
 
 ##############################################################################
 #
+# Call patchInvoice operation
+#
+##############################################################################
+call_patchInvoice() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(invoiceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchInvoiceAdjustment operation
+#
+##############################################################################
+call_patchInvoiceAdjustment() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(invoiceId invoiceAdjustmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}/Adjustments/{invoiceAdjustmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchInvoiceLine operation
+#
+##############################################################################
+call_patchInvoiceLine() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(invoiceId invoiceLineId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}/Lines/{invoiceLineId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchInvoiceLineTax operation
+#
+##############################################################################
+call_patchInvoiceLineTax() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(invoiceId invoiceLineId invoiceLineTaxId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}/Lines/{invoiceLineId}/Taxes/{invoiceLineTaxId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchInvoiceReference operation
+#
+##############################################################################
+call_patchInvoiceReference() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(invoiceId invoiceReferenceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/InvoicingService/Invoices/{invoiceId}/References/{invoiceReferenceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call previewInvoiceEmail operation
 #
 ##############################################################################
@@ -5757,6 +6323,21 @@ case $key in
     getInvoicesCount)
     operation="getInvoicesCount"
     ;;
+    patchInvoice)
+    operation="patchInvoice"
+    ;;
+    patchInvoiceAdjustment)
+    operation="patchInvoiceAdjustment"
+    ;;
+    patchInvoiceLine)
+    operation="patchInvoiceLine"
+    ;;
+    patchInvoiceLineTax)
+    operation="patchInvoiceLineTax"
+    ;;
+    patchInvoiceReference)
+    operation="patchInvoiceReference"
+    ;;
     previewInvoiceEmail)
     operation="previewInvoiceEmail"
     ;;
@@ -6026,6 +6607,21 @@ case $operation in
     ;;
     getInvoicesCount)
     call_getInvoicesCount
+    ;;
+    patchInvoice)
+    call_patchInvoice
+    ;;
+    patchInvoiceAdjustment)
+    call_patchInvoiceAdjustment
+    ;;
+    patchInvoiceLine)
+    call_patchInvoiceLine
+    ;;
+    patchInvoiceLineTax)
+    call_patchInvoiceLineTax
+    ;;
+    patchInvoiceReference)
+    call_patchInvoiceReference
     ;;
     previewInvoiceEmail)
     call_previewInvoiceEmail

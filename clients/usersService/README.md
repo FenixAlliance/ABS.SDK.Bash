@@ -127,6 +127,7 @@ Class | Method | HTTP request | Description
 *OptionsApi* | [**getUserOptionByKey**](docs/OptionsApi.md#getuseroptionbykey) | **GET** /api/v2/Me/Options/Key/{key} | Retrieve a single user option by its key
 *OptionsApi* | [**getUserOptions**](docs/OptionsApi.md#getuseroptions) | **GET** /api/v2/Me/Options | Retrieve a list of user options
 *OptionsApi* | [**getUserOptionsCount**](docs/OptionsApi.md#getuseroptionscount) | **GET** /api/v2/Me/Options/Count | Get the count of user options
+*OptionsApi* | [**patchUserOption**](docs/OptionsApi.md#patchuseroption) | **PATCH** /api/v2/Me/Options/{optionId} | Patch a user option
 *OptionsApi* | [**updateUserOption**](docs/OptionsApi.md#updateuseroption) | **PUT** /api/v2/Me/Options/{optionId} | Update a user option
 *OptionsApi* | [**upsertUserOption**](docs/OptionsApi.md#upsertuseroption) | **PUT** /api/v2/Me/Options/Upsert/{key} | Create or update a user option by key
 *UsersApi* | [**countCurrentUserFollowersAsync**](docs/UsersApi.md#countcurrentuserfollowersasync) | **GET** /api/v2/Me/Followers/Count | Count the social profiles that follow the current user

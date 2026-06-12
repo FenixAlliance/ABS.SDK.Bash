@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteItemCategoryAsync**](ItemCategoriesApi.md#deleteItemCategoryAsync) | **DELETE** /api/v2/CatalogService/ItemCategories/{itemCategoryId} | Delete an item category
 [**getItemCategoriesAsync**](ItemCategoriesApi.md#getItemCategoriesAsync) | **GET** /api/v2/CatalogService/ItemCategories | Get all item categories
 [**getItemCategoryByIdAsync**](ItemCategoriesApi.md#getItemCategoryByIdAsync) | **GET** /api/v2/CatalogService/ItemCategories/{itemCategoryId} | Get item category by ID
+[**patchItemCategoryAsync**](ItemCategoriesApi.md#patchItemCategoryAsync) | **PATCH** /api/v2/CatalogService/ItemCategories/{itemCategoryId} | Patch an item category
 [**updateItemCategoryAsync**](ItemCategoriesApi.md#updateItemCategoryAsync) | **PUT** /api/v2/CatalogService/ItemCategories/{itemCategoryId} | Update an item category
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchItemCategoryAsync
+
+Patch an item category
+
+Partially updates an existing item category for the specified tenant.
+
+### Example
+
+```bash
+ patchItemCategoryAsync  tenantId=value itemCategoryId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **itemCategoryId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

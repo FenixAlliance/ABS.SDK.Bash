@@ -4,6 +4,8 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**batchUpdateStockItems**](ItemsApi.md#batchUpdateStockItems) | **POST** /api/v2/CatalogService/Items/Batch | Bulk-update stock items
+[**bulkUpsertStockItems**](ItemsApi.md#bulkUpsertStockItems) | **POST** /api/v2/CatalogService/Items/BulkUpsert | Bulk upsert stock items from rows
 [**countStockItemTagsByItemId**](ItemsApi.md#countStockItemTagsByItemId) | **GET** /api/v2/CatalogService/Items/{itemId}/Tags/Count | Count tags for a stock item
 [**countStockItemsByBusiness**](ItemsApi.md#countStockItemsByBusiness) | **GET** /api/v2/CatalogService/Items/Count | Count stock items by business
 [**createStockItem**](ItemsApi.md#createStockItem) | **POST** /api/v2/CatalogService/Items | Create a new stock item
@@ -46,6 +48,8 @@ Method | HTTP request | Description
 [**getStockItemsOdataMaxPrice**](ItemsApi.md#getStockItemsOdataMaxPrice) | **GET** /api/v2/CatalogService/Items/MaxPrice | Get max price of stock items
 [**getStockItemsOdataMinPrice**](ItemsApi.md#getStockItemsOdataMinPrice) | **GET** /api/v2/CatalogService/Items/MinPrice | Get min price of stock items
 [**getStockItemsQuery**](ItemsApi.md#getStockItemsQuery) | **GET** /api/v2/CatalogService/Items | Get all stock items
+[**patchStockItem**](ItemsApi.md#patchStockItem) | **PATCH** /api/v2/CatalogService/Items/{itemId} | Patch a stock item
+[**recalculateStockItemPrices**](ItemsApi.md#recalculateStockItemPrices) | **POST** /api/v2/CatalogService/Items/RecalculatePrices | Recalculate stock item prices
 [**relateAttachmentToStockItem**](ItemsApi.md#relateAttachmentToStockItem) | **POST** /api/v2/CatalogService/Items/{itemId}/Attachments/{itemAttachmentId} | Relate attachment to stock item
 [**relateAttributeOptionToStockItem**](ItemsApi.md#relateAttributeOptionToStockItem) | **POST** /api/v2/CatalogService/Items/{itemId}/AttributeOptions/{itemAttributeOptionId} | Relate attribute option to stock item
 [**relateBrandToStockItem**](ItemsApi.md#relateBrandToStockItem) | **POST** /api/v2/CatalogService/Items/{itemId}/Brands/{itemBrandId} | Relate brand to stock item
@@ -81,6 +85,82 @@ Method | HTTP request | Description
 [**updateProductPrimaryImageAsync**](ItemsApi.md#updateProductPrimaryImageAsync) | **POST** /api/v2/CatalogService/Items/{itemId}/Images/Primary | Update item primary image
 [**updateStockItem**](ItemsApi.md#updateStockItem) | **PUT** /api/v2/CatalogService/Items/{itemId} | Update a stock item
 
+
+
+## batchUpdateStockItems
+
+Bulk-update stock items
+
+Applies a targeted bulk operation (set flags, add/remove tax policies) to many items atomically.
+
+### Example
+
+```bash
+ batchUpdateStockItems  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **batchStockItemUpdateRequest** | [**BatchStockItemUpdateRequest**](BatchStockItemUpdateRequest.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## bulkUpsertStockItems
+
+Bulk upsert stock items from rows
+
+Updates scalar fields of matching tenant-owned items or creates new ones, all in one transaction.
+
+### Example
+
+```bash
+ bulkUpsertStockItems  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **bulkProduct** | [**array[BulkProduct]**](BulkProduct.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
 ## countStockItemTagsByItemId
@@ -1655,6 +1735,83 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchStockItem
+
+Patch a stock item
+
+Partially updates an existing stock item for the specified tenant and item ID.
+
+### Example
+
+```bash
+ patchStockItem  tenantId=value itemId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **itemId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## recalculateStockItemPrices
+
+Recalculate stock item prices
+
+Recomputes derived prices for the given tenant-owned items via the pricing service, atomically.
+
+### Example
+
+```bash
+ recalculateStockItemPrices  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **requestBody** | [**array[string]**](string.md) |  | [optional]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

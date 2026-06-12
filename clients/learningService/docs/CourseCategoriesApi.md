@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getCourseCategoriesAsync**](CourseCategoriesApi.md#getCourseCategoriesAsync) | **GET** /api/v2/LearningService/CourseCategories | Get all course categories
 [**getCourseCategoriesCountAsync**](CourseCategoriesApi.md#getCourseCategoriesCountAsync) | **GET** /api/v2/LearningService/CourseCategories/Count | Get course categories count
 [**getCourseCategoryByIdAsync**](CourseCategoriesApi.md#getCourseCategoryByIdAsync) | **GET** /api/v2/LearningService/CourseCategories/{categoryId} | Get course category by ID
+[**patchCourseCategoryAsync**](CourseCategoriesApi.md#patchCourseCategoryAsync) | **PATCH** /api/v2/LearningService/CourseCategories/{categoryId} | Patch a course category
 [**updateCourseCategoryAsync**](CourseCategoriesApi.md#updateCourseCategoryAsync) | **PUT** /api/v2/LearningService/CourseCategories/{categoryId} | Update a course category
 
 
@@ -195,6 +196,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchCourseCategoryAsync
+
+Patch a course category
+
+Partially updates a course category for the specified tenant.
+
+### Example
+
+```bash
+ patchCourseCategoryAsync  tenantId=value categoryId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **categoryId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -126,6 +126,11 @@ operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::tenantI
 operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::blogPostCategoryId"]=1
 operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::blogPostCategoryId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::blogPostCategoryId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::api-version"]=0
@@ -149,6 +154,11 @@ operation_parameters_minimum_occurrences["getBlogPostTagByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::blogPostTagId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateBlogPostTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostTagAsync:::blogPostTagId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostTagAsync:::api-version"]=0
@@ -178,6 +188,9 @@ operation_parameters_minimum_occurrences["getCommentsForBlogPostAsync:::blogPost
 operation_parameters_minimum_occurrences["getRepliesForCommentAsync:::commentId"]=1
 operation_parameters_minimum_occurrences["getRepliesForCommentAsync:::blogPostId"]=1
 operation_parameters_minimum_occurrences["getTagsForBlogPostAsync:::blogPostId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostAsync:::blogPostId"]=1
+operation_parameters_minimum_occurrences["patchBlogPostAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["relateCategoryToBlogPostAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["relateCategoryToBlogPostAsync:::blogPostId"]=1
 operation_parameters_minimum_occurrences["relateCategoryToBlogPostAsync:::categoryId"]=1
@@ -197,6 +210,14 @@ operation_parameters_minimum_occurrences["unrelateTagFromBlogPostAsync:::tagId"]
 operation_parameters_minimum_occurrences["updateBlogPostAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostAsync:::blogPostId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostAsync:::BlogPostUpdateDto"]=0
+operation_parameters_minimum_occurrences["createBusinessDomainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createBusinessDomainAsync:::BusinessDomainCreateDto"]=1
+operation_parameters_minimum_occurrences["createBusinessDomainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createBusinessDomainAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteBusinessDomainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteBusinessDomainAsync:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["deleteBusinessDomainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteBusinessDomainAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessDomainByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessDomainByIdAsync:::businessDomainId"]=1
 operation_parameters_minimum_occurrences["getBusinessDomainByIdAsync:::api-version"]=0
@@ -207,6 +228,15 @@ operation_parameters_minimum_occurrences["getBusinessDomainsAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::BusinessDomainUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["verifyBusinessDomainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["verifyBusinessDomainAsync:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["verifyBusinessDomainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["verifyBusinessDomainAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
 operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
 operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
@@ -227,6 +257,57 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createLocalizationStringAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createLocalizationStringAsync:::LocalizationStringCreateDto"]=1
+operation_parameters_minimum_occurrences["createLocalizationStringAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createLocalizationStringAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteLocalizationStringAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteLocalizationStringAsync:::localizationStringId"]=1
+operation_parameters_minimum_occurrences["deleteLocalizationStringAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteLocalizationStringAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocalizationStringByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getLocalizationStringByIdAsync:::localizationStringId"]=1
+operation_parameters_minimum_occurrences["getLocalizationStringByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLocalizationStringByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::localizationStringId"]=1
+operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::LocalizationStringUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countMenuContextsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countMenuContextsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countMenuContextsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createMenuContextAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createMenuContextAsync:::MenuContextCreateDto"]=1
+operation_parameters_minimum_occurrences["createMenuContextAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createMenuContextAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteMenuContextAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteMenuContextAsync:::menuContextId"]=1
+operation_parameters_minimum_occurrences["deleteMenuContextAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteMenuContextAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMenuContextByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMenuContextByIdAsync:::menuContextId"]=1
+operation_parameters_minimum_occurrences["getMenuContextByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMenuContextByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMenuContextsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getMenuContextsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getMenuContextsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateMenuContextAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateMenuContextAsync:::menuContextId"]=1
+operation_parameters_minimum_occurrences["updateMenuContextAsync:::MenuContextUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateMenuContextAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateMenuContextAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["bindWebPortalDomainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["bindWebPortalDomainAsync:::portalId"]=1
+operation_parameters_minimum_occurrences["bindWebPortalDomainAsync:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["bindWebPortalDomainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["bindWebPortalDomainAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countPortalsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countPortalsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countPortalsAsync:::x-api-version"]=0
@@ -250,6 +331,10 @@ operation_parameters_minimum_occurrences["getRootWebPortalAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getWebPortalByIdAsync:::portalId"]=1
 operation_parameters_minimum_occurrences["getWebPortalByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPortalByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebPortalDomainBindingsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWebPortalDomainBindingsAsync:::portalId"]=1
+operation_parameters_minimum_occurrences["getWebPortalDomainBindingsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWebPortalDomainBindingsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWebPortalOptionsAsync:::portalId"]=1
 operation_parameters_minimum_occurrences["getWebPortalOptionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPortalOptionsAsync:::x-api-version"]=0
@@ -266,13 +351,46 @@ operation_parameters_minimum_occurrences["patchWebPortalAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["searchWebPortalAsync:::domain"]=1
 operation_parameters_minimum_occurrences["searchWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["searchWebPortalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["unbindWebPortalDomainAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["unbindWebPortalDomainAsync:::portalId"]=1
+operation_parameters_minimum_occurrences["unbindWebPortalDomainAsync:::businessDomainId"]=1
+operation_parameters_minimum_occurrences["unbindWebPortalDomainAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["unbindWebPortalDomainAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPortalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebPortalAsync:::portalId"]=1
 operation_parameters_minimum_occurrences["updateWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPortalAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPortalAsync:::WebPortalUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::portalId"]=1
+operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::PortalSettings"]=0
 operation_parameters_minimum_occurrences["getLatestCurrencyRatesModelAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLatestCurrencyRatesModelAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebComponentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countWebComponentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countWebComponentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createWebComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createWebComponentAsync:::WebComponentCreateDto"]=1
+operation_parameters_minimum_occurrences["createWebComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createWebComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteWebComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteWebComponentAsync:::webComponentId"]=1
+operation_parameters_minimum_occurrences["deleteWebComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteWebComponentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebComponentByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWebComponentByIdAsync:::webComponentId"]=1
+operation_parameters_minimum_occurrences["getWebComponentByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWebComponentByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebComponentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getWebComponentsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getWebComponentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateWebComponentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateWebComponentAsync:::webComponentId"]=1
+operation_parameters_minimum_occurrences["updateWebComponentAsync:::WebComponentUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateWebComponentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateWebComponentAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countWebContentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebContentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebContentsAsync:::x-api-version"]=0
@@ -291,6 +409,11 @@ operation_parameters_minimum_occurrences["getWebContentByIdAsync:::x-api-version
 operation_parameters_minimum_occurrences["getWebContentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebContentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebContentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebContentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchWebContentAsync:::webContentId"]=1
+operation_parameters_minimum_occurrences["patchWebContentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWebContentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebContentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateWebContentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebContentAsync:::webContentId"]=1
 operation_parameters_minimum_occurrences["updateWebContentAsync:::api-version"]=0
@@ -314,6 +437,11 @@ operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::tenantId
 operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::webPageCategoryId"]=1
 operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::webPageCategoryId"]=1
+operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::webPageCategoryId"]=1
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::api-version"]=0
@@ -337,6 +465,11 @@ operation_parameters_minimum_occurrences["getWebPageTagByIdAsync:::x-api-version
 operation_parameters_minimum_occurrences["getWebPageTagsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPageTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPageTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageTagAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchWebPageTagAsync:::webPageTagId"]=1
+operation_parameters_minimum_occurrences["patchWebPageTagAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageTagAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageTagAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateWebPageTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebPageTagAsync:::webPageTagId"]=1
 operation_parameters_minimum_occurrences["updateWebPageTagAsync:::api-version"]=0
@@ -376,6 +509,11 @@ operation_parameters_minimum_occurrences["getWebPageByIdAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getWebPagesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchWebPageAsync:::webPageId"]=1
+operation_parameters_minimum_occurrences["patchWebPageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebPageAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["relateWebPageToCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["relateWebPageToCategoryAsync:::webPageId"]=1
 operation_parameters_minimum_occurrences["relateWebPageToCategoryAsync:::categoryId"]=1
@@ -419,6 +557,11 @@ operation_parameters_minimum_occurrences["getWebTemplateByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getWebTemplatesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebTemplatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebTemplatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebTemplateAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchWebTemplateAsync:::webTemplateId"]=1
+operation_parameters_minimum_occurrences["patchWebTemplateAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWebTemplateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebTemplateAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::webTemplateId"]=1
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::api-version"]=0
@@ -444,6 +587,11 @@ operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::tenantId"
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::api-version"]=0
@@ -487,6 +635,11 @@ operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::tenantI
 operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::blogPostCategoryId"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::blogPostCategoryId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::blogPostCategoryId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::api-version"]=0
@@ -510,6 +663,11 @@ operation_parameters_maximum_occurrences["getBlogPostTagByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::blogPostTagId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateBlogPostTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostTagAsync:::blogPostTagId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostTagAsync:::api-version"]=0
@@ -539,6 +697,9 @@ operation_parameters_maximum_occurrences["getCommentsForBlogPostAsync:::blogPost
 operation_parameters_maximum_occurrences["getRepliesForCommentAsync:::commentId"]=0
 operation_parameters_maximum_occurrences["getRepliesForCommentAsync:::blogPostId"]=0
 operation_parameters_maximum_occurrences["getTagsForBlogPostAsync:::blogPostId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostAsync:::blogPostId"]=0
+operation_parameters_maximum_occurrences["patchBlogPostAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["relateCategoryToBlogPostAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["relateCategoryToBlogPostAsync:::blogPostId"]=0
 operation_parameters_maximum_occurrences["relateCategoryToBlogPostAsync:::categoryId"]=0
@@ -558,6 +719,14 @@ operation_parameters_maximum_occurrences["unrelateTagFromBlogPostAsync:::tagId"]
 operation_parameters_maximum_occurrences["updateBlogPostAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostAsync:::blogPostId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostAsync:::BlogPostUpdateDto"]=0
+operation_parameters_maximum_occurrences["createBusinessDomainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createBusinessDomainAsync:::BusinessDomainCreateDto"]=0
+operation_parameters_maximum_occurrences["createBusinessDomainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createBusinessDomainAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteBusinessDomainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteBusinessDomainAsync:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["deleteBusinessDomainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteBusinessDomainAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainByIdAsync:::businessDomainId"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainByIdAsync:::api-version"]=0
@@ -568,6 +737,15 @@ operation_parameters_maximum_occurrences["getBusinessDomainsAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::BusinessDomainUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["verifyBusinessDomainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["verifyBusinessDomainAsync:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["verifyBusinessDomainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["verifyBusinessDomainAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
 operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
 operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
@@ -588,6 +766,57 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createLocalizationStringAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createLocalizationStringAsync:::LocalizationStringCreateDto"]=0
+operation_parameters_maximum_occurrences["createLocalizationStringAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createLocalizationStringAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteLocalizationStringAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteLocalizationStringAsync:::localizationStringId"]=0
+operation_parameters_maximum_occurrences["deleteLocalizationStringAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteLocalizationStringAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringByIdAsync:::localizationStringId"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::localizationStringId"]=0
+operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::LocalizationStringUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countMenuContextsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countMenuContextsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countMenuContextsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createMenuContextAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createMenuContextAsync:::MenuContextCreateDto"]=0
+operation_parameters_maximum_occurrences["createMenuContextAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createMenuContextAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteMenuContextAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteMenuContextAsync:::menuContextId"]=0
+operation_parameters_maximum_occurrences["deleteMenuContextAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteMenuContextAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMenuContextByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMenuContextByIdAsync:::menuContextId"]=0
+operation_parameters_maximum_occurrences["getMenuContextByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMenuContextByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMenuContextsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getMenuContextsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getMenuContextsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateMenuContextAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateMenuContextAsync:::menuContextId"]=0
+operation_parameters_maximum_occurrences["updateMenuContextAsync:::MenuContextUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateMenuContextAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateMenuContextAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["bindWebPortalDomainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["bindWebPortalDomainAsync:::portalId"]=0
+operation_parameters_maximum_occurrences["bindWebPortalDomainAsync:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["bindWebPortalDomainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["bindWebPortalDomainAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countPortalsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countPortalsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countPortalsAsync:::x-api-version"]=0
@@ -611,6 +840,10 @@ operation_parameters_maximum_occurrences["getRootWebPortalAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getWebPortalByIdAsync:::portalId"]=0
 operation_parameters_maximum_occurrences["getWebPortalByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPortalByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebPortalDomainBindingsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWebPortalDomainBindingsAsync:::portalId"]=0
+operation_parameters_maximum_occurrences["getWebPortalDomainBindingsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWebPortalDomainBindingsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWebPortalOptionsAsync:::portalId"]=0
 operation_parameters_maximum_occurrences["getWebPortalOptionsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPortalOptionsAsync:::x-api-version"]=0
@@ -627,13 +860,46 @@ operation_parameters_maximum_occurrences["patchWebPortalAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["searchWebPortalAsync:::domain"]=0
 operation_parameters_maximum_occurrences["searchWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["searchWebPortalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["unbindWebPortalDomainAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["unbindWebPortalDomainAsync:::portalId"]=0
+operation_parameters_maximum_occurrences["unbindWebPortalDomainAsync:::businessDomainId"]=0
+operation_parameters_maximum_occurrences["unbindWebPortalDomainAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["unbindWebPortalDomainAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPortalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebPortalAsync:::portalId"]=0
 operation_parameters_maximum_occurrences["updateWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPortalAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPortalAsync:::WebPortalUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::portalId"]=0
+operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::PortalSettings"]=0
 operation_parameters_maximum_occurrences["getLatestCurrencyRatesModelAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLatestCurrencyRatesModelAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebComponentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countWebComponentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countWebComponentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createWebComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createWebComponentAsync:::WebComponentCreateDto"]=0
+operation_parameters_maximum_occurrences["createWebComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createWebComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteWebComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteWebComponentAsync:::webComponentId"]=0
+operation_parameters_maximum_occurrences["deleteWebComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteWebComponentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebComponentByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWebComponentByIdAsync:::webComponentId"]=0
+operation_parameters_maximum_occurrences["getWebComponentByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWebComponentByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebComponentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getWebComponentsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getWebComponentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateWebComponentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateWebComponentAsync:::webComponentId"]=0
+operation_parameters_maximum_occurrences["updateWebComponentAsync:::WebComponentUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateWebComponentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateWebComponentAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countWebContentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebContentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebContentsAsync:::x-api-version"]=0
@@ -652,6 +918,11 @@ operation_parameters_maximum_occurrences["getWebContentByIdAsync:::x-api-version
 operation_parameters_maximum_occurrences["getWebContentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebContentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebContentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebContentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchWebContentAsync:::webContentId"]=0
+operation_parameters_maximum_occurrences["patchWebContentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWebContentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebContentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::webContentId"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::api-version"]=0
@@ -675,6 +946,11 @@ operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::tenantId
 operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::webPageCategoryId"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::webPageCategoryId"]=0
+operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::webPageCategoryId"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::api-version"]=0
@@ -698,6 +974,11 @@ operation_parameters_maximum_occurrences["getWebPageTagByIdAsync:::x-api-version
 operation_parameters_maximum_occurrences["getWebPageTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPageTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPageTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageTagAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchWebPageTagAsync:::webPageTagId"]=0
+operation_parameters_maximum_occurrences["patchWebPageTagAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageTagAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageTagAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateWebPageTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebPageTagAsync:::webPageTagId"]=0
 operation_parameters_maximum_occurrences["updateWebPageTagAsync:::api-version"]=0
@@ -737,6 +1018,11 @@ operation_parameters_maximum_occurrences["getWebPageByIdAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getWebPagesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchWebPageAsync:::webPageId"]=0
+operation_parameters_maximum_occurrences["patchWebPageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebPageAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["relateWebPageToCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["relateWebPageToCategoryAsync:::webPageId"]=0
 operation_parameters_maximum_occurrences["relateWebPageToCategoryAsync:::categoryId"]=0
@@ -780,6 +1066,11 @@ operation_parameters_maximum_occurrences["getWebTemplateByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getWebTemplatesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebTemplatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebTemplatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebTemplateAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchWebTemplateAsync:::webTemplateId"]=0
+operation_parameters_maximum_occurrences["patchWebTemplateAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWebTemplateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebTemplateAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::webTemplateId"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::api-version"]=0
@@ -805,6 +1096,11 @@ operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::tenantId"
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::api-version"]=0
@@ -845,6 +1141,11 @@ operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::tenantId"]=
 operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::blogPostCategoryId"]=""
 operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlogPostCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBlogPostCategoryAsync:::blogPostCategoryId"]=""
+operation_parameters_collection_type["patchBlogPostCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["patchBlogPostCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlogPostCategoryAsync:::Operation"]=
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::blogPostCategoryId"]=""
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::api-version"]=""
@@ -868,6 +1169,11 @@ operation_parameters_collection_type["getBlogPostTagByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getBlogPostTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlogPostTagsAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogPostTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlogPostTagAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBlogPostTagAsync:::blogPostTagId"]=""
+operation_parameters_collection_type["patchBlogPostTagAsync:::api-version"]=""
+operation_parameters_collection_type["patchBlogPostTagAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchBlogPostTagAsync:::Operation"]=
 operation_parameters_collection_type["updateBlogPostTagAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBlogPostTagAsync:::blogPostTagId"]=""
 operation_parameters_collection_type["updateBlogPostTagAsync:::api-version"]=""
@@ -897,6 +1203,9 @@ operation_parameters_collection_type["getCommentsForBlogPostAsync:::blogPostId"]
 operation_parameters_collection_type["getRepliesForCommentAsync:::commentId"]=""
 operation_parameters_collection_type["getRepliesForCommentAsync:::blogPostId"]=""
 operation_parameters_collection_type["getTagsForBlogPostAsync:::blogPostId"]=""
+operation_parameters_collection_type["patchBlogPostAsync:::tenantId"]=""
+operation_parameters_collection_type["patchBlogPostAsync:::blogPostId"]=""
+operation_parameters_collection_type["patchBlogPostAsync:::Operation"]=
 operation_parameters_collection_type["relateCategoryToBlogPostAsync:::tenantId"]=""
 operation_parameters_collection_type["relateCategoryToBlogPostAsync:::blogPostId"]=""
 operation_parameters_collection_type["relateCategoryToBlogPostAsync:::categoryId"]=""
@@ -916,6 +1225,14 @@ operation_parameters_collection_type["unrelateTagFromBlogPostAsync:::tagId"]=""
 operation_parameters_collection_type["updateBlogPostAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBlogPostAsync:::blogPostId"]=""
 operation_parameters_collection_type["updateBlogPostAsync:::BlogPostUpdateDto"]=""
+operation_parameters_collection_type["createBusinessDomainAsync:::tenantId"]=""
+operation_parameters_collection_type["createBusinessDomainAsync:::BusinessDomainCreateDto"]=""
+operation_parameters_collection_type["createBusinessDomainAsync:::api-version"]=""
+operation_parameters_collection_type["createBusinessDomainAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteBusinessDomainAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteBusinessDomainAsync:::businessDomainId"]=""
+operation_parameters_collection_type["deleteBusinessDomainAsync:::api-version"]=""
+operation_parameters_collection_type["deleteBusinessDomainAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBusinessDomainByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessDomainByIdAsync:::businessDomainId"]=""
 operation_parameters_collection_type["getBusinessDomainByIdAsync:::api-version"]=""
@@ -926,6 +1243,15 @@ operation_parameters_collection_type["getBusinessDomainsAsync:::x-api-version"]=
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateBusinessDomainAsync:::tenantId"]=""
+operation_parameters_collection_type["updateBusinessDomainAsync:::businessDomainId"]=""
+operation_parameters_collection_type["updateBusinessDomainAsync:::BusinessDomainUpdateDto"]=""
+operation_parameters_collection_type["updateBusinessDomainAsync:::api-version"]=""
+operation_parameters_collection_type["updateBusinessDomainAsync:::x-api-version"]=""
+operation_parameters_collection_type["verifyBusinessDomainAsync:::tenantId"]=""
+operation_parameters_collection_type["verifyBusinessDomainAsync:::businessDomainId"]=""
+operation_parameters_collection_type["verifyBusinessDomainAsync:::api-version"]=""
+operation_parameters_collection_type["verifyBusinessDomainAsync:::x-api-version"]=""
 operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
 operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
 operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
@@ -946,6 +1272,57 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["countLocalizationStringsAsync:::tenantId"]=""
+operation_parameters_collection_type["countLocalizationStringsAsync:::api-version"]=""
+operation_parameters_collection_type["countLocalizationStringsAsync:::x-api-version"]=""
+operation_parameters_collection_type["createLocalizationStringAsync:::tenantId"]=""
+operation_parameters_collection_type["createLocalizationStringAsync:::LocalizationStringCreateDto"]=""
+operation_parameters_collection_type["createLocalizationStringAsync:::api-version"]=""
+operation_parameters_collection_type["createLocalizationStringAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteLocalizationStringAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteLocalizationStringAsync:::localizationStringId"]=""
+operation_parameters_collection_type["deleteLocalizationStringAsync:::api-version"]=""
+operation_parameters_collection_type["deleteLocalizationStringAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocalizationStringByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getLocalizationStringByIdAsync:::localizationStringId"]=""
+operation_parameters_collection_type["getLocalizationStringByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getLocalizationStringByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocalizationStringsAsync:::tenantId"]=""
+operation_parameters_collection_type["getLocalizationStringsAsync:::api-version"]=""
+operation_parameters_collection_type["getLocalizationStringsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateLocalizationStringAsync:::tenantId"]=""
+operation_parameters_collection_type["updateLocalizationStringAsync:::localizationStringId"]=""
+operation_parameters_collection_type["updateLocalizationStringAsync:::LocalizationStringUpdateDto"]=""
+operation_parameters_collection_type["updateLocalizationStringAsync:::api-version"]=""
+operation_parameters_collection_type["updateLocalizationStringAsync:::x-api-version"]=""
+operation_parameters_collection_type["countMenuContextsAsync:::tenantId"]=""
+operation_parameters_collection_type["countMenuContextsAsync:::api-version"]=""
+operation_parameters_collection_type["countMenuContextsAsync:::x-api-version"]=""
+operation_parameters_collection_type["createMenuContextAsync:::tenantId"]=""
+operation_parameters_collection_type["createMenuContextAsync:::MenuContextCreateDto"]=""
+operation_parameters_collection_type["createMenuContextAsync:::api-version"]=""
+operation_parameters_collection_type["createMenuContextAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteMenuContextAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteMenuContextAsync:::menuContextId"]=""
+operation_parameters_collection_type["deleteMenuContextAsync:::api-version"]=""
+operation_parameters_collection_type["deleteMenuContextAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMenuContextByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getMenuContextByIdAsync:::menuContextId"]=""
+operation_parameters_collection_type["getMenuContextByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getMenuContextByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMenuContextsAsync:::tenantId"]=""
+operation_parameters_collection_type["getMenuContextsAsync:::api-version"]=""
+operation_parameters_collection_type["getMenuContextsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateMenuContextAsync:::tenantId"]=""
+operation_parameters_collection_type["updateMenuContextAsync:::menuContextId"]=""
+operation_parameters_collection_type["updateMenuContextAsync:::MenuContextUpdateDto"]=""
+operation_parameters_collection_type["updateMenuContextAsync:::api-version"]=""
+operation_parameters_collection_type["updateMenuContextAsync:::x-api-version"]=""
+operation_parameters_collection_type["bindWebPortalDomainAsync:::tenantId"]=""
+operation_parameters_collection_type["bindWebPortalDomainAsync:::portalId"]=""
+operation_parameters_collection_type["bindWebPortalDomainAsync:::businessDomainId"]=""
+operation_parameters_collection_type["bindWebPortalDomainAsync:::api-version"]=""
+operation_parameters_collection_type["bindWebPortalDomainAsync:::x-api-version"]=""
 operation_parameters_collection_type["countPortalsAsync:::tenantId"]=""
 operation_parameters_collection_type["countPortalsAsync:::api-version"]=""
 operation_parameters_collection_type["countPortalsAsync:::x-api-version"]=""
@@ -969,6 +1346,10 @@ operation_parameters_collection_type["getRootWebPortalAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebPortalByIdAsync:::portalId"]=""
 operation_parameters_collection_type["getWebPortalByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPortalByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebPortalDomainBindingsAsync:::tenantId"]=""
+operation_parameters_collection_type["getWebPortalDomainBindingsAsync:::portalId"]=""
+operation_parameters_collection_type["getWebPortalDomainBindingsAsync:::api-version"]=""
+operation_parameters_collection_type["getWebPortalDomainBindingsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebPortalOptionsAsync:::portalId"]=""
 operation_parameters_collection_type["getWebPortalOptionsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPortalOptionsAsync:::x-api-version"]=""
@@ -985,13 +1366,46 @@ operation_parameters_collection_type["patchWebPortalAsync:::Operation"]=
 operation_parameters_collection_type["searchWebPortalAsync:::domain"]=""
 operation_parameters_collection_type["searchWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["searchWebPortalAsync:::x-api-version"]=""
+operation_parameters_collection_type["unbindWebPortalDomainAsync:::tenantId"]=""
+operation_parameters_collection_type["unbindWebPortalDomainAsync:::portalId"]=""
+operation_parameters_collection_type["unbindWebPortalDomainAsync:::businessDomainId"]=""
+operation_parameters_collection_type["unbindWebPortalDomainAsync:::api-version"]=""
+operation_parameters_collection_type["unbindWebPortalDomainAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWebPortalAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebPortalAsync:::portalId"]=""
 operation_parameters_collection_type["updateWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["updateWebPortalAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWebPortalAsync:::WebPortalUpdateDto"]=""
+operation_parameters_collection_type["updateWebPortalSettingsAsync:::tenantId"]=""
+operation_parameters_collection_type["updateWebPortalSettingsAsync:::portalId"]=""
+operation_parameters_collection_type["updateWebPortalSettingsAsync:::api-version"]=""
+operation_parameters_collection_type["updateWebPortalSettingsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWebPortalSettingsAsync:::PortalSettings"]=""
 operation_parameters_collection_type["getLatestCurrencyRatesModelAsync:::api-version"]=""
 operation_parameters_collection_type["getLatestCurrencyRatesModelAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebComponentsAsync:::tenantId"]=""
+operation_parameters_collection_type["countWebComponentsAsync:::api-version"]=""
+operation_parameters_collection_type["countWebComponentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["createWebComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["createWebComponentAsync:::WebComponentCreateDto"]=""
+operation_parameters_collection_type["createWebComponentAsync:::api-version"]=""
+operation_parameters_collection_type["createWebComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteWebComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteWebComponentAsync:::webComponentId"]=""
+operation_parameters_collection_type["deleteWebComponentAsync:::api-version"]=""
+operation_parameters_collection_type["deleteWebComponentAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebComponentByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getWebComponentByIdAsync:::webComponentId"]=""
+operation_parameters_collection_type["getWebComponentByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getWebComponentByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebComponentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getWebComponentsAsync:::api-version"]=""
+operation_parameters_collection_type["getWebComponentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateWebComponentAsync:::tenantId"]=""
+operation_parameters_collection_type["updateWebComponentAsync:::webComponentId"]=""
+operation_parameters_collection_type["updateWebComponentAsync:::WebComponentUpdateDto"]=""
+operation_parameters_collection_type["updateWebComponentAsync:::api-version"]=""
+operation_parameters_collection_type["updateWebComponentAsync:::x-api-version"]=""
 operation_parameters_collection_type["countWebContentsAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebContentsAsync:::api-version"]=""
 operation_parameters_collection_type["countWebContentsAsync:::x-api-version"]=""
@@ -1010,6 +1424,11 @@ operation_parameters_collection_type["getWebContentByIdAsync:::x-api-version"]="
 operation_parameters_collection_type["getWebContentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebContentsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebContentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebContentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchWebContentAsync:::webContentId"]=""
+operation_parameters_collection_type["patchWebContentAsync:::api-version"]=""
+operation_parameters_collection_type["patchWebContentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebContentAsync:::Operation"]=
 operation_parameters_collection_type["updateWebContentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebContentAsync:::webContentId"]=""
 operation_parameters_collection_type["updateWebContentAsync:::api-version"]=""
@@ -1033,6 +1452,11 @@ operation_parameters_collection_type["getWebPageCategoryByIdAsync:::tenantId"]="
 operation_parameters_collection_type["getWebPageCategoryByIdAsync:::webPageCategoryId"]=""
 operation_parameters_collection_type["getWebPageCategoryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPageCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebPageCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchWebPageCategoryAsync:::webPageCategoryId"]=""
+operation_parameters_collection_type["patchWebPageCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["patchWebPageCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebPageCategoryAsync:::Operation"]=
 operation_parameters_collection_type["updateWebPageCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebPageCategoryAsync:::webPageCategoryId"]=""
 operation_parameters_collection_type["updateWebPageCategoryAsync:::api-version"]=""
@@ -1056,6 +1480,11 @@ operation_parameters_collection_type["getWebPageTagByIdAsync:::x-api-version"]="
 operation_parameters_collection_type["getWebPageTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPageTagsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPageTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebPageTagAsync:::tenantId"]=""
+operation_parameters_collection_type["patchWebPageTagAsync:::webPageTagId"]=""
+operation_parameters_collection_type["patchWebPageTagAsync:::api-version"]=""
+operation_parameters_collection_type["patchWebPageTagAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebPageTagAsync:::Operation"]=
 operation_parameters_collection_type["updateWebPageTagAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebPageTagAsync:::webPageTagId"]=""
 operation_parameters_collection_type["updateWebPageTagAsync:::api-version"]=""
@@ -1095,6 +1524,11 @@ operation_parameters_collection_type["getWebPageByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebPagesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPagesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebPageAsync:::tenantId"]=""
+operation_parameters_collection_type["patchWebPageAsync:::webPageId"]=""
+operation_parameters_collection_type["patchWebPageAsync:::api-version"]=""
+operation_parameters_collection_type["patchWebPageAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebPageAsync:::Operation"]=
 operation_parameters_collection_type["relateWebPageToCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["relateWebPageToCategoryAsync:::webPageId"]=""
 operation_parameters_collection_type["relateWebPageToCategoryAsync:::categoryId"]=""
@@ -1138,6 +1572,11 @@ operation_parameters_collection_type["getWebTemplateByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getWebTemplatesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebTemplatesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebTemplatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebTemplateAsync:::tenantId"]=""
+operation_parameters_collection_type["patchWebTemplateAsync:::webTemplateId"]=""
+operation_parameters_collection_type["patchWebTemplateAsync:::api-version"]=""
+operation_parameters_collection_type["patchWebTemplateAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebTemplateAsync:::Operation"]=
 operation_parameters_collection_type["updateWebTemplateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebTemplateAsync:::webTemplateId"]=""
 operation_parameters_collection_type["updateWebTemplateAsync:::api-version"]=""
@@ -1163,6 +1602,11 @@ operation_parameters_collection_type["getWebsiteThemesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebsiteThemeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchWebsiteThemeAsync:::id"]=""
+operation_parameters_collection_type["patchWebsiteThemeAsync:::api-version"]=""
+operation_parameters_collection_type["patchWebsiteThemeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchWebsiteThemeAsync:::Operation"]=
 operation_parameters_collection_type["updateWebsiteThemeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebsiteThemeAsync:::id"]=""
 operation_parameters_collection_type["updateWebsiteThemeAsync:::api-version"]=""
@@ -1525,7 +1969,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ContentService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}ContentService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1570,6 +2014,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteBlogPostCategoryAsync${OFF};Delete a blog post category
   ${CYAN}getBlogPostCategoriesAsync${OFF};Get blog post categories
   ${CYAN}getBlogPostCategoryByIdAsync${OFF};Get blog post category by ID
+  ${CYAN}patchBlogPostCategoryAsync${OFF};Patch a blog post category
   ${CYAN}updateBlogPostCategoryAsync${OFF};Update a blog post category
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1581,6 +2026,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteBlogPostTagAsync${OFF};Delete a blog post tag
   ${CYAN}getBlogPostTagByIdAsync${OFF};Get blog post tag by ID
   ${CYAN}getBlogPostTagsAsync${OFF};Get blog post tags
+  ${CYAN}patchBlogPostTagAsync${OFF};Patch a blog post tag
   ${CYAN}updateBlogPostTagAsync${OFF};Update a blog post tag
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1600,6 +2046,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getCommentsForBlogPostAsync${OFF};Get comments for a blog post
   ${CYAN}getRepliesForCommentAsync${OFF};Get replies for a comment
   ${CYAN}getTagsForBlogPostAsync${OFF};Get tags for a blog post
+  ${CYAN}patchBlogPostAsync${OFF};Patch a blog post
   ${CYAN}relateCategoryToBlogPostAsync${OFF};Relate an existing category to a blog post
   ${CYAN}relateTagToBlogPostAsync${OFF};Relate an existing tag to a blog post
   ${CYAN}replyToCommentAsync${OFF};Reply to a blog post comment
@@ -1611,9 +2058,13 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[businessDomains]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}createBusinessDomainAsync${OFF};Register a business domain
+  ${CYAN}deleteBusinessDomainAsync${OFF};Delete a business domain
   ${CYAN}getBusinessDomainByIdAsync${OFF};Get business domain by ID
   ${CYAN}getBusinessDomainsAsync${OFF};Get business domains
   ${CYAN}getBusinessDomainsCountAsync${OFF};Get business domains count
+  ${CYAN}updateBusinessDomainAsync${OFF};Update a business domain
+  ${CYAN}verifyBusinessDomainAsync${OFF};Verify a business domain
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1645,8 +2096,31 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[localizationStrings]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countLocalizationStringsAsync${OFF};Count localization strings
+  ${CYAN}createLocalizationStringAsync${OFF};Create a localization string
+  ${CYAN}deleteLocalizationStringAsync${OFF};Delete a localization string
+  ${CYAN}getLocalizationStringByIdAsync${OFF};Get localization string by ID
+  ${CYAN}getLocalizationStringsAsync${OFF};Get localization strings
+  ${CYAN}updateLocalizationStringAsync${OFF};Update a localization string
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[menuContexts]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countMenuContextsAsync${OFF};Count menu contexts
+  ${CYAN}createMenuContextAsync${OFF};Create a menu context
+  ${CYAN}deleteMenuContextAsync${OFF};Delete a menu context
+  ${CYAN}getMenuContextByIdAsync${OFF};Get menu context by ID
+  ${CYAN}getMenuContextsAsync${OFF};Get menu contexts
+  ${CYAN}updateMenuContextAsync${OFF};Update a menu context
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[portals]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}bindWebPortalDomainAsync${OFF};Bind a domain to a web portal
   ${CYAN}countPortalsAsync${OFF};Count portals
   ${CYAN}createWebPortalAsync${OFF};Create a new web portal
   ${CYAN}deleteWebPortalAsync${OFF};Delete a web portal
@@ -1655,18 +2129,32 @@ read -r -d '' ops <<EOF
   ${CYAN}getPortalsAsync${OFF};Get portals
   ${CYAN}getRootWebPortalAsync${OFF};Get the root portal
   ${CYAN}getWebPortalByIdAsync${OFF};Get a web portal by its ID
+  ${CYAN}getWebPortalDomainBindingsAsync${OFF};Get a web portal's bound domains
   ${CYAN}getWebPortalOptionsAsync${OFF};Get a web portal's options by its ID
   ${CYAN}getWebPortalSettingsAsync${OFF};Get a web portal's settings by its ID
   ${CYAN}initializeCurrentWebPortalAsync${OFF};Initialize the current portal
   ${CYAN}patchWebPortalAsync${OFF};Partially update a web portal
   ${CYAN}searchWebPortalAsync${OFF};Search for a portal by its domain
+  ${CYAN}unbindWebPortalDomainAsync${OFF};Unbind a domain from a web portal
   ${CYAN}updateWebPortalAsync${OFF};Update an existing web portal
+  ${CYAN}updateWebPortalSettingsAsync${OFF};Update a web portal's settings
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[themes]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}getLatestCurrencyRatesModelAsync${OFF};Update base web content themes
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[webComponents]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countWebComponentsAsync${OFF};Count web components
+  ${CYAN}createWebComponentAsync${OFF};Create a web component
+  ${CYAN}deleteWebComponentAsync${OFF};Delete a web component
+  ${CYAN}getWebComponentByIdAsync${OFF};Get web component by ID
+  ${CYAN}getWebComponentsAsync${OFF};Get web components
+  ${CYAN}updateWebComponentAsync${OFF};Update a web component
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1677,6 +2165,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteWebContentAsync${OFF};Delete a web content
   ${CYAN}getWebContentByIdAsync${OFF};Get web content by ID
   ${CYAN}getWebContentsAsync${OFF};Get web contents
+  ${CYAN}patchWebContentAsync${OFF};Patch a web content
   ${CYAN}updateWebContentAsync${OFF};Update a web content
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1688,6 +2177,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteWebPageCategoryAsync${OFF};Delete a web page category
   ${CYAN}getWebPageCategoriesAsync${OFF};Get web page categories
   ${CYAN}getWebPageCategoryByIdAsync${OFF};Get web page category by ID
+  ${CYAN}patchWebPageCategoryAsync${OFF};Patch a web page category
   ${CYAN}updateWebPageCategoryAsync${OFF};Update a web page category
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1699,6 +2189,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteWebPageTagAsync${OFF};Delete a web page tag
   ${CYAN}getWebPageTagByIdAsync${OFF};Get web page tag by ID
   ${CYAN}getWebPageTagsAsync${OFF};Get web page tags
+  ${CYAN}patchWebPageTagAsync${OFF};Patch a web page tag
   ${CYAN}updateWebPageTagAsync${OFF};Update a web page tag
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1714,6 +2205,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTagsByWebPageAsync${OFF};Get tags by web page
   ${CYAN}getWebPageByIdAsync${OFF};Get web page by ID
   ${CYAN}getWebPagesAsync${OFF};Get web pages
+  ${CYAN}patchWebPageAsync${OFF};Patch a web page
   ${CYAN}relateWebPageToCategoryAsync${OFF};Relate web page to category
   ${CYAN}relateWebPageToTagAsync${OFF};Relate web page to tag
   ${CYAN}unrelateWebPageCategoryAsync${OFF};Unrelate web page from category
@@ -1729,6 +2221,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteWebTemplateAsync${OFF};Delete a web template
   ${CYAN}getWebTemplateByIdAsync${OFF};Get web template by ID
   ${CYAN}getWebTemplatesAsync${OFF};Get web templates
+  ${CYAN}patchWebTemplateAsync${OFF};Patch a web template
   ${CYAN}updateWebTemplateAsync${OFF};Update a web template
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1740,6 +2233,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getWebsiteThemeByIdAsync${OFF};Get website theme by ID
   ${CYAN}getWebsiteThemesAsync${OFF};Get all website themes
   ${CYAN}getWebsiteThemesCountAsync${OFF};Get website themes count
+  ${CYAN}patchWebsiteThemeAsync${OFF};Patch a website theme
   ${CYAN}updateWebsiteThemeAsync${OFF};Update a website theme
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1770,7 +2264,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ContentService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}ContentService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1790,7 +2284,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ContentService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}ContentService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -2023,6 +2517,35 @@ print_getBlogPostCategoryByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchBlogPostCategoryAsync operation
+#
+##############################################################################
+print_patchBlogPostCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBlogPostCategoryAsync - Patch a blog post category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing blog post category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blogPostCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateBlogPostCategoryAsync operation
 #
 ##############################################################################
@@ -2175,6 +2698,35 @@ print_getBlogPostTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchBlogPostTagAsync operation
+#
+##############################################################################
+print_patchBlogPostTagAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBlogPostTagAsync - Patch a blog post tag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing blog post tag for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blogPostTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2524,6 +3076,32 @@ print_getTagsForBlogPostAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchBlogPostAsync operation
+#
+##############################################################################
+print_patchBlogPostAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchBlogPostAsync - Patch a blog post${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing blog post for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}blogPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for relateCategoryToBlogPostAsync operation
 #
 ##############################################################################
@@ -2677,6 +3255,63 @@ print_updateBlogPostAsync_help() {
 }
 ##############################################################################
 #
+# Print help for createBusinessDomainAsync operation
+#
+##############################################################################
+print_createBusinessDomainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBusinessDomainAsync - Register a business domain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Registers a new (unverified) business domain for the tenant and issues a DNS TXT verification token." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBusinessDomainAsync operation
+#
+##############################################################################
+print_deleteBusinessDomainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBusinessDomainAsync - Delete a business domain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a business domain from the tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getBusinessDomainByIdAsync operation
 #
 ##############################################################################
@@ -2751,6 +3386,64 @@ print_getBusinessDomainsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBusinessDomainAsync operation
+#
+##############################################################################
+print_updateBusinessDomainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBusinessDomainAsync - Update a business domain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates a business domain. Changing the host re-issues the verification token and clears verification." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for verifyBusinessDomainAsync operation
+#
+##############################################################################
+print_verifyBusinessDomainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}verifyBusinessDomainAsync - Verify a business domain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Checks the domain's DNS TXT records for the verification token and marks the domain verified." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3075,6 +3768,360 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
+# Print help for countLocalizationStringsAsync operation
+#
+##############################################################################
+print_countLocalizationStringsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countLocalizationStringsAsync - Count localization strings${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all localization strings for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createLocalizationStringAsync operation
+#
+##############################################################################
+print_createLocalizationStringAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createLocalizationStringAsync - Create a localization string${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new localization string for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteLocalizationStringAsync operation
+#
+##############################################################################
+print_deleteLocalizationStringAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteLocalizationStringAsync - Delete a localization string${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a localization string for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}localizationStringId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: localizationStringId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getLocalizationStringByIdAsync operation
+#
+##############################################################################
+print_getLocalizationStringByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getLocalizationStringByIdAsync - Get localization string by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific localization string by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}localizationStringId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: localizationStringId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getLocalizationStringsAsync operation
+#
+##############################################################################
+print_getLocalizationStringsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getLocalizationStringsAsync - Get localization strings${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all localization strings for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateLocalizationStringAsync operation
+#
+##############################################################################
+print_updateLocalizationStringAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateLocalizationStringAsync - Update a localization string${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing localization string for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}localizationStringId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: localizationStringId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countMenuContextsAsync operation
+#
+##############################################################################
+print_countMenuContextsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countMenuContextsAsync - Count menu contexts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all menu contexts for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createMenuContextAsync operation
+#
+##############################################################################
+print_createMenuContextAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createMenuContextAsync - Create a menu context${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new menu context for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteMenuContextAsync operation
+#
+##############################################################################
+print_deleteMenuContextAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteMenuContextAsync - Delete a menu context${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a menu context for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}menuContextId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: menuContextId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMenuContextByIdAsync operation
+#
+##############################################################################
+print_getMenuContextByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMenuContextByIdAsync - Get menu context by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific menu context by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}menuContextId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: menuContextId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMenuContextsAsync operation
+#
+##############################################################################
+print_getMenuContextsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMenuContextsAsync - Get menu contexts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all menu contexts for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMenuContextAsync operation
+#
+##############################################################################
+print_updateMenuContextAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMenuContextAsync - Update a menu context${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing menu context for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}menuContextId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: menuContextId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for bindWebPortalDomainAsync operation
+#
+##############################################################################
+print_bindWebPortalDomainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}bindWebPortalDomainAsync - Bind a domain to a web portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Bind a verified BusinessDomain to a web portal" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for countPortalsAsync operation
 #
 ##############################################################################
@@ -3279,6 +4326,33 @@ print_getWebPortalByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getWebPortalDomainBindingsAsync operation
+#
+##############################################################################
+print_getWebPortalDomainBindingsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWebPortalDomainBindingsAsync - Get a web portal's bound domains${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get the BusinessDomains bound to a web portal" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getWebPortalOptionsAsync operation
 #
 ##############################################################################
@@ -3408,6 +4482,34 @@ print_searchWebPortalAsync_help() {
 }
 ##############################################################################
 #
+# Print help for unbindWebPortalDomainAsync operation
+#
+##############################################################################
+print_unbindWebPortalDomainAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}unbindWebPortalDomainAsync - Unbind a domain from a web portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Unbind a BusinessDomain from a web portal" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessDomainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessDomainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateWebPortalAsync operation
 #
 ##############################################################################
@@ -3416,6 +4518,35 @@ print_updateWebPortalAsync_help() {
     echo -e "${BOLD}${WHITE}updateWebPortalAsync - Update an existing web portal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Update an existing web portal" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}portalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: portalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateWebPortalSettingsAsync operation
+#
+##############################################################################
+print_updateWebPortalSettingsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateWebPortalSettingsAsync - Update a web portal's settings${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Update a web portal's settings (Options) by its ID" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -3456,6 +4587,169 @@ print_getLatestCurrencyRatesModelAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countWebComponentsAsync operation
+#
+##############################################################################
+print_countWebComponentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countWebComponentsAsync - Count web components${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts all web components for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createWebComponentAsync operation
+#
+##############################################################################
+print_createWebComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createWebComponentAsync - Create a web component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new web component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteWebComponentAsync operation
+#
+##############################################################################
+print_deleteWebComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteWebComponentAsync - Delete a web component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a web component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webComponentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webComponentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWebComponentByIdAsync operation
+#
+##############################################################################
+print_getWebComponentByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWebComponentByIdAsync - Get web component by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific web component by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webComponentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webComponentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getWebComponentsAsync operation
+#
+##############################################################################
+print_getWebComponentsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getWebComponentsAsync - Get web components${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all web components for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateWebComponentAsync operation
+#
+##############################################################################
+print_updateWebComponentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateWebComponentAsync - Update a web component${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing web component for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webComponentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webComponentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -3582,6 +4876,35 @@ print_getWebContentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWebContentAsync operation
+#
+##############################################################################
+print_patchWebContentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWebContentAsync - Patch a web content${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing web content for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webContentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webContentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3756,6 +5079,35 @@ print_getWebPageCategoryByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchWebPageCategoryAsync operation
+#
+##############################################################################
+print_patchWebPageCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWebPageCategoryAsync - Patch a web page category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing web page category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webPageCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webPageCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateWebPageCategoryAsync operation
 #
 ##############################################################################
@@ -3908,6 +5260,35 @@ print_getWebPageTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWebPageTagAsync operation
+#
+##############################################################################
+print_patchWebPageTagAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWebPageTagAsync - Patch a web page tag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing web page tag for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webPageTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webPageTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4163,6 +5544,33 @@ print_getWebPagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWebPageAsync operation
+#
+##############################################################################
+print_patchWebPageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWebPageAsync - Patch a web page${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing web page for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webPageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webPageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4437,6 +5845,35 @@ print_getWebTemplatesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchWebTemplateAsync operation
+#
+##############################################################################
+print_patchWebTemplateAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWebTemplateAsync - Patch a web template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing web template for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}webTemplateId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: webTemplateId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateWebTemplateAsync operation
 #
 ##############################################################################
@@ -4595,6 +6032,35 @@ print_getWebsiteThemesCountAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchWebsiteThemeAsync operation
+#
+##############################################################################
+print_patchWebsiteThemeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchWebsiteThemeAsync - Patch a website theme${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing website theme for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -4995,6 +6461,82 @@ call_getBlogPostCategoryByIdAsync() {
 
 ##############################################################################
 #
+# Call patchBlogPostCategoryAsync operation
+#
+##############################################################################
+call_patchBlogPostCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blogPostCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BlogPostCategories/{blogPostCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateBlogPostCategoryAsync operation
 #
 ##############################################################################
@@ -5286,6 +6828,82 @@ call_getBlogPostTagsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchBlogPostTagAsync operation
+#
+##############################################################################
+call_patchBlogPostTagAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blogPostTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BlogPostTags/{blogPostTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5995,6 +7613,82 @@ call_getTagsForBlogPostAsync() {
 
 ##############################################################################
 #
+# Call patchBlogPostAsync operation
+#
+##############################################################################
+call_patchBlogPostAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(blogPostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BlogPosts/{blogPostId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call relateCategoryToBlogPostAsync operation
 #
 ##############################################################################
@@ -6291,6 +7985,118 @@ call_updateBlogPostAsync() {
 
 ##############################################################################
 #
+# Call createBusinessDomainAsync operation
+#
+##############################################################################
+call_createBusinessDomainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BusinessDomains" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBusinessDomainAsync operation
+#
+##############################################################################
+call_deleteBusinessDomainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BusinessDomains/{businessDomainId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getBusinessDomainByIdAsync operation
 #
 ##############################################################################
@@ -6380,6 +8186,118 @@ call_getBusinessDomainsCountAsync() {
         exit 1
     fi
     local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateBusinessDomainAsync operation
+#
+##############################################################################
+call_updateBusinessDomainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BusinessDomains/{businessDomainId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call verifyBusinessDomainAsync operation
+#
+##############################################################################
+call_verifyBusinessDomainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/BusinessDomains/{businessDomainId}/Verify" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -7386,6 +9304,634 @@ call_versionGet() {
 
 ##############################################################################
 #
+# Call countLocalizationStringsAsync operation
+#
+##############################################################################
+call_countLocalizationStringsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/LocalizationStrings/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createLocalizationStringAsync operation
+#
+##############################################################################
+call_createLocalizationStringAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/LocalizationStrings" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteLocalizationStringAsync operation
+#
+##############################################################################
+call_deleteLocalizationStringAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(localizationStringId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/LocalizationStrings/{localizationStringId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getLocalizationStringByIdAsync operation
+#
+##############################################################################
+call_getLocalizationStringByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(localizationStringId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/LocalizationStrings/{localizationStringId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getLocalizationStringsAsync operation
+#
+##############################################################################
+call_getLocalizationStringsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/LocalizationStrings" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateLocalizationStringAsync operation
+#
+##############################################################################
+call_updateLocalizationStringAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(localizationStringId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/LocalizationStrings/{localizationStringId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countMenuContextsAsync operation
+#
+##############################################################################
+call_countMenuContextsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/MenuContexts/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createMenuContextAsync operation
+#
+##############################################################################
+call_createMenuContextAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/MenuContexts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteMenuContextAsync operation
+#
+##############################################################################
+call_deleteMenuContextAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(menuContextId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/MenuContexts/{menuContextId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMenuContextByIdAsync operation
+#
+##############################################################################
+call_getMenuContextByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(menuContextId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/MenuContexts/{menuContextId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMenuContextsAsync operation
+#
+##############################################################################
+call_getMenuContextsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/MenuContexts" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateMenuContextAsync operation
+#
+##############################################################################
+call_updateMenuContextAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(menuContextId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/MenuContexts/{menuContextId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call bindWebPortalDomainAsync operation
+#
+##############################################################################
+call_bindWebPortalDomainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/Portals/{portalId}/DomainBindings/{businessDomainId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call countPortalsAsync operation
 #
 ##############################################################################
@@ -7714,6 +10260,42 @@ call_getWebPortalByIdAsync() {
 
 ##############################################################################
 #
+# Call getWebPortalDomainBindingsAsync operation
+#
+##############################################################################
+call_getWebPortalDomainBindingsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/Portals/{portalId}/DomainBindings" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getWebPortalOptionsAsync operation
 #
 ##############################################################################
@@ -7934,6 +10516,42 @@ call_searchWebPortalAsync() {
 
 ##############################################################################
 #
+# Call unbindWebPortalDomainAsync operation
+#
+##############################################################################
+call_unbindWebPortalDomainAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId businessDomainId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/Portals/{portalId}/DomainBindings/{businessDomainId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call updateWebPortalAsync operation
 #
 ##############################################################################
@@ -7947,6 +10565,82 @@ call_updateWebPortalAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/ContentService/Portals/{portalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateWebPortalSettingsAsync operation
+#
+##############################################################################
+call_updateWebPortalSettingsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(portalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/Portals/{portalId}/Settings" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -8041,6 +10735,302 @@ call_getLatestCurrencyRatesModelAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call countWebComponentsAsync operation
+#
+##############################################################################
+call_countWebComponentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebComponents/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createWebComponentAsync operation
+#
+##############################################################################
+call_createWebComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebComponents" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteWebComponentAsync operation
+#
+##############################################################################
+call_deleteWebComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webComponentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebComponents/{webComponentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWebComponentByIdAsync operation
+#
+##############################################################################
+call_getWebComponentByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webComponentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebComponents/{webComponentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getWebComponentsAsync operation
+#
+##############################################################################
+call_getWebComponentsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebComponents" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateWebComponentAsync operation
+#
+##############################################################################
+call_updateWebComponentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webComponentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebComponents/{webComponentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8261,6 +11251,82 @@ call_getWebContentsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchWebContentAsync operation
+#
+##############################################################################
+call_patchWebContentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webContentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebContents/{webContentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8562,6 +11628,82 @@ call_getWebPageCategoryByIdAsync() {
 
 ##############################################################################
 #
+# Call patchWebPageCategoryAsync operation
+#
+##############################################################################
+call_patchWebPageCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webPageCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebPageCategories/{webPageCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateWebPageCategoryAsync operation
 #
 ##############################################################################
@@ -8853,6 +11995,82 @@ call_getWebPageTagsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchWebPageTagAsync operation
+#
+##############################################################################
+call_patchWebPageTagAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webPageTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebPageTags/{webPageTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9378,6 +12596,82 @@ call_getWebPagesAsync() {
 
 ##############################################################################
 #
+# Call patchWebPageAsync operation
+#
+##############################################################################
+call_patchWebPageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webPageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebPages/{webPageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call relateWebPageToCategoryAsync operation
 #
 ##############################################################################
@@ -9818,6 +13112,82 @@ call_getWebTemplatesAsync() {
 
 ##############################################################################
 #
+# Call patchWebTemplateAsync operation
+#
+##############################################################################
+call_patchWebTemplateAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(webTemplateId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebTemplates/{webTemplateId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateWebTemplateAsync operation
 #
 ##############################################################################
@@ -10114,6 +13484,82 @@ call_getWebsiteThemesCountAsync() {
 
 ##############################################################################
 #
+# Call patchWebsiteThemeAsync operation
+#
+##############################################################################
+call_patchWebsiteThemeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateWebsiteThemeAsync operation
 #
 ##############################################################################
@@ -10312,6 +13758,9 @@ case $key in
     getBlogPostCategoryByIdAsync)
     operation="getBlogPostCategoryByIdAsync"
     ;;
+    patchBlogPostCategoryAsync)
+    operation="patchBlogPostCategoryAsync"
+    ;;
     updateBlogPostCategoryAsync)
     operation="updateBlogPostCategoryAsync"
     ;;
@@ -10329,6 +13778,9 @@ case $key in
     ;;
     getBlogPostTagsAsync)
     operation="getBlogPostTagsAsync"
+    ;;
+    patchBlogPostTagAsync)
+    operation="patchBlogPostTagAsync"
     ;;
     updateBlogPostTagAsync)
     operation="updateBlogPostTagAsync"
@@ -10372,6 +13824,9 @@ case $key in
     getTagsForBlogPostAsync)
     operation="getTagsForBlogPostAsync"
     ;;
+    patchBlogPostAsync)
+    operation="patchBlogPostAsync"
+    ;;
     relateCategoryToBlogPostAsync)
     operation="relateCategoryToBlogPostAsync"
     ;;
@@ -10390,6 +13845,12 @@ case $key in
     updateBlogPostAsync)
     operation="updateBlogPostAsync"
     ;;
+    createBusinessDomainAsync)
+    operation="createBusinessDomainAsync"
+    ;;
+    deleteBusinessDomainAsync)
+    operation="deleteBusinessDomainAsync"
+    ;;
     getBusinessDomainByIdAsync)
     operation="getBusinessDomainByIdAsync"
     ;;
@@ -10398,6 +13859,12 @@ case $key in
     ;;
     getBusinessDomainsCountAsync)
     operation="getBusinessDomainsCountAsync"
+    ;;
+    updateBusinessDomainAsync)
+    operation="updateBusinessDomainAsync"
+    ;;
+    verifyBusinessDomainAsync)
+    operation="verifyBusinessDomainAsync"
     ;;
     apiV2AiServiceCompletionsCompleteGet)
     operation="apiV2AiServiceCompletionsCompleteGet"
@@ -10453,6 +13920,45 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
+    countLocalizationStringsAsync)
+    operation="countLocalizationStringsAsync"
+    ;;
+    createLocalizationStringAsync)
+    operation="createLocalizationStringAsync"
+    ;;
+    deleteLocalizationStringAsync)
+    operation="deleteLocalizationStringAsync"
+    ;;
+    getLocalizationStringByIdAsync)
+    operation="getLocalizationStringByIdAsync"
+    ;;
+    getLocalizationStringsAsync)
+    operation="getLocalizationStringsAsync"
+    ;;
+    updateLocalizationStringAsync)
+    operation="updateLocalizationStringAsync"
+    ;;
+    countMenuContextsAsync)
+    operation="countMenuContextsAsync"
+    ;;
+    createMenuContextAsync)
+    operation="createMenuContextAsync"
+    ;;
+    deleteMenuContextAsync)
+    operation="deleteMenuContextAsync"
+    ;;
+    getMenuContextByIdAsync)
+    operation="getMenuContextByIdAsync"
+    ;;
+    getMenuContextsAsync)
+    operation="getMenuContextsAsync"
+    ;;
+    updateMenuContextAsync)
+    operation="updateMenuContextAsync"
+    ;;
+    bindWebPortalDomainAsync)
+    operation="bindWebPortalDomainAsync"
+    ;;
     countPortalsAsync)
     operation="countPortalsAsync"
     ;;
@@ -10477,6 +13983,9 @@ case $key in
     getWebPortalByIdAsync)
     operation="getWebPortalByIdAsync"
     ;;
+    getWebPortalDomainBindingsAsync)
+    operation="getWebPortalDomainBindingsAsync"
+    ;;
     getWebPortalOptionsAsync)
     operation="getWebPortalOptionsAsync"
     ;;
@@ -10492,11 +14001,35 @@ case $key in
     searchWebPortalAsync)
     operation="searchWebPortalAsync"
     ;;
+    unbindWebPortalDomainAsync)
+    operation="unbindWebPortalDomainAsync"
+    ;;
     updateWebPortalAsync)
     operation="updateWebPortalAsync"
     ;;
+    updateWebPortalSettingsAsync)
+    operation="updateWebPortalSettingsAsync"
+    ;;
     getLatestCurrencyRatesModelAsync)
     operation="getLatestCurrencyRatesModelAsync"
+    ;;
+    countWebComponentsAsync)
+    operation="countWebComponentsAsync"
+    ;;
+    createWebComponentAsync)
+    operation="createWebComponentAsync"
+    ;;
+    deleteWebComponentAsync)
+    operation="deleteWebComponentAsync"
+    ;;
+    getWebComponentByIdAsync)
+    operation="getWebComponentByIdAsync"
+    ;;
+    getWebComponentsAsync)
+    operation="getWebComponentsAsync"
+    ;;
+    updateWebComponentAsync)
+    operation="updateWebComponentAsync"
     ;;
     countWebContentsAsync)
     operation="countWebContentsAsync"
@@ -10512,6 +14045,9 @@ case $key in
     ;;
     getWebContentsAsync)
     operation="getWebContentsAsync"
+    ;;
+    patchWebContentAsync)
+    operation="patchWebContentAsync"
     ;;
     updateWebContentAsync)
     operation="updateWebContentAsync"
@@ -10531,6 +14067,9 @@ case $key in
     getWebPageCategoryByIdAsync)
     operation="getWebPageCategoryByIdAsync"
     ;;
+    patchWebPageCategoryAsync)
+    operation="patchWebPageCategoryAsync"
+    ;;
     updateWebPageCategoryAsync)
     operation="updateWebPageCategoryAsync"
     ;;
@@ -10548,6 +14087,9 @@ case $key in
     ;;
     getWebPageTagsAsync)
     operation="getWebPageTagsAsync"
+    ;;
+    patchWebPageTagAsync)
+    operation="patchWebPageTagAsync"
     ;;
     updateWebPageTagAsync)
     operation="updateWebPageTagAsync"
@@ -10579,6 +14121,9 @@ case $key in
     getWebPagesAsync)
     operation="getWebPagesAsync"
     ;;
+    patchWebPageAsync)
+    operation="patchWebPageAsync"
+    ;;
     relateWebPageToCategoryAsync)
     operation="relateWebPageToCategoryAsync"
     ;;
@@ -10609,6 +14154,9 @@ case $key in
     getWebTemplatesAsync)
     operation="getWebTemplatesAsync"
     ;;
+    patchWebTemplateAsync)
+    operation="patchWebTemplateAsync"
+    ;;
     updateWebTemplateAsync)
     operation="updateWebTemplateAsync"
     ;;
@@ -10626,6 +14174,9 @@ case $key in
     ;;
     getWebsiteThemesCountAsync)
     operation="getWebsiteThemesCountAsync"
+    ;;
+    patchWebsiteThemeAsync)
+    operation="patchWebsiteThemeAsync"
     ;;
     updateWebsiteThemeAsync)
     operation="updateWebsiteThemeAsync"
@@ -10744,6 +14295,9 @@ case $operation in
     getBlogPostCategoryByIdAsync)
     call_getBlogPostCategoryByIdAsync
     ;;
+    patchBlogPostCategoryAsync)
+    call_patchBlogPostCategoryAsync
+    ;;
     updateBlogPostCategoryAsync)
     call_updateBlogPostCategoryAsync
     ;;
@@ -10761,6 +14315,9 @@ case $operation in
     ;;
     getBlogPostTagsAsync)
     call_getBlogPostTagsAsync
+    ;;
+    patchBlogPostTagAsync)
+    call_patchBlogPostTagAsync
     ;;
     updateBlogPostTagAsync)
     call_updateBlogPostTagAsync
@@ -10804,6 +14361,9 @@ case $operation in
     getTagsForBlogPostAsync)
     call_getTagsForBlogPostAsync
     ;;
+    patchBlogPostAsync)
+    call_patchBlogPostAsync
+    ;;
     relateCategoryToBlogPostAsync)
     call_relateCategoryToBlogPostAsync
     ;;
@@ -10822,6 +14382,12 @@ case $operation in
     updateBlogPostAsync)
     call_updateBlogPostAsync
     ;;
+    createBusinessDomainAsync)
+    call_createBusinessDomainAsync
+    ;;
+    deleteBusinessDomainAsync)
+    call_deleteBusinessDomainAsync
+    ;;
     getBusinessDomainByIdAsync)
     call_getBusinessDomainByIdAsync
     ;;
@@ -10830,6 +14396,12 @@ case $operation in
     ;;
     getBusinessDomainsCountAsync)
     call_getBusinessDomainsCountAsync
+    ;;
+    updateBusinessDomainAsync)
+    call_updateBusinessDomainAsync
+    ;;
+    verifyBusinessDomainAsync)
+    call_verifyBusinessDomainAsync
     ;;
     apiV2AiServiceCompletionsCompleteGet)
     call_apiV2AiServiceCompletionsCompleteGet
@@ -10885,6 +14457,45 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
+    countLocalizationStringsAsync)
+    call_countLocalizationStringsAsync
+    ;;
+    createLocalizationStringAsync)
+    call_createLocalizationStringAsync
+    ;;
+    deleteLocalizationStringAsync)
+    call_deleteLocalizationStringAsync
+    ;;
+    getLocalizationStringByIdAsync)
+    call_getLocalizationStringByIdAsync
+    ;;
+    getLocalizationStringsAsync)
+    call_getLocalizationStringsAsync
+    ;;
+    updateLocalizationStringAsync)
+    call_updateLocalizationStringAsync
+    ;;
+    countMenuContextsAsync)
+    call_countMenuContextsAsync
+    ;;
+    createMenuContextAsync)
+    call_createMenuContextAsync
+    ;;
+    deleteMenuContextAsync)
+    call_deleteMenuContextAsync
+    ;;
+    getMenuContextByIdAsync)
+    call_getMenuContextByIdAsync
+    ;;
+    getMenuContextsAsync)
+    call_getMenuContextsAsync
+    ;;
+    updateMenuContextAsync)
+    call_updateMenuContextAsync
+    ;;
+    bindWebPortalDomainAsync)
+    call_bindWebPortalDomainAsync
+    ;;
     countPortalsAsync)
     call_countPortalsAsync
     ;;
@@ -10909,6 +14520,9 @@ case $operation in
     getWebPortalByIdAsync)
     call_getWebPortalByIdAsync
     ;;
+    getWebPortalDomainBindingsAsync)
+    call_getWebPortalDomainBindingsAsync
+    ;;
     getWebPortalOptionsAsync)
     call_getWebPortalOptionsAsync
     ;;
@@ -10924,11 +14538,35 @@ case $operation in
     searchWebPortalAsync)
     call_searchWebPortalAsync
     ;;
+    unbindWebPortalDomainAsync)
+    call_unbindWebPortalDomainAsync
+    ;;
     updateWebPortalAsync)
     call_updateWebPortalAsync
     ;;
+    updateWebPortalSettingsAsync)
+    call_updateWebPortalSettingsAsync
+    ;;
     getLatestCurrencyRatesModelAsync)
     call_getLatestCurrencyRatesModelAsync
+    ;;
+    countWebComponentsAsync)
+    call_countWebComponentsAsync
+    ;;
+    createWebComponentAsync)
+    call_createWebComponentAsync
+    ;;
+    deleteWebComponentAsync)
+    call_deleteWebComponentAsync
+    ;;
+    getWebComponentByIdAsync)
+    call_getWebComponentByIdAsync
+    ;;
+    getWebComponentsAsync)
+    call_getWebComponentsAsync
+    ;;
+    updateWebComponentAsync)
+    call_updateWebComponentAsync
     ;;
     countWebContentsAsync)
     call_countWebContentsAsync
@@ -10944,6 +14582,9 @@ case $operation in
     ;;
     getWebContentsAsync)
     call_getWebContentsAsync
+    ;;
+    patchWebContentAsync)
+    call_patchWebContentAsync
     ;;
     updateWebContentAsync)
     call_updateWebContentAsync
@@ -10963,6 +14604,9 @@ case $operation in
     getWebPageCategoryByIdAsync)
     call_getWebPageCategoryByIdAsync
     ;;
+    patchWebPageCategoryAsync)
+    call_patchWebPageCategoryAsync
+    ;;
     updateWebPageCategoryAsync)
     call_updateWebPageCategoryAsync
     ;;
@@ -10980,6 +14624,9 @@ case $operation in
     ;;
     getWebPageTagsAsync)
     call_getWebPageTagsAsync
+    ;;
+    patchWebPageTagAsync)
+    call_patchWebPageTagAsync
     ;;
     updateWebPageTagAsync)
     call_updateWebPageTagAsync
@@ -11011,6 +14658,9 @@ case $operation in
     getWebPagesAsync)
     call_getWebPagesAsync
     ;;
+    patchWebPageAsync)
+    call_patchWebPageAsync
+    ;;
     relateWebPageToCategoryAsync)
     call_relateWebPageToCategoryAsync
     ;;
@@ -11041,6 +14691,9 @@ case $operation in
     getWebTemplatesAsync)
     call_getWebTemplatesAsync
     ;;
+    patchWebTemplateAsync)
+    call_patchWebTemplateAsync
+    ;;
     updateWebTemplateAsync)
     call_updateWebTemplateAsync
     ;;
@@ -11058,6 +14711,9 @@ case $operation in
     ;;
     getWebsiteThemesCountAsync)
     call_getWebsiteThemesCountAsync
+    ;;
+    patchWebsiteThemeAsync)
+    call_patchWebsiteThemeAsync
     ;;
     updateWebsiteThemeAsync)
     call_updateWebsiteThemeAsync

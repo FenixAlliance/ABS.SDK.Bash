@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**getSocialPostBucketDetailsAsync**](SocialPostBucketsApi.md#getSocialPostBucketDetailsAsync) | **GET** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Get social post bucket by ID
 [**getSocialPostBucketsCountAsync**](SocialPostBucketsApi.md#getSocialPostBucketsCountAsync) | **GET** /api/v2/MarketingService/SocialPostBuckets/Count | Get social post buckets count
 [**getSocialPostBucketsODataAsync**](SocialPostBucketsApi.md#getSocialPostBucketsODataAsync) | **GET** /api/v2/MarketingService/SocialPostBuckets | Get social post buckets
+[**patchSocialPostBucketAsync**](SocialPostBucketsApi.md#patchSocialPostBucketAsync) | **PATCH** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Patch a social post bucket
 [**updateSocialPostBucketAsync**](SocialPostBucketsApi.md#updateSocialPostBucketAsync) | **PUT** /api/v2/MarketingService/SocialPostBuckets/{socialpostbucketId} | Update a social post bucket
 
 
@@ -196,6 +197,45 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## patchSocialPostBucketAsync
+
+Patch a social post bucket
+
+Partially updates a social post bucket by its ID using JSON Patch.
+
+### Example
+
+```bash
+ patchSocialPostBucketAsync  tenantId=value socialpostbucketId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **socialpostbucketId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+
+### Return type
+
+[**EmptyEnvelope**](EmptyEnvelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

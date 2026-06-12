@@ -131,6 +131,11 @@ operation_parameters_minimum_occurrences["getItemAttachmentByIdAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttachmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttachmentAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemAttachmentAsync:::itemAttachmentId"]=1
+operation_parameters_minimum_occurrences["patchItemAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttachmentAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::itemAttachmentId"]=1
 operation_parameters_minimum_occurrences["updateItemAttachmentAsync:::api-version"]=0
@@ -154,6 +159,11 @@ operation_parameters_minimum_occurrences["getItemAttributeOptionsAsync:::x-api-v
 operation_parameters_minimum_occurrences["getItemAttributeOptionsCountAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttributeOptionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttributeOptionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttributeOptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemAttributeOptionAsync:::itemAttributeOptionId"]=1
+operation_parameters_minimum_occurrences["patchItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttributeOptionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::itemAttributeOptionId"]=1
 operation_parameters_minimum_occurrences["updateItemAttributeOptionAsync:::api-version"]=0
@@ -177,6 +187,11 @@ operation_parameters_minimum_occurrences["getItemAttributeByIdAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getItemAttributesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemAttributesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemAttributesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttributeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemAttributeAsync:::itemAttributeId"]=1
+operation_parameters_minimum_occurrences["patchItemAttributeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttributeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemAttributeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemAttributeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemAttributeAsync:::itemAttributeId"]=1
 operation_parameters_minimum_occurrences["updateItemAttributeAsync:::api-version"]=0
@@ -197,6 +212,11 @@ operation_parameters_minimum_occurrences["getItemBrandByIdAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getItemBrandsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemBrandsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemBrandsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemBrandAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemBrandAsync:::itemBrandId"]=1
+operation_parameters_minimum_occurrences["patchItemBrandAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemBrandAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemBrandAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::itemBrandId"]=1
 operation_parameters_minimum_occurrences["updateItemBrandAsync:::api-version"]=0
@@ -220,6 +240,11 @@ operation_parameters_minimum_occurrences["getItemBundlesAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getItemBundlesCountAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemBundlesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemBundlesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemBundleAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemBundleAsync:::itemBundleId"]=1
+operation_parameters_minimum_occurrences["patchItemBundleAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemBundleAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemBundleAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemBundleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemBundleAsync:::itemBundleId"]=1
 operation_parameters_minimum_occurrences["updateItemBundleAsync:::api-version"]=0
@@ -243,6 +268,11 @@ operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::itemCategor
 operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemCategoryAsync:::itemCategoryId"]=1
+operation_parameters_minimum_occurrences["patchItemCategoryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemCategoryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemCategoryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::itemCategoryId"]=1
 operation_parameters_minimum_occurrences["updateItemCategoryAsync:::api-version"]=0
@@ -266,6 +296,11 @@ operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::itemFamilyId"
 operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemFamilyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemFamilyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemFamilyAsync:::itemFamilyId"]=1
+operation_parameters_minimum_occurrences["patchItemFamilyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemFamilyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemFamilyAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemFamilyAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemFamilyAsync:::itemFamilyId"]=1
 operation_parameters_minimum_occurrences["updateItemFamilyAsync:::api-version"]=0
@@ -305,6 +340,11 @@ operation_parameters_minimum_occurrences["getItemImageByIdAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getItemImagesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemImagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemImagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemImageAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemImageAsync:::itemImageId"]=1
+operation_parameters_minimum_occurrences["patchItemImageAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemImageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemImageAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemImageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemImageAsync:::itemImageId"]=1
 operation_parameters_minimum_occurrences["updateItemImageAsync:::api-version"]=0
@@ -325,6 +365,11 @@ operation_parameters_minimum_occurrences["getItemQuestionByIdAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getItemQuestionsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemQuestionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemQuestionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemQuestionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemQuestionAsync:::itemQuestionId"]=1
+operation_parameters_minimum_occurrences["patchItemQuestionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemQuestionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemQuestionAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::itemQuestionId"]=1
 operation_parameters_minimum_occurrences["updateItemQuestionAsync:::api-version"]=0
@@ -391,6 +436,11 @@ operation_parameters_minimum_occurrences["getItemReviewByIdAsync:::x-api-version
 operation_parameters_minimum_occurrences["getItemReviewsAsync:::itemId"]=1
 operation_parameters_minimum_occurrences["getItemReviewsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemReviewsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemReviewAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemReviewAsync:::itemReviewId"]=1
+operation_parameters_minimum_occurrences["patchItemReviewAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemReviewAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemReviewAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemReviewAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemReviewAsync:::itemReviewId"]=1
 operation_parameters_minimum_occurrences["updateItemReviewAsync:::api-version"]=0
@@ -434,6 +484,11 @@ operation_parameters_minimum_occurrences["getItemTagByIdAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getItemTagsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTagAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemTagAsync:::itemTagId"]=1
+operation_parameters_minimum_occurrences["patchItemTagAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTagAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTagAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemTagAsync:::itemTagId"]=1
 operation_parameters_minimum_occurrences["updateItemTagAsync:::api-version"]=0
@@ -480,6 +535,11 @@ operation_parameters_minimum_occurrences["getItemTypeByIdAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getItemTypesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getItemTypesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemTypesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchItemTypeAsync:::itemTypeID"]=1
+operation_parameters_minimum_occurrences["patchItemTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchItemTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::itemTypeID"]=1
 operation_parameters_minimum_occurrences["updateItemTypeAsync:::api-version"]=0
@@ -508,6 +568,14 @@ operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::it
 operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=1
 operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["removeWarrantyPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["batchUpdateStockItems:::tenantId"]=1
+operation_parameters_minimum_occurrences["batchUpdateStockItems:::api-version"]=0
+operation_parameters_minimum_occurrences["batchUpdateStockItems:::x-api-version"]=0
+operation_parameters_minimum_occurrences["batchUpdateStockItems:::BatchStockItemUpdateRequest"]=0
+operation_parameters_minimum_occurrences["bulkUpsertStockItems:::tenantId"]=1
+operation_parameters_minimum_occurrences["bulkUpsertStockItems:::api-version"]=0
+operation_parameters_minimum_occurrences["bulkUpsertStockItems:::x-api-version"]=0
+operation_parameters_minimum_occurrences["bulkUpsertStockItems:::BulkProduct"]=0
 operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::tenantId"]=1
 operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::itemId"]=1
 operation_parameters_minimum_occurrences["countStockItemTagsByItemId:::api-version"]=0
@@ -657,6 +725,15 @@ operation_parameters_minimum_occurrences["getStockItemsOdataMinPrice:::x-api-ver
 operation_parameters_minimum_occurrences["getStockItemsQuery:::tenantId"]=0
 operation_parameters_minimum_occurrences["getStockItemsQuery:::api-version"]=0
 operation_parameters_minimum_occurrences["getStockItemsQuery:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchStockItem:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchStockItem:::itemId"]=1
+operation_parameters_minimum_occurrences["patchStockItem:::api-version"]=0
+operation_parameters_minimum_occurrences["patchStockItem:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchStockItem:::Operation"]=0
+operation_parameters_minimum_occurrences["recalculateStockItemPrices:::tenantId"]=1
+operation_parameters_minimum_occurrences["recalculateStockItemPrices:::api-version"]=0
+operation_parameters_minimum_occurrences["recalculateStockItemPrices:::x-api-version"]=0
+operation_parameters_minimum_occurrences["recalculateStockItemPrices:::request_body"]=0
 operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::tenantId"]=1
 operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::itemId"]=1
 operation_parameters_minimum_occurrences["relateAttachmentToStockItem:::itemAttachmentId"]=1
@@ -874,6 +951,11 @@ operation_parameters_maximum_occurrences["getItemAttachmentByIdAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttachmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttachmentAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemAttachmentAsync:::itemAttachmentId"]=0
+operation_parameters_maximum_occurrences["patchItemAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttachmentAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::itemAttachmentId"]=0
 operation_parameters_maximum_occurrences["updateItemAttachmentAsync:::api-version"]=0
@@ -897,6 +979,11 @@ operation_parameters_maximum_occurrences["getItemAttributeOptionsAsync:::x-api-v
 operation_parameters_maximum_occurrences["getItemAttributeOptionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemAttributeOptionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttributeOptionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeOptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeOptionAsync:::itemAttributeOptionId"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeOptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeOptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeOptionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::itemAttributeOptionId"]=0
 operation_parameters_maximum_occurrences["updateItemAttributeOptionAsync:::api-version"]=0
@@ -920,6 +1007,11 @@ operation_parameters_maximum_occurrences["getItemAttributeByIdAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getItemAttributesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemAttributesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemAttributesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeAsync:::itemAttributeId"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemAttributeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemAttributeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemAttributeAsync:::itemAttributeId"]=0
 operation_parameters_maximum_occurrences["updateItemAttributeAsync:::api-version"]=0
@@ -940,6 +1032,11 @@ operation_parameters_maximum_occurrences["getItemBrandByIdAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getItemBrandsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemBrandsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemBrandsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemBrandAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemBrandAsync:::itemBrandId"]=0
+operation_parameters_maximum_occurrences["patchItemBrandAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemBrandAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemBrandAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemBrandAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemBrandAsync:::itemBrandId"]=0
 operation_parameters_maximum_occurrences["updateItemBrandAsync:::api-version"]=0
@@ -963,6 +1060,11 @@ operation_parameters_maximum_occurrences["getItemBundlesAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getItemBundlesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemBundlesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemBundlesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemBundleAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemBundleAsync:::itemBundleId"]=0
+operation_parameters_maximum_occurrences["patchItemBundleAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemBundleAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemBundleAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemBundleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemBundleAsync:::itemBundleId"]=0
 operation_parameters_maximum_occurrences["updateItemBundleAsync:::api-version"]=0
@@ -986,6 +1088,11 @@ operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::itemCategor
 operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemCategoryByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemCategoryAsync:::itemCategoryId"]=0
+operation_parameters_maximum_occurrences["patchItemCategoryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemCategoryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemCategoryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::itemCategoryId"]=0
 operation_parameters_maximum_occurrences["updateItemCategoryAsync:::api-version"]=0
@@ -1009,6 +1116,11 @@ operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::itemFamilyId"
 operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemFamilyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemFamilyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemFamilyAsync:::itemFamilyId"]=0
+operation_parameters_maximum_occurrences["patchItemFamilyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemFamilyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemFamilyAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemFamilyAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemFamilyAsync:::itemFamilyId"]=0
 operation_parameters_maximum_occurrences["updateItemFamilyAsync:::api-version"]=0
@@ -1048,6 +1160,11 @@ operation_parameters_maximum_occurrences["getItemImageByIdAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getItemImagesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemImagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemImagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemImageAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemImageAsync:::itemImageId"]=0
+operation_parameters_maximum_occurrences["patchItemImageAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemImageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemImageAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemImageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemImageAsync:::itemImageId"]=0
 operation_parameters_maximum_occurrences["updateItemImageAsync:::api-version"]=0
@@ -1068,6 +1185,11 @@ operation_parameters_maximum_occurrences["getItemQuestionByIdAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getItemQuestionsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemQuestionsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemQuestionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemQuestionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemQuestionAsync:::itemQuestionId"]=0
+operation_parameters_maximum_occurrences["patchItemQuestionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemQuestionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemQuestionAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemQuestionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemQuestionAsync:::itemQuestionId"]=0
 operation_parameters_maximum_occurrences["updateItemQuestionAsync:::api-version"]=0
@@ -1134,6 +1256,11 @@ operation_parameters_maximum_occurrences["getItemReviewByIdAsync:::x-api-version
 operation_parameters_maximum_occurrences["getItemReviewsAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["getItemReviewsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemReviewsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemReviewAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemReviewAsync:::itemReviewId"]=0
+operation_parameters_maximum_occurrences["patchItemReviewAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemReviewAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemReviewAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemReviewAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemReviewAsync:::itemReviewId"]=0
 operation_parameters_maximum_occurrences["updateItemReviewAsync:::api-version"]=0
@@ -1177,6 +1304,11 @@ operation_parameters_maximum_occurrences["getItemTagByIdAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getItemTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTagAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemTagAsync:::itemTagId"]=0
+operation_parameters_maximum_occurrences["patchItemTagAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTagAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTagAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemTagAsync:::itemTagId"]=0
 operation_parameters_maximum_occurrences["updateItemTagAsync:::api-version"]=0
@@ -1223,6 +1355,11 @@ operation_parameters_maximum_occurrences["getItemTypeByIdAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getItemTypesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemTypesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemTypesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchItemTypeAsync:::itemTypeID"]=0
+operation_parameters_maximum_occurrences["patchItemTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchItemTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateItemTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemTypeAsync:::itemTypeID"]=0
 operation_parameters_maximum_occurrences["updateItemTypeAsync:::api-version"]=0
@@ -1251,6 +1388,14 @@ operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::it
 operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=0
 operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["removeWarrantyPolicyFromItemAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["batchUpdateStockItems:::tenantId"]=0
+operation_parameters_maximum_occurrences["batchUpdateStockItems:::api-version"]=0
+operation_parameters_maximum_occurrences["batchUpdateStockItems:::x-api-version"]=0
+operation_parameters_maximum_occurrences["batchUpdateStockItems:::BatchStockItemUpdateRequest"]=0
+operation_parameters_maximum_occurrences["bulkUpsertStockItems:::tenantId"]=0
+operation_parameters_maximum_occurrences["bulkUpsertStockItems:::api-version"]=0
+operation_parameters_maximum_occurrences["bulkUpsertStockItems:::x-api-version"]=0
+operation_parameters_maximum_occurrences["bulkUpsertStockItems:::BulkProduct"]=0
 operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::tenantId"]=0
 operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::itemId"]=0
 operation_parameters_maximum_occurrences["countStockItemTagsByItemId:::api-version"]=0
@@ -1400,6 +1545,15 @@ operation_parameters_maximum_occurrences["getStockItemsOdataMinPrice:::x-api-ver
 operation_parameters_maximum_occurrences["getStockItemsQuery:::tenantId"]=0
 operation_parameters_maximum_occurrences["getStockItemsQuery:::api-version"]=0
 operation_parameters_maximum_occurrences["getStockItemsQuery:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchStockItem:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchStockItem:::itemId"]=0
+operation_parameters_maximum_occurrences["patchStockItem:::api-version"]=0
+operation_parameters_maximum_occurrences["patchStockItem:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchStockItem:::Operation"]=0
+operation_parameters_maximum_occurrences["recalculateStockItemPrices:::tenantId"]=0
+operation_parameters_maximum_occurrences["recalculateStockItemPrices:::api-version"]=0
+operation_parameters_maximum_occurrences["recalculateStockItemPrices:::x-api-version"]=0
+operation_parameters_maximum_occurrences["recalculateStockItemPrices:::request_body"]=0
 operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::tenantId"]=0
 operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::itemId"]=0
 operation_parameters_maximum_occurrences["relateAttachmentToStockItem:::itemAttachmentId"]=0
@@ -1614,6 +1768,11 @@ operation_parameters_collection_type["getItemAttachmentByIdAsync:::x-api-version
 operation_parameters_collection_type["getItemAttachmentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemAttachmentsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemAttachmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemAttachmentAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemAttachmentAsync:::itemAttachmentId"]=""
+operation_parameters_collection_type["patchItemAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemAttachmentAsync:::Operation"]=
 operation_parameters_collection_type["updateItemAttachmentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemAttachmentAsync:::itemAttachmentId"]=""
 operation_parameters_collection_type["updateItemAttachmentAsync:::api-version"]=""
@@ -1637,6 +1796,11 @@ operation_parameters_collection_type["getItemAttributeOptionsAsync:::x-api-versi
 operation_parameters_collection_type["getItemAttributeOptionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemAttributeOptionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemAttributeOptionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemAttributeOptionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemAttributeOptionAsync:::itemAttributeOptionId"]=""
+operation_parameters_collection_type["patchItemAttributeOptionAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemAttributeOptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemAttributeOptionAsync:::Operation"]=
 operation_parameters_collection_type["updateItemAttributeOptionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemAttributeOptionAsync:::itemAttributeOptionId"]=""
 operation_parameters_collection_type["updateItemAttributeOptionAsync:::api-version"]=""
@@ -1660,6 +1824,11 @@ operation_parameters_collection_type["getItemAttributeByIdAsync:::x-api-version"
 operation_parameters_collection_type["getItemAttributesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemAttributesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemAttributesAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemAttributeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemAttributeAsync:::itemAttributeId"]=""
+operation_parameters_collection_type["patchItemAttributeAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemAttributeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemAttributeAsync:::Operation"]=
 operation_parameters_collection_type["updateItemAttributeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemAttributeAsync:::itemAttributeId"]=""
 operation_parameters_collection_type["updateItemAttributeAsync:::api-version"]=""
@@ -1680,6 +1849,11 @@ operation_parameters_collection_type["getItemBrandByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemBrandsAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemBrandsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemBrandsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemBrandAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemBrandAsync:::itemBrandId"]=""
+operation_parameters_collection_type["patchItemBrandAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemBrandAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemBrandAsync:::Operation"]=
 operation_parameters_collection_type["updateItemBrandAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemBrandAsync:::itemBrandId"]=""
 operation_parameters_collection_type["updateItemBrandAsync:::api-version"]=""
@@ -1703,6 +1877,11 @@ operation_parameters_collection_type["getItemBundlesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemBundlesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemBundlesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemBundlesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemBundleAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemBundleAsync:::itemBundleId"]=""
+operation_parameters_collection_type["patchItemBundleAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemBundleAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemBundleAsync:::Operation"]=
 operation_parameters_collection_type["updateItemBundleAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemBundleAsync:::itemBundleId"]=""
 operation_parameters_collection_type["updateItemBundleAsync:::api-version"]=""
@@ -1726,6 +1905,11 @@ operation_parameters_collection_type["getItemCategoryByIdAsync:::itemCategoryId"
 operation_parameters_collection_type["getItemCategoryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemCategoryByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemCategoryByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemCategoryAsync:::itemCategoryId"]=""
+operation_parameters_collection_type["patchItemCategoryAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemCategoryAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemCategoryAsync:::Operation"]=
 operation_parameters_collection_type["updateItemCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemCategoryAsync:::itemCategoryId"]=""
 operation_parameters_collection_type["updateItemCategoryAsync:::api-version"]=""
@@ -1749,6 +1933,11 @@ operation_parameters_collection_type["getItemFamilyByIdAsync:::itemFamilyId"]=""
 operation_parameters_collection_type["getItemFamilyByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemFamilyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getItemFamilyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemFamilyAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemFamilyAsync:::itemFamilyId"]=""
+operation_parameters_collection_type["patchItemFamilyAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemFamilyAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemFamilyAsync:::Operation"]=
 operation_parameters_collection_type["updateItemFamilyAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemFamilyAsync:::itemFamilyId"]=""
 operation_parameters_collection_type["updateItemFamilyAsync:::api-version"]=""
@@ -1788,6 +1977,11 @@ operation_parameters_collection_type["getItemImageByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemImagesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemImagesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemImagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemImageAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemImageAsync:::itemImageId"]=""
+operation_parameters_collection_type["patchItemImageAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemImageAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemImageAsync:::Operation"]=
 operation_parameters_collection_type["updateItemImageAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemImageAsync:::itemImageId"]=""
 operation_parameters_collection_type["updateItemImageAsync:::api-version"]=""
@@ -1808,6 +2002,11 @@ operation_parameters_collection_type["getItemQuestionByIdAsync:::x-api-version"]
 operation_parameters_collection_type["getItemQuestionsAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemQuestionsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemQuestionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemQuestionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemQuestionAsync:::itemQuestionId"]=""
+operation_parameters_collection_type["patchItemQuestionAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemQuestionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemQuestionAsync:::Operation"]=
 operation_parameters_collection_type["updateItemQuestionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemQuestionAsync:::itemQuestionId"]=""
 operation_parameters_collection_type["updateItemQuestionAsync:::api-version"]=""
@@ -1874,6 +2073,11 @@ operation_parameters_collection_type["getItemReviewByIdAsync:::x-api-version"]="
 operation_parameters_collection_type["getItemReviewsAsync:::itemId"]=""
 operation_parameters_collection_type["getItemReviewsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemReviewsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemReviewAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemReviewAsync:::itemReviewId"]=""
+operation_parameters_collection_type["patchItemReviewAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemReviewAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemReviewAsync:::Operation"]=
 operation_parameters_collection_type["updateItemReviewAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemReviewAsync:::itemReviewId"]=""
 operation_parameters_collection_type["updateItemReviewAsync:::api-version"]=""
@@ -1917,6 +2121,11 @@ operation_parameters_collection_type["getItemTagByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemTagsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemTagAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemTagAsync:::itemTagId"]=""
+operation_parameters_collection_type["patchItemTagAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemTagAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemTagAsync:::Operation"]=
 operation_parameters_collection_type["updateItemTagAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemTagAsync:::itemTagId"]=""
 operation_parameters_collection_type["updateItemTagAsync:::api-version"]=""
@@ -1963,6 +2172,11 @@ operation_parameters_collection_type["getItemTypeByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getItemTypesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemTypesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemTypesAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchItemTypeAsync:::itemTypeID"]=""
+operation_parameters_collection_type["patchItemTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchItemTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchItemTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateItemTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemTypeAsync:::itemTypeID"]=""
 operation_parameters_collection_type["updateItemTypeAsync:::api-version"]=""
@@ -1991,6 +2205,14 @@ operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::itemId
 operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::itemWarrantyPolicyId"]=""
 operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::api-version"]=""
 operation_parameters_collection_type["removeWarrantyPolicyFromItemAsync:::x-api-version"]=""
+operation_parameters_collection_type["batchUpdateStockItems:::tenantId"]=""
+operation_parameters_collection_type["batchUpdateStockItems:::api-version"]=""
+operation_parameters_collection_type["batchUpdateStockItems:::x-api-version"]=""
+operation_parameters_collection_type["batchUpdateStockItems:::BatchStockItemUpdateRequest"]=""
+operation_parameters_collection_type["bulkUpsertStockItems:::tenantId"]=""
+operation_parameters_collection_type["bulkUpsertStockItems:::api-version"]=""
+operation_parameters_collection_type["bulkUpsertStockItems:::x-api-version"]=""
+operation_parameters_collection_type["bulkUpsertStockItems:::BulkProduct"]=
 operation_parameters_collection_type["countStockItemTagsByItemId:::tenantId"]=""
 operation_parameters_collection_type["countStockItemTagsByItemId:::itemId"]=""
 operation_parameters_collection_type["countStockItemTagsByItemId:::api-version"]=""
@@ -2140,6 +2362,15 @@ operation_parameters_collection_type["getStockItemsOdataMinPrice:::x-api-version
 operation_parameters_collection_type["getStockItemsQuery:::tenantId"]=""
 operation_parameters_collection_type["getStockItemsQuery:::api-version"]=""
 operation_parameters_collection_type["getStockItemsQuery:::x-api-version"]=""
+operation_parameters_collection_type["patchStockItem:::tenantId"]=""
+operation_parameters_collection_type["patchStockItem:::itemId"]=""
+operation_parameters_collection_type["patchStockItem:::api-version"]=""
+operation_parameters_collection_type["patchStockItem:::x-api-version"]=""
+operation_parameters_collection_type["patchStockItem:::Operation"]=
+operation_parameters_collection_type["recalculateStockItemPrices:::tenantId"]=""
+operation_parameters_collection_type["recalculateStockItemPrices:::api-version"]=""
+operation_parameters_collection_type["recalculateStockItemPrices:::x-api-version"]=""
+operation_parameters_collection_type["recalculateStockItemPrices:::request_body"]=
 operation_parameters_collection_type["relateAttachmentToStockItem:::tenantId"]=""
 operation_parameters_collection_type["relateAttachmentToStockItem:::itemId"]=""
 operation_parameters_collection_type["relateAttachmentToStockItem:::itemAttachmentId"]=""
@@ -2671,7 +2902,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}CatalogService command line client (API version 2.1.2.5401)${OFF}
+${BOLD}${WHITE}CatalogService command line client (API version 2.1.2.5532)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -2734,6 +2965,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemAttachmentAsync${OFF};Delete an item attachment
   ${CYAN}getItemAttachmentByIdAsync${OFF};Get item attachment by ID
   ${CYAN}getItemAttachmentsAsync${OFF};Get all item attachments
+  ${CYAN}patchItemAttachmentAsync${OFF};Patch an item attachment
   ${CYAN}updateItemAttachmentAsync${OFF};Update an item attachment
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2745,6 +2977,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getItemAttributeOptionByIdAsync${OFF};Get item attribute option by ID
   ${CYAN}getItemAttributeOptionsAsync${OFF};Get all item attribute options
   ${CYAN}getItemAttributeOptionsCountAsync${OFF};Get item attribute options count
+  ${CYAN}patchItemAttributeOptionAsync${OFF};Patch an item attribute option
   ${CYAN}updateItemAttributeOptionAsync${OFF};Update an item attribute option
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2756,6 +2989,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemAttributeAsync${OFF};Delete an item attribute
   ${CYAN}getItemAttributeByIdAsync${OFF};Get item attribute by ID
   ${CYAN}getItemAttributesAsync${OFF};Get all item attributes
+  ${CYAN}patchItemAttributeAsync${OFF};Patch an item attribute
   ${CYAN}updateItemAttributeAsync${OFF};Update an item attribute
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2766,6 +3000,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemBrandAsync${OFF};Delete an item brand
   ${CYAN}getItemBrandByIdAsync${OFF};Get item brand by ID
   ${CYAN}getItemBrandsAsync${OFF};Get all item brands
+  ${CYAN}patchItemBrandAsync${OFF};Patch an item brand
   ${CYAN}updateItemBrandAsync${OFF};Update an item brand
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2777,6 +3012,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getItemBundleByIdAsync${OFF};Get item bundle by ID
   ${CYAN}getItemBundlesAsync${OFF};Get all item bundles
   ${CYAN}getItemBundlesCountAsync${OFF};Get item bundles count
+  ${CYAN}patchItemBundleAsync${OFF};Patch an item bundle
   ${CYAN}updateItemBundleAsync${OFF};Update an item bundle
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2788,6 +3024,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemCategoryAsync${OFF};Delete an item category
   ${CYAN}getItemCategoriesAsync${OFF};Get all item categories
   ${CYAN}getItemCategoryByIdAsync${OFF};Get item category by ID
+  ${CYAN}patchItemCategoryAsync${OFF};Patch an item category
   ${CYAN}updateItemCategoryAsync${OFF};Update an item category
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2799,6 +3036,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getItemFamiliesAsync${OFF};Get all item families
   ${CYAN}getItemFamiliesCountAsync${OFF};Get item families count
   ${CYAN}getItemFamilyByIdAsync${OFF};Get item family by ID
+  ${CYAN}patchItemFamilyAsync${OFF};Patch an item family
   ${CYAN}updateItemFamilyAsync${OFF};Update an item family
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2822,6 +3060,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemImageAsync${OFF};Delete an item image
   ${CYAN}getItemImageByIdAsync${OFF};Get item image by ID
   ${CYAN}getItemImagesAsync${OFF};Get all item images
+  ${CYAN}patchItemImageAsync${OFF};Patch an item image
   ${CYAN}updateItemImageAsync${OFF};Update an item image
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2832,6 +3071,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemQuestionAsync${OFF};Delete an item question
   ${CYAN}getItemQuestionByIdAsync${OFF};Get item question by ID
   ${CYAN}getItemQuestionsAsync${OFF};Get all item questions
+  ${CYAN}patchItemQuestionAsync${OFF};Patch an item question
   ${CYAN}updateItemQuestionAsync${OFF};Update an item question
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2862,6 +3102,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemReviewAsync${OFF};Delete an item review
   ${CYAN}getItemReviewByIdAsync${OFF};Get item review by ID
   ${CYAN}getItemReviewsAsync${OFF};Get all item reviews
+  ${CYAN}patchItemReviewAsync${OFF};Patch an item review
   ${CYAN}updateItemReviewAsync${OFF};Update an item review
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2882,6 +3123,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemTagAsync${OFF};Delete an item tag
   ${CYAN}getItemTagByIdAsync${OFF};Get item tag by ID
   ${CYAN}getItemTagsAsync${OFF};Get all item tags
+  ${CYAN}patchItemTagAsync${OFF};Patch an item tag
   ${CYAN}updateItemTagAsync${OFF};Update an item tag
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2903,6 +3145,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteItemTypeAsync${OFF};Delete an item type
   ${CYAN}getItemTypeByIdAsync${OFF};Get item type by ID
   ${CYAN}getItemTypesAsync${OFF};Get all item types
+  ${CYAN}patchItemTypeAsync${OFF};Patch an item type
   ${CYAN}updateItemTypeAsync${OFF};Update an item type
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2919,6 +3162,8 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[items]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}batchUpdateStockItems${OFF};Bulk-update stock items
+  ${CYAN}bulkUpsertStockItems${OFF};Bulk upsert stock items from rows
   ${CYAN}countStockItemTagsByItemId${OFF};Count tags for a stock item
   ${CYAN}countStockItemsByBusiness${OFF};Count stock items by business
   ${CYAN}createStockItem${OFF};Create a new stock item
@@ -2961,6 +3206,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getStockItemsOdataMaxPrice${OFF};Get max price of stock items
   ${CYAN}getStockItemsOdataMinPrice${OFF};Get min price of stock items
   ${CYAN}getStockItemsQuery${OFF};Get all stock items
+  ${CYAN}patchStockItem${OFF};Patch a stock item
+  ${CYAN}recalculateStockItemPrices${OFF};Recalculate stock item prices
   ${CYAN}relateAttachmentToStockItem${OFF};Relate attachment to stock item
   ${CYAN}relateAttributeOptionToStockItem${OFF};Relate attribute option to stock item
   ${CYAN}relateBrandToStockItem${OFF};Relate brand to stock item
@@ -3032,7 +3279,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}CatalogService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}${WHITE}CatalogService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -3052,7 +3299,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}CatalogService command line client (API version 2.1.2.5401)${OFF}"
+    echo -e "${BOLD}CatalogService command line client (API version 2.1.2.5532)${OFF}"
     echo ""
 }
 
@@ -3485,6 +3732,35 @@ print_getItemAttachmentsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemAttachmentAsync operation
+#
+##############################################################################
+print_patchItemAttachmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemAttachmentAsync - Patch an item attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item attachment for the specified tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttachmentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttachmentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemAttachmentAsync operation
 #
 ##############################################################################
@@ -3637,6 +3913,35 @@ print_getItemAttributeOptionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchItemAttributeOptionAsync operation
+#
+##############################################################################
+print_patchItemAttributeOptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemAttributeOptionAsync - Patch an item attribute option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item attribute option for the specified tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeOptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeOptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3811,6 +4116,35 @@ print_getItemAttributesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemAttributeAsync operation
+#
+##############################################################################
+print_patchItemAttributeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemAttributeAsync - Patch an item attribute${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item attribute for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemAttributeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemAttributeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemAttributeAsync operation
 #
 ##############################################################################
@@ -3937,6 +4271,35 @@ print_getItemBrandsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchItemBrandAsync operation
+#
+##############################################################################
+print_patchItemBrandAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemBrandAsync - Patch an item brand${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item brand for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBrandId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBrandId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4111,6 +4474,35 @@ print_getItemBundlesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemBundleAsync operation
+#
+##############################################################################
+print_patchItemBundleAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemBundleAsync - Patch an item bundle${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item bundle for the specified tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemBundleId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemBundleId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemBundleAsync operation
 #
 ##############################################################################
@@ -4274,6 +4666,35 @@ print_getItemCategoryByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemCategoryAsync operation
+#
+##############################################################################
+print_patchItemCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemCategoryAsync - Patch an item category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item category for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemCategoryAsync operation
 #
 ##############################################################################
@@ -4426,6 +4847,35 @@ print_getItemFamilyByIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchItemFamilyAsync operation
+#
+##############################################################################
+print_patchItemFamilyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemFamilyAsync - Patch an item family${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item family for the specified tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemFamilyId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemFamilyId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4770,6 +5220,35 @@ print_getItemImagesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemImageAsync operation
+#
+##############################################################################
+print_patchItemImageAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemImageAsync - Patch an item image${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item image for the specified tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemImageId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemImageId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemImageAsync operation
 #
 ##############################################################################
@@ -4896,6 +5375,35 @@ print_getItemQuestionsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchItemQuestionAsync operation
+#
+##############################################################################
+print_patchItemQuestionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemQuestionAsync - Patch an item question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item question for the specified tenant using a JSON Patch document." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemQuestionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemQuestionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5332,6 +5840,35 @@ print_getItemReviewsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemReviewAsync operation
+#
+##############################################################################
+print_patchItemReviewAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemReviewAsync - Patch an item review${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item review for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemReviewId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemReviewId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemReviewAsync operation
 #
 ##############################################################################
@@ -5602,6 +6139,35 @@ print_getItemTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchItemTagAsync operation
+#
+##############################################################################
+print_patchItemTagAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemTagAsync - Patch an item tag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item tag for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTagId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTagId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5920,6 +6486,35 @@ print_getItemTypesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchItemTypeAsync operation
+#
+##############################################################################
+print_patchItemTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchItemTypeAsync - Patch an item type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing item type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemTypeID${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemTypeID=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateItemTypeAsync operation
 #
 ##############################################################################
@@ -6082,6 +6677,62 @@ print_removeWarrantyPolicyFromItemAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for batchUpdateStockItems operation
+#
+##############################################################################
+print_batchUpdateStockItems_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}batchUpdateStockItems - Bulk-update stock items${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Applies a targeted bulk operation (set flags, add/remove tax policies) to many items atomically." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for bulkUpsertStockItems operation
+#
+##############################################################################
+print_bulkUpsertStockItems_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}bulkUpsertStockItems - Bulk upsert stock items from rows${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates scalar fields of matching tenant-owned items or creates new ones, all in one transaction." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7165,6 +7816,63 @@ print_getStockItemsQuery_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchStockItem operation
+#
+##############################################################################
+print_patchStockItem_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchStockItem - Patch a stock item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing stock item for the specified tenant and item ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: itemId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for recalculateStockItemPrices operation
+#
+##############################################################################
+print_recalculateStockItemPrices_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}recalculateStockItemPrices - Recalculate stock item prices${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Recomputes derived prices for the given tenant-owned items via the pricing service, atomically." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9370,6 +10078,82 @@ call_getItemAttachmentsAsync() {
 
 ##############################################################################
 #
+# Call patchItemAttachmentAsync operation
+#
+##############################################################################
+call_patchItemAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttachmentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttachments/{itemAttachmentId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemAttachmentAsync operation
 #
 ##############################################################################
@@ -9661,6 +10445,82 @@ call_getItemAttributeOptionsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchItemAttributeOptionAsync operation
+#
+##############################################################################
+call_patchItemAttributeOptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeOptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributeOptions/{itemAttributeOptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9962,6 +10822,82 @@ call_getItemAttributesAsync() {
 
 ##############################################################################
 #
+# Call patchItemAttributeAsync operation
+#
+##############################################################################
+call_patchItemAttributeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemAttributeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemAttributes/{itemAttributeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemAttributeAsync operation
 #
 ##############################################################################
@@ -10217,6 +11153,82 @@ call_getItemBrandsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchItemBrandAsync operation
+#
+##############################################################################
+call_patchItemBrandAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBrandId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBrands/{itemBrandId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10518,6 +11530,82 @@ call_getItemBundlesCountAsync() {
 
 ##############################################################################
 #
+# Call patchItemBundleAsync operation
+#
+##############################################################################
+call_patchItemBundleAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemBundleId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemBundles/{itemBundleId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemBundleAsync operation
 #
 ##############################################################################
@@ -10814,6 +11902,82 @@ call_getItemCategoryByIdAsync() {
 
 ##############################################################################
 #
+# Call patchItemCategoryAsync operation
+#
+##############################################################################
+call_patchItemCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemCategories/{itemCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemCategoryAsync operation
 #
 ##############################################################################
@@ -11105,6 +12269,82 @@ call_getItemFamilyByIdAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchItemFamilyAsync operation
+#
+##############################################################################
+call_patchItemFamilyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemFamilyId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemFamilies/{itemFamilyId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11658,6 +12898,82 @@ call_getItemImagesAsync() {
 
 ##############################################################################
 #
+# Call patchItemImageAsync operation
+#
+##############################################################################
+call_patchItemImageAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemImageId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemImages/{itemImageId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemImageAsync operation
 #
 ##############################################################################
@@ -11913,6 +13229,82 @@ call_getItemQuestionsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchItemQuestionAsync operation
+#
+##############################################################################
+call_patchItemQuestionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemQuestionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemQuestions/{itemQuestionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12538,6 +13930,82 @@ call_getItemReviewsAsync() {
 
 ##############################################################################
 #
+# Call patchItemReviewAsync operation
+#
+##############################################################################
+call_patchItemReviewAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemReviewId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemReviews/{itemReviewId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemReviewAsync operation
 #
 ##############################################################################
@@ -12973,6 +14441,82 @@ call_getItemTagsAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchItemTagAsync operation
+#
+##############################################################################
+call_patchItemTagAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTagId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTags/{itemTagId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13454,6 +14998,82 @@ call_getItemTypesAsync() {
 
 ##############################################################################
 #
+# Call patchItemTypeAsync operation
+#
+##############################################################################
+call_patchItemTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemTypeID)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/ItemTypes/{itemTypeID}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateItemTypeAsync operation
 #
 ##############################################################################
@@ -13705,6 +15325,158 @@ call_removeWarrantyPolicyFromItemAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call batchUpdateStockItems operation
+#
+##############################################################################
+call_batchUpdateStockItems() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/Batch" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call bulkUpsertStockItems operation
+#
+##############################################################################
+call_bulkUpsertStockItems() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/BulkUpsert" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15257,6 +17029,158 @@ call_getStockItemsQuery() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchStockItem operation
+#
+##############################################################################
+call_patchStockItem() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(itemId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/{itemId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call recalculateStockItemPrices operation
+#
+##############################################################################
+call_recalculateStockItemPrices() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CatalogService/Items/RecalculatePrices" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16916,6 +18840,9 @@ case $key in
     getItemAttachmentsAsync)
     operation="getItemAttachmentsAsync"
     ;;
+    patchItemAttachmentAsync)
+    operation="patchItemAttachmentAsync"
+    ;;
     updateItemAttachmentAsync)
     operation="updateItemAttachmentAsync"
     ;;
@@ -16933,6 +18860,9 @@ case $key in
     ;;
     getItemAttributeOptionsCountAsync)
     operation="getItemAttributeOptionsCountAsync"
+    ;;
+    patchItemAttributeOptionAsync)
+    operation="patchItemAttributeOptionAsync"
     ;;
     updateItemAttributeOptionAsync)
     operation="updateItemAttributeOptionAsync"
@@ -16952,6 +18882,9 @@ case $key in
     getItemAttributesAsync)
     operation="getItemAttributesAsync"
     ;;
+    patchItemAttributeAsync)
+    operation="patchItemAttributeAsync"
+    ;;
     updateItemAttributeAsync)
     operation="updateItemAttributeAsync"
     ;;
@@ -16966,6 +18899,9 @@ case $key in
     ;;
     getItemBrandsAsync)
     operation="getItemBrandsAsync"
+    ;;
+    patchItemBrandAsync)
+    operation="patchItemBrandAsync"
     ;;
     updateItemBrandAsync)
     operation="updateItemBrandAsync"
@@ -16985,6 +18921,9 @@ case $key in
     getItemBundlesCountAsync)
     operation="getItemBundlesCountAsync"
     ;;
+    patchItemBundleAsync)
+    operation="patchItemBundleAsync"
+    ;;
     updateItemBundleAsync)
     operation="updateItemBundleAsync"
     ;;
@@ -17003,6 +18942,9 @@ case $key in
     getItemCategoryByIdAsync)
     operation="getItemCategoryByIdAsync"
     ;;
+    patchItemCategoryAsync)
+    operation="patchItemCategoryAsync"
+    ;;
     updateItemCategoryAsync)
     operation="updateItemCategoryAsync"
     ;;
@@ -17020,6 +18962,9 @@ case $key in
     ;;
     getItemFamilyByIdAsync)
     operation="getItemFamilyByIdAsync"
+    ;;
+    patchItemFamilyAsync)
+    operation="patchItemFamilyAsync"
     ;;
     updateItemFamilyAsync)
     operation="updateItemFamilyAsync"
@@ -17060,6 +19005,9 @@ case $key in
     getItemImagesAsync)
     operation="getItemImagesAsync"
     ;;
+    patchItemImageAsync)
+    operation="patchItemImageAsync"
+    ;;
     updateItemImageAsync)
     operation="updateItemImageAsync"
     ;;
@@ -17074,6 +19022,9 @@ case $key in
     ;;
     getItemQuestionsAsync)
     operation="getItemQuestionsAsync"
+    ;;
+    patchItemQuestionAsync)
+    operation="patchItemQuestionAsync"
     ;;
     updateItemQuestionAsync)
     operation="updateItemQuestionAsync"
@@ -17120,6 +19071,9 @@ case $key in
     getItemReviewsAsync)
     operation="getItemReviewsAsync"
     ;;
+    patchItemReviewAsync)
+    operation="patchItemReviewAsync"
+    ;;
     updateItemReviewAsync)
     operation="updateItemReviewAsync"
     ;;
@@ -17149,6 +19103,9 @@ case $key in
     ;;
     getItemTagsAsync)
     operation="getItemTagsAsync"
+    ;;
+    patchItemTagAsync)
+    operation="patchItemTagAsync"
     ;;
     updateItemTagAsync)
     operation="updateItemTagAsync"
@@ -17183,6 +19140,9 @@ case $key in
     getItemTypesAsync)
     operation="getItemTypesAsync"
     ;;
+    patchItemTypeAsync)
+    operation="patchItemTypeAsync"
+    ;;
     updateItemTypeAsync)
     operation="updateItemTypeAsync"
     ;;
@@ -17200,6 +19160,12 @@ case $key in
     ;;
     removeWarrantyPolicyFromItemAsync)
     operation="removeWarrantyPolicyFromItemAsync"
+    ;;
+    batchUpdateStockItems)
+    operation="batchUpdateStockItems"
+    ;;
+    bulkUpsertStockItems)
+    operation="bulkUpsertStockItems"
     ;;
     countStockItemTagsByItemId)
     operation="countStockItemTagsByItemId"
@@ -17326,6 +19292,12 @@ case $key in
     ;;
     getStockItemsQuery)
     operation="getStockItemsQuery"
+    ;;
+    patchStockItem)
+    operation="patchStockItem"
+    ;;
+    recalculateStockItemPrices)
+    operation="recalculateStockItemPrices"
     ;;
     relateAttachmentToStockItem)
     operation="relateAttachmentToStockItem"
@@ -17591,6 +19563,9 @@ case $operation in
     getItemAttachmentsAsync)
     call_getItemAttachmentsAsync
     ;;
+    patchItemAttachmentAsync)
+    call_patchItemAttachmentAsync
+    ;;
     updateItemAttachmentAsync)
     call_updateItemAttachmentAsync
     ;;
@@ -17608,6 +19583,9 @@ case $operation in
     ;;
     getItemAttributeOptionsCountAsync)
     call_getItemAttributeOptionsCountAsync
+    ;;
+    patchItemAttributeOptionAsync)
+    call_patchItemAttributeOptionAsync
     ;;
     updateItemAttributeOptionAsync)
     call_updateItemAttributeOptionAsync
@@ -17627,6 +19605,9 @@ case $operation in
     getItemAttributesAsync)
     call_getItemAttributesAsync
     ;;
+    patchItemAttributeAsync)
+    call_patchItemAttributeAsync
+    ;;
     updateItemAttributeAsync)
     call_updateItemAttributeAsync
     ;;
@@ -17641,6 +19622,9 @@ case $operation in
     ;;
     getItemBrandsAsync)
     call_getItemBrandsAsync
+    ;;
+    patchItemBrandAsync)
+    call_patchItemBrandAsync
     ;;
     updateItemBrandAsync)
     call_updateItemBrandAsync
@@ -17660,6 +19644,9 @@ case $operation in
     getItemBundlesCountAsync)
     call_getItemBundlesCountAsync
     ;;
+    patchItemBundleAsync)
+    call_patchItemBundleAsync
+    ;;
     updateItemBundleAsync)
     call_updateItemBundleAsync
     ;;
@@ -17678,6 +19665,9 @@ case $operation in
     getItemCategoryByIdAsync)
     call_getItemCategoryByIdAsync
     ;;
+    patchItemCategoryAsync)
+    call_patchItemCategoryAsync
+    ;;
     updateItemCategoryAsync)
     call_updateItemCategoryAsync
     ;;
@@ -17695,6 +19685,9 @@ case $operation in
     ;;
     getItemFamilyByIdAsync)
     call_getItemFamilyByIdAsync
+    ;;
+    patchItemFamilyAsync)
+    call_patchItemFamilyAsync
     ;;
     updateItemFamilyAsync)
     call_updateItemFamilyAsync
@@ -17735,6 +19728,9 @@ case $operation in
     getItemImagesAsync)
     call_getItemImagesAsync
     ;;
+    patchItemImageAsync)
+    call_patchItemImageAsync
+    ;;
     updateItemImageAsync)
     call_updateItemImageAsync
     ;;
@@ -17749,6 +19745,9 @@ case $operation in
     ;;
     getItemQuestionsAsync)
     call_getItemQuestionsAsync
+    ;;
+    patchItemQuestionAsync)
+    call_patchItemQuestionAsync
     ;;
     updateItemQuestionAsync)
     call_updateItemQuestionAsync
@@ -17795,6 +19794,9 @@ case $operation in
     getItemReviewsAsync)
     call_getItemReviewsAsync
     ;;
+    patchItemReviewAsync)
+    call_patchItemReviewAsync
+    ;;
     updateItemReviewAsync)
     call_updateItemReviewAsync
     ;;
@@ -17824,6 +19826,9 @@ case $operation in
     ;;
     getItemTagsAsync)
     call_getItemTagsAsync
+    ;;
+    patchItemTagAsync)
+    call_patchItemTagAsync
     ;;
     updateItemTagAsync)
     call_updateItemTagAsync
@@ -17858,6 +19863,9 @@ case $operation in
     getItemTypesAsync)
     call_getItemTypesAsync
     ;;
+    patchItemTypeAsync)
+    call_patchItemTypeAsync
+    ;;
     updateItemTypeAsync)
     call_updateItemTypeAsync
     ;;
@@ -17875,6 +19883,12 @@ case $operation in
     ;;
     removeWarrantyPolicyFromItemAsync)
     call_removeWarrantyPolicyFromItemAsync
+    ;;
+    batchUpdateStockItems)
+    call_batchUpdateStockItems
+    ;;
+    bulkUpsertStockItems)
+    call_bulkUpsertStockItems
     ;;
     countStockItemTagsByItemId)
     call_countStockItemTagsByItemId
@@ -18001,6 +20015,12 @@ case $operation in
     ;;
     getStockItemsQuery)
     call_getStockItemsQuery
+    ;;
+    patchStockItem)
+    call_patchStockItem
+    ;;
+    recalculateStockItemPrices)
+    call_recalculateStockItemPrices
     ;;
     relateAttachmentToStockItem)
     call_relateAttachmentToStockItem
