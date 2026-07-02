@@ -80,7 +80,6 @@ _()
     operations["getSystemCartById"]=1
     operations["getSystemCarts"]=1
     operations["getSystemCartsCount"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createSystemContactOption"]=1
     operations["deleteSystemContactOption"]=1
     operations["getSystemContactOptionById"]=1
@@ -111,10 +110,6 @@ _()
     operations["getSystemIPLookupById"]=1
     operations["getSystemIPLookups"]=1
     operations["getSystemIPLookupsCount"]=1
-    operations["apiLicensingLicensesGeneratePost"]=1
-    operations["apiLicensingLicensesValidateAttributesGet"]=1
-    operations["apiLicensingLicensesValidateErrorsGet"]=1
-    operations["apiLicensingLicensesValidateGet"]=1
     operations["getLicenseAssignmentsAsync"]=1
     operations["getLicenseAttributesAsync"]=1
     operations["getLicenseByIdAsync"]=1
@@ -196,7 +191,6 @@ _()
     operation_parameters["getSystemCartById"]="cartId= api-version= x-api-version: "
     operation_parameters["getSystemCarts"]="api-version= x-api-version: "
     operation_parameters["getSystemCartsCount"]="api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createSystemContactOption"]="contactId= key= portalId= api-version= x-api-version: "
     operation_parameters["deleteSystemContactOption"]="contactId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemContactOptionById"]="contactId= optionId= api-version= x-api-version: "
@@ -227,10 +221,6 @@ _()
     operation_parameters["getSystemIPLookupById"]="ipLookupId= api-version= x-api-version: "
     operation_parameters["getSystemIPLookups"]="api-version= x-api-version: "
     operation_parameters["getSystemIPLookupsCount"]="api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesGeneratePost"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesValidateAttributesGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesValidateErrorsGet"]="tenantId= api-version= x-api-version: "
-    operation_parameters["apiLicensingLicensesValidateGet"]="tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseAssignmentsAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseAttributesAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseByIdAsync"]="licenseId= tenantId= api-version= x-api-version: "

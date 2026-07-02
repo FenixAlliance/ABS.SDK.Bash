@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
+**status** | **string** |  | [optional] [default to null]
 **remote** | **boolean** |  | [optional] [default to null]
 **expectedHireDate** | **string** |  | [optional] [default to null]
 **title** | **string** |  | [optional] [default to null]

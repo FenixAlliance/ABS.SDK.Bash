@@ -57,6 +57,7 @@ Name | Type | Description | Notes
 **cornerstoneContent** | **boolean** |  | [optional] [default to null]
 **isEssentialContent** | **boolean** |  | [optional] [default to null]
 **allowSearchEngineIndexing** | **boolean** |  | [optional] [default to null]
+**webPortalId** | **string** |  | [optional] [default to null]
 **webTemplateId** | **string** |  | [optional] [default to null]
 **parentWebContentId** | **string** |  | [optional] [default to null]
 **isHomePage** | **boolean** |  | [optional] [default to null]

@@ -6,7 +6,7 @@ client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/AverageDto.md
 docs/AverageDtoEnvelope.md
-docs/CompletionsApi.md
+docs/ContactCreateDto.md
 docs/ContactDto.md
 docs/CountDto.md
 docs/CountDtoEnvelope.md
@@ -110,7 +110,7 @@ docs/CourseWikisApi.md
 docs/CoursesApi.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

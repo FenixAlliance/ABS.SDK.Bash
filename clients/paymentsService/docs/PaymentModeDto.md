@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
+**paymentMeansCode** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **enrollmentId** | **string** |  | [optional] [default to null]
 

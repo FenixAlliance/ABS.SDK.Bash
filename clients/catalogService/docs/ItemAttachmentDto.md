@@ -12,6 +12,8 @@ Name | Type | Description | Notes
 **hash** | **string** |  | [optional] [default to null]
 **fileUrl** | **string** |  | [optional] [default to null]
 **filePath** | **string** |  | [optional] [default to null]
+**storageKey** | **string** |  | [optional] [default to null]
+**storageProviderKey** | **string** |  | [optional] [default to null]
 **fileName** | **string** |  | [optional] [default to null]
 **abstract** | **string** |  | [optional] [default to null]
 **keyWords** | **string** |  | [optional] [default to null]
@@ -25,6 +27,14 @@ Name | Type | Description | Notes
 **enrollmentId** | **string** |  | [optional] [default to null]
 **socialProfileId** | **string** |  | [optional] [default to null]
 **folderPath** | **string** |  | [optional] [default to null]
+**scanStatus** | **string** |  | [optional] [default to null]
+**thumbnailStatus** | **string** |  | [optional] [default to null]
+**hasThumbnail** | **boolean** |  | [optional] [readonly] [default to null]
+**thumbnailStorageKey** | **string** |  | [optional] [default to null]
+**thumbnailContentType** | **string** |  | [optional] [default to null]
+**thumbnailWidth** | **integer** |  | [optional] [default to null]
+**thumbnailHeight** | **integer** |  | [optional] [default to null]
+**publicAccessType** | **string** |  | [optional] [default to null]
 **itemId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

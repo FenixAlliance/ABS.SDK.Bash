@@ -11,7 +11,6 @@ docs/CartDtoEnvelope.md
 docs/CartUpdateRequest.md
 docs/CartsApi.md
 docs/CompareApi.md
-docs/CompletionsApi.md
 docs/CountryDto.md
 docs/CountryDtoEnvelope.md
 docs/CountrySwitchRequest.md
@@ -20,7 +19,7 @@ docs/CurrencyDtoEnvelope.md
 docs/CurrencySwitchRequest.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 Dockerfile
 README.md
 _client.sh
@@ -14,16 +13,16 @@ docs/ActivityRecordDto.md
 docs/ActivityRecordDtoEnvelope.md
 docs/ActivityRecordDtoListEnvelope.md
 docs/ActivityRecordUpdateDto.md
+docs/ActivityRecordsApi.md
 docs/ActivityTypeCreateDto.md
 docs/ActivityTypeDto.md
 docs/ActivityTypeDtoEnvelope.md
 docs/ActivityTypeDtoListEnvelope.md
 docs/ActivityTypeUpdateDto.md
-docs/CompletionsApi.md
 docs/EmptyEnvelope.md
 docs/Envelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

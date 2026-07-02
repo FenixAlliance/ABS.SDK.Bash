@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [optional] [default to null]
+**unECECode** | **string** |  | [optional] [default to null]
 **unitGroupId** | **string** |  | [optional] [default to null]
 **baseUnitAmount** | **float** |  | [optional] [default to null]
 **baseUnitId** | **string** |  | [optional] [default to null]

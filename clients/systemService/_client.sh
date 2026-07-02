@@ -305,7 +305,7 @@ case $state in
             "verifySystemBusinessDomain[Verify a business domain]"             "deleteSystemCart[Delete a system cart]" \
             "getSystemCartById[Retrieve a single system cart by its ID]" \
             "getSystemCarts[Retrieve a list of system carts]" \
-            "getSystemCartsCount[Get the count of system carts]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createSystemContactOption[Create a new contact option (admin)]" \
+            "getSystemCartsCount[Get the count of system carts]"             "createSystemContactOption[Create a new contact option (admin)]" \
             "deleteSystemContactOption[Delete a contact option (admin)]" \
             "getSystemContactOptionById[Retrieve a single contact option by its ID (admin)]" \
             "getSystemContactOptions[Retrieve a list of contact options (admin)]" \
@@ -331,10 +331,7 @@ case $state in
             "versionGet[]"             "deleteSystemIPLookup[Delete a system IP lookup]" \
             "getSystemIPLookupById[Retrieve a single system IP lookup by its ID]" \
             "getSystemIPLookups[Retrieve a list of system IP lookups]" \
-            "getSystemIPLookupsCount[Get the count of system IP lookups]"             "apiLicensingLicensesGeneratePost[]" \
-            "apiLicensingLicensesValidateAttributesGet[]" \
-            "apiLicensingLicensesValidateErrorsGet[]" \
-            "apiLicensingLicensesValidateGet[]"             "getLicenseAssignmentsAsync[Retrieve license assignments]" \
+            "getSystemIPLookupsCount[Get the count of system IP lookups]"             "getLicenseAssignmentsAsync[Retrieve license assignments]" \
             "getLicenseAttributesAsync[Retrieve license attributes]" \
             "getLicenseByIdAsync[Retrieve a license by ID]" \
             "getLicenseFeaturesAsync[Retrieve license features]" \
@@ -489,15 +486,6 @@ case $state in
                     "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createSystemContactOption)
@@ -726,42 +714,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiLicensingLicensesGeneratePost)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiLicensingLicensesValidateAttributesGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiLicensingLicensesValidateErrorsGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiLicensingLicensesValidateGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0

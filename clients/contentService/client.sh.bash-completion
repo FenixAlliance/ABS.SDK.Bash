@@ -114,7 +114,6 @@ _()
     operations["getBusinessDomainsCountAsync"]=1
     operations["updateBusinessDomainAsync"]=1
     operations["verifyBusinessDomainAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -268,7 +267,6 @@ _()
     operation_parameters["getBusinessDomainsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateBusinessDomainAsync"]="businessDomainId= tenantId= api-version= x-api-version: "
     operation_parameters["verifyBusinessDomainAsync"]="businessDomainId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""

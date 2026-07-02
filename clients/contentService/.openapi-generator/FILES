@@ -59,7 +59,6 @@ docs/ClaimsIdentity.md
 docs/ClaimsPrincipal.md
 docs/ColorOptions.md
 docs/ColorScheme.md
-docs/CompletionsApi.md
 docs/ComputeClause.md
 docs/ComputeExpression.md
 docs/ComputeQueryOption.md
@@ -87,8 +86,8 @@ docs/ErrorEnvelope.md
 docs/EventInfo.md
 docs/FacebookIntegrationOptions.md
 docs/Favicons.md
+docs/FenixAllianceABSWebApi.md
 docs/FenixAllianceIntegrationsOptions.md
-docs/FenixAlliancePortalsWebsiteApi.md
 docs/FieldInfo.md
 docs/FilterClause.md
 docs/FilterQueryOption.md

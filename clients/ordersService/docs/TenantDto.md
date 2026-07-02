@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
 **qualifiedName** | **string** |  | [optional] [readonly] [default to null]
+**kind** | **string** |  | [optional] [default to null]
 **taxId** | **string** |  | [optional] [default to null]
 **about** | **string** |  | [optional] [default to null]
 **walletId** | **string** |  | [optional] [default to null]

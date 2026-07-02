@@ -69,7 +69,6 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createCourseArticleAsync"]=1
     operations["deleteCourseArticleAsync"]=1
     operations["getCourseArticleByIdAsync"]=1
@@ -328,7 +327,6 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createCourseArticleAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteCourseArticleAsync"]="articleId= tenantId= api-version= x-api-version: "
     operation_parameters["getCourseArticleByIdAsync"]="articleId= api-version= x-api-version: "

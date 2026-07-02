@@ -11,6 +11,8 @@ Name | Type | Description | Notes
 **socialFeedPostId** | **string** |  | [optional] [default to null]
 **socialProfileName** | **string** |  | [optional] [default to null]
 **socialProfileAvatarUrl** | **string** |  | [optional] [default to null]
+**bodyHtml** | **string** |  | [optional] [default to null]
+**bodyFormat** | **string** |  | [optional] [default to null]
 **socialPostId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

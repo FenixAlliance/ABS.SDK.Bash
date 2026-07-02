@@ -4,7 +4,6 @@ _client.sh
 client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
-docs/CompletionsApi.md
 docs/ContactDto.md
 docs/DealUnitCreateDto.md
 docs/DealUnitDto.md
@@ -33,7 +32,7 @@ docs/ErrorEnvelope.md
 docs/ExtendedDealUnitDto.md
 docs/ExtendedDealUnitDtoEnvelope.md
 docs/ExtendedDealUnitDtoListEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

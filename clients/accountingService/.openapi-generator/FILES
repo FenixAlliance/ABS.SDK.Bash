@@ -25,6 +25,7 @@ docs/AccountTypeDtoEnvelope.md
 docs/AccountTypeDtoListEnvelope.md
 docs/AccountTypeUpdateDto.md
 docs/AccountUpdateDto.md
+docs/AccountingEntriesApi.md
 docs/AccountingEntryCreateDto.md
 docs/AccountingEntryDto.md
 docs/AccountingEntryDtoEnvelope.md
@@ -96,7 +97,6 @@ docs/CommissionDtoEnvelope.md
 docs/CommissionDtoListEnvelope.md
 docs/CommissionUpdateDto.md
 docs/CommissionsApi.md
-docs/CompletionsApi.md
 docs/ContactDto.md
 docs/CostCentreBudgetCreateDto.md
 docs/CostCentreBudgetDto.md
@@ -116,6 +116,7 @@ docs/CostCentreUpdateDto.md
 docs/CostCentresApi.md
 docs/CreateLedgerDto.md
 docs/CurrencyId.md
+docs/DecimalEnvelope.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/ExpenseClaimCreateDto.md
@@ -130,7 +131,7 @@ docs/ExpenseTypeDtoEnvelope.md
 docs/ExpenseTypeDtoListEnvelope.md
 docs/ExpenseTypeUpdateDto.md
 docs/ExpenseTypesApi.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/FinancialBookCreateDto.md
 docs/FinancialBookDto.md
 docs/FinancialBookDtoEnvelope.md
@@ -207,6 +208,7 @@ docs/JournalCreateDto.md
 docs/JournalDto.md
 docs/JournalDtoEnvelope.md
 docs/JournalDtoIReadOnlyListEnvelope.md
+docs/JournalEntriesApi.md
 docs/JournalEntryCreateDto.md
 docs/JournalEntryDto.md
 docs/JournalEntryDtoIReadOnlyListEnvelope.md

@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2AiServiceCompletionsCompleteGet[]"             "createCourseArticleAsync[Create a new course article]" \
+            "createCourseArticleAsync[Create a new course article]" \
             "deleteCourseArticleAsync[Delete a course article]" \
             "getCourseArticleByIdAsync[Get course article by ID]" \
             "getCourseArticlesAsync[Get all course articles]" \
@@ -532,15 +532,6 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       createCourseArticleAsync)
         local -a _op_arguments
         _op_arguments=(

@@ -169,9 +169,9 @@ operation_parameters_minimum_occurrences["updateActivityTypeAsync:::activityType
 operation_parameters_minimum_occurrences["updateActivityTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateActivityTypeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateActivityTypeAsync:::ActivityTypeUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -270,9 +270,9 @@ operation_parameters_maximum_occurrences["updateActivityTypeAsync:::activityType
 operation_parameters_maximum_occurrences["updateActivityTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateActivityTypeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateActivityTypeAsync:::ActivityTypeUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -368,9 +368,9 @@ operation_parameters_collection_type["updateActivityTypeAsync:::activityTypeId"]
 operation_parameters_collection_type["updateActivityTypeAsync:::api-version"]=""
 operation_parameters_collection_type["updateActivityTypeAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateActivityTypeAsync:::ActivityTypeUpdateDto"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["getActivityRecordsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getActivityRecordsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getActivityRecordsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -745,7 +745,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}ActivitiesService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}ActivitiesService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -796,13 +796,13 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+    echo -e "${BOLD}${WHITE}[activityRecords]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+  ${CYAN}getActivityRecordsCountAsync${OFF};Count activity records
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -829,7 +829,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -850,7 +850,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}ActivitiesService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}ActivitiesService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -870,7 +870,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}ActivitiesService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}ActivitiesService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -1346,20 +1346,21 @@ print_updateActivityTypeAsync_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
+# Print help for getActivityRecordsCountAsync operation
 #
 ##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
+print_getActivityRecordsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getActivityRecordsCountAsync - Count activity records${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the tenant-wide count of activity records across all feeds owned by the tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2519,19 +2520,19 @@ call_updateActivityTypeAsync() {
 
 ##############################################################################
 #
-# Call apiV2AiServiceCompletionsCompleteGet operation
+# Call getActivityRecordsCountAsync operation
 #
 ##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
+call_getActivityRecordsCountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/ActivitiesService/ActivityRecords/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3652,8 +3653,8 @@ case $key in
     updateActivityTypeAsync)
     operation="updateActivityTypeAsync"
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
+    getActivityRecordsCountAsync)
+    operation="getActivityRecordsCountAsync"
     ;;
     accountLogoutPost)
     operation="accountLogoutPost"
@@ -3844,8 +3845,8 @@ case $operation in
     updateActivityTypeAsync)
     call_updateActivityTypeAsync
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
+    getActivityRecordsCountAsync)
+    call_getActivityRecordsCountAsync
     ;;
     accountLogoutPost)
     call_accountLogoutPost

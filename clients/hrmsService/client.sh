@@ -142,9 +142,6 @@ operation_parameters_minimum_occurrences["updateAppraisalWorkflowAsync:::workflo
 operation_parameters_minimum_occurrences["updateAppraisalWorkflowAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateAppraisalWorkflowAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateAppraisalWorkflowAsync:::AppraisalWorkflowUpdateDto"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createEmployeeAppraisalSessionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createEmployeeAppraisalSessionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createEmployeeAppraisalSessionAsync:::x-api-version"]=0
@@ -274,6 +271,38 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["acceptGigApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["acceptGigApplicationAsync:::gigApplicationId"]=1
+operation_parameters_minimum_occurrences["acceptGigApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["acceptGigApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createGigApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createGigApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createGigApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createGigApplicationAsync:::GigApplicationCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteGigApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteGigApplicationAsync:::gigApplicationId"]=1
+operation_parameters_minimum_occurrences["deleteGigApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteGigApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGigApplicationByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getGigApplicationByIdAsync:::gigApplicationId"]=1
+operation_parameters_minimum_occurrences["getGigApplicationByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getGigApplicationByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGigApplicationsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getGigApplicationsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getGigApplicationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGigApplicationsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getGigApplicationsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getGigApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchGigApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchGigApplicationAsync:::gigApplicationId"]=1
+operation_parameters_minimum_occurrences["patchGigApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchGigApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchGigApplicationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateGigApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateGigApplicationAsync:::gigApplicationId"]=1
+operation_parameters_minimum_occurrences["updateGigApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateGigApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateGigApplicationAsync:::GigApplicationUpdateDto"]=0
 operation_parameters_minimum_occurrences["createGigAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createGigAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createGigAsync:::x-api-version"]=0
@@ -302,6 +331,127 @@ operation_parameters_minimum_occurrences["updateGigAsync:::gigId"]=1
 operation_parameters_minimum_occurrences["updateGigAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateGigAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateGigAsync:::GigUpdateDto"]=0
+operation_parameters_minimum_occurrences["createJobApplicantAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createJobApplicantAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createJobApplicantAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createJobApplicantAsync:::JobApplicantProfileCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteJobApplicantAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteJobApplicantAsync:::jobApplicantId"]=1
+operation_parameters_minimum_occurrences["deleteJobApplicantAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteJobApplicantAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicantByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicantByIdAsync:::jobApplicantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicantByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicantByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicantsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicantsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicantsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicantsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicantsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicantsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobApplicantAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJobApplicantAsync:::jobApplicantId"]=1
+operation_parameters_minimum_occurrences["patchJobApplicantAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJobApplicantAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobApplicantAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateJobApplicantAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateJobApplicantAsync:::jobApplicantId"]=1
+operation_parameters_minimum_occurrences["updateJobApplicantAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateJobApplicantAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateJobApplicantAsync:::JobApplicantProfileUpdateDto"]=0
+operation_parameters_minimum_occurrences["changeJobApplicationStatusAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["changeJobApplicationStatusAsync:::jobApplicationId"]=1
+operation_parameters_minimum_occurrences["changeJobApplicationStatusAsync:::status"]=1
+operation_parameters_minimum_occurrences["changeJobApplicationStatusAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["changeJobApplicationStatusAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createJobApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createJobApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createJobApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createJobApplicationAsync:::JobOfferApplicationCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteJobApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteJobApplicationAsync:::jobApplicationId"]=1
+operation_parameters_minimum_occurrences["deleteJobApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteJobApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicationByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicationByIdAsync:::jobApplicationId"]=1
+operation_parameters_minimum_occurrences["getJobApplicationByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicationByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicationsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicationsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicationsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobApplicationsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJobApplicationAsync:::jobApplicationId"]=1
+operation_parameters_minimum_occurrences["patchJobApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJobApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobApplicationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateJobApplicationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateJobApplicationAsync:::jobApplicationId"]=1
+operation_parameters_minimum_occurrences["updateJobApplicationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateJobApplicationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateJobApplicationAsync:::JobOfferApplicationUpdateDto"]=0
+operation_parameters_minimum_occurrences["createJobFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createJobFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createJobFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createJobFieldAsync:::JobFieldCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteJobFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteJobFieldAsync:::jobFieldId"]=1
+operation_parameters_minimum_occurrences["deleteJobFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteJobFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobFieldByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobFieldByIdAsync:::jobFieldId"]=1
+operation_parameters_minimum_occurrences["getJobFieldByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobFieldByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobFieldsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobFieldsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobFieldsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobFieldsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobFieldsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobFieldsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJobFieldAsync:::jobFieldId"]=1
+operation_parameters_minimum_occurrences["patchJobFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJobFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobFieldAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateJobFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateJobFieldAsync:::jobFieldId"]=1
+operation_parameters_minimum_occurrences["updateJobFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateJobFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateJobFieldAsync:::JobFieldUpdateDto"]=0
+operation_parameters_minimum_occurrences["createJobOfferFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createJobOfferFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createJobOfferFieldAsync:::JobOfferFieldRecordCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteJobOfferFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteJobOfferFieldAsync:::jobOfferFieldId"]=1
+operation_parameters_minimum_occurrences["deleteJobOfferFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobOfferFieldByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobOfferFieldByIdAsync:::jobOfferFieldId"]=1
+operation_parameters_minimum_occurrences["getJobOfferFieldByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobOfferFieldByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobOfferFieldsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobOfferFieldsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobOfferFieldsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJobOfferFieldsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJobOfferFieldsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJobOfferFieldsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobOfferFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchJobOfferFieldAsync:::jobOfferFieldId"]=1
+operation_parameters_minimum_occurrences["patchJobOfferFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchJobOfferFieldAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateJobOfferFieldAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateJobOfferFieldAsync:::jobOfferFieldId"]=1
+operation_parameters_minimum_occurrences["updateJobOfferFieldAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateJobOfferFieldAsync:::JobOfferFieldRecordUpdateDto"]=0
+operation_parameters_minimum_occurrences["closeJobOfferAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["closeJobOfferAsync:::jobOfferId"]=1
+operation_parameters_minimum_occurrences["closeJobOfferAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["closeJobOfferAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createJobOfferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createJobOfferAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createJobOfferAsync:::x-api-version"]=0
@@ -310,6 +460,10 @@ operation_parameters_minimum_occurrences["deleteJobOfferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["deleteJobOfferAsync:::jobOfferId"]=1
 operation_parameters_minimum_occurrences["deleteJobOfferAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteJobOfferAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["fillJobOfferAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["fillJobOfferAsync:::jobOfferId"]=1
+operation_parameters_minimum_occurrences["fillJobOfferAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["fillJobOfferAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getJobOfferByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJobOfferByIdAsync:::jobOfferId"]=1
 operation_parameters_minimum_occurrences["getJobOfferByIdAsync:::api-version"]=0
@@ -320,11 +474,25 @@ operation_parameters_minimum_occurrences["getJobOffersAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getJobOffersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJobOffersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJobOffersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPublicJobOfferByIdAsync:::jobOfferId"]=1
+operation_parameters_minimum_occurrences["getPublicJobOfferByIdAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getPublicJobOfferByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPublicJobOfferByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPublicJobOffersAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getPublicJobOffersAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPublicJobOffersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPublicJobOffersCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getPublicJobOffersCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPublicJobOffersCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchJobOfferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchJobOfferAsync:::jobOfferId"]=1
 operation_parameters_minimum_occurrences["patchJobOfferAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchJobOfferAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchJobOfferAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["publishJobOfferAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["publishJobOfferAsync:::jobOfferId"]=1
+operation_parameters_minimum_occurrences["publishJobOfferAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["publishJobOfferAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::jobOfferId"]=1
 operation_parameters_minimum_occurrences["updateJobOfferAsync:::api-version"]=0
@@ -460,6 +628,34 @@ operation_parameters_minimum_occurrences["updatePayrollAsync:::payrollId"]=1
 operation_parameters_minimum_occurrences["updatePayrollAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updatePayrollAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updatePayrollAsync:::PayrollUpdateDto"]=0
+operation_parameters_minimum_occurrences["createRequiredSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createRequiredSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createRequiredSkillAsync:::RequiredSkillRecordCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteRequiredSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteRequiredSkillAsync:::requiredSkillId"]=1
+operation_parameters_minimum_occurrences["deleteRequiredSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRequiredSkillByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRequiredSkillByIdAsync:::requiredSkillId"]=1
+operation_parameters_minimum_occurrences["getRequiredSkillByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRequiredSkillByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRequiredSkillsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRequiredSkillsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRequiredSkillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRequiredSkillsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getRequiredSkillsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getRequiredSkillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchRequiredSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchRequiredSkillAsync:::requiredSkillId"]=1
+operation_parameters_minimum_occurrences["patchRequiredSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchRequiredSkillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateRequiredSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateRequiredSkillAsync:::requiredSkillId"]=1
+operation_parameters_minimum_occurrences["updateRequiredSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateRequiredSkillAsync:::RequiredSkillRecordUpdateDto"]=0
 operation_parameters_minimum_occurrences["createSalaryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createSalaryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createSalaryAsync:::x-api-version"]=0
@@ -705,9 +901,6 @@ operation_parameters_maximum_occurrences["updateAppraisalWorkflowAsync:::workflo
 operation_parameters_maximum_occurrences["updateAppraisalWorkflowAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateAppraisalWorkflowAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateAppraisalWorkflowAsync:::AppraisalWorkflowUpdateDto"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createEmployeeAppraisalSessionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createEmployeeAppraisalSessionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createEmployeeAppraisalSessionAsync:::x-api-version"]=0
@@ -837,6 +1030,38 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["acceptGigApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["acceptGigApplicationAsync:::gigApplicationId"]=0
+operation_parameters_maximum_occurrences["acceptGigApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["acceptGigApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createGigApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createGigApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createGigApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createGigApplicationAsync:::GigApplicationCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteGigApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteGigApplicationAsync:::gigApplicationId"]=0
+operation_parameters_maximum_occurrences["deleteGigApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteGigApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGigApplicationByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getGigApplicationByIdAsync:::gigApplicationId"]=0
+operation_parameters_maximum_occurrences["getGigApplicationByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getGigApplicationByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGigApplicationsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getGigApplicationsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getGigApplicationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGigApplicationsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getGigApplicationsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getGigApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchGigApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchGigApplicationAsync:::gigApplicationId"]=0
+operation_parameters_maximum_occurrences["patchGigApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchGigApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchGigApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateGigApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateGigApplicationAsync:::gigApplicationId"]=0
+operation_parameters_maximum_occurrences["updateGigApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateGigApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateGigApplicationAsync:::GigApplicationUpdateDto"]=0
 operation_parameters_maximum_occurrences["createGigAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createGigAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createGigAsync:::x-api-version"]=0
@@ -865,6 +1090,127 @@ operation_parameters_maximum_occurrences["updateGigAsync:::gigId"]=0
 operation_parameters_maximum_occurrences["updateGigAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateGigAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateGigAsync:::GigUpdateDto"]=0
+operation_parameters_maximum_occurrences["createJobApplicantAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createJobApplicantAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createJobApplicantAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createJobApplicantAsync:::JobApplicantProfileCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicantAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicantAsync:::jobApplicantId"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicantAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicantAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicantByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicantByIdAsync:::jobApplicantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicantByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicantByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicantsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicantsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicantsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicantsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicantsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicantsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobApplicantAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJobApplicantAsync:::jobApplicantId"]=0
+operation_parameters_maximum_occurrences["patchJobApplicantAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJobApplicantAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobApplicantAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateJobApplicantAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateJobApplicantAsync:::jobApplicantId"]=0
+operation_parameters_maximum_occurrences["updateJobApplicantAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateJobApplicantAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateJobApplicantAsync:::JobApplicantProfileUpdateDto"]=0
+operation_parameters_maximum_occurrences["changeJobApplicationStatusAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["changeJobApplicationStatusAsync:::jobApplicationId"]=0
+operation_parameters_maximum_occurrences["changeJobApplicationStatusAsync:::status"]=0
+operation_parameters_maximum_occurrences["changeJobApplicationStatusAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["changeJobApplicationStatusAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createJobApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createJobApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createJobApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createJobApplicationAsync:::JobOfferApplicationCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicationAsync:::jobApplicationId"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteJobApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicationByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicationByIdAsync:::jobApplicationId"]=0
+operation_parameters_maximum_occurrences["getJobApplicationByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicationByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicationsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicationsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicationsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobApplicationsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJobApplicationAsync:::jobApplicationId"]=0
+operation_parameters_maximum_occurrences["patchJobApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJobApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateJobApplicationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateJobApplicationAsync:::jobApplicationId"]=0
+operation_parameters_maximum_occurrences["updateJobApplicationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateJobApplicationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateJobApplicationAsync:::JobOfferApplicationUpdateDto"]=0
+operation_parameters_maximum_occurrences["createJobFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createJobFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createJobFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createJobFieldAsync:::JobFieldCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteJobFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteJobFieldAsync:::jobFieldId"]=0
+operation_parameters_maximum_occurrences["deleteJobFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteJobFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobFieldByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobFieldByIdAsync:::jobFieldId"]=0
+operation_parameters_maximum_occurrences["getJobFieldByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobFieldByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobFieldsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobFieldsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobFieldsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobFieldsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobFieldsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobFieldsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJobFieldAsync:::jobFieldId"]=0
+operation_parameters_maximum_occurrences["patchJobFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJobFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobFieldAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateJobFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateJobFieldAsync:::jobFieldId"]=0
+operation_parameters_maximum_occurrences["updateJobFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateJobFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateJobFieldAsync:::JobFieldUpdateDto"]=0
+operation_parameters_maximum_occurrences["createJobOfferFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createJobOfferFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createJobOfferFieldAsync:::JobOfferFieldRecordCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteJobOfferFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteJobOfferFieldAsync:::jobOfferFieldId"]=0
+operation_parameters_maximum_occurrences["deleteJobOfferFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldByIdAsync:::jobOfferFieldId"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJobOfferFieldsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobOfferFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchJobOfferFieldAsync:::jobOfferFieldId"]=0
+operation_parameters_maximum_occurrences["patchJobOfferFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchJobOfferFieldAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateJobOfferFieldAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateJobOfferFieldAsync:::jobOfferFieldId"]=0
+operation_parameters_maximum_occurrences["updateJobOfferFieldAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateJobOfferFieldAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateJobOfferFieldAsync:::JobOfferFieldRecordUpdateDto"]=0
+operation_parameters_maximum_occurrences["closeJobOfferAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["closeJobOfferAsync:::jobOfferId"]=0
+operation_parameters_maximum_occurrences["closeJobOfferAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["closeJobOfferAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createJobOfferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createJobOfferAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createJobOfferAsync:::x-api-version"]=0
@@ -873,6 +1219,10 @@ operation_parameters_maximum_occurrences["deleteJobOfferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["deleteJobOfferAsync:::jobOfferId"]=0
 operation_parameters_maximum_occurrences["deleteJobOfferAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteJobOfferAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["fillJobOfferAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["fillJobOfferAsync:::jobOfferId"]=0
+operation_parameters_maximum_occurrences["fillJobOfferAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["fillJobOfferAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getJobOfferByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJobOfferByIdAsync:::jobOfferId"]=0
 operation_parameters_maximum_occurrences["getJobOfferByIdAsync:::api-version"]=0
@@ -883,11 +1233,25 @@ operation_parameters_maximum_occurrences["getJobOffersAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getJobOffersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJobOffersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJobOffersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPublicJobOfferByIdAsync:::jobOfferId"]=0
+operation_parameters_maximum_occurrences["getPublicJobOfferByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPublicJobOfferByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPublicJobOfferByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPublicJobOffersAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPublicJobOffersAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPublicJobOffersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPublicJobOffersCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPublicJobOffersCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPublicJobOffersCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchJobOfferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchJobOfferAsync:::jobOfferId"]=0
 operation_parameters_maximum_occurrences["patchJobOfferAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchJobOfferAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchJobOfferAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["publishJobOfferAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["publishJobOfferAsync:::jobOfferId"]=0
+operation_parameters_maximum_occurrences["publishJobOfferAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["publishJobOfferAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::jobOfferId"]=0
 operation_parameters_maximum_occurrences["updateJobOfferAsync:::api-version"]=0
@@ -1023,6 +1387,34 @@ operation_parameters_maximum_occurrences["updatePayrollAsync:::payrollId"]=0
 operation_parameters_maximum_occurrences["updatePayrollAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updatePayrollAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updatePayrollAsync:::PayrollUpdateDto"]=0
+operation_parameters_maximum_occurrences["createRequiredSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createRequiredSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createRequiredSkillAsync:::RequiredSkillRecordCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteRequiredSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteRequiredSkillAsync:::requiredSkillId"]=0
+operation_parameters_maximum_occurrences["deleteRequiredSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillByIdAsync:::requiredSkillId"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getRequiredSkillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchRequiredSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchRequiredSkillAsync:::requiredSkillId"]=0
+operation_parameters_maximum_occurrences["patchRequiredSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchRequiredSkillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateRequiredSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateRequiredSkillAsync:::requiredSkillId"]=0
+operation_parameters_maximum_occurrences["updateRequiredSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateRequiredSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateRequiredSkillAsync:::RequiredSkillRecordUpdateDto"]=0
 operation_parameters_maximum_occurrences["createSalaryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createSalaryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createSalaryAsync:::x-api-version"]=0
@@ -1265,9 +1657,6 @@ operation_parameters_collection_type["updateAppraisalWorkflowAsync:::workflowId"
 operation_parameters_collection_type["updateAppraisalWorkflowAsync:::api-version"]=""
 operation_parameters_collection_type["updateAppraisalWorkflowAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateAppraisalWorkflowAsync:::AppraisalWorkflowUpdateDto"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createEmployeeAppraisalSessionAsync:::tenantId"]=""
 operation_parameters_collection_type["createEmployeeAppraisalSessionAsync:::api-version"]=""
 operation_parameters_collection_type["createEmployeeAppraisalSessionAsync:::x-api-version"]=""
@@ -1397,6 +1786,38 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["acceptGigApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["acceptGigApplicationAsync:::gigApplicationId"]=""
+operation_parameters_collection_type["acceptGigApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["acceptGigApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["createGigApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["createGigApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["createGigApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["createGigApplicationAsync:::GigApplicationCreateDto"]=""
+operation_parameters_collection_type["deleteGigApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteGigApplicationAsync:::gigApplicationId"]=""
+operation_parameters_collection_type["deleteGigApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["deleteGigApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getGigApplicationByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getGigApplicationByIdAsync:::gigApplicationId"]=""
+operation_parameters_collection_type["getGigApplicationByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getGigApplicationByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getGigApplicationsAsync:::tenantId"]=""
+operation_parameters_collection_type["getGigApplicationsAsync:::api-version"]=""
+operation_parameters_collection_type["getGigApplicationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getGigApplicationsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getGigApplicationsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getGigApplicationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchGigApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchGigApplicationAsync:::gigApplicationId"]=""
+operation_parameters_collection_type["patchGigApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["patchGigApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchGigApplicationAsync:::Operation"]=
+operation_parameters_collection_type["updateGigApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["updateGigApplicationAsync:::gigApplicationId"]=""
+operation_parameters_collection_type["updateGigApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["updateGigApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateGigApplicationAsync:::GigApplicationUpdateDto"]=""
 operation_parameters_collection_type["createGigAsync:::tenantId"]=""
 operation_parameters_collection_type["createGigAsync:::api-version"]=""
 operation_parameters_collection_type["createGigAsync:::x-api-version"]=""
@@ -1425,6 +1846,127 @@ operation_parameters_collection_type["updateGigAsync:::gigId"]=""
 operation_parameters_collection_type["updateGigAsync:::api-version"]=""
 operation_parameters_collection_type["updateGigAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateGigAsync:::GigUpdateDto"]=""
+operation_parameters_collection_type["createJobApplicantAsync:::tenantId"]=""
+operation_parameters_collection_type["createJobApplicantAsync:::api-version"]=""
+operation_parameters_collection_type["createJobApplicantAsync:::x-api-version"]=""
+operation_parameters_collection_type["createJobApplicantAsync:::JobApplicantProfileCreateDto"]=""
+operation_parameters_collection_type["deleteJobApplicantAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteJobApplicantAsync:::jobApplicantId"]=""
+operation_parameters_collection_type["deleteJobApplicantAsync:::api-version"]=""
+operation_parameters_collection_type["deleteJobApplicantAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobApplicantByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobApplicantByIdAsync:::jobApplicantId"]=""
+operation_parameters_collection_type["getJobApplicantByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getJobApplicantByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobApplicantsAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobApplicantsAsync:::api-version"]=""
+operation_parameters_collection_type["getJobApplicantsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobApplicantsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobApplicantsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getJobApplicantsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobApplicantAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJobApplicantAsync:::jobApplicantId"]=""
+operation_parameters_collection_type["patchJobApplicantAsync:::api-version"]=""
+operation_parameters_collection_type["patchJobApplicantAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobApplicantAsync:::Operation"]=
+operation_parameters_collection_type["updateJobApplicantAsync:::tenantId"]=""
+operation_parameters_collection_type["updateJobApplicantAsync:::jobApplicantId"]=""
+operation_parameters_collection_type["updateJobApplicantAsync:::api-version"]=""
+operation_parameters_collection_type["updateJobApplicantAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateJobApplicantAsync:::JobApplicantProfileUpdateDto"]=""
+operation_parameters_collection_type["changeJobApplicationStatusAsync:::tenantId"]=""
+operation_parameters_collection_type["changeJobApplicationStatusAsync:::jobApplicationId"]=""
+operation_parameters_collection_type["changeJobApplicationStatusAsync:::status"]=""
+operation_parameters_collection_type["changeJobApplicationStatusAsync:::api-version"]=""
+operation_parameters_collection_type["changeJobApplicationStatusAsync:::x-api-version"]=""
+operation_parameters_collection_type["createJobApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["createJobApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["createJobApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["createJobApplicationAsync:::JobOfferApplicationCreateDto"]=""
+operation_parameters_collection_type["deleteJobApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteJobApplicationAsync:::jobApplicationId"]=""
+operation_parameters_collection_type["deleteJobApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["deleteJobApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobApplicationByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobApplicationByIdAsync:::jobApplicationId"]=""
+operation_parameters_collection_type["getJobApplicationByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getJobApplicationByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobApplicationsAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobApplicationsAsync:::api-version"]=""
+operation_parameters_collection_type["getJobApplicationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobApplicationsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobApplicationsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getJobApplicationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJobApplicationAsync:::jobApplicationId"]=""
+operation_parameters_collection_type["patchJobApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["patchJobApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobApplicationAsync:::Operation"]=
+operation_parameters_collection_type["updateJobApplicationAsync:::tenantId"]=""
+operation_parameters_collection_type["updateJobApplicationAsync:::jobApplicationId"]=""
+operation_parameters_collection_type["updateJobApplicationAsync:::api-version"]=""
+operation_parameters_collection_type["updateJobApplicationAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateJobApplicationAsync:::JobOfferApplicationUpdateDto"]=""
+operation_parameters_collection_type["createJobFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["createJobFieldAsync:::api-version"]=""
+operation_parameters_collection_type["createJobFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["createJobFieldAsync:::JobFieldCreateDto"]=""
+operation_parameters_collection_type["deleteJobFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteJobFieldAsync:::jobFieldId"]=""
+operation_parameters_collection_type["deleteJobFieldAsync:::api-version"]=""
+operation_parameters_collection_type["deleteJobFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobFieldByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobFieldByIdAsync:::jobFieldId"]=""
+operation_parameters_collection_type["getJobFieldByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getJobFieldByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobFieldsAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobFieldsAsync:::api-version"]=""
+operation_parameters_collection_type["getJobFieldsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobFieldsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobFieldsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getJobFieldsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJobFieldAsync:::jobFieldId"]=""
+operation_parameters_collection_type["patchJobFieldAsync:::api-version"]=""
+operation_parameters_collection_type["patchJobFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobFieldAsync:::Operation"]=
+operation_parameters_collection_type["updateJobFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["updateJobFieldAsync:::jobFieldId"]=""
+operation_parameters_collection_type["updateJobFieldAsync:::api-version"]=""
+operation_parameters_collection_type["updateJobFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateJobFieldAsync:::JobFieldUpdateDto"]=""
+operation_parameters_collection_type["createJobOfferFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["createJobOfferFieldAsync:::api-version"]=""
+operation_parameters_collection_type["createJobOfferFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["createJobOfferFieldAsync:::JobOfferFieldRecordCreateDto"]=""
+operation_parameters_collection_type["deleteJobOfferFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteJobOfferFieldAsync:::jobOfferFieldId"]=""
+operation_parameters_collection_type["deleteJobOfferFieldAsync:::api-version"]=""
+operation_parameters_collection_type["deleteJobOfferFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobOfferFieldByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobOfferFieldByIdAsync:::jobOfferFieldId"]=""
+operation_parameters_collection_type["getJobOfferFieldByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getJobOfferFieldByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobOfferFieldsAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobOfferFieldsAsync:::api-version"]=""
+operation_parameters_collection_type["getJobOfferFieldsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJobOfferFieldsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getJobOfferFieldsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getJobOfferFieldsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobOfferFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["patchJobOfferFieldAsync:::jobOfferFieldId"]=""
+operation_parameters_collection_type["patchJobOfferFieldAsync:::api-version"]=""
+operation_parameters_collection_type["patchJobOfferFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchJobOfferFieldAsync:::Operation"]=
+operation_parameters_collection_type["updateJobOfferFieldAsync:::tenantId"]=""
+operation_parameters_collection_type["updateJobOfferFieldAsync:::jobOfferFieldId"]=""
+operation_parameters_collection_type["updateJobOfferFieldAsync:::api-version"]=""
+operation_parameters_collection_type["updateJobOfferFieldAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateJobOfferFieldAsync:::JobOfferFieldRecordUpdateDto"]=""
+operation_parameters_collection_type["closeJobOfferAsync:::tenantId"]=""
+operation_parameters_collection_type["closeJobOfferAsync:::jobOfferId"]=""
+operation_parameters_collection_type["closeJobOfferAsync:::api-version"]=""
+operation_parameters_collection_type["closeJobOfferAsync:::x-api-version"]=""
 operation_parameters_collection_type["createJobOfferAsync:::tenantId"]=""
 operation_parameters_collection_type["createJobOfferAsync:::api-version"]=""
 operation_parameters_collection_type["createJobOfferAsync:::x-api-version"]=""
@@ -1433,6 +1975,10 @@ operation_parameters_collection_type["deleteJobOfferAsync:::tenantId"]=""
 operation_parameters_collection_type["deleteJobOfferAsync:::jobOfferId"]=""
 operation_parameters_collection_type["deleteJobOfferAsync:::api-version"]=""
 operation_parameters_collection_type["deleteJobOfferAsync:::x-api-version"]=""
+operation_parameters_collection_type["fillJobOfferAsync:::tenantId"]=""
+operation_parameters_collection_type["fillJobOfferAsync:::jobOfferId"]=""
+operation_parameters_collection_type["fillJobOfferAsync:::api-version"]=""
+operation_parameters_collection_type["fillJobOfferAsync:::x-api-version"]=""
 operation_parameters_collection_type["getJobOfferByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getJobOfferByIdAsync:::jobOfferId"]=""
 operation_parameters_collection_type["getJobOfferByIdAsync:::api-version"]=""
@@ -1443,11 +1989,25 @@ operation_parameters_collection_type["getJobOffersAsync:::x-api-version"]=""
 operation_parameters_collection_type["getJobOffersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getJobOffersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getJobOffersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPublicJobOfferByIdAsync:::jobOfferId"]=""
+operation_parameters_collection_type["getPublicJobOfferByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getPublicJobOfferByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getPublicJobOfferByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPublicJobOffersAsync:::tenantId"]=""
+operation_parameters_collection_type["getPublicJobOffersAsync:::api-version"]=""
+operation_parameters_collection_type["getPublicJobOffersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPublicJobOffersCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getPublicJobOffersCountAsync:::api-version"]=""
+operation_parameters_collection_type["getPublicJobOffersCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchJobOfferAsync:::tenantId"]=""
 operation_parameters_collection_type["patchJobOfferAsync:::jobOfferId"]=""
 operation_parameters_collection_type["patchJobOfferAsync:::api-version"]=""
 operation_parameters_collection_type["patchJobOfferAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchJobOfferAsync:::Operation"]=
+operation_parameters_collection_type["publishJobOfferAsync:::tenantId"]=""
+operation_parameters_collection_type["publishJobOfferAsync:::jobOfferId"]=""
+operation_parameters_collection_type["publishJobOfferAsync:::api-version"]=""
+operation_parameters_collection_type["publishJobOfferAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateJobOfferAsync:::tenantId"]=""
 operation_parameters_collection_type["updateJobOfferAsync:::jobOfferId"]=""
 operation_parameters_collection_type["updateJobOfferAsync:::api-version"]=""
@@ -1583,6 +2143,34 @@ operation_parameters_collection_type["updatePayrollAsync:::payrollId"]=""
 operation_parameters_collection_type["updatePayrollAsync:::api-version"]=""
 operation_parameters_collection_type["updatePayrollAsync:::x-api-version"]=""
 operation_parameters_collection_type["updatePayrollAsync:::PayrollUpdateDto"]=""
+operation_parameters_collection_type["createRequiredSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["createRequiredSkillAsync:::api-version"]=""
+operation_parameters_collection_type["createRequiredSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createRequiredSkillAsync:::RequiredSkillRecordCreateDto"]=""
+operation_parameters_collection_type["deleteRequiredSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteRequiredSkillAsync:::requiredSkillId"]=""
+operation_parameters_collection_type["deleteRequiredSkillAsync:::api-version"]=""
+operation_parameters_collection_type["deleteRequiredSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRequiredSkillByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getRequiredSkillByIdAsync:::requiredSkillId"]=""
+operation_parameters_collection_type["getRequiredSkillByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getRequiredSkillByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRequiredSkillsAsync:::tenantId"]=""
+operation_parameters_collection_type["getRequiredSkillsAsync:::api-version"]=""
+operation_parameters_collection_type["getRequiredSkillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRequiredSkillsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getRequiredSkillsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getRequiredSkillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchRequiredSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["patchRequiredSkillAsync:::requiredSkillId"]=""
+operation_parameters_collection_type["patchRequiredSkillAsync:::api-version"]=""
+operation_parameters_collection_type["patchRequiredSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchRequiredSkillAsync:::Operation"]=
+operation_parameters_collection_type["updateRequiredSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["updateRequiredSkillAsync:::requiredSkillId"]=""
+operation_parameters_collection_type["updateRequiredSkillAsync:::api-version"]=""
+operation_parameters_collection_type["updateRequiredSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateRequiredSkillAsync:::RequiredSkillRecordUpdateDto"]=""
 operation_parameters_collection_type["createSalaryAsync:::tenantId"]=""
 operation_parameters_collection_type["createSalaryAsync:::api-version"]=""
 operation_parameters_collection_type["createSalaryAsync:::x-api-version"]=""
@@ -2131,7 +2719,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}HrmsService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}HrmsService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -2179,12 +2767,6 @@ read -r -d '' ops <<EOF
   ${CYAN}getAppraisalWorkflowsAsync${OFF};Get appraisal workflows
   ${CYAN}getAppraisalWorkflowsCountAsync${OFF};Count appraisal workflows
   ${CYAN}updateAppraisalWorkflowAsync${OFF};Update an appraisal workflow
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -2236,7 +2818,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -2258,6 +2840,19 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[gigApplications]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}acceptGigApplicationAsync${OFF};Accept a gig application
+  ${CYAN}createGigApplicationAsync${OFF};Create a gig application
+  ${CYAN}deleteGigApplicationAsync${OFF};Delete a gig application
+  ${CYAN}getGigApplicationByIdAsync${OFF};Get gig application by ID
+  ${CYAN}getGigApplicationsAsync${OFF};Get gig applications
+  ${CYAN}getGigApplicationsCountAsync${OFF};Count gig applications
+  ${CYAN}patchGigApplicationAsync${OFF};Patch a gig application
+  ${CYAN}updateGigApplicationAsync${OFF};Update a gig application
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[gigs]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createGigAsync${OFF};Create a gig
@@ -2270,14 +2865,69 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[jobApplicants]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createJobApplicantAsync${OFF};Create a job applicant
+  ${CYAN}deleteJobApplicantAsync${OFF};Delete a job applicant
+  ${CYAN}getJobApplicantByIdAsync${OFF};Get job applicant by ID
+  ${CYAN}getJobApplicantsAsync${OFF};Get job applicants
+  ${CYAN}getJobApplicantsCountAsync${OFF};Count job applicants
+  ${CYAN}patchJobApplicantAsync${OFF};Patch a job applicant
+  ${CYAN}updateJobApplicantAsync${OFF};Update a job applicant
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[jobApplications]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}changeJobApplicationStatusAsync${OFF};Change job application status
+  ${CYAN}createJobApplicationAsync${OFF};Create a job application
+  ${CYAN}deleteJobApplicationAsync${OFF};Delete a job application
+  ${CYAN}getJobApplicationByIdAsync${OFF};Get job application by ID
+  ${CYAN}getJobApplicationsAsync${OFF};Get job applications
+  ${CYAN}getJobApplicationsCountAsync${OFF};Count job applications
+  ${CYAN}patchJobApplicationAsync${OFF};Patch a job application
+  ${CYAN}updateJobApplicationAsync${OFF};Update a job application
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[jobFields]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createJobFieldAsync${OFF};Create a job field
+  ${CYAN}deleteJobFieldAsync${OFF};Delete a job field
+  ${CYAN}getJobFieldByIdAsync${OFF};Get job field by ID
+  ${CYAN}getJobFieldsAsync${OFF};Get job fields
+  ${CYAN}getJobFieldsCountAsync${OFF};Count job fields
+  ${CYAN}patchJobFieldAsync${OFF};Patch a job field
+  ${CYAN}updateJobFieldAsync${OFF};Update a job field
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[jobOfferFields]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createJobOfferFieldAsync${OFF};Create a job offer field
+  ${CYAN}deleteJobOfferFieldAsync${OFF};Delete a job offer field
+  ${CYAN}getJobOfferFieldByIdAsync${OFF};Get job offer field by ID
+  ${CYAN}getJobOfferFieldsAsync${OFF};Get job offer fields
+  ${CYAN}getJobOfferFieldsCountAsync${OFF};Count job offer fields
+  ${CYAN}patchJobOfferFieldAsync${OFF};Patch a job offer field
+  ${CYAN}updateJobOfferFieldAsync${OFF};Update a job offer field
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[jobOffers]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}closeJobOfferAsync${OFF};Close a job offer
   ${CYAN}createJobOfferAsync${OFF};Create a job offer
   ${CYAN}deleteJobOfferAsync${OFF};Delete a job offer
+  ${CYAN}fillJobOfferAsync${OFF};Mark a job offer filled
   ${CYAN}getJobOfferByIdAsync${OFF};Get job offer by ID
   ${CYAN}getJobOffersAsync${OFF};Get job offers
   ${CYAN}getJobOffersCountAsync${OFF};Count job offers
+  ${CYAN}getPublicJobOfferByIdAsync${OFF};Get public job offer by ID
+  ${CYAN}getPublicJobOffersAsync${OFF};Get public job offers
+  ${CYAN}getPublicJobOffersCountAsync${OFF};Count public job offers
   ${CYAN}patchJobOfferAsync${OFF};Patch a job offer
+  ${CYAN}publishJobOfferAsync${OFF};Publish a job offer
   ${CYAN}updateJobOfferAsync${OFF};Update a job offer
 EOF
 echo "  $ops" | column -t -s ';'
@@ -2337,6 +2987,18 @@ read -r -d '' ops <<EOF
   ${CYAN}getPayrollsCountAsync${OFF};Count payrolls
   ${CYAN}patchPayrollAsync${OFF};Patch a payroll
   ${CYAN}updatePayrollAsync${OFF};Update a payroll
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[requiredSkills]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createRequiredSkillAsync${OFF};Create a required skill
+  ${CYAN}deleteRequiredSkillAsync${OFF};Delete a required skill
+  ${CYAN}getRequiredSkillByIdAsync${OFF};Get required skill by ID
+  ${CYAN}getRequiredSkillsAsync${OFF};Get required skills
+  ${CYAN}getRequiredSkillsCountAsync${OFF};Count required skills
+  ${CYAN}patchRequiredSkillAsync${OFF};Patch a required skill
+  ${CYAN}updateRequiredSkillAsync${OFF};Update a required skill
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -2428,7 +3090,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -2449,7 +3111,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}HrmsService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}HrmsService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -2469,7 +3131,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}HrmsService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}HrmsService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -2808,31 +3470,6 @@ print_updateAppraisalWorkflowAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3932,6 +4569,233 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
+# Print help for acceptGigApplicationAsync operation
+#
+##############################################################################
+print_acceptGigApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}acceptGigApplicationAsync - Accept a gig application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Accepts the candidate's gig proposal, forming an engagement (raises GigApplicationAccepted). A proposal cannot be accepted twice." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gigApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gigApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createGigApplicationAsync operation
+#
+##############################################################################
+print_createGigApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createGigApplicationAsync - Create a gig application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Records a candidate's proposal against one of the tenant's gigs. The targeted gig must belong to the tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteGigApplicationAsync operation
+#
+##############################################################################
+print_deleteGigApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteGigApplicationAsync - Delete a gig application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a proposal submitted against one of the tenant's gigs." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gigApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gigApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGigApplicationByIdAsync operation
+#
+##############################################################################
+print_getGigApplicationByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGigApplicationByIdAsync - Get gig application by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific proposal submitted against one of the tenant's gigs." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gigApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gigApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGigApplicationsAsync operation
+#
+##############################################################################
+print_getGigApplicationsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGigApplicationsAsync - Get gig applications${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves proposals submitted against the tenant's gigs. Filter with '$filter=GigId eq '...'' or 'JobApplicantProfileId eq '...''." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGigApplicationsCountAsync operation
+#
+##############################################################################
+print_getGigApplicationsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGigApplicationsCountAsync - Count gig applications${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts proposals submitted against the tenant's gigs." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchGigApplicationAsync operation
+#
+##############################################################################
+print_patchGigApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchGigApplicationAsync - Patch a gig application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing proposal submitted against one of the tenant's gigs." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gigApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gigApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateGigApplicationAsync operation
+#
+##############################################################################
+print_updateGigApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateGigApplicationAsync - Update a gig application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing proposal submitted against one of the tenant's gigs (e.g. accept it)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}gigApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: gigApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createGigAsync operation
 #
 ##############################################################################
@@ -4132,6 +4996,862 @@ print_updateGigAsync_help() {
 }
 ##############################################################################
 #
+# Print help for createJobApplicantAsync operation
+#
+##############################################################################
+print_createJobApplicantAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createJobApplicantAsync - Create a job applicant${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new job applicant (candidate) profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteJobApplicantAsync operation
+#
+##############################################################################
+print_deleteJobApplicantAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteJobApplicantAsync - Delete a job applicant${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a job applicant (candidate) profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobApplicantByIdAsync operation
+#
+##############################################################################
+print_getJobApplicantByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobApplicantByIdAsync - Get job applicant by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific job applicant (candidate) profile by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobApplicantsAsync operation
+#
+##############################################################################
+print_getJobApplicantsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobApplicantsAsync - Get job applicants${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves job applicant (candidate) profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobApplicantsCountAsync operation
+#
+##############################################################################
+print_getJobApplicantsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobApplicantsCountAsync - Count job applicants${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts job applicant profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJobApplicantAsync operation
+#
+##############################################################################
+print_patchJobApplicantAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJobApplicantAsync - Patch a job applicant${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing job applicant (candidate) profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateJobApplicantAsync operation
+#
+##############################################################################
+print_updateJobApplicantAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateJobApplicantAsync - Update a job applicant${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing job applicant (candidate) profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for changeJobApplicationStatusAsync operation
+#
+##############################################################################
+print_changeJobApplicationStatusAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}changeJobApplicationStatusAsync - Change job application status${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Transitions the application to a new funnel status (e.g. UnderReview, Interviewing, Offered, Hired, Rejected). Raises JobApplicationStatusChanged; terminal statuses are immutable." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}status${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: status=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createJobApplicationAsync operation
+#
+##############################################################################
+print_createJobApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createJobApplicationAsync - Create a job application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Records a candidate's application against one of the tenant's job offers. The targeted job offer must belong to the tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteJobApplicationAsync operation
+#
+##############################################################################
+print_deleteJobApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteJobApplicationAsync - Delete a job application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes an application submitted against one of the tenant's job offers." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobApplicationByIdAsync operation
+#
+##############################################################################
+print_getJobApplicationByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobApplicationByIdAsync - Get job application by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific application submitted against one of the tenant's job offers." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobApplicationsAsync operation
+#
+##############################################################################
+print_getJobApplicationsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobApplicationsAsync - Get job applications${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves applications submitted against the tenant's job offers. Filter with '$filter=JobOfferId eq '...'' or 'JobApplicantProfileId eq '...''." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobApplicationsCountAsync operation
+#
+##############################################################################
+print_getJobApplicationsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobApplicationsCountAsync - Count job applications${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts applications submitted against the tenant's job offers." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJobApplicationAsync operation
+#
+##############################################################################
+print_patchJobApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJobApplicationAsync - Patch a job application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing application submitted against one of the tenant's job offers." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateJobApplicationAsync operation
+#
+##############################################################################
+print_updateJobApplicationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateJobApplicationAsync - Update a job application${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing application submitted against one of the tenant's job offers." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobApplicationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobApplicationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createJobFieldAsync operation
+#
+##############################################################################
+print_createJobFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createJobFieldAsync - Create a job field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new job field (role domain) for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteJobFieldAsync operation
+#
+##############################################################################
+print_deleteJobFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteJobFieldAsync - Delete a job field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a job field for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobFieldByIdAsync operation
+#
+##############################################################################
+print_getJobFieldByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobFieldByIdAsync - Get job field by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific job field by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobFieldsAsync operation
+#
+##############################################################################
+print_getJobFieldsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobFieldsAsync - Get job fields${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves job field (role domain) taxonomy entries for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobFieldsCountAsync operation
+#
+##############################################################################
+print_getJobFieldsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobFieldsCountAsync - Count job fields${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts job field taxonomy entries for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJobFieldAsync operation
+#
+##############################################################################
+print_patchJobFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJobFieldAsync - Patch a job field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing job field for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateJobFieldAsync operation
+#
+##############################################################################
+print_updateJobFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateJobFieldAsync - Update a job field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing job field for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createJobOfferFieldAsync operation
+#
+##############################################################################
+print_createJobOfferFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createJobOfferFieldAsync - Create a job offer field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Links a job field to a job offer for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteJobOfferFieldAsync operation
+#
+##############################################################################
+print_deleteJobOfferFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteJobOfferFieldAsync - Delete a job offer field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a job-offer field link record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobOfferFieldByIdAsync operation
+#
+##############################################################################
+print_getJobOfferFieldByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobOfferFieldByIdAsync - Get job offer field by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific job-offer field link record by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobOfferFieldsAsync operation
+#
+##############################################################################
+print_getJobOfferFieldsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobOfferFieldsAsync - Get job offer fields${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves job-offer field link records for the tenant. Filter with '$filter=JobOfferId eq '...'' or 'JobFieldId eq '...''." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getJobOfferFieldsCountAsync operation
+#
+##############################################################################
+print_getJobOfferFieldsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJobOfferFieldsCountAsync - Count job offer fields${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts job-offer field link records for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchJobOfferFieldAsync operation
+#
+##############################################################################
+print_patchJobOfferFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchJobOfferFieldAsync - Patch a job offer field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing job-offer field link record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateJobOfferFieldAsync operation
+#
+##############################################################################
+print_updateJobOfferFieldAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateJobOfferFieldAsync - Update a job offer field${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing job-offer field link record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferFieldId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferFieldId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for closeJobOfferAsync operation
+#
+##############################################################################
+print_closeJobOfferAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}closeJobOfferAsync - Close a job offer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Closes the job offer without a hire and removes it from the public board (raises JobOfferClosed)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createJobOfferAsync operation
 #
 ##############################################################################
@@ -4184,6 +5904,33 @@ print_deleteJobOfferAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for fillJobOfferAsync operation
+#
+##############################################################################
+print_fillJobOfferAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}fillJobOfferAsync - Mark a job offer filled${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks the offer filled — converted to a hire — and removes it from the public board (raises JobOfferFilled)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
@@ -4270,6 +6017,79 @@ print_getJobOffersCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getPublicJobOfferByIdAsync operation
+#
+##############################################################################
+print_getPublicJobOfferByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPublicJobOfferByIdAsync - Get public job offer by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a published job offer by its identifier for the Talent Portal. Anonymous; optionally scoped to a tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}jobOfferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPublicJobOffersAsync operation
+#
+##############################################################################
+print_getPublicJobOffersAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPublicJobOffersAsync - Get public job offers${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves published job offers for the Talent Portal. Anonymous; optionally scoped to a single tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPublicJobOffersCountAsync operation
+#
+##############################################################################
+print_getPublicJobOffersCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPublicJobOffersCountAsync - Count public job offers${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts published job offers for the Talent Portal. Anonymous; optionally scoped to a single tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for patchJobOfferAsync operation
 #
 ##############################################################################
@@ -4294,6 +6114,33 @@ print_patchJobOfferAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for publishJobOfferAsync operation
+#
+##############################################################################
+print_publishJobOfferAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}publishJobOfferAsync - Publish a job offer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Publishes the job offer to the public Talent Portal (raises JobOfferPublished)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}jobOfferId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: jobOfferId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
@@ -5252,6 +7099,206 @@ print_updatePayrollAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}payrollId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: payrollId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createRequiredSkillAsync operation
+#
+##############################################################################
+print_createRequiredSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createRequiredSkillAsync - Create a required skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new required-skill record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteRequiredSkillAsync operation
+#
+##############################################################################
+print_deleteRequiredSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteRequiredSkillAsync - Delete a required skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a required-skill record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}requiredSkillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: requiredSkillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRequiredSkillByIdAsync operation
+#
+##############################################################################
+print_getRequiredSkillByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRequiredSkillByIdAsync - Get required skill by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific required-skill record by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}requiredSkillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: requiredSkillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRequiredSkillsAsync operation
+#
+##############################################################################
+print_getRequiredSkillsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRequiredSkillsAsync - Get required skills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves required-skill records for the specified tenant. Filter by '$filter=JobOfferId eq '...'' or 'EmployerProfileId eq '...''." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getRequiredSkillsCountAsync operation
+#
+##############################################################################
+print_getRequiredSkillsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getRequiredSkillsCountAsync - Count required skills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts required-skill records for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchRequiredSkillAsync operation
+#
+##############################################################################
+print_patchRequiredSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchRequiredSkillAsync - Patch a required skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing required-skill record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}requiredSkillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: requiredSkillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateRequiredSkillAsync operation
+#
+##############################################################################
+print_updateRequiredSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateRequiredSkillAsync - Update a required skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing required-skill record for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}requiredSkillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: requiredSkillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7228,42 +9275,6 @@ call_updateAppraisalWorkflowAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -9708,6 +11719,414 @@ call_versionGet() {
 
 ##############################################################################
 #
+# Call acceptGigApplicationAsync operation
+#
+##############################################################################
+call_acceptGigApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(gigApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications/{gigApplicationId}/Accept" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createGigApplicationAsync operation
+#
+##############################################################################
+call_createGigApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteGigApplicationAsync operation
+#
+##############################################################################
+call_deleteGigApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(gigApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications/{gigApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getGigApplicationByIdAsync operation
+#
+##############################################################################
+call_getGigApplicationByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(gigApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications/{gigApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getGigApplicationsAsync operation
+#
+##############################################################################
+call_getGigApplicationsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getGigApplicationsCountAsync operation
+#
+##############################################################################
+call_getGigApplicationsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchGigApplicationAsync operation
+#
+##############################################################################
+call_patchGigApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(gigApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications/{gigApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateGigApplicationAsync operation
+#
+##############################################################################
+call_updateGigApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(gigApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/GigApplications/{gigApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call createGigAsync operation
 #
 ##############################################################################
@@ -10080,6 +12499,1566 @@ call_updateGigAsync() {
 
 ##############################################################################
 #
+# Call createJobApplicantAsync operation
+#
+##############################################################################
+call_createJobApplicantAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteJobApplicantAsync operation
+#
+##############################################################################
+call_deleteJobApplicantAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants/{jobApplicantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobApplicantByIdAsync operation
+#
+##############################################################################
+call_getJobApplicantByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants/{jobApplicantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobApplicantsAsync operation
+#
+##############################################################################
+call_getJobApplicantsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobApplicantsCountAsync operation
+#
+##############################################################################
+call_getJobApplicantsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchJobApplicantAsync operation
+#
+##############################################################################
+call_patchJobApplicantAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants/{jobApplicantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateJobApplicantAsync operation
+#
+##############################################################################
+call_updateJobApplicantAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplicants/{jobApplicantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call changeJobApplicationStatusAsync operation
+#
+##############################################################################
+call_changeJobApplicationStatusAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId status api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications/{jobApplicationId}/Status" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createJobApplicationAsync operation
+#
+##############################################################################
+call_createJobApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteJobApplicationAsync operation
+#
+##############################################################################
+call_deleteJobApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications/{jobApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobApplicationByIdAsync operation
+#
+##############################################################################
+call_getJobApplicationByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications/{jobApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobApplicationsAsync operation
+#
+##############################################################################
+call_getJobApplicationsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobApplicationsCountAsync operation
+#
+##############################################################################
+call_getJobApplicationsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchJobApplicationAsync operation
+#
+##############################################################################
+call_patchJobApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications/{jobApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateJobApplicationAsync operation
+#
+##############################################################################
+call_updateJobApplicationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobApplicationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobApplications/{jobApplicationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createJobFieldAsync operation
+#
+##############################################################################
+call_createJobFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteJobFieldAsync operation
+#
+##############################################################################
+call_deleteJobFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields/{jobFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobFieldByIdAsync operation
+#
+##############################################################################
+call_getJobFieldByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields/{jobFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobFieldsAsync operation
+#
+##############################################################################
+call_getJobFieldsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobFieldsCountAsync operation
+#
+##############################################################################
+call_getJobFieldsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchJobFieldAsync operation
+#
+##############################################################################
+call_patchJobFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields/{jobFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateJobFieldAsync operation
+#
+##############################################################################
+call_updateJobFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobFields/{jobFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createJobOfferFieldAsync operation
+#
+##############################################################################
+call_createJobOfferFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteJobOfferFieldAsync operation
+#
+##############################################################################
+call_deleteJobOfferFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields/{jobOfferFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobOfferFieldByIdAsync operation
+#
+##############################################################################
+call_getJobOfferFieldByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields/{jobOfferFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobOfferFieldsAsync operation
+#
+##############################################################################
+call_getJobOfferFieldsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getJobOfferFieldsCountAsync operation
+#
+##############################################################################
+call_getJobOfferFieldsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchJobOfferFieldAsync operation
+#
+##############################################################################
+call_patchJobOfferFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields/{jobOfferFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateJobOfferFieldAsync operation
+#
+##############################################################################
+call_updateJobOfferFieldAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferFieldId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOfferFields/{jobOfferFieldId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call closeJobOfferAsync operation
+#
+##############################################################################
+call_closeJobOfferAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/{jobOfferId}/Close" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call createJobOfferAsync operation
 #
 ##############################################################################
@@ -10173,6 +14152,42 @@ call_deleteJobOfferAsync() {
         exit 1
     fi
     local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call fillJobOfferAsync operation
+#
+##############################################################################
+call_fillJobOfferAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/{jobOfferId}/Fill" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -10300,6 +14315,114 @@ call_getJobOffersCountAsync() {
 
 ##############################################################################
 #
+# Call getPublicJobOfferByIdAsync operation
+#
+##############################################################################
+call_getPublicJobOfferByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/Public/{jobOfferId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPublicJobOffersAsync operation
+#
+##############################################################################
+call_getPublicJobOffersAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/Public" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPublicJobOffersCountAsync operation
+#
+##############################################################################
+call_getPublicJobOffersCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/Public/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call patchJobOfferAsync operation
 #
 ##############################################################################
@@ -10371,6 +14494,42 @@ call_patchJobOfferAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call publishJobOfferAsync operation
+#
+##############################################################################
+call_publishJobOfferAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(jobOfferId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/JobOffers/{jobOfferId}/Publish" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -12097,6 +16256,378 @@ call_updatePayrollAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/HrmsService/Payrolls/{payrollId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createRequiredSkillAsync operation
+#
+##############################################################################
+call_createRequiredSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteRequiredSkillAsync operation
+#
+##############################################################################
+call_deleteRequiredSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(requiredSkillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills/{requiredSkillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRequiredSkillByIdAsync operation
+#
+##############################################################################
+call_getRequiredSkillByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(requiredSkillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills/{requiredSkillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRequiredSkillsAsync operation
+#
+##############################################################################
+call_getRequiredSkillsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getRequiredSkillsCountAsync operation
+#
+##############################################################################
+call_getRequiredSkillsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchRequiredSkillAsync operation
+#
+##############################################################################
+call_patchRequiredSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(requiredSkillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills/{requiredSkillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateRequiredSkillAsync operation
+#
+##############################################################################
+call_updateRequiredSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(requiredSkillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/HrmsService/RequiredSkills/{requiredSkillId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -14819,9 +19350,6 @@ case $key in
     updateAppraisalWorkflowAsync)
     operation="updateAppraisalWorkflowAsync"
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
-    ;;
     createEmployeeAppraisalSessionAsync)
     operation="createEmployeeAppraisalSessionAsync"
     ;;
@@ -14957,6 +19485,30 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
+    acceptGigApplicationAsync)
+    operation="acceptGigApplicationAsync"
+    ;;
+    createGigApplicationAsync)
+    operation="createGigApplicationAsync"
+    ;;
+    deleteGigApplicationAsync)
+    operation="deleteGigApplicationAsync"
+    ;;
+    getGigApplicationByIdAsync)
+    operation="getGigApplicationByIdAsync"
+    ;;
+    getGigApplicationsAsync)
+    operation="getGigApplicationsAsync"
+    ;;
+    getGigApplicationsCountAsync)
+    operation="getGigApplicationsCountAsync"
+    ;;
+    patchGigApplicationAsync)
+    operation="patchGigApplicationAsync"
+    ;;
+    updateGigApplicationAsync)
+    operation="updateGigApplicationAsync"
+    ;;
     createGigAsync)
     operation="createGigAsync"
     ;;
@@ -14978,11 +19530,104 @@ case $key in
     updateGigAsync)
     operation="updateGigAsync"
     ;;
+    createJobApplicantAsync)
+    operation="createJobApplicantAsync"
+    ;;
+    deleteJobApplicantAsync)
+    operation="deleteJobApplicantAsync"
+    ;;
+    getJobApplicantByIdAsync)
+    operation="getJobApplicantByIdAsync"
+    ;;
+    getJobApplicantsAsync)
+    operation="getJobApplicantsAsync"
+    ;;
+    getJobApplicantsCountAsync)
+    operation="getJobApplicantsCountAsync"
+    ;;
+    patchJobApplicantAsync)
+    operation="patchJobApplicantAsync"
+    ;;
+    updateJobApplicantAsync)
+    operation="updateJobApplicantAsync"
+    ;;
+    changeJobApplicationStatusAsync)
+    operation="changeJobApplicationStatusAsync"
+    ;;
+    createJobApplicationAsync)
+    operation="createJobApplicationAsync"
+    ;;
+    deleteJobApplicationAsync)
+    operation="deleteJobApplicationAsync"
+    ;;
+    getJobApplicationByIdAsync)
+    operation="getJobApplicationByIdAsync"
+    ;;
+    getJobApplicationsAsync)
+    operation="getJobApplicationsAsync"
+    ;;
+    getJobApplicationsCountAsync)
+    operation="getJobApplicationsCountAsync"
+    ;;
+    patchJobApplicationAsync)
+    operation="patchJobApplicationAsync"
+    ;;
+    updateJobApplicationAsync)
+    operation="updateJobApplicationAsync"
+    ;;
+    createJobFieldAsync)
+    operation="createJobFieldAsync"
+    ;;
+    deleteJobFieldAsync)
+    operation="deleteJobFieldAsync"
+    ;;
+    getJobFieldByIdAsync)
+    operation="getJobFieldByIdAsync"
+    ;;
+    getJobFieldsAsync)
+    operation="getJobFieldsAsync"
+    ;;
+    getJobFieldsCountAsync)
+    operation="getJobFieldsCountAsync"
+    ;;
+    patchJobFieldAsync)
+    operation="patchJobFieldAsync"
+    ;;
+    updateJobFieldAsync)
+    operation="updateJobFieldAsync"
+    ;;
+    createJobOfferFieldAsync)
+    operation="createJobOfferFieldAsync"
+    ;;
+    deleteJobOfferFieldAsync)
+    operation="deleteJobOfferFieldAsync"
+    ;;
+    getJobOfferFieldByIdAsync)
+    operation="getJobOfferFieldByIdAsync"
+    ;;
+    getJobOfferFieldsAsync)
+    operation="getJobOfferFieldsAsync"
+    ;;
+    getJobOfferFieldsCountAsync)
+    operation="getJobOfferFieldsCountAsync"
+    ;;
+    patchJobOfferFieldAsync)
+    operation="patchJobOfferFieldAsync"
+    ;;
+    updateJobOfferFieldAsync)
+    operation="updateJobOfferFieldAsync"
+    ;;
+    closeJobOfferAsync)
+    operation="closeJobOfferAsync"
+    ;;
     createJobOfferAsync)
     operation="createJobOfferAsync"
     ;;
     deleteJobOfferAsync)
     operation="deleteJobOfferAsync"
+    ;;
+    fillJobOfferAsync)
+    operation="fillJobOfferAsync"
     ;;
     getJobOfferByIdAsync)
     operation="getJobOfferByIdAsync"
@@ -14993,8 +19638,20 @@ case $key in
     getJobOffersCountAsync)
     operation="getJobOffersCountAsync"
     ;;
+    getPublicJobOfferByIdAsync)
+    operation="getPublicJobOfferByIdAsync"
+    ;;
+    getPublicJobOffersAsync)
+    operation="getPublicJobOffersAsync"
+    ;;
+    getPublicJobOffersCountAsync)
+    operation="getPublicJobOffersCountAsync"
+    ;;
     patchJobOfferAsync)
     operation="patchJobOfferAsync"
+    ;;
+    publishJobOfferAsync)
+    operation="publishJobOfferAsync"
     ;;
     updateJobOfferAsync)
     operation="updateJobOfferAsync"
@@ -15097,6 +19754,27 @@ case $key in
     ;;
     updatePayrollAsync)
     operation="updatePayrollAsync"
+    ;;
+    createRequiredSkillAsync)
+    operation="createRequiredSkillAsync"
+    ;;
+    deleteRequiredSkillAsync)
+    operation="deleteRequiredSkillAsync"
+    ;;
+    getRequiredSkillByIdAsync)
+    operation="getRequiredSkillByIdAsync"
+    ;;
+    getRequiredSkillsAsync)
+    operation="getRequiredSkillsAsync"
+    ;;
+    getRequiredSkillsCountAsync)
+    operation="getRequiredSkillsCountAsync"
+    ;;
+    patchRequiredSkillAsync)
+    operation="patchRequiredSkillAsync"
+    ;;
+    updateRequiredSkillAsync)
+    operation="updateRequiredSkillAsync"
     ;;
     createSalaryAsync)
     operation="createSalaryAsync"
@@ -15365,9 +20043,6 @@ case $operation in
     updateAppraisalWorkflowAsync)
     call_updateAppraisalWorkflowAsync
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
-    ;;
     createEmployeeAppraisalSessionAsync)
     call_createEmployeeAppraisalSessionAsync
     ;;
@@ -15503,6 +20178,30 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
+    acceptGigApplicationAsync)
+    call_acceptGigApplicationAsync
+    ;;
+    createGigApplicationAsync)
+    call_createGigApplicationAsync
+    ;;
+    deleteGigApplicationAsync)
+    call_deleteGigApplicationAsync
+    ;;
+    getGigApplicationByIdAsync)
+    call_getGigApplicationByIdAsync
+    ;;
+    getGigApplicationsAsync)
+    call_getGigApplicationsAsync
+    ;;
+    getGigApplicationsCountAsync)
+    call_getGigApplicationsCountAsync
+    ;;
+    patchGigApplicationAsync)
+    call_patchGigApplicationAsync
+    ;;
+    updateGigApplicationAsync)
+    call_updateGigApplicationAsync
+    ;;
     createGigAsync)
     call_createGigAsync
     ;;
@@ -15524,11 +20223,104 @@ case $operation in
     updateGigAsync)
     call_updateGigAsync
     ;;
+    createJobApplicantAsync)
+    call_createJobApplicantAsync
+    ;;
+    deleteJobApplicantAsync)
+    call_deleteJobApplicantAsync
+    ;;
+    getJobApplicantByIdAsync)
+    call_getJobApplicantByIdAsync
+    ;;
+    getJobApplicantsAsync)
+    call_getJobApplicantsAsync
+    ;;
+    getJobApplicantsCountAsync)
+    call_getJobApplicantsCountAsync
+    ;;
+    patchJobApplicantAsync)
+    call_patchJobApplicantAsync
+    ;;
+    updateJobApplicantAsync)
+    call_updateJobApplicantAsync
+    ;;
+    changeJobApplicationStatusAsync)
+    call_changeJobApplicationStatusAsync
+    ;;
+    createJobApplicationAsync)
+    call_createJobApplicationAsync
+    ;;
+    deleteJobApplicationAsync)
+    call_deleteJobApplicationAsync
+    ;;
+    getJobApplicationByIdAsync)
+    call_getJobApplicationByIdAsync
+    ;;
+    getJobApplicationsAsync)
+    call_getJobApplicationsAsync
+    ;;
+    getJobApplicationsCountAsync)
+    call_getJobApplicationsCountAsync
+    ;;
+    patchJobApplicationAsync)
+    call_patchJobApplicationAsync
+    ;;
+    updateJobApplicationAsync)
+    call_updateJobApplicationAsync
+    ;;
+    createJobFieldAsync)
+    call_createJobFieldAsync
+    ;;
+    deleteJobFieldAsync)
+    call_deleteJobFieldAsync
+    ;;
+    getJobFieldByIdAsync)
+    call_getJobFieldByIdAsync
+    ;;
+    getJobFieldsAsync)
+    call_getJobFieldsAsync
+    ;;
+    getJobFieldsCountAsync)
+    call_getJobFieldsCountAsync
+    ;;
+    patchJobFieldAsync)
+    call_patchJobFieldAsync
+    ;;
+    updateJobFieldAsync)
+    call_updateJobFieldAsync
+    ;;
+    createJobOfferFieldAsync)
+    call_createJobOfferFieldAsync
+    ;;
+    deleteJobOfferFieldAsync)
+    call_deleteJobOfferFieldAsync
+    ;;
+    getJobOfferFieldByIdAsync)
+    call_getJobOfferFieldByIdAsync
+    ;;
+    getJobOfferFieldsAsync)
+    call_getJobOfferFieldsAsync
+    ;;
+    getJobOfferFieldsCountAsync)
+    call_getJobOfferFieldsCountAsync
+    ;;
+    patchJobOfferFieldAsync)
+    call_patchJobOfferFieldAsync
+    ;;
+    updateJobOfferFieldAsync)
+    call_updateJobOfferFieldAsync
+    ;;
+    closeJobOfferAsync)
+    call_closeJobOfferAsync
+    ;;
     createJobOfferAsync)
     call_createJobOfferAsync
     ;;
     deleteJobOfferAsync)
     call_deleteJobOfferAsync
+    ;;
+    fillJobOfferAsync)
+    call_fillJobOfferAsync
     ;;
     getJobOfferByIdAsync)
     call_getJobOfferByIdAsync
@@ -15539,8 +20331,20 @@ case $operation in
     getJobOffersCountAsync)
     call_getJobOffersCountAsync
     ;;
+    getPublicJobOfferByIdAsync)
+    call_getPublicJobOfferByIdAsync
+    ;;
+    getPublicJobOffersAsync)
+    call_getPublicJobOffersAsync
+    ;;
+    getPublicJobOffersCountAsync)
+    call_getPublicJobOffersCountAsync
+    ;;
     patchJobOfferAsync)
     call_patchJobOfferAsync
+    ;;
+    publishJobOfferAsync)
+    call_publishJobOfferAsync
     ;;
     updateJobOfferAsync)
     call_updateJobOfferAsync
@@ -15643,6 +20447,27 @@ case $operation in
     ;;
     updatePayrollAsync)
     call_updatePayrollAsync
+    ;;
+    createRequiredSkillAsync)
+    call_createRequiredSkillAsync
+    ;;
+    deleteRequiredSkillAsync)
+    call_deleteRequiredSkillAsync
+    ;;
+    getRequiredSkillByIdAsync)
+    call_getRequiredSkillByIdAsync
+    ;;
+    getRequiredSkillsAsync)
+    call_getRequiredSkillsAsync
+    ;;
+    getRequiredSkillsCountAsync)
+    call_getRequiredSkillsCountAsync
+    ;;
+    patchRequiredSkillAsync)
+    call_patchRequiredSkillAsync
+    ;;
+    updateRequiredSkillAsync)
+    call_updateRequiredSkillAsync
     ;;
     createSalaryAsync)
     call_createSalaryAsync

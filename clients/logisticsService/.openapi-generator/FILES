@@ -10,7 +10,7 @@ docs/AirwayBillDtoEnvelope.md
 docs/AirwayBillDtoListEnvelope.md
 docs/AirwayBillUpdateDto.md
 docs/AirwayBillsApi.md
-docs/CompletionsApi.md
+docs/ContactCreateDto.md
 docs/ContactDto.md
 docs/DeliveryNoteCreateDto.md
 docs/DeliveryNoteDto.md
@@ -21,7 +21,7 @@ docs/DeliveryNotesApi.md
 docs/DisputeProofOfDeliveryRequest.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

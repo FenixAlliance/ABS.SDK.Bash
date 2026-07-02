@@ -96,9 +96,9 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createTenantDepartment:::tenantId"]=1
 operation_parameters_minimum_occurrences["createTenantDepartment:::api-version"]=0
 operation_parameters_minimum_occurrences["createTenantDepartment:::x-api-version"]=0
@@ -775,9 +775,9 @@ operation_parameters_minimum_occurrences["updateTenantUnit:::TenantUnitUpdateDto
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createTenantDepartment:::tenantId"]=0
 operation_parameters_maximum_occurrences["createTenantDepartment:::api-version"]=0
 operation_parameters_maximum_occurrences["createTenantDepartment:::x-api-version"]=0
@@ -1451,9 +1451,9 @@ operation_parameters_maximum_occurrences["updateTenantUnit:::TenantUnitUpdateDto
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["createTenantDepartment:::tenantId"]=""
 operation_parameters_collection_type["createTenantDepartment:::api-version"]=""
 operation_parameters_collection_type["createTenantDepartment:::x-api-version"]=""
@@ -2479,7 +2479,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}TenantsService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}TenantsService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -2508,9 +2508,9 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+    echo -e "${BOLD}${WHITE}[businessRelationships]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+  ${CYAN}getBusinessRelationshipsCountAsync${OFF};Get business relationships count
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -2552,7 +2552,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -2796,7 +2796,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -2817,7 +2817,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}TenantsService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}TenantsService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -2837,26 +2837,27 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}TenantsService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}TenantsService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
+# Print help for getBusinessRelationshipsCountAsync operation
 #
 ##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
+print_getBusinessRelationshipsCountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBusinessRelationshipsCountAsync - Get business relationships count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of child business relationships owned by the specified parent tenant." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7636,19 +7637,19 @@ print_updateTenantUnit_help() {
 
 ##############################################################################
 #
-# Call apiV2AiServiceCompletionsCompleteGet operation
+# Call getBusinessRelationshipsCountAsync operation
 #
 ##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
+call_getBusinessRelationshipsCountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
+    local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/TenantsService/BusinessRelationships/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -16899,8 +16900,8 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
+    getBusinessRelationshipsCountAsync)
+    operation="getBusinessRelationshipsCountAsync"
     ;;
     createTenantDepartment)
     operation="createTenantDepartment"
@@ -17535,8 +17536,8 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
+    getBusinessRelationshipsCountAsync)
+    call_getBusinessRelationshipsCountAsync
     ;;
     createTenantDepartment)
     call_createTenantDepartment

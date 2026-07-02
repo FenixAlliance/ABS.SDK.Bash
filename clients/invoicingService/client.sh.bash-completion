@@ -69,7 +69,6 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -123,6 +122,8 @@ _()
     operations["getInvoiceReferencesCount"]=1
     operations["getInvoices"]=1
     operations["getInvoicesCount"]=1
+    operations["getPurchaseInvoicesSum"]=1
+    operations["getSalesInvoicesSum"]=1
     operations["patchInvoice"]=1
     operations["patchInvoiceAdjustment"]=1
     operations["patchInvoiceLine"]=1
@@ -139,7 +140,6 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
@@ -193,6 +193,8 @@ _()
     operation_parameters["getInvoiceReferencesCount"]="invoiceId= tenantId= "
     operation_parameters["getInvoices"]="tenantId= "
     operation_parameters["getInvoicesCount"]="tenantId= "
+    operation_parameters["getPurchaseInvoicesSum"]="tenantId= "
+    operation_parameters["getSalesInvoicesSum"]="tenantId= "
     operation_parameters["patchInvoice"]="invoiceId= tenantId= "
     operation_parameters["patchInvoiceAdjustment"]="invoiceId= invoiceAdjustmentId= tenantId= "
     operation_parameters["patchInvoiceLine"]="invoiceId= invoiceLineId= tenantId= "

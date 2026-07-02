@@ -4,7 +4,6 @@ _client.sh
 client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
-docs/AdditionalAttribute.md
 docs/AntiforgeryApi.md
 docs/BooleanEnvelope.md
 docs/BusinessDomainDto.md
@@ -15,7 +14,6 @@ docs/CartDto.md
 docs/CartDtoEnvelope.md
 docs/CartDtoListEnvelope.md
 docs/CartsApi.md
-docs/CompletionsApi.md
 docs/ContactOptionsApi.md
 docs/EmailDispatchRequest.md
 docs/EmailsApi.md
@@ -27,7 +25,7 @@ docs/ExtendedTenantDtoListEnvelope.md
 docs/ExtendedUserDto.md
 docs/ExtendedUserDtoEnvelope.md
 docs/ExtendedUserDtoListEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/IPLookupDto.md
@@ -43,14 +41,7 @@ docs/IValidationFailureListEnvelope.md
 docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
-docs/LicenseAttributesListEnvelope.md
-docs/LicenseFeature.md
-docs/LicenseKey.md
-docs/LicenseKeyRequest.md
-docs/LicenseValidationError.md
-docs/LicenseValidationErrorListEnvelope.md
 docs/LicenseValidationRequest.md
-docs/LicensesApi.md
 docs/LicensingApi.md
 docs/LoginRequest.md
 docs/MigrationsApi.md
@@ -72,7 +63,6 @@ docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md
 docs/ResetPasswordRequest.md
 docs/SocialProfileDto.md
-docs/StringEnvelope.md
 docs/StringListEnvelope.md
 docs/StudioModule.md
 docs/StudioModuleListEnvelope.md

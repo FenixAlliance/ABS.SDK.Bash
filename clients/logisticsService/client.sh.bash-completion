@@ -87,7 +87,6 @@ _()
     operations["removeAirwayBillLineAsync"]=1
     operations["updateAirwayBillAsync"]=1
     operations["updateAirwayBillLineAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createDeliveryNoteAsync"]=1
     operations["deleteDeliveryNoteAsync"]=1
     operations["getDeliveryNoteByIdAsync"]=1
@@ -326,7 +325,6 @@ _()
     operation_parameters["removeAirwayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAirwayBillAsync"]="billId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAirwayBillLineAsync"]="billId= lineId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createDeliveryNoteAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteDeliveryNoteAsync"]="deliveryNoteId= tenantId= api-version= x-api-version: "
     operation_parameters["getDeliveryNoteByIdAsync"]="deliveryNoteId= tenantId= api-version= x-api-version: "

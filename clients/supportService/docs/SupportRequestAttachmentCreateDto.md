@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **validResponse** | **boolean** |  | [optional] [default to null]
 **parentFileUploadId** | **string** |  | [optional] [default to null]
 **filePath** | **string** |  | [optional] [default to null]
+**publicAccessType** | **string** |  | [optional] [default to null]
 **metadata** | **string** |  | [optional] [default to null]
 **supportRequestId** | **string** |  | [optional] [default to null]
 

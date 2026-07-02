@@ -314,7 +314,7 @@ case $state in
             "patchAirwayBillLineAsync[Patch an airway bill line]" \
             "removeAirwayBillLineAsync[Remove an airway bill line]" \
             "updateAirwayBillAsync[Update an airway bill]" \
-            "updateAirwayBillLineAsync[Update an airway bill line]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createDeliveryNoteAsync[Create a delivery note]" \
+            "updateAirwayBillLineAsync[Update an airway bill line]"             "createDeliveryNoteAsync[Create a delivery note]" \
             "deleteDeliveryNoteAsync[Delete a delivery note]" \
             "getDeliveryNoteByIdAsync[Get delivery note by ID]" \
             "getDeliveryNotesAsync[Get all delivery notes]" \
@@ -699,15 +699,6 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createDeliveryNoteAsync)

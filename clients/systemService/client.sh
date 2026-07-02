@@ -123,9 +123,6 @@ operation_parameters_minimum_occurrences["getSystemCarts:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCarts:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCartsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCartsCount:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createSystemContactOption:::contactId"]=1
 operation_parameters_minimum_occurrences["createSystemContactOption:::key"]=1
 operation_parameters_minimum_occurrences["createSystemContactOption:::portalId"]=0
@@ -191,22 +188,6 @@ operation_parameters_minimum_occurrences["getSystemIPLookups:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookups:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesGeneratePost:::LicenseKeyRequest"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateAttributesGet:::LicenseKey"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateErrorsGet:::LicenseKey"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiLicensingLicensesValidateGet:::LicenseKey"]=0
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::api-version"]=0
@@ -473,9 +454,6 @@ operation_parameters_maximum_occurrences["getSystemCarts:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCarts:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCartsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCartsCount:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createSystemContactOption:::contactId"]=0
 operation_parameters_maximum_occurrences["createSystemContactOption:::key"]=0
 operation_parameters_maximum_occurrences["createSystemContactOption:::portalId"]=0
@@ -541,22 +519,6 @@ operation_parameters_maximum_occurrences["getSystemIPLookups:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookups:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesGeneratePost:::LicenseKeyRequest"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateAttributesGet:::LicenseKey"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateErrorsGet:::LicenseKey"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiLicensingLicensesValidateGet:::LicenseKey"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::api-version"]=0
@@ -820,9 +782,6 @@ operation_parameters_collection_type["getSystemCarts:::api-version"]=""
 operation_parameters_collection_type["getSystemCarts:::x-api-version"]=""
 operation_parameters_collection_type["getSystemCartsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemCartsCount:::x-api-version"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createSystemContactOption:::contactId"]=""
 operation_parameters_collection_type["createSystemContactOption:::key"]=""
 operation_parameters_collection_type["createSystemContactOption:::portalId"]=""
@@ -888,22 +847,6 @@ operation_parameters_collection_type["getSystemIPLookups:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookups:::x-api-version"]=""
 operation_parameters_collection_type["getSystemIPLookupsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookupsCount:::x-api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::tenantId"]=""
-operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::x-api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesGeneratePost:::LicenseKeyRequest"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::tenantId"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::x-api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateAttributesGet:::LicenseKey"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::tenantId"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::x-api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateErrorsGet:::LicenseKey"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateGet:::tenantId"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateGet:::api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateGet:::x-api-version"]=""
-operation_parameters_collection_type["apiLicensingLicensesValidateGet:::LicenseKey"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::api-version"]=""
@@ -1492,7 +1435,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}SystemService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1547,12 +1490,6 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}[contactOptions]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createSystemContactOption${OFF};Create a new contact option (admin)
@@ -1572,7 +1509,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1600,15 +1537,6 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemIPLookupById${OFF};Retrieve a single system IP lookup by its ID
   ${CYAN}getSystemIPLookups${OFF};Retrieve a list of system IP lookups
   ${CYAN}getSystemIPLookupsCount${OFF};Get the count of system IP lookups
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[licenses]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}apiLicensingLicensesGeneratePost${OFF};
-  ${CYAN}apiLicensingLicensesValidateAttributesGet${OFF};
-  ${CYAN}apiLicensingLicensesValidateErrorsGet${OFF};
-  ${CYAN}apiLicensingLicensesValidateGet${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1733,7 +1661,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1754,7 +1682,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SystemService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}SystemService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1774,7 +1702,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SystemService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}SystemService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -2032,31 +1960,6 @@ print_getSystemCartsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2690,110 +2593,6 @@ print_getSystemIPLookupsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiLicensingLicensesGeneratePost operation
-#
-##############################################################################
-print_apiLicensingLicensesGeneratePost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiLicensingLicensesGeneratePost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiLicensingLicensesValidateAttributesGet operation
-#
-##############################################################################
-print_apiLicensingLicensesValidateAttributesGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiLicensingLicensesValidateAttributesGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiLicensingLicensesValidateErrorsGet operation
-#
-##############################################################################
-print_apiLicensingLicensesValidateErrorsGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiLicensingLicensesValidateErrorsGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiLicensingLicensesValidateGet operation
-#
-##############################################################################
-print_apiLicensingLicensesValidateGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiLicensingLicensesValidateGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4905,42 +4704,6 @@ call_getSystemCartsCount() {
 
 ##############################################################################
 #
-# Call apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call createSystemContactOption operation
 #
 ##############################################################################
@@ -6555,310 +6318,6 @@ call_getSystemIPLookupsCount() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiLicensingLicensesGeneratePost operation
-#
-##############################################################################
-call_apiLicensingLicensesGeneratePost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/Licensing/Licenses/Generate" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiLicensingLicensesValidateAttributesGet operation
-#
-##############################################################################
-call_apiLicensingLicensesValidateAttributesGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/Licensing/Licenses/Validate/Attributes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiLicensingLicensesValidateErrorsGet operation
-#
-##############################################################################
-call_apiLicensingLicensesValidateErrorsGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/Licensing/Licenses/Validate/Errors" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiLicensingLicensesValidateGet operation
-#
-##############################################################################
-call_apiLicensingLicensesValidateGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/Licensing/Licenses/Validate" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the OpenAPI specification
-    # if values produces and consumes are defined unambiguously
-    #
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\\t- application/json"
-        echo -e "\\t- application/xml"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
     fi
 }
 
@@ -10450,9 +9909,6 @@ case $key in
     getSystemCartsCount)
     operation="getSystemCartsCount"
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
-    ;;
     createSystemContactOption)
     operation="createSystemContactOption"
     ;;
@@ -10542,18 +9998,6 @@ case $key in
     ;;
     getSystemIPLookupsCount)
     operation="getSystemIPLookupsCount"
-    ;;
-    apiLicensingLicensesGeneratePost)
-    operation="apiLicensingLicensesGeneratePost"
-    ;;
-    apiLicensingLicensesValidateAttributesGet)
-    operation="apiLicensingLicensesValidateAttributesGet"
-    ;;
-    apiLicensingLicensesValidateErrorsGet)
-    operation="apiLicensingLicensesValidateErrorsGet"
-    ;;
-    apiLicensingLicensesValidateGet)
-    operation="apiLicensingLicensesValidateGet"
     ;;
     getLicenseAssignmentsAsync)
     operation="getLicenseAssignmentsAsync"
@@ -10873,9 +10317,6 @@ case $operation in
     getSystemCartsCount)
     call_getSystemCartsCount
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
-    ;;
     createSystemContactOption)
     call_createSystemContactOption
     ;;
@@ -10965,18 +10406,6 @@ case $operation in
     ;;
     getSystemIPLookupsCount)
     call_getSystemIPLookupsCount
-    ;;
-    apiLicensingLicensesGeneratePost)
-    call_apiLicensingLicensesGeneratePost
-    ;;
-    apiLicensingLicensesValidateAttributesGet)
-    call_apiLicensingLicensesValidateAttributesGet
-    ;;
-    apiLicensingLicensesValidateErrorsGet)
-    call_apiLicensingLicensesValidateErrorsGet
-    ;;
-    apiLicensingLicensesValidateGet)
-    call_apiLicensingLicensesValidateGet
     ;;
     getLicenseAssignmentsAsync)
     call_getLicenseAssignmentsAsync

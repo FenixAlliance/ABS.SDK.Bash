@@ -69,7 +69,6 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createEmailGroupAsync"]=1
     operations["deleteEmailGroupAsync"]=1
     operations["getEmailGroupDetailsAsync"]=1
@@ -136,6 +135,7 @@ _()
     operations["getMarketingListsCountAsync"]=1
     operations["patchMarketingListAsync"]=1
     operations["updateMarketingListAsync"]=1
+    operations["getNewsletterSubscriptionsCountAsync"]=1
     operations["createNewsletterAsync"]=1
     operations["deleteNewsletterAsync"]=1
     operations["getNewsletterDetailsAsync"]=1
@@ -162,7 +162,6 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createEmailGroupAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteEmailGroupAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmailGroupDetailsAsync"]="emailgroupId= tenantId= api-version= x-api-version: "
@@ -229,6 +228,7 @@ _()
     operation_parameters["getMarketingListsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
     operation_parameters["updateMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
+    operation_parameters["getNewsletterSubscriptionsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createNewsletterAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteNewsletterAsync"]="newsletterId= tenantId= api-version= x-api-version: "
     operation_parameters["getNewsletterDetailsAsync"]="newsletterId= tenantId= api-version= x-api-version: "

@@ -69,7 +69,6 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createDiscountList"]=1
     operations["createDiscountListEntry"]=1
     operations["deleteDiscountList"]=1
@@ -108,6 +107,7 @@ _()
     operations["getPriceListAsync"]=1
     operations["getPriceListPriceAsync"]=1
     operations["getPriceListPricesAsync"]=1
+    operations["getPriceListPricesCountAsync"]=1
     operations["getPriceListsAsync"]=1
     operations["getPriceListsCountAsync"]=1
     operations["patchPriceListAsync"]=1
@@ -136,7 +136,6 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createDiscountList"]="tenantId= "
     operation_parameters["createDiscountListEntry"]="discountListId= tenantId= "
     operation_parameters["deleteDiscountList"]="discountListId= tenantId= "
@@ -175,6 +174,7 @@ _()
     operation_parameters["getPriceListAsync"]="priceListId= tenantId= "
     operation_parameters["getPriceListPriceAsync"]="priceListId= priceId= tenantId= "
     operation_parameters["getPriceListPricesAsync"]="priceListId= tenantId= itemId= "
+    operation_parameters["getPriceListPricesCountAsync"]="priceListId= tenantId= "
     operation_parameters["getPriceListsAsync"]="tenantId= "
     operation_parameters["getPriceListsCountAsync"]="tenantId= "
     operation_parameters["patchPriceListAsync"]="priceListId= tenantId= "

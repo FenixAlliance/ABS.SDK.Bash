@@ -15,10 +15,9 @@ docs/BillOfLadingLineDtoListEnvelope.md
 docs/BillOfLadingLineUpdateDto.md
 docs/BillOfLadingUpdateDto.md
 docs/BillsOfLadingApi.md
-docs/CompletionsApi.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

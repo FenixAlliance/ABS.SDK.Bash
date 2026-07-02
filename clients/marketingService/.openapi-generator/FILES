@@ -4,7 +4,6 @@ _client.sh
 client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
-docs/CompletionsApi.md
 docs/EmailGroupCreateDto.md
 docs/EmailGroupDto.md
 docs/EmailGroupDtoEnvelope.md
@@ -25,7 +24,7 @@ docs/EmailTemplateUpdateDto.md
 docs/EmailTemplatesApi.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md
@@ -58,6 +57,7 @@ docs/MarketingListsApi.md
 docs/NewsletterCreateDto.md
 docs/NewsletterDto.md
 docs/NewsletterDtoEnvelope.md
+docs/NewsletterSubscriptionsApi.md
 docs/NewsletterUpdateDto.md
 docs/NewslettersApi.md
 docs/Operation.md

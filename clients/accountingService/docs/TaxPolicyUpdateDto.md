@@ -27,6 +27,8 @@ Name | Type | Description | Notes
 **zero** | **boolean** |  | [optional] [default to null]
 **reduced** | **boolean** |  | [optional] [default to null]
 **withholding** | **boolean** |  | [optional] [default to null]
+**taxSchemeCode** | **string** |  | [optional] [default to null]
+**taxCategoryCode** | **string** |  | [optional] [default to null]
 **fiscalAuthorityId** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

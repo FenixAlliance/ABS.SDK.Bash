@@ -313,7 +313,7 @@ case $state in
             "patchActivityAsync[Patch an activity]" \
             "patchActivityTypeAsync[Patch Activity Type]" \
             "updateActivityAsync[Update an activity]" \
-            "updateActivityTypeAsync[Update Activity Type]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "updateActivityTypeAsync[Update Activity Type]"             "getActivityRecordsCountAsync[Count activity records]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -506,13 +506,13 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2AiServiceCompletionsCompleteGet)
+      getActivityRecordsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)

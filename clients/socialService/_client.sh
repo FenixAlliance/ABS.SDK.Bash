@@ -297,7 +297,19 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "createCurriculumExperienceAsync[Create a curriculum experience]" \
+            "deleteCurriculumExperienceAsync[Delete a curriculum experience]" \
+            "getCurriculumExperienceAsync[Get curriculum experience by ID]" \
+            "getCurriculumExperiencesAsync[Get curriculum experiences]" \
+            "getCurriculumExperiencesCountAsync[Count curriculum experiences]" \
+            "patchCurriculumExperienceAsync[Patch a curriculum experience]" \
+            "updateCurriculumExperienceAsync[Update a curriculum experience]"             "createCurriculumAsync[Create a curriculum]" \
+            "deleteCurriculumAsync[Delete a curriculum]" \
+            "getCurriculumAsync[Get curriculum by ID]" \
+            "getCurriculumsAsync[Get curricula]" \
+            "getCurriculumsCountAsync[Count curricula]" \
+            "patchCurriculumAsync[Patch a curriculum]" \
+            "updateCurriculumAsync[Update a curriculum]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -313,7 +325,13 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "createFeedPostAsync[Create a social feed post]" \
+            "versionGet[]"             "createSkillAsync[Create a skill]" \
+            "deleteSkillAsync[Delete a skill]" \
+            "getSkillByIdAsync[Get skill by ID]" \
+            "getSkillsAsync[Get skills]" \
+            "getSkillsCountAsync[Count skills]" \
+            "patchSkillAsync[Patch a skill]" \
+            "updateSkillAsync[Update a skill]"             "createFeedPostAsync[Create a social feed post]" \
             "deleteFeedPostAsync[Delete a social feed post]" \
             "getFeedNotifications[Get social feeds]" \
             "getFeedPostAsync[Get social feed post by ID]" \
@@ -384,13 +402,159 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2AiServiceCompletionsCompleteGet)
+      createCurriculumExperienceAsync)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCurriculumExperienceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+"experienceId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurriculumExperienceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+"experienceId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurriculumExperiencesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurriculumExperiencesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchCurriculumExperienceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+"experienceId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCurriculumExperienceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+"experienceId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createCurriculumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteCurriculumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurriculumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurriculumsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCurriculumsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchCurriculumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateCurriculumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "curriculumId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)
@@ -500,6 +664,73 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createSkillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSkillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "skillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSkillByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "skillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSkillsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSkillsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchSkillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "skillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateSkillAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "skillId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createFeedPostAsync)

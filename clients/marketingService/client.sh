@@ -96,9 +96,6 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createEmailGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createEmailGroupAsync:::EmailGroupCreateDto"]=1
 operation_parameters_minimum_occurrences["createEmailGroupAsync:::api-version"]=0
@@ -312,6 +309,9 @@ operation_parameters_minimum_occurrences["updateMarketingListAsync:::marketingli
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=1
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createNewsletterAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createNewsletterAsync:::NewsletterCreateDto"]=1
 operation_parameters_minimum_occurrences["createNewsletterAsync:::api-version"]=0
@@ -407,9 +407,6 @@ operation_parameters_minimum_occurrences["getTrackingPixelAsync:::x-api-version"
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createEmailGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createEmailGroupAsync:::EmailGroupCreateDto"]=0
 operation_parameters_maximum_occurrences["createEmailGroupAsync:::api-version"]=0
@@ -623,6 +620,9 @@ operation_parameters_maximum_occurrences["updateMarketingListAsync:::marketingli
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createNewsletterAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createNewsletterAsync:::NewsletterCreateDto"]=0
 operation_parameters_maximum_occurrences["createNewsletterAsync:::api-version"]=0
@@ -715,9 +715,6 @@ operation_parameters_maximum_occurrences["getTrackingPixelAsync:::x-api-version"
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createEmailGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["createEmailGroupAsync:::EmailGroupCreateDto"]=""
 operation_parameters_collection_type["createEmailGroupAsync:::api-version"]=""
@@ -931,6 +928,9 @@ operation_parameters_collection_type["updateMarketingListAsync:::marketinglistId
 operation_parameters_collection_type["updateMarketingListAsync:::MarketingListUpdateDto"]=""
 operation_parameters_collection_type["updateMarketingListAsync:::api-version"]=""
 operation_parameters_collection_type["updateMarketingListAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["createNewsletterAsync:::tenantId"]=""
 operation_parameters_collection_type["createNewsletterAsync:::NewsletterCreateDto"]=""
 operation_parameters_collection_type["createNewsletterAsync:::api-version"]=""
@@ -1375,7 +1375,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}MarketingService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1403,12 +1403,6 @@ ${BOLD}${WHITE}Usage${OFF}
 
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
-EOF
-echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[emailGroups]${OFF}"
 read -r -d '' ops <<EOF
@@ -1446,7 +1440,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1516,6 +1510,12 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[newsletterSubscriptions]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getNewsletterSubscriptionsCountAsync${OFF};Get newsletter subscriptions count
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[newsletters]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createNewsletterAsync${OFF};Create a newsletter
@@ -1563,7 +1563,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1584,7 +1584,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}MarketingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1604,35 +1604,10 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}MarketingService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}MarketingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
-##############################################################################
-#
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
 ##############################################################################
 #
 # Print help for createEmailGroupAsync operation
@@ -3295,6 +3270,34 @@ print_updateMarketingListAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getNewsletterSubscriptionsCountAsync operation
+#
+##############################################################################
+print_getNewsletterSubscriptionsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNewsletterSubscriptionsCountAsync - Get newsletter subscriptions count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of newsletter subscriptions for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createNewsletterAsync operation
 #
 ##############################################################################
@@ -3921,42 +3924,6 @@ print_getTrackingPixelAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
-
-##############################################################################
-#
-# Call apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
 
 ##############################################################################
 #
@@ -7515,6 +7482,42 @@ call_updateMarketingListAsync() {
 
 ##############################################################################
 #
+# Call getNewsletterSubscriptionsCountAsync operation
+#
+##############################################################################
+call_getNewsletterSubscriptionsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/NewsletterSubscriptions/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call createNewsletterAsync operation
 #
 ##############################################################################
@@ -8762,9 +8765,6 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
-    ;;
     createEmailGroupAsync)
     operation="createEmailGroupAsync"
     ;;
@@ -8963,6 +8963,9 @@ case $key in
     updateMarketingListAsync)
     operation="updateMarketingListAsync"
     ;;
+    getNewsletterSubscriptionsCountAsync)
+    operation="getNewsletterSubscriptionsCountAsync"
+    ;;
     createNewsletterAsync)
     operation="createNewsletterAsync"
     ;;
@@ -9116,9 +9119,6 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
-    ;;
     createEmailGroupAsync)
     call_createEmailGroupAsync
     ;;
@@ -9316,6 +9316,9 @@ case $operation in
     ;;
     updateMarketingListAsync)
     call_updateMarketingListAsync
+    ;;
+    getNewsletterSubscriptionsCountAsync)
+    call_getNewsletterSubscriptionsCountAsync
     ;;
     createNewsletterAsync)
     call_createNewsletterAsync

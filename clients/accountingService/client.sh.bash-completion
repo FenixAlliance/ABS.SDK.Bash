@@ -76,6 +76,8 @@ _()
     operations["getAccountGroupsCountAsync"]=1
     operations["patchAccountGroupAsync"]=1
     operations["updateAccountGroup"]=1
+    operations["getCreditsSumAsync"]=1
+    operations["getDebitsSumAsync"]=1
     operations["createAccountingPeriod"]=1
     operations["deleteAccountingPeriod"]=1
     operations["getAccountingPeriod"]=1
@@ -195,7 +197,6 @@ _()
     operations["patchPaymentCommissionAsync"]=1
     operations["updateCommissionAsync"]=1
     operations["updatePaymentCommissionAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createCostCentre"]=1
     operations["createCostCentreBudget"]=1
     operations["createCostCentreGroup"]=1
@@ -330,6 +331,8 @@ _()
     operations["getInvoiceEnumerationRangesAsync"]=1
     operations["patchInvoiceEnumerationRangeAsync"]=1
     operations["updateInvoiceEnumerationRangeAsync"]=1
+    operations["getExpensesSumAsync"]=1
+    operations["getIncomesSumAsync"]=1
     operations["createJournalTypeAsync"]=1
     operations["deleteJournalTypeAsync"]=1
     operations["getJournalTypeDetailsAsync"]=1
@@ -408,6 +411,7 @@ _()
     operations["getShareIssuance"]=1
     operations["getShareIssuances"]=1
     operations["getShareIssuancesCount"]=1
+    operations["getShareIssuancesSum"]=1
     operations["getShareTransfer"]=1
     operations["getShareTransferReason"]=1
     operations["getShareTransferReasons"]=1
@@ -482,6 +486,8 @@ _()
     operation_parameters["getAccountGroupsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchAccountGroupAsync"]="accountGroupId= tenantId= api-version= x-api-version: "
     operation_parameters["updateAccountGroup"]="accountGroupId= tenantId= api-version= x-api-version: "
+    operation_parameters["getCreditsSumAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getDebitsSumAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createAccountingPeriod"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteAccountingPeriod"]="accountingPeriodId= tenantId= api-version= x-api-version: "
     operation_parameters["getAccountingPeriod"]="accountingPeriodId= tenantId= api-version= x-api-version: "
@@ -601,7 +607,6 @@ _()
     operation_parameters["patchPaymentCommissionAsync"]="paymentCommissionId= tenantId= api-version= x-api-version: "
     operation_parameters["updateCommissionAsync"]="commissionId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePaymentCommissionAsync"]="paymentCommissionId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createCostCentre"]="tenantId= api-version= x-api-version: "
     operation_parameters["createCostCentreBudget"]="tenantId= api-version= x-api-version: "
     operation_parameters["createCostCentreGroup"]="tenantId= api-version= x-api-version: "
@@ -736,6 +741,8 @@ _()
     operation_parameters["getInvoiceEnumerationRangesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchInvoiceEnumerationRangeAsync"]="rangeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateInvoiceEnumerationRangeAsync"]="rangeId= tenantId= api-version= x-api-version: "
+    operation_parameters["getExpensesSumAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getIncomesSumAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createJournalTypeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteJournalTypeAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["getJournalTypeDetailsAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
@@ -814,6 +821,7 @@ _()
     operation_parameters["getShareIssuance"]="issuanceId= tenantId= api-version= x-api-version: "
     operation_parameters["getShareIssuances"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShareIssuancesCount"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getShareIssuancesSum"]="tenantId= api-version= x-api-version: "
     operation_parameters["getShareTransfer"]="transferId= tenantId= api-version= x-api-version: "
     operation_parameters["getShareTransferReason"]="reasonId= tenantId= api-version= x-api-version: "
     operation_parameters["getShareTransferReasons"]="tenantId= api-version= x-api-version: "

@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **type** | **string** |  | [optional] [default to null]
 **contactId** | **string** |  | [optional] [default to null]
+**contact** | [**ContactCreateDto**](ContactCreateDto.md) |  | [optional] [default to null]
 **about** | **string** |  | [optional] [default to null]
 **avatarUrl** | **string** |  | [optional] [default to null]
 **data** | **string** |  | [optional] [default to null]

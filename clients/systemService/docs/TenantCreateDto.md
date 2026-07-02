@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
+**kind** | **string** |  | [optional] [default to null]
 **name** | **string** |  | [default to null]
 **legalName** | **string** |  | [optional] [default to null]
 **email** | **string** |  | [default to null]

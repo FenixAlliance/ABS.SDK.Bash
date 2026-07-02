@@ -96,9 +96,83 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["createCurriculumExperienceAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["createCurriculumExperienceAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["createCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["createCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCurriculumExperienceAsync:::CurriculumExperienceCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCurriculumExperienceAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["deleteCurriculumExperienceAsync:::experienceId"]=1
+operation_parameters_minimum_occurrences["deleteCurriculumExperienceAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["deleteCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["deleteCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperienceAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperienceAsync:::experienceId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperienceAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::experienceId"]=1
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::experienceId"]=1
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::CurriculumExperienceUpdateDto"]=0
+operation_parameters_minimum_occurrences["createCurriculumAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["createCurriculumAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["createCurriculumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createCurriculumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createCurriculumAsync:::CurriculumCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteCurriculumAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["deleteCurriculumAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["deleteCurriculumAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["deleteCurriculumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteCurriculumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getCurriculumAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["getCurriculumAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCurriculumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumsAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getCurriculumsAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCurriculumsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateCurriculumAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["updateCurriculumAsync:::curriculumId"]=1
+operation_parameters_minimum_occurrences["updateCurriculumAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["updateCurriculumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateCurriculumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateCurriculumAsync:::CurriculumUpdateDto"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -116,6 +190,34 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSkillAsync:::SkillCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteSkillAsync:::skillId"]=1
+operation_parameters_minimum_occurrences["deleteSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSkillByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSkillByIdAsync:::skillId"]=1
+operation_parameters_minimum_occurrences["getSkillByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSkillByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSkillsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSkillsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSkillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSkillsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSkillsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSkillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchSkillAsync:::skillId"]=1
+operation_parameters_minimum_occurrences["patchSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchSkillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateSkillAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateSkillAsync:::skillId"]=1
+operation_parameters_minimum_occurrences["updateSkillAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSkillAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSkillAsync:::SkillUpdateDto"]=0
 operation_parameters_minimum_occurrences["createFeedPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["createFeedPostAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["createFeedPostAsync:::api-version"]=0
@@ -399,9 +501,83 @@ operation_parameters_minimum_occurrences["updateMessageAsync:::PrivateMessageUpd
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["createCurriculumExperienceAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["createCurriculumExperienceAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["createCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCurriculumExperienceAsync:::CurriculumExperienceCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumExperienceAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumExperienceAsync:::experienceId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumExperienceAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperienceAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperienceAsync:::experienceId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperienceAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::experienceId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::experienceId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::CurriculumExperienceUpdateDto"]=0
+operation_parameters_maximum_occurrences["createCurriculumAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["createCurriculumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createCurriculumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createCurriculumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createCurriculumAsync:::CurriculumCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteCurriculumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getCurriculumAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["getCurriculumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCurriculumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumsAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getCurriculumsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCurriculumsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateCurriculumAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumAsync:::curriculumId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateCurriculumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateCurriculumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateCurriculumAsync:::CurriculumUpdateDto"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
@@ -419,6 +595,34 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSkillAsync:::SkillCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteSkillAsync:::skillId"]=0
+operation_parameters_maximum_occurrences["deleteSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSkillByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSkillByIdAsync:::skillId"]=0
+operation_parameters_maximum_occurrences["getSkillByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSkillByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSkillsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSkillsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSkillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSkillsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSkillsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSkillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchSkillAsync:::skillId"]=0
+operation_parameters_maximum_occurrences["patchSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchSkillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateSkillAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateSkillAsync:::skillId"]=0
+operation_parameters_maximum_occurrences["updateSkillAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSkillAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSkillAsync:::SkillUpdateDto"]=0
 operation_parameters_maximum_occurrences["createFeedPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["createFeedPostAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["createFeedPostAsync:::api-version"]=0
@@ -699,9 +903,83 @@ operation_parameters_maximum_occurrences["updateMessageAsync:::PrivateMessageUpd
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["createCurriculumExperienceAsync:::curriculumId"]=""
+operation_parameters_collection_type["createCurriculumExperienceAsync:::socialProfileId"]=""
+operation_parameters_collection_type["createCurriculumExperienceAsync:::tenantId"]=""
+operation_parameters_collection_type["createCurriculumExperienceAsync:::api-version"]=""
+operation_parameters_collection_type["createCurriculumExperienceAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCurriculumExperienceAsync:::CurriculumExperienceCreateDto"]=""
+operation_parameters_collection_type["deleteCurriculumExperienceAsync:::curriculumId"]=""
+operation_parameters_collection_type["deleteCurriculumExperienceAsync:::experienceId"]=""
+operation_parameters_collection_type["deleteCurriculumExperienceAsync:::socialProfileId"]=""
+operation_parameters_collection_type["deleteCurriculumExperienceAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCurriculumExperienceAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCurriculumExperienceAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumExperienceAsync:::curriculumId"]=""
+operation_parameters_collection_type["getCurriculumExperienceAsync:::experienceId"]=""
+operation_parameters_collection_type["getCurriculumExperienceAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getCurriculumExperienceAsync:::tenantId"]=""
+operation_parameters_collection_type["getCurriculumExperienceAsync:::api-version"]=""
+operation_parameters_collection_type["getCurriculumExperienceAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumExperiencesAsync:::curriculumId"]=""
+operation_parameters_collection_type["getCurriculumExperiencesAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getCurriculumExperiencesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCurriculumExperiencesAsync:::api-version"]=""
+operation_parameters_collection_type["getCurriculumExperiencesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::curriculumId"]=""
+operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::curriculumId"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::experienceId"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::socialProfileId"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::api-version"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::Operation"]=
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::curriculumId"]=""
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::experienceId"]=""
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::socialProfileId"]=""
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::api-version"]=""
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCurriculumExperienceAsync:::CurriculumExperienceUpdateDto"]=""
+operation_parameters_collection_type["createCurriculumAsync:::socialProfileId"]=""
+operation_parameters_collection_type["createCurriculumAsync:::tenantId"]=""
+operation_parameters_collection_type["createCurriculumAsync:::api-version"]=""
+operation_parameters_collection_type["createCurriculumAsync:::x-api-version"]=""
+operation_parameters_collection_type["createCurriculumAsync:::CurriculumCreateDto"]=""
+operation_parameters_collection_type["deleteCurriculumAsync:::socialProfileId"]=""
+operation_parameters_collection_type["deleteCurriculumAsync:::curriculumId"]=""
+operation_parameters_collection_type["deleteCurriculumAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteCurriculumAsync:::api-version"]=""
+operation_parameters_collection_type["deleteCurriculumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getCurriculumAsync:::curriculumId"]=""
+operation_parameters_collection_type["getCurriculumAsync:::tenantId"]=""
+operation_parameters_collection_type["getCurriculumAsync:::api-version"]=""
+operation_parameters_collection_type["getCurriculumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumsAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getCurriculumsAsync:::tenantId"]=""
+operation_parameters_collection_type["getCurriculumsAsync:::api-version"]=""
+operation_parameters_collection_type["getCurriculumsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumsCountAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getCurriculumsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCurriculumsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getCurriculumsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCurriculumAsync:::socialProfileId"]=""
+operation_parameters_collection_type["patchCurriculumAsync:::curriculumId"]=""
+operation_parameters_collection_type["patchCurriculumAsync:::tenantId"]=""
+operation_parameters_collection_type["patchCurriculumAsync:::api-version"]=""
+operation_parameters_collection_type["patchCurriculumAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchCurriculumAsync:::Operation"]=
+operation_parameters_collection_type["updateCurriculumAsync:::socialProfileId"]=""
+operation_parameters_collection_type["updateCurriculumAsync:::curriculumId"]=""
+operation_parameters_collection_type["updateCurriculumAsync:::tenantId"]=""
+operation_parameters_collection_type["updateCurriculumAsync:::api-version"]=""
+operation_parameters_collection_type["updateCurriculumAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateCurriculumAsync:::CurriculumUpdateDto"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
@@ -719,6 +997,34 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["createSkillAsync:::api-version"]=""
+operation_parameters_collection_type["createSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSkillAsync:::SkillCreateDto"]=""
+operation_parameters_collection_type["deleteSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteSkillAsync:::skillId"]=""
+operation_parameters_collection_type["deleteSkillAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSkillByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getSkillByIdAsync:::skillId"]=""
+operation_parameters_collection_type["getSkillByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getSkillByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSkillsAsync:::tenantId"]=""
+operation_parameters_collection_type["getSkillsAsync:::api-version"]=""
+operation_parameters_collection_type["getSkillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSkillsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getSkillsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSkillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["patchSkillAsync:::skillId"]=""
+operation_parameters_collection_type["patchSkillAsync:::api-version"]=""
+operation_parameters_collection_type["patchSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchSkillAsync:::Operation"]=
+operation_parameters_collection_type["updateSkillAsync:::tenantId"]=""
+operation_parameters_collection_type["updateSkillAsync:::skillId"]=""
+operation_parameters_collection_type["updateSkillAsync:::api-version"]=""
+operation_parameters_collection_type["updateSkillAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSkillAsync:::SkillUpdateDto"]=""
 operation_parameters_collection_type["createFeedPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["createFeedPostAsync:::socialFeedId"]=""
 operation_parameters_collection_type["createFeedPostAsync:::api-version"]=""
@@ -1351,7 +1657,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}SocialService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -1380,13 +1686,31 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+    echo -e "${BOLD}${WHITE}[curriculumExperiences]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+  ${CYAN}createCurriculumExperienceAsync${OFF};Create a curriculum experience
+  ${CYAN}deleteCurriculumExperienceAsync${OFF};Delete a curriculum experience
+  ${CYAN}getCurriculumExperienceAsync${OFF};Get curriculum experience by ID
+  ${CYAN}getCurriculumExperiencesAsync${OFF};Get curriculum experiences
+  ${CYAN}getCurriculumExperiencesCountAsync${OFF};Count curriculum experiences
+  ${CYAN}patchCurriculumExperienceAsync${OFF};Patch a curriculum experience
+  ${CYAN}updateCurriculumExperienceAsync${OFF};Update a curriculum experience
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[curriculums]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createCurriculumAsync${OFF};Create a curriculum
+  ${CYAN}deleteCurriculumAsync${OFF};Delete a curriculum
+  ${CYAN}getCurriculumAsync${OFF};Get curriculum by ID
+  ${CYAN}getCurriculumsAsync${OFF};Get curricula
+  ${CYAN}getCurriculumsCountAsync${OFF};Count curricula
+  ${CYAN}patchCurriculumAsync${OFF};Patch a curriculum
+  ${CYAN}updateCurriculumAsync${OFF};Update a curriculum
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -1405,6 +1729,18 @@ read -r -d '' ops <<EOF
   ${CYAN}resendConfirmationEmailPost${OFF};
   ${CYAN}resetPasswordPost${OFF};
   ${CYAN}versionGet${OFF};
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[skills]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createSkillAsync${OFF};Create a skill
+  ${CYAN}deleteSkillAsync${OFF};Delete a skill
+  ${CYAN}getSkillByIdAsync${OFF};Get skill by ID
+  ${CYAN}getSkillsAsync${OFF};Get skills
+  ${CYAN}getSkillsCountAsync${OFF};Count skills
+  ${CYAN}patchSkillAsync${OFF};Patch a skill
+  ${CYAN}updateSkillAsync${OFF};Update a skill
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1500,7 +1836,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1521,7 +1857,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}SocialService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}SocialService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1541,32 +1877,442 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}SocialService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}SocialService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
 ##############################################################################
 #
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
+# Print help for createCurriculumExperienceAsync operation
 #
 ##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
+print_createCurriculumExperienceAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCurriculumExperienceAsync - Create a curriculum experience${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Adds a work-experience record to a curriculum authored on the specified social profile." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCurriculumExperienceAsync operation
+#
+##############################################################################
+print_deleteCurriculumExperienceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCurriculumExperienceAsync - Delete a curriculum experience${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Removes a work-experience record from a curriculum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}experienceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: experienceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurriculumExperienceAsync operation
+#
+##############################################################################
+print_getCurriculumExperienceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurriculumExperienceAsync - Get curriculum experience by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific work-experience record of a curriculum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}experienceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: experienceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurriculumExperiencesAsync operation
+#
+##############################################################################
+print_getCurriculumExperiencesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurriculumExperiencesAsync - Get curriculum experiences${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the work-experience records of a curriculum authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurriculumExperiencesCountAsync operation
+#
+##############################################################################
+print_getCurriculumExperiencesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurriculumExperiencesCountAsync - Count curriculum experiences${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of work-experience records of a curriculum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCurriculumExperienceAsync operation
+#
+##############################################################################
+print_patchCurriculumExperienceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCurriculumExperienceAsync - Patch a curriculum experience${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing work-experience record of a curriculum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}experienceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: experienceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCurriculumExperienceAsync operation
+#
+##############################################################################
+print_updateCurriculumExperienceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCurriculumExperienceAsync - Update a curriculum experience${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing work-experience record of a curriculum." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}experienceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: experienceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createCurriculumAsync operation
+#
+##############################################################################
+print_createCurriculumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createCurriculumAsync - Create a curriculum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a curriculum (CV) on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteCurriculumAsync operation
+#
+##############################################################################
+print_deleteCurriculumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteCurriculumAsync - Delete a curriculum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a curriculum authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurriculumAsync operation
+#
+##############################################################################
+print_getCurriculumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurriculumAsync - Get curriculum by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific curriculum authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurriculumsAsync operation
+#
+##############################################################################
+print_getCurriculumsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurriculumsAsync - Get curricula${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the curricula (CVs) authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCurriculumsCountAsync operation
+#
+##############################################################################
+print_getCurriculumsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCurriculumsCountAsync - Count curricula${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of curricula authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchCurriculumAsync operation
+#
+##############################################################################
+print_patchCurriculumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchCurriculumAsync - Patch a curriculum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing curriculum authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateCurriculumAsync operation
+#
+##############################################################################
+print_updateCurriculumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateCurriculumAsync - Update a curriculum${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing curriculum authored on the specified social profile." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}curriculumId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: curriculumId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1861,6 +2607,206 @@ print_versionGet_help() {
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSkillAsync operation
+#
+##############################################################################
+print_createSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSkillAsync - Create a skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new skill catalog entry for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSkillAsync operation
+#
+##############################################################################
+print_deleteSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSkillAsync - Delete a skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a skill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}skillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: skillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSkillByIdAsync operation
+#
+##############################################################################
+print_getSkillByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSkillByIdAsync - Get skill by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific skill by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}skillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: skillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSkillsAsync operation
+#
+##############################################################################
+print_getSkillsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSkillsAsync - Get skills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the skill catalog for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSkillsCountAsync operation
+#
+##############################################################################
+print_getSkillsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSkillsCountAsync - Count skills${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Counts skill catalog entries for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchSkillAsync operation
+#
+##############################################################################
+print_patchSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchSkillAsync - Patch a skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing skill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}skillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: skillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSkillAsync operation
+#
+##############################################################################
+print_updateSkillAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSkillAsync - Update a skill${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing skill for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}skillId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: skillId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3682,19 +4628,131 @@ print_updateMessageAsync_help() {
 
 ##############################################################################
 #
-# Call apiV2AiServiceCompletionsCompleteGet operation
+# Call createCurriculumExperienceAsync operation
 #
 ##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
+call_createCurriculumExperienceAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=()
+    local path_parameter_names=(curriculumId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
+    local query_parameter_names=(socialProfileId tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCurriculumExperienceAsync operation
+#
+##############################################################################
+call_deleteCurriculumExperienceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId experienceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences/{experienceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurriculumExperienceAsync operation
+#
+##############################################################################
+call_getCurriculumExperienceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId experienceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences/{experienceId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3713,6 +4771,602 @@ call_apiV2AiServiceCompletionsCompleteGet() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurriculumExperiencesAsync operation
+#
+##############################################################################
+call_getCurriculumExperiencesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurriculumExperiencesCountAsync operation
+#
+##############################################################################
+call_getCurriculumExperiencesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCurriculumExperienceAsync operation
+#
+##############################################################################
+call_patchCurriculumExperienceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId experienceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences/{experienceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateCurriculumExperienceAsync operation
+#
+##############################################################################
+call_updateCurriculumExperienceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId experienceId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}/Experiences/{experienceId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createCurriculumAsync operation
+#
+##############################################################################
+call_createCurriculumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteCurriculumAsync operation
+#
+##############################################################################
+call_deleteCurriculumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurriculumAsync operation
+#
+##############################################################################
+call_getCurriculumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurriculumsAsync operation
+#
+##############################################################################
+call_getCurriculumsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getCurriculumsCountAsync operation
+#
+##############################################################################
+call_getCurriculumsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchCurriculumAsync operation
+#
+##############################################################################
+call_patchCurriculumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateCurriculumAsync operation
+#
+##############################################################################
+call_updateCurriculumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(curriculumId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Curriculums/{curriculumId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4664,6 +6318,378 @@ call_versionGet() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createSkillAsync operation
+#
+##############################################################################
+call_createSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteSkillAsync operation
+#
+##############################################################################
+call_deleteSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(skillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills/{skillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSkillByIdAsync operation
+#
+##############################################################################
+call_getSkillByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(skillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills/{skillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSkillsAsync operation
+#
+##############################################################################
+call_getSkillsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSkillsCountAsync operation
+#
+##############################################################################
+call_getSkillsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchSkillAsync operation
+#
+##############################################################################
+call_patchSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(skillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills/{skillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateSkillAsync operation
+#
+##############################################################################
+call_updateSkillAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(skillId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/Skills/{skillId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7896,8 +9922,47 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
+    createCurriculumExperienceAsync)
+    operation="createCurriculumExperienceAsync"
+    ;;
+    deleteCurriculumExperienceAsync)
+    operation="deleteCurriculumExperienceAsync"
+    ;;
+    getCurriculumExperienceAsync)
+    operation="getCurriculumExperienceAsync"
+    ;;
+    getCurriculumExperiencesAsync)
+    operation="getCurriculumExperiencesAsync"
+    ;;
+    getCurriculumExperiencesCountAsync)
+    operation="getCurriculumExperiencesCountAsync"
+    ;;
+    patchCurriculumExperienceAsync)
+    operation="patchCurriculumExperienceAsync"
+    ;;
+    updateCurriculumExperienceAsync)
+    operation="updateCurriculumExperienceAsync"
+    ;;
+    createCurriculumAsync)
+    operation="createCurriculumAsync"
+    ;;
+    deleteCurriculumAsync)
+    operation="deleteCurriculumAsync"
+    ;;
+    getCurriculumAsync)
+    operation="getCurriculumAsync"
+    ;;
+    getCurriculumsAsync)
+    operation="getCurriculumsAsync"
+    ;;
+    getCurriculumsCountAsync)
+    operation="getCurriculumsCountAsync"
+    ;;
+    patchCurriculumAsync)
+    operation="patchCurriculumAsync"
+    ;;
+    updateCurriculumAsync)
+    operation="updateCurriculumAsync"
     ;;
     accountLogoutPost)
     operation="accountLogoutPost"
@@ -7949,6 +10014,27 @@ case $key in
     ;;
     versionGet)
     operation="versionGet"
+    ;;
+    createSkillAsync)
+    operation="createSkillAsync"
+    ;;
+    deleteSkillAsync)
+    operation="deleteSkillAsync"
+    ;;
+    getSkillByIdAsync)
+    operation="getSkillByIdAsync"
+    ;;
+    getSkillsAsync)
+    operation="getSkillsAsync"
+    ;;
+    getSkillsCountAsync)
+    operation="getSkillsCountAsync"
+    ;;
+    patchSkillAsync)
+    operation="patchSkillAsync"
+    ;;
+    updateSkillAsync)
+    operation="updateSkillAsync"
     ;;
     createFeedPostAsync)
     operation="createFeedPostAsync"
@@ -8238,8 +10324,47 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
+    createCurriculumExperienceAsync)
+    call_createCurriculumExperienceAsync
+    ;;
+    deleteCurriculumExperienceAsync)
+    call_deleteCurriculumExperienceAsync
+    ;;
+    getCurriculumExperienceAsync)
+    call_getCurriculumExperienceAsync
+    ;;
+    getCurriculumExperiencesAsync)
+    call_getCurriculumExperiencesAsync
+    ;;
+    getCurriculumExperiencesCountAsync)
+    call_getCurriculumExperiencesCountAsync
+    ;;
+    patchCurriculumExperienceAsync)
+    call_patchCurriculumExperienceAsync
+    ;;
+    updateCurriculumExperienceAsync)
+    call_updateCurriculumExperienceAsync
+    ;;
+    createCurriculumAsync)
+    call_createCurriculumAsync
+    ;;
+    deleteCurriculumAsync)
+    call_deleteCurriculumAsync
+    ;;
+    getCurriculumAsync)
+    call_getCurriculumAsync
+    ;;
+    getCurriculumsAsync)
+    call_getCurriculumsAsync
+    ;;
+    getCurriculumsCountAsync)
+    call_getCurriculumsCountAsync
+    ;;
+    patchCurriculumAsync)
+    call_patchCurriculumAsync
+    ;;
+    updateCurriculumAsync)
+    call_updateCurriculumAsync
     ;;
     accountLogoutPost)
     call_accountLogoutPost
@@ -8291,6 +10416,27 @@ case $operation in
     ;;
     versionGet)
     call_versionGet
+    ;;
+    createSkillAsync)
+    call_createSkillAsync
+    ;;
+    deleteSkillAsync)
+    call_deleteSkillAsync
+    ;;
+    getSkillByIdAsync)
+    call_getSkillByIdAsync
+    ;;
+    getSkillsAsync)
+    call_getSkillsAsync
+    ;;
+    getSkillsCountAsync)
+    call_getSkillsCountAsync
+    ;;
+    patchSkillAsync)
+    call_patchSkillAsync
+    ;;
+    updateSkillAsync)
+    call_updateSkillAsync
     ;;
     createFeedPostAsync)
     call_createFeedPostAsync

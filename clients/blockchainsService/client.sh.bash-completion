@@ -83,7 +83,6 @@ _()
     operations["patchBlockchainBlockAsync"]=1
     operations["updateBlockchainAsync"]=1
     operations["updateBlockchainBlockAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -126,7 +125,6 @@ _()
     operation_parameters["patchBlockchainBlockAsync"]="blockchainId= blockId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBlockchainAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["updateBlockchainBlockAsync"]="blockchainId= blockId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""

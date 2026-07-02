@@ -28,7 +28,6 @@ docs/CancellationToken.md
 docs/Claim.md
 docs/ClaimsIdentity.md
 docs/ClaimsPrincipal.md
-docs/CompletionsApi.md
 docs/ComputeClause.md
 docs/ComputeExpression.md
 docs/ComputeQueryOption.md
@@ -44,7 +43,7 @@ docs/EdmReferentialConstraintPropertyPair.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/EventInfo.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/FieldInfo.md
 docs/FilterClause.md
 docs/FilterQueryOption.md

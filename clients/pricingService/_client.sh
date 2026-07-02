@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2AiServiceCompletionsCompleteGet[]"             "createDiscountList[Creates a new discount list]" \
+            "createDiscountList[Creates a new discount list]" \
             "createDiscountListEntry[Creates a discount list entry]" \
             "deleteDiscountList[Deletes a discount list]" \
             "deleteDiscountListEntry[Deletes a discount list entry]" \
@@ -333,6 +333,7 @@ case $state in
             "getPriceListAsync[Gets a price list by ID]" \
             "getPriceListPriceAsync[Gets a price list entry by ID]" \
             "getPriceListPricesAsync[Retrieves prices in a price list]" \
+            "getPriceListPricesCountAsync[Counts prices in a price list]" \
             "getPriceListsAsync[Retrieves all price lists]" \
             "getPriceListsCountAsync[Counts price lists]" \
             "patchPriceListAsync[Patches a price list]" \
@@ -361,15 +362,6 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       createDiscountList)
         local -a _op_arguments
         _op_arguments=(
@@ -647,6 +639,14 @@ case $state in
           "priceListId=:[PATH] "
           "tenantId=:[QUERY] "
 "itemId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPriceListPricesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "priceListId=:[PATH] "
+          "tenantId=:[QUERY] "
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;

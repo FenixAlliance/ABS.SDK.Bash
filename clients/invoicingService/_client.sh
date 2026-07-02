@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -349,6 +349,8 @@ case $state in
             "getInvoiceReferencesCount[Get the count of invoice references.]" \
             "getInvoices[Get a list of invoices.]" \
             "getInvoicesCount[Get the count of invoices.]" \
+            "getPurchaseInvoicesSum[Sum tenant purchase-invoice totals.]" \
+            "getSalesInvoicesSum[Sum tenant sales-invoice totals.]" \
             "patchInvoice[Patch an invoice.]" \
             "patchInvoiceAdjustment[Patch an invoice adjustment.]" \
             "patchInvoiceLine[Patch an invoice line.]" \
@@ -368,15 +370,6 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -776,6 +769,20 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getInvoicesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPurchaseInvoicesSum)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSalesInvoicesSum)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "

@@ -11,11 +11,10 @@ docs/CatalogItemDto.md
 docs/CatalogItemDtoEnvelope.md
 docs/CatalogItemDtoListEnvelope.md
 docs/CatalogItemUpdateDto.md
-docs/CompletionsApi.md
 docs/CurrencyId.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

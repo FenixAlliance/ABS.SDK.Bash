@@ -83,7 +83,6 @@ _()
     operations["patchBillOfLadingLineAsync"]=1
     operations["updateBillOfLadingAsync"]=1
     operations["updateBillOfLadingLineAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -175,7 +174,6 @@ _()
     operation_parameters["patchBillOfLadingLineAsync"]="billOfLadingId= lineId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBillOfLadingAsync"]="billOfLadingId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBillOfLadingLineAsync"]="billOfLadingId= lineId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""

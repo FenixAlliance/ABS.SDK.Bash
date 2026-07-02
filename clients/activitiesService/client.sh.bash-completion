@@ -86,7 +86,7 @@ _()
     operations["patchActivityTypeAsync"]=1
     operations["updateActivityAsync"]=1
     operations["updateActivityTypeAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
+    operations["getActivityRecordsCountAsync"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
@@ -125,7 +125,7 @@ _()
     operation_parameters["patchActivityTypeAsync"]="activityTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["updateActivityAsync"]="activityFeedId= activityId= tenantId= api-version= x-api-version: "
     operation_parameters["updateActivityTypeAsync"]="activityTypeId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
+    operation_parameters["getActivityRecordsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""

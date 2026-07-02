@@ -310,7 +310,7 @@ case $state in
             "patchBlockchainAsync[Patch a blockchain]" \
             "patchBlockchainBlockAsync[Patch a blockchain block]" \
             "updateBlockchainAsync[Update a blockchain]" \
-            "updateBlockchainBlockAsync[Update a blockchain block]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "updateBlockchainBlockAsync[Update a blockchain block]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -483,15 +483,6 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)

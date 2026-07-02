@@ -124,6 +124,12 @@ operation_parameters_minimum_occurrences["updateAccountGroup:::accountGroupId"]=
 operation_parameters_minimum_occurrences["updateAccountGroup:::api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountGroup:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountGroup:::AccountGroupUpdateDto"]=0
+operation_parameters_minimum_occurrences["getCreditsSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCreditsSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCreditsSumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDebitsSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDebitsSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getDebitsSumAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createAccountingPeriod:::tenantId"]=1
 operation_parameters_minimum_occurrences["createAccountingPeriod:::api-version"]=0
 operation_parameters_minimum_occurrences["createAccountingPeriod:::x-api-version"]=0
@@ -644,9 +650,6 @@ operation_parameters_minimum_occurrences["updatePaymentCommissionAsync:::payment
 operation_parameters_minimum_occurrences["updatePaymentCommissionAsync:::PaymentCommissionUpdateDto"]=1
 operation_parameters_minimum_occurrences["updatePaymentCommissionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updatePaymentCommissionAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_minimum_occurrences["createCostCentre:::tenantId"]=1
 operation_parameters_minimum_occurrences["createCostCentre:::CostCentreCreateDto"]=1
 operation_parameters_minimum_occurrences["createCostCentre:::api-version"]=0
@@ -1166,6 +1169,12 @@ operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::r
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::InvoiceEnumerationRangeUpdateDto"]=0
+operation_parameters_minimum_occurrences["getExpensesSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExpensesSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getExpensesSumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getIncomesSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getIncomesSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getIncomesSumAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createJournalTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createJournalTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createJournalTypeAsync:::x-api-version"]=0
@@ -1468,6 +1477,9 @@ operation_parameters_minimum_occurrences["getShareIssuances:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getShareIssuancesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShareIssuancesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getShareIssuancesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getShareIssuancesSum:::tenantId"]=1
+operation_parameters_minimum_occurrences["getShareIssuancesSum:::api-version"]=0
+operation_parameters_minimum_occurrences["getShareIssuancesSum:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getShareTransfer:::tenantId"]=1
 operation_parameters_minimum_occurrences["getShareTransfer:::transferId"]=1
 operation_parameters_minimum_occurrences["getShareTransfer:::api-version"]=0
@@ -1774,6 +1786,12 @@ operation_parameters_maximum_occurrences["updateAccountGroup:::accountGroupId"]=
 operation_parameters_maximum_occurrences["updateAccountGroup:::api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::AccountGroupUpdateDto"]=0
+operation_parameters_maximum_occurrences["getCreditsSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCreditsSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCreditsSumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDebitsSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDebitsSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getDebitsSumAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createAccountingPeriod:::tenantId"]=0
 operation_parameters_maximum_occurrences["createAccountingPeriod:::api-version"]=0
 operation_parameters_maximum_occurrences["createAccountingPeriod:::x-api-version"]=0
@@ -2294,9 +2312,6 @@ operation_parameters_maximum_occurrences["updatePaymentCommissionAsync:::payment
 operation_parameters_maximum_occurrences["updatePaymentCommissionAsync:::PaymentCommissionUpdateDto"]=0
 operation_parameters_maximum_occurrences["updatePaymentCommissionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updatePaymentCommissionAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
 operation_parameters_maximum_occurrences["createCostCentre:::tenantId"]=0
 operation_parameters_maximum_occurrences["createCostCentre:::CostCentreCreateDto"]=0
 operation_parameters_maximum_occurrences["createCostCentre:::api-version"]=0
@@ -2816,6 +2831,12 @@ operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::r
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::InvoiceEnumerationRangeUpdateDto"]=0
+operation_parameters_maximum_occurrences["getExpensesSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExpensesSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getExpensesSumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getIncomesSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getIncomesSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getIncomesSumAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createJournalTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createJournalTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createJournalTypeAsync:::x-api-version"]=0
@@ -3118,6 +3139,9 @@ operation_parameters_maximum_occurrences["getShareIssuances:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getShareIssuancesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShareIssuancesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getShareIssuancesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getShareIssuancesSum:::tenantId"]=0
+operation_parameters_maximum_occurrences["getShareIssuancesSum:::api-version"]=0
+operation_parameters_maximum_occurrences["getShareIssuancesSum:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getShareTransfer:::tenantId"]=0
 operation_parameters_maximum_occurrences["getShareTransfer:::transferId"]=0
 operation_parameters_maximum_occurrences["getShareTransfer:::api-version"]=0
@@ -3421,6 +3445,12 @@ operation_parameters_collection_type["updateAccountGroup:::accountGroupId"]=""
 operation_parameters_collection_type["updateAccountGroup:::api-version"]=""
 operation_parameters_collection_type["updateAccountGroup:::x-api-version"]=""
 operation_parameters_collection_type["updateAccountGroup:::AccountGroupUpdateDto"]=""
+operation_parameters_collection_type["getCreditsSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getCreditsSumAsync:::api-version"]=""
+operation_parameters_collection_type["getCreditsSumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDebitsSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getDebitsSumAsync:::api-version"]=""
+operation_parameters_collection_type["getDebitsSumAsync:::x-api-version"]=""
 operation_parameters_collection_type["createAccountingPeriod:::tenantId"]=""
 operation_parameters_collection_type["createAccountingPeriod:::api-version"]=""
 operation_parameters_collection_type["createAccountingPeriod:::x-api-version"]=""
@@ -3941,9 +3971,6 @@ operation_parameters_collection_type["updatePaymentCommissionAsync:::paymentComm
 operation_parameters_collection_type["updatePaymentCommissionAsync:::PaymentCommissionUpdateDto"]=""
 operation_parameters_collection_type["updatePaymentCommissionAsync:::api-version"]=""
 operation_parameters_collection_type["updatePaymentCommissionAsync:::x-api-version"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
 operation_parameters_collection_type["createCostCentre:::tenantId"]=""
 operation_parameters_collection_type["createCostCentre:::CostCentreCreateDto"]=""
 operation_parameters_collection_type["createCostCentre:::api-version"]=""
@@ -4463,6 +4490,12 @@ operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::range
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::api-version"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::InvoiceEnumerationRangeUpdateDto"]=""
+operation_parameters_collection_type["getExpensesSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getExpensesSumAsync:::api-version"]=""
+operation_parameters_collection_type["getExpensesSumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getIncomesSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getIncomesSumAsync:::api-version"]=""
+operation_parameters_collection_type["getIncomesSumAsync:::x-api-version"]=""
 operation_parameters_collection_type["createJournalTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["createJournalTypeAsync:::api-version"]=""
 operation_parameters_collection_type["createJournalTypeAsync:::x-api-version"]=""
@@ -4765,6 +4798,9 @@ operation_parameters_collection_type["getShareIssuances:::x-api-version"]=""
 operation_parameters_collection_type["getShareIssuancesCount:::tenantId"]=""
 operation_parameters_collection_type["getShareIssuancesCount:::api-version"]=""
 operation_parameters_collection_type["getShareIssuancesCount:::x-api-version"]=""
+operation_parameters_collection_type["getShareIssuancesSum:::tenantId"]=""
+operation_parameters_collection_type["getShareIssuancesSum:::api-version"]=""
+operation_parameters_collection_type["getShareIssuancesSum:::x-api-version"]=""
 operation_parameters_collection_type["getShareTransfer:::tenantId"]=""
 operation_parameters_collection_type["getShareTransfer:::transferId"]=""
 operation_parameters_collection_type["getShareTransfer:::api-version"]=""
@@ -5392,7 +5428,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}AccountingService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}AccountingService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -5430,6 +5466,13 @@ read -r -d '' ops <<EOF
   ${CYAN}getAccountGroupsCountAsync${OFF};Gets the current tenant accounts count
   ${CYAN}patchAccountGroupAsync${OFF};Patch an account group
   ${CYAN}updateAccountGroup${OFF};Updates an existing account group
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[accountingEntries]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getCreditsSumAsync${OFF};Sum tenant accounting-entry credits
+  ${CYAN}getDebitsSumAsync${OFF};Sum tenant accounting-entry debits
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5592,12 +5635,6 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}[costCentres]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createCostCentre${OFF};Create a cost centre
@@ -5647,7 +5684,7 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
@@ -5812,6 +5849,13 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[journalEntries]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getExpensesSumAsync${OFF};Sum tenant expenses
+  ${CYAN}getIncomesSumAsync${OFF};Sum tenant incomes
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[journalTypes]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createJournalTypeAsync${OFF};Creates a new journal type
@@ -5922,6 +5966,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getShareIssuance${OFF};Gets a share issuance by id
   ${CYAN}getShareIssuances${OFF};Gets the current tenant share issuances
   ${CYAN}getShareIssuancesCount${OFF};Gets the current tenant share issuances count
+  ${CYAN}getShareIssuancesSum${OFF};Sum tenant share issuance quantities
   ${CYAN}getShareTransfer${OFF};Gets a share transfer by id
   ${CYAN}getShareTransferReason${OFF};Gets a share transfer reason by id
   ${CYAN}getShareTransferReasons${OFF};Gets the current tenant share transfer reasons
@@ -6013,7 +6058,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -6034,7 +6079,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}AccountingService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}AccountingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -6054,7 +6099,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}AccountingService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}AccountingService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -6257,6 +6302,58 @@ print_updateAccountGroup_help() {
     echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCreditsSumAsync operation
+#
+##############################################################################
+print_getCreditsSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCreditsSumAsync - Sum tenant accounting-entry credits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDebitsSumAsync operation
+#
+##############################################################################
+print_getDebitsSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDebitsSumAsync - Sum tenant accounting-entry debits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -9576,31 +9673,6 @@ print_updatePaymentCommissionAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -13129,6 +13201,58 @@ print_updateInvoiceEnumerationRangeAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getExpensesSumAsync operation
+#
+##############################################################################
+print_getExpensesSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExpensesSumAsync - Sum tenant expenses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getIncomesSumAsync operation
+#
+##############################################################################
+print_getIncomesSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getIncomesSumAsync - Sum tenant incomes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createJournalTypeAsync operation
 #
 ##############################################################################
@@ -15197,6 +15321,32 @@ print_getShareIssuancesCount_help() {
     echo -e "${BOLD}${WHITE}getShareIssuancesCount - Gets the current tenant share issuances count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get the currently acting tenant share issuances count." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getShareIssuancesSum operation
+#
+##############################################################################
+print_getShareIssuancesSum_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getShareIssuancesSum - Sum tenant share issuance quantities${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(ShareIssuance.Quantity) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -17368,6 +17518,78 @@ call_updateAccountGroup() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call getCreditsSumAsync operation
+#
+##############################################################################
+call_getCreditsSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/AccountingEntries/Credits/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDebitsSumAsync operation
+#
+##############################################################################
+call_getDebitsSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/AccountingEntries/Debits/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -23612,42 +23834,6 @@ call_updatePaymentCommissionAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AiServiceCompletionsCompleteGet operation
-#
-##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -30856,6 +31042,78 @@ call_updateInvoiceEnumerationRangeAsync() {
 
 ##############################################################################
 #
+# Call getExpensesSumAsync operation
+#
+##############################################################################
+call_getExpensesSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/JournalEntries/Expenses/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getIncomesSumAsync operation
+#
+##############################################################################
+call_getIncomesSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/JournalEntries/Incomes/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call createJournalTypeAsync operation
 #
 ##############################################################################
@@ -34904,6 +35162,42 @@ call_getShareIssuancesCount() {
 
 ##############################################################################
 #
+# Call getShareIssuancesSum operation
+#
+##############################################################################
+call_getShareIssuancesSum() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Shares/Issuances/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getShareTransfer operation
 #
 ##############################################################################
@@ -38448,6 +38742,12 @@ case $key in
     updateAccountGroup)
     operation="updateAccountGroup"
     ;;
+    getCreditsSumAsync)
+    operation="getCreditsSumAsync"
+    ;;
+    getDebitsSumAsync)
+    operation="getDebitsSumAsync"
+    ;;
     createAccountingPeriod)
     operation="createAccountingPeriod"
     ;;
@@ -38804,9 +39104,6 @@ case $key in
     ;;
     updatePaymentCommissionAsync)
     operation="updatePaymentCommissionAsync"
-    ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
     ;;
     createCostCentre)
     operation="createCostCentre"
@@ -39210,6 +39507,12 @@ case $key in
     updateInvoiceEnumerationRangeAsync)
     operation="updateInvoiceEnumerationRangeAsync"
     ;;
+    getExpensesSumAsync)
+    operation="getExpensesSumAsync"
+    ;;
+    getIncomesSumAsync)
+    operation="getIncomesSumAsync"
+    ;;
     createJournalTypeAsync)
     operation="createJournalTypeAsync"
     ;;
@@ -39443,6 +39746,9 @@ case $key in
     ;;
     getShareIssuancesCount)
     operation="getShareIssuancesCount"
+    ;;
+    getShareIssuancesSum)
+    operation="getShareIssuancesSum"
     ;;
     getShareTransfer)
     operation="getShareTransfer"
@@ -39740,6 +40046,12 @@ case $operation in
     ;;
     updateAccountGroup)
     call_updateAccountGroup
+    ;;
+    getCreditsSumAsync)
+    call_getCreditsSumAsync
+    ;;
+    getDebitsSumAsync)
+    call_getDebitsSumAsync
     ;;
     createAccountingPeriod)
     call_createAccountingPeriod
@@ -40097,9 +40409,6 @@ case $operation in
     ;;
     updatePaymentCommissionAsync)
     call_updatePaymentCommissionAsync
-    ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
     ;;
     createCostCentre)
     call_createCostCentre
@@ -40503,6 +40812,12 @@ case $operation in
     updateInvoiceEnumerationRangeAsync)
     call_updateInvoiceEnumerationRangeAsync
     ;;
+    getExpensesSumAsync)
+    call_getExpensesSumAsync
+    ;;
+    getIncomesSumAsync)
+    call_getIncomesSumAsync
+    ;;
     createJournalTypeAsync)
     call_createJournalTypeAsync
     ;;
@@ -40736,6 +41051,9 @@ case $operation in
     ;;
     getShareIssuancesCount)
     call_getShareIssuancesCount
+    ;;
+    getShareIssuancesSum)
+    call_getShareIssuancesSum
     ;;
     getShareTransfer)
     call_getShareTransfer

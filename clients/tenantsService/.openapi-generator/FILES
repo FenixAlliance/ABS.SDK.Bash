@@ -5,9 +5,9 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/BooleanEnvelope.md
+docs/BusinessRelationshipsApi.md
 docs/CartDto.md
 docs/CartDtoEnvelope.md
-docs/CompletionsApi.md
 docs/DepartmentsApi.md
 docs/EmployeeEnrollmentsApi.md
 docs/EmptyEnvelope.md
@@ -17,7 +17,7 @@ docs/ExtendedTenantDto.md
 docs/ExtendedTenantDtoEnvelope.md
 docs/ExtendedTenantEnrollmentDto.md
 docs/ExtendedTenantEnrollmentDtoEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/IndustriesApi.md

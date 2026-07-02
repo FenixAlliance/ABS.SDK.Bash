@@ -303,7 +303,8 @@ case $state in
             "getAccountGroups[Gets the current tenant account groups]" \
             "getAccountGroupsCountAsync[Gets the current tenant accounts count]" \
             "patchAccountGroupAsync[Patch an account group]" \
-            "updateAccountGroup[Updates an existing account group]"             "createAccountingPeriod[Creates a new accounting period]" \
+            "updateAccountGroup[Updates an existing account group]"             "getCreditsSumAsync[Sum tenant accounting-entry credits]" \
+            "getDebitsSumAsync[Sum tenant accounting-entry debits]"             "createAccountingPeriod[Creates a new accounting period]" \
             "deleteAccountingPeriod[Deletes an existing accounting period]" \
             "getAccountingPeriod[Gets the current tenant accounting period]" \
             "getAccountingPeriods[Get all accounting periods for a tenant]" \
@@ -414,7 +415,7 @@ case $state in
             "patchCommissionAsync[Patch a commission]" \
             "patchPaymentCommissionAsync[Patch a payment commission]" \
             "updateCommissionAsync[Update a commission]" \
-            "updatePaymentCommissionAsync[Update a payment commission]"             "apiV2AiServiceCompletionsCompleteGet[]"             "createCostCentre[Create a cost centre]" \
+            "updatePaymentCommissionAsync[Update a payment commission]"             "createCostCentre[Create a cost centre]" \
             "createCostCentreBudget[Create a cost centre budget]" \
             "createCostCentreGroup[Create a cost centre group]" \
             "deleteCostCentre[Delete a cost centre]" \
@@ -532,7 +533,8 @@ case $state in
             "getInvoiceEnumerationRangeDetailsAsync[Get invoice enumeration range by ID]" \
             "getInvoiceEnumerationRangesAsync[Get all invoice enumeration ranges]" \
             "patchInvoiceEnumerationRangeAsync[Patch an invoice enumeration range]" \
-            "updateInvoiceEnumerationRangeAsync[Update an invoice enumeration range]"             "createJournalTypeAsync[Creates a new journal type]" \
+            "updateInvoiceEnumerationRangeAsync[Update an invoice enumeration range]"             "getExpensesSumAsync[Sum tenant expenses]" \
+            "getIncomesSumAsync[Sum tenant incomes]"             "createJournalTypeAsync[Creates a new journal type]" \
             "deleteJournalTypeAsync[Deletes a journal type]" \
             "getJournalTypeDetailsAsync[Retrieves a journal type by ID]" \
             "getJournalTypesAsync[Retrieves all journal types]" \
@@ -604,6 +606,7 @@ case $state in
             "getShareIssuance[Gets a share issuance by id]" \
             "getShareIssuances[Gets the current tenant share issuances]" \
             "getShareIssuancesCount[Gets the current tenant share issuances count]" \
+            "getShareIssuancesSum[Sum tenant share issuance quantities]" \
             "getShareTransfer[Gets a share transfer by id]" \
             "getShareTransferReason[Gets a share transfer reason by id]" \
             "getShareTransferReasons[Gets the current tenant share transfer reasons]" \
@@ -732,6 +735,24 @@ case $state in
         _op_arguments=(
           "accountGroupId=:[PATH] "
           "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCreditsSumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDebitsSumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1920,15 +1941,6 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createCostCentre)
@@ -3193,6 +3205,24 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getExpensesSumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getIncomesSumAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createJournalTypeAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -3924,6 +3954,15 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getShareIssuancesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getShareIssuancesSum)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "

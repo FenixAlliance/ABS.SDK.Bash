@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2AiServiceCompletionsCompleteGet[]"             "createEmailGroupAsync[Create an email group]" \
+            "createEmailGroupAsync[Create an email group]" \
             "deleteEmailGroupAsync[Delete an email group]" \
             "getEmailGroupDetailsAsync[Get email group by ID]" \
             "getEmailGroupsCountAsync[Get email groups count]" \
@@ -355,7 +355,7 @@ case $state in
             "getMarketingListODataAsync[Get marketing lists]" \
             "getMarketingListsCountAsync[Get marketing lists count]" \
             "patchMarketingListAsync[Patch a marketing list]" \
-            "updateMarketingListAsync[Update a marketing list]"             "createNewsletterAsync[Create a newsletter]" \
+            "updateMarketingListAsync[Update a marketing list]"             "getNewsletterSubscriptionsCountAsync[Get newsletter subscriptions count]"             "createNewsletterAsync[Create a newsletter]" \
             "deleteNewsletterAsync[Delete a newsletter]" \
             "getNewsletterDetailsAsync[Get newsletter by ID]" \
             "getNewsletterODataAsync[Get newsletters]" \
@@ -381,15 +381,6 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       createEmailGroupAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -963,6 +954,15 @@ case $state in
         _op_arguments=(
           "marketinglistId=:[PATH] "
           "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNewsletterSubscriptionsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

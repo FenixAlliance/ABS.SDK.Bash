@@ -81,7 +81,6 @@ _()
     operations["getAppraisalWorkflowsAsync"]=1
     operations["getAppraisalWorkflowsCountAsync"]=1
     operations["updateAppraisalWorkflowAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
     operations["createEmployeeAppraisalSessionAsync"]=1
     operations["deleteEmployeeAppraisalSessionAsync"]=1
     operations["getEmployeeAppraisalSessionByIdAsync"]=1
@@ -127,6 +126,14 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["acceptGigApplicationAsync"]=1
+    operations["createGigApplicationAsync"]=1
+    operations["deleteGigApplicationAsync"]=1
+    operations["getGigApplicationByIdAsync"]=1
+    operations["getGigApplicationsAsync"]=1
+    operations["getGigApplicationsCountAsync"]=1
+    operations["patchGigApplicationAsync"]=1
+    operations["updateGigApplicationAsync"]=1
     operations["createGigAsync"]=1
     operations["deleteGigAsync"]=1
     operations["getGigByIdAsync"]=1
@@ -134,12 +141,47 @@ _()
     operations["getGigsCountAsync"]=1
     operations["patchGigAsync"]=1
     operations["updateGigAsync"]=1
+    operations["createJobApplicantAsync"]=1
+    operations["deleteJobApplicantAsync"]=1
+    operations["getJobApplicantByIdAsync"]=1
+    operations["getJobApplicantsAsync"]=1
+    operations["getJobApplicantsCountAsync"]=1
+    operations["patchJobApplicantAsync"]=1
+    operations["updateJobApplicantAsync"]=1
+    operations["changeJobApplicationStatusAsync"]=1
+    operations["createJobApplicationAsync"]=1
+    operations["deleteJobApplicationAsync"]=1
+    operations["getJobApplicationByIdAsync"]=1
+    operations["getJobApplicationsAsync"]=1
+    operations["getJobApplicationsCountAsync"]=1
+    operations["patchJobApplicationAsync"]=1
+    operations["updateJobApplicationAsync"]=1
+    operations["createJobFieldAsync"]=1
+    operations["deleteJobFieldAsync"]=1
+    operations["getJobFieldByIdAsync"]=1
+    operations["getJobFieldsAsync"]=1
+    operations["getJobFieldsCountAsync"]=1
+    operations["patchJobFieldAsync"]=1
+    operations["updateJobFieldAsync"]=1
+    operations["createJobOfferFieldAsync"]=1
+    operations["deleteJobOfferFieldAsync"]=1
+    operations["getJobOfferFieldByIdAsync"]=1
+    operations["getJobOfferFieldsAsync"]=1
+    operations["getJobOfferFieldsCountAsync"]=1
+    operations["patchJobOfferFieldAsync"]=1
+    operations["updateJobOfferFieldAsync"]=1
+    operations["closeJobOfferAsync"]=1
     operations["createJobOfferAsync"]=1
     operations["deleteJobOfferAsync"]=1
+    operations["fillJobOfferAsync"]=1
     operations["getJobOfferByIdAsync"]=1
     operations["getJobOffersAsync"]=1
     operations["getJobOffersCountAsync"]=1
+    operations["getPublicJobOfferByIdAsync"]=1
+    operations["getPublicJobOffersAsync"]=1
+    operations["getPublicJobOffersCountAsync"]=1
     operations["patchJobOfferAsync"]=1
+    operations["publishJobOfferAsync"]=1
     operations["updateJobOfferAsync"]=1
     operations["createJobTitleAsync"]=1
     operations["deleteJobTitleAsync"]=1
@@ -174,6 +216,13 @@ _()
     operations["getPayrollsCountAsync"]=1
     operations["patchPayrollAsync"]=1
     operations["updatePayrollAsync"]=1
+    operations["createRequiredSkillAsync"]=1
+    operations["deleteRequiredSkillAsync"]=1
+    operations["getRequiredSkillByIdAsync"]=1
+    operations["getRequiredSkillsAsync"]=1
+    operations["getRequiredSkillsCountAsync"]=1
+    operations["patchRequiredSkillAsync"]=1
+    operations["updateRequiredSkillAsync"]=1
     operations["createSalaryAsync"]=1
     operations["deleteSalaryAsync"]=1
     operations["getSalariesAsync"]=1
@@ -238,7 +287,6 @@ _()
     operation_parameters["getAppraisalWorkflowsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAppraisalWorkflowsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateAppraisalWorkflowAsync"]="workflowId= tenantId= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
     operation_parameters["createEmployeeAppraisalSessionAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteEmployeeAppraisalSessionAsync"]="sessionId= tenantId= api-version= x-api-version: "
     operation_parameters["getEmployeeAppraisalSessionByIdAsync"]="sessionId= tenantId= api-version= x-api-version: "
@@ -284,6 +332,14 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["acceptGigApplicationAsync"]="gigApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["createGigApplicationAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteGigApplicationAsync"]="gigApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getGigApplicationByIdAsync"]="gigApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getGigApplicationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getGigApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchGigApplicationAsync"]="gigApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateGigApplicationAsync"]="gigApplicationId= tenantId= api-version= x-api-version: "
     operation_parameters["createGigAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteGigAsync"]="gigId= tenantId= api-version= x-api-version: "
     operation_parameters["getGigByIdAsync"]="gigId= tenantId= api-version= x-api-version: "
@@ -291,12 +347,47 @@ _()
     operation_parameters["getGigsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchGigAsync"]="gigId= tenantId= api-version= x-api-version: "
     operation_parameters["updateGigAsync"]="gigId= tenantId= api-version= x-api-version: "
+    operation_parameters["createJobApplicantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJobApplicantAsync"]="jobApplicantId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobApplicantByIdAsync"]="jobApplicantId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobApplicantsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getJobApplicantsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchJobApplicantAsync"]="jobApplicantId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateJobApplicantAsync"]="jobApplicantId= tenantId= api-version= x-api-version: "
+    operation_parameters["changeJobApplicationStatusAsync"]="jobApplicationId= tenantId= status= api-version= x-api-version: "
+    operation_parameters["createJobApplicationAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJobApplicationAsync"]="jobApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobApplicationByIdAsync"]="jobApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobApplicationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getJobApplicationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchJobApplicationAsync"]="jobApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateJobApplicationAsync"]="jobApplicationId= tenantId= api-version= x-api-version: "
+    operation_parameters["createJobFieldAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJobFieldAsync"]="jobFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobFieldByIdAsync"]="jobFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobFieldsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getJobFieldsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchJobFieldAsync"]="jobFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateJobFieldAsync"]="jobFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["createJobOfferFieldAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteJobOfferFieldAsync"]="jobOfferFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobOfferFieldByIdAsync"]="jobOfferFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["getJobOfferFieldsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getJobOfferFieldsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchJobOfferFieldAsync"]="jobOfferFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateJobOfferFieldAsync"]="jobOfferFieldId= tenantId= api-version= x-api-version: "
+    operation_parameters["closeJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["createJobOfferAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
+    operation_parameters["fillJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["getJobOfferByIdAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["getJobOffersAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getJobOffersCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPublicJobOfferByIdAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
+    operation_parameters["getPublicJobOffersAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPublicJobOffersCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
+    operation_parameters["publishJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["updateJobOfferAsync"]="jobOfferId= tenantId= api-version= x-api-version: "
     operation_parameters["createJobTitleAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteJobTitleAsync"]="jobTitleId= tenantId= api-version= x-api-version: "
@@ -331,6 +422,13 @@ _()
     operation_parameters["getPayrollsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchPayrollAsync"]="payrollId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePayrollAsync"]="payrollId= tenantId= api-version= x-api-version: "
+    operation_parameters["createRequiredSkillAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteRequiredSkillAsync"]="requiredSkillId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRequiredSkillByIdAsync"]="requiredSkillId= tenantId= api-version= x-api-version: "
+    operation_parameters["getRequiredSkillsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getRequiredSkillsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchRequiredSkillAsync"]="requiredSkillId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateRequiredSkillAsync"]="requiredSkillId= tenantId= api-version= x-api-version: "
     operation_parameters["createSalaryAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteSalaryAsync"]="salaryId= tenantId= api-version= x-api-version: "
     operation_parameters["getSalariesAsync"]="tenantId= api-version= x-api-version: "

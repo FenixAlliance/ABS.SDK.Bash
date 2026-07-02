@@ -310,7 +310,7 @@ case $state in
             "patchBillOfLadingAsync[Patch a bill of lading]" \
             "patchBillOfLadingLineAsync[Patch a bill of lading line]" \
             "updateBillOfLadingAsync[Update a bill of lading]" \
-            "updateBillOfLadingLineAsync[Update a bill of lading line]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "updateBillOfLadingLineAsync[Update a bill of lading line]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
@@ -521,15 +521,6 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)

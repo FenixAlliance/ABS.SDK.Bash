@@ -5,14 +5,13 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/BooleanEnvelope.md
-docs/CompletionsApi.md
 docs/ContactDto.md
 docs/EmailDispatchRequest.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/ExtendedQuoteDto.md
 docs/ExtendedQuoteDtoListEnvelope.md
-docs/FenixAlliancePortalsWebsiteApi.md
+docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
 docs/InfoRequest.md

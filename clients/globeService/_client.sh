@@ -297,7 +297,7 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "apiV2AiServiceCompletionsCompleteGet[]"             "countCallingCodesByCountryAsync[Count calling codes for a country]" \
+            "countCallingCodesByCountryAsync[Count calling codes for a country]" \
             "countCitiesByStateAsync[Count cities for a state]" \
             "countCountries[Count countries]" \
             "countCountryStatesAsync[Count states for a country]" \
@@ -332,7 +332,7 @@ case $state in
             "resetPasswordPost[]" \
             "versionGet[]"             "countLanguagesAsync[Count languages]" \
             "getLanguageByIdAsync[Get language by ID]" \
-            "getLanguagesAsync[Get all languages]"             "apiV2GlobalSystemMigratePost[]"             "countTimezonesAsync[Count timezones]" \
+            "getLanguagesAsync[Get all languages]"             "countTimezonesAsync[Count timezones]" \
             "getTimeZoneByIdAsync[Get timezone by ID]" \
             "getTimeZonesAsync[Get all timezones]" \
 
@@ -342,15 +342,6 @@ case $state in
     ;;
   args)
     case $line[1] in
-      apiV2AiServiceCompletionsCompleteGet)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       countCallingCodesByCountryAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -648,14 +639,6 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getLanguagesAsync)
-        local -a _op_arguments
-        _op_arguments=(
-                    "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2GlobalSystemMigratePost)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
