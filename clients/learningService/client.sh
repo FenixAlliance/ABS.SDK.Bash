@@ -872,6 +872,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -1763,6 +1764,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -2651,6 +2653,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -3471,6 +3474,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -8751,6 +8755,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -20112,6 +20132,42 @@ call_accountPerformExternalLoginPost() {
 
 ##############################################################################
 #
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call forgotPasswordPost operation
 #
 ##############################################################################
@@ -22997,6 +23053,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -23845,6 +23904,9 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

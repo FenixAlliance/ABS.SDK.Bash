@@ -100,6 +100,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -113,14 +114,14 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createLocationForWalletAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["createLocationForWalletAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createLocationForWalletAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createLocationForWalletAsync:::LocationCreateDto"]=0
 operation_parameters_minimum_occurrences["createWalletBankAccountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["createWalletBankAccountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWalletBankAccountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createWalletBankAccountAsync:::BankAccountCreateDto"]=0
-operation_parameters_minimum_occurrences["createWalletLocationAsync:::walletId"]=1
-operation_parameters_minimum_occurrences["createWalletLocationAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["createWalletLocationAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["createWalletLocationAsync:::LocationCreateDto"]=0
 operation_parameters_minimum_occurrences["createWalletPaymentAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["createWalletPaymentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWalletPaymentAsync:::x-api-version"]=0
@@ -133,14 +134,14 @@ operation_parameters_minimum_occurrences["createWalletWithdrawRequestAsync:::wal
 operation_parameters_minimum_occurrences["createWalletWithdrawRequestAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWalletWithdrawRequestAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createWalletWithdrawRequestAsync:::WalletWithdrawRequestCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteLocationForWalletAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["deleteLocationForWalletAsync:::locationId"]=1
+operation_parameters_minimum_occurrences["deleteLocationForWalletAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteLocationForWalletAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["deleteWalletBankAccountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["deleteWalletBankAccountAsync:::bankAccountId"]=1
 operation_parameters_minimum_occurrences["deleteWalletBankAccountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteWalletBankAccountAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["deleteWalletLocationAsync:::walletId"]=1
-operation_parameters_minimum_occurrences["deleteWalletLocationAsync:::locationId"]=1
-operation_parameters_minimum_occurrences["deleteWalletLocationAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["deleteWalletLocationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["deleteWalletTokenAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["deleteWalletTokenAsync:::tokenId"]=1
 operation_parameters_minimum_occurrences["deleteWalletTokenAsync:::api-version"]=0
@@ -157,6 +158,16 @@ operation_parameters_minimum_occurrences["getIncomingWalletInvoicesAsync:::x-api
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocationForWalletAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["getLocationForWalletAsync:::locationId"]=1
+operation_parameters_minimum_occurrences["getLocationForWalletAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLocationForWalletAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::x-api-version"]=0
@@ -197,16 +208,6 @@ operation_parameters_minimum_occurrences["getWalletInvoicesAsync:::x-api-version
 operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getWalletLocationAsync:::walletId"]=1
-operation_parameters_minimum_occurrences["getWalletLocationAsync:::locationId"]=1
-operation_parameters_minimum_occurrences["getWalletLocationAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getWalletLocationAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getWalletLocationsAsync:::walletId"]=1
-operation_parameters_minimum_occurrences["getWalletLocationsAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getWalletLocationsAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getWalletLocationsCountAsync:::walletId"]=1
-operation_parameters_minimum_occurrences["getWalletLocationsCountAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getWalletLocationsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWalletOrdersAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletOrdersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletOrdersAsync:::x-api-version"]=0
@@ -263,16 +264,16 @@ operation_parameters_minimum_occurrences["patchWalletTokenAsync:::tokenId"]=1
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::walletId"]=1
+operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::locationId"]=1
+operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::LocationUpdateDto"]=0
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::bankAccountId"]=1
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWalletBankAccountAsync:::BankAccountUpdateDto"]=0
-operation_parameters_minimum_occurrences["updateWalletLocationAsync:::walletId"]=1
-operation_parameters_minimum_occurrences["updateWalletLocationAsync:::locationId"]=1
-operation_parameters_minimum_occurrences["updateWalletLocationAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["updateWalletLocationAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["updateWalletLocationAsync:::LocationUpdateDto"]=0
 operation_parameters_minimum_occurrences["updateWalletTokenAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["updateWalletTokenAsync:::tokenId"]=1
 operation_parameters_minimum_occurrences["updateWalletTokenAsync:::api-version"]=0
@@ -290,6 +291,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -303,14 +305,14 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createLocationForWalletAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["createLocationForWalletAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createLocationForWalletAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createLocationForWalletAsync:::LocationCreateDto"]=0
 operation_parameters_maximum_occurrences["createWalletBankAccountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["createWalletBankAccountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWalletBankAccountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createWalletBankAccountAsync:::BankAccountCreateDto"]=0
-operation_parameters_maximum_occurrences["createWalletLocationAsync:::walletId"]=0
-operation_parameters_maximum_occurrences["createWalletLocationAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["createWalletLocationAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["createWalletLocationAsync:::LocationCreateDto"]=0
 operation_parameters_maximum_occurrences["createWalletPaymentAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["createWalletPaymentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWalletPaymentAsync:::x-api-version"]=0
@@ -323,14 +325,14 @@ operation_parameters_maximum_occurrences["createWalletWithdrawRequestAsync:::wal
 operation_parameters_maximum_occurrences["createWalletWithdrawRequestAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWalletWithdrawRequestAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createWalletWithdrawRequestAsync:::WalletWithdrawRequestCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteLocationForWalletAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["deleteLocationForWalletAsync:::locationId"]=0
+operation_parameters_maximum_occurrences["deleteLocationForWalletAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteLocationForWalletAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["deleteWalletBankAccountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["deleteWalletBankAccountAsync:::bankAccountId"]=0
 operation_parameters_maximum_occurrences["deleteWalletBankAccountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteWalletBankAccountAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["deleteWalletLocationAsync:::walletId"]=0
-operation_parameters_maximum_occurrences["deleteWalletLocationAsync:::locationId"]=0
-operation_parameters_maximum_occurrences["deleteWalletLocationAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["deleteWalletLocationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["deleteWalletTokenAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["deleteWalletTokenAsync:::tokenId"]=0
 operation_parameters_maximum_occurrences["deleteWalletTokenAsync:::api-version"]=0
@@ -347,6 +349,16 @@ operation_parameters_maximum_occurrences["getIncomingWalletInvoicesAsync:::x-api
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocationForWalletAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["getLocationForWalletAsync:::locationId"]=0
+operation_parameters_maximum_occurrences["getLocationForWalletAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLocationForWalletAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::x-api-version"]=0
@@ -387,16 +399,6 @@ operation_parameters_maximum_occurrences["getWalletInvoicesAsync:::x-api-version
 operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getWalletLocationAsync:::walletId"]=0
-operation_parameters_maximum_occurrences["getWalletLocationAsync:::locationId"]=0
-operation_parameters_maximum_occurrences["getWalletLocationAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getWalletLocationAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getWalletLocationsAsync:::walletId"]=0
-operation_parameters_maximum_occurrences["getWalletLocationsAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getWalletLocationsAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getWalletLocationsCountAsync:::walletId"]=0
-operation_parameters_maximum_occurrences["getWalletLocationsCountAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getWalletLocationsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersAsync:::x-api-version"]=0
@@ -453,16 +455,16 @@ operation_parameters_maximum_occurrences["patchWalletTokenAsync:::tokenId"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::walletId"]=0
+operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::locationId"]=0
+operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::LocationUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::bankAccountId"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWalletBankAccountAsync:::BankAccountUpdateDto"]=0
-operation_parameters_maximum_occurrences["updateWalletLocationAsync:::walletId"]=0
-operation_parameters_maximum_occurrences["updateWalletLocationAsync:::locationId"]=0
-operation_parameters_maximum_occurrences["updateWalletLocationAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["updateWalletLocationAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["updateWalletLocationAsync:::LocationUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateWalletTokenAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["updateWalletTokenAsync:::tokenId"]=0
 operation_parameters_maximum_occurrences["updateWalletTokenAsync:::api-version"]=0
@@ -477,6 +479,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -490,14 +493,14 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createLocationForWalletAsync:::walletId"]=""
+operation_parameters_collection_type["createLocationForWalletAsync:::api-version"]=""
+operation_parameters_collection_type["createLocationForWalletAsync:::x-api-version"]=""
+operation_parameters_collection_type["createLocationForWalletAsync:::LocationCreateDto"]=""
 operation_parameters_collection_type["createWalletBankAccountAsync:::walletId"]=""
 operation_parameters_collection_type["createWalletBankAccountAsync:::api-version"]=""
 operation_parameters_collection_type["createWalletBankAccountAsync:::x-api-version"]=""
 operation_parameters_collection_type["createWalletBankAccountAsync:::BankAccountCreateDto"]=""
-operation_parameters_collection_type["createWalletLocationAsync:::walletId"]=""
-operation_parameters_collection_type["createWalletLocationAsync:::api-version"]=""
-operation_parameters_collection_type["createWalletLocationAsync:::x-api-version"]=""
-operation_parameters_collection_type["createWalletLocationAsync:::LocationCreateDto"]=""
 operation_parameters_collection_type["createWalletPaymentAsync:::walletId"]=""
 operation_parameters_collection_type["createWalletPaymentAsync:::api-version"]=""
 operation_parameters_collection_type["createWalletPaymentAsync:::x-api-version"]=""
@@ -510,14 +513,14 @@ operation_parameters_collection_type["createWalletWithdrawRequestAsync:::walletI
 operation_parameters_collection_type["createWalletWithdrawRequestAsync:::api-version"]=""
 operation_parameters_collection_type["createWalletWithdrawRequestAsync:::x-api-version"]=""
 operation_parameters_collection_type["createWalletWithdrawRequestAsync:::WalletWithdrawRequestCreateDto"]=""
+operation_parameters_collection_type["deleteLocationForWalletAsync:::walletId"]=""
+operation_parameters_collection_type["deleteLocationForWalletAsync:::locationId"]=""
+operation_parameters_collection_type["deleteLocationForWalletAsync:::api-version"]=""
+operation_parameters_collection_type["deleteLocationForWalletAsync:::x-api-version"]=""
 operation_parameters_collection_type["deleteWalletBankAccountAsync:::walletId"]=""
 operation_parameters_collection_type["deleteWalletBankAccountAsync:::bankAccountId"]=""
 operation_parameters_collection_type["deleteWalletBankAccountAsync:::api-version"]=""
 operation_parameters_collection_type["deleteWalletBankAccountAsync:::x-api-version"]=""
-operation_parameters_collection_type["deleteWalletLocationAsync:::walletId"]=""
-operation_parameters_collection_type["deleteWalletLocationAsync:::locationId"]=""
-operation_parameters_collection_type["deleteWalletLocationAsync:::api-version"]=""
-operation_parameters_collection_type["deleteWalletLocationAsync:::x-api-version"]=""
 operation_parameters_collection_type["deleteWalletTokenAsync:::walletId"]=""
 operation_parameters_collection_type["deleteWalletTokenAsync:::tokenId"]=""
 operation_parameters_collection_type["deleteWalletTokenAsync:::api-version"]=""
@@ -534,6 +537,16 @@ operation_parameters_collection_type["getIncomingWalletInvoicesAsync:::x-api-ver
 operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::walletId"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocationForWalletAsync:::walletId"]=""
+operation_parameters_collection_type["getLocationForWalletAsync:::locationId"]=""
+operation_parameters_collection_type["getLocationForWalletAsync:::api-version"]=""
+operation_parameters_collection_type["getLocationForWalletAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocationsForWalletAsync:::walletId"]=""
+operation_parameters_collection_type["getLocationsForWalletAsync:::api-version"]=""
+operation_parameters_collection_type["getLocationsForWalletAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocationsForWalletCountAsync:::walletId"]=""
+operation_parameters_collection_type["getLocationsForWalletCountAsync:::api-version"]=""
+operation_parameters_collection_type["getLocationsForWalletCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["getOutgoingPaymentsAsync:::walletId"]=""
 operation_parameters_collection_type["getOutgoingPaymentsAsync:::api-version"]=""
 operation_parameters_collection_type["getOutgoingPaymentsAsync:::x-api-version"]=""
@@ -574,16 +587,6 @@ operation_parameters_collection_type["getWalletInvoicesAsync:::x-api-version"]="
 operation_parameters_collection_type["getWalletInvoicesCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletInvoicesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletInvoicesCountAsync:::x-api-version"]=""
-operation_parameters_collection_type["getWalletLocationAsync:::walletId"]=""
-operation_parameters_collection_type["getWalletLocationAsync:::locationId"]=""
-operation_parameters_collection_type["getWalletLocationAsync:::api-version"]=""
-operation_parameters_collection_type["getWalletLocationAsync:::x-api-version"]=""
-operation_parameters_collection_type["getWalletLocationsAsync:::walletId"]=""
-operation_parameters_collection_type["getWalletLocationsAsync:::api-version"]=""
-operation_parameters_collection_type["getWalletLocationsAsync:::x-api-version"]=""
-operation_parameters_collection_type["getWalletLocationsCountAsync:::walletId"]=""
-operation_parameters_collection_type["getWalletLocationsCountAsync:::api-version"]=""
-operation_parameters_collection_type["getWalletLocationsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWalletOrdersAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletOrdersAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletOrdersAsync:::x-api-version"]=""
@@ -640,16 +643,16 @@ operation_parameters_collection_type["patchWalletTokenAsync:::tokenId"]=""
 operation_parameters_collection_type["patchWalletTokenAsync:::api-version"]=""
 operation_parameters_collection_type["patchWalletTokenAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchWalletTokenAsync:::Operation"]=
+operation_parameters_collection_type["updateLocationForWalletAsync:::walletId"]=""
+operation_parameters_collection_type["updateLocationForWalletAsync:::locationId"]=""
+operation_parameters_collection_type["updateLocationForWalletAsync:::api-version"]=""
+operation_parameters_collection_type["updateLocationForWalletAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateLocationForWalletAsync:::LocationUpdateDto"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::walletId"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::bankAccountId"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::api-version"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWalletBankAccountAsync:::BankAccountUpdateDto"]=""
-operation_parameters_collection_type["updateWalletLocationAsync:::walletId"]=""
-operation_parameters_collection_type["updateWalletLocationAsync:::locationId"]=""
-operation_parameters_collection_type["updateWalletLocationAsync:::api-version"]=""
-operation_parameters_collection_type["updateWalletLocationAsync:::x-api-version"]=""
-operation_parameters_collection_type["updateWalletLocationAsync:::LocationUpdateDto"]=""
 operation_parameters_collection_type["updateWalletTokenAsync:::walletId"]=""
 operation_parameters_collection_type["updateWalletTokenAsync:::tokenId"]=""
 operation_parameters_collection_type["updateWalletTokenAsync:::api-version"]=""
@@ -1047,6 +1050,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1065,18 +1069,21 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[wallets]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}createLocationForWalletAsync${OFF};Create Wallet Location
   ${CYAN}createWalletBankAccountAsync${OFF};Create Wallet Bank Account
-  ${CYAN}createWalletLocationAsync${OFF};Create Wallet Location
   ${CYAN}createWalletPaymentAsync${OFF};Create Wallet Payment
   ${CYAN}createWalletTokenAsync${OFF};Create Wallet Token
   ${CYAN}createWalletWithdrawRequestAsync${OFF};Create Wallet Withdraw Request
+  ${CYAN}deleteLocationForWalletAsync${OFF};Delete Wallet Location
   ${CYAN}deleteWalletBankAccountAsync${OFF};Delete Wallet Bank Account
-  ${CYAN}deleteWalletLocationAsync${OFF};Delete Wallet Location
   ${CYAN}deleteWalletTokenAsync${OFF};Delete Wallet Token
   ${CYAN}getIncomingPaymentsAsync${OFF};Get Incoming Payments
   ${CYAN}getIncomingPaymentsCountAsync${OFF};Get Incoming Payments Count
   ${CYAN}getIncomingWalletInvoicesAsync${OFF};Get Incoming Wallet Invoices
   ${CYAN}getIncomingWalletInvoicesCountAsync${OFF};Get Incoming Wallet Invoices Count
+  ${CYAN}getLocationForWalletAsync${OFF};Get Wallet Location
+  ${CYAN}getLocationsForWalletAsync${OFF};Get Wallet Locations
+  ${CYAN}getLocationsForWalletCountAsync${OFF};Get Wallet Locations Count
   ${CYAN}getOutgoingPaymentsAsync${OFF};Get Outgoing Payments
   ${CYAN}getOutgoingPaymentsCountAsync${OFF};Get Outgoing Payments Count
   ${CYAN}getOutgoingWalletInvoicesAsync${OFF};Get Outgoing Wallet Invoices
@@ -1090,9 +1097,6 @@ read -r -d '' ops <<EOF
   ${CYAN}getWalletExtendedOrdersAsync${OFF};Get Wallet Extended Orders
   ${CYAN}getWalletInvoicesAsync${OFF};Get Wallet Invoices
   ${CYAN}getWalletInvoicesCountAsync${OFF};Get Wallet Invoices Count
-  ${CYAN}getWalletLocationAsync${OFF};Get Wallet Location
-  ${CYAN}getWalletLocationsAsync${OFF};Get Wallet Locations
-  ${CYAN}getWalletLocationsCountAsync${OFF};Get Wallet Locations Count
   ${CYAN}getWalletOrdersAsync${OFF};Get Wallet Orders
   ${CYAN}getWalletOrdersCountAsync${OFF};Get Wallet Orders Count
   ${CYAN}getWalletPaymentsAsync${OFF};Get Wallet Payments
@@ -1110,8 +1114,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getWalletWithdrawsCountAsync${OFF};Get Wallet Withdraws Count
   ${CYAN}patchWalletBankAccountAsync${OFF};Patch Wallet Bank Account
   ${CYAN}patchWalletTokenAsync${OFF};Patch Wallet Token
+  ${CYAN}updateLocationForWalletAsync${OFF};Update Wallet Location
   ${CYAN}updateWalletBankAccountAsync${OFF};Update Wallet Bank Account
-  ${CYAN}updateWalletLocationAsync${OFF};Update Wallet Location
   ${CYAN}updateWalletTokenAsync${OFF};Update Wallet Token
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1220,6 +1224,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1462,14 +1482,14 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
-# Print help for createWalletBankAccountAsync operation
+# Print help for createLocationForWalletAsync operation
 #
 ##############################################################################
-print_createWalletBankAccountAsync_help() {
+print_createLocationForWalletAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createWalletBankAccountAsync - Create Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createLocationForWalletAsync - Create Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Create a new bank account for a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e "Create a new location for a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1489,14 +1509,14 @@ print_createWalletBankAccountAsync_help() {
 }
 ##############################################################################
 #
-# Print help for createWalletLocationAsync operation
+# Print help for createWalletBankAccountAsync operation
 #
 ##############################################################################
-print_createWalletLocationAsync_help() {
+print_createWalletBankAccountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createWalletLocationAsync - Create Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createWalletBankAccountAsync - Create Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Create a new location for a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e "Create a new bank account for a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1597,18 +1617,18 @@ print_createWalletWithdrawRequestAsync_help() {
 }
 ##############################################################################
 #
-# Print help for deleteWalletBankAccountAsync operation
+# Print help for deleteLocationForWalletAsync operation
 #
 ##############################################################################
-print_deleteWalletBankAccountAsync_help() {
+print_deleteLocationForWalletAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteWalletBankAccountAsync - Delete Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteLocationForWalletAsync - Delete Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Delete a specific bank account of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e "Delete a specific location of a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}bankAccountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankAccountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1623,18 +1643,18 @@ print_deleteWalletBankAccountAsync_help() {
 }
 ##############################################################################
 #
-# Print help for deleteWalletLocationAsync operation
+# Print help for deleteWalletBankAccountAsync operation
 #
 ##############################################################################
-print_deleteWalletLocationAsync_help() {
+print_deleteWalletBankAccountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteWalletLocationAsync - Delete Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteWalletBankAccountAsync - Delete Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Delete a specific location of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e "Delete a specific bank account of a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankAccountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankAccountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1758,6 +1778,82 @@ print_getIncomingWalletInvoicesCountAsync_help() {
     echo -e "${BOLD}${WHITE}getIncomingWalletInvoicesCountAsync - Get Incoming Wallet Invoices Count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get incoming invoices count of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getLocationForWalletAsync operation
+#
+##############################################################################
+print_getLocationForWalletAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getLocationForWalletAsync - Get Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a specific location of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getLocationsForWalletAsync operation
+#
+##############################################################################
+print_getLocationsForWalletAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getLocationsForWalletAsync - Get Wallet Locations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get locations of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getLocationsForWalletCountAsync operation
+#
+##############################################################################
+print_getLocationsForWalletCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getLocationsForWalletCountAsync - Get Wallet Locations Count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get locations count of a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2084,82 +2180,6 @@ print_getWalletInvoicesCountAsync_help() {
     echo -e "${BOLD}${WHITE}getWalletInvoicesCountAsync - Get Wallet Invoices Count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get invoices count of a specific wallet by ID." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getWalletLocationAsync operation
-#
-##############################################################################
-print_getWalletLocationAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getWalletLocationAsync - Get Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Get a specific location of a specific wallet by ID." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getWalletLocationsAsync operation
-#
-##############################################################################
-print_getWalletLocationsAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getWalletLocationsAsync - Get Wallet Locations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Get locations of a specific wallet by ID." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getWalletLocationsCountAsync operation
-#
-##############################################################################
-print_getWalletLocationsCountAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getWalletLocationsCountAsync - Get Wallet Locations Count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Get locations count of a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2609,18 +2629,18 @@ print_patchWalletTokenAsync_help() {
 }
 ##############################################################################
 #
-# Print help for updateWalletBankAccountAsync operation
+# Print help for updateLocationForWalletAsync operation
 #
 ##############################################################################
-print_updateWalletBankAccountAsync_help() {
+print_updateLocationForWalletAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateWalletBankAccountAsync - Update Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateLocationForWalletAsync - Update Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Update a specific bank account of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e "Update a specific location of a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}bankAccountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankAccountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2637,18 +2657,18 @@ print_updateWalletBankAccountAsync_help() {
 }
 ##############################################################################
 #
-# Print help for updateWalletLocationAsync operation
+# Print help for updateWalletBankAccountAsync operation
 #
 ##############################################################################
-print_updateWalletLocationAsync_help() {
+print_updateWalletBankAccountAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateWalletLocationAsync - Update Wallet Location${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateWalletBankAccountAsync - Update Wallet Bank Account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Update a specific location of a specific wallet by ID." | paste -sd' ' | fold -sw 80
+    echo -e "Update a specific bank account of a specific wallet by ID." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}walletId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: walletId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}locationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: locationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bankAccountId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: bankAccountId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2837,6 +2857,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3646,10 +3702,10 @@ call_versionGet() {
 
 ##############################################################################
 #
-# Call createWalletBankAccountAsync operation
+# Call createLocationForWalletAsync operation
 #
 ##############################################################################
-call_createWalletBankAccountAsync() {
+call_createLocationForWalletAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(walletId)
@@ -3658,7 +3714,7 @@ call_createWalletBankAccountAsync() {
     local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3722,10 +3778,10 @@ call_createWalletBankAccountAsync() {
 
 ##############################################################################
 #
-# Call createWalletLocationAsync operation
+# Call createWalletBankAccountAsync operation
 #
 ##############################################################################
-call_createWalletLocationAsync() {
+call_createWalletBankAccountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(walletId)
@@ -3734,7 +3790,7 @@ call_createWalletLocationAsync() {
     local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4026,19 +4082,19 @@ call_createWalletWithdrawRequestAsync() {
 
 ##############################################################################
 #
-# Call deleteWalletBankAccountAsync operation
+# Call deleteLocationForWalletAsync operation
 #
 ##############################################################################
-call_deleteWalletBankAccountAsync() {
+call_deleteLocationForWalletAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(walletId bankAccountId)
+    local path_parameter_names=(walletId locationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4062,19 +4118,19 @@ call_deleteWalletBankAccountAsync() {
 
 ##############################################################################
 #
-# Call deleteWalletLocationAsync operation
+# Call deleteWalletBankAccountAsync operation
 #
 ##############################################################################
-call_deleteWalletLocationAsync() {
+call_deleteWalletBankAccountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(walletId locationId)
+    local path_parameter_names=(walletId bankAccountId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4255,6 +4311,114 @@ call_getIncomingWalletInvoicesCountAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Invoices/Incoming/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getLocationForWalletAsync operation
+#
+##############################################################################
+call_getLocationForWalletAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(walletId locationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getLocationsForWalletAsync operation
+#
+##############################################################################
+call_getLocationsForWalletAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(walletId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getLocationsForWalletCountAsync operation
+#
+##############################################################################
+call_getLocationsForWalletCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(walletId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4723,114 +4887,6 @@ call_getWalletInvoicesCountAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Invoices/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getWalletLocationAsync operation
-#
-##############################################################################
-call_getWalletLocationAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(walletId locationId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getWalletLocationsAsync operation
-#
-##############################################################################
-call_getWalletLocationsAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(walletId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getWalletLocationsCountAsync operation
-#
-##############################################################################
-call_getWalletLocationsCountAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(walletId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -5546,19 +5602,19 @@ call_patchWalletTokenAsync() {
 
 ##############################################################################
 #
-# Call updateWalletBankAccountAsync operation
+# Call updateLocationForWalletAsync operation
 #
 ##############################################################################
-call_updateWalletBankAccountAsync() {
+call_updateLocationForWalletAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(walletId bankAccountId)
+    local path_parameter_names=(walletId locationId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -5622,19 +5678,19 @@ call_updateWalletBankAccountAsync() {
 
 ##############################################################################
 #
-# Call updateWalletLocationAsync operation
+# Call updateWalletBankAccountAsync operation
 #
 ##############################################################################
-call_updateWalletLocationAsync() {
+call_updateWalletBankAccountAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(walletId locationId)
+    local path_parameter_names=(walletId bankAccountId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/Locations/{locationId}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/WalletsService/Wallets/{walletId}/BankAccounts/{bankAccountId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -5881,6 +5937,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -5920,11 +5979,11 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
+    createLocationForWalletAsync)
+    operation="createLocationForWalletAsync"
+    ;;
     createWalletBankAccountAsync)
     operation="createWalletBankAccountAsync"
-    ;;
-    createWalletLocationAsync)
-    operation="createWalletLocationAsync"
     ;;
     createWalletPaymentAsync)
     operation="createWalletPaymentAsync"
@@ -5935,11 +5994,11 @@ case $key in
     createWalletWithdrawRequestAsync)
     operation="createWalletWithdrawRequestAsync"
     ;;
+    deleteLocationForWalletAsync)
+    operation="deleteLocationForWalletAsync"
+    ;;
     deleteWalletBankAccountAsync)
     operation="deleteWalletBankAccountAsync"
-    ;;
-    deleteWalletLocationAsync)
-    operation="deleteWalletLocationAsync"
     ;;
     deleteWalletTokenAsync)
     operation="deleteWalletTokenAsync"
@@ -5955,6 +6014,15 @@ case $key in
     ;;
     getIncomingWalletInvoicesCountAsync)
     operation="getIncomingWalletInvoicesCountAsync"
+    ;;
+    getLocationForWalletAsync)
+    operation="getLocationForWalletAsync"
+    ;;
+    getLocationsForWalletAsync)
+    operation="getLocationsForWalletAsync"
+    ;;
+    getLocationsForWalletCountAsync)
+    operation="getLocationsForWalletCountAsync"
     ;;
     getOutgoingPaymentsAsync)
     operation="getOutgoingPaymentsAsync"
@@ -5994,15 +6062,6 @@ case $key in
     ;;
     getWalletInvoicesCountAsync)
     operation="getWalletInvoicesCountAsync"
-    ;;
-    getWalletLocationAsync)
-    operation="getWalletLocationAsync"
-    ;;
-    getWalletLocationsAsync)
-    operation="getWalletLocationsAsync"
-    ;;
-    getWalletLocationsCountAsync)
-    operation="getWalletLocationsCountAsync"
     ;;
     getWalletOrdersAsync)
     operation="getWalletOrdersAsync"
@@ -6055,11 +6114,11 @@ case $key in
     patchWalletTokenAsync)
     operation="patchWalletTokenAsync"
     ;;
+    updateLocationForWalletAsync)
+    operation="updateLocationForWalletAsync"
+    ;;
     updateWalletBankAccountAsync)
     operation="updateWalletBankAccountAsync"
-    ;;
-    updateWalletLocationAsync)
-    operation="updateWalletLocationAsync"
     ;;
     updateWalletTokenAsync)
     operation="updateWalletTokenAsync"
@@ -6163,6 +6222,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -6202,11 +6264,11 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
+    createLocationForWalletAsync)
+    call_createLocationForWalletAsync
+    ;;
     createWalletBankAccountAsync)
     call_createWalletBankAccountAsync
-    ;;
-    createWalletLocationAsync)
-    call_createWalletLocationAsync
     ;;
     createWalletPaymentAsync)
     call_createWalletPaymentAsync
@@ -6217,11 +6279,11 @@ case $operation in
     createWalletWithdrawRequestAsync)
     call_createWalletWithdrawRequestAsync
     ;;
+    deleteLocationForWalletAsync)
+    call_deleteLocationForWalletAsync
+    ;;
     deleteWalletBankAccountAsync)
     call_deleteWalletBankAccountAsync
-    ;;
-    deleteWalletLocationAsync)
-    call_deleteWalletLocationAsync
     ;;
     deleteWalletTokenAsync)
     call_deleteWalletTokenAsync
@@ -6237,6 +6299,15 @@ case $operation in
     ;;
     getIncomingWalletInvoicesCountAsync)
     call_getIncomingWalletInvoicesCountAsync
+    ;;
+    getLocationForWalletAsync)
+    call_getLocationForWalletAsync
+    ;;
+    getLocationsForWalletAsync)
+    call_getLocationsForWalletAsync
+    ;;
+    getLocationsForWalletCountAsync)
+    call_getLocationsForWalletCountAsync
     ;;
     getOutgoingPaymentsAsync)
     call_getOutgoingPaymentsAsync
@@ -6276,15 +6347,6 @@ case $operation in
     ;;
     getWalletInvoicesCountAsync)
     call_getWalletInvoicesCountAsync
-    ;;
-    getWalletLocationAsync)
-    call_getWalletLocationAsync
-    ;;
-    getWalletLocationsAsync)
-    call_getWalletLocationsAsync
-    ;;
-    getWalletLocationsCountAsync)
-    call_getWalletLocationsCountAsync
     ;;
     getWalletOrdersAsync)
     call_getWalletOrdersAsync
@@ -6337,11 +6399,11 @@ case $operation in
     patchWalletTokenAsync)
     call_patchWalletTokenAsync
     ;;
+    updateLocationForWalletAsync)
+    call_updateLocationForWalletAsync
+    ;;
     updateWalletBankAccountAsync)
     call_updateWalletBankAccountAsync
-    ;;
-    updateWalletLocationAsync)
-    call_updateWalletLocationAsync
     ;;
     updateWalletTokenAsync)
     call_updateWalletTokenAsync

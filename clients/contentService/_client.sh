@@ -341,6 +341,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -380,7 +381,7 @@ case $state in
             "searchWebPortalAsync[Search for a portal by its domain]" \
             "unbindWebPortalDomainAsync[Unbind a domain from a web portal]" \
             "updateWebPortalAsync[Update an existing web portal]" \
-            "updateWebPortalSettingsAsync[Update a web portal's settings]"             "getLatestCurrencyRatesModelAsync[Update base web content themes]"             "countWebComponentsAsync[Count web components]" \
+            "updateWebPortalSettingsAsync[Update a web portal's settings]"             "updateThemesAsync[Update base web content themes]"             "countWebComponentsAsync[Count web components]" \
             "createWebComponentAsync[Create a web component]" \
             "deleteWebComponentAsync[Delete a web component]" \
             "getWebComponentByIdAsync[Get web component by ID]" \
@@ -857,6 +858,13 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
@@ -1223,7 +1231,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getLatestCurrencyRatesModelAsync)
+      updateThemesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -1738,7 +1746,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"oDataQueryOptions=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1748,7 +1755,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
-"oDataQueryOptions=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

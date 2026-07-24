@@ -301,6 +301,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -384,8 +385,8 @@ case $state in
             "getItemReviewsAsync[Get all item reviews]" \
             "patchItemReviewAsync[Patch an item review]" \
             "updateItemReviewAsync[Update an item review]"             "countItemShippingPoliciesAsync[Count item shipping policies]" \
-            "getItemShippingPoliciesAsync[Get item shipping policies]" \
-            "getItemShippingPolicyByIdAsync[Get item shipping policy by ID]" \
+            "getCatalogItemShippingPoliciesAsync[Get item shipping policies]" \
+            "getCatalogItemShippingPolicyByIdAsync[Get item shipping policy by ID]" \
             "relateItemToShippingPolicyAsync[Relate item to shipping policy]" \
             "removeShippingPolicyFromItemAsync[Remove shipping policy from item]"             "createItemTagAsync[Create a new item tag]" \
             "deleteItemTagAsync[Delete an item tag]" \
@@ -517,6 +518,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -1412,7 +1420,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getItemShippingPoliciesAsync)
+      getCatalogItemShippingPoliciesAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -1422,7 +1430,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getItemShippingPolicyByIdAsync)
+      getCatalogItemShippingPolicyByIdAsync)
         local -a _op_arguments
         _op_arguments=(
           "itemShippingPolicyId=:[PATH] "

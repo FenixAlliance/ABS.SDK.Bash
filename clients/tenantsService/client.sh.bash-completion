@@ -69,7 +69,12 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["createBusinessRelationshipAsync"]=1
+    operations["deleteBusinessRelationshipAsync"]=1
+    operations["getBusinessRelationshipByIdAsync"]=1
+    operations["getBusinessRelationshipsAsync"]=1
     operations["getBusinessRelationshipsCountAsync"]=1
+    operations["updateBusinessRelationshipAsync"]=1
     operations["createTenantDepartment"]=1
     operations["deleteTenantDepartment"]=1
     operations["getTenantDepartmentById"]=1
@@ -97,6 +102,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -187,6 +193,7 @@ _()
     operations["deSelectTenantAsync"]=1
     operations["deleteTenantAsync"]=1
     operations["getAccessibleFeaturesAsync"]=1
+    operations["getCartForTenantAsync"]=1
     operations["getCurrentTenantAsync"]=1
     operations["getEnrollmentLicenseByIdAsync"]=1
     operations["getEnrollmentLicensesAsync"]=1
@@ -196,7 +203,6 @@ _()
     operations["getRootTenantAsync"]=1
     operations["getTenantAsync"]=1
     operations["getTenantAvatarAsync"]=1
-    operations["getTenantCartAsync"]=1
     operations["getTenantEnrollmentAsync"]=1
     operations["getTenantEnrollmentsAsync"]=1
     operations["getTenantInvitationsAsync"]=1
@@ -213,8 +219,8 @@ _()
     operations["patchTenantAsync"]=1
     operations["revokeLicenseAsync"]=1
     operations["selectTenantAsync"]=1
-    operations["updateAvatarAsync"]=1
     operations["updateTenantAsync"]=1
+    operations["updateTenantAvatarAsync"]=1
     operations["validateEnrollmentFeatureAccess"]=1
     operations["validateEnrollmentPermissionsAsync"]=1
     operations["createTenantTerritory"]=1
@@ -256,7 +262,12 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["createBusinessRelationshipAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteBusinessRelationshipAsync"]="businessRelationshipId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessRelationshipByIdAsync"]="businessRelationshipId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBusinessRelationshipsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessRelationshipsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateBusinessRelationshipAsync"]="businessRelationshipId= tenantId= api-version= x-api-version: "
     operation_parameters["createTenantDepartment"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteTenantDepartment"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
     operation_parameters["getTenantDepartmentById"]="tenantDepartmentId= tenantId= api-version= x-api-version: "
@@ -284,6 +295,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -374,6 +386,7 @@ _()
     operation_parameters["deSelectTenantAsync"]="api-version= x-api-version: "
     operation_parameters["deleteTenantAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getAccessibleFeaturesAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
+    operation_parameters["getCartForTenantAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getCurrentTenantAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getEnrollmentLicenseByIdAsync"]="tenantId= enrollmentId= licenseId= api-version= x-api-version: "
     operation_parameters["getEnrollmentLicensesAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
@@ -383,7 +396,6 @@ _()
     operation_parameters["getRootTenantAsync"]="api-version= x-api-version: "
     operation_parameters["getTenantAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantAvatarAsync"]="tenantId= api-version= x-api-version: "
-    operation_parameters["getTenantCartAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantEnrollmentAsync"]="tenantId= enrollmentId= api-version= x-api-version: "
     operation_parameters["getTenantEnrollmentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantInvitationsAsync"]="tenantId= api-version= x-api-version: "
@@ -400,8 +412,8 @@ _()
     operation_parameters["patchTenantAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["revokeLicenseAsync"]="tenantId= enrollmentId= licenseId= api-version= x-api-version: "
     operation_parameters["selectTenantAsync"]="tenantId= api-version= x-api-version: "
-    operation_parameters["updateAvatarAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateTenantAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateTenantAvatarAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["validateEnrollmentFeatureAccess"]="tenantId= enrollmentId= feature= api-version= x-api-version: "
     operation_parameters["validateEnrollmentPermissionsAsync"]="tenantId= enrollmentId= roles= permissions= api-version= x-api-version: "
     operation_parameters["createTenantTerritory"]="tenantId= api-version= x-api-version: "

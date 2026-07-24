@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
 **title** | **string** |  | [optional] [default to null]
-**taskCategoryID** | **string** |  | [optional] [default to null]
+**taskCategoryId** | **string** |  | [optional] [default to null]
 **displayInTimeTracker** | **boolean** |  | [optional] [default to null]
 **requiresDescription** | **boolean** |  | [optional] [default to null]
 

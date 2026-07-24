@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 Upload a file
 
-Uploads a file to tenant or user storage.
+Uploads a file to tenant or user storage, scanned and catalogued through the storage spine.
 
 ### Example
 
@@ -28,6 +28,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **file** | **binary** |  | [optional] [default to null]
  **notes** | **string** |  | [optional] [default to null]
  **title** | **string** |  | [optional] [default to null]
  **author** | **string** |  | [optional] [default to null]
@@ -38,6 +39,9 @@ Name | Type | Description  | Notes
  **validResponse** | **boolean** |  | [optional] [default to null]
  **parentFileUploadId** | **string** |  | [optional] [default to null]
  **filePath** | **string** |  | [optional] [default to null]
+ **publicAccessType** | **string** |  | [optional] [default to null]
+ **purpose** | **string** |  | [optional] [default to null]
+ **socialProfileIdPeriodvalue** | **string** |  | [optional] [default to null]
  **appFilePeriodcontent** | **string** |  | [optional] [default to null]
  **appFilePeriodsha256** | **string** |  | [optional] [default to null]
  **appFilePeriodcreatedAtUtc** | **string** |  | [optional] [default to null]

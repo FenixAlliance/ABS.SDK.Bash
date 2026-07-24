@@ -121,12 +121,10 @@ operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::api-vers
 operation_parameters_minimum_occurrences["getBlockchainBlockByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::blockchainId"]=1
-operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainBlocksAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::blockchainId"]=1
-operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainBlocksCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::tenantId"]=1
@@ -134,11 +132,9 @@ operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::id"]=1
 operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainsAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getBlockchainsAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getBlockchainsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlockchainsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchBlockchainAsync:::tenantId"]=1
@@ -167,6 +163,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -193,11 +190,9 @@ operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::id"]=1
 operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokenByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokensAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNonFungibleTokensCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchNonFungibleTokenAsync:::tenantId"]=1
@@ -243,12 +238,10 @@ operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::api-vers
 operation_parameters_maximum_occurrences["getBlockchainBlockByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::blockchainId"]=0
-operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::blockchainId"]=0
-operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainBlocksCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::tenantId"]=0
@@ -256,11 +249,9 @@ operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::id"]=0
 operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainsAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getBlockchainsAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getBlockchainsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlockchainsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchBlockchainAsync:::tenantId"]=0
@@ -289,6 +280,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -315,11 +307,9 @@ operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::id"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokenByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokensAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNonFungibleTokensCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchNonFungibleTokenAsync:::tenantId"]=0
@@ -362,12 +352,10 @@ operation_parameters_collection_type["getBlockchainBlockByIdAsync:::api-version"
 operation_parameters_collection_type["getBlockchainBlockByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBlockchainBlocksAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlockchainBlocksAsync:::blockchainId"]=""
-operation_parameters_collection_type["getBlockchainBlocksAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getBlockchainBlocksAsync:::api-version"]=""
 operation_parameters_collection_type["getBlockchainBlocksAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBlockchainBlocksCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlockchainBlocksCountAsync:::blockchainId"]=""
-operation_parameters_collection_type["getBlockchainBlocksCountAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getBlockchainBlocksCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBlockchainBlocksCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBlockchainByIdAsync:::tenantId"]=""
@@ -375,11 +363,9 @@ operation_parameters_collection_type["getBlockchainByIdAsync:::id"]=""
 operation_parameters_collection_type["getBlockchainByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getBlockchainByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBlockchainsAsync:::tenantId"]=""
-operation_parameters_collection_type["getBlockchainsAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getBlockchainsAsync:::api-version"]=""
 operation_parameters_collection_type["getBlockchainsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBlockchainsCountAsync:::tenantId"]=""
-operation_parameters_collection_type["getBlockchainsCountAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getBlockchainsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBlockchainsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchBlockchainAsync:::tenantId"]=""
@@ -408,6 +394,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -434,11 +421,9 @@ operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::id"]=""
 operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getNonFungibleTokenByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getNonFungibleTokensAsync:::tenantId"]=""
-operation_parameters_collection_type["getNonFungibleTokensAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getNonFungibleTokensAsync:::api-version"]=""
 operation_parameters_collection_type["getNonFungibleTokensAsync:::x-api-version"]=""
 operation_parameters_collection_type["getNonFungibleTokensCountAsync:::tenantId"]=""
-operation_parameters_collection_type["getNonFungibleTokensCountAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getNonFungibleTokensCountAsync:::api-version"]=""
 operation_parameters_collection_type["getNonFungibleTokensCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchNonFungibleTokenAsync:::tenantId"]=""
@@ -862,6 +847,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1075,8 +1061,6 @@ print_getBlockchainBlocksAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainBlockDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1098,8 +1082,6 @@ print_getBlockchainBlocksCountAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}blockchainId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blockchainId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainBlockDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1149,8 +1131,6 @@ print_getBlockchainsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1174,8 +1154,6 @@ print_getBlockchainsCountAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[BlockchainDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1353,6 +1331,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1689,8 +1683,6 @@ print_getNonFungibleTokensAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[NonFungibleTokenDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1714,8 +1706,6 @@ print_getNonFungibleTokensCountAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[NonFungibleTokenDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -2058,7 +2048,7 @@ call_getBlockchainBlocksAsync() {
     local path_parameter_names=(blockchainId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks" path_parameter_names query_parameter_names); then
@@ -2094,7 +2084,7 @@ call_getBlockchainBlocksCountAsync() {
     local path_parameter_names=(blockchainId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/{blockchainId}/Blocks/Count" path_parameter_names query_parameter_names); then
@@ -2166,7 +2156,7 @@ call_getBlockchainsAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains" path_parameter_names query_parameter_names); then
@@ -2202,7 +2192,7 @@ call_getBlockchainsCountAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/BlockchainsService/Blockchains/Count" path_parameter_names query_parameter_names); then
@@ -2675,6 +2665,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3641,7 +3667,7 @@ call_getNonFungibleTokensAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens" path_parameter_names query_parameter_names); then
@@ -3677,7 +3703,7 @@ call_getNonFungibleTokensCountAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/BlockchainsService/NonFungibleTokens/Count" path_parameter_names query_parameter_names); then
@@ -4005,6 +4031,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -4205,6 +4234,9 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

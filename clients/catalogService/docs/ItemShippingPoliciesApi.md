@@ -5,8 +5,8 @@ All URIs are relative to **
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**countItemShippingPoliciesAsync**](ItemShippingPoliciesApi.md#countItemShippingPoliciesAsync) | **GET** /api/v2/CatalogService/ItemShippingPolicies/Count | Count item shipping policies
-[**getItemShippingPoliciesAsync**](ItemShippingPoliciesApi.md#getItemShippingPoliciesAsync) | **GET** /api/v2/CatalogService/ItemShippingPolicies | Get item shipping policies
-[**getItemShippingPolicyByIdAsync**](ItemShippingPoliciesApi.md#getItemShippingPolicyByIdAsync) | **GET** /api/v2/CatalogService/ItemShippingPolicies/{itemShippingPolicyId} | Get item shipping policy by ID
+[**getCatalogItemShippingPoliciesAsync**](ItemShippingPoliciesApi.md#getCatalogItemShippingPoliciesAsync) | **GET** /api/v2/CatalogService/ItemShippingPolicies | Get item shipping policies
+[**getCatalogItemShippingPolicyByIdAsync**](ItemShippingPoliciesApi.md#getCatalogItemShippingPolicyByIdAsync) | **GET** /api/v2/CatalogService/ItemShippingPolicies/{itemShippingPolicyId} | Get item shipping policy by ID
 [**relateItemToShippingPolicyAsync**](ItemShippingPoliciesApi.md#relateItemToShippingPolicyAsync) | **POST** /api/v2/CatalogService/ItemShippingPolicies | Relate item to shipping policy
 [**removeShippingPolicyFromItemAsync**](ItemShippingPoliciesApi.md#removeShippingPolicyFromItemAsync) | **DELETE** /api/v2/CatalogService/ItemShippingPolicies/{itemShippingPolicyId} | Remove shipping policy from item
 
@@ -50,7 +50,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## getItemShippingPoliciesAsync
+## getCatalogItemShippingPoliciesAsync
 
 Get item shipping policies
 
@@ -59,7 +59,7 @@ Retrieves all shipping policies for a specific item.
 ### Example
 
 ```bash
- getItemShippingPoliciesAsync  tenantId=value  itemId=value  api-version=value x-api-version:value
+ getCatalogItemShippingPoliciesAsync  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -88,7 +88,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## getItemShippingPolicyByIdAsync
+## getCatalogItemShippingPolicyByIdAsync
 
 Get item shipping policy by ID
 
@@ -97,7 +97,7 @@ Retrieves a specific shipping policy for an item.
 ### Example
 
 ```bash
- getItemShippingPolicyByIdAsync itemShippingPolicyId=value  tenantId=value  itemId=value  api-version=value x-api-version:value
+ getCatalogItemShippingPolicyByIdAsync itemShippingPolicyId=value  tenantId=value  itemId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters

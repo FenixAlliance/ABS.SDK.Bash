@@ -5,6 +5,11 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/BooleanEnvelope.md
+docs/BusinessRelationshipCreateDto.md
+docs/BusinessRelationshipDto.md
+docs/BusinessRelationshipDtoEnvelope.md
+docs/BusinessRelationshipDtoListEnvelope.md
+docs/BusinessRelationshipUpdateDto.md
 docs/BusinessRelationshipsApi.md
 docs/CartDto.md
 docs/CartDtoEnvelope.md
@@ -150,7 +155,7 @@ docs/UnitGroupUpdateDto.md
 docs/UnitGroupsApi.md
 docs/UnitUpdateDto.md
 docs/UnitsApi.md
-docs/UpdateAvatarAsyncRequest.md
+docs/UpdateTenantAvatarAsyncRequest.md
 docs/UserDto.md
 docs/UserDtoListEnvelope.md
 docs/WalletDto.md

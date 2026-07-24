@@ -100,6 +100,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -113,22 +114,50 @@ operation_parameters_minimum_occurrences["refreshPost:::RefreshRequest"]=1
 operation_parameters_minimum_occurrences["registerPost:::RegisterRequest"]=1
 operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=1
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
+operation_parameters_minimum_occurrences["createProjectTaskAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createProjectTaskAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTaskAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTaskAsync:::ProjectTaskCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTaskByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTaskByIdAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["getProjectTaskByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTaskByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTasksAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTasksAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTasksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTasksCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTasksCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTasksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchProjectTaskAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchProjectTaskAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["patchProjectTaskAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchProjectTaskAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchProjectTaskAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateProjectTaskAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectTaskAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["updateProjectTaskAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTaskAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTaskAsync:::ProjectTaskUpdateDto"]=0
 operation_parameters_minimum_occurrences["createProjectAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createProjectAsync:::ProjectCreateDto"]=0
 operation_parameters_minimum_occurrences["createProjectPeriodAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["createProjectPeriodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createProjectPeriodAsync:::ProjectPeriodCreateDto"]=0
-operation_parameters_minimum_occurrences["createProjectTaskAsync:::projectId"]=1
-operation_parameters_minimum_occurrences["createProjectTaskAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["createProjectTaskAsync:::ProjectTaskCreateDto"]=0
+operation_parameters_minimum_occurrences["createTaskForProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["createTaskForProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createTaskForProjectAsync:::ProjectTaskCreateDto"]=0
 operation_parameters_minimum_occurrences["deleteProjectAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["deleteProjectAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["deleteProjectPeriodAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["deleteProjectPeriodAsync:::projectPeriodId"]=1
 operation_parameters_minimum_occurrences["deleteProjectPeriodAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::projectId"]=1
-operation_parameters_minimum_occurrences["deleteProjectTaskAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["deleteTaskForProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteTaskForProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["deleteTaskForProjectAsync:::projectTaskId"]=1
 operation_parameters_minimum_occurrences["getProjectByIdAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["getProjectByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProjectPeriodsAsync:::projectId"]=1
@@ -137,16 +166,27 @@ operation_parameters_minimum_occurrences["getProjectTaskCategoriesAsync:::projec
 operation_parameters_minimum_occurrences["getProjectTaskCategoriesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProjectTaskCategoriesCountAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["getProjectTaskCategoriesCountAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getProjectTasksAsync:::projectId"]=1
-operation_parameters_minimum_occurrences["getProjectTasksAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getProjectTasksCountAsync:::projectId"]=1
-operation_parameters_minimum_occurrences["getProjectTasksCountAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::projectId"]=1
-operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProjectTimeLogsCountAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["getProjectTimeLogsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProjectsByTenantIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProjectsCountByTenantIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTasksForProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["getTasksForProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTasksForProjectCountAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["getTasksForProjectCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTimeLogsForProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["getTimeLogsForProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["patchProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchProjectAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchProjectPeriodAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["patchProjectPeriodAsync:::projectPeriodId"]=1
+operation_parameters_minimum_occurrences["patchProjectPeriodAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchProjectPeriodAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTaskForProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["patchTaskForProjectAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["patchTaskForProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaskForProjectAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateProjectAsync:::projectId"]=1
 operation_parameters_minimum_occurrences["updateProjectAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateProjectAsync:::ProjectUpdateDto"]=0
@@ -154,10 +194,10 @@ operation_parameters_minimum_occurrences["updateProjectPeriodAsync:::projectId"]
 operation_parameters_minimum_occurrences["updateProjectPeriodAsync:::projectPeriodId"]=1
 operation_parameters_minimum_occurrences["updateProjectPeriodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateProjectPeriodAsync:::ProjectPeriodUpdateDto"]=0
-operation_parameters_minimum_occurrences["updateProjectTaskAsync:::projectId"]=1
-operation_parameters_minimum_occurrences["updateProjectTaskAsync:::projectTaskId"]=1
-operation_parameters_minimum_occurrences["updateProjectTaskAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["updateProjectTaskAsync:::ProjectTaskUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateTaskForProjectAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["updateTaskForProjectAsync:::projectTaskId"]=1
+operation_parameters_minimum_occurrences["updateTaskForProjectAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateTaskForProjectAsync:::ProjectTaskUpdateDto"]=0
 operation_parameters_minimum_occurrences["countTenantTaskCategoriesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createTaskCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createTaskCategoryAsync:::TaskCategoryCreateDto"]=0
@@ -168,6 +208,9 @@ operation_parameters_minimum_occurrences["getTaskCategoryByIdAsync:::tenantId"]=
 operation_parameters_minimum_occurrences["getTaskCategoryTaskTypesAsync:::taskCategoryId"]=1
 operation_parameters_minimum_occurrences["getTaskCategoryTaskTypesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTaskCategoriesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaskCategoryAsync:::taskCategoryId"]=1
+operation_parameters_minimum_occurrences["patchTaskCategoryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaskCategoryAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTaskCategoryAsync:::taskCategoryId"]=1
 operation_parameters_minimum_occurrences["updateTaskCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTaskCategoryAsync:::TaskCategoryUpdateDto"]=0
@@ -177,9 +220,68 @@ operation_parameters_minimum_occurrences["deleteTaskTypeAsync:::taskTypeId"]=1
 operation_parameters_minimum_occurrences["deleteTaskTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTaskTypeByIdAsync:::taskTypeId"]=1
 operation_parameters_minimum_occurrences["getTaskTypeByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaskTypeAsync:::taskTypeId"]=1
+operation_parameters_minimum_occurrences["patchTaskTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchTaskTypeAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateTaskTypeAsync:::taskTypeId"]=1
 operation_parameters_minimum_occurrences["updateTaskTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTaskTypeAsync:::TaskTypeUpdateDto"]=0
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["requestProjectHoursApprovalAsync:::ProjectHoursApprovalCreateDto"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::approvalId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalApproverAsync:::ProjectHoursApprovalApproverUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::approvalId"]=1
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectHoursApprovalStatusAsync:::ProjectHoursApprovalStatusUpdateDto"]=0
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::projectPeriodId"]=1
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["countProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProjectTimeLogAsync:::ProjectTimeLogCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::projectPeriodId"]=1
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::projectId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProjectTimeLogsCreatedByContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchProjectTimeLogAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["patchProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchProjectTimeLogAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::timeLogId"]=1
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProjectTimeLogAsync:::ProjectTimeLogUpdateDto"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -192,6 +294,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -205,22 +308,50 @@ operation_parameters_maximum_occurrences["refreshPost:::RefreshRequest"]=0
 operation_parameters_maximum_occurrences["registerPost:::RegisterRequest"]=0
 operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=0
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
+operation_parameters_maximum_occurrences["createProjectTaskAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createProjectTaskAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTaskAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTaskAsync:::ProjectTaskCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTaskByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTaskByIdAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["getProjectTaskByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTaskByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTasksAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTasksAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTasksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTasksCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTasksCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTasksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchProjectTaskAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchProjectTaskAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["patchProjectTaskAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchProjectTaskAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchProjectTaskAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateProjectTaskAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectTaskAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["updateProjectTaskAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTaskAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTaskAsync:::ProjectTaskUpdateDto"]=0
 operation_parameters_maximum_occurrences["createProjectAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createProjectAsync:::ProjectCreateDto"]=0
 operation_parameters_maximum_occurrences["createProjectPeriodAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["createProjectPeriodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createProjectPeriodAsync:::ProjectPeriodCreateDto"]=0
-operation_parameters_maximum_occurrences["createProjectTaskAsync:::projectId"]=0
-operation_parameters_maximum_occurrences["createProjectTaskAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["createProjectTaskAsync:::ProjectTaskCreateDto"]=0
+operation_parameters_maximum_occurrences["createTaskForProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["createTaskForProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createTaskForProjectAsync:::ProjectTaskCreateDto"]=0
 operation_parameters_maximum_occurrences["deleteProjectAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["deleteProjectAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["deleteProjectPeriodAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["deleteProjectPeriodAsync:::projectPeriodId"]=0
 operation_parameters_maximum_occurrences["deleteProjectPeriodAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::projectId"]=0
-operation_parameters_maximum_occurrences["deleteProjectTaskAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["deleteTaskForProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteTaskForProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["deleteTaskForProjectAsync:::projectTaskId"]=0
 operation_parameters_maximum_occurrences["getProjectByIdAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["getProjectByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProjectPeriodsAsync:::projectId"]=0
@@ -229,16 +360,27 @@ operation_parameters_maximum_occurrences["getProjectTaskCategoriesAsync:::projec
 operation_parameters_maximum_occurrences["getProjectTaskCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProjectTaskCategoriesCountAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["getProjectTaskCategoriesCountAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getProjectTasksAsync:::projectId"]=0
-operation_parameters_maximum_occurrences["getProjectTasksAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getProjectTasksCountAsync:::projectId"]=0
-operation_parameters_maximum_occurrences["getProjectTasksCountAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::projectId"]=0
-operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProjectTimeLogsCountAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["getProjectTimeLogsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProjectsByTenantIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProjectsCountByTenantIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTasksForProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["getTasksForProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTasksForProjectCountAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["getTasksForProjectCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTimeLogsForProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["getTimeLogsForProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["patchProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchProjectAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchProjectPeriodAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["patchProjectPeriodAsync:::projectPeriodId"]=0
+operation_parameters_maximum_occurrences["patchProjectPeriodAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchProjectPeriodAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTaskForProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["patchTaskForProjectAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["patchTaskForProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaskForProjectAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateProjectAsync:::projectId"]=0
 operation_parameters_maximum_occurrences["updateProjectAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateProjectAsync:::ProjectUpdateDto"]=0
@@ -246,10 +388,10 @@ operation_parameters_maximum_occurrences["updateProjectPeriodAsync:::projectId"]
 operation_parameters_maximum_occurrences["updateProjectPeriodAsync:::projectPeriodId"]=0
 operation_parameters_maximum_occurrences["updateProjectPeriodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateProjectPeriodAsync:::ProjectPeriodUpdateDto"]=0
-operation_parameters_maximum_occurrences["updateProjectTaskAsync:::projectId"]=0
-operation_parameters_maximum_occurrences["updateProjectTaskAsync:::projectTaskId"]=0
-operation_parameters_maximum_occurrences["updateProjectTaskAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["updateProjectTaskAsync:::ProjectTaskUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateTaskForProjectAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["updateTaskForProjectAsync:::projectTaskId"]=0
+operation_parameters_maximum_occurrences["updateTaskForProjectAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateTaskForProjectAsync:::ProjectTaskUpdateDto"]=0
 operation_parameters_maximum_occurrences["countTenantTaskCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createTaskCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createTaskCategoryAsync:::TaskCategoryCreateDto"]=0
@@ -260,6 +402,9 @@ operation_parameters_maximum_occurrences["getTaskCategoryByIdAsync:::tenantId"]=
 operation_parameters_maximum_occurrences["getTaskCategoryTaskTypesAsync:::taskCategoryId"]=0
 operation_parameters_maximum_occurrences["getTaskCategoryTaskTypesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTaskCategoriesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaskCategoryAsync:::taskCategoryId"]=0
+operation_parameters_maximum_occurrences["patchTaskCategoryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaskCategoryAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTaskCategoryAsync:::taskCategoryId"]=0
 operation_parameters_maximum_occurrences["updateTaskCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTaskCategoryAsync:::TaskCategoryUpdateDto"]=0
@@ -269,9 +414,68 @@ operation_parameters_maximum_occurrences["deleteTaskTypeAsync:::taskTypeId"]=0
 operation_parameters_maximum_occurrences["deleteTaskTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTaskTypeByIdAsync:::taskTypeId"]=0
 operation_parameters_maximum_occurrences["getTaskTypeByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaskTypeAsync:::taskTypeId"]=0
+operation_parameters_maximum_occurrences["patchTaskTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchTaskTypeAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateTaskTypeAsync:::taskTypeId"]=0
 operation_parameters_maximum_occurrences["updateTaskTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTaskTypeAsync:::TaskTypeUpdateDto"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["requestProjectHoursApprovalAsync:::ProjectHoursApprovalCreateDto"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::approvalId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalApproverAsync:::ProjectHoursApprovalApproverUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::approvalId"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectHoursApprovalStatusAsync:::ProjectHoursApprovalStatusUpdateDto"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::projectPeriodId"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["countProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProjectTimeLogAsync:::ProjectTimeLogCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::projectPeriodId"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectPeriodTimeLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::projectId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsByResponsibleContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProjectTimeLogsCreatedByContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchProjectTimeLogAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["patchProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchProjectTimeLogAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::timeLogId"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProjectTimeLogAsync:::ProjectTimeLogUpdateDto"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
@@ -281,6 +485,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -294,22 +499,50 @@ operation_parameters_collection_type["refreshPost:::RefreshRequest"]=""
 operation_parameters_collection_type["registerPost:::RegisterRequest"]=""
 operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfirmationEmailRequest"]=""
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
+operation_parameters_collection_type["createProjectTaskAsync:::tenantId"]=""
+operation_parameters_collection_type["createProjectTaskAsync:::api-version"]=""
+operation_parameters_collection_type["createProjectTaskAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProjectTaskAsync:::ProjectTaskCreateDto"]=""
+operation_parameters_collection_type["deleteProjectTaskAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteProjectTaskAsync:::projectTaskId"]=""
+operation_parameters_collection_type["deleteProjectTaskAsync:::api-version"]=""
+operation_parameters_collection_type["deleteProjectTaskAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTaskByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTaskByIdAsync:::projectTaskId"]=""
+operation_parameters_collection_type["getProjectTaskByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTaskByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTasksAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTasksAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTasksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTasksCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTasksCountAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTasksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchProjectTaskAsync:::tenantId"]=""
+operation_parameters_collection_type["patchProjectTaskAsync:::projectTaskId"]=""
+operation_parameters_collection_type["patchProjectTaskAsync:::api-version"]=""
+operation_parameters_collection_type["patchProjectTaskAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchProjectTaskAsync:::Operation"]=
+operation_parameters_collection_type["updateProjectTaskAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectTaskAsync:::projectTaskId"]=""
+operation_parameters_collection_type["updateProjectTaskAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectTaskAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectTaskAsync:::ProjectTaskUpdateDto"]=""
 operation_parameters_collection_type["createProjectAsync:::tenantId"]=""
 operation_parameters_collection_type["createProjectAsync:::ProjectCreateDto"]=""
 operation_parameters_collection_type["createProjectPeriodAsync:::projectId"]=""
 operation_parameters_collection_type["createProjectPeriodAsync:::tenantId"]=""
 operation_parameters_collection_type["createProjectPeriodAsync:::ProjectPeriodCreateDto"]=""
-operation_parameters_collection_type["createProjectTaskAsync:::projectId"]=""
-operation_parameters_collection_type["createProjectTaskAsync:::tenantId"]=""
-operation_parameters_collection_type["createProjectTaskAsync:::ProjectTaskCreateDto"]=""
+operation_parameters_collection_type["createTaskForProjectAsync:::projectId"]=""
+operation_parameters_collection_type["createTaskForProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["createTaskForProjectAsync:::ProjectTaskCreateDto"]=""
 operation_parameters_collection_type["deleteProjectAsync:::projectId"]=""
 operation_parameters_collection_type["deleteProjectAsync:::tenantId"]=""
 operation_parameters_collection_type["deleteProjectPeriodAsync:::projectId"]=""
 operation_parameters_collection_type["deleteProjectPeriodAsync:::projectPeriodId"]=""
 operation_parameters_collection_type["deleteProjectPeriodAsync:::tenantId"]=""
-operation_parameters_collection_type["deleteProjectTaskAsync:::tenantId"]=""
-operation_parameters_collection_type["deleteProjectTaskAsync:::projectId"]=""
-operation_parameters_collection_type["deleteProjectTaskAsync:::projectTaskId"]=""
+operation_parameters_collection_type["deleteTaskForProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteTaskForProjectAsync:::projectId"]=""
+operation_parameters_collection_type["deleteTaskForProjectAsync:::projectTaskId"]=""
 operation_parameters_collection_type["getProjectByIdAsync:::projectId"]=""
 operation_parameters_collection_type["getProjectByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getProjectPeriodsAsync:::projectId"]=""
@@ -318,16 +551,27 @@ operation_parameters_collection_type["getProjectTaskCategoriesAsync:::projectId"
 operation_parameters_collection_type["getProjectTaskCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["getProjectTaskCategoriesCountAsync:::projectId"]=""
 operation_parameters_collection_type["getProjectTaskCategoriesCountAsync:::tenantId"]=""
-operation_parameters_collection_type["getProjectTasksAsync:::projectId"]=""
-operation_parameters_collection_type["getProjectTasksAsync:::tenantId"]=""
-operation_parameters_collection_type["getProjectTasksCountAsync:::projectId"]=""
-operation_parameters_collection_type["getProjectTasksCountAsync:::tenantId"]=""
-operation_parameters_collection_type["getProjectTimeLogsAsync:::projectId"]=""
-operation_parameters_collection_type["getProjectTimeLogsAsync:::tenantId"]=""
 operation_parameters_collection_type["getProjectTimeLogsCountAsync:::projectId"]=""
 operation_parameters_collection_type["getProjectTimeLogsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getProjectsByTenantIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getProjectsCountByTenantIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getTasksForProjectAsync:::projectId"]=""
+operation_parameters_collection_type["getTasksForProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["getTasksForProjectCountAsync:::projectId"]=""
+operation_parameters_collection_type["getTasksForProjectCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getTimeLogsForProjectAsync:::projectId"]=""
+operation_parameters_collection_type["getTimeLogsForProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["patchProjectAsync:::projectId"]=""
+operation_parameters_collection_type["patchProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["patchProjectAsync:::Operation"]=
+operation_parameters_collection_type["patchProjectPeriodAsync:::projectId"]=""
+operation_parameters_collection_type["patchProjectPeriodAsync:::projectPeriodId"]=""
+operation_parameters_collection_type["patchProjectPeriodAsync:::tenantId"]=""
+operation_parameters_collection_type["patchProjectPeriodAsync:::Operation"]=
+operation_parameters_collection_type["patchTaskForProjectAsync:::projectId"]=""
+operation_parameters_collection_type["patchTaskForProjectAsync:::projectTaskId"]=""
+operation_parameters_collection_type["patchTaskForProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTaskForProjectAsync:::Operation"]=
 operation_parameters_collection_type["updateProjectAsync:::projectId"]=""
 operation_parameters_collection_type["updateProjectAsync:::tenantId"]=""
 operation_parameters_collection_type["updateProjectAsync:::ProjectUpdateDto"]=""
@@ -335,10 +579,10 @@ operation_parameters_collection_type["updateProjectPeriodAsync:::projectId"]=""
 operation_parameters_collection_type["updateProjectPeriodAsync:::projectPeriodId"]=""
 operation_parameters_collection_type["updateProjectPeriodAsync:::tenantId"]=""
 operation_parameters_collection_type["updateProjectPeriodAsync:::ProjectPeriodUpdateDto"]=""
-operation_parameters_collection_type["updateProjectTaskAsync:::projectId"]=""
-operation_parameters_collection_type["updateProjectTaskAsync:::projectTaskId"]=""
-operation_parameters_collection_type["updateProjectTaskAsync:::tenantId"]=""
-operation_parameters_collection_type["updateProjectTaskAsync:::ProjectTaskUpdateDto"]=""
+operation_parameters_collection_type["updateTaskForProjectAsync:::projectId"]=""
+operation_parameters_collection_type["updateTaskForProjectAsync:::projectTaskId"]=""
+operation_parameters_collection_type["updateTaskForProjectAsync:::tenantId"]=""
+operation_parameters_collection_type["updateTaskForProjectAsync:::ProjectTaskUpdateDto"]=""
 operation_parameters_collection_type["countTenantTaskCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["createTaskCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["createTaskCategoryAsync:::TaskCategoryCreateDto"]=""
@@ -349,6 +593,9 @@ operation_parameters_collection_type["getTaskCategoryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getTaskCategoryTaskTypesAsync:::taskCategoryId"]=""
 operation_parameters_collection_type["getTaskCategoryTaskTypesAsync:::tenantId"]=""
 operation_parameters_collection_type["getTenantTaskCategoriesAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTaskCategoryAsync:::taskCategoryId"]=""
+operation_parameters_collection_type["patchTaskCategoryAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTaskCategoryAsync:::Operation"]=
 operation_parameters_collection_type["updateTaskCategoryAsync:::taskCategoryId"]=""
 operation_parameters_collection_type["updateTaskCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTaskCategoryAsync:::TaskCategoryUpdateDto"]=""
@@ -358,9 +605,68 @@ operation_parameters_collection_type["deleteTaskTypeAsync:::taskTypeId"]=""
 operation_parameters_collection_type["deleteTaskTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["getTaskTypeByIdAsync:::taskTypeId"]=""
 operation_parameters_collection_type["getTaskTypeByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTaskTypeAsync:::taskTypeId"]=""
+operation_parameters_collection_type["patchTaskTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchTaskTypeAsync:::Operation"]=
 operation_parameters_collection_type["updateTaskTypeAsync:::taskTypeId"]=""
 operation_parameters_collection_type["updateTaskTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTaskTypeAsync:::TaskTypeUpdateDto"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::tenantId"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::api-version"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::x-api-version"]=""
+operation_parameters_collection_type["requestProjectHoursApprovalAsync:::ProjectHoursApprovalCreateDto"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::approvalId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalApproverAsync:::ProjectHoursApprovalApproverUpdateDto"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::approvalId"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectHoursApprovalStatusAsync:::ProjectHoursApprovalStatusUpdateDto"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::tenantId"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::projectPeriodId"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::api-version"]=""
+operation_parameters_collection_type["countProjectPeriodTimeLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProjectTimeLogAsync:::ProjectTimeLogCreateDto"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::timeLogId"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["deleteProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::projectPeriodId"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectPeriodTimeLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::timeLogId"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::projectId"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::contactId"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsByResponsibleContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::contactId"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::tenantId"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::api-version"]=""
+operation_parameters_collection_type["getProjectTimeLogsCreatedByContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchProjectTimeLogAsync:::timeLogId"]=""
+operation_parameters_collection_type["patchProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["patchProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["patchProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchProjectTimeLogAsync:::Operation"]=
+operation_parameters_collection_type["updateProjectTimeLogAsync:::timeLogId"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::api-version"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProjectTimeLogAsync:::ProjectTimeLogUpdateDto"]=""
 
 
 ##
@@ -753,6 +1059,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -769,27 +1076,42 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[projectTasks]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createProjectTaskAsync${OFF};Create a project task
+  ${CYAN}deleteProjectTaskAsync${OFF};Delete a project task
+  ${CYAN}getProjectTaskByIdAsync${OFF};Get project task by ID
+  ${CYAN}getProjectTasksAsync${OFF};Get all project tasks
+  ${CYAN}getProjectTasksCountAsync${OFF};Get project tasks count
+  ${CYAN}patchProjectTaskAsync${OFF};Patch a project task
+  ${CYAN}updateProjectTaskAsync${OFF};Update a project task
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[projects]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createProjectAsync${OFF};Creates a new project
   ${CYAN}createProjectPeriodAsync${OFF};Creates a project period
-  ${CYAN}createProjectTaskAsync${OFF};Creates a project task
+  ${CYAN}createTaskForProjectAsync${OFF};Creates a project task
   ${CYAN}deleteProjectAsync${OFF};Deletes a project
   ${CYAN}deleteProjectPeriodAsync${OFF};Deletes a project period
-  ${CYAN}deleteProjectTaskAsync${OFF};Deletes a project task
+  ${CYAN}deleteTaskForProjectAsync${OFF};Deletes a project task
   ${CYAN}getProjectByIdAsync${OFF};Gets a project by ID
   ${CYAN}getProjectPeriodsAsync${OFF};Retrieves project periods
   ${CYAN}getProjectTaskCategoriesAsync${OFF};Retrieves project task categories
   ${CYAN}getProjectTaskCategoriesCountAsync${OFF};Counts project task categories
-  ${CYAN}getProjectTasksAsync${OFF};Retrieves project tasks
-  ${CYAN}getProjectTasksCountAsync${OFF};Counts project tasks
-  ${CYAN}getProjectTimeLogsAsync${OFF};Retrieves project time logs
   ${CYAN}getProjectTimeLogsCountAsync${OFF};Counts project time logs
   ${CYAN}getProjectsByTenantIdAsync${OFF};Retrieves all projects
   ${CYAN}getProjectsCountByTenantIdAsync${OFF};Counts projects
+  ${CYAN}getTasksForProjectAsync${OFF};Retrieves project tasks
+  ${CYAN}getTasksForProjectCountAsync${OFF};Counts project tasks
+  ${CYAN}getTimeLogsForProjectAsync${OFF};Retrieves project time logs
+  ${CYAN}patchProjectAsync${OFF};Patches a project
+  ${CYAN}patchProjectPeriodAsync${OFF};Patches a project period
+  ${CYAN}patchTaskForProjectAsync${OFF};Patches a project task
   ${CYAN}updateProjectAsync${OFF};Updates a project
   ${CYAN}updateProjectPeriodAsync${OFF};Updates a project period
-  ${CYAN}updateProjectTaskAsync${OFF};Updates a project task
+  ${CYAN}updateTaskForProjectAsync${OFF};Updates a project task
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -801,6 +1123,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getTaskCategoryByIdAsync${OFF};Gets a task category by ID
   ${CYAN}getTaskCategoryTaskTypesAsync${OFF};Retrieves task types for a category
   ${CYAN}getTenantTaskCategoriesAsync${OFF};Retrieves all task categories
+  ${CYAN}patchTaskCategoryAsync${OFF};Patches a task category
   ${CYAN}updateTaskCategoryAsync${OFF};Updates a task category
 EOF
 echo "  $ops" | column -t -s ';'
@@ -810,7 +1133,31 @@ read -r -d '' ops <<EOF
   ${CYAN}createTaskTypeAsync${OFF};Creates a new task type
   ${CYAN}deleteTaskTypeAsync${OFF};Deletes a task type
   ${CYAN}getTaskTypeByIdAsync${OFF};Gets a task type by ID
+  ${CYAN}patchTaskTypeAsync${OFF};Patches a task type
   ${CYAN}updateTaskTypeAsync${OFF};Updates a task type
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[timeLogApprovals]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}requestProjectHoursApprovalAsync${OFF};Request project hours approval
+  ${CYAN}updateProjectHoursApprovalApproverAsync${OFF};Update approval approver
+  ${CYAN}updateProjectHoursApprovalStatusAsync${OFF};Update approval status
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[timeLogs]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}countProjectPeriodTimeLogsAsync${OFF};Get the count of project period time logs
+  ${CYAN}createProjectTimeLogAsync${OFF};Create a new project time log
+  ${CYAN}deleteProjectTimeLogAsync${OFF};Delete a project time log
+  ${CYAN}getProjectPeriodTimeLogsAsync${OFF};Retrieve project period time logs
+  ${CYAN}getProjectTimeLogByIdAsync${OFF};Retrieve a project time log by ID
+  ${CYAN}getProjectTimeLogsAsync${OFF};Retrieve time logs for a project
+  ${CYAN}getProjectTimeLogsByResponsibleContactAsync${OFF};Retrieve time logs by responsible contact
+  ${CYAN}getProjectTimeLogsCreatedByContactAsync${OFF};Retrieve time logs created by a contact
+  ${CYAN}patchProjectTimeLogAsync${OFF};Patch a project time log
+  ${CYAN}updateProjectTimeLogAsync${OFF};Update a project time log
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -918,6 +1265,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1160,6 +1523,184 @@ print_versionGet_help() {
 }
 ##############################################################################
 #
+# Print help for createProjectTaskAsync operation
+#
+##############################################################################
+print_createProjectTaskAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createProjectTaskAsync - Create a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new project task." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteProjectTaskAsync operation
+#
+##############################################################################
+print_deleteProjectTaskAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteProjectTaskAsync - Delete a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a project task." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectTaskId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectTaskId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTaskByIdAsync operation
+#
+##############################################################################
+print_getProjectTaskByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTaskByIdAsync - Get project task by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific project task." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectTaskId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectTaskId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTasksAsync operation
+#
+##############################################################################
+print_getProjectTasksAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTasksAsync - Get all project tasks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all project tasks for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTasksCountAsync operation
+#
+##############################################################################
+print_getProjectTasksCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTasksCountAsync - Get project tasks count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of project tasks for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchProjectTaskAsync operation
+#
+##############################################################################
+print_patchProjectTaskAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchProjectTaskAsync - Patch a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing project task." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectTaskId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectTaskId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProjectTaskAsync operation
+#
+##############################################################################
+print_updateProjectTaskAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProjectTaskAsync - Update a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing project task." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectTaskId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectTaskId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createProjectAsync operation
 #
 ##############################################################################
@@ -1211,12 +1752,12 @@ print_createProjectPeriodAsync_help() {
 }
 ##############################################################################
 #
-# Print help for createProjectTaskAsync operation
+# Print help for createTaskForProjectAsync operation
 #
 ##############################################################################
-print_createProjectTaskAsync_help() {
+print_createTaskForProjectAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createProjectTaskAsync - Creates a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createTaskForProjectAsync - Creates a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Creates a new task for the specified project." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1286,12 +1827,12 @@ print_deleteProjectPeriodAsync_help() {
 }
 ##############################################################################
 #
-# Print help for deleteProjectTaskAsync operation
+# Print help for deleteTaskForProjectAsync operation
 #
 ##############################################################################
-print_deleteProjectTaskAsync_help() {
+print_deleteTaskForProjectAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteProjectTaskAsync - Deletes a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteTaskForProjectAsync - Deletes a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Deletes the specified task from a project." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1407,78 +1948,6 @@ print_getProjectTaskCategoriesCountAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getProjectTasksAsync operation
-#
-##############################################################################
-print_getProjectTasksAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getProjectTasksAsync - Retrieves project tasks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Gets all tasks for a specific project with OData support." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getProjectTasksCountAsync operation
-#
-##############################################################################
-print_getProjectTasksCountAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getProjectTasksCountAsync - Counts project tasks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Gets the count of tasks for a specific project." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getProjectTimeLogsAsync operation
-#
-##############################################################################
-print_getProjectTimeLogsAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getProjectTimeLogsAsync - Retrieves project time logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Gets all time log entries for a specific project with OData support." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for getProjectTimeLogsCountAsync operation
 #
 ##############################################################################
@@ -1549,6 +2018,158 @@ print_getProjectsCountByTenantIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getTasksForProjectAsync operation
+#
+##############################################################################
+print_getTasksForProjectAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTasksForProjectAsync - Retrieves project tasks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all tasks for a specific project with OData support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTasksForProjectCountAsync operation
+#
+##############################################################################
+print_getTasksForProjectCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTasksForProjectCountAsync - Counts project tasks${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of tasks for a specific project." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTimeLogsForProjectAsync operation
+#
+##############################################################################
+print_getTimeLogsForProjectAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTimeLogsForProjectAsync - Retrieves project time logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all time log entries for a specific project with OData support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchProjectAsync operation
+#
+##############################################################################
+print_patchProjectAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchProjectAsync - Patches a project${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified project." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchProjectPeriodAsync operation
+#
+##############################################################################
+print_patchProjectPeriodAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchProjectPeriodAsync - Patches a project period${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified period for a project." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectPeriodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchTaskForProjectAsync operation
+#
+##############################################################################
+print_patchTaskForProjectAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTaskForProjectAsync - Patches a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified task in a project." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectTaskId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectTaskId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateProjectAsync operation
 #
 ##############################################################################
@@ -1602,12 +2223,12 @@ print_updateProjectPeriodAsync_help() {
 }
 ##############################################################################
 #
-# Print help for updateProjectTaskAsync operation
+# Print help for updateTaskForProjectAsync operation
 #
 ##############################################################################
-print_updateProjectTaskAsync_help() {
+print_updateTaskForProjectAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateProjectTaskAsync - Updates a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateTaskForProjectAsync - Updates a project task${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Updates the specified task in a project." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -1772,6 +2393,32 @@ print_getTenantTaskCategoriesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchTaskCategoryAsync operation
+#
+##############################################################################
+print_patchTaskCategoryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTaskCategoryAsync - Patches a task category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified task category." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}taskCategoryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: taskCategoryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTaskCategoryAsync operation
 #
 ##############################################################################
@@ -1871,6 +2518,32 @@ print_getTaskTypeByIdAsync_help() {
 }
 ##############################################################################
 #
+# Print help for patchTaskTypeAsync operation
+#
+##############################################################################
+print_patchTaskTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchTaskTypeAsync - Patches a task type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates the specified task type." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}taskTypeId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: taskTypeId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateTaskTypeAsync operation
 #
 ##############################################################################
@@ -1894,6 +2567,371 @@ print_updateTaskTypeAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for requestProjectHoursApprovalAsync operation
+#
+##############################################################################
+print_requestProjectHoursApprovalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}requestProjectHoursApprovalAsync - Request project hours approval${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new project hours approval request." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProjectHoursApprovalApproverAsync operation
+#
+##############################################################################
+print_updateProjectHoursApprovalApproverAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProjectHoursApprovalApproverAsync - Update approval approver${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the approver of an existing project hours approval." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}approvalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: approvalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProjectHoursApprovalStatusAsync operation
+#
+##############################################################################
+print_updateProjectHoursApprovalStatusAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProjectHoursApprovalStatusAsync - Update approval status${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the status of an existing project hours approval." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}approvalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: approvalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for countProjectPeriodTimeLogsAsync operation
+#
+##############################################################################
+print_countProjectPeriodTimeLogsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}countProjectPeriodTimeLogsAsync - Get the count of project period time logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the total count of time logs for a specific project period with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: projectPeriodId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createProjectTimeLogAsync operation
+#
+##############################################################################
+print_createProjectTimeLogAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createProjectTimeLogAsync - Create a new project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new project time log entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteProjectTimeLogAsync operation
+#
+##############################################################################
+print_deleteProjectTimeLogAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteProjectTimeLogAsync - Delete a project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a project time log entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}timeLogId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeLogId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectPeriodTimeLogsAsync operation
+#
+##############################################################################
+print_getProjectPeriodTimeLogsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectPeriodTimeLogsAsync - Retrieve project period time logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of time logs for a specific project period with OData query support." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}projectPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: projectPeriodId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogByIdAsync operation
+#
+##############################################################################
+print_getProjectTimeLogByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogByIdAsync - Retrieve a project time log by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single project time log by its unique identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}timeLogId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeLogId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogsAsync operation
+#
+##############################################################################
+print_getProjectTimeLogsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogsAsync - Retrieve time logs for a project${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all time logs associated with the specified project." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}projectId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: projectId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogsByResponsibleContactAsync operation
+#
+##############################################################################
+print_getProjectTimeLogsByResponsibleContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogsByResponsibleContactAsync - Retrieve time logs by responsible contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves time logs where the specified contact is the responsible party." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: contactId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProjectTimeLogsCreatedByContactAsync operation
+#
+##############################################################################
+print_getProjectTimeLogsCreatedByContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProjectTimeLogsCreatedByContactAsync - Retrieve time logs created by a contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves time logs that were created by the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: contactId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchProjectTimeLogAsync operation
+#
+##############################################################################
+print_patchProjectTimeLogAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchProjectTimeLogAsync - Patch a project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing project time log entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}timeLogId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeLogId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProjectTimeLogAsync operation
+#
+##############################################################################
+print_updateProjectTimeLogAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProjectTimeLogAsync - Update a project time log${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing project time log entry." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}timeLogId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: timeLogId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
 
@@ -2041,6 +3079,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -2850,6 +3924,378 @@ call_versionGet() {
 
 ##############################################################################
 #
+# Call createProjectTaskAsync operation
+#
+##############################################################################
+call_createProjectTaskAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteProjectTaskAsync operation
+#
+##############################################################################
+call_deleteProjectTaskAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectTaskId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks/{projectTaskId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTaskByIdAsync operation
+#
+##############################################################################
+call_getProjectTaskByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectTaskId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks/{projectTaskId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTasksAsync operation
+#
+##############################################################################
+call_getProjectTasksAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTasksCountAsync operation
+#
+##############################################################################
+call_getProjectTasksCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchProjectTaskAsync operation
+#
+##############################################################################
+call_patchProjectTaskAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectTaskId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks/{projectTaskId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProjectTaskAsync operation
+#
+##############################################################################
+call_updateProjectTaskAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectTaskId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/ProjectTasks/{projectTaskId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call createProjectAsync operation
 #
 ##############################################################################
@@ -3002,10 +4448,10 @@ call_createProjectPeriodAsync() {
 
 ##############################################################################
 #
-# Call createProjectTaskAsync operation
+# Call createTaskForProjectAsync operation
 #
 ##############################################################################
-call_createProjectTaskAsync() {
+call_createTaskForProjectAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(projectId)
@@ -3150,10 +4596,10 @@ call_deleteProjectPeriodAsync() {
 
 ##############################################################################
 #
-# Call deleteProjectTaskAsync operation
+# Call deleteTaskForProjectAsync operation
 #
 ##############################################################################
-call_deleteProjectTaskAsync() {
+call_deleteTaskForProjectAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(projectId projectTaskId)
@@ -3330,114 +4776,6 @@ call_getProjectTaskCategoriesCountAsync() {
 
 ##############################################################################
 #
-# Call getProjectTasksAsync operation
-#
-##############################################################################
-call_getProjectTasksAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(projectId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/Tasks" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getProjectTasksCountAsync operation
-#
-##############################################################################
-call_getProjectTasksCountAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(projectId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/Tasks/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getProjectTimeLogsAsync operation
-#
-##############################################################################
-call_getProjectTimeLogsAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(projectId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/TimeLogs" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call getProjectTimeLogsCountAsync operation
 #
 ##############################################################################
@@ -3541,6 +4879,342 @@ call_getProjectsCountByTenantIdAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTasksForProjectAsync operation
+#
+##############################################################################
+call_getTasksForProjectAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/Tasks" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTasksForProjectCountAsync operation
+#
+##############################################################################
+call_getTasksForProjectCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/Tasks/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTimeLogsForProjectAsync operation
+#
+##############################################################################
+call_getTimeLogsForProjectAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/TimeLogs" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchProjectAsync operation
+#
+##############################################################################
+call_patchProjectAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchProjectPeriodAsync operation
+#
+##############################################################################
+call_patchProjectPeriodAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId projectPeriodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchTaskForProjectAsync operation
+#
+##############################################################################
+call_patchTaskForProjectAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId projectTaskId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3698,10 +5372,10 @@ call_updateProjectPeriodAsync() {
 
 ##############################################################################
 #
-# Call updateProjectTaskAsync operation
+# Call updateTaskForProjectAsync operation
 #
 ##############################################################################
-call_updateProjectTaskAsync() {
+call_updateTaskForProjectAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(projectId projectTaskId)
@@ -4030,6 +5704,82 @@ call_getTenantTaskCategoriesAsync() {
 
 ##############################################################################
 #
+# Call patchTaskCategoryAsync operation
+#
+##############################################################################
+call_patchTaskCategoryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(taskCategoryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TaskCategories/{taskCategoryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTaskCategoryAsync operation
 #
 ##############################################################################
@@ -4254,6 +6004,82 @@ call_getTaskTypeByIdAsync() {
 
 ##############################################################################
 #
+# Call patchTaskTypeAsync operation
+#
+##############################################################################
+call_patchTaskTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(taskTypeId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TaskTypes/{taskTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateTaskTypeAsync operation
 #
 ##############################################################################
@@ -4267,6 +6093,714 @@ call_updateTaskTypeAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/ProjectsService/TaskTypes/{taskTypeId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call requestProjectHoursApprovalAsync operation
+#
+##############################################################################
+call_requestProjectHoursApprovalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogApprovals" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProjectHoursApprovalApproverAsync operation
+#
+##############################################################################
+call_updateProjectHoursApprovalApproverAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(approvalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogApprovals/{approvalId}/Approver" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProjectHoursApprovalStatusAsync operation
+#
+##############################################################################
+call_updateProjectHoursApprovalStatusAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(approvalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogApprovals/{approvalId}/Status" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call countProjectPeriodTimeLogsAsync operation
+#
+##############################################################################
+call_countProjectPeriodTimeLogsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId projectPeriodId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createProjectTimeLogAsync operation
+#
+##############################################################################
+call_createProjectTimeLogAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteProjectTimeLogAsync operation
+#
+##############################################################################
+call_deleteProjectTimeLogAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(timeLogId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectPeriodTimeLogsAsync operation
+#
+##############################################################################
+call_getProjectPeriodTimeLogsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId projectPeriodId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogByIdAsync operation
+#
+##############################################################################
+call_getProjectTimeLogByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(timeLogId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogsAsync operation
+#
+##############################################################################
+call_getProjectTimeLogsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(projectId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/ForProject/{projectId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogsByResponsibleContactAsync operation
+#
+##############################################################################
+call_getProjectTimeLogsByResponsibleContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(contactId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/ByResponsibleContact" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProjectTimeLogsCreatedByContactAsync operation
+#
+##############################################################################
+call_getProjectTimeLogsCreatedByContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(contactId tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/CreatedByContact" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchProjectTimeLogAsync operation
+#
+##############################################################################
+call_patchProjectTimeLogAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(timeLogId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProjectTimeLogAsync operation
+#
+##############################################################################
+call_updateProjectTimeLogAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(timeLogId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ProjectsService/TimeLogs/{timeLogId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4437,6 +6971,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -4476,14 +7013,35 @@ case $key in
     versionGet)
     operation="versionGet"
     ;;
+    createProjectTaskAsync)
+    operation="createProjectTaskAsync"
+    ;;
+    deleteProjectTaskAsync)
+    operation="deleteProjectTaskAsync"
+    ;;
+    getProjectTaskByIdAsync)
+    operation="getProjectTaskByIdAsync"
+    ;;
+    getProjectTasksAsync)
+    operation="getProjectTasksAsync"
+    ;;
+    getProjectTasksCountAsync)
+    operation="getProjectTasksCountAsync"
+    ;;
+    patchProjectTaskAsync)
+    operation="patchProjectTaskAsync"
+    ;;
+    updateProjectTaskAsync)
+    operation="updateProjectTaskAsync"
+    ;;
     createProjectAsync)
     operation="createProjectAsync"
     ;;
     createProjectPeriodAsync)
     operation="createProjectPeriodAsync"
     ;;
-    createProjectTaskAsync)
-    operation="createProjectTaskAsync"
+    createTaskForProjectAsync)
+    operation="createTaskForProjectAsync"
     ;;
     deleteProjectAsync)
     operation="deleteProjectAsync"
@@ -4491,8 +7049,8 @@ case $key in
     deleteProjectPeriodAsync)
     operation="deleteProjectPeriodAsync"
     ;;
-    deleteProjectTaskAsync)
-    operation="deleteProjectTaskAsync"
+    deleteTaskForProjectAsync)
+    operation="deleteTaskForProjectAsync"
     ;;
     getProjectByIdAsync)
     operation="getProjectByIdAsync"
@@ -4506,15 +7064,6 @@ case $key in
     getProjectTaskCategoriesCountAsync)
     operation="getProjectTaskCategoriesCountAsync"
     ;;
-    getProjectTasksAsync)
-    operation="getProjectTasksAsync"
-    ;;
-    getProjectTasksCountAsync)
-    operation="getProjectTasksCountAsync"
-    ;;
-    getProjectTimeLogsAsync)
-    operation="getProjectTimeLogsAsync"
-    ;;
     getProjectTimeLogsCountAsync)
     operation="getProjectTimeLogsCountAsync"
     ;;
@@ -4524,14 +7073,32 @@ case $key in
     getProjectsCountByTenantIdAsync)
     operation="getProjectsCountByTenantIdAsync"
     ;;
+    getTasksForProjectAsync)
+    operation="getTasksForProjectAsync"
+    ;;
+    getTasksForProjectCountAsync)
+    operation="getTasksForProjectCountAsync"
+    ;;
+    getTimeLogsForProjectAsync)
+    operation="getTimeLogsForProjectAsync"
+    ;;
+    patchProjectAsync)
+    operation="patchProjectAsync"
+    ;;
+    patchProjectPeriodAsync)
+    operation="patchProjectPeriodAsync"
+    ;;
+    patchTaskForProjectAsync)
+    operation="patchTaskForProjectAsync"
+    ;;
     updateProjectAsync)
     operation="updateProjectAsync"
     ;;
     updateProjectPeriodAsync)
     operation="updateProjectPeriodAsync"
     ;;
-    updateProjectTaskAsync)
-    operation="updateProjectTaskAsync"
+    updateTaskForProjectAsync)
+    operation="updateTaskForProjectAsync"
     ;;
     countTenantTaskCategoriesAsync)
     operation="countTenantTaskCategoriesAsync"
@@ -4551,6 +7118,9 @@ case $key in
     getTenantTaskCategoriesAsync)
     operation="getTenantTaskCategoriesAsync"
     ;;
+    patchTaskCategoryAsync)
+    operation="patchTaskCategoryAsync"
+    ;;
     updateTaskCategoryAsync)
     operation="updateTaskCategoryAsync"
     ;;
@@ -4563,8 +7133,50 @@ case $key in
     getTaskTypeByIdAsync)
     operation="getTaskTypeByIdAsync"
     ;;
+    patchTaskTypeAsync)
+    operation="patchTaskTypeAsync"
+    ;;
     updateTaskTypeAsync)
     operation="updateTaskTypeAsync"
+    ;;
+    requestProjectHoursApprovalAsync)
+    operation="requestProjectHoursApprovalAsync"
+    ;;
+    updateProjectHoursApprovalApproverAsync)
+    operation="updateProjectHoursApprovalApproverAsync"
+    ;;
+    updateProjectHoursApprovalStatusAsync)
+    operation="updateProjectHoursApprovalStatusAsync"
+    ;;
+    countProjectPeriodTimeLogsAsync)
+    operation="countProjectPeriodTimeLogsAsync"
+    ;;
+    createProjectTimeLogAsync)
+    operation="createProjectTimeLogAsync"
+    ;;
+    deleteProjectTimeLogAsync)
+    operation="deleteProjectTimeLogAsync"
+    ;;
+    getProjectPeriodTimeLogsAsync)
+    operation="getProjectPeriodTimeLogsAsync"
+    ;;
+    getProjectTimeLogByIdAsync)
+    operation="getProjectTimeLogByIdAsync"
+    ;;
+    getProjectTimeLogsAsync)
+    operation="getProjectTimeLogsAsync"
+    ;;
+    getProjectTimeLogsByResponsibleContactAsync)
+    operation="getProjectTimeLogsByResponsibleContactAsync"
+    ;;
+    getProjectTimeLogsCreatedByContactAsync)
+    operation="getProjectTimeLogsCreatedByContactAsync"
+    ;;
+    patchProjectTimeLogAsync)
+    operation="patchProjectTimeLogAsync"
+    ;;
+    updateProjectTimeLogAsync)
+    operation="updateProjectTimeLogAsync"
     ;;
     *==*)
     # Parse body arguments and convert them into top level
@@ -4665,6 +7277,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -4704,14 +7319,35 @@ case $operation in
     versionGet)
     call_versionGet
     ;;
+    createProjectTaskAsync)
+    call_createProjectTaskAsync
+    ;;
+    deleteProjectTaskAsync)
+    call_deleteProjectTaskAsync
+    ;;
+    getProjectTaskByIdAsync)
+    call_getProjectTaskByIdAsync
+    ;;
+    getProjectTasksAsync)
+    call_getProjectTasksAsync
+    ;;
+    getProjectTasksCountAsync)
+    call_getProjectTasksCountAsync
+    ;;
+    patchProjectTaskAsync)
+    call_patchProjectTaskAsync
+    ;;
+    updateProjectTaskAsync)
+    call_updateProjectTaskAsync
+    ;;
     createProjectAsync)
     call_createProjectAsync
     ;;
     createProjectPeriodAsync)
     call_createProjectPeriodAsync
     ;;
-    createProjectTaskAsync)
-    call_createProjectTaskAsync
+    createTaskForProjectAsync)
+    call_createTaskForProjectAsync
     ;;
     deleteProjectAsync)
     call_deleteProjectAsync
@@ -4719,8 +7355,8 @@ case $operation in
     deleteProjectPeriodAsync)
     call_deleteProjectPeriodAsync
     ;;
-    deleteProjectTaskAsync)
-    call_deleteProjectTaskAsync
+    deleteTaskForProjectAsync)
+    call_deleteTaskForProjectAsync
     ;;
     getProjectByIdAsync)
     call_getProjectByIdAsync
@@ -4734,15 +7370,6 @@ case $operation in
     getProjectTaskCategoriesCountAsync)
     call_getProjectTaskCategoriesCountAsync
     ;;
-    getProjectTasksAsync)
-    call_getProjectTasksAsync
-    ;;
-    getProjectTasksCountAsync)
-    call_getProjectTasksCountAsync
-    ;;
-    getProjectTimeLogsAsync)
-    call_getProjectTimeLogsAsync
-    ;;
     getProjectTimeLogsCountAsync)
     call_getProjectTimeLogsCountAsync
     ;;
@@ -4752,14 +7379,32 @@ case $operation in
     getProjectsCountByTenantIdAsync)
     call_getProjectsCountByTenantIdAsync
     ;;
+    getTasksForProjectAsync)
+    call_getTasksForProjectAsync
+    ;;
+    getTasksForProjectCountAsync)
+    call_getTasksForProjectCountAsync
+    ;;
+    getTimeLogsForProjectAsync)
+    call_getTimeLogsForProjectAsync
+    ;;
+    patchProjectAsync)
+    call_patchProjectAsync
+    ;;
+    patchProjectPeriodAsync)
+    call_patchProjectPeriodAsync
+    ;;
+    patchTaskForProjectAsync)
+    call_patchTaskForProjectAsync
+    ;;
     updateProjectAsync)
     call_updateProjectAsync
     ;;
     updateProjectPeriodAsync)
     call_updateProjectPeriodAsync
     ;;
-    updateProjectTaskAsync)
-    call_updateProjectTaskAsync
+    updateTaskForProjectAsync)
+    call_updateTaskForProjectAsync
     ;;
     countTenantTaskCategoriesAsync)
     call_countTenantTaskCategoriesAsync
@@ -4779,6 +7424,9 @@ case $operation in
     getTenantTaskCategoriesAsync)
     call_getTenantTaskCategoriesAsync
     ;;
+    patchTaskCategoryAsync)
+    call_patchTaskCategoryAsync
+    ;;
     updateTaskCategoryAsync)
     call_updateTaskCategoryAsync
     ;;
@@ -4791,8 +7439,50 @@ case $operation in
     getTaskTypeByIdAsync)
     call_getTaskTypeByIdAsync
     ;;
+    patchTaskTypeAsync)
+    call_patchTaskTypeAsync
+    ;;
     updateTaskTypeAsync)
     call_updateTaskTypeAsync
+    ;;
+    requestProjectHoursApprovalAsync)
+    call_requestProjectHoursApprovalAsync
+    ;;
+    updateProjectHoursApprovalApproverAsync)
+    call_updateProjectHoursApprovalApproverAsync
+    ;;
+    updateProjectHoursApprovalStatusAsync)
+    call_updateProjectHoursApprovalStatusAsync
+    ;;
+    countProjectPeriodTimeLogsAsync)
+    call_countProjectPeriodTimeLogsAsync
+    ;;
+    createProjectTimeLogAsync)
+    call_createProjectTimeLogAsync
+    ;;
+    deleteProjectTimeLogAsync)
+    call_deleteProjectTimeLogAsync
+    ;;
+    getProjectPeriodTimeLogsAsync)
+    call_getProjectPeriodTimeLogsAsync
+    ;;
+    getProjectTimeLogByIdAsync)
+    call_getProjectTimeLogByIdAsync
+    ;;
+    getProjectTimeLogsAsync)
+    call_getProjectTimeLogsAsync
+    ;;
+    getProjectTimeLogsByResponsibleContactAsync)
+    call_getProjectTimeLogsByResponsibleContactAsync
+    ;;
+    getProjectTimeLogsCreatedByContactAsync)
+    call_getProjectTimeLogsCreatedByContactAsync
+    ;;
+    patchProjectTimeLogAsync)
+    call_patchProjectTimeLogAsync
+    ;;
+    updateProjectTimeLogAsync)
+    call_updateProjectTimeLogAsync
     ;;
     *)
     ERROR_MSG="ERROR: Unknown operation: $operation"

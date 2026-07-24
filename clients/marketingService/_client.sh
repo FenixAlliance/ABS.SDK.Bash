@@ -319,6 +319,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -355,7 +356,12 @@ case $state in
             "getMarketingListODataAsync[Get marketing lists]" \
             "getMarketingListsCountAsync[Get marketing lists count]" \
             "patchMarketingListAsync[Patch a marketing list]" \
-            "updateMarketingListAsync[Update a marketing list]"             "getNewsletterSubscriptionsCountAsync[Get newsletter subscriptions count]"             "createNewsletterAsync[Create a newsletter]" \
+            "updateMarketingListAsync[Update a marketing list]"             "createNewsletterSubscriptionAsync[Create a newsletter subscription]" \
+            "deleteNewsletterSubscriptionAsync[Delete a newsletter subscription]" \
+            "getNewsletterSubscriptionByIdAsync[Get newsletter subscription by ID]" \
+            "getNewsletterSubscriptionsAsync[Get newsletter subscriptions]" \
+            "getNewsletterSubscriptionsCountAsync[Get newsletter subscriptions count]" \
+            "updateNewsletterSubscriptionAsync[Update a newsletter subscription]"             "createNewsletterAsync[Create a newsletter]" \
             "deleteNewsletterAsync[Delete a newsletter]" \
             "getNewsletterDetailsAsync[Get newsletter by ID]" \
             "getNewsletterODataAsync[Get newsletters]" \
@@ -604,6 +610,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -959,10 +972,58 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createNewsletterSubscriptionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteNewsletterSubscriptionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "newsletterSubscriptionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNewsletterSubscriptionByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "newsletterSubscriptionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNewsletterSubscriptionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getNewsletterSubscriptionsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateNewsletterSubscriptionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "newsletterSubscriptionId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

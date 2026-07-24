@@ -28,14 +28,14 @@ docs/ExtendedUserDtoListEnvelope.md
 docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
+docs/IOpenApiContact.md
+docs/IOpenApiDefinitionSpec.md
+docs/IOpenApiEndpoint.md
+docs/IOpenApiLicense.md
 docs/IPLookupDto.md
 docs/IPLookupDtoEnvelope.md
 docs/IPLookupDtoListEnvelope.md
 docs/IPLookupsApi.md
-docs/ISwaggerContact.md
-docs/ISwaggerEndpoint.md
-docs/ISwaggerLicense.md
-docs/ISwaggerSpec.md
 docs/IValidationFailure.md
 docs/IValidationFailureListEnvelope.md
 docs/InfoRequest.md
@@ -45,8 +45,6 @@ docs/LicenseValidationRequest.md
 docs/LicensingApi.md
 docs/LoginRequest.md
 docs/MigrationsApi.md
-docs/Module.md
-docs/ModuleListEnvelope.md
 docs/ModulesApi.md
 docs/ObjectEmailDispatchRequest.md
 docs/Operation.md
@@ -71,6 +69,8 @@ docs/SuiteLicenseAssignmentDtoListEnvelope.md
 docs/SuiteLicenseDto.md
 docs/SuiteLicenseDtoEnvelope.md
 docs/SuiteLicenseDtoListEnvelope.md
+docs/SuiteModule.md
+docs/SuiteModuleListEnvelope.md
 docs/SystemOverviewDto.md
 docs/SystemOverviewDtoEnvelope.md
 docs/TenantCreateDto.md

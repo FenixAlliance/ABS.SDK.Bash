@@ -87,6 +87,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -116,11 +117,11 @@ _()
     operation_parameters["deleteBlockchainAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["deleteBlockchainBlockAsync"]="blockchainId= blockId= tenantId= api-version= x-api-version: "
     operation_parameters["getBlockchainBlockByIdAsync"]="blockchainId= blockId= tenantId= api-version= x-api-version: "
-    operation_parameters["getBlockchainBlocksAsync"]="blockchainId= tenantId= oDataQueryOptions= api-version= x-api-version: "
-    operation_parameters["getBlockchainBlocksCountAsync"]="blockchainId= tenantId= oDataQueryOptions= api-version= x-api-version: "
+    operation_parameters["getBlockchainBlocksAsync"]="blockchainId= tenantId= api-version= x-api-version: "
+    operation_parameters["getBlockchainBlocksCountAsync"]="blockchainId= tenantId= api-version= x-api-version: "
     operation_parameters["getBlockchainByIdAsync"]="id= tenantId= api-version= x-api-version: "
-    operation_parameters["getBlockchainsAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
-    operation_parameters["getBlockchainsCountAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
+    operation_parameters["getBlockchainsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getBlockchainsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchBlockchainAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["patchBlockchainBlockAsync"]="blockchainId= blockId= tenantId= api-version= x-api-version: "
     operation_parameters["updateBlockchainAsync"]="id= tenantId= api-version= x-api-version: "
@@ -129,6 +130,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -145,8 +147,8 @@ _()
     operation_parameters["createNonFungibleTokenAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteNonFungibleTokenAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["getNonFungibleTokenByIdAsync"]="id= tenantId= api-version= x-api-version: "
-    operation_parameters["getNonFungibleTokensAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
-    operation_parameters["getNonFungibleTokensCountAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
+    operation_parameters["getNonFungibleTokensAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getNonFungibleTokensCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchNonFungibleTokenAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["updateNonFungibleTokenAsync"]="id= tenantId= api-version= x-api-version: "
 

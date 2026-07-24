@@ -215,7 +215,7 @@ Get blocks for a blockchain
 ### Example
 
 ```bash
- getBlockchainBlocksAsync  tenantId=value blockchainId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getBlockchainBlocksAsync  tenantId=value blockchainId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -225,7 +225,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **blockchainId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**BlockchainBlockDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -252,7 +251,7 @@ Get block count for a blockchain
 ### Example
 
 ```bash
- getBlockchainBlocksCountAsync  tenantId=value blockchainId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getBlockchainBlocksCountAsync  tenantId=value blockchainId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -262,7 +261,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **blockchainId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**BlockchainBlockDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -329,7 +327,7 @@ Retrieves all blockchains for the specified tenant.
 ### Example
 
 ```bash
- getBlockchainsAsync  tenantId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getBlockchainsAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -338,7 +336,6 @@ Retrieves all blockchains for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**BlockchainDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -367,7 +364,7 @@ Returns the count of blockchains for the specified tenant.
 ### Example
 
 ```bash
- getBlockchainsCountAsync  tenantId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getBlockchainsCountAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -376,7 +373,6 @@ Returns the count of blockchains for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**BlockchainDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

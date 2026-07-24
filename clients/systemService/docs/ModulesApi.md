@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ModuleListEnvelope**](ModuleListEnvelope.md)
+[**SuiteModuleListEnvelope**](SuiteModuleListEnvelope.md)
 
 ### Authorization
 

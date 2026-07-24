@@ -118,6 +118,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -161,7 +162,7 @@ _()
     operations["unbindWebPortalDomainAsync"]=1
     operations["updateWebPortalAsync"]=1
     operations["updateWebPortalSettingsAsync"]=1
-    operations["getLatestCurrencyRatesModelAsync"]=1
+    operations["updateThemesAsync"]=1
     operations["countWebComponentsAsync"]=1
     operations["createWebComponentAsync"]=1
     operations["deleteWebComponentAsync"]=1
@@ -271,6 +272,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -314,7 +316,7 @@ _()
     operation_parameters["unbindWebPortalDomainAsync"]="portalId= businessDomainId= tenantId= api-version= x-api-version: "
     operation_parameters["updateWebPortalAsync"]="portalId= tenantId= api-version= x-api-version: "
     operation_parameters["updateWebPortalSettingsAsync"]="portalId= tenantId= api-version= x-api-version: "
-    operation_parameters["getLatestCurrencyRatesModelAsync"]="api-version= x-api-version: "
+    operation_parameters["updateThemesAsync"]="api-version= x-api-version: "
     operation_parameters["countWebComponentsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createWebComponentAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteWebComponentAsync"]="webComponentId= tenantId= api-version= x-api-version: "
@@ -367,8 +369,8 @@ _()
     operation_parameters["createWebsiteThemeAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteWebsiteThemeAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["getWebsiteThemeByIdAsync"]="id= tenantId= api-version= x-api-version: "
-    operation_parameters["getWebsiteThemesAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
-    operation_parameters["getWebsiteThemesCountAsync"]="tenantId= oDataQueryOptions= api-version= x-api-version: "
+    operation_parameters["getWebsiteThemesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getWebsiteThemesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchWebsiteThemeAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["updateWebsiteThemeAsync"]="id= tenantId= api-version= x-api-version: "
 

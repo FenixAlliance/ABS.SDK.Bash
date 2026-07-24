@@ -25,7 +25,6 @@ docs/AccountTypeDtoEnvelope.md
 docs/AccountTypeDtoListEnvelope.md
 docs/AccountTypeUpdateDto.md
 docs/AccountUpdateDto.md
-docs/AccountingEntriesApi.md
 docs/AccountingEntryCreateDto.md
 docs/AccountingEntryDto.md
 docs/AccountingEntryDtoEnvelope.md
@@ -37,6 +36,7 @@ docs/AccountingPeriodDtoEnvelope.md
 docs/AccountingPeriodDtoListEnvelope.md
 docs/AccountingPeriodUpdateDto.md
 docs/AccountingPeriodsApi.md
+docs/AccountingSummaryApi.md
 docs/AccountsApi.md
 docs/AppliedItemTaxRecordCreateDto.md
 docs/AppliedItemTaxRecordDto.md
@@ -208,9 +208,9 @@ docs/JournalCreateDto.md
 docs/JournalDto.md
 docs/JournalDtoEnvelope.md
 docs/JournalDtoIReadOnlyListEnvelope.md
-docs/JournalEntriesApi.md
 docs/JournalEntryCreateDto.md
 docs/JournalEntryDto.md
+docs/JournalEntryDtoEnvelope.md
 docs/JournalEntryDtoIReadOnlyListEnvelope.md
 docs/JournalEntryUpdateDto.md
 docs/JournalTypeCreateDto.md
@@ -263,8 +263,10 @@ docs/ReceiptUpdateDto.md
 docs/ReceiptsApi.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
+docs/ReportsApi.md
 docs/ResendConfirmationEmailRequest.md
 docs/ResetPasswordRequest.md
+docs/ReverseJournalEntryRequest.md
 docs/SeedChartOfAccountsRequest.md
 docs/ShareClassCreateDto.md
 docs/ShareClassDto.md
@@ -316,6 +318,9 @@ docs/TransactionDtoEnvelope.md
 docs/TransactionDtoListEnvelope.md
 docs/TransactionUpdateDto.md
 docs/TransactionsApi.md
+docs/TrialBalanceDto.md
+docs/TrialBalanceDtoEnvelope.md
+docs/TrialBalanceRowDto.md
 docs/TwoFactorRequest.md
 docs/TwoFactorResponse.md
 docs/UpdateLedgerDto.md

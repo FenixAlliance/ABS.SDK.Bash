@@ -93,6 +93,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -110,10 +111,10 @@ _()
     operations["getSystemIPLookupById"]=1
     operations["getSystemIPLookups"]=1
     operations["getSystemIPLookupsCount"]=1
+    operations["getAttributesForLicenseAsync"]=1
+    operations["getFeaturesForLicenseAsync"]=1
     operations["getLicenseAssignmentsAsync"]=1
-    operations["getLicenseAttributesAsync"]=1
     operations["getLicenseByIdAsync"]=1
-    operations["getLicenseFeaturesAsync"]=1
     operations["getLicenseRecordsQuotaAsync"]=1
     operations["getLicensesAsync"]=1
     operations["redeemLicenseAsync"]=1
@@ -204,6 +205,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -221,10 +223,10 @@ _()
     operation_parameters["getSystemIPLookupById"]="ipLookupId= api-version= x-api-version: "
     operation_parameters["getSystemIPLookups"]="api-version= x-api-version: "
     operation_parameters["getSystemIPLookupsCount"]="api-version= x-api-version: "
+    operation_parameters["getAttributesForLicenseAsync"]="licenseId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFeaturesForLicenseAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseAssignmentsAsync"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["getLicenseAttributesAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseByIdAsync"]="licenseId= tenantId= api-version= x-api-version: "
-    operation_parameters["getLicenseFeaturesAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseRecordsQuotaAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicensesAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["redeemLicenseAsync"]="tenantId= api-version= x-api-version: "

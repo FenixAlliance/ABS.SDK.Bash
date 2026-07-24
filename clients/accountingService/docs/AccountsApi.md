@@ -67,7 +67,7 @@ Returns the sum of all account balances matching OData filters, normalized to th
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **currencyId** | **string** |  | [optional] [default to null]
+ **currencyId** | **string** |  | [optional] [default to USD.USA]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -566,7 +566,7 @@ Get account aggregate.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **currencyId** | **string** |  | [optional] [default to null]
+ **currencyId** | **string** |  | [optional] [default to USD.USA]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **accountDto** | [**array[AccountDto]**](AccountDto.md) |  | [optional]

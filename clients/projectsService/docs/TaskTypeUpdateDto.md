@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **title** | **string** |  | [optional] [default to null]
+**taskCategoryId** | **string** |  | [optional] [default to null]
 **displayInTimeTracker** | **boolean** |  | [optional] [default to null]
 **requiresDescription** | **boolean** |  | [optional] [default to null]
 

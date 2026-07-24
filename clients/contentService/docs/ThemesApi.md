@@ -4,11 +4,11 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getLatestCurrencyRatesModelAsync**](ThemesApi.md#getLatestCurrencyRatesModelAsync) | **GET** /api/v2/ContentService/Themes/Update | Update base web content themes
+[**updateThemesAsync**](ThemesApi.md#updateThemesAsync) | **GET** /api/v2/ContentService/Themes/Update | Update base web content themes
 
 
 
-## getLatestCurrencyRatesModelAsync
+## updateThemesAsync
 
 Update base web content themes
 
@@ -17,7 +17,7 @@ Triggers an update of the base web content themes.
 ### Example
 
 ```bash
- getLatestCurrencyRatesModelAsync  api-version=value x-api-version:value
+ updateThemesAsync  api-version=value x-api-version:value
 ```
 
 ### Parameters

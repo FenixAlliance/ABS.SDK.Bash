@@ -301,6 +301,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -313,34 +314,56 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "createProjectAsync[Creates a new project]" \
+            "versionGet[]"             "createProjectTaskAsync[Create a project task]" \
+            "deleteProjectTaskAsync[Delete a project task]" \
+            "getProjectTaskByIdAsync[Get project task by ID]" \
+            "getProjectTasksAsync[Get all project tasks]" \
+            "getProjectTasksCountAsync[Get project tasks count]" \
+            "patchProjectTaskAsync[Patch a project task]" \
+            "updateProjectTaskAsync[Update a project task]"             "createProjectAsync[Creates a new project]" \
             "createProjectPeriodAsync[Creates a project period]" \
-            "createProjectTaskAsync[Creates a project task]" \
+            "createTaskForProjectAsync[Creates a project task]" \
             "deleteProjectAsync[Deletes a project]" \
             "deleteProjectPeriodAsync[Deletes a project period]" \
-            "deleteProjectTaskAsync[Deletes a project task]" \
+            "deleteTaskForProjectAsync[Deletes a project task]" \
             "getProjectByIdAsync[Gets a project by ID]" \
             "getProjectPeriodsAsync[Retrieves project periods]" \
             "getProjectTaskCategoriesAsync[Retrieves project task categories]" \
             "getProjectTaskCategoriesCountAsync[Counts project task categories]" \
-            "getProjectTasksAsync[Retrieves project tasks]" \
-            "getProjectTasksCountAsync[Counts project tasks]" \
-            "getProjectTimeLogsAsync[Retrieves project time logs]" \
             "getProjectTimeLogsCountAsync[Counts project time logs]" \
             "getProjectsByTenantIdAsync[Retrieves all projects]" \
             "getProjectsCountByTenantIdAsync[Counts projects]" \
+            "getTasksForProjectAsync[Retrieves project tasks]" \
+            "getTasksForProjectCountAsync[Counts project tasks]" \
+            "getTimeLogsForProjectAsync[Retrieves project time logs]" \
+            "patchProjectAsync[Patches a project]" \
+            "patchProjectPeriodAsync[Patches a project period]" \
+            "patchTaskForProjectAsync[Patches a project task]" \
             "updateProjectAsync[Updates a project]" \
             "updateProjectPeriodAsync[Updates a project period]" \
-            "updateProjectTaskAsync[Updates a project task]"             "countTenantTaskCategoriesAsync[Counts task categories]" \
+            "updateTaskForProjectAsync[Updates a project task]"             "countTenantTaskCategoriesAsync[Counts task categories]" \
             "createTaskCategoryAsync[Creates a new task category]" \
             "deleteTaskCategoryAsync[Deletes a task category]" \
             "getTaskCategoryByIdAsync[Gets a task category by ID]" \
             "getTaskCategoryTaskTypesAsync[Retrieves task types for a category]" \
             "getTenantTaskCategoriesAsync[Retrieves all task categories]" \
+            "patchTaskCategoryAsync[Patches a task category]" \
             "updateTaskCategoryAsync[Updates a task category]"             "createTaskTypeAsync[Creates a new task type]" \
             "deleteTaskTypeAsync[Deletes a task type]" \
             "getTaskTypeByIdAsync[Gets a task type by ID]" \
-            "updateTaskTypeAsync[Updates a task type]" \
+            "patchTaskTypeAsync[Patches a task type]" \
+            "updateTaskTypeAsync[Updates a task type]"             "requestProjectHoursApprovalAsync[Request project hours approval]" \
+            "updateProjectHoursApprovalApproverAsync[Update approval approver]" \
+            "updateProjectHoursApprovalStatusAsync[Update approval status]"             "countProjectPeriodTimeLogsAsync[Get the count of project period time logs]" \
+            "createProjectTimeLogAsync[Create a new project time log]" \
+            "deleteProjectTimeLogAsync[Delete a project time log]" \
+            "getProjectPeriodTimeLogsAsync[Retrieve project period time logs]" \
+            "getProjectTimeLogByIdAsync[Retrieve a project time log by ID]" \
+            "getProjectTimeLogsAsync[Retrieve time logs for a project]" \
+            "getProjectTimeLogsByResponsibleContactAsync[Retrieve time logs by responsible contact]" \
+            "getProjectTimeLogsCreatedByContactAsync[Retrieve time logs created by a contact]" \
+            "patchProjectTimeLogAsync[Patch a project time log]" \
+            "updateProjectTimeLogAsync[Update a project time log]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -370,6 +393,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -457,6 +487,73 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createProjectTaskAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteProjectTaskAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectTaskId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTaskByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectTaskId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTasksAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTasksCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchProjectTaskAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectTaskId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectTaskAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectTaskId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createProjectAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -472,7 +569,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      createProjectTaskAsync)
+      createTaskForProjectAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
@@ -497,7 +594,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      deleteProjectTaskAsync)
+      deleteTaskForProjectAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
@@ -538,30 +635,6 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getProjectTasksAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getProjectTasksCountAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getProjectTimeLogsAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "projectId=:[PATH] "
-          "tenantId=:[QUERY] "
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       getProjectTimeLogsCountAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -584,6 +657,56 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getTasksForProjectAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTasksForProjectCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTimeLogsForProjectAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchProjectAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchProjectPeriodAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+"projectPeriodId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchTaskForProjectAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+"projectTaskId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateProjectAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -601,7 +724,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateProjectTaskAsync)
+      updateTaskForProjectAsync)
         local -a _op_arguments
         _op_arguments=(
           "projectId=:[PATH] "
@@ -655,6 +778,14 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTaskCategoryAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "taskCategoryId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTaskCategoryAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -686,12 +817,148 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      patchTaskTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "taskTypeId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateTaskTypeAsync)
         local -a _op_arguments
         _op_arguments=(
           "taskTypeId=:[PATH] "
           "tenantId=:[QUERY] "
           )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      requestProjectHoursApprovalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectHoursApprovalApproverAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "approvalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectHoursApprovalStatusAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "approvalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countProjectPeriodTimeLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"projectPeriodId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createProjectTimeLogAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteProjectTimeLogAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeLogId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectPeriodTimeLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"projectPeriodId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeLogId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "projectId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsByResponsibleContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "contactId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProjectTimeLogsCreatedByContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "contactId=:[QUERY] "
+"tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchProjectTimeLogAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeLogId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProjectTimeLogAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "timeLogId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
     esac

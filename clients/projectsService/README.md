@@ -107,6 +107,7 @@ Class | Method | HTTP request | Description
 *FenixAllianceABSWebApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAllianceABSWebApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
 *FenixAllianceABSWebApi* | [**accountManageLinkExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountmanagelinkexternalloginpost) | **POST** /Account/Manage/LinkExternalLogin | 
 *FenixAllianceABSWebApi* | [**accountPerformExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountperformexternalloginpost) | **POST** /Account/PerformExternalLogin | 
+*FenixAllianceABSWebApi* | [**apiV2AIServiceAgentsAgentIdAguiPost**](docs/FenixAllianceABSWebApi.md#apiv2aiserviceagentsagentidaguipost) | **POST** /api/v2/AIService/Agents/{agentId}/agui | 
 *FenixAllianceABSWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABSWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
 *FenixAllianceABSWebApi* | [**healthGet**](docs/FenixAllianceABSWebApi.md#healthget) | **GET** /health | 
 *FenixAllianceABSWebApi* | [**helloGet**](docs/FenixAllianceABSWebApi.md#helloget) | **GET** /hello | 
@@ -120,36 +121,61 @@ Class | Method | HTTP request | Description
 *FenixAllianceABSWebApi* | [**resendConfirmationEmailPost**](docs/FenixAllianceABSWebApi.md#resendconfirmationemailpost) | **POST** /resendConfirmationEmail | 
 *FenixAllianceABSWebApi* | [**resetPasswordPost**](docs/FenixAllianceABSWebApi.md#resetpasswordpost) | **POST** /resetPassword | 
 *FenixAllianceABSWebApi* | [**versionGet**](docs/FenixAllianceABSWebApi.md#versionget) | **GET** /version | 
+*ProjectTasksApi* | [**createProjectTaskAsync**](docs/ProjectTasksApi.md#createprojecttaskasync) | **POST** /api/v2/ProjectsService/ProjectTasks | Create a project task
+*ProjectTasksApi* | [**deleteProjectTaskAsync**](docs/ProjectTasksApi.md#deleteprojecttaskasync) | **DELETE** /api/v2/ProjectsService/ProjectTasks/{projectTaskId} | Delete a project task
+*ProjectTasksApi* | [**getProjectTaskByIdAsync**](docs/ProjectTasksApi.md#getprojecttaskbyidasync) | **GET** /api/v2/ProjectsService/ProjectTasks/{projectTaskId} | Get project task by ID
+*ProjectTasksApi* | [**getProjectTasksAsync**](docs/ProjectTasksApi.md#getprojecttasksasync) | **GET** /api/v2/ProjectsService/ProjectTasks | Get all project tasks
+*ProjectTasksApi* | [**getProjectTasksCountAsync**](docs/ProjectTasksApi.md#getprojecttaskscountasync) | **GET** /api/v2/ProjectsService/ProjectTasks/Count | Get project tasks count
+*ProjectTasksApi* | [**patchProjectTaskAsync**](docs/ProjectTasksApi.md#patchprojecttaskasync) | **PATCH** /api/v2/ProjectsService/ProjectTasks/{projectTaskId} | Patch a project task
+*ProjectTasksApi* | [**updateProjectTaskAsync**](docs/ProjectTasksApi.md#updateprojecttaskasync) | **PUT** /api/v2/ProjectsService/ProjectTasks/{projectTaskId} | Update a project task
 *ProjectsApi* | [**createProjectAsync**](docs/ProjectsApi.md#createprojectasync) | **POST** /api/v2/ProjectsService/Projects | Creates a new project
 *ProjectsApi* | [**createProjectPeriodAsync**](docs/ProjectsApi.md#createprojectperiodasync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Periods | Creates a project period
-*ProjectsApi* | [**createProjectTaskAsync**](docs/ProjectsApi.md#createprojecttaskasync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Creates a project task
+*ProjectsApi* | [**createTaskForProjectAsync**](docs/ProjectsApi.md#createtaskforprojectasync) | **POST** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Creates a project task
 *ProjectsApi* | [**deleteProjectAsync**](docs/ProjectsApi.md#deleteprojectasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId} | Deletes a project
 *ProjectsApi* | [**deleteProjectPeriodAsync**](docs/ProjectsApi.md#deleteprojectperiodasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Deletes a project period
-*ProjectsApi* | [**deleteProjectTaskAsync**](docs/ProjectsApi.md#deleteprojecttaskasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Deletes a project task
+*ProjectsApi* | [**deleteTaskForProjectAsync**](docs/ProjectsApi.md#deletetaskforprojectasync) | **DELETE** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Deletes a project task
 *ProjectsApi* | [**getProjectByIdAsync**](docs/ProjectsApi.md#getprojectbyidasync) | **GET** /api/v2/ProjectsService/Projects/{projectId} | Gets a project by ID
 *ProjectsApi* | [**getProjectPeriodsAsync**](docs/ProjectsApi.md#getprojectperiodsasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Periods | Retrieves project periods
 *ProjectsApi* | [**getProjectTaskCategoriesAsync**](docs/ProjectsApi.md#getprojecttaskcategoriesasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories | Retrieves project task categories
 *ProjectsApi* | [**getProjectTaskCategoriesCountAsync**](docs/ProjectsApi.md#getprojecttaskcategoriescountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TaskCategories/Count | Counts project task categories
-*ProjectsApi* | [**getProjectTasksAsync**](docs/ProjectsApi.md#getprojecttasksasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Retrieves project tasks
-*ProjectsApi* | [**getProjectTasksCountAsync**](docs/ProjectsApi.md#getprojecttaskscountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks/Count | Counts project tasks
-*ProjectsApi* | [**getProjectTimeLogsAsync**](docs/ProjectsApi.md#getprojecttimelogsasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs | Retrieves project time logs
 *ProjectsApi* | [**getProjectTimeLogsCountAsync**](docs/ProjectsApi.md#getprojecttimelogscountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs/Count | Counts project time logs
 *ProjectsApi* | [**getProjectsByTenantIdAsync**](docs/ProjectsApi.md#getprojectsbytenantidasync) | **GET** /api/v2/ProjectsService/Projects | Retrieves all projects
 *ProjectsApi* | [**getProjectsCountByTenantIdAsync**](docs/ProjectsApi.md#getprojectscountbytenantidasync) | **GET** /api/v2/ProjectsService/Projects/Count | Counts projects
+*ProjectsApi* | [**getTasksForProjectAsync**](docs/ProjectsApi.md#gettasksforprojectasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks | Retrieves project tasks
+*ProjectsApi* | [**getTasksForProjectCountAsync**](docs/ProjectsApi.md#gettasksforprojectcountasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/Tasks/Count | Counts project tasks
+*ProjectsApi* | [**getTimeLogsForProjectAsync**](docs/ProjectsApi.md#gettimelogsforprojectasync) | **GET** /api/v2/ProjectsService/Projects/{projectId}/TimeLogs | Retrieves project time logs
+*ProjectsApi* | [**patchProjectAsync**](docs/ProjectsApi.md#patchprojectasync) | **PATCH** /api/v2/ProjectsService/Projects/{projectId} | Patches a project
+*ProjectsApi* | [**patchProjectPeriodAsync**](docs/ProjectsApi.md#patchprojectperiodasync) | **PATCH** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Patches a project period
+*ProjectsApi* | [**patchTaskForProjectAsync**](docs/ProjectsApi.md#patchtaskforprojectasync) | **PATCH** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Patches a project task
 *ProjectsApi* | [**updateProjectAsync**](docs/ProjectsApi.md#updateprojectasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId} | Updates a project
 *ProjectsApi* | [**updateProjectPeriodAsync**](docs/ProjectsApi.md#updateprojectperiodasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Periods/{projectPeriodId} | Updates a project period
-*ProjectsApi* | [**updateProjectTaskAsync**](docs/ProjectsApi.md#updateprojecttaskasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Updates a project task
+*ProjectsApi* | [**updateTaskForProjectAsync**](docs/ProjectsApi.md#updatetaskforprojectasync) | **PUT** /api/v2/ProjectsService/Projects/{projectId}/Tasks/{projectTaskId} | Updates a project task
 *TaskCategoriesApi* | [**countTenantTaskCategoriesAsync**](docs/TaskCategoriesApi.md#counttenanttaskcategoriesasync) | **GET** /api/v2/ProjectsService/TaskCategories/Count | Counts task categories
 *TaskCategoriesApi* | [**createTaskCategoryAsync**](docs/TaskCategoriesApi.md#createtaskcategoryasync) | **POST** /api/v2/ProjectsService/TaskCategories | Creates a new task category
 *TaskCategoriesApi* | [**deleteTaskCategoryAsync**](docs/TaskCategoriesApi.md#deletetaskcategoryasync) | **DELETE** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Deletes a task category
 *TaskCategoriesApi* | [**getTaskCategoryByIdAsync**](docs/TaskCategoriesApi.md#gettaskcategorybyidasync) | **GET** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Gets a task category by ID
 *TaskCategoriesApi* | [**getTaskCategoryTaskTypesAsync**](docs/TaskCategoriesApi.md#gettaskcategorytasktypesasync) | **GET** /api/v2/ProjectsService/TaskCategories/{taskCategoryId}/Types | Retrieves task types for a category
 *TaskCategoriesApi* | [**getTenantTaskCategoriesAsync**](docs/TaskCategoriesApi.md#gettenanttaskcategoriesasync) | **GET** /api/v2/ProjectsService/TaskCategories | Retrieves all task categories
+*TaskCategoriesApi* | [**patchTaskCategoryAsync**](docs/TaskCategoriesApi.md#patchtaskcategoryasync) | **PATCH** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Patches a task category
 *TaskCategoriesApi* | [**updateTaskCategoryAsync**](docs/TaskCategoriesApi.md#updatetaskcategoryasync) | **PUT** /api/v2/ProjectsService/TaskCategories/{taskCategoryId} | Updates a task category
 *TaskTypesApi* | [**createTaskTypeAsync**](docs/TaskTypesApi.md#createtasktypeasync) | **POST** /api/v2/ProjectsService/TaskTypes | Creates a new task type
 *TaskTypesApi* | [**deleteTaskTypeAsync**](docs/TaskTypesApi.md#deletetasktypeasync) | **DELETE** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Deletes a task type
 *TaskTypesApi* | [**getTaskTypeByIdAsync**](docs/TaskTypesApi.md#gettasktypebyidasync) | **GET** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Gets a task type by ID
+*TaskTypesApi* | [**patchTaskTypeAsync**](docs/TaskTypesApi.md#patchtasktypeasync) | **PATCH** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Patches a task type
 *TaskTypesApi* | [**updateTaskTypeAsync**](docs/TaskTypesApi.md#updatetasktypeasync) | **PUT** /api/v2/ProjectsService/TaskTypes/{taskTypeId} | Updates a task type
+*TimeLogApprovalsApi* | [**requestProjectHoursApprovalAsync**](docs/TimeLogApprovalsApi.md#requestprojecthoursapprovalasync) | **POST** /api/v2/ProjectsService/TimeLogApprovals | Request project hours approval
+*TimeLogApprovalsApi* | [**updateProjectHoursApprovalApproverAsync**](docs/TimeLogApprovalsApi.md#updateprojecthoursapprovalapproverasync) | **PUT** /api/v2/ProjectsService/TimeLogApprovals/{approvalId}/Approver | Update approval approver
+*TimeLogApprovalsApi* | [**updateProjectHoursApprovalStatusAsync**](docs/TimeLogApprovalsApi.md#updateprojecthoursapprovalstatusasync) | **PUT** /api/v2/ProjectsService/TimeLogApprovals/{approvalId}/Status | Update approval status
+*TimeLogsApi* | [**countProjectPeriodTimeLogsAsync**](docs/TimeLogsApi.md#countprojectperiodtimelogsasync) | **GET** /api/v2/ProjectsService/TimeLogs/Count | Get the count of project period time logs
+*TimeLogsApi* | [**createProjectTimeLogAsync**](docs/TimeLogsApi.md#createprojecttimelogasync) | **POST** /api/v2/ProjectsService/TimeLogs | Create a new project time log
+*TimeLogsApi* | [**deleteProjectTimeLogAsync**](docs/TimeLogsApi.md#deleteprojecttimelogasync) | **DELETE** /api/v2/ProjectsService/TimeLogs/{timeLogId} | Delete a project time log
+*TimeLogsApi* | [**getProjectPeriodTimeLogsAsync**](docs/TimeLogsApi.md#getprojectperiodtimelogsasync) | **GET** /api/v2/ProjectsService/TimeLogs | Retrieve project period time logs
+*TimeLogsApi* | [**getProjectTimeLogByIdAsync**](docs/TimeLogsApi.md#getprojecttimelogbyidasync) | **GET** /api/v2/ProjectsService/TimeLogs/{timeLogId} | Retrieve a project time log by ID
+*TimeLogsApi* | [**getProjectTimeLogsAsync**](docs/TimeLogsApi.md#getprojecttimelogsasync) | **GET** /api/v2/ProjectsService/TimeLogs/ForProject/{projectId} | Retrieve time logs for a project
+*TimeLogsApi* | [**getProjectTimeLogsByResponsibleContactAsync**](docs/TimeLogsApi.md#getprojecttimelogsbyresponsiblecontactasync) | **GET** /api/v2/ProjectsService/TimeLogs/ByResponsibleContact | Retrieve time logs by responsible contact
+*TimeLogsApi* | [**getProjectTimeLogsCreatedByContactAsync**](docs/TimeLogsApi.md#getprojecttimelogscreatedbycontactasync) | **GET** /api/v2/ProjectsService/TimeLogs/CreatedByContact | Retrieve time logs created by a contact
+*TimeLogsApi* | [**patchProjectTimeLogAsync**](docs/TimeLogsApi.md#patchprojecttimelogasync) | **PATCH** /api/v2/ProjectsService/TimeLogs/{timeLogId} | Patch a project time log
+*TimeLogsApi* | [**updateProjectTimeLogAsync**](docs/TimeLogsApi.md#updateprojecttimelogasync) | **PUT** /api/v2/ProjectsService/TimeLogs/{timeLogId} | Update a project time log
 
 
 ## Documentation For Models
@@ -163,20 +189,28 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
+ - [Operation](docs/Operation.md)
  - [ProjectCreateDto](docs/ProjectCreateDto.md)
  - [ProjectDto](docs/ProjectDto.md)
  - [ProjectDtoEnvelope](docs/ProjectDtoEnvelope.md)
  - [ProjectDtoListEnvelope](docs/ProjectDtoListEnvelope.md)
+ - [ProjectHoursApprovalApproverUpdateDto](docs/ProjectHoursApprovalApproverUpdateDto.md)
+ - [ProjectHoursApprovalCreateDto](docs/ProjectHoursApprovalCreateDto.md)
+ - [ProjectHoursApprovalStatusUpdateDto](docs/ProjectHoursApprovalStatusUpdateDto.md)
  - [ProjectPeriodCreateDto](docs/ProjectPeriodCreateDto.md)
  - [ProjectPeriodDto](docs/ProjectPeriodDto.md)
  - [ProjectPeriodDtoListEnvelope](docs/ProjectPeriodDtoListEnvelope.md)
  - [ProjectPeriodUpdateDto](docs/ProjectPeriodUpdateDto.md)
  - [ProjectTaskCreateDto](docs/ProjectTaskCreateDto.md)
  - [ProjectTaskDto](docs/ProjectTaskDto.md)
+ - [ProjectTaskDtoEnvelope](docs/ProjectTaskDtoEnvelope.md)
  - [ProjectTaskDtoListEnvelope](docs/ProjectTaskDtoListEnvelope.md)
  - [ProjectTaskUpdateDto](docs/ProjectTaskUpdateDto.md)
+ - [ProjectTimeLogCreateDto](docs/ProjectTimeLogCreateDto.md)
  - [ProjectTimeLogDto](docs/ProjectTimeLogDto.md)
+ - [ProjectTimeLogDtoEnvelope](docs/ProjectTimeLogDtoEnvelope.md)
  - [ProjectTimeLogDtoListEnvelope](docs/ProjectTimeLogDtoListEnvelope.md)
+ - [ProjectTimeLogUpdateDto](docs/ProjectTimeLogUpdateDto.md)
  - [ProjectUpdateDto](docs/ProjectUpdateDto.md)
  - [RefreshRequest](docs/RefreshRequest.md)
  - [RegisterRequest](docs/RegisterRequest.md)

@@ -96,9 +96,29 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["createBusinessRelationshipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createBusinessRelationshipAsync:::BusinessRelationshipCreateDto"]=1
+operation_parameters_minimum_occurrences["createBusinessRelationshipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createBusinessRelationshipAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteBusinessRelationshipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteBusinessRelationshipAsync:::businessRelationshipId"]=1
+operation_parameters_minimum_occurrences["deleteBusinessRelationshipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteBusinessRelationshipAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBusinessRelationshipByIdAsync:::businessRelationshipId"]=1
+operation_parameters_minimum_occurrences["getBusinessRelationshipByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::businessRelationshipId"]=1
+operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::BusinessRelationshipUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createTenantDepartment:::tenantId"]=1
 operation_parameters_minimum_occurrences["createTenantDepartment:::api-version"]=0
 operation_parameters_minimum_occurrences["createTenantDepartment:::x-api-version"]=0
@@ -194,6 +214,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -515,6 +536,9 @@ operation_parameters_minimum_occurrences["getAccessibleFeaturesAsync:::tenantId"
 operation_parameters_minimum_occurrences["getAccessibleFeaturesAsync:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["getAccessibleFeaturesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAccessibleFeaturesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCartForTenantAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCartForTenantAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCartForTenantAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getCurrentTenantAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getCurrentTenantAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurrentTenantAsync:::x-api-version"]=0
@@ -546,9 +570,6 @@ operation_parameters_minimum_occurrences["getTenantAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantAvatarAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantAvatarAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantAvatarAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getTenantCartAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getTenantCartAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getTenantCartAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEnrollmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollmentAsync:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollmentAsync:::api-version"]=0
@@ -601,14 +622,14 @@ operation_parameters_minimum_occurrences["revokeLicenseAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["selectTenantAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["selectTenantAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["selectTenantAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["updateAvatarAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["updateAvatarAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["updateAvatarAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["updateAvatarAsync:::avatar"]=0
 operation_parameters_minimum_occurrences["updateTenantAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateTenantAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateTenantAsync:::TenantUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateTenantAvatarAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateTenantAvatarAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateTenantAvatarAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateTenantAvatarAsync:::avatar"]=0
 operation_parameters_minimum_occurrences["validateEnrollmentFeatureAccess:::tenantId"]=1
 operation_parameters_minimum_occurrences["validateEnrollmentFeatureAccess:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["validateEnrollmentFeatureAccess:::feature"]=0
@@ -775,9 +796,29 @@ operation_parameters_minimum_occurrences["updateTenantUnit:::TenantUnitUpdateDto
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["createBusinessRelationshipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createBusinessRelationshipAsync:::BusinessRelationshipCreateDto"]=0
+operation_parameters_maximum_occurrences["createBusinessRelationshipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createBusinessRelationshipAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteBusinessRelationshipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteBusinessRelationshipAsync:::businessRelationshipId"]=0
+operation_parameters_maximum_occurrences["deleteBusinessRelationshipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteBusinessRelationshipAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipByIdAsync:::businessRelationshipId"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::businessRelationshipId"]=0
+operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::BusinessRelationshipUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createTenantDepartment:::tenantId"]=0
 operation_parameters_maximum_occurrences["createTenantDepartment:::api-version"]=0
 operation_parameters_maximum_occurrences["createTenantDepartment:::x-api-version"]=0
@@ -873,6 +914,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -1194,6 +1236,9 @@ operation_parameters_maximum_occurrences["getAccessibleFeaturesAsync:::tenantId"
 operation_parameters_maximum_occurrences["getAccessibleFeaturesAsync:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["getAccessibleFeaturesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAccessibleFeaturesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCartForTenantAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCartForTenantAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCartForTenantAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getCurrentTenantAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCurrentTenantAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurrentTenantAsync:::x-api-version"]=0
@@ -1225,9 +1270,6 @@ operation_parameters_maximum_occurrences["getTenantAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantAvatarAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantAvatarAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantAvatarAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getTenantCartAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getTenantCartAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getTenantCartAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentAsync:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentAsync:::api-version"]=0
@@ -1280,14 +1322,14 @@ operation_parameters_maximum_occurrences["revokeLicenseAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["selectTenantAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["selectTenantAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["selectTenantAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["updateAvatarAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["updateAvatarAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["updateAvatarAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["updateAvatarAsync:::avatar"]=0
 operation_parameters_maximum_occurrences["updateTenantAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateTenantAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateTenantAsync:::TenantUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateTenantAvatarAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateTenantAvatarAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateTenantAvatarAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateTenantAvatarAsync:::avatar"]=0
 operation_parameters_maximum_occurrences["validateEnrollmentFeatureAccess:::tenantId"]=0
 operation_parameters_maximum_occurrences["validateEnrollmentFeatureAccess:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["validateEnrollmentFeatureAccess:::feature"]=0
@@ -1451,9 +1493,29 @@ operation_parameters_maximum_occurrences["updateTenantUnit:::TenantUnitUpdateDto
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["createBusinessRelationshipAsync:::tenantId"]=""
+operation_parameters_collection_type["createBusinessRelationshipAsync:::BusinessRelationshipCreateDto"]=""
+operation_parameters_collection_type["createBusinessRelationshipAsync:::api-version"]=""
+operation_parameters_collection_type["createBusinessRelationshipAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteBusinessRelationshipAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteBusinessRelationshipAsync:::businessRelationshipId"]=""
+operation_parameters_collection_type["deleteBusinessRelationshipAsync:::api-version"]=""
+operation_parameters_collection_type["deleteBusinessRelationshipAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getBusinessRelationshipByIdAsync:::businessRelationshipId"]=""
+operation_parameters_collection_type["getBusinessRelationshipByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipsAsync:::tenantId"]=""
+operation_parameters_collection_type["getBusinessRelationshipsAsync:::api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateBusinessRelationshipAsync:::tenantId"]=""
+operation_parameters_collection_type["updateBusinessRelationshipAsync:::businessRelationshipId"]=""
+operation_parameters_collection_type["updateBusinessRelationshipAsync:::BusinessRelationshipUpdateDto"]=""
+operation_parameters_collection_type["updateBusinessRelationshipAsync:::api-version"]=""
+operation_parameters_collection_type["updateBusinessRelationshipAsync:::x-api-version"]=""
 operation_parameters_collection_type["createTenantDepartment:::tenantId"]=""
 operation_parameters_collection_type["createTenantDepartment:::api-version"]=""
 operation_parameters_collection_type["createTenantDepartment:::x-api-version"]=""
@@ -1549,6 +1611,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -1870,6 +1933,9 @@ operation_parameters_collection_type["getAccessibleFeaturesAsync:::tenantId"]=""
 operation_parameters_collection_type["getAccessibleFeaturesAsync:::enrollmentId"]=""
 operation_parameters_collection_type["getAccessibleFeaturesAsync:::api-version"]=""
 operation_parameters_collection_type["getAccessibleFeaturesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCartForTenantAsync:::tenantId"]=""
+operation_parameters_collection_type["getCartForTenantAsync:::api-version"]=""
+operation_parameters_collection_type["getCartForTenantAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCurrentTenantAsync:::tenantId"]=""
 operation_parameters_collection_type["getCurrentTenantAsync:::api-version"]=""
 operation_parameters_collection_type["getCurrentTenantAsync:::x-api-version"]=""
@@ -1901,9 +1967,6 @@ operation_parameters_collection_type["getTenantAsync:::x-api-version"]=""
 operation_parameters_collection_type["getTenantAvatarAsync:::tenantId"]=""
 operation_parameters_collection_type["getTenantAvatarAsync:::api-version"]=""
 operation_parameters_collection_type["getTenantAvatarAsync:::x-api-version"]=""
-operation_parameters_collection_type["getTenantCartAsync:::tenantId"]=""
-operation_parameters_collection_type["getTenantCartAsync:::api-version"]=""
-operation_parameters_collection_type["getTenantCartAsync:::x-api-version"]=""
 operation_parameters_collection_type["getTenantEnrollmentAsync:::tenantId"]=""
 operation_parameters_collection_type["getTenantEnrollmentAsync:::enrollmentId"]=""
 operation_parameters_collection_type["getTenantEnrollmentAsync:::api-version"]=""
@@ -1956,14 +2019,14 @@ operation_parameters_collection_type["revokeLicenseAsync:::x-api-version"]=""
 operation_parameters_collection_type["selectTenantAsync:::tenantId"]=""
 operation_parameters_collection_type["selectTenantAsync:::api-version"]=""
 operation_parameters_collection_type["selectTenantAsync:::x-api-version"]=""
-operation_parameters_collection_type["updateAvatarAsync:::tenantId"]=""
-operation_parameters_collection_type["updateAvatarAsync:::api-version"]=""
-operation_parameters_collection_type["updateAvatarAsync:::x-api-version"]=""
-operation_parameters_collection_type["updateAvatarAsync:::avatar"]=""
 operation_parameters_collection_type["updateTenantAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTenantAsync:::api-version"]=""
 operation_parameters_collection_type["updateTenantAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateTenantAsync:::TenantUpdateDto"]=""
+operation_parameters_collection_type["updateTenantAvatarAsync:::tenantId"]=""
+operation_parameters_collection_type["updateTenantAvatarAsync:::api-version"]=""
+operation_parameters_collection_type["updateTenantAvatarAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateTenantAvatarAsync:::avatar"]=""
 operation_parameters_collection_type["validateEnrollmentFeatureAccess:::tenantId"]=""
 operation_parameters_collection_type["validateEnrollmentFeatureAccess:::enrollmentId"]=""
 operation_parameters_collection_type["validateEnrollmentFeatureAccess:::feature"]=""
@@ -2510,7 +2573,12 @@ EOF
     echo ""
     echo -e "${BOLD}${WHITE}[businessRelationships]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}createBusinessRelationshipAsync${OFF};Create a business relationship
+  ${CYAN}deleteBusinessRelationshipAsync${OFF};Delete a business relationship
+  ${CYAN}getBusinessRelationshipByIdAsync${OFF};Get business relationship by ID
+  ${CYAN}getBusinessRelationshipsAsync${OFF};Get business relationships
   ${CYAN}getBusinessRelationshipsCountAsync${OFF};Get business relationships count
+  ${CYAN}updateBusinessRelationshipAsync${OFF};Update a business relationship
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -2558,6 +2626,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -2703,6 +2772,7 @@ read -r -d '' ops <<EOF
   ${CYAN}deSelectTenantAsync${OFF};Deselect the user's default tenant
   ${CYAN}deleteTenantAsync${OFF};Delete a tenant
   ${CYAN}getAccessibleFeaturesAsync${OFF};Get the list of features accessible to a specific enrollment
+  ${CYAN}getCartForTenantAsync${OFF};Get a tenant's default cart
   ${CYAN}getCurrentTenantAsync${OFF};Get the user's current default tenant
   ${CYAN}getEnrollmentLicenseByIdAsync${OFF};Get a specific license for an enrollment
   ${CYAN}getEnrollmentLicensesAsync${OFF};Get the list of licenses available to a specific enrollment
@@ -2712,7 +2782,6 @@ read -r -d '' ops <<EOF
   ${CYAN}getRootTenantAsync${OFF};Get the root tenant of the platform
   ${CYAN}getTenantAsync${OFF};Get a specific tenant by ID
   ${CYAN}getTenantAvatarAsync${OFF};Get a tenant's avatar
-  ${CYAN}getTenantCartAsync${OFF};Get a tenant's default cart
   ${CYAN}getTenantEnrollmentAsync${OFF};Get a specific tenant enrollment
   ${CYAN}getTenantEnrollmentsAsync${OFF};Get the list of user enrollments for a tenant
   ${CYAN}getTenantInvitationsAsync${OFF};Get the list of invitations issued by a tenant
@@ -2729,8 +2798,8 @@ read -r -d '' ops <<EOF
   ${CYAN}patchTenantAsync${OFF};Patch a tenant's profile
   ${CYAN}revokeLicenseAsync${OFF};Revoke a license from a specific enrollment
   ${CYAN}selectTenantAsync${OFF};Select a business tenant as the user's default tenant
-  ${CYAN}updateAvatarAsync${OFF};Update a tenant's avatar
   ${CYAN}updateTenantAsync${OFF};Update a tenant's profile
+  ${CYAN}updateTenantAvatarAsync${OFF};Update a tenant's avatar
   ${CYAN}validateEnrollmentFeatureAccess${OFF};Validate the access to a specific feature for a specific enrollment
   ${CYAN}validateEnrollmentPermissionsAsync${OFF};Validate the existence of a list of roles and permissions for a specific enrollment
 EOF
@@ -2843,6 +2912,122 @@ print_version() {
 
 ##############################################################################
 #
+# Print help for createBusinessRelationshipAsync operation
+#
+##############################################################################
+print_createBusinessRelationshipAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBusinessRelationshipAsync - Create a business relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new business relationship owned by the specified parent tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBusinessRelationshipAsync operation
+#
+##############################################################################
+print_deleteBusinessRelationshipAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBusinessRelationshipAsync - Delete a business relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a business relationship by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessRelationshipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessRelationshipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBusinessRelationshipByIdAsync operation
+#
+##############################################################################
+print_getBusinessRelationshipByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBusinessRelationshipByIdAsync - Get business relationship by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific business relationship by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessRelationshipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessRelationshipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBusinessRelationshipsAsync operation
+#
+##############################################################################
+print_getBusinessRelationshipsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBusinessRelationshipsAsync - Get business relationships${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the child business relationships owned by the specified parent tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getBusinessRelationshipsCountAsync operation
 #
 ##############################################################################
@@ -2864,6 +3049,37 @@ print_getBusinessRelationshipsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBusinessRelationshipAsync operation
+#
+##############################################################################
+print_updateBusinessRelationshipAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBusinessRelationshipAsync - Update a business relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing business relationship by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}businessRelationshipId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: businessRelationshipId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -3551,6 +3767,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5900,6 +6132,31 @@ print_getAccessibleFeaturesAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getCartForTenantAsync operation
+#
+##############################################################################
+print_getCartForTenantAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCartForTenantAsync - Get a tenant's default cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a tenant's default cart" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getCurrentTenantAsync operation
 #
 ##############################################################################
@@ -6127,31 +6384,6 @@ print_getTenantAvatarAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getTenantCartAsync operation
-#
-##############################################################################
-print_getTenantCartAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getTenantCartAsync - Get a tenant's default cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Get a tenant's default cart" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -6560,31 +6792,6 @@ print_selectTenantAsync_help() {
 }
 ##############################################################################
 #
-# Print help for updateAvatarAsync operation
-#
-##############################################################################
-print_updateAvatarAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateAvatarAsync - Update a tenant's avatar${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Update a tenant's avatar" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for updateTenantAsync operation
 #
 ##############################################################################
@@ -6609,6 +6816,31 @@ print_updateTenantAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateTenantAvatarAsync operation
+#
+##############################################################################
+print_updateTenantAvatarAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateTenantAvatarAsync - Update a tenant's avatar${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Update a tenant's avatar" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -7637,6 +7869,190 @@ print_updateTenantUnit_help() {
 
 ##############################################################################
 #
+# Call createBusinessRelationshipAsync operation
+#
+##############################################################################
+call_createBusinessRelationshipAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/BusinessRelationships" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBusinessRelationshipAsync operation
+#
+##############################################################################
+call_deleteBusinessRelationshipAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessRelationshipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/BusinessRelationships/{businessRelationshipId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBusinessRelationshipByIdAsync operation
+#
+##############################################################################
+call_getBusinessRelationshipByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessRelationshipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/BusinessRelationships/{businessRelationshipId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBusinessRelationshipsAsync operation
+#
+##############################################################################
+call_getBusinessRelationshipsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/BusinessRelationships" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getBusinessRelationshipsCountAsync operation
 #
 ##############################################################################
@@ -7668,6 +8084,82 @@ call_getBusinessRelationshipsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateBusinessRelationshipAsync operation
+#
+##############################################################################
+call_updateBusinessRelationshipAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(businessRelationshipId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/BusinessRelationships/{businessRelationshipId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9003,6 +9495,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -13784,6 +14312,42 @@ call_getAccessibleFeaturesAsync() {
 
 ##############################################################################
 #
+# Call getCartForTenantAsync operation
+#
+##############################################################################
+call_getCartForTenantAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Tenants/{tenantId}/Cart" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getCurrentTenantAsync operation
 #
 ##############################################################################
@@ -14085,42 +14649,6 @@ call_getTenantAvatarAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/TenantsService/Tenants/{tenantId}/Avatar" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getTenantCartAsync operation
-#
-##############################################################################
-call_getTenantCartAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(tenantId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/TenantsService/Tenants/{tenantId}/Cart" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -14760,43 +15288,6 @@ call_selectTenantAsync() {
 
 ##############################################################################
 #
-# Call updateAvatarAsync operation
-#
-##############################################################################
-call_updateAvatarAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(tenantId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/TenantsService/Tenants/{tenantId}/Avatar" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call updateTenantAsync operation
 #
 ##############################################################################
@@ -14868,6 +15359,43 @@ call_updateTenantAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateTenantAvatarAsync operation
+#
+##############################################################################
+call_updateTenantAvatarAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/TenantsService/Tenants/{tenantId}/Avatar" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -16900,8 +17428,23 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    createBusinessRelationshipAsync)
+    operation="createBusinessRelationshipAsync"
+    ;;
+    deleteBusinessRelationshipAsync)
+    operation="deleteBusinessRelationshipAsync"
+    ;;
+    getBusinessRelationshipByIdAsync)
+    operation="getBusinessRelationshipByIdAsync"
+    ;;
+    getBusinessRelationshipsAsync)
+    operation="getBusinessRelationshipsAsync"
+    ;;
     getBusinessRelationshipsCountAsync)
     operation="getBusinessRelationshipsCountAsync"
+    ;;
+    updateBusinessRelationshipAsync)
+    operation="updateBusinessRelationshipAsync"
     ;;
     createTenantDepartment)
     operation="createTenantDepartment"
@@ -16983,6 +17526,9 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -17254,6 +17800,9 @@ case $key in
     getAccessibleFeaturesAsync)
     operation="getAccessibleFeaturesAsync"
     ;;
+    getCartForTenantAsync)
+    operation="getCartForTenantAsync"
+    ;;
     getCurrentTenantAsync)
     operation="getCurrentTenantAsync"
     ;;
@@ -17280,9 +17829,6 @@ case $key in
     ;;
     getTenantAvatarAsync)
     operation="getTenantAvatarAsync"
-    ;;
-    getTenantCartAsync)
-    operation="getTenantCartAsync"
     ;;
     getTenantEnrollmentAsync)
     operation="getTenantEnrollmentAsync"
@@ -17332,11 +17878,11 @@ case $key in
     selectTenantAsync)
     operation="selectTenantAsync"
     ;;
-    updateAvatarAsync)
-    operation="updateAvatarAsync"
-    ;;
     updateTenantAsync)
     operation="updateTenantAsync"
+    ;;
+    updateTenantAvatarAsync)
+    operation="updateTenantAvatarAsync"
     ;;
     validateEnrollmentFeatureAccess)
     operation="validateEnrollmentFeatureAccess"
@@ -17536,8 +18082,23 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    createBusinessRelationshipAsync)
+    call_createBusinessRelationshipAsync
+    ;;
+    deleteBusinessRelationshipAsync)
+    call_deleteBusinessRelationshipAsync
+    ;;
+    getBusinessRelationshipByIdAsync)
+    call_getBusinessRelationshipByIdAsync
+    ;;
+    getBusinessRelationshipsAsync)
+    call_getBusinessRelationshipsAsync
+    ;;
     getBusinessRelationshipsCountAsync)
     call_getBusinessRelationshipsCountAsync
+    ;;
+    updateBusinessRelationshipAsync)
+    call_updateBusinessRelationshipAsync
     ;;
     createTenantDepartment)
     call_createTenantDepartment
@@ -17619,6 +18180,9 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost
@@ -17890,6 +18454,9 @@ case $operation in
     getAccessibleFeaturesAsync)
     call_getAccessibleFeaturesAsync
     ;;
+    getCartForTenantAsync)
+    call_getCartForTenantAsync
+    ;;
     getCurrentTenantAsync)
     call_getCurrentTenantAsync
     ;;
@@ -17916,9 +18483,6 @@ case $operation in
     ;;
     getTenantAvatarAsync)
     call_getTenantAvatarAsync
-    ;;
-    getTenantCartAsync)
-    call_getTenantCartAsync
     ;;
     getTenantEnrollmentAsync)
     call_getTenantEnrollmentAsync
@@ -17968,11 +18532,11 @@ case $operation in
     selectTenantAsync)
     call_selectTenantAsync
     ;;
-    updateAvatarAsync)
-    call_updateAvatarAsync
-    ;;
     updateTenantAsync)
     call_updateTenantAsync
+    ;;
+    updateTenantAvatarAsync)
+    call_updateTenantAvatarAsync
     ;;
     validateEnrollmentFeatureAccess)
     call_validateEnrollmentFeatureAccess

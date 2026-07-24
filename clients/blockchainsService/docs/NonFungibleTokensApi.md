@@ -137,7 +137,7 @@ Retrieves all NFTs for the specified tenant.
 ### Example
 
 ```bash
- getNonFungibleTokensAsync  tenantId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getNonFungibleTokensAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -146,7 +146,6 @@ Retrieves all NFTs for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**NonFungibleTokenDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -175,7 +174,7 @@ Returns the count of NFTs for the specified tenant.
 ### Example
 
 ```bash
- getNonFungibleTokensCountAsync  tenantId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getNonFungibleTokensCountAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -184,7 +183,6 @@ Returns the count of NFTs for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**NonFungibleTokenDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

@@ -140,6 +140,9 @@ operation_parameters_minimum_occurrences["getActivityFeedsAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getActivityFeedsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getActivityFeedsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getActivityFeedsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getActivityTypeByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getActivityTypeByIdAsync:::activityTypeId"]=1
 operation_parameters_minimum_occurrences["getActivityTypeByIdAsync:::api-version"]=0
@@ -169,13 +172,11 @@ operation_parameters_minimum_occurrences["updateActivityTypeAsync:::activityType
 operation_parameters_minimum_occurrences["updateActivityTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateActivityTypeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateActivityTypeAsync:::ActivityTypeUpdateDto"]=0
-operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getActivityRecordsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -241,6 +242,9 @@ operation_parameters_maximum_occurrences["getActivityFeedsAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getActivityFeedsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getActivityFeedsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getActivityFeedsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getActivityTypeByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getActivityTypeByIdAsync:::activityTypeId"]=0
 operation_parameters_maximum_occurrences["getActivityTypeByIdAsync:::api-version"]=0
@@ -270,13 +274,11 @@ operation_parameters_maximum_occurrences["updateActivityTypeAsync:::activityType
 operation_parameters_maximum_occurrences["updateActivityTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateActivityTypeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateActivityTypeAsync:::ActivityTypeUpdateDto"]=0
-operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getActivityRecordsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -339,6 +341,9 @@ operation_parameters_collection_type["getActivityFeedsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getActivityFeedsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getActivityFeedsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getActivityFeedsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getActivityRecordsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getActivityRecordsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getActivityRecordsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["getActivityTypeByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getActivityTypeByIdAsync:::activityTypeId"]=""
 operation_parameters_collection_type["getActivityTypeByIdAsync:::api-version"]=""
@@ -368,13 +373,11 @@ operation_parameters_collection_type["updateActivityTypeAsync:::activityTypeId"]
 operation_parameters_collection_type["updateActivityTypeAsync:::api-version"]=""
 operation_parameters_collection_type["updateActivityTypeAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateActivityTypeAsync:::ActivityTypeUpdateDto"]=""
-operation_parameters_collection_type["getActivityRecordsCountAsync:::tenantId"]=""
-operation_parameters_collection_type["getActivityRecordsCountAsync:::api-version"]=""
-operation_parameters_collection_type["getActivityRecordsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -787,6 +790,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getActivityFeedAsync${OFF};Get activity feed by ID
   ${CYAN}getActivityFeedsAsync${OFF};Get activity feeds
   ${CYAN}getActivityFeedsCountAsync${OFF};Count activity feeds
+  ${CYAN}getActivityRecordsCountAsync${OFF};Count activity records
   ${CYAN}getActivityTypeByIdAsync${OFF};Get Activity Type
   ${CYAN}getActivityTypesAsync${OFF};Get Activity Types
   ${CYAN}patchActivityAsync${OFF};Patch an activity
@@ -796,18 +800,13 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[activityRecords]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}getActivityRecordsCountAsync${OFF};Count activity records
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1175,6 +1174,32 @@ print_getActivityFeedsCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getActivityRecordsCountAsync operation
+#
+##############################################################################
+print_getActivityRecordsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getActivityRecordsCountAsync - Count activity records${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the tenant-wide count of activity records across all feeds owned by the tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getActivityTypeByIdAsync operation
 #
 ##############################################################################
@@ -1346,32 +1371,6 @@ print_updateActivityTypeAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getActivityRecordsCountAsync operation
-#
-##############################################################################
-print_getActivityRecordsCountAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getActivityRecordsCountAsync - Count activity records${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Returns the tenant-wide count of activity records across all feeds owned by the tenant." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for accountLogoutPost operation
 #
 ##############################################################################
@@ -1424,6 +1423,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2144,6 +2159,42 @@ call_getActivityFeedsCountAsync() {
 
 ##############################################################################
 #
+# Call getActivityRecordsCountAsync operation
+#
+##############################################################################
+call_getActivityRecordsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/ActivitiesService/Activities/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getActivityTypeByIdAsync operation
 #
 ##############################################################################
@@ -2520,42 +2571,6 @@ call_updateActivityTypeAsync() {
 
 ##############################################################################
 #
-# Call getActivityRecordsCountAsync operation
-#
-##############################################################################
-call_getActivityRecordsCountAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/ActivitiesService/ActivityRecords/Count" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call accountLogoutPost operation
 #
 ##############################################################################
@@ -2698,6 +2713,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3635,6 +3686,9 @@ case $key in
     getActivityFeedsCountAsync)
     operation="getActivityFeedsCountAsync"
     ;;
+    getActivityRecordsCountAsync)
+    operation="getActivityRecordsCountAsync"
+    ;;
     getActivityTypeByIdAsync)
     operation="getActivityTypeByIdAsync"
     ;;
@@ -3653,9 +3707,6 @@ case $key in
     updateActivityTypeAsync)
     operation="updateActivityTypeAsync"
     ;;
-    getActivityRecordsCountAsync)
-    operation="getActivityRecordsCountAsync"
-    ;;
     accountLogoutPost)
     operation="accountLogoutPost"
     ;;
@@ -3667,6 +3718,9 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -3827,6 +3881,9 @@ case $operation in
     getActivityFeedsCountAsync)
     call_getActivityFeedsCountAsync
     ;;
+    getActivityRecordsCountAsync)
+    call_getActivityRecordsCountAsync
+    ;;
     getActivityTypeByIdAsync)
     call_getActivityTypeByIdAsync
     ;;
@@ -3845,9 +3902,6 @@ case $operation in
     updateActivityTypeAsync)
     call_updateActivityTypeAsync
     ;;
-    getActivityRecordsCountAsync)
-    call_getActivityRecordsCountAsync
-    ;;
     accountLogoutPost)
     call_accountLogoutPost
     ;;
@@ -3859,6 +3913,9 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

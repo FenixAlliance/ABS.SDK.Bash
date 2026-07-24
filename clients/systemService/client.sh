@@ -165,6 +165,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -188,22 +189,22 @@ operation_parameters_minimum_occurrences["getSystemIPLookups:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookups:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::licenseId"]=1
+operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFeaturesForLicenseAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getFeaturesForLicenseAsync:::licenseId"]=1
+operation_parameters_minimum_occurrences["getFeaturesForLicenseAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getFeaturesForLicenseAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseAssignmentsAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::licenseId"]=1
-operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseByIdAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::licenseId"]=1
-operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getLicenseRecordsQuotaAsync:::api-version"]=0
@@ -496,6 +497,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -519,22 +521,22 @@ operation_parameters_maximum_occurrences["getSystemIPLookups:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookups:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::licenseId"]=0
+operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFeaturesForLicenseAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getFeaturesForLicenseAsync:::licenseId"]=0
+operation_parameters_maximum_occurrences["getFeaturesForLicenseAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getFeaturesForLicenseAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseAssignmentsAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::licenseId"]=0
-operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseByIdAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::licenseId"]=0
-operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getLicenseRecordsQuotaAsync:::api-version"]=0
@@ -824,6 +826,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -847,22 +850,22 @@ operation_parameters_collection_type["getSystemIPLookups:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookups:::x-api-version"]=""
 operation_parameters_collection_type["getSystemIPLookupsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookupsCount:::x-api-version"]=""
+operation_parameters_collection_type["getAttributesForLicenseAsync:::tenantId"]=""
+operation_parameters_collection_type["getAttributesForLicenseAsync:::licenseId"]=""
+operation_parameters_collection_type["getAttributesForLicenseAsync:::api-version"]=""
+operation_parameters_collection_type["getAttributesForLicenseAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFeaturesForLicenseAsync:::tenantId"]=""
+operation_parameters_collection_type["getFeaturesForLicenseAsync:::licenseId"]=""
+operation_parameters_collection_type["getFeaturesForLicenseAsync:::api-version"]=""
+operation_parameters_collection_type["getFeaturesForLicenseAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseAssignmentsAsync:::x-api-version"]=""
-operation_parameters_collection_type["getLicenseAttributesAsync:::tenantId"]=""
-operation_parameters_collection_type["getLicenseAttributesAsync:::licenseId"]=""
-operation_parameters_collection_type["getLicenseAttributesAsync:::api-version"]=""
-operation_parameters_collection_type["getLicenseAttributesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseByIdAsync:::x-api-version"]=""
-operation_parameters_collection_type["getLicenseFeaturesAsync:::tenantId"]=""
-operation_parameters_collection_type["getLicenseFeaturesAsync:::licenseId"]=""
-operation_parameters_collection_type["getLicenseFeaturesAsync:::api-version"]=""
-operation_parameters_collection_type["getLicenseFeaturesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::licenseId"]=""
 operation_parameters_collection_type["getLicenseRecordsQuotaAsync:::api-version"]=""
@@ -1515,6 +1518,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1542,10 +1546,10 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[licensing]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}getAttributesForLicenseAsync${OFF};Retrieve license attributes
+  ${CYAN}getFeaturesForLicenseAsync${OFF};Retrieve license features
   ${CYAN}getLicenseAssignmentsAsync${OFF};Retrieve license assignments
-  ${CYAN}getLicenseAttributesAsync${OFF};Retrieve license attributes
   ${CYAN}getLicenseByIdAsync${OFF};Retrieve a license by ID
-  ${CYAN}getLicenseFeaturesAsync${OFF};Retrieve license features
   ${CYAN}getLicenseRecordsQuotaAsync${OFF};Retrieve license record quota
   ${CYAN}getLicensesAsync${OFF};Retrieve a list of licenses
   ${CYAN}redeemLicenseAsync${OFF};Redeem a license
@@ -2271,6 +2275,22 @@ print_accountPerformExternalLoginPost_help() {
 }
 ##############################################################################
 #
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for forgotPasswordPost operation
 #
 ##############################################################################
@@ -2604,6 +2624,56 @@ print_getSystemIPLookupsCount_help() {
 }
 ##############################################################################
 #
+# Print help for getAttributesForLicenseAsync operation
+#
+##############################################################################
+print_getAttributesForLicenseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAttributesForLicenseAsync - Retrieve license attributes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all additional attributes for a given license." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getFeaturesForLicenseAsync operation
+#
+##############################################################################
+print_getFeaturesForLicenseAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getFeaturesForLicenseAsync - Retrieve license features${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all features for a given license." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getLicenseAssignmentsAsync operation
 #
 ##############################################################################
@@ -2629,31 +2699,6 @@ print_getLicenseAssignmentsAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getLicenseAttributesAsync operation
-#
-##############################################################################
-print_getLicenseAttributesAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getLicenseAttributesAsync - Retrieve license attributes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves all additional attributes for a given license." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for getLicenseByIdAsync operation
 #
 ##############################################################################
@@ -2662,31 +2707,6 @@ print_getLicenseByIdAsync_help() {
     echo -e "${BOLD}${WHITE}getLicenseByIdAsync - Retrieve a license by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Retrieves a single suite license by its unique identifier." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}licenseId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: licenseId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getLicenseFeaturesAsync operation
-#
-##############################################################################
-print_getLicenseFeaturesAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getLicenseFeaturesAsync - Retrieve license features${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Retrieves all features for a given license." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -5375,6 +5395,42 @@ call_accountPerformExternalLoginPost() {
 
 ##############################################################################
 #
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call forgotPasswordPost operation
 #
 ##############################################################################
@@ -6323,6 +6379,78 @@ call_getSystemIPLookupsCount() {
 
 ##############################################################################
 #
+# Call getAttributesForLicenseAsync operation
+#
+##############################################################################
+call_getAttributesForLicenseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(licenseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Licensing/Licenses/{licenseId}/Attributes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getFeaturesForLicenseAsync operation
+#
+##############################################################################
+call_getFeaturesForLicenseAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(licenseId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Licensing/Licenses/{licenseId}/Features" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getLicenseAssignmentsAsync operation
 #
 ##############################################################################
@@ -6359,42 +6487,6 @@ call_getLicenseAssignmentsAsync() {
 
 ##############################################################################
 #
-# Call getLicenseAttributesAsync operation
-#
-##############################################################################
-call_getLicenseAttributesAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(licenseId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SystemService/Licensing/Licenses/{licenseId}/Attributes" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call getLicenseByIdAsync operation
 #
 ##############################################################################
@@ -6408,42 +6500,6 @@ call_getLicenseByIdAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/SystemService/Licensing/Licenses/{licenseId}" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getLicenseFeaturesAsync operation
-#
-##############################################################################
-call_getLicenseFeaturesAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(licenseId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/SystemService/Licensing/Licenses/{licenseId}/Features" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -9948,6 +10004,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -9999,17 +10058,17 @@ case $key in
     getSystemIPLookupsCount)
     operation="getSystemIPLookupsCount"
     ;;
+    getAttributesForLicenseAsync)
+    operation="getAttributesForLicenseAsync"
+    ;;
+    getFeaturesForLicenseAsync)
+    operation="getFeaturesForLicenseAsync"
+    ;;
     getLicenseAssignmentsAsync)
     operation="getLicenseAssignmentsAsync"
     ;;
-    getLicenseAttributesAsync)
-    operation="getLicenseAttributesAsync"
-    ;;
     getLicenseByIdAsync)
     operation="getLicenseByIdAsync"
-    ;;
-    getLicenseFeaturesAsync)
-    operation="getLicenseFeaturesAsync"
     ;;
     getLicenseRecordsQuotaAsync)
     operation="getLicenseRecordsQuotaAsync"
@@ -10356,6 +10415,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -10407,17 +10469,17 @@ case $operation in
     getSystemIPLookupsCount)
     call_getSystemIPLookupsCount
     ;;
+    getAttributesForLicenseAsync)
+    call_getAttributesForLicenseAsync
+    ;;
+    getFeaturesForLicenseAsync)
+    call_getFeaturesForLicenseAsync
+    ;;
     getLicenseAssignmentsAsync)
     call_getLicenseAssignmentsAsync
     ;;
-    getLicenseAttributesAsync)
-    call_getLicenseAttributesAsync
-    ;;
     getLicenseByIdAsync)
     call_getLicenseByIdAsync
-    ;;
-    getLicenseFeaturesAsync)
-    call_getLicenseFeaturesAsync
     ;;
     getLicenseRecordsQuotaAsync)
     call_getLicenseRecordsQuotaAsync

@@ -5,7 +5,6 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/CurrencyId.md
-docs/DecimalEnvelope.md
 docs/EmailDispatchRequest.md
 docs/EmptyEnvelope.md
 docs/Envelope.md

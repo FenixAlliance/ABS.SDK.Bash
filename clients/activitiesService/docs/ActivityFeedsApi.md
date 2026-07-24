@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**getActivityFeedAsync**](ActivityFeedsApi.md#getActivityFeedAsync) | **GET** /api/v2/ActivitiesService/ActivityFeeds/{activityFeedId} | Get activity feed by ID
 [**getActivityFeedsAsync**](ActivityFeedsApi.md#getActivityFeedsAsync) | **GET** /api/v2/ActivitiesService/ActivityFeeds | Get activity feeds
 [**getActivityFeedsCountAsync**](ActivityFeedsApi.md#getActivityFeedsCountAsync) | **GET** /api/v2/ActivitiesService/ActivityFeeds/Count | Count activity feeds
+[**getActivityRecordsCountAsync**](ActivityFeedsApi.md#getActivityRecordsCountAsync) | **GET** /api/v2/ActivitiesService/Activities/Count | Count activity records
 [**getActivityTypeByIdAsync**](ActivityFeedsApi.md#getActivityTypeByIdAsync) | **GET** /api/v2/ActivitiesService/ActivityTypes/{activityTypeId} | Get Activity Type
 [**getActivityTypesAsync**](ActivityFeedsApi.md#getActivityTypesAsync) | **GET** /api/v2/ActivitiesService/ActivityTypes | Get Activity Types
 [**patchActivityAsync**](ActivityFeedsApi.md#patchActivityAsync) | **PATCH** /api/v2/ActivitiesService/ActivityFeeds/{activityFeedId}/Activities/{activityId} | Patch an activity
@@ -415,6 +416,43 @@ Returns the count of activity feeds for the specified tenant.
 
 ```bash
  getActivityFeedsCountAsync  tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+[**Int32Envelope**](Int32Envelope.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## getActivityRecordsCountAsync
+
+Count activity records
+
+Returns the tenant-wide count of activity records across all feeds owned by the tenant.
+
+### Example
+
+```bash
+ getActivityRecordsCountAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters

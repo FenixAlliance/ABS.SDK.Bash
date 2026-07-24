@@ -57,6 +57,11 @@ docs/MarketingListsApi.md
 docs/NewsletterCreateDto.md
 docs/NewsletterDto.md
 docs/NewsletterDtoEnvelope.md
+docs/NewsletterSubscriptionCreateDto.md
+docs/NewsletterSubscriptionDto.md
+docs/NewsletterSubscriptionDtoEnvelope.md
+docs/NewsletterSubscriptionDtoListEnvelope.md
+docs/NewsletterSubscriptionUpdateDto.md
 docs/NewsletterSubscriptionsApi.md
 docs/NewsletterUpdateDto.md
 docs/NewslettersApi.md

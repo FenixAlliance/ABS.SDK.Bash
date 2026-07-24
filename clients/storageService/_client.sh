@@ -305,10 +305,11 @@ case $state in
             "updateContactAvatar[Update the avatar for a given contact.]" \
             "updateTenantAvatar[Update the avatar for a given tenant.]" \
             "updateUserAvatar[Update the avatar for the current user.]"             "getBlobAsync[]" \
-            "getBlobsAsync[]"             "apiV2AiServiceCompletionsCompleteGet[]"             "accountLogoutPost[]" \
+            "getBlobsAsync[]"             "getEditorAssetAsync[]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -325,12 +326,17 @@ case $state in
             "deleteFileAsync[]" \
             "downloadFileAsync[]" \
             "getFileAsync[]" \
+            "getFileThumbnailAsync[]" \
             "getFilesAsync[]" \
-            "updateFileAsync[]"             "image[Upload an image file]" \
-            "multiple[Upload multiple files]" \
-            "post[Upload files by ID]" \
-            "single[Upload a single file]" \
-            "specific[Upload a specific file]"             "saveFileAsync[Upload a file]" \
+            "getFilesCountAsync[]" \
+            "updateFileAsync[]"             "radzenUploadImage[Upload an editor image to tenant storage.]" \
+            "radzenUploadImageScoped[Upload an editor image scoped to a record.]" \
+            "radzenUploadSingle[Upload a single editor file to tenant storage.]" \
+            "radzenUploadSingleScoped[Upload a single editor file scoped to a record.]" \
+            "radzenUploadStream[Chunked editor upload (not implemented).]" \
+            "radzenUploadStreamScoped[Chunked editor upload scoped to a record (not implemented).]" \
+            "radzenUploadUserImage[Upload an editor image to user storage.]" \
+            "radzenUploadUserImageScoped[Upload a user editor image scoped to a record.]"             "saveFileAsync[Upload a file]" \
 
     _arguments "(--help)--help[Print information about operation]"
 
@@ -436,13 +442,13 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2AiServiceCompletionsCompleteGet)
+      getEditorAssetAsync)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"conversationId=:[QUERY] "
-"message=:[QUERY] "
-          )
+          "fileId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       accountLogoutPost)
@@ -467,6 +473,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -593,7 +606,26 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getFileThumbnailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "fileId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getFilesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getFilesCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
@@ -612,47 +644,91 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      image)
+      radzenUploadImage)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+          "tenantId=:[PATH] "
+          "visibility=:[QUERY] "
+"socialProfileId=:[QUERY] "
+"purpose=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      multiple)
+      radzenUploadImageScoped)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
+          "tenantId=:[PATH] "
+"recordType=:[PATH] "
+"recordId=:[PATH] "
+          "visibility=:[QUERY] "
+"socialProfileId=:[QUERY] "
+"purpose=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      post)
+      radzenUploadSingle)
         local -a _op_arguments
         _op_arguments=(
-          "id=:[PATH] "
-          "tenantId=:[QUERY] "
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      radzenUploadSingleScoped)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+"recordType=:[PATH] "
+"recordId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      radzenUploadStream)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      radzenUploadStreamScoped)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+"recordType=:[PATH] "
+"recordId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      radzenUploadUserImage)
+        local -a _op_arguments
+        _op_arguments=(
+                    "visibility=:[QUERY] "
+"socialProfileId=:[QUERY] "
+"purpose=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      single)
+      radzenUploadUserImageScoped)
         local -a _op_arguments
         _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      specific)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
+          "recordType=:[PATH] "
+"recordId=:[PATH] "
+          "visibility=:[QUERY] "
+"socialProfileId=:[QUERY] "
+"purpose=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

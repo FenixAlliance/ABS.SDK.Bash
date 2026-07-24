@@ -316,6 +316,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -331,10 +332,10 @@ case $state in
             "versionGet[]"             "deleteSystemIPLookup[Delete a system IP lookup]" \
             "getSystemIPLookupById[Retrieve a single system IP lookup by its ID]" \
             "getSystemIPLookups[Retrieve a list of system IP lookups]" \
-            "getSystemIPLookupsCount[Get the count of system IP lookups]"             "getLicenseAssignmentsAsync[Retrieve license assignments]" \
-            "getLicenseAttributesAsync[Retrieve license attributes]" \
+            "getSystemIPLookupsCount[Get the count of system IP lookups]"             "getAttributesForLicenseAsync[Retrieve license attributes]" \
+            "getFeaturesForLicenseAsync[Retrieve license features]" \
+            "getLicenseAssignmentsAsync[Retrieve license assignments]" \
             "getLicenseByIdAsync[Retrieve a license by ID]" \
-            "getLicenseFeaturesAsync[Retrieve license features]" \
             "getLicenseRecordsQuotaAsync[Retrieve license record quota]" \
             "getLicensesAsync[Retrieve a list of licenses]" \
             "redeemLicenseAsync[Redeem a license]" \
@@ -599,6 +600,13 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
@@ -718,6 +726,26 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getAttributesForLicenseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "licenseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getFeaturesForLicenseAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "licenseId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getLicenseAssignmentsAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -728,27 +756,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getLicenseAttributesAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "licenseId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       getLicenseByIdAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "licenseId=:[PATH] "
-          "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getLicenseFeaturesAsync)
         local -a _op_arguments
         _op_arguments=(
           "licenseId=:[PATH] "

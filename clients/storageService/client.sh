@@ -135,13 +135,14 @@ operation_parameters_minimum_occurrences["getBlobsAsync:::maxResults"]=0
 operation_parameters_minimum_occurrences["getBlobsAsync:::includeAttributes"]=0
 operation_parameters_minimum_occurrences["getBlobsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlobsAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=1
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_minimum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_minimum_occurrences["getEditorAssetAsync:::fileId"]=1
+operation_parameters_minimum_occurrences["getEditorAssetAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getEditorAssetAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -158,8 +159,7 @@ operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordReque
 operation_parameters_minimum_occurrences["createFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["createFileAsync:::id"]=0
-operation_parameters_minimum_occurrences["createFileAsync:::timestamp"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::file"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::notes"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::title"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::author"]=0
@@ -170,7 +170,26 @@ operation_parameters_minimum_occurrences["createFileAsync:::keyWords"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::validResponse"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::parentFileUploadId"]=0
 operation_parameters_minimum_occurrences["createFileAsync:::filePath"]=0
-operation_parameters_minimum_occurrences["createFileAsync:::file"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::publicAccessType"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::purpose"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::socialProfileId.value"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.content"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.sha256"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.createdAtUtc"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.userId.value"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.tenantId.value"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.enrollmentId.value"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.source"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.length"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.name"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.fileName"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.lastModified"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.size"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.contentType"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.contentDisposition"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::appFile.headers"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::id"]=0
+operation_parameters_minimum_occurrences["createFileAsync:::timestamp"]=0
 operation_parameters_minimum_occurrences["deleteFileAsync:::fileId"]=1
 operation_parameters_minimum_occurrences["deleteFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["deleteFileAsync:::api-version"]=0
@@ -183,13 +202,21 @@ operation_parameters_minimum_occurrences["getFileAsync:::fileId"]=1
 operation_parameters_minimum_occurrences["getFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getFileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFileThumbnailAsync:::fileId"]=1
+operation_parameters_minimum_occurrences["getFileThumbnailAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getFileThumbnailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getFileThumbnailAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getFilesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getFilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::fileId"]=1
 operation_parameters_minimum_occurrences["updateFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::file"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::notes"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::metadata"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::title"]=0
@@ -201,31 +228,73 @@ operation_parameters_minimum_occurrences["updateFileAsync:::keyWords"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::validResponse"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::parentFileUploadID"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::filePath"]=0
-operation_parameters_minimum_occurrences["updateFileAsync:::file"]=0
-operation_parameters_minimum_occurrences["image:::tenantId"]=0
-operation_parameters_minimum_occurrences["image:::api-version"]=0
-operation_parameters_minimum_occurrences["image:::x-api-version"]=0
-operation_parameters_minimum_occurrences["image:::file"]=0
-operation_parameters_minimum_occurrences["multiple:::tenantId"]=0
-operation_parameters_minimum_occurrences["multiple:::api-version"]=0
-operation_parameters_minimum_occurrences["multiple:::x-api-version"]=0
-operation_parameters_minimum_occurrences["multiple:::files"]=0
-operation_parameters_minimum_occurrences["post:::id"]=1
-operation_parameters_minimum_occurrences["post:::tenantId"]=0
-operation_parameters_minimum_occurrences["post:::api-version"]=0
-operation_parameters_minimum_occurrences["post:::x-api-version"]=0
-operation_parameters_minimum_occurrences["post:::files"]=0
-operation_parameters_minimum_occurrences["single:::tenantId"]=0
-operation_parameters_minimum_occurrences["single:::api-version"]=0
-operation_parameters_minimum_occurrences["single:::x-api-version"]=0
-operation_parameters_minimum_occurrences["single:::file"]=0
-operation_parameters_minimum_occurrences["specific:::tenantId"]=0
-operation_parameters_minimum_occurrences["specific:::api-version"]=0
-operation_parameters_minimum_occurrences["specific:::x-api-version"]=0
-operation_parameters_minimum_occurrences["specific:::file"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.content"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.sha256"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.createdAtUtc"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.userId.value"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.tenantId.value"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.enrollmentId.value"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.source"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.length"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.name"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.fileName"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.lastModified"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.size"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.contentType"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.contentDisposition"]=0
+operation_parameters_minimum_occurrences["updateFileAsync:::appFile.headers"]=0
+operation_parameters_minimum_occurrences["radzenUploadImage:::tenantId"]=1
+operation_parameters_minimum_occurrences["radzenUploadImage:::visibility"]=0
+operation_parameters_minimum_occurrences["radzenUploadImage:::socialProfileId"]=0
+operation_parameters_minimum_occurrences["radzenUploadImage:::purpose"]=0
+operation_parameters_minimum_occurrences["radzenUploadImage:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadImage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadImage:::file"]=0
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::tenantId"]=1
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::recordType"]=1
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::recordId"]=1
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::visibility"]=0
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::socialProfileId"]=0
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::purpose"]=0
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadImageScoped:::file"]=0
+operation_parameters_minimum_occurrences["radzenUploadSingle:::tenantId"]=1
+operation_parameters_minimum_occurrences["radzenUploadSingle:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadSingle:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadSingle:::file"]=0
+operation_parameters_minimum_occurrences["radzenUploadSingleScoped:::tenantId"]=1
+operation_parameters_minimum_occurrences["radzenUploadSingleScoped:::recordType"]=1
+operation_parameters_minimum_occurrences["radzenUploadSingleScoped:::recordId"]=1
+operation_parameters_minimum_occurrences["radzenUploadSingleScoped:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadSingleScoped:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadSingleScoped:::file"]=0
+operation_parameters_minimum_occurrences["radzenUploadStream:::tenantId"]=1
+operation_parameters_minimum_occurrences["radzenUploadStream:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadStream:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadStreamScoped:::tenantId"]=1
+operation_parameters_minimum_occurrences["radzenUploadStreamScoped:::recordType"]=1
+operation_parameters_minimum_occurrences["radzenUploadStreamScoped:::recordId"]=1
+operation_parameters_minimum_occurrences["radzenUploadStreamScoped:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadStreamScoped:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImage:::visibility"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImage:::socialProfileId"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImage:::purpose"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImage:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImage:::file"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::recordType"]=1
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::recordId"]=1
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::visibility"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::socialProfileId"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::purpose"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::x-api-version"]=0
+operation_parameters_minimum_occurrences["radzenUploadUserImageScoped:::file"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::file"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::notes"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::title"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::author"]=0
@@ -236,6 +305,9 @@ operation_parameters_minimum_occurrences["saveFileAsync:::keyWords"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::validResponse"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::parentFileUploadId"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::filePath"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::publicAccessType"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::purpose"]=0
+operation_parameters_minimum_occurrences["saveFileAsync:::socialProfileId.value"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::appFile.content"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::appFile.sha256"]=0
 operation_parameters_minimum_occurrences["saveFileAsync:::appFile.createdAtUtc"]=0
@@ -300,13 +372,14 @@ operation_parameters_maximum_occurrences["getBlobsAsync:::maxResults"]=0
 operation_parameters_maximum_occurrences["getBlobsAsync:::includeAttributes"]=0
 operation_parameters_maximum_occurrences["getBlobsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlobsAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=0
-operation_parameters_maximum_occurrences["apiV2AiServiceCompletionsCompleteGet:::message"]=0
+operation_parameters_maximum_occurrences["getEditorAssetAsync:::fileId"]=0
+operation_parameters_maximum_occurrences["getEditorAssetAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getEditorAssetAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -323,8 +396,7 @@ operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordReque
 operation_parameters_maximum_occurrences["createFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["createFileAsync:::id"]=0
-operation_parameters_maximum_occurrences["createFileAsync:::timestamp"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::file"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::notes"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::title"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::author"]=0
@@ -335,7 +407,26 @@ operation_parameters_maximum_occurrences["createFileAsync:::keyWords"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::validResponse"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::parentFileUploadId"]=0
 operation_parameters_maximum_occurrences["createFileAsync:::filePath"]=0
-operation_parameters_maximum_occurrences["createFileAsync:::file"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::publicAccessType"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::purpose"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::socialProfileId.value"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.content"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.sha256"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.createdAtUtc"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.userId.value"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.tenantId.value"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.enrollmentId.value"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.source"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.length"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.name"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.fileName"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.lastModified"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.size"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.contentType"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.contentDisposition"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::appFile.headers"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::id"]=0
+operation_parameters_maximum_occurrences["createFileAsync:::timestamp"]=0
 operation_parameters_maximum_occurrences["deleteFileAsync:::fileId"]=0
 operation_parameters_maximum_occurrences["deleteFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["deleteFileAsync:::api-version"]=0
@@ -348,13 +439,21 @@ operation_parameters_maximum_occurrences["getFileAsync:::fileId"]=0
 operation_parameters_maximum_occurrences["getFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFileThumbnailAsync:::fileId"]=0
+operation_parameters_maximum_occurrences["getFileThumbnailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getFileThumbnailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getFileThumbnailAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getFilesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::fileId"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::file"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::notes"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::metadata"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::title"]=0
@@ -366,31 +465,73 @@ operation_parameters_maximum_occurrences["updateFileAsync:::keyWords"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::validResponse"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::parentFileUploadID"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::filePath"]=0
-operation_parameters_maximum_occurrences["updateFileAsync:::file"]=0
-operation_parameters_maximum_occurrences["image:::tenantId"]=0
-operation_parameters_maximum_occurrences["image:::api-version"]=0
-operation_parameters_maximum_occurrences["image:::x-api-version"]=0
-operation_parameters_maximum_occurrences["image:::file"]=0
-operation_parameters_maximum_occurrences["multiple:::tenantId"]=0
-operation_parameters_maximum_occurrences["multiple:::api-version"]=0
-operation_parameters_maximum_occurrences["multiple:::x-api-version"]=0
-operation_parameters_maximum_occurrences["multiple:::files"]=0
-operation_parameters_maximum_occurrences["post:::id"]=0
-operation_parameters_maximum_occurrences["post:::tenantId"]=0
-operation_parameters_maximum_occurrences["post:::api-version"]=0
-operation_parameters_maximum_occurrences["post:::x-api-version"]=0
-operation_parameters_maximum_occurrences["post:::files"]=0
-operation_parameters_maximum_occurrences["single:::tenantId"]=0
-operation_parameters_maximum_occurrences["single:::api-version"]=0
-operation_parameters_maximum_occurrences["single:::x-api-version"]=0
-operation_parameters_maximum_occurrences["single:::file"]=0
-operation_parameters_maximum_occurrences["specific:::tenantId"]=0
-operation_parameters_maximum_occurrences["specific:::api-version"]=0
-operation_parameters_maximum_occurrences["specific:::x-api-version"]=0
-operation_parameters_maximum_occurrences["specific:::file"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.content"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.sha256"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.createdAtUtc"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.userId.value"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.tenantId.value"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.enrollmentId.value"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.source"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.length"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.name"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.fileName"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.lastModified"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.size"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.contentType"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.contentDisposition"]=0
+operation_parameters_maximum_occurrences["updateFileAsync:::appFile.headers"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::tenantId"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::visibility"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::purpose"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadImage:::file"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::tenantId"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::recordType"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::recordId"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::visibility"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::purpose"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadImageScoped:::file"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingle:::tenantId"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingle:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingle:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingle:::file"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingleScoped:::tenantId"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingleScoped:::recordType"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingleScoped:::recordId"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingleScoped:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingleScoped:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadSingleScoped:::file"]=0
+operation_parameters_maximum_occurrences["radzenUploadStream:::tenantId"]=0
+operation_parameters_maximum_occurrences["radzenUploadStream:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadStream:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadStreamScoped:::tenantId"]=0
+operation_parameters_maximum_occurrences["radzenUploadStreamScoped:::recordType"]=0
+operation_parameters_maximum_occurrences["radzenUploadStreamScoped:::recordId"]=0
+operation_parameters_maximum_occurrences["radzenUploadStreamScoped:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadStreamScoped:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImage:::visibility"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImage:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImage:::purpose"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImage:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImage:::file"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::recordType"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::recordId"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::visibility"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::purpose"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::x-api-version"]=0
+operation_parameters_maximum_occurrences["radzenUploadUserImageScoped:::file"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::file"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::notes"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::title"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::author"]=0
@@ -401,6 +542,9 @@ operation_parameters_maximum_occurrences["saveFileAsync:::keyWords"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::validResponse"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::parentFileUploadId"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::filePath"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::publicAccessType"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::purpose"]=0
+operation_parameters_maximum_occurrences["saveFileAsync:::socialProfileId.value"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::appFile.content"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::appFile.sha256"]=0
 operation_parameters_maximum_occurrences["saveFileAsync:::appFile.createdAtUtc"]=0
@@ -462,13 +606,14 @@ operation_parameters_collection_type["getBlobsAsync:::maxResults"]=""
 operation_parameters_collection_type["getBlobsAsync:::includeAttributes"]=""
 operation_parameters_collection_type["getBlobsAsync:::api-version"]=""
 operation_parameters_collection_type["getBlobsAsync:::x-api-version"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::tenantId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::conversationId"]=""
-operation_parameters_collection_type["apiV2AiServiceCompletionsCompleteGet:::message"]=""
+operation_parameters_collection_type["getEditorAssetAsync:::fileId"]=""
+operation_parameters_collection_type["getEditorAssetAsync:::api-version"]=""
+operation_parameters_collection_type["getEditorAssetAsync:::x-api-version"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -485,8 +630,7 @@ operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]
 operation_parameters_collection_type["createFileAsync:::tenantId"]=""
 operation_parameters_collection_type["createFileAsync:::api-version"]=""
 operation_parameters_collection_type["createFileAsync:::x-api-version"]=""
-operation_parameters_collection_type["createFileAsync:::id"]=""
-operation_parameters_collection_type["createFileAsync:::timestamp"]=""
+operation_parameters_collection_type["createFileAsync:::file"]=""
 operation_parameters_collection_type["createFileAsync:::notes"]=""
 operation_parameters_collection_type["createFileAsync:::title"]=""
 operation_parameters_collection_type["createFileAsync:::author"]=""
@@ -497,7 +641,26 @@ operation_parameters_collection_type["createFileAsync:::keyWords"]=""
 operation_parameters_collection_type["createFileAsync:::validResponse"]=""
 operation_parameters_collection_type["createFileAsync:::parentFileUploadId"]=""
 operation_parameters_collection_type["createFileAsync:::filePath"]=""
-operation_parameters_collection_type["createFileAsync:::file"]=""
+operation_parameters_collection_type["createFileAsync:::publicAccessType"]=""
+operation_parameters_collection_type["createFileAsync:::purpose"]=""
+operation_parameters_collection_type["createFileAsync:::socialProfileId.value"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.content"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.sha256"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.createdAtUtc"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.userId.value"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.tenantId.value"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.enrollmentId.value"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.source"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.length"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.name"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.fileName"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.lastModified"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.size"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.contentType"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.contentDisposition"]=""
+operation_parameters_collection_type["createFileAsync:::appFile.headers"]=
+operation_parameters_collection_type["createFileAsync:::id"]=""
+operation_parameters_collection_type["createFileAsync:::timestamp"]=""
 operation_parameters_collection_type["deleteFileAsync:::fileId"]=""
 operation_parameters_collection_type["deleteFileAsync:::tenantId"]=""
 operation_parameters_collection_type["deleteFileAsync:::api-version"]=""
@@ -510,13 +673,21 @@ operation_parameters_collection_type["getFileAsync:::fileId"]=""
 operation_parameters_collection_type["getFileAsync:::tenantId"]=""
 operation_parameters_collection_type["getFileAsync:::api-version"]=""
 operation_parameters_collection_type["getFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFileThumbnailAsync:::fileId"]=""
+operation_parameters_collection_type["getFileThumbnailAsync:::tenantId"]=""
+operation_parameters_collection_type["getFileThumbnailAsync:::api-version"]=""
+operation_parameters_collection_type["getFileThumbnailAsync:::x-api-version"]=""
 operation_parameters_collection_type["getFilesAsync:::tenantId"]=""
 operation_parameters_collection_type["getFilesAsync:::api-version"]=""
 operation_parameters_collection_type["getFilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFilesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getFilesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getFilesCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateFileAsync:::fileId"]=""
 operation_parameters_collection_type["updateFileAsync:::tenantId"]=""
 operation_parameters_collection_type["updateFileAsync:::api-version"]=""
 operation_parameters_collection_type["updateFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateFileAsync:::file"]=""
 operation_parameters_collection_type["updateFileAsync:::notes"]=""
 operation_parameters_collection_type["updateFileAsync:::metadata"]=""
 operation_parameters_collection_type["updateFileAsync:::title"]=""
@@ -528,31 +699,73 @@ operation_parameters_collection_type["updateFileAsync:::keyWords"]=""
 operation_parameters_collection_type["updateFileAsync:::validResponse"]=""
 operation_parameters_collection_type["updateFileAsync:::parentFileUploadID"]=""
 operation_parameters_collection_type["updateFileAsync:::filePath"]=""
-operation_parameters_collection_type["updateFileAsync:::file"]=""
-operation_parameters_collection_type["image:::tenantId"]=""
-operation_parameters_collection_type["image:::api-version"]=""
-operation_parameters_collection_type["image:::x-api-version"]=""
-operation_parameters_collection_type["image:::file"]=""
-operation_parameters_collection_type["multiple:::tenantId"]=""
-operation_parameters_collection_type["multiple:::api-version"]=""
-operation_parameters_collection_type["multiple:::x-api-version"]=""
-operation_parameters_collection_type["multiple:::files"]=
-operation_parameters_collection_type["post:::id"]=""
-operation_parameters_collection_type["post:::tenantId"]=""
-operation_parameters_collection_type["post:::api-version"]=""
-operation_parameters_collection_type["post:::x-api-version"]=""
-operation_parameters_collection_type["post:::files"]=
-operation_parameters_collection_type["single:::tenantId"]=""
-operation_parameters_collection_type["single:::api-version"]=""
-operation_parameters_collection_type["single:::x-api-version"]=""
-operation_parameters_collection_type["single:::file"]=""
-operation_parameters_collection_type["specific:::tenantId"]=""
-operation_parameters_collection_type["specific:::api-version"]=""
-operation_parameters_collection_type["specific:::x-api-version"]=""
-operation_parameters_collection_type["specific:::file"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.content"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.sha256"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.createdAtUtc"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.userId.value"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.tenantId.value"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.enrollmentId.value"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.source"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.length"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.name"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.fileName"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.lastModified"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.size"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.contentType"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.contentDisposition"]=""
+operation_parameters_collection_type["updateFileAsync:::appFile.headers"]=
+operation_parameters_collection_type["radzenUploadImage:::tenantId"]=""
+operation_parameters_collection_type["radzenUploadImage:::visibility"]=""
+operation_parameters_collection_type["radzenUploadImage:::socialProfileId"]=""
+operation_parameters_collection_type["radzenUploadImage:::purpose"]=""
+operation_parameters_collection_type["radzenUploadImage:::api-version"]=""
+operation_parameters_collection_type["radzenUploadImage:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadImage:::file"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::tenantId"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::recordType"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::recordId"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::visibility"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::socialProfileId"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::purpose"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::api-version"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadImageScoped:::file"]=""
+operation_parameters_collection_type["radzenUploadSingle:::tenantId"]=""
+operation_parameters_collection_type["radzenUploadSingle:::api-version"]=""
+operation_parameters_collection_type["radzenUploadSingle:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadSingle:::file"]=""
+operation_parameters_collection_type["radzenUploadSingleScoped:::tenantId"]=""
+operation_parameters_collection_type["radzenUploadSingleScoped:::recordType"]=""
+operation_parameters_collection_type["radzenUploadSingleScoped:::recordId"]=""
+operation_parameters_collection_type["radzenUploadSingleScoped:::api-version"]=""
+operation_parameters_collection_type["radzenUploadSingleScoped:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadSingleScoped:::file"]=""
+operation_parameters_collection_type["radzenUploadStream:::tenantId"]=""
+operation_parameters_collection_type["radzenUploadStream:::api-version"]=""
+operation_parameters_collection_type["radzenUploadStream:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadStreamScoped:::tenantId"]=""
+operation_parameters_collection_type["radzenUploadStreamScoped:::recordType"]=""
+operation_parameters_collection_type["radzenUploadStreamScoped:::recordId"]=""
+operation_parameters_collection_type["radzenUploadStreamScoped:::api-version"]=""
+operation_parameters_collection_type["radzenUploadStreamScoped:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadUserImage:::visibility"]=""
+operation_parameters_collection_type["radzenUploadUserImage:::socialProfileId"]=""
+operation_parameters_collection_type["radzenUploadUserImage:::purpose"]=""
+operation_parameters_collection_type["radzenUploadUserImage:::api-version"]=""
+operation_parameters_collection_type["radzenUploadUserImage:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadUserImage:::file"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::recordType"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::recordId"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::visibility"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::socialProfileId"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::purpose"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::api-version"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::x-api-version"]=""
+operation_parameters_collection_type["radzenUploadUserImageScoped:::file"]=""
 operation_parameters_collection_type["saveFileAsync:::tenantId"]=""
 operation_parameters_collection_type["saveFileAsync:::api-version"]=""
 operation_parameters_collection_type["saveFileAsync:::x-api-version"]=""
+operation_parameters_collection_type["saveFileAsync:::file"]=""
 operation_parameters_collection_type["saveFileAsync:::notes"]=""
 operation_parameters_collection_type["saveFileAsync:::title"]=""
 operation_parameters_collection_type["saveFileAsync:::author"]=""
@@ -563,6 +776,9 @@ operation_parameters_collection_type["saveFileAsync:::keyWords"]=""
 operation_parameters_collection_type["saveFileAsync:::validResponse"]=""
 operation_parameters_collection_type["saveFileAsync:::parentFileUploadId"]=""
 operation_parameters_collection_type["saveFileAsync:::filePath"]=""
+operation_parameters_collection_type["saveFileAsync:::publicAccessType"]=""
+operation_parameters_collection_type["saveFileAsync:::purpose"]=""
+operation_parameters_collection_type["saveFileAsync:::socialProfileId.value"]=""
 operation_parameters_collection_type["saveFileAsync:::appFile.content"]=""
 operation_parameters_collection_type["saveFileAsync:::appFile.sha256"]=""
 operation_parameters_collection_type["saveFileAsync:::appFile.createdAtUtc"]=""
@@ -937,7 +1153,7 @@ build_request_path() {
 print_help() {
 cat <<EOF
 
-${BOLD}${WHITE}StorageService command line client (API version 2.1.2.5532)${OFF}
+${BOLD}${WHITE}StorageService command line client (API version 2.0.0.0)${OFF}
 
 ${BOLD}${WHITE}Usage${OFF}
 
@@ -986,18 +1202,19 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[completions]${OFF}"
+    echo -e "${BOLD}${WHITE}[editorAssets]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}apiV2AiServiceCompletionsCompleteGet${OFF};
+  ${CYAN}getEditorAssetAsync${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[fenixAlliancePortalsWebsite]${OFF}"
+    echo -e "${BOLD}${WHITE}[fenixAllianceABSWeb]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}accountLogoutPost${OFF};
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1020,18 +1237,23 @@ read -r -d '' ops <<EOF
   ${CYAN}deleteFileAsync${OFF};
   ${CYAN}downloadFileAsync${OFF};
   ${CYAN}getFileAsync${OFF};
+  ${CYAN}getFileThumbnailAsync${OFF};
   ${CYAN}getFilesAsync${OFF};
+  ${CYAN}getFilesCountAsync${OFF};
   ${CYAN}updateFileAsync${OFF};
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[radzenEditor]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}image${OFF};Upload an image file
-  ${CYAN}multiple${OFF};Upload multiple files
-  ${CYAN}post${OFF};Upload files by ID
-  ${CYAN}single${OFF};Upload a single file
-  ${CYAN}specific${OFF};Upload a specific file
+  ${CYAN}radzenUploadImage${OFF};Upload an editor image to tenant storage.
+  ${CYAN}radzenUploadImageScoped${OFF};Upload an editor image scoped to a record.
+  ${CYAN}radzenUploadSingle${OFF};Upload a single editor file to tenant storage.
+  ${CYAN}radzenUploadSingleScoped${OFF};Upload a single editor file scoped to a record.
+  ${CYAN}radzenUploadStream${OFF};Chunked editor upload (not implemented).
+  ${CYAN}radzenUploadStreamScoped${OFF};Chunked editor upload scoped to a record (not implemented).
+  ${CYAN}radzenUploadUserImage${OFF};Upload an editor image to user storage.
+  ${CYAN}radzenUploadUserImageScoped${OFF};Upload a user editor image scoped to a record.
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1046,7 +1268,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\\t\\t\\t\\tPrint API version"
     echo -e "  --about\\t\\t\\t\\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\\t\\t\\t\\tSpecify the host URL "
-echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
+echo -e "              \\t\\t\\t\\t(e.g. 'https://absuite.net')"
 
     echo -e "  --force\\t\\t\\t\\tForce command invocation in spite of missing"
     echo -e "         \\t\\t\\t\\trequired parameters or wrong content type"
@@ -1067,7 +1289,7 @@ echo -e "              \\t\\t\\t\\t(e.g. 'https://localhost')"
 ##############################################################################
 print_about() {
     echo ""
-    echo -e "${BOLD}${WHITE}StorageService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}${WHITE}StorageService command line client (API version 2.0.0.0)${OFF}"
     echo ""
     echo -e "License: Fenix Alliance Inc."
     echo -e "Contact: support@fenix-alliance.com"
@@ -1087,7 +1309,7 @@ echo "$appdescription" | paste -sd' ' | fold -sw 80
 ##############################################################################
 print_version() {
     echo ""
-    echo -e "${BOLD}StorageService command line client (API version 2.1.2.5532)${OFF}"
+    echo -e "${BOLD}StorageService command line client (API version 2.0.0.0)${OFF}"
     echo ""
 }
 
@@ -1109,10 +1331,6 @@ print_getAvatar_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1132,10 +1350,6 @@ print_getContactAvatar_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1154,10 +1368,6 @@ print_getCurrentUserAvatar_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1177,10 +1387,6 @@ print_getTenantAvatar_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1200,10 +1406,6 @@ print_getUserAvatar_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1345,28 +1547,24 @@ print_getBlobsAsync_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2AiServiceCompletionsCompleteGet operation
+# Print help for getEditorAssetAsync operation
 #
 ##############################################################################
-print_apiV2AiServiceCompletionsCompleteGet_help() {
+print_getEditorAssetAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}apiV2AiServiceCompletionsCompleteGet - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEditorAssetAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}conversationId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: conversationId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}message${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: message=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1422,6 +1620,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1687,10 +1901,6 @@ print_createFileAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=409
-    echo -e "${result_color_table[${code:0:1}]}  409;Conflict${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=422
-    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1712,16 +1922,12 @@ print_deleteFileAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=409
-    echo -e "${result_color_table[${code:0:1}]}  409;Conflict${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=422
-    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1743,8 +1949,8 @@ print_downloadFileAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1768,8 +1974,33 @@ print_getFileAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getFileThumbnailAsync operation
+#
+##############################################################################
+print_getFileThumbnailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getFileThumbnailAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}fileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1781,6 +2012,30 @@ print_getFileAsync_help() {
 print_getFilesAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getFilesAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getFilesCountAsync operation
+#
+##############################################################################
+print_getFilesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getFilesCountAsync - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1817,30 +2072,29 @@ print_updateFileAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=409
-    echo -e "${result_color_table[${code:0:1}]}  409;Conflict${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=422
-    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
-# Print help for image operation
+# Print help for radzenUploadImage operation
 #
 ##############################################################################
-print_image_help() {
+print_radzenUploadImage_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}image - Upload an image file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Uploads an image file and returns its URL for editor embedding." | paste -sd' ' | fold -sw 80
+    echo -e "${BOLD}${WHITE}radzenUploadImage - Upload an editor image to tenant storage.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}visibility${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: visibility=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}purpose${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: purpose=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1852,17 +2106,22 @@ print_image_help() {
 }
 ##############################################################################
 #
-# Print help for multiple operation
+# Print help for radzenUploadImageScoped operation
 #
 ##############################################################################
-print_multiple_help() {
+print_radzenUploadImageScoped_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}multiple - Upload multiple files${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Uploads multiple files to tenant or user storage." | paste -sd' ' | fold -sw 80
+    echo -e "${BOLD}${WHITE}radzenUploadImageScoped - Upload an editor image scoped to a record.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordType${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordType=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}visibility${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: visibility=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}purpose${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: purpose=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1874,18 +2133,99 @@ print_multiple_help() {
 }
 ##############################################################################
 #
-# Print help for post operation
+# Print help for radzenUploadSingle operation
 #
 ##############################################################################
-print_post_help() {
+print_radzenUploadSingle_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}post - Upload files by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Uploads files associated with a specific resource ID." | paste -sd' ' | fold -sw 80
+    echo -e "${BOLD}${WHITE}radzenUploadSingle - Upload a single editor file to tenant storage.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[integer]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for radzenUploadSingleScoped operation
+#
+##############################################################################
+print_radzenUploadSingleScoped_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}radzenUploadSingleScoped - Upload a single editor file scoped to a record.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordType${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordType=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for radzenUploadStream operation
+#
+##############################################################################
+print_radzenUploadStream_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}radzenUploadStream - Chunked editor upload (not implemented).${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for radzenUploadStreamScoped operation
+#
+##############################################################################
+print_radzenUploadStreamScoped_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}radzenUploadStreamScoped - Chunked editor upload scoped to a record (not implemented).${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordType${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordType=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for radzenUploadUserImage operation
+#
+##############################################################################
+print_radzenUploadUserImage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}radzenUploadUserImage - Upload an editor image to user storage.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}visibility${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: visibility=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}purpose${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: purpose=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1897,39 +2237,21 @@ print_post_help() {
 }
 ##############################################################################
 #
-# Print help for single operation
+# Print help for radzenUploadUserImageScoped operation
 #
 ##############################################################################
-print_single_help() {
+print_radzenUploadUserImageScoped_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}single - Upload a single file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Uploads a single file to tenant or user storage." | paste -sd' ' | fold -sw 80
+    echo -e "${BOLD}${WHITE}radzenUploadUserImageScoped - Upload a user editor image scoped to a record.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}recordType${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordType=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}recordId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: recordId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}visibility${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: visibility=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for specific operation
-#
-##############################################################################
-print_specific_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}specific - Upload a specific file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Uploads a specific file to tenant or user storage." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+    echo -e "  * ${GREEN}purpose${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: purpose=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -1948,7 +2270,7 @@ print_saveFileAsync_help() {
     echo ""
     echo -e "${BOLD}${WHITE}saveFileAsync - Upload a file${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Uploads a file to tenant or user storage." | paste -sd' ' | fold -sw 80
+    echo -e "Uploads a file to tenant or user storage, scanned and catalogued through the storage spine." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -2332,19 +2654,19 @@ call_getBlobsAsync() {
 
 ##############################################################################
 #
-# Call apiV2AiServiceCompletionsCompleteGet operation
+# Call getEditorAssetAsync operation
 #
 ##############################################################################
-call_apiV2AiServiceCompletionsCompleteGet() {
+call_getEditorAssetAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=()
+    local path_parameter_names=(fileId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId conversationId message)
+    local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/AiService/Completions/Complete" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/StorageService/EditorAssets/{fileId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -2510,6 +2832,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3464,6 +3822,42 @@ call_getFileAsync() {
 
 ##############################################################################
 #
+# Call getFileThumbnailAsync operation
+#
+##############################################################################
+call_getFileThumbnailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/StorageService/Files/{fileId}/Thumbnail" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getFilesAsync operation
 #
 ##############################################################################
@@ -3477,6 +3871,42 @@ call_getFilesAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/StorageService/Files" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getFilesCountAsync operation
+#
+##############################################################################
+call_getFilesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/StorageService/Files/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3537,19 +3967,19 @@ call_updateFileAsync() {
 
 ##############################################################################
 #
-# Call image operation
+# Call radzenUploadImage operation
 #
 ##############################################################################
-call_image() {
+call_radzenUploadImage() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=()
+    local path_parameter_names=(tenantId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(visibility socialProfileId purpose api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Image" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/fs/radzen/tenants/{tenantId}/upload/image" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3574,19 +4004,19 @@ call_image() {
 
 ##############################################################################
 #
-# Call multiple operation
+# Call radzenUploadImageScoped operation
 #
 ##############################################################################
-call_multiple() {
+call_radzenUploadImageScoped() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=()
+    local path_parameter_names=(tenantId recordType recordId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(visibility socialProfileId purpose api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Multiple" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/fs/radzen/tenants/{tenantId}/{recordType}/{recordId}/upload/image" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3611,19 +4041,19 @@ call_multiple() {
 
 ##############################################################################
 #
-# Call post operation
+# Call radzenUploadSingle operation
 #
 ##############################################################################
-call_post() {
+call_radzenUploadSingle() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=(id)
+    local path_parameter_names=(tenantId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/{id}" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/fs/radzen/tenants/{tenantId}/upload/single" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3648,19 +4078,19 @@ call_post() {
 
 ##############################################################################
 #
-# Call single operation
+# Call radzenUploadSingleScoped operation
 #
 ##############################################################################
-call_single() {
+call_radzenUploadSingleScoped() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local path_parameter_names=()
+    local path_parameter_names=(tenantId recordType recordId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Single" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/fs/radzen/tenants/{tenantId}/{recordType}/{recordId}/upload/single" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3685,19 +4115,128 @@ call_single() {
 
 ##############################################################################
 #
-# Call specific operation
+# Call radzenUploadStream operation
 #
 ##############################################################################
-call_specific() {
+call_radzenUploadStream() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/fs/radzen/tenants/{tenantId}/upload/stream" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call radzenUploadStreamScoped operation
+#
+##############################################################################
+call_radzenUploadStreamScoped() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId recordType recordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/fs/radzen/tenants/{tenantId}/{recordType}/{recordId}/upload/stream" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call radzenUploadUserImage operation
+#
+##############################################################################
+call_radzenUploadUserImage() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
+    local query_parameter_names=(visibility socialProfileId purpose api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/StorageService/RadzenEditor/Uploads/Specific" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/fs/radzen/users/upload/image" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call radzenUploadUserImageScoped operation
+#
+##############################################################################
+call_radzenUploadUserImageScoped() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(recordType recordId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(visibility socialProfileId purpose api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/fs/radzen/users/{recordType}/{recordId}/upload/image" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3884,8 +4423,8 @@ case $key in
     getBlobsAsync)
     operation="getBlobsAsync"
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    operation="apiV2AiServiceCompletionsCompleteGet"
+    getEditorAssetAsync)
+    operation="getEditorAssetAsync"
     ;;
     accountLogoutPost)
     operation="accountLogoutPost"
@@ -3898,6 +4437,9 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -3950,26 +4492,41 @@ case $key in
     getFileAsync)
     operation="getFileAsync"
     ;;
+    getFileThumbnailAsync)
+    operation="getFileThumbnailAsync"
+    ;;
     getFilesAsync)
     operation="getFilesAsync"
+    ;;
+    getFilesCountAsync)
+    operation="getFilesCountAsync"
     ;;
     updateFileAsync)
     operation="updateFileAsync"
     ;;
-    image)
-    operation="image"
+    radzenUploadImage)
+    operation="radzenUploadImage"
     ;;
-    multiple)
-    operation="multiple"
+    radzenUploadImageScoped)
+    operation="radzenUploadImageScoped"
     ;;
-    post)
-    operation="post"
+    radzenUploadSingle)
+    operation="radzenUploadSingle"
     ;;
-    single)
-    operation="single"
+    radzenUploadSingleScoped)
+    operation="radzenUploadSingleScoped"
     ;;
-    specific)
-    operation="specific"
+    radzenUploadStream)
+    operation="radzenUploadStream"
+    ;;
+    radzenUploadStreamScoped)
+    operation="radzenUploadStreamScoped"
+    ;;
+    radzenUploadUserImage)
+    operation="radzenUploadUserImage"
+    ;;
+    radzenUploadUserImageScoped)
+    operation="radzenUploadUserImageScoped"
     ;;
     saveFileAsync)
     operation="saveFileAsync"
@@ -4091,8 +4648,8 @@ case $operation in
     getBlobsAsync)
     call_getBlobsAsync
     ;;
-    apiV2AiServiceCompletionsCompleteGet)
-    call_apiV2AiServiceCompletionsCompleteGet
+    getEditorAssetAsync)
+    call_getEditorAssetAsync
     ;;
     accountLogoutPost)
     call_accountLogoutPost
@@ -4105,6 +4662,9 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost
@@ -4157,26 +4717,41 @@ case $operation in
     getFileAsync)
     call_getFileAsync
     ;;
+    getFileThumbnailAsync)
+    call_getFileThumbnailAsync
+    ;;
     getFilesAsync)
     call_getFilesAsync
+    ;;
+    getFilesCountAsync)
+    call_getFilesCountAsync
     ;;
     updateFileAsync)
     call_updateFileAsync
     ;;
-    image)
-    call_image
+    radzenUploadImage)
+    call_radzenUploadImage
     ;;
-    multiple)
-    call_multiple
+    radzenUploadImageScoped)
+    call_radzenUploadImageScoped
     ;;
-    post)
-    call_post
+    radzenUploadSingle)
+    call_radzenUploadSingle
     ;;
-    single)
-    call_single
+    radzenUploadSingleScoped)
+    call_radzenUploadSingleScoped
     ;;
-    specific)
-    call_specific
+    radzenUploadStream)
+    call_radzenUploadStream
+    ;;
+    radzenUploadStreamScoped)
+    call_radzenUploadStreamScoped
+    ;;
+    radzenUploadUserImage)
+    call_radzenUploadUserImage
+    ;;
+    radzenUploadUserImageScoped)
+    call_radzenUploadUserImageScoped
     ;;
     saveFileAsync)
     call_saveFileAsync

@@ -301,6 +301,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -313,18 +314,21 @@ case $state in
             "registerPost[]" \
             "resendConfirmationEmailPost[]" \
             "resetPasswordPost[]" \
-            "versionGet[]"             "createWalletBankAccountAsync[Create Wallet Bank Account]" \
-            "createWalletLocationAsync[Create Wallet Location]" \
+            "versionGet[]"             "createLocationForWalletAsync[Create Wallet Location]" \
+            "createWalletBankAccountAsync[Create Wallet Bank Account]" \
             "createWalletPaymentAsync[Create Wallet Payment]" \
             "createWalletTokenAsync[Create Wallet Token]" \
             "createWalletWithdrawRequestAsync[Create Wallet Withdraw Request]" \
+            "deleteLocationForWalletAsync[Delete Wallet Location]" \
             "deleteWalletBankAccountAsync[Delete Wallet Bank Account]" \
-            "deleteWalletLocationAsync[Delete Wallet Location]" \
             "deleteWalletTokenAsync[Delete Wallet Token]" \
             "getIncomingPaymentsAsync[Get Incoming Payments]" \
             "getIncomingPaymentsCountAsync[Get Incoming Payments Count]" \
             "getIncomingWalletInvoicesAsync[Get Incoming Wallet Invoices]" \
             "getIncomingWalletInvoicesCountAsync[Get Incoming Wallet Invoices Count]" \
+            "getLocationForWalletAsync[Get Wallet Location]" \
+            "getLocationsForWalletAsync[Get Wallet Locations]" \
+            "getLocationsForWalletCountAsync[Get Wallet Locations Count]" \
             "getOutgoingPaymentsAsync[Get Outgoing Payments]" \
             "getOutgoingPaymentsCountAsync[Get Outgoing Payments Count]" \
             "getOutgoingWalletInvoicesAsync[Get Outgoing Wallet Invoices]" \
@@ -338,9 +342,6 @@ case $state in
             "getWalletExtendedOrdersAsync[Get Wallet Extended Orders]" \
             "getWalletInvoicesAsync[Get Wallet Invoices]" \
             "getWalletInvoicesCountAsync[Get Wallet Invoices Count]" \
-            "getWalletLocationAsync[Get Wallet Location]" \
-            "getWalletLocationsAsync[Get Wallet Locations]" \
-            "getWalletLocationsCountAsync[Get Wallet Locations Count]" \
             "getWalletOrdersAsync[Get Wallet Orders]" \
             "getWalletOrdersCountAsync[Get Wallet Orders Count]" \
             "getWalletPaymentsAsync[Get Wallet Payments]" \
@@ -358,8 +359,8 @@ case $state in
             "getWalletWithdrawsCountAsync[Get Wallet Withdraws Count]" \
             "patchWalletBankAccountAsync[Patch Wallet Bank Account]" \
             "patchWalletTokenAsync[Patch Wallet Token]" \
+            "updateLocationForWalletAsync[Update Wallet Location]" \
             "updateWalletBankAccountAsync[Update Wallet Bank Account]" \
-            "updateWalletLocationAsync[Update Wallet Location]" \
             "updateWalletTokenAsync[Update Wallet Token]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -390,6 +391,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -477,7 +485,7 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      createWalletBankAccountAsync)
+      createLocationForWalletAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
@@ -486,7 +494,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      createWalletLocationAsync)
+      createWalletBankAccountAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
@@ -522,21 +530,21 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      deleteWalletBankAccountAsync)
+      deleteLocationForWalletAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
-"bankAccountId=:[PATH] "
+"locationId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      deleteWalletLocationAsync)
+      deleteWalletBankAccountAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
-"locationId=:[PATH] "
+"bankAccountId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -580,6 +588,34 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getIncomingWalletInvoicesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "walletId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLocationForWalletAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "walletId=:[PATH] "
+"locationId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLocationsForWalletAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "walletId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getLocationsForWalletCountAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
@@ -698,34 +734,6 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getWalletInvoicesCountAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "walletId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getWalletLocationAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "walletId=:[PATH] "
-"locationId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getWalletLocationsAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "walletId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getWalletLocationsCountAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
@@ -890,21 +898,21 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateWalletBankAccountAsync)
+      updateLocationForWalletAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
-"bankAccountId=:[PATH] "
+"locationId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateWalletLocationAsync)
+      updateWalletBankAccountAsync)
         local -a _op_arguments
         _op_arguments=(
           "walletId=:[PATH] "
-"locationId=:[PATH] "
+"bankAccountId=:[PATH] "
           "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

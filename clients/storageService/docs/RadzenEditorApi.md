@@ -4,24 +4,25 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**image**](RadzenEditorApi.md#image) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Image | Upload an image file
-[**multiple**](RadzenEditorApi.md#multiple) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Multiple | Upload multiple files
-[**post**](RadzenEditorApi.md#post) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/{id} | Upload files by ID
-[**single**](RadzenEditorApi.md#single) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Single | Upload a single file
-[**specific**](RadzenEditorApi.md#specific) | **POST** /api/v2/StorageService/RadzenEditor/Uploads/Specific | Upload a specific file
+[**radzenUploadImage**](RadzenEditorApi.md#radzenUploadImage) | **POST** /api/v2/fs/radzen/tenants/{tenantId}/upload/image | Upload an editor image to tenant storage.
+[**radzenUploadImageScoped**](RadzenEditorApi.md#radzenUploadImageScoped) | **POST** /api/v2/fs/radzen/tenants/{tenantId}/{recordType}/{recordId}/upload/image | Upload an editor image scoped to a record.
+[**radzenUploadSingle**](RadzenEditorApi.md#radzenUploadSingle) | **POST** /api/v2/fs/radzen/tenants/{tenantId}/upload/single | Upload a single editor file to tenant storage.
+[**radzenUploadSingleScoped**](RadzenEditorApi.md#radzenUploadSingleScoped) | **POST** /api/v2/fs/radzen/tenants/{tenantId}/{recordType}/{recordId}/upload/single | Upload a single editor file scoped to a record.
+[**radzenUploadStream**](RadzenEditorApi.md#radzenUploadStream) | **PUT** /api/v2/fs/radzen/tenants/{tenantId}/upload/stream | Chunked editor upload (not implemented).
+[**radzenUploadStreamScoped**](RadzenEditorApi.md#radzenUploadStreamScoped) | **PUT** /api/v2/fs/radzen/tenants/{tenantId}/{recordType}/{recordId}/upload/stream | Chunked editor upload scoped to a record (not implemented).
+[**radzenUploadUserImage**](RadzenEditorApi.md#radzenUploadUserImage) | **POST** /api/v2/fs/radzen/users/upload/image | Upload an editor image to user storage.
+[**radzenUploadUserImageScoped**](RadzenEditorApi.md#radzenUploadUserImageScoped) | **POST** /api/v2/fs/radzen/users/{recordType}/{recordId}/upload/image | Upload a user editor image scoped to a record.
 
 
 
-## image
+## radzenUploadImage
 
-Upload an image file
-
-Uploads an image file and returns its URL for editor embedding.
+Upload an editor image to tenant storage.
 
 ### Example
 
 ```bash
- image  tenantId=value  api-version=value x-api-version:value
+ radzenUploadImage tenantId=value  visibility=value  socialProfileId=value  purpose=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -29,7 +30,10 @@ Uploads an image file and returns its URL for editor embedding.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [optional] [default to null]
+ **tenantId** | **string** |  | [default to null]
+ **visibility** | **string** |  | [optional] [default to null]
+ **socialProfileId** | **string** |  | [optional] [default to null]
+ **purpose** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **file** | **binary** |  | [optional] [default to null]
@@ -50,16 +54,14 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## multiple
+## radzenUploadImageScoped
 
-Upload multiple files
-
-Uploads multiple files to tenant or user storage.
+Upload an editor image scoped to a record.
 
 ### Example
 
 ```bash
- multiple  tenantId=value  api-version=value x-api-version:value
+ radzenUploadImageScoped tenantId=value recordType=value recordId=value  visibility=value  socialProfileId=value  purpose=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -67,84 +69,12 @@ Uploads multiple files to tenant or user storage.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [optional] [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **files** | **array[binary]** |  | [optional] [default to null]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: multipart/form-data
-- **Accept**: Not Applicable
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## post
-
-Upload files by ID
-
-Uploads files associated with a specific resource ID.
-
-### Example
-
-```bash
- post id=value  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **integer** |  | [default to null]
- **tenantId** | **string** |  | [optional] [default to null]
- **apiVersion** | **string** |  | [optional] [default to null]
- **xApiVersion** | **string** |  | [optional] [default to null]
- **files** | **array[binary]** |  | [optional] [default to null]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: multipart/form-data
-- **Accept**: Not Applicable
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## single
-
-Upload a single file
-
-Uploads a single file to tenant or user storage.
-
-### Example
-
-```bash
- single  tenantId=value  api-version=value x-api-version:value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [optional] [default to null]
+ **tenantId** | **string** |  | [default to null]
+ **recordType** | **string** |  | [default to null]
+ **recordId** | **string** |  | [default to null]
+ **visibility** | **string** |  | [optional] [default to null]
+ **socialProfileId** | **string** |  | [optional] [default to null]
+ **purpose** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **file** | **binary** |  | [optional] [default to null]
@@ -165,16 +95,14 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
-## specific
+## radzenUploadSingle
 
-Upload a specific file
-
-Uploads a specific file to tenant or user storage.
+Upload a single editor file to tenant storage.
 
 ### Example
 
 ```bash
- specific  tenantId=value  api-version=value x-api-version:value
+ radzenUploadSingle tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -182,7 +110,195 @@ Uploads a specific file to tenant or user storage.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tenantId** | **string** |  | [optional] [default to null]
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **file** | **binary** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: multipart/form-data
+- **Accept**: Not Applicable
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## radzenUploadSingleScoped
+
+Upload a single editor file scoped to a record.
+
+### Example
+
+```bash
+ radzenUploadSingleScoped tenantId=value recordType=value recordId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **recordType** | **string** |  | [default to null]
+ **recordId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **file** | **binary** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: multipart/form-data
+- **Accept**: Not Applicable
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## radzenUploadStream
+
+Chunked editor upload (not implemented).
+
+### Example
+
+```bash
+ radzenUploadStream tenantId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: Not Applicable
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## radzenUploadStreamScoped
+
+Chunked editor upload scoped to a record (not implemented).
+
+### Example
+
+```bash
+ radzenUploadStreamScoped tenantId=value recordType=value recordId=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tenantId** | **string** |  | [default to null]
+ **recordType** | **string** |  | [default to null]
+ **recordId** | **string** |  | [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not Applicable
+- **Accept**: Not Applicable
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## radzenUploadUserImage
+
+Upload an editor image to user storage.
+
+### Example
+
+```bash
+ radzenUploadUserImage  visibility=value  socialProfileId=value  purpose=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **visibility** | **string** |  | [optional] [default to null]
+ **socialProfileId** | **string** |  | [optional] [default to null]
+ **purpose** | **string** |  | [optional] [default to null]
+ **apiVersion** | **string** |  | [optional] [default to null]
+ **xApiVersion** | **string** |  | [optional] [default to null]
+ **file** | **binary** |  | [optional] [default to null]
+
+### Return type
+
+(empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: multipart/form-data
+- **Accept**: Not Applicable
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+
+## radzenUploadUserImageScoped
+
+Upload a user editor image scoped to a record.
+
+### Example
+
+```bash
+ radzenUploadUserImageScoped recordType=value recordId=value  visibility=value  socialProfileId=value  purpose=value  api-version=value x-api-version:value
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **recordType** | **string** |  | [default to null]
+ **recordId** | **string** |  | [default to null]
+ **visibility** | **string** |  | [optional] [default to null]
+ **socialProfileId** | **string** |  | [optional] [default to null]
+ **purpose** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
  **file** | **binary** |  | [optional] [default to null]

@@ -7,6 +7,8 @@ Name | Type | Description | Notes
 **timestamp** | **string** |  | [optional] [default to null]
 **title** | **string** |  | [optional] [default to null]
 **description** | **string** |  | [optional] [default to null]
+**individualId** | **string** |  | [optional] [default to null]
+**organizationId** | **string** |  | [optional] [default to null]
 **projectStartDate** | **string** |  | [optional] [default to null]
 **projectEndDate** | **string** |  | [optional] [default to null]
 

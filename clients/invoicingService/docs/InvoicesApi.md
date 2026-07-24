@@ -1392,7 +1392,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DecimalEnvelope**](DecimalEnvelope.md)
+[**MoneyEnvelope**](MoneyEnvelope.md)
 
 ### Authorization
 
@@ -1427,7 +1427,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DecimalEnvelope**](DecimalEnvelope.md)
+[**MoneyEnvelope**](MoneyEnvelope.md)
 
 ### Authorization
 

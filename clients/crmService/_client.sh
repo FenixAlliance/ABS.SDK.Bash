@@ -297,8 +297,44 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createContactAsync[Create a new contact]" \
+            "createContactGroupAsync[Create a new contact group]" \
+            "deleteContactGroupAsync[Delete a contact group]" \
+            "getContactGroupByIdAsync[Get contact group by ID]" \
+            "getContactGroupsAsync[Get all contact groups]" \
+            "getContactGroupsCountAsync[Get contact groups count]" \
+            "patchContactGroupAsync[Patch a contact group]" \
+            "updateContactGroupAsync[Update a contact group]"             "createContactProfileAsync[Create a new contact profile]" \
+            "deleteContactProfileAsync[Delete a contact profile]" \
+            "getContactProfileByIdAsync[Get contact profile by ID]" \
+            "getContactProfilesAsync[Get all contact profiles]" \
+            "getContactProfilesCountAsync[Get contact profiles count]" \
+            "getPartnerProfilesCountAsync[Get partner profiles count]" \
+            "getPatientProfilesCountAsync[Get patient profiles count]" \
+            "patchContactProfileAsync[Patch a contact profile]" \
+            "updateContactProfileAsync[Update a contact profile]"             "createContactRelationTypeAsync[Create a new contact relation type]" \
+            "deleteContactRelationTypeAsync[Delete a contact relation type]" \
+            "getContactRelationTypeByIdAsync[Get contact relation type by ID]" \
+            "getContactRelationTypesAsync[Get all contact relation types]" \
+            "getContactRelationTypesCountAsync[Get contact relation types count]" \
+            "patchContactRelationTypeAsync[Patch a contact relation type]" \
+            "updateContactRelationTypeAsync[Update a contact relation type]"             "createContactRelationAsync[Create a new contact relation]" \
+            "deleteContactRelationAsync[Delete a contact relation]" \
+            "getContactRelationByIdAsync[Get contact relation by ID]" \
+            "getContactRelationsAsync[Get all contact relations]" \
+            "getContactRelationsCountAsync[Get contact relations count]" \
+            "patchContactRelationAsync[Patch a contact relation]" \
+            "updateContactRelationAsync[Update a contact relation]"             "createContactSourceAsync[Create a new contact source]" \
+            "deleteContactSourceAsync[Delete a contact source]" \
+            "getContactSourceByIdAsync[Get contact source by ID]" \
+            "getContactSourcesAsync[Get all contact sources]" \
+            "getContactSourcesCountAsync[Get contact sources count]" \
+            "patchContactSourceAsync[Patch a contact source]" \
+            "updateContactSourceAsync[Update a contact source]"             "createContactAsync[Create a new contact]" \
+            "createContactEmailAsync[Add an email address to a contact]" \
+            "createProfileForContactAsync[Create a contact profile]" \
             "deleteContactAsync[Delete a contact]" \
+            "deleteContactEmailAsync[Delete a contact email address]" \
+            "deleteProfileForContactAsync[Delete a contact profile]" \
             "getBusinessOwnedIndividualAsync[Get a Contact of type Individual by ID]" \
             "getBusinessOwnedIndividualsAsync[Get all contacts of type individual]" \
             "getBusinessOwnedIndividualsCountAsync[Get all contacts of type individual count]" \
@@ -308,7 +344,8 @@ case $state in
             "getContactAsync[Get a contact by ID]" \
             "getContactAvatarAsync[Get a contact's avatar]" \
             "getContactCartAsync[Get a contact's cart]" \
-            "getContactProfilesAsync[Get a contact's social profiles]" \
+            "getContactEmailsAsync[Get a contact's email addresses]" \
+            "getContactEmailsCountAsync[Get contact email addresses count]" \
             "getContactSocialProfileAsync[Get a contact's social profile]" \
             "getContactWalletAsync[Get a contact's wallet]" \
             "getContactsAsync[Get all business owned contacts]" \
@@ -321,16 +358,23 @@ case $state in
             "getIndividualRelatedOrganizationsAsync[Get individual related organizations]" \
             "getOrganizationRelatedIndividualsAsync[Get organization related individuals]" \
             "getOrganizationRelatedOrganizationsAsync[Get organization related organizations]" \
+            "getProfilesForContactAsync[Get a contact's social profiles]" \
+            "getProfilesForContactCountAsync[Get contact profiles count]" \
             "patchContactAsync[Patch a contact]" \
+            "patchContactEmailAsync[Patch a contact email address]" \
             "previewContactEmailTemplate[Preview the rendered email for a contact.]" \
             "sendContactEmail[Send an email to a contact.]" \
             "updateContactAsync[Update a contact]" \
             "updateContactAvatarAsync[Update a contact's avatar]" \
+            "updateContactEmailAsync[Update a contact email address]" \
+            "updateProfileForContactAsync[Update a contact profile]" \
             "upsertTenantOntoAnotherTenantContactListAsync[Upsert a tenant onto another tenant's contact list]" \
-            "upsertUserOntoAnotherTenantContactListAsync[Upsert a user onto a tenant's contact list]"             "accountLogoutPost[]" \
+            "upsertUserOntoAnotherTenantContactListAsync[Upsert a user onto a tenant's contact list]" \
+            "verifyContactEmailAsync[Verify a contact email address]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -349,6 +393,8 @@ case $state in
             "getContactOptionByKey[Retrieve a single contact option by its key]" \
             "getContactOptions[Retrieve a list of contact options]" \
             "getContactOptionsCount[Get the count of contact options]" \
+            "patchContactOptionAsync[Patch a contact option]" \
+            "patchContactOptionByKeyAsync[Patch a contact option by key]" \
             "updateContactOption[Update a contact option]" \
             "upsertContactOption[Create or update a contact option by key]"             "syncCurrentHolderToCurrentTenantCrm[Sync the current user into the current tenant's contact list]" \
             "syncCurrentHolderToTenantCrm[Sync the current user into a tenant's contact list]" \
@@ -361,6 +407,359 @@ case $state in
     ;;
   args)
     case $line[1] in
+      createContactGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactGroupByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactGroupsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactGroupsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateContactGroupAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createContactProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactProfileByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactProfilesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactProfilesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPartnerProfilesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPatientProfilesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateContactProfileAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createContactRelationTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactRelationTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactRelationTypeByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactRelationTypesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactRelationTypesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactRelationTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateContactRelationTypeAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createContactRelationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactRelationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactRelationByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactRelationsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactRelationsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactRelationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateContactRelationAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createContactSourceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactSourceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactSourceByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactSourcesAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactSourcesCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactSourceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateContactSourceAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createContactAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -370,10 +769,52 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createContactEmailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createProfileForContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       deleteContactAsync)
         local -a _op_arguments
         _op_arguments=(
           "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteContactEmailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"emailId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteProfileForContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"profileId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -466,7 +907,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getContactProfilesAsync)
+      getContactEmailsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getContactEmailsCountAsync)
         local -a _op_arguments
         _op_arguments=(
           "contactId=:[PATH] "
@@ -591,10 +1042,41 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getProfilesForContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getProfilesForContactCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       patchContactAsync)
         local -a _op_arguments
         _op_arguments=(
           "contactId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactEmailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"emailId=:[PATH] "
           "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -639,6 +1121,28 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      updateContactEmailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"emailId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateProfileForContactAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"profileId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       upsertTenantOntoAnotherTenantContactListAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -654,6 +1158,17 @@ case $state in
         _op_arguments=(
                     "tenantId=:[QUERY] "
 "relatedUserId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      verifyContactEmailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"emailId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -681,6 +1196,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -831,6 +1353,28 @@ case $state in
           "contactId=:[PATH] "
           "tenantId=:[QUERY] "
 "portalId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactOptionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"optionId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      patchContactOptionByKeyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "contactId=:[PATH] "
+"key=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

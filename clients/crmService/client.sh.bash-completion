@@ -69,8 +69,49 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["createContactGroupAsync"]=1
+    operations["deleteContactGroupAsync"]=1
+    operations["getContactGroupByIdAsync"]=1
+    operations["getContactGroupsAsync"]=1
+    operations["getContactGroupsCountAsync"]=1
+    operations["patchContactGroupAsync"]=1
+    operations["updateContactGroupAsync"]=1
+    operations["createContactProfileAsync"]=1
+    operations["deleteContactProfileAsync"]=1
+    operations["getContactProfileByIdAsync"]=1
+    operations["getContactProfilesAsync"]=1
+    operations["getContactProfilesCountAsync"]=1
+    operations["getPartnerProfilesCountAsync"]=1
+    operations["getPatientProfilesCountAsync"]=1
+    operations["patchContactProfileAsync"]=1
+    operations["updateContactProfileAsync"]=1
+    operations["createContactRelationTypeAsync"]=1
+    operations["deleteContactRelationTypeAsync"]=1
+    operations["getContactRelationTypeByIdAsync"]=1
+    operations["getContactRelationTypesAsync"]=1
+    operations["getContactRelationTypesCountAsync"]=1
+    operations["patchContactRelationTypeAsync"]=1
+    operations["updateContactRelationTypeAsync"]=1
+    operations["createContactRelationAsync"]=1
+    operations["deleteContactRelationAsync"]=1
+    operations["getContactRelationByIdAsync"]=1
+    operations["getContactRelationsAsync"]=1
+    operations["getContactRelationsCountAsync"]=1
+    operations["patchContactRelationAsync"]=1
+    operations["updateContactRelationAsync"]=1
+    operations["createContactSourceAsync"]=1
+    operations["deleteContactSourceAsync"]=1
+    operations["getContactSourceByIdAsync"]=1
+    operations["getContactSourcesAsync"]=1
+    operations["getContactSourcesCountAsync"]=1
+    operations["patchContactSourceAsync"]=1
+    operations["updateContactSourceAsync"]=1
     operations["createContactAsync"]=1
+    operations["createContactEmailAsync"]=1
+    operations["createProfileForContactAsync"]=1
     operations["deleteContactAsync"]=1
+    operations["deleteContactEmailAsync"]=1
+    operations["deleteProfileForContactAsync"]=1
     operations["getBusinessOwnedIndividualAsync"]=1
     operations["getBusinessOwnedIndividualsAsync"]=1
     operations["getBusinessOwnedIndividualsCountAsync"]=1
@@ -80,7 +121,8 @@ _()
     operations["getContactAsync"]=1
     operations["getContactAvatarAsync"]=1
     operations["getContactCartAsync"]=1
-    operations["getContactProfilesAsync"]=1
+    operations["getContactEmailsAsync"]=1
+    operations["getContactEmailsCountAsync"]=1
     operations["getContactSocialProfileAsync"]=1
     operations["getContactWalletAsync"]=1
     operations["getContactsAsync"]=1
@@ -93,17 +135,24 @@ _()
     operations["getIndividualRelatedOrganizationsAsync"]=1
     operations["getOrganizationRelatedIndividualsAsync"]=1
     operations["getOrganizationRelatedOrganizationsAsync"]=1
+    operations["getProfilesForContactAsync"]=1
+    operations["getProfilesForContactCountAsync"]=1
     operations["patchContactAsync"]=1
+    operations["patchContactEmailAsync"]=1
     operations["previewContactEmailTemplate"]=1
     operations["sendContactEmail"]=1
     operations["updateContactAsync"]=1
     operations["updateContactAvatarAsync"]=1
+    operations["updateContactEmailAsync"]=1
+    operations["updateProfileForContactAsync"]=1
     operations["upsertTenantOntoAnotherTenantContactListAsync"]=1
     operations["upsertUserOntoAnotherTenantContactListAsync"]=1
+    operations["verifyContactEmailAsync"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -123,6 +172,8 @@ _()
     operations["getContactOptionByKey"]=1
     operations["getContactOptions"]=1
     operations["getContactOptionsCount"]=1
+    operations["patchContactOptionAsync"]=1
+    operations["patchContactOptionByKeyAsync"]=1
     operations["updateContactOption"]=1
     operations["upsertContactOption"]=1
     operations["syncCurrentHolderToCurrentTenantCrm"]=1
@@ -133,8 +184,49 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["createContactGroupAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteContactGroupAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactGroupByIdAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactGroupsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getContactGroupsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactGroupAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["updateContactGroupAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["createContactProfileAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteContactProfileAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactProfileByIdAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactProfilesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getContactProfilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPartnerProfilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPatientProfilesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactProfileAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["updateContactProfileAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["createContactRelationTypeAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteContactRelationTypeAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactRelationTypeByIdAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactRelationTypesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getContactRelationTypesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactRelationTypeAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["updateContactRelationTypeAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["createContactRelationAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteContactRelationAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactRelationByIdAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactRelationsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getContactRelationsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactRelationAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["updateContactRelationAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["createContactSourceAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteContactSourceAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactSourceByIdAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactSourcesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getContactSourcesCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactSourceAsync"]="id= tenantId= api-version= x-api-version: "
+    operation_parameters["updateContactSourceAsync"]="id= tenantId= api-version= x-api-version: "
     operation_parameters["createContactAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["createContactEmailAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["createProfileForContactAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["deleteContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteContactEmailAsync"]="contactId= emailId= tenantId= api-version= x-api-version: "
+    operation_parameters["deleteProfileForContactAsync"]="contactId= profileId= tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessOwnedIndividualAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessOwnedIndividualsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessOwnedIndividualsCountAsync"]="tenantId= api-version= x-api-version: "
@@ -144,7 +236,8 @@ _()
     operation_parameters["getContactAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getContactAvatarAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getContactCartAsync"]="contactId= tenantId= api-version= x-api-version: "
-    operation_parameters["getContactProfilesAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactEmailsAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["getContactEmailsCountAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getContactSocialProfileAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getContactWalletAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getContactsAsync"]="tenantId= api-version= x-api-version: "
@@ -157,17 +250,24 @@ _()
     operation_parameters["getIndividualRelatedOrganizationsAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getOrganizationRelatedIndividualsAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["getOrganizationRelatedOrganizationsAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProfilesForContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProfilesForContactCountAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["patchContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactEmailAsync"]="contactId= emailId= tenantId= api-version= x-api-version: "
     operation_parameters["previewContactEmailTemplate"]="contactId= api-version= x-api-version: "
     operation_parameters["sendContactEmail"]="contactId= api-version= x-api-version: "
     operation_parameters["updateContactAsync"]="contactId= tenantId= api-version= x-api-version: "
     operation_parameters["updateContactAvatarAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateContactEmailAsync"]="contactId= emailId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProfileForContactAsync"]="contactId= profileId= tenantId= api-version= x-api-version: "
     operation_parameters["upsertTenantOntoAnotherTenantContactListAsync"]="tenantId= relatedTenantId= api-version= x-api-version: "
     operation_parameters["upsertUserOntoAnotherTenantContactListAsync"]="tenantId= relatedUserId= api-version= x-api-version: "
+    operation_parameters["verifyContactEmailAsync"]="contactId= emailId= tenantId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -187,6 +287,8 @@ _()
     operation_parameters["getContactOptionByKey"]="contactId= key= tenantId= portalId= api-version= x-api-version: "
     operation_parameters["getContactOptions"]="contactId= tenantId= portalId= api-version= x-api-version: "
     operation_parameters["getContactOptionsCount"]="contactId= tenantId= portalId= api-version= x-api-version: "
+    operation_parameters["patchContactOptionAsync"]="contactId= optionId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchContactOptionByKeyAsync"]="contactId= key= tenantId= api-version= x-api-version: "
     operation_parameters["updateContactOption"]="contactId= optionId= tenantId= api-version= x-api-version: "
     operation_parameters["upsertContactOption"]="contactId= key= tenantId= portalId= api-version= x-api-version: "
     operation_parameters["syncCurrentHolderToCurrentTenantCrm"]="tenantId= api-version= x-api-version: "

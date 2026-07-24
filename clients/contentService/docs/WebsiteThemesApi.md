@@ -137,7 +137,7 @@ Retrieves all website themes for the specified tenant.
 ### Example
 
 ```bash
- getWebsiteThemesAsync  tenantId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getWebsiteThemesAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -146,7 +146,6 @@ Retrieves all website themes for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**WebsiteThemeDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 
@@ -175,7 +174,7 @@ Returns the count of website themes for the specified tenant.
 ### Example
 
 ```bash
- getWebsiteThemesCountAsync  tenantId=value  oDataQueryOptions=value  api-version=value x-api-version:value
+ getWebsiteThemesCountAsync  tenantId=value  api-version=value x-api-version:value
 ```
 
 ### Parameters
@@ -184,7 +183,6 @@ Returns the count of website themes for the specified tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
- **oDataQueryOptions** | [**WebsiteThemeDtoODataQueryOptions**](.md) |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

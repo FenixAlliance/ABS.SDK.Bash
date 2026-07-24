@@ -308,15 +308,17 @@ case $state in
             "getActivityFeedAsync[Get activity feed by ID]" \
             "getActivityFeedsAsync[Get activity feeds]" \
             "getActivityFeedsCountAsync[Count activity feeds]" \
+            "getActivityRecordsCountAsync[Count activity records]" \
             "getActivityTypeByIdAsync[Get Activity Type]" \
             "getActivityTypesAsync[Get Activity Types]" \
             "patchActivityAsync[Patch an activity]" \
             "patchActivityTypeAsync[Patch Activity Type]" \
             "updateActivityAsync[Update an activity]" \
-            "updateActivityTypeAsync[Update Activity Type]"             "getActivityRecordsCountAsync[Count activity records]"             "accountLogoutPost[]" \
+            "updateActivityTypeAsync[Update Activity Type]"             "accountLogoutPost[]" \
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -445,6 +447,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getActivityRecordsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getActivityTypeByIdAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -506,15 +517,6 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      getActivityRecordsCountAsync)
-        local -a _op_arguments
-        _op_arguments=(
-                    "tenantId=:[QUERY] "
-"api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       accountLogoutPost)
         local -a _op_arguments
         _op_arguments=(
@@ -537,6 +539,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

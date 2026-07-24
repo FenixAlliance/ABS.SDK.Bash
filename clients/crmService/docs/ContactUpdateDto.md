@@ -18,8 +18,6 @@ Name | Type | Description | Notes
 **jobTitle** | **string** |  | [optional] [default to null]
 **countryId** | **string** |  | [optional] [default to null]
 **parentContactId** | **string** |  | [optional] [default to null]
-**addressLine1** | **string** |  | [optional] [default to null]
-**addressLine2** | **string** |  | [optional] [default to null]
 **postalCode** | **string** |  | [optional] [default to null]
 **stateId** | **string** |  | [optional] [default to null]
 **cityId** | **string** |  | [optional] [default to null]

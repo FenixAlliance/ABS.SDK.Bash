@@ -73,6 +73,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -170,8 +171,8 @@ _()
     operations["patchItemReviewAsync"]=1
     operations["updateItemReviewAsync"]=1
     operations["countItemShippingPoliciesAsync"]=1
-    operations["getItemShippingPoliciesAsync"]=1
-    operations["getItemShippingPolicyByIdAsync"]=1
+    operations["getCatalogItemShippingPoliciesAsync"]=1
+    operations["getCatalogItemShippingPolicyByIdAsync"]=1
     operations["relateItemToShippingPolicyAsync"]=1
     operations["removeShippingPolicyFromItemAsync"]=1
     operations["createItemTagAsync"]=1
@@ -288,6 +289,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -385,8 +387,8 @@ _()
     operation_parameters["patchItemReviewAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
     operation_parameters["updateItemReviewAsync"]="itemReviewId= tenantId= api-version= x-api-version: "
     operation_parameters["countItemShippingPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
-    operation_parameters["getItemShippingPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
-    operation_parameters["getItemShippingPolicyByIdAsync"]="itemShippingPolicyId= tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getCatalogItemShippingPoliciesAsync"]="tenantId= itemId= api-version= x-api-version: "
+    operation_parameters["getCatalogItemShippingPolicyByIdAsync"]="itemShippingPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["relateItemToShippingPolicyAsync"]="tenantId= itemId= shippingPolicyId= api-version= x-api-version: "
     operation_parameters["removeShippingPolicyFromItemAsync"]="itemShippingPolicyId= tenantId= itemId= api-version= x-api-version: "
     operation_parameters["createItemTagAsync"]="tenantId= api-version= x-api-version: "

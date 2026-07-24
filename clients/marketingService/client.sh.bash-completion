@@ -94,6 +94,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -135,7 +136,12 @@ _()
     operations["getMarketingListsCountAsync"]=1
     operations["patchMarketingListAsync"]=1
     operations["updateMarketingListAsync"]=1
+    operations["createNewsletterSubscriptionAsync"]=1
+    operations["deleteNewsletterSubscriptionAsync"]=1
+    operations["getNewsletterSubscriptionByIdAsync"]=1
+    operations["getNewsletterSubscriptionsAsync"]=1
     operations["getNewsletterSubscriptionsCountAsync"]=1
+    operations["updateNewsletterSubscriptionAsync"]=1
     operations["createNewsletterAsync"]=1
     operations["deleteNewsletterAsync"]=1
     operations["getNewsletterDetailsAsync"]=1
@@ -187,6 +193,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -228,7 +235,12 @@ _()
     operation_parameters["getMarketingListsCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
     operation_parameters["updateMarketingListAsync"]="marketinglistId= tenantId= api-version= x-api-version: "
+    operation_parameters["createNewsletterSubscriptionAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteNewsletterSubscriptionAsync"]="newsletterSubscriptionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getNewsletterSubscriptionByIdAsync"]="newsletterSubscriptionId= tenantId= api-version= x-api-version: "
+    operation_parameters["getNewsletterSubscriptionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["getNewsletterSubscriptionsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateNewsletterSubscriptionAsync"]="newsletterSubscriptionId= tenantId= api-version= x-api-version: "
     operation_parameters["createNewsletterAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteNewsletterAsync"]="newsletterId= tenantId= api-version= x-api-version: "
     operation_parameters["getNewsletterDetailsAsync"]="newsletterId= tenantId= api-version= x-api-version: "

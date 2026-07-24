@@ -16,6 +16,9 @@ Name | Type | Description | Notes
 **accountTypeId** | **string** |  | [optional] [default to null]
 **parentAccountId** | **string** |  | [optional] [default to null]
 **accountCategory** | **string** |  | [default to null]
+**isContra** | **boolean** |  | [optional] [default to null]
+**isMonetary** | **boolean** |  | [optional] [default to null]
+**incomeStatementSubType** | **string** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

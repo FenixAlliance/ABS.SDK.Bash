@@ -297,7 +297,12 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "getBusinessRelationshipsCountAsync[Get business relationships count]"             "createTenantDepartment[Create a new tenant department]" \
+            "createBusinessRelationshipAsync[Create a business relationship]" \
+            "deleteBusinessRelationshipAsync[Delete a business relationship]" \
+            "getBusinessRelationshipByIdAsync[Get business relationship by ID]" \
+            "getBusinessRelationshipsAsync[Get business relationships]" \
+            "getBusinessRelationshipsCountAsync[Get business relationships count]" \
+            "updateBusinessRelationshipAsync[Update a business relationship]"             "createTenantDepartment[Create a new tenant department]" \
             "deleteTenantDepartment[Delete a tenant department]" \
             "getTenantDepartmentById[Retrieve a single tenant department by its ID]" \
             "getTenantDepartments[Retrieve a list of tenant departments]" \
@@ -321,6 +326,7 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
+            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -400,6 +406,7 @@ case $state in
             "deSelectTenantAsync[Deselect the user's default tenant]" \
             "deleteTenantAsync[Delete a tenant]" \
             "getAccessibleFeaturesAsync[Get the list of features accessible to a specific enrollment]" \
+            "getCartForTenantAsync[Get a tenant's default cart]" \
             "getCurrentTenantAsync[Get the user's current default tenant]" \
             "getEnrollmentLicenseByIdAsync[Get a specific license for an enrollment]" \
             "getEnrollmentLicensesAsync[Get the list of licenses available to a specific enrollment]" \
@@ -409,7 +416,6 @@ case $state in
             "getRootTenantAsync[Get the root tenant of the platform]" \
             "getTenantAsync[Get a specific tenant by ID]" \
             "getTenantAvatarAsync[Get a tenant's avatar]" \
-            "getTenantCartAsync[Get a tenant's default cart]" \
             "getTenantEnrollmentAsync[Get a specific tenant enrollment]" \
             "getTenantEnrollmentsAsync[Get the list of user enrollments for a tenant]" \
             "getTenantInvitationsAsync[Get the list of invitations issued by a tenant]" \
@@ -426,8 +432,8 @@ case $state in
             "patchTenantAsync[Patch a tenant's profile]" \
             "revokeLicenseAsync[Revoke a license from a specific enrollment]" \
             "selectTenantAsync[Select a business tenant as the user's default tenant]" \
-            "updateAvatarAsync[Update a tenant's avatar]" \
             "updateTenantAsync[Update a tenant's profile]" \
+            "updateTenantAvatarAsync[Update a tenant's avatar]" \
             "validateEnrollmentFeatureAccess[Validate the access to a specific feature for a specific enrollment]" \
             "validateEnrollmentPermissionsAsync[Validate the existence of a list of roles and permissions for a specific enrollment]"             "createTenantTerritory[Create a new tenant territory]" \
             "deleteTenantTerritory[Delete a tenant territory]" \
@@ -468,10 +474,58 @@ case $state in
     ;;
   args)
     case $line[1] in
+      createBusinessRelationshipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBusinessRelationshipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessRelationshipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBusinessRelationshipByIdAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessRelationshipId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBusinessRelationshipsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getBusinessRelationshipsCountAsync)
         local -a _op_arguments
         _op_arguments=(
                     "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBusinessRelationshipAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "businessRelationshipId=:[PATH] "
+          "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -719,6 +773,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      apiV2AIServiceAgentsAgentIdAguiPost)
+        local -a _op_arguments
+        _op_arguments=(
+          "agentId=:[PATH] "
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -1546,6 +1607,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getCartForTenantAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getCurrentTenantAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1623,15 +1693,6 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getTenantAvatarAsync)
-        local -a _op_arguments
-        _op_arguments=(
-          "tenantId=:[PATH] "
-          "api-version=:[QUERY] "
-          "x-api-version\::[HEADER] "
-)
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getTenantCartAsync)
         local -a _op_arguments
         _op_arguments=(
           "tenantId=:[PATH] "
@@ -1787,7 +1848,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateAvatarAsync)
+      updateTenantAsync)
         local -a _op_arguments
         _op_arguments=(
           "tenantId=:[PATH] "
@@ -1796,7 +1857,7 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateTenantAsync)
+      updateTenantAvatarAsync)
         local -a _op_arguments
         _op_arguments=(
           "tenantId=:[PATH] "

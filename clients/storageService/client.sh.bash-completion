@@ -79,11 +79,12 @@ _()
     operations["updateUserAvatar"]=1
     operations["getBlobAsync"]=1
     operations["getBlobsAsync"]=1
-    operations["apiV2AiServiceCompletionsCompleteGet"]=1
+    operations["getEditorAssetAsync"]=1
     operations["accountLogoutPost"]=1
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -101,13 +102,18 @@ _()
     operations["deleteFileAsync"]=1
     operations["downloadFileAsync"]=1
     operations["getFileAsync"]=1
+    operations["getFileThumbnailAsync"]=1
     operations["getFilesAsync"]=1
+    operations["getFilesCountAsync"]=1
     operations["updateFileAsync"]=1
-    operations["image"]=1
-    operations["multiple"]=1
-    operations["post"]=1
-    operations["single"]=1
-    operations["specific"]=1
+    operations["radzenUploadImage"]=1
+    operations["radzenUploadImageScoped"]=1
+    operations["radzenUploadSingle"]=1
+    operations["radzenUploadSingleScoped"]=1
+    operations["radzenUploadStream"]=1
+    operations["radzenUploadStreamScoped"]=1
+    operations["radzenUploadUserImage"]=1
+    operations["radzenUploadUserImageScoped"]=1
     operations["saveFileAsync"]=1
 
     # An associative array of operations to their parameters
@@ -123,11 +129,12 @@ _()
     operation_parameters["updateUserAvatar"]="api-version= x-api-version: "
     operation_parameters["getBlobAsync"]="tenantId= filePath= api-version= x-api-version: "
     operation_parameters["getBlobsAsync"]="tenantId= folderPath= browseFilter= filePrefix= recurse= maxResults= includeAttributes= api-version= x-api-version: "
-    operation_parameters["apiV2AiServiceCompletionsCompleteGet"]="tenantId= conversationId= message= "
+    operation_parameters["getEditorAssetAsync"]="fileId= api-version= x-api-version: "
     operation_parameters["accountLogoutPost"]=""
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -145,13 +152,18 @@ _()
     operation_parameters["deleteFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["downloadFileAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["getFileAsync"]="fileId= tenantId= api-version= x-api-version: "
+    operation_parameters["getFileThumbnailAsync"]="fileId= tenantId= api-version= x-api-version: "
     operation_parameters["getFilesAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getFilesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateFileAsync"]="fileId= tenantId= api-version= x-api-version: "
-    operation_parameters["image"]="tenantId= api-version= x-api-version: "
-    operation_parameters["multiple"]="tenantId= api-version= x-api-version: "
-    operation_parameters["post"]="id= tenantId= api-version= x-api-version: "
-    operation_parameters["single"]="tenantId= api-version= x-api-version: "
-    operation_parameters["specific"]="tenantId= api-version= x-api-version: "
+    operation_parameters["radzenUploadImage"]="tenantId= visibility= socialProfileId= purpose= api-version= x-api-version: "
+    operation_parameters["radzenUploadImageScoped"]="tenantId= recordType= recordId= visibility= socialProfileId= purpose= api-version= x-api-version: "
+    operation_parameters["radzenUploadSingle"]="tenantId= api-version= x-api-version: "
+    operation_parameters["radzenUploadSingleScoped"]="tenantId= recordType= recordId= api-version= x-api-version: "
+    operation_parameters["radzenUploadStream"]="tenantId= api-version= x-api-version: "
+    operation_parameters["radzenUploadStreamScoped"]="tenantId= recordType= recordId= api-version= x-api-version: "
+    operation_parameters["radzenUploadUserImage"]="visibility= socialProfileId= purpose= api-version= x-api-version: "
+    operation_parameters["radzenUploadUserImageScoped"]="recordType= recordId= visibility= socialProfileId= purpose= api-version= x-api-version: "
     operation_parameters["saveFileAsync"]="tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

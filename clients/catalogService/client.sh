@@ -100,6 +100,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -447,15 +448,15 @@ operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::tenan
 operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::itemId"]=0
 operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countItemShippingPoliciesAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::tenantId"]=0
-operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::itemId"]=0
-operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getItemShippingPoliciesAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=1
-operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::tenantId"]=0
-operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::itemId"]=0
-operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPoliciesAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPoliciesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPoliciesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=1
+operation_parameters_minimum_occurrences["getCatalogItemShippingPolicyByIdAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPolicyByIdAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPolicyByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCatalogItemShippingPolicyByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::itemId"]=1
 operation_parameters_minimum_occurrences["relateItemToShippingPolicyAsync:::shippingPolicyId"]=1
@@ -917,6 +918,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -1264,15 +1266,15 @@ operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::tenan
 operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countItemShippingPoliciesAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::itemId"]=0
-operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getItemShippingPoliciesAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=0
-operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::itemId"]=0
-operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getItemShippingPolicyByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPoliciesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPoliciesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPoliciesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPoliciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPolicyByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPolicyByIdAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPolicyByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCatalogItemShippingPolicyByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::itemId"]=0
 operation_parameters_maximum_occurrences["relateItemToShippingPolicyAsync:::shippingPolicyId"]=0
@@ -1731,6 +1733,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -2078,15 +2081,15 @@ operation_parameters_collection_type["countItemShippingPoliciesAsync:::tenantId"
 operation_parameters_collection_type["countItemShippingPoliciesAsync:::itemId"]=""
 operation_parameters_collection_type["countItemShippingPoliciesAsync:::api-version"]=""
 operation_parameters_collection_type["countItemShippingPoliciesAsync:::x-api-version"]=""
-operation_parameters_collection_type["getItemShippingPoliciesAsync:::tenantId"]=""
-operation_parameters_collection_type["getItemShippingPoliciesAsync:::itemId"]=""
-operation_parameters_collection_type["getItemShippingPoliciesAsync:::api-version"]=""
-operation_parameters_collection_type["getItemShippingPoliciesAsync:::x-api-version"]=""
-operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=""
-operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::tenantId"]=""
-operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::itemId"]=""
-operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::api-version"]=""
-operation_parameters_collection_type["getItemShippingPolicyByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCatalogItemShippingPoliciesAsync:::tenantId"]=""
+operation_parameters_collection_type["getCatalogItemShippingPoliciesAsync:::itemId"]=""
+operation_parameters_collection_type["getCatalogItemShippingPoliciesAsync:::api-version"]=""
+operation_parameters_collection_type["getCatalogItemShippingPoliciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCatalogItemShippingPolicyByIdAsync:::itemShippingPolicyId"]=""
+operation_parameters_collection_type["getCatalogItemShippingPolicyByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getCatalogItemShippingPolicyByIdAsync:::itemId"]=""
+operation_parameters_collection_type["getCatalogItemShippingPolicyByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getCatalogItemShippingPolicyByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["relateItemToShippingPolicyAsync:::tenantId"]=""
 operation_parameters_collection_type["relateItemToShippingPolicyAsync:::itemId"]=""
 operation_parameters_collection_type["relateItemToShippingPolicyAsync:::shippingPolicyId"]=""
@@ -2928,6 +2931,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -3095,8 +3099,8 @@ echo "  $ops" | column -t -s ';'
     echo -e "${BOLD}${WHITE}[itemShippingPolicies]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}countItemShippingPoliciesAsync${OFF};Count item shipping policies
-  ${CYAN}getItemShippingPoliciesAsync${OFF};Get item shipping policies
-  ${CYAN}getItemShippingPolicyByIdAsync${OFF};Get item shipping policy by ID
+  ${CYAN}getCatalogItemShippingPoliciesAsync${OFF};Get item shipping policies
+  ${CYAN}getCatalogItemShippingPolicyByIdAsync${OFF};Get item shipping policy by ID
   ${CYAN}relateItemToShippingPolicyAsync${OFF};Relate item to shipping policy
   ${CYAN}removeShippingPolicyFromItemAsync${OFF};Remove shipping policy from item
 EOF
@@ -3342,6 +3346,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5886,12 +5906,12 @@ print_countItemShippingPoliciesAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getItemShippingPoliciesAsync operation
+# Print help for getCatalogItemShippingPoliciesAsync operation
 #
 ##############################################################################
-print_getItemShippingPoliciesAsync_help() {
+print_getCatalogItemShippingPoliciesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getItemShippingPoliciesAsync - Get item shipping policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCatalogItemShippingPoliciesAsync - Get item shipping policies${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Retrieves all shipping policies for a specific item." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5914,12 +5934,12 @@ print_getItemShippingPoliciesAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getItemShippingPolicyByIdAsync operation
+# Print help for getCatalogItemShippingPolicyByIdAsync operation
 #
 ##############################################################################
-print_getItemShippingPolicyByIdAsync_help() {
+print_getCatalogItemShippingPolicyByIdAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getItemShippingPolicyByIdAsync - Get item shipping policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCatalogItemShippingPolicyByIdAsync - Get item shipping policy by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Retrieves a specific shipping policy for an item." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9009,6 +9029,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -14042,10 +14098,10 @@ call_countItemShippingPoliciesAsync() {
 
 ##############################################################################
 #
-# Call getItemShippingPoliciesAsync operation
+# Call getCatalogItemShippingPoliciesAsync operation
 #
 ##############################################################################
-call_getItemShippingPoliciesAsync() {
+call_getCatalogItemShippingPoliciesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
@@ -14078,10 +14134,10 @@ call_getItemShippingPoliciesAsync() {
 
 ##############################################################################
 #
-# Call getItemShippingPolicyByIdAsync operation
+# Call getCatalogItemShippingPolicyByIdAsync operation
 #
 ##############################################################################
-call_getItemShippingPolicyByIdAsync() {
+call_getCatalogItemShippingPolicyByIdAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(itemShippingPolicyId)
@@ -18710,6 +18766,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -19001,11 +19060,11 @@ case $key in
     countItemShippingPoliciesAsync)
     operation="countItemShippingPoliciesAsync"
     ;;
-    getItemShippingPoliciesAsync)
-    operation="getItemShippingPoliciesAsync"
+    getCatalogItemShippingPoliciesAsync)
+    operation="getCatalogItemShippingPoliciesAsync"
     ;;
-    getItemShippingPolicyByIdAsync)
-    operation="getItemShippingPolicyByIdAsync"
+    getCatalogItemShippingPolicyByIdAsync)
+    operation="getCatalogItemShippingPolicyByIdAsync"
     ;;
     relateItemToShippingPolicyAsync)
     operation="relateItemToShippingPolicyAsync"
@@ -19430,6 +19489,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -19721,11 +19783,11 @@ case $operation in
     countItemShippingPoliciesAsync)
     call_countItemShippingPoliciesAsync
     ;;
-    getItemShippingPoliciesAsync)
-    call_getItemShippingPoliciesAsync
+    getCatalogItemShippingPoliciesAsync)
+    call_getCatalogItemShippingPoliciesAsync
     ;;
-    getItemShippingPolicyByIdAsync)
-    call_getItemShippingPolicyByIdAsync
+    getCatalogItemShippingPolicyByIdAsync)
+    call_getCatalogItemShippingPolicyByIdAsync
     ;;
     relateItemToShippingPolicyAsync)
     call_relateItemToShippingPolicyAsync

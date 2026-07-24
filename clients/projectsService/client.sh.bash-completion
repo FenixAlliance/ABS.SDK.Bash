@@ -73,6 +73,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -86,36 +87,61 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["createProjectTaskAsync"]=1
+    operations["deleteProjectTaskAsync"]=1
+    operations["getProjectTaskByIdAsync"]=1
+    operations["getProjectTasksAsync"]=1
+    operations["getProjectTasksCountAsync"]=1
+    operations["patchProjectTaskAsync"]=1
+    operations["updateProjectTaskAsync"]=1
     operations["createProjectAsync"]=1
     operations["createProjectPeriodAsync"]=1
-    operations["createProjectTaskAsync"]=1
+    operations["createTaskForProjectAsync"]=1
     operations["deleteProjectAsync"]=1
     operations["deleteProjectPeriodAsync"]=1
-    operations["deleteProjectTaskAsync"]=1
+    operations["deleteTaskForProjectAsync"]=1
     operations["getProjectByIdAsync"]=1
     operations["getProjectPeriodsAsync"]=1
     operations["getProjectTaskCategoriesAsync"]=1
     operations["getProjectTaskCategoriesCountAsync"]=1
-    operations["getProjectTasksAsync"]=1
-    operations["getProjectTasksCountAsync"]=1
-    operations["getProjectTimeLogsAsync"]=1
     operations["getProjectTimeLogsCountAsync"]=1
     operations["getProjectsByTenantIdAsync"]=1
     operations["getProjectsCountByTenantIdAsync"]=1
+    operations["getTasksForProjectAsync"]=1
+    operations["getTasksForProjectCountAsync"]=1
+    operations["getTimeLogsForProjectAsync"]=1
+    operations["patchProjectAsync"]=1
+    operations["patchProjectPeriodAsync"]=1
+    operations["patchTaskForProjectAsync"]=1
     operations["updateProjectAsync"]=1
     operations["updateProjectPeriodAsync"]=1
-    operations["updateProjectTaskAsync"]=1
+    operations["updateTaskForProjectAsync"]=1
     operations["countTenantTaskCategoriesAsync"]=1
     operations["createTaskCategoryAsync"]=1
     operations["deleteTaskCategoryAsync"]=1
     operations["getTaskCategoryByIdAsync"]=1
     operations["getTaskCategoryTaskTypesAsync"]=1
     operations["getTenantTaskCategoriesAsync"]=1
+    operations["patchTaskCategoryAsync"]=1
     operations["updateTaskCategoryAsync"]=1
     operations["createTaskTypeAsync"]=1
     operations["deleteTaskTypeAsync"]=1
     operations["getTaskTypeByIdAsync"]=1
+    operations["patchTaskTypeAsync"]=1
     operations["updateTaskTypeAsync"]=1
+    operations["requestProjectHoursApprovalAsync"]=1
+    operations["updateProjectHoursApprovalApproverAsync"]=1
+    operations["updateProjectHoursApprovalStatusAsync"]=1
+    operations["countProjectPeriodTimeLogsAsync"]=1
+    operations["createProjectTimeLogAsync"]=1
+    operations["deleteProjectTimeLogAsync"]=1
+    operations["getProjectPeriodTimeLogsAsync"]=1
+    operations["getProjectTimeLogByIdAsync"]=1
+    operations["getProjectTimeLogsAsync"]=1
+    operations["getProjectTimeLogsByResponsibleContactAsync"]=1
+    operations["getProjectTimeLogsCreatedByContactAsync"]=1
+    operations["patchProjectTimeLogAsync"]=1
+    operations["updateProjectTimeLogAsync"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
@@ -124,6 +150,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -137,36 +164,61 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["createProjectTaskAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteProjectTaskAsync"]="projectTaskId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTaskByIdAsync"]="projectTaskId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTasksAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTasksCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["patchProjectTaskAsync"]="projectTaskId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectTaskAsync"]="projectTaskId= tenantId= api-version= x-api-version: "
     operation_parameters["createProjectAsync"]="tenantId= "
     operation_parameters["createProjectPeriodAsync"]="projectId= tenantId= "
-    operation_parameters["createProjectTaskAsync"]="projectId= tenantId= "
+    operation_parameters["createTaskForProjectAsync"]="projectId= tenantId= "
     operation_parameters["deleteProjectAsync"]="projectId= tenantId= "
     operation_parameters["deleteProjectPeriodAsync"]="projectId= projectPeriodId= tenantId= "
-    operation_parameters["deleteProjectTaskAsync"]="projectId= projectTaskId= tenantId= "
+    operation_parameters["deleteTaskForProjectAsync"]="projectId= projectTaskId= tenantId= "
     operation_parameters["getProjectByIdAsync"]="projectId= tenantId= "
     operation_parameters["getProjectPeriodsAsync"]="projectId= tenantId= "
     operation_parameters["getProjectTaskCategoriesAsync"]="projectId= tenantId= "
     operation_parameters["getProjectTaskCategoriesCountAsync"]="projectId= tenantId= "
-    operation_parameters["getProjectTasksAsync"]="projectId= tenantId= "
-    operation_parameters["getProjectTasksCountAsync"]="projectId= tenantId= "
-    operation_parameters["getProjectTimeLogsAsync"]="projectId= tenantId= "
     operation_parameters["getProjectTimeLogsCountAsync"]="projectId= tenantId= "
     operation_parameters["getProjectsByTenantIdAsync"]="tenantId= "
     operation_parameters["getProjectsCountByTenantIdAsync"]="tenantId= "
+    operation_parameters["getTasksForProjectAsync"]="projectId= tenantId= "
+    operation_parameters["getTasksForProjectCountAsync"]="projectId= tenantId= "
+    operation_parameters["getTimeLogsForProjectAsync"]="projectId= tenantId= "
+    operation_parameters["patchProjectAsync"]="projectId= tenantId= "
+    operation_parameters["patchProjectPeriodAsync"]="projectId= projectPeriodId= tenantId= "
+    operation_parameters["patchTaskForProjectAsync"]="projectId= projectTaskId= tenantId= "
     operation_parameters["updateProjectAsync"]="projectId= tenantId= "
     operation_parameters["updateProjectPeriodAsync"]="projectId= projectPeriodId= tenantId= "
-    operation_parameters["updateProjectTaskAsync"]="projectId= projectTaskId= tenantId= "
+    operation_parameters["updateTaskForProjectAsync"]="projectId= projectTaskId= tenantId= "
     operation_parameters["countTenantTaskCategoriesAsync"]="tenantId= "
     operation_parameters["createTaskCategoryAsync"]="tenantId= "
     operation_parameters["deleteTaskCategoryAsync"]="taskCategoryId= tenantId= "
     operation_parameters["getTaskCategoryByIdAsync"]="taskCategoryId= tenantId= "
     operation_parameters["getTaskCategoryTaskTypesAsync"]="taskCategoryId= tenantId= "
     operation_parameters["getTenantTaskCategoriesAsync"]="tenantId= "
+    operation_parameters["patchTaskCategoryAsync"]="taskCategoryId= tenantId= "
     operation_parameters["updateTaskCategoryAsync"]="taskCategoryId= tenantId= "
     operation_parameters["createTaskTypeAsync"]="tenantId= "
     operation_parameters["deleteTaskTypeAsync"]="taskTypeId= tenantId= "
     operation_parameters["getTaskTypeByIdAsync"]="taskTypeId= tenantId= "
+    operation_parameters["patchTaskTypeAsync"]="taskTypeId= tenantId= "
     operation_parameters["updateTaskTypeAsync"]="taskTypeId= tenantId= "
+    operation_parameters["requestProjectHoursApprovalAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectHoursApprovalApproverAsync"]="approvalId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectHoursApprovalStatusAsync"]="approvalId= tenantId= api-version= x-api-version: "
+    operation_parameters["countProjectPeriodTimeLogsAsync"]="tenantId= projectPeriodId= api-version= x-api-version: "
+    operation_parameters["createProjectTimeLogAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["deleteProjectTimeLogAsync"]="timeLogId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectPeriodTimeLogsAsync"]="tenantId= projectPeriodId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogByIdAsync"]="timeLogId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogsAsync"]="projectId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogsByResponsibleContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["getProjectTimeLogsCreatedByContactAsync"]="contactId= tenantId= api-version= x-api-version: "
+    operation_parameters["patchProjectTimeLogAsync"]="timeLogId= tenantId= api-version= x-api-version: "
+    operation_parameters["updateProjectTimeLogAsync"]="timeLogId= tenantId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

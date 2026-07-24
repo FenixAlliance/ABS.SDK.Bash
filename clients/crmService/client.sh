@@ -96,14 +96,180 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["createContactGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactGroupAsync:::ContactsGroupCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteContactGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactGroupAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteContactGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactGroupByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactGroupByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getContactGroupByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactGroupByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactGroupsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactGroupsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactGroupsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactGroupsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactGroupsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactGroupsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactGroupAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchContactGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactGroupAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateContactGroupAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactGroupAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateContactGroupAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactGroupAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactGroupAsync:::ContactsGroupUpdateDto"]=0
+operation_parameters_minimum_occurrences["createContactProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactProfileAsync:::ContactProfileCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteContactProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactProfileAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteContactProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactProfileByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactProfileByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getContactProfileByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactProfileByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactProfilesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactProfilesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactProfilesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactProfilesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPartnerProfilesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPartnerProfilesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPartnerProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPatientProfilesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPatientProfilesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getPatientProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactProfileAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchContactProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactProfileAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateContactProfileAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactProfileAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateContactProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactProfileAsync:::ContactProfileUpdateDto"]=0
+operation_parameters_minimum_occurrences["createContactRelationTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactRelationTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactRelationTypeAsync:::ContactRelationTypeCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteContactRelationTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactRelationTypeAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteContactRelationTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationTypeByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactRelationTypeByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getContactRelationTypeByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationTypeByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationTypesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactRelationTypesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationTypesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationTypesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactRelationTypesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactRelationTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactRelationTypeAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchContactRelationTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactRelationTypeAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateContactRelationTypeAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactRelationTypeAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateContactRelationTypeAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactRelationTypeAsync:::ContactRelationTypeUpdateDto"]=0
+operation_parameters_minimum_occurrences["createContactRelationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactRelationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactRelationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactRelationAsync:::ContactRelationCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteContactRelationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactRelationAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteContactRelationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactRelationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactRelationByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getContactRelationByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactRelationsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactRelationsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactRelationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactRelationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactRelationAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchContactRelationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactRelationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactRelationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateContactRelationAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactRelationAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateContactRelationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactRelationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactRelationAsync:::ContactRelationUpdateDto"]=0
+operation_parameters_minimum_occurrences["createContactSourceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactSourceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactSourceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactSourceAsync:::ContactSourceCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteContactSourceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactSourceAsync:::id"]=1
+operation_parameters_minimum_occurrences["deleteContactSourceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactSourceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactSourceByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactSourceByIdAsync:::id"]=1
+operation_parameters_minimum_occurrences["getContactSourceByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactSourceByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactSourcesAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactSourcesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactSourcesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactSourcesCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactSourcesCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactSourcesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactSourceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactSourceAsync:::id"]=1
+operation_parameters_minimum_occurrences["patchContactSourceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactSourceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactSourceAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["updateContactSourceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactSourceAsync:::id"]=1
+operation_parameters_minimum_occurrences["updateContactSourceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactSourceAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactSourceAsync:::ContactSourceUpdateDto"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createContactAsync:::ContactCreateDto"]=0
+operation_parameters_minimum_occurrences["createContactEmailAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createContactEmailAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["createContactEmailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createContactEmailAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createContactEmailAsync:::ContactEmailCreateDto"]=0
+operation_parameters_minimum_occurrences["createProfileForContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createProfileForContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["createProfileForContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createProfileForContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createProfileForContactAsync:::ContactProfileCreateDto"]=0
 operation_parameters_minimum_occurrences["deleteContactAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["deleteContactAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["deleteContactAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactEmailAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteContactEmailAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["deleteContactEmailAsync:::emailId"]=1
+operation_parameters_minimum_occurrences["deleteContactEmailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteContactEmailAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteProfileForContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteProfileForContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["deleteProfileForContactAsync:::profileId"]=1
+operation_parameters_minimum_occurrences["deleteProfileForContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteProfileForContactAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessOwnedIndividualAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessOwnedIndividualAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["getBusinessOwnedIndividualAsync:::api-version"]=0
@@ -136,10 +302,14 @@ operation_parameters_minimum_occurrences["getContactCartAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getContactCartAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["getContactCartAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getContactCartAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getContactProfilesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getContactProfilesAsync:::contactId"]=1
-operation_parameters_minimum_occurrences["getContactProfilesAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getContactProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactEmailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactEmailsAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getContactEmailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactEmailsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getContactEmailsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getContactEmailsCountAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getContactEmailsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getContactEmailsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getContactSocialProfileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getContactSocialProfileAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["getContactSocialProfileAsync:::api-version"]=0
@@ -183,11 +353,25 @@ operation_parameters_minimum_occurrences["getOrganizationRelatedOrganizationsAsy
 operation_parameters_minimum_occurrences["getOrganizationRelatedOrganizationsAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["getOrganizationRelatedOrganizationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOrganizationRelatedOrganizationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProfilesForContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProfilesForContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getProfilesForContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProfilesForContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProfilesForContactCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getProfilesForContactCountAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["getProfilesForContactCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getProfilesForContactCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchContactAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchContactAsync:::contactId"]=1
 operation_parameters_minimum_occurrences["patchContactAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchContactAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchContactAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchContactEmailAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactEmailAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["patchContactEmailAsync:::emailId"]=1
+operation_parameters_minimum_occurrences["patchContactEmailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactEmailAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactEmailAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["previewContactEmailTemplate:::contactId"]=1
 operation_parameters_minimum_occurrences["previewContactEmailTemplate:::api-version"]=0
 operation_parameters_minimum_occurrences["previewContactEmailTemplate:::x-api-version"]=0
@@ -206,6 +390,18 @@ operation_parameters_minimum_occurrences["updateContactAvatarAsync:::tenantId"]=
 operation_parameters_minimum_occurrences["updateContactAvatarAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateContactAvatarAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateContactAvatarAsync:::avatar"]=0
+operation_parameters_minimum_occurrences["updateContactEmailAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateContactEmailAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["updateContactEmailAsync:::emailId"]=1
+operation_parameters_minimum_occurrences["updateContactEmailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateContactEmailAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateContactEmailAsync:::ContactEmailUpdateDto"]=0
+operation_parameters_minimum_occurrences["updateProfileForContactAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateProfileForContactAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["updateProfileForContactAsync:::profileId"]=1
+operation_parameters_minimum_occurrences["updateProfileForContactAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateProfileForContactAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateProfileForContactAsync:::ContactProfileUpdateDto"]=0
 operation_parameters_minimum_occurrences["upsertTenantOntoAnotherTenantContactListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["upsertTenantOntoAnotherTenantContactListAsync:::relatedTenantId"]=1
 operation_parameters_minimum_occurrences["upsertTenantOntoAnotherTenantContactListAsync:::api-version"]=0
@@ -214,10 +410,16 @@ operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactList
 operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::relatedUserId"]=1
 operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["verifyContactEmailAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["verifyContactEmailAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["verifyContactEmailAsync:::emailId"]=1
+operation_parameters_minimum_occurrences["verifyContactEmailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["verifyContactEmailAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -264,6 +466,18 @@ operation_parameters_minimum_occurrences["getContactOptionsCount:::contactId"]=1
 operation_parameters_minimum_occurrences["getContactOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getContactOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getContactOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactOptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactOptionAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["patchContactOptionAsync:::optionId"]=1
+operation_parameters_minimum_occurrences["patchContactOptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactOptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactOptionAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchContactOptionByKeyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["patchContactOptionByKeyAsync:::contactId"]=1
+operation_parameters_minimum_occurrences["patchContactOptionByKeyAsync:::key"]=1
+operation_parameters_minimum_occurrences["patchContactOptionByKeyAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["patchContactOptionByKeyAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["patchContactOptionByKeyAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateContactOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateContactOption:::contactId"]=1
 operation_parameters_minimum_occurrences["updateContactOption:::optionId"]=1
@@ -299,14 +513,180 @@ operation_parameters_minimum_occurrences["syncTenantToTenantCrm:::x-api-version"
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["createContactGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactGroupAsync:::ContactsGroupCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteContactGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactGroupAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteContactGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactGroupByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactGroupByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getContactGroupByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactGroupByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactGroupsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactGroupsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactGroupsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactGroupsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactGroupsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactGroupsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactGroupAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchContactGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactGroupAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateContactGroupAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactGroupAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateContactGroupAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactGroupAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactGroupAsync:::ContactsGroupUpdateDto"]=0
+operation_parameters_maximum_occurrences["createContactProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactProfileAsync:::ContactProfileCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteContactProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactProfileAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteContactProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactProfileByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactProfileByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getContactProfileByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactProfileByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactProfilesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactProfilesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactProfilesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactProfilesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPartnerProfilesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPartnerProfilesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPartnerProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPatientProfilesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPatientProfilesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getPatientProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactProfileAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchContactProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactProfileAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateContactProfileAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactProfileAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateContactProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactProfileAsync:::ContactProfileUpdateDto"]=0
+operation_parameters_maximum_occurrences["createContactRelationTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactRelationTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactRelationTypeAsync:::ContactRelationTypeCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationTypeAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypeByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypeByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypeByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypeByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactRelationTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactRelationTypeAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchContactRelationTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactRelationTypeAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateContactRelationTypeAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactRelationTypeAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateContactRelationTypeAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactRelationTypeAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactRelationTypeAsync:::ContactRelationTypeUpdateDto"]=0
+operation_parameters_maximum_occurrences["createContactRelationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactRelationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactRelationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactRelationAsync:::ContactRelationCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactRelationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactRelationByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getContactRelationByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactRelationsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactRelationsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactRelationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactRelationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactRelationAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchContactRelationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactRelationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactRelationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateContactRelationAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactRelationAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateContactRelationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactRelationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactRelationAsync:::ContactRelationUpdateDto"]=0
+operation_parameters_maximum_occurrences["createContactSourceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactSourceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactSourceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactSourceAsync:::ContactSourceCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteContactSourceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactSourceAsync:::id"]=0
+operation_parameters_maximum_occurrences["deleteContactSourceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactSourceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactSourceByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactSourceByIdAsync:::id"]=0
+operation_parameters_maximum_occurrences["getContactSourceByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactSourceByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactSourcesAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactSourcesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactSourcesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactSourcesCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactSourcesCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactSourcesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactSourceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactSourceAsync:::id"]=0
+operation_parameters_maximum_occurrences["patchContactSourceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactSourceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactSourceAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["updateContactSourceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactSourceAsync:::id"]=0
+operation_parameters_maximum_occurrences["updateContactSourceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactSourceAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactSourceAsync:::ContactSourceUpdateDto"]=0
 operation_parameters_maximum_occurrences["createContactAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createContactAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createContactAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createContactAsync:::ContactCreateDto"]=0
+operation_parameters_maximum_occurrences["createContactEmailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createContactEmailAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["createContactEmailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createContactEmailAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createContactEmailAsync:::ContactEmailCreateDto"]=0
+operation_parameters_maximum_occurrences["createProfileForContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createProfileForContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["createProfileForContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createProfileForContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createProfileForContactAsync:::ContactProfileCreateDto"]=0
 operation_parameters_maximum_occurrences["deleteContactAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["deleteContactAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["deleteContactAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactEmailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteContactEmailAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["deleteContactEmailAsync:::emailId"]=0
+operation_parameters_maximum_occurrences["deleteContactEmailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteContactEmailAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteProfileForContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteProfileForContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["deleteProfileForContactAsync:::profileId"]=0
+operation_parameters_maximum_occurrences["deleteProfileForContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteProfileForContactAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessOwnedIndividualAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessOwnedIndividualAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["getBusinessOwnedIndividualAsync:::api-version"]=0
@@ -339,10 +719,14 @@ operation_parameters_maximum_occurrences["getContactCartAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getContactCartAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["getContactCartAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getContactCartAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getContactProfilesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getContactProfilesAsync:::contactId"]=0
-operation_parameters_maximum_occurrences["getContactProfilesAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getContactProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactEmailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactEmailsAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getContactEmailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactEmailsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getContactEmailsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getContactEmailsCountAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getContactEmailsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getContactEmailsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getContactSocialProfileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getContactSocialProfileAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["getContactSocialProfileAsync:::api-version"]=0
@@ -386,11 +770,25 @@ operation_parameters_maximum_occurrences["getOrganizationRelatedOrganizationsAsy
 operation_parameters_maximum_occurrences["getOrganizationRelatedOrganizationsAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["getOrganizationRelatedOrganizationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOrganizationRelatedOrganizationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactCountAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getProfilesForContactCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::contactId"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchContactAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchContactEmailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactEmailAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["patchContactEmailAsync:::emailId"]=0
+operation_parameters_maximum_occurrences["patchContactEmailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactEmailAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactEmailAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["previewContactEmailTemplate:::contactId"]=0
 operation_parameters_maximum_occurrences["previewContactEmailTemplate:::api-version"]=0
 operation_parameters_maximum_occurrences["previewContactEmailTemplate:::x-api-version"]=0
@@ -409,6 +807,18 @@ operation_parameters_maximum_occurrences["updateContactAvatarAsync:::tenantId"]=
 operation_parameters_maximum_occurrences["updateContactAvatarAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateContactAvatarAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateContactAvatarAsync:::avatar"]=0
+operation_parameters_maximum_occurrences["updateContactEmailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateContactEmailAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["updateContactEmailAsync:::emailId"]=0
+operation_parameters_maximum_occurrences["updateContactEmailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateContactEmailAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateContactEmailAsync:::ContactEmailUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateProfileForContactAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateProfileForContactAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["updateProfileForContactAsync:::profileId"]=0
+operation_parameters_maximum_occurrences["updateProfileForContactAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateProfileForContactAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateProfileForContactAsync:::ContactProfileUpdateDto"]=0
 operation_parameters_maximum_occurrences["upsertTenantOntoAnotherTenantContactListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["upsertTenantOntoAnotherTenantContactListAsync:::relatedTenantId"]=0
 operation_parameters_maximum_occurrences["upsertTenantOntoAnotherTenantContactListAsync:::api-version"]=0
@@ -417,10 +827,16 @@ operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactList
 operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::relatedUserId"]=0
 operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["upsertUserOntoAnotherTenantContactListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["verifyContactEmailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["verifyContactEmailAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["verifyContactEmailAsync:::emailId"]=0
+operation_parameters_maximum_occurrences["verifyContactEmailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["verifyContactEmailAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -467,6 +883,18 @@ operation_parameters_maximum_occurrences["getContactOptionsCount:::contactId"]=0
 operation_parameters_maximum_occurrences["getContactOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getContactOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getContactOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactOptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactOptionAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["patchContactOptionAsync:::optionId"]=0
+operation_parameters_maximum_occurrences["patchContactOptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactOptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactOptionAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchContactOptionByKeyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["patchContactOptionByKeyAsync:::contactId"]=0
+operation_parameters_maximum_occurrences["patchContactOptionByKeyAsync:::key"]=0
+operation_parameters_maximum_occurrences["patchContactOptionByKeyAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["patchContactOptionByKeyAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["patchContactOptionByKeyAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateContactOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateContactOption:::contactId"]=0
 operation_parameters_maximum_occurrences["updateContactOption:::optionId"]=0
@@ -499,14 +927,180 @@ operation_parameters_maximum_occurrences["syncTenantToTenantCrm:::x-api-version"
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["createContactGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["createContactGroupAsync:::api-version"]=""
+operation_parameters_collection_type["createContactGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["createContactGroupAsync:::ContactsGroupCreateDto"]=""
+operation_parameters_collection_type["deleteContactGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteContactGroupAsync:::id"]=""
+operation_parameters_collection_type["deleteContactGroupAsync:::api-version"]=""
+operation_parameters_collection_type["deleteContactGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactGroupByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactGroupByIdAsync:::id"]=""
+operation_parameters_collection_type["getContactGroupByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getContactGroupByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactGroupsAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactGroupsAsync:::api-version"]=""
+operation_parameters_collection_type["getContactGroupsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactGroupsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactGroupsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getContactGroupsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactGroupAsync:::id"]=""
+operation_parameters_collection_type["patchContactGroupAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactGroupAsync:::Operation"]=
+operation_parameters_collection_type["updateContactGroupAsync:::tenantId"]=""
+operation_parameters_collection_type["updateContactGroupAsync:::id"]=""
+operation_parameters_collection_type["updateContactGroupAsync:::api-version"]=""
+operation_parameters_collection_type["updateContactGroupAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateContactGroupAsync:::ContactsGroupUpdateDto"]=""
+operation_parameters_collection_type["createContactProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["createContactProfileAsync:::api-version"]=""
+operation_parameters_collection_type["createContactProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["createContactProfileAsync:::ContactProfileCreateDto"]=""
+operation_parameters_collection_type["deleteContactProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteContactProfileAsync:::id"]=""
+operation_parameters_collection_type["deleteContactProfileAsync:::api-version"]=""
+operation_parameters_collection_type["deleteContactProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactProfileByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactProfileByIdAsync:::id"]=""
+operation_parameters_collection_type["getContactProfileByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getContactProfileByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactProfilesAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactProfilesAsync:::api-version"]=""
+operation_parameters_collection_type["getContactProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactProfilesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactProfilesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getContactProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPartnerProfilesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getPartnerProfilesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getPartnerProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPatientProfilesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getPatientProfilesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getPatientProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactProfileAsync:::id"]=""
+operation_parameters_collection_type["patchContactProfileAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactProfileAsync:::Operation"]=
+operation_parameters_collection_type["updateContactProfileAsync:::tenantId"]=""
+operation_parameters_collection_type["updateContactProfileAsync:::id"]=""
+operation_parameters_collection_type["updateContactProfileAsync:::api-version"]=""
+operation_parameters_collection_type["updateContactProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateContactProfileAsync:::ContactProfileUpdateDto"]=""
+operation_parameters_collection_type["createContactRelationTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["createContactRelationTypeAsync:::api-version"]=""
+operation_parameters_collection_type["createContactRelationTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["createContactRelationTypeAsync:::ContactRelationTypeCreateDto"]=""
+operation_parameters_collection_type["deleteContactRelationTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteContactRelationTypeAsync:::id"]=""
+operation_parameters_collection_type["deleteContactRelationTypeAsync:::api-version"]=""
+operation_parameters_collection_type["deleteContactRelationTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactRelationTypeByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactRelationTypeByIdAsync:::id"]=""
+operation_parameters_collection_type["getContactRelationTypeByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getContactRelationTypeByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactRelationTypesAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactRelationTypesAsync:::api-version"]=""
+operation_parameters_collection_type["getContactRelationTypesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactRelationTypesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactRelationTypesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getContactRelationTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactRelationTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactRelationTypeAsync:::id"]=""
+operation_parameters_collection_type["patchContactRelationTypeAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactRelationTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactRelationTypeAsync:::Operation"]=
+operation_parameters_collection_type["updateContactRelationTypeAsync:::tenantId"]=""
+operation_parameters_collection_type["updateContactRelationTypeAsync:::id"]=""
+operation_parameters_collection_type["updateContactRelationTypeAsync:::api-version"]=""
+operation_parameters_collection_type["updateContactRelationTypeAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateContactRelationTypeAsync:::ContactRelationTypeUpdateDto"]=""
+operation_parameters_collection_type["createContactRelationAsync:::tenantId"]=""
+operation_parameters_collection_type["createContactRelationAsync:::api-version"]=""
+operation_parameters_collection_type["createContactRelationAsync:::x-api-version"]=""
+operation_parameters_collection_type["createContactRelationAsync:::ContactRelationCreateDto"]=""
+operation_parameters_collection_type["deleteContactRelationAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteContactRelationAsync:::id"]=""
+operation_parameters_collection_type["deleteContactRelationAsync:::api-version"]=""
+operation_parameters_collection_type["deleteContactRelationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactRelationByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactRelationByIdAsync:::id"]=""
+operation_parameters_collection_type["getContactRelationByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getContactRelationByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactRelationsAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactRelationsAsync:::api-version"]=""
+operation_parameters_collection_type["getContactRelationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactRelationsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactRelationsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getContactRelationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactRelationAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactRelationAsync:::id"]=""
+operation_parameters_collection_type["patchContactRelationAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactRelationAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactRelationAsync:::Operation"]=
+operation_parameters_collection_type["updateContactRelationAsync:::tenantId"]=""
+operation_parameters_collection_type["updateContactRelationAsync:::id"]=""
+operation_parameters_collection_type["updateContactRelationAsync:::api-version"]=""
+operation_parameters_collection_type["updateContactRelationAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateContactRelationAsync:::ContactRelationUpdateDto"]=""
+operation_parameters_collection_type["createContactSourceAsync:::tenantId"]=""
+operation_parameters_collection_type["createContactSourceAsync:::api-version"]=""
+operation_parameters_collection_type["createContactSourceAsync:::x-api-version"]=""
+operation_parameters_collection_type["createContactSourceAsync:::ContactSourceCreateDto"]=""
+operation_parameters_collection_type["deleteContactSourceAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteContactSourceAsync:::id"]=""
+operation_parameters_collection_type["deleteContactSourceAsync:::api-version"]=""
+operation_parameters_collection_type["deleteContactSourceAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactSourceByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactSourceByIdAsync:::id"]=""
+operation_parameters_collection_type["getContactSourceByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getContactSourceByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactSourcesAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactSourcesAsync:::api-version"]=""
+operation_parameters_collection_type["getContactSourcesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactSourcesCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactSourcesCountAsync:::api-version"]=""
+operation_parameters_collection_type["getContactSourcesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactSourceAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactSourceAsync:::id"]=""
+operation_parameters_collection_type["patchContactSourceAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactSourceAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactSourceAsync:::Operation"]=
+operation_parameters_collection_type["updateContactSourceAsync:::tenantId"]=""
+operation_parameters_collection_type["updateContactSourceAsync:::id"]=""
+operation_parameters_collection_type["updateContactSourceAsync:::api-version"]=""
+operation_parameters_collection_type["updateContactSourceAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateContactSourceAsync:::ContactSourceUpdateDto"]=""
 operation_parameters_collection_type["createContactAsync:::tenantId"]=""
 operation_parameters_collection_type["createContactAsync:::api-version"]=""
 operation_parameters_collection_type["createContactAsync:::x-api-version"]=""
 operation_parameters_collection_type["createContactAsync:::ContactCreateDto"]=""
+operation_parameters_collection_type["createContactEmailAsync:::tenantId"]=""
+operation_parameters_collection_type["createContactEmailAsync:::contactId"]=""
+operation_parameters_collection_type["createContactEmailAsync:::api-version"]=""
+operation_parameters_collection_type["createContactEmailAsync:::x-api-version"]=""
+operation_parameters_collection_type["createContactEmailAsync:::ContactEmailCreateDto"]=""
+operation_parameters_collection_type["createProfileForContactAsync:::tenantId"]=""
+operation_parameters_collection_type["createProfileForContactAsync:::contactId"]=""
+operation_parameters_collection_type["createProfileForContactAsync:::api-version"]=""
+operation_parameters_collection_type["createProfileForContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["createProfileForContactAsync:::ContactProfileCreateDto"]=""
 operation_parameters_collection_type["deleteContactAsync:::tenantId"]=""
 operation_parameters_collection_type["deleteContactAsync:::contactId"]=""
 operation_parameters_collection_type["deleteContactAsync:::api-version"]=""
 operation_parameters_collection_type["deleteContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteContactEmailAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteContactEmailAsync:::contactId"]=""
+operation_parameters_collection_type["deleteContactEmailAsync:::emailId"]=""
+operation_parameters_collection_type["deleteContactEmailAsync:::api-version"]=""
+operation_parameters_collection_type["deleteContactEmailAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteProfileForContactAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteProfileForContactAsync:::contactId"]=""
+operation_parameters_collection_type["deleteProfileForContactAsync:::profileId"]=""
+operation_parameters_collection_type["deleteProfileForContactAsync:::api-version"]=""
+operation_parameters_collection_type["deleteProfileForContactAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBusinessOwnedIndividualAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessOwnedIndividualAsync:::contactId"]=""
 operation_parameters_collection_type["getBusinessOwnedIndividualAsync:::api-version"]=""
@@ -539,10 +1133,14 @@ operation_parameters_collection_type["getContactCartAsync:::tenantId"]=""
 operation_parameters_collection_type["getContactCartAsync:::contactId"]=""
 operation_parameters_collection_type["getContactCartAsync:::api-version"]=""
 operation_parameters_collection_type["getContactCartAsync:::x-api-version"]=""
-operation_parameters_collection_type["getContactProfilesAsync:::tenantId"]=""
-operation_parameters_collection_type["getContactProfilesAsync:::contactId"]=""
-operation_parameters_collection_type["getContactProfilesAsync:::api-version"]=""
-operation_parameters_collection_type["getContactProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactEmailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactEmailsAsync:::contactId"]=""
+operation_parameters_collection_type["getContactEmailsAsync:::api-version"]=""
+operation_parameters_collection_type["getContactEmailsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getContactEmailsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getContactEmailsCountAsync:::contactId"]=""
+operation_parameters_collection_type["getContactEmailsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getContactEmailsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["getContactSocialProfileAsync:::tenantId"]=""
 operation_parameters_collection_type["getContactSocialProfileAsync:::contactId"]=""
 operation_parameters_collection_type["getContactSocialProfileAsync:::api-version"]=""
@@ -586,11 +1184,25 @@ operation_parameters_collection_type["getOrganizationRelatedOrganizationsAsync::
 operation_parameters_collection_type["getOrganizationRelatedOrganizationsAsync:::contactId"]=""
 operation_parameters_collection_type["getOrganizationRelatedOrganizationsAsync:::api-version"]=""
 operation_parameters_collection_type["getOrganizationRelatedOrganizationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProfilesForContactAsync:::tenantId"]=""
+operation_parameters_collection_type["getProfilesForContactAsync:::contactId"]=""
+operation_parameters_collection_type["getProfilesForContactAsync:::api-version"]=""
+operation_parameters_collection_type["getProfilesForContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProfilesForContactCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getProfilesForContactCountAsync:::contactId"]=""
+operation_parameters_collection_type["getProfilesForContactCountAsync:::api-version"]=""
+operation_parameters_collection_type["getProfilesForContactCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchContactAsync:::tenantId"]=""
 operation_parameters_collection_type["patchContactAsync:::contactId"]=""
 operation_parameters_collection_type["patchContactAsync:::api-version"]=""
 operation_parameters_collection_type["patchContactAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchContactAsync:::Operation"]=
+operation_parameters_collection_type["patchContactEmailAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactEmailAsync:::contactId"]=""
+operation_parameters_collection_type["patchContactEmailAsync:::emailId"]=""
+operation_parameters_collection_type["patchContactEmailAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactEmailAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactEmailAsync:::Operation"]=
 operation_parameters_collection_type["previewContactEmailTemplate:::contactId"]=""
 operation_parameters_collection_type["previewContactEmailTemplate:::api-version"]=""
 operation_parameters_collection_type["previewContactEmailTemplate:::x-api-version"]=""
@@ -609,6 +1221,18 @@ operation_parameters_collection_type["updateContactAvatarAsync:::tenantId"]=""
 operation_parameters_collection_type["updateContactAvatarAsync:::api-version"]=""
 operation_parameters_collection_type["updateContactAvatarAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateContactAvatarAsync:::avatar"]=""
+operation_parameters_collection_type["updateContactEmailAsync:::tenantId"]=""
+operation_parameters_collection_type["updateContactEmailAsync:::contactId"]=""
+operation_parameters_collection_type["updateContactEmailAsync:::emailId"]=""
+operation_parameters_collection_type["updateContactEmailAsync:::api-version"]=""
+operation_parameters_collection_type["updateContactEmailAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateContactEmailAsync:::ContactEmailUpdateDto"]=""
+operation_parameters_collection_type["updateProfileForContactAsync:::tenantId"]=""
+operation_parameters_collection_type["updateProfileForContactAsync:::contactId"]=""
+operation_parameters_collection_type["updateProfileForContactAsync:::profileId"]=""
+operation_parameters_collection_type["updateProfileForContactAsync:::api-version"]=""
+operation_parameters_collection_type["updateProfileForContactAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateProfileForContactAsync:::ContactProfileUpdateDto"]=""
 operation_parameters_collection_type["upsertTenantOntoAnotherTenantContactListAsync:::tenantId"]=""
 operation_parameters_collection_type["upsertTenantOntoAnotherTenantContactListAsync:::relatedTenantId"]=""
 operation_parameters_collection_type["upsertTenantOntoAnotherTenantContactListAsync:::api-version"]=""
@@ -617,10 +1241,16 @@ operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsyn
 operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsync:::relatedUserId"]=""
 operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsync:::api-version"]=""
 operation_parameters_collection_type["upsertUserOntoAnotherTenantContactListAsync:::x-api-version"]=""
+operation_parameters_collection_type["verifyContactEmailAsync:::tenantId"]=""
+operation_parameters_collection_type["verifyContactEmailAsync:::contactId"]=""
+operation_parameters_collection_type["verifyContactEmailAsync:::emailId"]=""
+operation_parameters_collection_type["verifyContactEmailAsync:::api-version"]=""
+operation_parameters_collection_type["verifyContactEmailAsync:::x-api-version"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -667,6 +1297,18 @@ operation_parameters_collection_type["getContactOptionsCount:::contactId"]=""
 operation_parameters_collection_type["getContactOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getContactOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getContactOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["patchContactOptionAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactOptionAsync:::contactId"]=""
+operation_parameters_collection_type["patchContactOptionAsync:::optionId"]=""
+operation_parameters_collection_type["patchContactOptionAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactOptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactOptionAsync:::Operation"]=
+operation_parameters_collection_type["patchContactOptionByKeyAsync:::tenantId"]=""
+operation_parameters_collection_type["patchContactOptionByKeyAsync:::contactId"]=""
+operation_parameters_collection_type["patchContactOptionByKeyAsync:::key"]=""
+operation_parameters_collection_type["patchContactOptionByKeyAsync:::api-version"]=""
+operation_parameters_collection_type["patchContactOptionByKeyAsync:::x-api-version"]=""
+operation_parameters_collection_type["patchContactOptionByKeyAsync:::Operation"]=
 operation_parameters_collection_type["updateContactOption:::tenantId"]=""
 operation_parameters_collection_type["updateContactOption:::contactId"]=""
 operation_parameters_collection_type["updateContactOption:::optionId"]=""
@@ -1080,10 +1722,76 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
+    echo -e "${BOLD}${WHITE}[contactGroups]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createContactGroupAsync${OFF};Create a new contact group
+  ${CYAN}deleteContactGroupAsync${OFF};Delete a contact group
+  ${CYAN}getContactGroupByIdAsync${OFF};Get contact group by ID
+  ${CYAN}getContactGroupsAsync${OFF};Get all contact groups
+  ${CYAN}getContactGroupsCountAsync${OFF};Get contact groups count
+  ${CYAN}patchContactGroupAsync${OFF};Patch a contact group
+  ${CYAN}updateContactGroupAsync${OFF};Update a contact group
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[contactProfiles]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createContactProfileAsync${OFF};Create a new contact profile
+  ${CYAN}deleteContactProfileAsync${OFF};Delete a contact profile
+  ${CYAN}getContactProfileByIdAsync${OFF};Get contact profile by ID
+  ${CYAN}getContactProfilesAsync${OFF};Get all contact profiles
+  ${CYAN}getContactProfilesCountAsync${OFF};Get contact profiles count
+  ${CYAN}getPartnerProfilesCountAsync${OFF};Get partner profiles count
+  ${CYAN}getPatientProfilesCountAsync${OFF};Get patient profiles count
+  ${CYAN}patchContactProfileAsync${OFF};Patch a contact profile
+  ${CYAN}updateContactProfileAsync${OFF};Update a contact profile
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[contactRelationTypes]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createContactRelationTypeAsync${OFF};Create a new contact relation type
+  ${CYAN}deleteContactRelationTypeAsync${OFF};Delete a contact relation type
+  ${CYAN}getContactRelationTypeByIdAsync${OFF};Get contact relation type by ID
+  ${CYAN}getContactRelationTypesAsync${OFF};Get all contact relation types
+  ${CYAN}getContactRelationTypesCountAsync${OFF};Get contact relation types count
+  ${CYAN}patchContactRelationTypeAsync${OFF};Patch a contact relation type
+  ${CYAN}updateContactRelationTypeAsync${OFF};Update a contact relation type
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[contactRelations]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createContactRelationAsync${OFF};Create a new contact relation
+  ${CYAN}deleteContactRelationAsync${OFF};Delete a contact relation
+  ${CYAN}getContactRelationByIdAsync${OFF};Get contact relation by ID
+  ${CYAN}getContactRelationsAsync${OFF};Get all contact relations
+  ${CYAN}getContactRelationsCountAsync${OFF};Get contact relations count
+  ${CYAN}patchContactRelationAsync${OFF};Patch a contact relation
+  ${CYAN}updateContactRelationAsync${OFF};Update a contact relation
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[contactSources]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createContactSourceAsync${OFF};Create a new contact source
+  ${CYAN}deleteContactSourceAsync${OFF};Delete a contact source
+  ${CYAN}getContactSourceByIdAsync${OFF};Get contact source by ID
+  ${CYAN}getContactSourcesAsync${OFF};Get all contact sources
+  ${CYAN}getContactSourcesCountAsync${OFF};Get contact sources count
+  ${CYAN}patchContactSourceAsync${OFF};Patch a contact source
+  ${CYAN}updateContactSourceAsync${OFF};Update a contact source
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[contacts]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createContactAsync${OFF};Create a new contact
+  ${CYAN}createContactEmailAsync${OFF};Add an email address to a contact
+  ${CYAN}createProfileForContactAsync${OFF};Create a contact profile
   ${CYAN}deleteContactAsync${OFF};Delete a contact
+  ${CYAN}deleteContactEmailAsync${OFF};Delete a contact email address
+  ${CYAN}deleteProfileForContactAsync${OFF};Delete a contact profile
   ${CYAN}getBusinessOwnedIndividualAsync${OFF};Get a Contact of type Individual by ID
   ${CYAN}getBusinessOwnedIndividualsAsync${OFF};Get all contacts of type individual
   ${CYAN}getBusinessOwnedIndividualsCountAsync${OFF};Get all contacts of type individual count
@@ -1093,7 +1801,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getContactAsync${OFF};Get a contact by ID
   ${CYAN}getContactAvatarAsync${OFF};Get a contact's avatar
   ${CYAN}getContactCartAsync${OFF};Get a contact's cart
-  ${CYAN}getContactProfilesAsync${OFF};Get a contact's social profiles
+  ${CYAN}getContactEmailsAsync${OFF};Get a contact's email addresses
+  ${CYAN}getContactEmailsCountAsync${OFF};Get contact email addresses count
   ${CYAN}getContactSocialProfileAsync${OFF};Get a contact's social profile
   ${CYAN}getContactWalletAsync${OFF};Get a contact's wallet
   ${CYAN}getContactsAsync${OFF};Get all business owned contacts
@@ -1106,13 +1815,19 @@ read -r -d '' ops <<EOF
   ${CYAN}getIndividualRelatedOrganizationsAsync${OFF};Get individual related organizations
   ${CYAN}getOrganizationRelatedIndividualsAsync${OFF};Get organization related individuals
   ${CYAN}getOrganizationRelatedOrganizationsAsync${OFF};Get organization related organizations
+  ${CYAN}getProfilesForContactAsync${OFF};Get a contact's social profiles
+  ${CYAN}getProfilesForContactCountAsync${OFF};Get contact profiles count
   ${CYAN}patchContactAsync${OFF};Patch a contact
+  ${CYAN}patchContactEmailAsync${OFF};Patch a contact email address
   ${CYAN}previewContactEmailTemplate${OFF};Preview the rendered email for a contact.
   ${CYAN}sendContactEmail${OFF};Send an email to a contact.
   ${CYAN}updateContactAsync${OFF};Update a contact
   ${CYAN}updateContactAvatarAsync${OFF};Update a contact's avatar
+  ${CYAN}updateContactEmailAsync${OFF};Update a contact email address
+  ${CYAN}updateProfileForContactAsync${OFF};Update a contact profile
   ${CYAN}upsertTenantOntoAnotherTenantContactListAsync${OFF};Upsert a tenant onto another tenant's contact list
   ${CYAN}upsertUserOntoAnotherTenantContactListAsync${OFF};Upsert a user onto a tenant's contact list
+  ${CYAN}verifyContactEmailAsync${OFF};Verify a contact email address
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1122,6 +1837,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1146,6 +1862,8 @@ read -r -d '' ops <<EOF
   ${CYAN}getContactOptionByKey${OFF};Retrieve a single contact option by its key
   ${CYAN}getContactOptions${OFF};Retrieve a list of contact options
   ${CYAN}getContactOptionsCount${OFF};Get the count of contact options
+  ${CYAN}patchContactOptionAsync${OFF};Patch a contact option
+  ${CYAN}patchContactOptionByKeyAsync${OFF};Patch a contact option by key
   ${CYAN}updateContactOption${OFF};Update a contact option
   ${CYAN}upsertContactOption${OFF};Create or update a contact option by key
 EOF
@@ -1212,6 +1930,994 @@ print_version() {
 
 ##############################################################################
 #
+# Print help for createContactGroupAsync operation
+#
+##############################################################################
+print_createContactGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactGroupAsync - Create a new contact group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new contact group for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactGroupAsync operation
+#
+##############################################################################
+print_deleteContactGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactGroupAsync - Delete a contact group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a contact group for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactGroupByIdAsync operation
+#
+##############################################################################
+print_getContactGroupByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactGroupByIdAsync - Get contact group by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific contact group by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactGroupsAsync operation
+#
+##############################################################################
+print_getContactGroupsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactGroupsAsync - Get all contact groups${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all contact groups for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactGroupsCountAsync operation
+#
+##############################################################################
+print_getContactGroupsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactGroupsCountAsync - Get contact groups count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of contact groups for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactGroupAsync operation
+#
+##############################################################################
+print_patchContactGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactGroupAsync - Patch a contact group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact group" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateContactGroupAsync operation
+#
+##############################################################################
+print_updateContactGroupAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactGroupAsync - Update a contact group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing contact group for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createContactProfileAsync operation
+#
+##############################################################################
+print_createContactProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactProfileAsync - Create a new contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new contact profile for the specified tenant. The ContactId must be provided in the request body." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactProfileAsync operation
+#
+##############################################################################
+print_deleteContactProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactProfileAsync - Delete a contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a contact profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactProfileByIdAsync operation
+#
+##############################################################################
+print_getContactProfileByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactProfileByIdAsync - Get contact profile by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific contact profile by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactProfilesAsync operation
+#
+##############################################################################
+print_getContactProfilesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactProfilesAsync - Get all contact profiles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all contact profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactProfilesCountAsync operation
+#
+##############################################################################
+print_getContactProfilesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactProfilesCountAsync - Get contact profiles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of contact profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPartnerProfilesCountAsync operation
+#
+##############################################################################
+print_getPartnerProfilesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPartnerProfilesCountAsync - Get partner profiles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of partner contact profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPatientProfilesCountAsync operation
+#
+##############################################################################
+print_getPatientProfilesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPatientProfilesCountAsync - Get patient profiles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of patient contact profiles for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactProfileAsync operation
+#
+##############################################################################
+print_patchContactProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactProfileAsync - Patch a contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact profile" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateContactProfileAsync operation
+#
+##############################################################################
+print_updateContactProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactProfileAsync - Update a contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing contact profile for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createContactRelationTypeAsync operation
+#
+##############################################################################
+print_createContactRelationTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactRelationTypeAsync - Create a new contact relation type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new contact relation type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactRelationTypeAsync operation
+#
+##############################################################################
+print_deleteContactRelationTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactRelationTypeAsync - Delete a contact relation type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a contact relation type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactRelationTypeByIdAsync operation
+#
+##############################################################################
+print_getContactRelationTypeByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactRelationTypeByIdAsync - Get contact relation type by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific contact relation type by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactRelationTypesAsync operation
+#
+##############################################################################
+print_getContactRelationTypesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactRelationTypesAsync - Get all contact relation types${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all contact relation types for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactRelationTypesCountAsync operation
+#
+##############################################################################
+print_getContactRelationTypesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactRelationTypesCountAsync - Get contact relation types count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of contact relation types for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactRelationTypeAsync operation
+#
+##############################################################################
+print_patchContactRelationTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactRelationTypeAsync - Patch a contact relation type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact relation type" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateContactRelationTypeAsync operation
+#
+##############################################################################
+print_updateContactRelationTypeAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactRelationTypeAsync - Update a contact relation type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing contact relation type for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createContactRelationAsync operation
+#
+##############################################################################
+print_createContactRelationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactRelationAsync - Create a new contact relation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new contact relation for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactRelationAsync operation
+#
+##############################################################################
+print_deleteContactRelationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactRelationAsync - Delete a contact relation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a contact relation for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactRelationByIdAsync operation
+#
+##############################################################################
+print_getContactRelationByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactRelationByIdAsync - Get contact relation by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific contact relation by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactRelationsAsync operation
+#
+##############################################################################
+print_getContactRelationsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactRelationsAsync - Get all contact relations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all contact relations for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactRelationsCountAsync operation
+#
+##############################################################################
+print_getContactRelationsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactRelationsCountAsync - Get contact relations count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of contact relations for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactRelationAsync operation
+#
+##############################################################################
+print_patchContactRelationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactRelationAsync - Patch a contact relation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact relation" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateContactRelationAsync operation
+#
+##############################################################################
+print_updateContactRelationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactRelationAsync - Update a contact relation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing contact relation for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createContactSourceAsync operation
+#
+##############################################################################
+print_createContactSourceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactSourceAsync - Create a new contact source${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new contact source for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactSourceAsync operation
+#
+##############################################################################
+print_deleteContactSourceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactSourceAsync - Delete a contact source${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a contact source for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactSourceByIdAsync operation
+#
+##############################################################################
+print_getContactSourceByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactSourceByIdAsync - Get contact source by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific contact source by its identifier." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactSourcesAsync operation
+#
+##############################################################################
+print_getContactSourcesAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactSourcesAsync - Get all contact sources${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves all contact sources for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactSourcesCountAsync operation
+#
+##############################################################################
+print_getContactSourcesCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactSourcesCountAsync - Get contact sources count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of contact sources for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactSourceAsync operation
+#
+##############################################################################
+print_patchContactSourceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactSourceAsync - Patch a contact source${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact source" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateContactSourceAsync operation
+#
+##############################################################################
+print_updateContactSourceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactSourceAsync - Update a contact source${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing contact source for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createContactAsync operation
 #
 ##############################################################################
@@ -1240,6 +2946,64 @@ print_createContactAsync_help() {
 }
 ##############################################################################
 #
+# Print help for createContactEmailAsync operation
+#
+##############################################################################
+print_createContactEmailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createContactEmailAsync - Add an email address to a contact${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new email address for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createProfileForContactAsync operation
+#
+##############################################################################
+print_createProfileForContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createProfileForContactAsync - Create a contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new profile for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for deleteContactAsync operation
 #
 ##############################################################################
@@ -1262,6 +3026,62 @@ print_deleteContactAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteContactEmailAsync operation
+#
+##############################################################################
+print_deleteContactEmailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteContactEmailAsync - Delete a contact email address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes an email address from the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteProfileForContactAsync operation
+#
+##############################################################################
+print_deleteProfileForContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteProfileForContactAsync - Delete a contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a profile for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}profileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: profileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1512,14 +3332,14 @@ print_getContactCartAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getContactProfilesAsync operation
+# Print help for getContactEmailsAsync operation
 #
 ##############################################################################
-print_getContactProfilesAsync_help() {
+print_getContactEmailsAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getContactProfilesAsync - Get a contact's social profiles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getContactEmailsAsync - Get a contact's email addresses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a contact's social profiles" | paste -sd' ' | fold -sw 80
+    echo -e "Get all email addresses for the specified contact." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
@@ -1530,12 +3350,35 @@ print_getContactProfilesAsync_help() {
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getContactEmailsCountAsync operation
+#
+##############################################################################
+print_getContactEmailsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getContactEmailsCountAsync - Get contact email addresses count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of email addresses for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1864,6 +3707,60 @@ print_getOrganizationRelatedOrganizationsAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getProfilesForContactAsync operation
+#
+##############################################################################
+print_getProfilesForContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProfilesForContactAsync - Get a contact's social profiles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a contact's social profiles" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getProfilesForContactCountAsync operation
+#
+##############################################################################
+print_getProfilesForContactCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getProfilesForContactCountAsync - Get contact profiles count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of profiles for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for patchContactAsync operation
 #
 ##############################################################################
@@ -1888,6 +3785,36 @@ print_patchContactAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactEmailAsync operation
+#
+##############################################################################
+print_patchContactEmailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactEmailAsync - Patch a contact email address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Partially updates an existing email address for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -1995,6 +3922,66 @@ print_updateContactAvatarAsync_help() {
 }
 ##############################################################################
 #
+# Print help for updateContactEmailAsync operation
+#
+##############################################################################
+print_updateContactEmailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateContactEmailAsync - Update a contact email address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing email address for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateProfileForContactAsync operation
+#
+##############################################################################
+print_updateProfileForContactAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateProfileForContactAsync - Update a contact profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing profile for the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}profileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: profileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for upsertTenantOntoAnotherTenantContactListAsync operation
 #
 ##############################################################################
@@ -2046,6 +4033,36 @@ print_upsertUserOntoAnotherTenantContactListAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for verifyContactEmailAsync operation
+#
+##############################################################################
+print_verifyContactEmailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}verifyContactEmailAsync - Verify a contact email address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Marks an email address as verified on the specified contact." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}emailId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: emailId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=409
+    echo -e "${result_color_table[${code:0:1}]}  409;Conflict${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -2103,6 +4120,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2522,6 +4555,66 @@ print_getContactOptionsCount_help() {
 }
 ##############################################################################
 #
+# Print help for patchContactOptionAsync operation
+#
+##############################################################################
+print_patchContactOptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactOptionAsync - Patch a contact option${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact option" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}optionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: optionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for patchContactOptionByKeyAsync operation
+#
+##############################################################################
+print_patchContactOptionByKeyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}patchContactOptionByKeyAsync - Patch a contact option by key${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Patch a contact option by key" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}contactId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: contactId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}key${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateContactOption operation
 #
 ##############################################################################
@@ -2694,6 +4787,1938 @@ print_syncTenantToTenantCrm_help() {
 
 ##############################################################################
 #
+# Call createContactGroupAsync operation
+#
+##############################################################################
+call_createContactGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactGroupAsync operation
+#
+##############################################################################
+call_deleteContactGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactGroupByIdAsync operation
+#
+##############################################################################
+call_getContactGroupByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactGroupsAsync operation
+#
+##############################################################################
+call_getContactGroupsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactGroupsCountAsync operation
+#
+##############################################################################
+call_getContactGroupsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactGroupAsync operation
+#
+##############################################################################
+call_patchContactGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateContactGroupAsync operation
+#
+##############################################################################
+call_updateContactGroupAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactGroups/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createContactProfileAsync operation
+#
+##############################################################################
+call_createContactProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactProfileAsync operation
+#
+##############################################################################
+call_deleteContactProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactProfileByIdAsync operation
+#
+##############################################################################
+call_getContactProfileByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactProfilesAsync operation
+#
+##############################################################################
+call_getContactProfilesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactProfilesCountAsync operation
+#
+##############################################################################
+call_getContactProfilesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPartnerProfilesCountAsync operation
+#
+##############################################################################
+call_getPartnerProfilesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/Partners/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPatientProfilesCountAsync operation
+#
+##############################################################################
+call_getPatientProfilesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/Patients/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactProfileAsync operation
+#
+##############################################################################
+call_patchContactProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateContactProfileAsync operation
+#
+##############################################################################
+call_updateContactProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactProfiles/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createContactRelationTypeAsync operation
+#
+##############################################################################
+call_createContactRelationTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactRelationTypeAsync operation
+#
+##############################################################################
+call_deleteContactRelationTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactRelationTypeByIdAsync operation
+#
+##############################################################################
+call_getContactRelationTypeByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactRelationTypesAsync operation
+#
+##############################################################################
+call_getContactRelationTypesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactRelationTypesCountAsync operation
+#
+##############################################################################
+call_getContactRelationTypesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactRelationTypeAsync operation
+#
+##############################################################################
+call_patchContactRelationTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateContactRelationTypeAsync operation
+#
+##############################################################################
+call_updateContactRelationTypeAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelationTypes/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createContactRelationAsync operation
+#
+##############################################################################
+call_createContactRelationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactRelationAsync operation
+#
+##############################################################################
+call_deleteContactRelationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactRelationByIdAsync operation
+#
+##############################################################################
+call_getContactRelationByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactRelationsAsync operation
+#
+##############################################################################
+call_getContactRelationsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactRelationsCountAsync operation
+#
+##############################################################################
+call_getContactRelationsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactRelationAsync operation
+#
+##############################################################################
+call_patchContactRelationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateContactRelationAsync operation
+#
+##############################################################################
+call_updateContactRelationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactRelations/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createContactSourceAsync operation
+#
+##############################################################################
+call_createContactSourceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactSourceAsync operation
+#
+##############################################################################
+call_deleteContactSourceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactSourceByIdAsync operation
+#
+##############################################################################
+call_getContactSourceByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactSourcesAsync operation
+#
+##############################################################################
+call_getContactSourcesAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactSourcesCountAsync operation
+#
+##############################################################################
+call_getContactSourcesCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactSourceAsync operation
+#
+##############################################################################
+call_patchContactSourceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateContactSourceAsync operation
+#
+##############################################################################
+call_updateContactSourceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/ContactSources/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call createContactAsync operation
 #
 ##############################################################################
@@ -2770,6 +6795,158 @@ call_createContactAsync() {
 
 ##############################################################################
 #
+# Call createContactEmailAsync operation
+#
+##############################################################################
+call_createContactEmailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/Addresses" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createProfileForContactAsync operation
+#
+##############################################################################
+call_createProfileForContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call deleteContactAsync operation
 #
 ##############################################################################
@@ -2783,6 +6960,78 @@ call_deleteContactAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteContactEmailAsync operation
+#
+##############################################################################
+call_deleteContactEmailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId emailId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/{emailId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteProfileForContactAsync operation
+#
+##############################################################################
+call_deleteProfileForContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId profileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles/{profileId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3130,10 +7379,10 @@ call_getContactCartAsync() {
 
 ##############################################################################
 #
-# Call getContactProfilesAsync operation
+# Call getContactEmailsAsync operation
 #
 ##############################################################################
-call_getContactProfilesAsync() {
+call_getContactEmailsAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=(contactId)
@@ -3142,7 +7391,43 @@ call_getContactProfilesAsync() {
     local query_parameter_names=(tenantId api-version)
     local path
 
-    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles" path_parameter_names query_parameter_names); then
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getContactEmailsCountAsync operation
+#
+##############################################################################
+call_getContactEmailsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/Count" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3598,6 +7883,78 @@ call_getOrganizationRelatedOrganizationsAsync() {
 
 ##############################################################################
 #
+# Call getProfilesForContactAsync operation
+#
+##############################################################################
+call_getProfilesForContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getProfilesForContactCountAsync operation
+#
+##############################################################################
+call_getProfilesForContactCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call patchContactAsync operation
 #
 ##############################################################################
@@ -3611,6 +7968,82 @@ call_patchContactAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactEmailAsync operation
+#
+##############################################################################
+call_patchContactEmailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId emailId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/{emailId}" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -3939,6 +8372,158 @@ call_updateContactAvatarAsync() {
 
 ##############################################################################
 #
+# Call updateContactEmailAsync operation
+#
+##############################################################################
+call_updateContactEmailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId emailId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/{emailId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateProfileForContactAsync operation
+#
+##############################################################################
+call_updateProfileForContactAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId profileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Profiles/{profileId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call upsertTenantOntoAnotherTenantContactListAsync operation
 #
 ##############################################################################
@@ -3988,6 +8573,42 @@ call_upsertUserOntoAnotherTenantContactListAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/CrmService/Contacts/Individuals/Upsert" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call verifyContactEmailAsync operation
+#
+##############################################################################
+call_verifyContactEmailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId emailId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Emails/{emailId}/Verify" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -4153,6 +8774,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -5218,6 +9875,158 @@ call_getContactOptionsCount() {
 
 ##############################################################################
 #
+# Call patchContactOptionAsync operation
+#
+##############################################################################
+call_patchContactOptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId optionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/{optionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call patchContactOptionByKeyAsync operation
+#
+##############################################################################
+call_patchContactOptionByKeyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(contactId key)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/CrmService/Contacts/{contactId}/Options/Key/{key}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call updateContactOption operation
 #
 ##############################################################################
@@ -5609,11 +10418,134 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    createContactGroupAsync)
+    operation="createContactGroupAsync"
+    ;;
+    deleteContactGroupAsync)
+    operation="deleteContactGroupAsync"
+    ;;
+    getContactGroupByIdAsync)
+    operation="getContactGroupByIdAsync"
+    ;;
+    getContactGroupsAsync)
+    operation="getContactGroupsAsync"
+    ;;
+    getContactGroupsCountAsync)
+    operation="getContactGroupsCountAsync"
+    ;;
+    patchContactGroupAsync)
+    operation="patchContactGroupAsync"
+    ;;
+    updateContactGroupAsync)
+    operation="updateContactGroupAsync"
+    ;;
+    createContactProfileAsync)
+    operation="createContactProfileAsync"
+    ;;
+    deleteContactProfileAsync)
+    operation="deleteContactProfileAsync"
+    ;;
+    getContactProfileByIdAsync)
+    operation="getContactProfileByIdAsync"
+    ;;
+    getContactProfilesAsync)
+    operation="getContactProfilesAsync"
+    ;;
+    getContactProfilesCountAsync)
+    operation="getContactProfilesCountAsync"
+    ;;
+    getPartnerProfilesCountAsync)
+    operation="getPartnerProfilesCountAsync"
+    ;;
+    getPatientProfilesCountAsync)
+    operation="getPatientProfilesCountAsync"
+    ;;
+    patchContactProfileAsync)
+    operation="patchContactProfileAsync"
+    ;;
+    updateContactProfileAsync)
+    operation="updateContactProfileAsync"
+    ;;
+    createContactRelationTypeAsync)
+    operation="createContactRelationTypeAsync"
+    ;;
+    deleteContactRelationTypeAsync)
+    operation="deleteContactRelationTypeAsync"
+    ;;
+    getContactRelationTypeByIdAsync)
+    operation="getContactRelationTypeByIdAsync"
+    ;;
+    getContactRelationTypesAsync)
+    operation="getContactRelationTypesAsync"
+    ;;
+    getContactRelationTypesCountAsync)
+    operation="getContactRelationTypesCountAsync"
+    ;;
+    patchContactRelationTypeAsync)
+    operation="patchContactRelationTypeAsync"
+    ;;
+    updateContactRelationTypeAsync)
+    operation="updateContactRelationTypeAsync"
+    ;;
+    createContactRelationAsync)
+    operation="createContactRelationAsync"
+    ;;
+    deleteContactRelationAsync)
+    operation="deleteContactRelationAsync"
+    ;;
+    getContactRelationByIdAsync)
+    operation="getContactRelationByIdAsync"
+    ;;
+    getContactRelationsAsync)
+    operation="getContactRelationsAsync"
+    ;;
+    getContactRelationsCountAsync)
+    operation="getContactRelationsCountAsync"
+    ;;
+    patchContactRelationAsync)
+    operation="patchContactRelationAsync"
+    ;;
+    updateContactRelationAsync)
+    operation="updateContactRelationAsync"
+    ;;
+    createContactSourceAsync)
+    operation="createContactSourceAsync"
+    ;;
+    deleteContactSourceAsync)
+    operation="deleteContactSourceAsync"
+    ;;
+    getContactSourceByIdAsync)
+    operation="getContactSourceByIdAsync"
+    ;;
+    getContactSourcesAsync)
+    operation="getContactSourcesAsync"
+    ;;
+    getContactSourcesCountAsync)
+    operation="getContactSourcesCountAsync"
+    ;;
+    patchContactSourceAsync)
+    operation="patchContactSourceAsync"
+    ;;
+    updateContactSourceAsync)
+    operation="updateContactSourceAsync"
+    ;;
     createContactAsync)
     operation="createContactAsync"
     ;;
+    createContactEmailAsync)
+    operation="createContactEmailAsync"
+    ;;
+    createProfileForContactAsync)
+    operation="createProfileForContactAsync"
+    ;;
     deleteContactAsync)
     operation="deleteContactAsync"
+    ;;
+    deleteContactEmailAsync)
+    operation="deleteContactEmailAsync"
+    ;;
+    deleteProfileForContactAsync)
+    operation="deleteProfileForContactAsync"
     ;;
     getBusinessOwnedIndividualAsync)
     operation="getBusinessOwnedIndividualAsync"
@@ -5642,8 +10574,11 @@ case $key in
     getContactCartAsync)
     operation="getContactCartAsync"
     ;;
-    getContactProfilesAsync)
-    operation="getContactProfilesAsync"
+    getContactEmailsAsync)
+    operation="getContactEmailsAsync"
+    ;;
+    getContactEmailsCountAsync)
+    operation="getContactEmailsCountAsync"
     ;;
     getContactSocialProfileAsync)
     operation="getContactSocialProfileAsync"
@@ -5681,8 +10616,17 @@ case $key in
     getOrganizationRelatedOrganizationsAsync)
     operation="getOrganizationRelatedOrganizationsAsync"
     ;;
+    getProfilesForContactAsync)
+    operation="getProfilesForContactAsync"
+    ;;
+    getProfilesForContactCountAsync)
+    operation="getProfilesForContactCountAsync"
+    ;;
     patchContactAsync)
     operation="patchContactAsync"
+    ;;
+    patchContactEmailAsync)
+    operation="patchContactEmailAsync"
     ;;
     previewContactEmailTemplate)
     operation="previewContactEmailTemplate"
@@ -5696,11 +10640,20 @@ case $key in
     updateContactAvatarAsync)
     operation="updateContactAvatarAsync"
     ;;
+    updateContactEmailAsync)
+    operation="updateContactEmailAsync"
+    ;;
+    updateProfileForContactAsync)
+    operation="updateProfileForContactAsync"
+    ;;
     upsertTenantOntoAnotherTenantContactListAsync)
     operation="upsertTenantOntoAnotherTenantContactListAsync"
     ;;
     upsertUserOntoAnotherTenantContactListAsync)
     operation="upsertUserOntoAnotherTenantContactListAsync"
+    ;;
+    verifyContactEmailAsync)
+    operation="verifyContactEmailAsync"
     ;;
     accountLogoutPost)
     operation="accountLogoutPost"
@@ -5713,6 +10666,9 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -5770,6 +10726,12 @@ case $key in
     ;;
     getContactOptionsCount)
     operation="getContactOptionsCount"
+    ;;
+    patchContactOptionAsync)
+    operation="patchContactOptionAsync"
+    ;;
+    patchContactOptionByKeyAsync)
+    operation="patchContactOptionByKeyAsync"
     ;;
     updateContactOption)
     operation="updateContactOption"
@@ -5876,11 +10838,134 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    createContactGroupAsync)
+    call_createContactGroupAsync
+    ;;
+    deleteContactGroupAsync)
+    call_deleteContactGroupAsync
+    ;;
+    getContactGroupByIdAsync)
+    call_getContactGroupByIdAsync
+    ;;
+    getContactGroupsAsync)
+    call_getContactGroupsAsync
+    ;;
+    getContactGroupsCountAsync)
+    call_getContactGroupsCountAsync
+    ;;
+    patchContactGroupAsync)
+    call_patchContactGroupAsync
+    ;;
+    updateContactGroupAsync)
+    call_updateContactGroupAsync
+    ;;
+    createContactProfileAsync)
+    call_createContactProfileAsync
+    ;;
+    deleteContactProfileAsync)
+    call_deleteContactProfileAsync
+    ;;
+    getContactProfileByIdAsync)
+    call_getContactProfileByIdAsync
+    ;;
+    getContactProfilesAsync)
+    call_getContactProfilesAsync
+    ;;
+    getContactProfilesCountAsync)
+    call_getContactProfilesCountAsync
+    ;;
+    getPartnerProfilesCountAsync)
+    call_getPartnerProfilesCountAsync
+    ;;
+    getPatientProfilesCountAsync)
+    call_getPatientProfilesCountAsync
+    ;;
+    patchContactProfileAsync)
+    call_patchContactProfileAsync
+    ;;
+    updateContactProfileAsync)
+    call_updateContactProfileAsync
+    ;;
+    createContactRelationTypeAsync)
+    call_createContactRelationTypeAsync
+    ;;
+    deleteContactRelationTypeAsync)
+    call_deleteContactRelationTypeAsync
+    ;;
+    getContactRelationTypeByIdAsync)
+    call_getContactRelationTypeByIdAsync
+    ;;
+    getContactRelationTypesAsync)
+    call_getContactRelationTypesAsync
+    ;;
+    getContactRelationTypesCountAsync)
+    call_getContactRelationTypesCountAsync
+    ;;
+    patchContactRelationTypeAsync)
+    call_patchContactRelationTypeAsync
+    ;;
+    updateContactRelationTypeAsync)
+    call_updateContactRelationTypeAsync
+    ;;
+    createContactRelationAsync)
+    call_createContactRelationAsync
+    ;;
+    deleteContactRelationAsync)
+    call_deleteContactRelationAsync
+    ;;
+    getContactRelationByIdAsync)
+    call_getContactRelationByIdAsync
+    ;;
+    getContactRelationsAsync)
+    call_getContactRelationsAsync
+    ;;
+    getContactRelationsCountAsync)
+    call_getContactRelationsCountAsync
+    ;;
+    patchContactRelationAsync)
+    call_patchContactRelationAsync
+    ;;
+    updateContactRelationAsync)
+    call_updateContactRelationAsync
+    ;;
+    createContactSourceAsync)
+    call_createContactSourceAsync
+    ;;
+    deleteContactSourceAsync)
+    call_deleteContactSourceAsync
+    ;;
+    getContactSourceByIdAsync)
+    call_getContactSourceByIdAsync
+    ;;
+    getContactSourcesAsync)
+    call_getContactSourcesAsync
+    ;;
+    getContactSourcesCountAsync)
+    call_getContactSourcesCountAsync
+    ;;
+    patchContactSourceAsync)
+    call_patchContactSourceAsync
+    ;;
+    updateContactSourceAsync)
+    call_updateContactSourceAsync
+    ;;
     createContactAsync)
     call_createContactAsync
     ;;
+    createContactEmailAsync)
+    call_createContactEmailAsync
+    ;;
+    createProfileForContactAsync)
+    call_createProfileForContactAsync
+    ;;
     deleteContactAsync)
     call_deleteContactAsync
+    ;;
+    deleteContactEmailAsync)
+    call_deleteContactEmailAsync
+    ;;
+    deleteProfileForContactAsync)
+    call_deleteProfileForContactAsync
     ;;
     getBusinessOwnedIndividualAsync)
     call_getBusinessOwnedIndividualAsync
@@ -5909,8 +10994,11 @@ case $operation in
     getContactCartAsync)
     call_getContactCartAsync
     ;;
-    getContactProfilesAsync)
-    call_getContactProfilesAsync
+    getContactEmailsAsync)
+    call_getContactEmailsAsync
+    ;;
+    getContactEmailsCountAsync)
+    call_getContactEmailsCountAsync
     ;;
     getContactSocialProfileAsync)
     call_getContactSocialProfileAsync
@@ -5948,8 +11036,17 @@ case $operation in
     getOrganizationRelatedOrganizationsAsync)
     call_getOrganizationRelatedOrganizationsAsync
     ;;
+    getProfilesForContactAsync)
+    call_getProfilesForContactAsync
+    ;;
+    getProfilesForContactCountAsync)
+    call_getProfilesForContactCountAsync
+    ;;
     patchContactAsync)
     call_patchContactAsync
+    ;;
+    patchContactEmailAsync)
+    call_patchContactEmailAsync
     ;;
     previewContactEmailTemplate)
     call_previewContactEmailTemplate
@@ -5963,11 +11060,20 @@ case $operation in
     updateContactAvatarAsync)
     call_updateContactAvatarAsync
     ;;
+    updateContactEmailAsync)
+    call_updateContactEmailAsync
+    ;;
+    updateProfileForContactAsync)
+    call_updateProfileForContactAsync
+    ;;
     upsertTenantOntoAnotherTenantContactListAsync)
     call_upsertTenantOntoAnotherTenantContactListAsync
     ;;
     upsertUserOntoAnotherTenantContactListAsync)
     call_upsertUserOntoAnotherTenantContactListAsync
+    ;;
+    verifyContactEmailAsync)
+    call_verifyContactEmailAsync
     ;;
     accountLogoutPost)
     call_accountLogoutPost
@@ -5980,6 +11086,9 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
+    ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost
@@ -6037,6 +11146,12 @@ case $operation in
     ;;
     getContactOptionsCount)
     call_getContactOptionsCount
+    ;;
+    patchContactOptionAsync)
+    call_patchContactOptionAsync
+    ;;
+    patchContactOptionByKeyAsync)
+    call_patchContactOptionByKeyAsync
     ;;
     updateContactOption)
     call_updateContactOption

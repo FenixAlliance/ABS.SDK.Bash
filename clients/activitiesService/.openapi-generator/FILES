@@ -13,7 +13,6 @@ docs/ActivityRecordDto.md
 docs/ActivityRecordDtoEnvelope.md
 docs/ActivityRecordDtoListEnvelope.md
 docs/ActivityRecordUpdateDto.md
-docs/ActivityRecordsApi.md
 docs/ActivityTypeCreateDto.md
 docs/ActivityTypeDto.md
 docs/ActivityTypeDtoEnvelope.md

@@ -184,6 +184,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -309,9 +310,29 @@ operation_parameters_minimum_occurrences["updateMarketingListAsync:::marketingli
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=1
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateMarketingListAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createNewsletterSubscriptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createNewsletterSubscriptionAsync:::NewsletterSubscriptionCreateDto"]=1
+operation_parameters_minimum_occurrences["createNewsletterSubscriptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createNewsletterSubscriptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deleteNewsletterSubscriptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["deleteNewsletterSubscriptionAsync:::newsletterSubscriptionId"]=1
+operation_parameters_minimum_occurrences["deleteNewsletterSubscriptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteNewsletterSubscriptionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionByIdAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionByIdAsync:::newsletterSubscriptionId"]=1
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionByIdAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getNewsletterSubscriptionsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getNewsletterSubscriptionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getNewsletterSubscriptionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNewsletterSubscriptionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateNewsletterSubscriptionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["updateNewsletterSubscriptionAsync:::newsletterSubscriptionId"]=1
+operation_parameters_minimum_occurrences["updateNewsletterSubscriptionAsync:::NewsletterSubscriptionUpdateDto"]=1
+operation_parameters_minimum_occurrences["updateNewsletterSubscriptionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateNewsletterSubscriptionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createNewsletterAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createNewsletterAsync:::NewsletterCreateDto"]=1
 operation_parameters_minimum_occurrences["createNewsletterAsync:::api-version"]=0
@@ -495,6 +516,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -620,9 +642,29 @@ operation_parameters_maximum_occurrences["updateMarketingListAsync:::marketingli
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::MarketingListUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateMarketingListAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createNewsletterSubscriptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createNewsletterSubscriptionAsync:::NewsletterSubscriptionCreateDto"]=0
+operation_parameters_maximum_occurrences["createNewsletterSubscriptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createNewsletterSubscriptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterSubscriptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterSubscriptionAsync:::newsletterSubscriptionId"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterSubscriptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteNewsletterSubscriptionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionByIdAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionByIdAsync:::newsletterSubscriptionId"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionByIdAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getNewsletterSubscriptionsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getNewsletterSubscriptionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getNewsletterSubscriptionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNewsletterSubscriptionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateNewsletterSubscriptionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["updateNewsletterSubscriptionAsync:::newsletterSubscriptionId"]=0
+operation_parameters_maximum_occurrences["updateNewsletterSubscriptionAsync:::NewsletterSubscriptionUpdateDto"]=0
+operation_parameters_maximum_occurrences["updateNewsletterSubscriptionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateNewsletterSubscriptionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createNewsletterAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createNewsletterAsync:::NewsletterCreateDto"]=0
 operation_parameters_maximum_occurrences["createNewsletterAsync:::api-version"]=0
@@ -803,6 +845,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -928,9 +971,29 @@ operation_parameters_collection_type["updateMarketingListAsync:::marketinglistId
 operation_parameters_collection_type["updateMarketingListAsync:::MarketingListUpdateDto"]=""
 operation_parameters_collection_type["updateMarketingListAsync:::api-version"]=""
 operation_parameters_collection_type["updateMarketingListAsync:::x-api-version"]=""
+operation_parameters_collection_type["createNewsletterSubscriptionAsync:::tenantId"]=""
+operation_parameters_collection_type["createNewsletterSubscriptionAsync:::NewsletterSubscriptionCreateDto"]=""
+operation_parameters_collection_type["createNewsletterSubscriptionAsync:::api-version"]=""
+operation_parameters_collection_type["createNewsletterSubscriptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["deleteNewsletterSubscriptionAsync:::tenantId"]=""
+operation_parameters_collection_type["deleteNewsletterSubscriptionAsync:::newsletterSubscriptionId"]=""
+operation_parameters_collection_type["deleteNewsletterSubscriptionAsync:::api-version"]=""
+operation_parameters_collection_type["deleteNewsletterSubscriptionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionByIdAsync:::tenantId"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionByIdAsync:::newsletterSubscriptionId"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionByIdAsync:::api-version"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionsAsync:::tenantId"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionsAsync:::api-version"]=""
+operation_parameters_collection_type["getNewsletterSubscriptionsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getNewsletterSubscriptionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getNewsletterSubscriptionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getNewsletterSubscriptionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateNewsletterSubscriptionAsync:::tenantId"]=""
+operation_parameters_collection_type["updateNewsletterSubscriptionAsync:::newsletterSubscriptionId"]=""
+operation_parameters_collection_type["updateNewsletterSubscriptionAsync:::NewsletterSubscriptionUpdateDto"]=""
+operation_parameters_collection_type["updateNewsletterSubscriptionAsync:::api-version"]=""
+operation_parameters_collection_type["updateNewsletterSubscriptionAsync:::x-api-version"]=""
 operation_parameters_collection_type["createNewsletterAsync:::tenantId"]=""
 operation_parameters_collection_type["createNewsletterAsync:::NewsletterCreateDto"]=""
 operation_parameters_collection_type["createNewsletterAsync:::api-version"]=""
@@ -1446,6 +1509,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1512,7 +1576,12 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[newsletterSubscriptions]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}createNewsletterSubscriptionAsync${OFF};Create a newsletter subscription
+  ${CYAN}deleteNewsletterSubscriptionAsync${OFF};Delete a newsletter subscription
+  ${CYAN}getNewsletterSubscriptionByIdAsync${OFF};Get newsletter subscription by ID
+  ${CYAN}getNewsletterSubscriptionsAsync${OFF};Get newsletter subscriptions
   ${CYAN}getNewsletterSubscriptionsCountAsync${OFF};Get newsletter subscriptions count
+  ${CYAN}updateNewsletterSubscriptionAsync${OFF};Update a newsletter subscription
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -2268,6 +2337,22 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -3270,6 +3355,122 @@ print_updateMarketingListAsync_help() {
 }
 ##############################################################################
 #
+# Print help for createNewsletterSubscriptionAsync operation
+#
+##############################################################################
+print_createNewsletterSubscriptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createNewsletterSubscriptionAsync - Create a newsletter subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new newsletter subscription for the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteNewsletterSubscriptionAsync operation
+#
+##############################################################################
+print_deleteNewsletterSubscriptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteNewsletterSubscriptionAsync - Delete a newsletter subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a newsletter subscription by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}newsletterSubscriptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: newsletterSubscriptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNewsletterSubscriptionByIdAsync operation
+#
+##############################################################################
+print_getNewsletterSubscriptionByIdAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNewsletterSubscriptionByIdAsync - Get newsletter subscription by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the details of a specific newsletter subscription by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}newsletterSubscriptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: newsletterSubscriptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNewsletterSubscriptionsAsync operation
+#
+##############################################################################
+print_getNewsletterSubscriptionsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNewsletterSubscriptionsAsync - Get newsletter subscriptions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a collection of newsletter subscriptions for the specified tenant using OData query options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getNewsletterSubscriptionsCountAsync operation
 #
 ##############################################################################
@@ -3285,6 +3486,37 @@ print_getNewsletterSubscriptionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateNewsletterSubscriptionAsync operation
+#
+##############################################################################
+print_updateNewsletterSubscriptionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateNewsletterSubscriptionAsync - Update a newsletter subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing newsletter subscription by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}newsletterSubscriptionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: newsletterSubscriptionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5185,6 +5417,42 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -7482,6 +7750,190 @@ call_updateMarketingListAsync() {
 
 ##############################################################################
 #
+# Call createNewsletterSubscriptionAsync operation
+#
+##############################################################################
+call_createNewsletterSubscriptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/NewsletterSubscriptions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteNewsletterSubscriptionAsync operation
+#
+##############################################################################
+call_deleteNewsletterSubscriptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(newsletterSubscriptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/NewsletterSubscriptions/{newsletterSubscriptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNewsletterSubscriptionByIdAsync operation
+#
+##############################################################################
+call_getNewsletterSubscriptionByIdAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(newsletterSubscriptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/NewsletterSubscriptions/{newsletterSubscriptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNewsletterSubscriptionsAsync operation
+#
+##############################################################################
+call_getNewsletterSubscriptionsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/NewsletterSubscriptions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getNewsletterSubscriptionsCountAsync operation
 #
 ##############################################################################
@@ -7513,6 +7965,82 @@ call_getNewsletterSubscriptionsCountAsync() {
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateNewsletterSubscriptionAsync operation
+#
+##############################################################################
+call_updateNewsletterSubscriptionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(newsletterSubscriptionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/MarketingService/NewsletterSubscriptions/{newsletterSubscriptionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8840,6 +9368,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -8963,8 +9494,23 @@ case $key in
     updateMarketingListAsync)
     operation="updateMarketingListAsync"
     ;;
+    createNewsletterSubscriptionAsync)
+    operation="createNewsletterSubscriptionAsync"
+    ;;
+    deleteNewsletterSubscriptionAsync)
+    operation="deleteNewsletterSubscriptionAsync"
+    ;;
+    getNewsletterSubscriptionByIdAsync)
+    operation="getNewsletterSubscriptionByIdAsync"
+    ;;
+    getNewsletterSubscriptionsAsync)
+    operation="getNewsletterSubscriptionsAsync"
+    ;;
     getNewsletterSubscriptionsCountAsync)
     operation="getNewsletterSubscriptionsCountAsync"
+    ;;
+    updateNewsletterSubscriptionAsync)
+    operation="updateNewsletterSubscriptionAsync"
     ;;
     createNewsletterAsync)
     operation="createNewsletterAsync"
@@ -9194,6 +9740,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -9317,8 +9866,23 @@ case $operation in
     updateMarketingListAsync)
     call_updateMarketingListAsync
     ;;
+    createNewsletterSubscriptionAsync)
+    call_createNewsletterSubscriptionAsync
+    ;;
+    deleteNewsletterSubscriptionAsync)
+    call_deleteNewsletterSubscriptionAsync
+    ;;
+    getNewsletterSubscriptionByIdAsync)
+    call_getNewsletterSubscriptionByIdAsync
+    ;;
+    getNewsletterSubscriptionsAsync)
+    call_getNewsletterSubscriptionsAsync
+    ;;
     getNewsletterSubscriptionsCountAsync)
     call_getNewsletterSubscriptionsCountAsync
+    ;;
+    updateNewsletterSubscriptionAsync)
+    call_updateNewsletterSubscriptionAsync
     ;;
     createNewsletterAsync)
     call_createNewsletterAsync

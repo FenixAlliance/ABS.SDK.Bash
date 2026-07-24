@@ -73,6 +73,7 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
+    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -86,18 +87,21 @@ _()
     operations["resendConfirmationEmailPost"]=1
     operations["resetPasswordPost"]=1
     operations["versionGet"]=1
+    operations["createLocationForWalletAsync"]=1
     operations["createWalletBankAccountAsync"]=1
-    operations["createWalletLocationAsync"]=1
     operations["createWalletPaymentAsync"]=1
     operations["createWalletTokenAsync"]=1
     operations["createWalletWithdrawRequestAsync"]=1
+    operations["deleteLocationForWalletAsync"]=1
     operations["deleteWalletBankAccountAsync"]=1
-    operations["deleteWalletLocationAsync"]=1
     operations["deleteWalletTokenAsync"]=1
     operations["getIncomingPaymentsAsync"]=1
     operations["getIncomingPaymentsCountAsync"]=1
     operations["getIncomingWalletInvoicesAsync"]=1
     operations["getIncomingWalletInvoicesCountAsync"]=1
+    operations["getLocationForWalletAsync"]=1
+    operations["getLocationsForWalletAsync"]=1
+    operations["getLocationsForWalletCountAsync"]=1
     operations["getOutgoingPaymentsAsync"]=1
     operations["getOutgoingPaymentsCountAsync"]=1
     operations["getOutgoingWalletInvoicesAsync"]=1
@@ -111,9 +115,6 @@ _()
     operations["getWalletExtendedOrdersAsync"]=1
     operations["getWalletInvoicesAsync"]=1
     operations["getWalletInvoicesCountAsync"]=1
-    operations["getWalletLocationAsync"]=1
-    operations["getWalletLocationsAsync"]=1
-    operations["getWalletLocationsCountAsync"]=1
     operations["getWalletOrdersAsync"]=1
     operations["getWalletOrdersCountAsync"]=1
     operations["getWalletPaymentsAsync"]=1
@@ -131,8 +132,8 @@ _()
     operations["getWalletWithdrawsCountAsync"]=1
     operations["patchWalletBankAccountAsync"]=1
     operations["patchWalletTokenAsync"]=1
+    operations["updateLocationForWalletAsync"]=1
     operations["updateWalletBankAccountAsync"]=1
-    operations["updateWalletLocationAsync"]=1
     operations["updateWalletTokenAsync"]=1
 
     # An associative array of operations to their parameters
@@ -142,6 +143,7 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
+    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -155,18 +157,21 @@ _()
     operation_parameters["resendConfirmationEmailPost"]=""
     operation_parameters["resetPasswordPost"]=""
     operation_parameters["versionGet"]=""
+    operation_parameters["createLocationForWalletAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["createWalletBankAccountAsync"]="walletId= api-version= x-api-version: "
-    operation_parameters["createWalletLocationAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["createWalletPaymentAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["createWalletTokenAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["createWalletWithdrawRequestAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["deleteLocationForWalletAsync"]="walletId= locationId= api-version= x-api-version: "
     operation_parameters["deleteWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
-    operation_parameters["deleteWalletLocationAsync"]="walletId= locationId= api-version= x-api-version: "
     operation_parameters["deleteWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
     operation_parameters["getIncomingPaymentsAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getIncomingPaymentsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getIncomingWalletInvoicesAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getIncomingWalletInvoicesCountAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getLocationForWalletAsync"]="walletId= locationId= api-version= x-api-version: "
+    operation_parameters["getLocationsForWalletAsync"]="walletId= api-version= x-api-version: "
+    operation_parameters["getLocationsForWalletCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getOutgoingPaymentsAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getOutgoingPaymentsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getOutgoingWalletInvoicesAsync"]="walletId= api-version= x-api-version: "
@@ -180,9 +185,6 @@ _()
     operation_parameters["getWalletExtendedOrdersAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletInvoicesAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletInvoicesCountAsync"]="walletId= api-version= x-api-version: "
-    operation_parameters["getWalletLocationAsync"]="walletId= locationId= api-version= x-api-version: "
-    operation_parameters["getWalletLocationsAsync"]="walletId= api-version= x-api-version: "
-    operation_parameters["getWalletLocationsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletOrdersAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletOrdersCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["getWalletPaymentsAsync"]="walletId= api-version= x-api-version: "
@@ -200,8 +202,8 @@ _()
     operation_parameters["getWalletWithdrawsCountAsync"]="walletId= api-version= x-api-version: "
     operation_parameters["patchWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
     operation_parameters["patchWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
+    operation_parameters["updateLocationForWalletAsync"]="walletId= locationId= api-version= x-api-version: "
     operation_parameters["updateWalletBankAccountAsync"]="walletId= bankAccountId= api-version= x-api-version: "
-    operation_parameters["updateWalletLocationAsync"]="walletId= locationId= api-version= x-api-version: "
     operation_parameters["updateWalletTokenAsync"]="walletId= tokenId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

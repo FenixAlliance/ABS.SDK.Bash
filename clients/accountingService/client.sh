@@ -124,12 +124,6 @@ operation_parameters_minimum_occurrences["updateAccountGroup:::accountGroupId"]=
 operation_parameters_minimum_occurrences["updateAccountGroup:::api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountGroup:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountGroup:::AccountGroupUpdateDto"]=0
-operation_parameters_minimum_occurrences["getCreditsSumAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getCreditsSumAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getCreditsSumAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getDebitsSumAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getDebitsSumAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getDebitsSumAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createAccountingPeriod:::tenantId"]=1
 operation_parameters_minimum_occurrences["createAccountingPeriod:::api-version"]=0
 operation_parameters_minimum_occurrences["createAccountingPeriod:::x-api-version"]=0
@@ -158,6 +152,18 @@ operation_parameters_minimum_occurrences["updateAccountingPeriod:::accountingPer
 operation_parameters_minimum_occurrences["updateAccountingPeriod:::api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountingPeriod:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountingPeriod:::AccountingPeriodUpdateDto"]=0
+operation_parameters_minimum_occurrences["getCreditsSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCreditsSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getCreditsSumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDebitsSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDebitsSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getDebitsSumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExpensesSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExpensesSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getExpensesSumAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getIncomesSumAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getIncomesSumAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getIncomesSumAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["aggregateAccountsBalanceAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["aggregateAccountsBalanceAsync:::currencyId"]=0
 operation_parameters_minimum_occurrences["aggregateAccountsBalanceAsync:::api-version"]=0
@@ -791,6 +797,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -955,6 +962,10 @@ operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::ident
 operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::api-version"]=0
 operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateFiscalIdentificationType:::FiscalIdentificationTypeUpdateDto"]=0
+operation_parameters_minimum_occurrences["closeFiscalPeriod:::tenantId"]=1
+operation_parameters_minimum_occurrences["closeFiscalPeriod:::fiscalPeriodId"]=1
+operation_parameters_minimum_occurrences["closeFiscalPeriod:::api-version"]=0
+operation_parameters_minimum_occurrences["closeFiscalPeriod:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createFiscalPeriod:::tenantId"]=1
 operation_parameters_minimum_occurrences["createFiscalPeriod:::api-version"]=0
 operation_parameters_minimum_occurrences["createFiscalPeriod:::x-api-version"]=0
@@ -980,6 +991,10 @@ operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::fiscalAuthorit
 operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::fiscalYearId"]=1
 operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getFiscalPeriodsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["openFiscalPeriod:::tenantId"]=1
+operation_parameters_minimum_occurrences["openFiscalPeriod:::fiscalPeriodId"]=1
+operation_parameters_minimum_occurrences["openFiscalPeriod:::api-version"]=0
+operation_parameters_minimum_occurrences["openFiscalPeriod:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::fiscalPeriodId"]=1
 operation_parameters_minimum_occurrences["patchFiscalPeriodAsync:::api-version"]=0
@@ -1169,12 +1184,6 @@ operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::r
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateInvoiceEnumerationRangeAsync:::InvoiceEnumerationRangeUpdateDto"]=0
-operation_parameters_minimum_occurrences["getExpensesSumAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getExpensesSumAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getExpensesSumAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["getIncomesSumAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getIncomesSumAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getIncomesSumAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createJournalTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createJournalTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createJournalTypeAsync:::x-api-version"]=0
@@ -1246,6 +1255,11 @@ operation_parameters_minimum_occurrences["getJournalEntriesCountAsync:::tenantId
 operation_parameters_minimum_occurrences["getJournalEntriesCountAsync:::journalId"]=1
 operation_parameters_minimum_occurrences["getJournalEntriesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJournalEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getJournalEntryDetailsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getJournalEntryDetailsAsync:::journalId"]=1
+operation_parameters_minimum_occurrences["getJournalEntryDetailsAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["getJournalEntryDetailsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getJournalEntryDetailsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getJournalsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getJournalsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getJournalsAsync:::x-api-version"]=0
@@ -1260,6 +1274,17 @@ operation_parameters_minimum_occurrences["patchJournalEntryAsync:::entryId"]=1
 operation_parameters_minimum_occurrences["patchJournalEntryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchJournalEntryAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchJournalEntryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["postJournalEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["postJournalEntryAsync:::journalId"]=1
+operation_parameters_minimum_occurrences["postJournalEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["postJournalEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["postJournalEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["reverseJournalEntryAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["reverseJournalEntryAsync:::journalId"]=1
+operation_parameters_minimum_occurrences["reverseJournalEntryAsync:::entryId"]=1
+operation_parameters_minimum_occurrences["reverseJournalEntryAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["reverseJournalEntryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["reverseJournalEntryAsync:::ReverseJournalEntryRequest"]=0
 operation_parameters_minimum_occurrences["updateJournalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateJournalAsync:::journalId"]=1
 operation_parameters_minimum_occurrences["updateJournalAsync:::api-version"]=0
@@ -1425,6 +1450,12 @@ operation_parameters_minimum_occurrences["patchReceiptAsync:::Operation"]=0
 operation_parameters_minimum_occurrences["updateReceiptAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateReceiptAsync:::receiptId"]=1
 operation_parameters_minimum_occurrences["updateReceiptAsync:::ReceiptUpdateDto"]=1
+operation_parameters_minimum_occurrences["getTrialBalanceAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTrialBalanceAsync:::fiscalPeriodId"]=1
+operation_parameters_minimum_occurrences["getTrialBalanceAsync:::financialBookId"]=0
+operation_parameters_minimum_occurrences["getTrialBalanceAsync:::currencyId"]=0
+operation_parameters_minimum_occurrences["getTrialBalanceAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getTrialBalanceAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createShareClass:::tenantId"]=1
 operation_parameters_minimum_occurrences["createShareClass:::api-version"]=0
 operation_parameters_minimum_occurrences["createShareClass:::x-api-version"]=0
@@ -1786,12 +1817,6 @@ operation_parameters_maximum_occurrences["updateAccountGroup:::accountGroupId"]=
 operation_parameters_maximum_occurrences["updateAccountGroup:::api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountGroup:::AccountGroupUpdateDto"]=0
-operation_parameters_maximum_occurrences["getCreditsSumAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getCreditsSumAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getCreditsSumAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getDebitsSumAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getDebitsSumAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getDebitsSumAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createAccountingPeriod:::tenantId"]=0
 operation_parameters_maximum_occurrences["createAccountingPeriod:::api-version"]=0
 operation_parameters_maximum_occurrences["createAccountingPeriod:::x-api-version"]=0
@@ -1820,6 +1845,18 @@ operation_parameters_maximum_occurrences["updateAccountingPeriod:::accountingPer
 operation_parameters_maximum_occurrences["updateAccountingPeriod:::api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountingPeriod:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountingPeriod:::AccountingPeriodUpdateDto"]=0
+operation_parameters_maximum_occurrences["getCreditsSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCreditsSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getCreditsSumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDebitsSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDebitsSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getDebitsSumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExpensesSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExpensesSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getExpensesSumAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getIncomesSumAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getIncomesSumAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getIncomesSumAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["aggregateAccountsBalanceAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["aggregateAccountsBalanceAsync:::currencyId"]=0
 operation_parameters_maximum_occurrences["aggregateAccountsBalanceAsync:::api-version"]=0
@@ -2453,6 +2490,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -2617,6 +2655,10 @@ operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::ident
 operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::api-version"]=0
 operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateFiscalIdentificationType:::FiscalIdentificationTypeUpdateDto"]=0
+operation_parameters_maximum_occurrences["closeFiscalPeriod:::tenantId"]=0
+operation_parameters_maximum_occurrences["closeFiscalPeriod:::fiscalPeriodId"]=0
+operation_parameters_maximum_occurrences["closeFiscalPeriod:::api-version"]=0
+operation_parameters_maximum_occurrences["closeFiscalPeriod:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createFiscalPeriod:::tenantId"]=0
 operation_parameters_maximum_occurrences["createFiscalPeriod:::api-version"]=0
 operation_parameters_maximum_occurrences["createFiscalPeriod:::x-api-version"]=0
@@ -2642,6 +2684,10 @@ operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::fiscalAuthorit
 operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::fiscalYearId"]=0
 operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getFiscalPeriodsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["openFiscalPeriod:::tenantId"]=0
+operation_parameters_maximum_occurrences["openFiscalPeriod:::fiscalPeriodId"]=0
+operation_parameters_maximum_occurrences["openFiscalPeriod:::api-version"]=0
+operation_parameters_maximum_occurrences["openFiscalPeriod:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::fiscalPeriodId"]=0
 operation_parameters_maximum_occurrences["patchFiscalPeriodAsync:::api-version"]=0
@@ -2831,12 +2877,6 @@ operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::r
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateInvoiceEnumerationRangeAsync:::InvoiceEnumerationRangeUpdateDto"]=0
-operation_parameters_maximum_occurrences["getExpensesSumAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getExpensesSumAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getExpensesSumAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["getIncomesSumAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getIncomesSumAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getIncomesSumAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createJournalTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createJournalTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createJournalTypeAsync:::x-api-version"]=0
@@ -2908,6 +2948,11 @@ operation_parameters_maximum_occurrences["getJournalEntriesCountAsync:::tenantId
 operation_parameters_maximum_occurrences["getJournalEntriesCountAsync:::journalId"]=0
 operation_parameters_maximum_occurrences["getJournalEntriesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJournalEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getJournalEntryDetailsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getJournalEntryDetailsAsync:::journalId"]=0
+operation_parameters_maximum_occurrences["getJournalEntryDetailsAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["getJournalEntryDetailsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getJournalEntryDetailsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getJournalsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getJournalsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getJournalsAsync:::x-api-version"]=0
@@ -2922,6 +2967,17 @@ operation_parameters_maximum_occurrences["patchJournalEntryAsync:::entryId"]=0
 operation_parameters_maximum_occurrences["patchJournalEntryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchJournalEntryAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchJournalEntryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["postJournalEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["postJournalEntryAsync:::journalId"]=0
+operation_parameters_maximum_occurrences["postJournalEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["postJournalEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["postJournalEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["reverseJournalEntryAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["reverseJournalEntryAsync:::journalId"]=0
+operation_parameters_maximum_occurrences["reverseJournalEntryAsync:::entryId"]=0
+operation_parameters_maximum_occurrences["reverseJournalEntryAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["reverseJournalEntryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["reverseJournalEntryAsync:::ReverseJournalEntryRequest"]=0
 operation_parameters_maximum_occurrences["updateJournalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateJournalAsync:::journalId"]=0
 operation_parameters_maximum_occurrences["updateJournalAsync:::api-version"]=0
@@ -3087,6 +3143,12 @@ operation_parameters_maximum_occurrences["patchReceiptAsync:::Operation"]=0
 operation_parameters_maximum_occurrences["updateReceiptAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateReceiptAsync:::receiptId"]=0
 operation_parameters_maximum_occurrences["updateReceiptAsync:::ReceiptUpdateDto"]=0
+operation_parameters_maximum_occurrences["getTrialBalanceAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTrialBalanceAsync:::fiscalPeriodId"]=0
+operation_parameters_maximum_occurrences["getTrialBalanceAsync:::financialBookId"]=0
+operation_parameters_maximum_occurrences["getTrialBalanceAsync:::currencyId"]=0
+operation_parameters_maximum_occurrences["getTrialBalanceAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getTrialBalanceAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createShareClass:::tenantId"]=0
 operation_parameters_maximum_occurrences["createShareClass:::api-version"]=0
 operation_parameters_maximum_occurrences["createShareClass:::x-api-version"]=0
@@ -3445,12 +3507,6 @@ operation_parameters_collection_type["updateAccountGroup:::accountGroupId"]=""
 operation_parameters_collection_type["updateAccountGroup:::api-version"]=""
 operation_parameters_collection_type["updateAccountGroup:::x-api-version"]=""
 operation_parameters_collection_type["updateAccountGroup:::AccountGroupUpdateDto"]=""
-operation_parameters_collection_type["getCreditsSumAsync:::tenantId"]=""
-operation_parameters_collection_type["getCreditsSumAsync:::api-version"]=""
-operation_parameters_collection_type["getCreditsSumAsync:::x-api-version"]=""
-operation_parameters_collection_type["getDebitsSumAsync:::tenantId"]=""
-operation_parameters_collection_type["getDebitsSumAsync:::api-version"]=""
-operation_parameters_collection_type["getDebitsSumAsync:::x-api-version"]=""
 operation_parameters_collection_type["createAccountingPeriod:::tenantId"]=""
 operation_parameters_collection_type["createAccountingPeriod:::api-version"]=""
 operation_parameters_collection_type["createAccountingPeriod:::x-api-version"]=""
@@ -3479,6 +3535,18 @@ operation_parameters_collection_type["updateAccountingPeriod:::accountingPeriodI
 operation_parameters_collection_type["updateAccountingPeriod:::api-version"]=""
 operation_parameters_collection_type["updateAccountingPeriod:::x-api-version"]=""
 operation_parameters_collection_type["updateAccountingPeriod:::AccountingPeriodUpdateDto"]=""
+operation_parameters_collection_type["getCreditsSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getCreditsSumAsync:::api-version"]=""
+operation_parameters_collection_type["getCreditsSumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDebitsSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getDebitsSumAsync:::api-version"]=""
+operation_parameters_collection_type["getDebitsSumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getExpensesSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getExpensesSumAsync:::api-version"]=""
+operation_parameters_collection_type["getExpensesSumAsync:::x-api-version"]=""
+operation_parameters_collection_type["getIncomesSumAsync:::tenantId"]=""
+operation_parameters_collection_type["getIncomesSumAsync:::api-version"]=""
+operation_parameters_collection_type["getIncomesSumAsync:::x-api-version"]=""
 operation_parameters_collection_type["aggregateAccountsBalanceAsync:::tenantId"]=""
 operation_parameters_collection_type["aggregateAccountsBalanceAsync:::currencyId"]=""
 operation_parameters_collection_type["aggregateAccountsBalanceAsync:::api-version"]=""
@@ -4112,6 +4180,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -4276,6 +4345,10 @@ operation_parameters_collection_type["updateFiscalIdentificationType:::identific
 operation_parameters_collection_type["updateFiscalIdentificationType:::api-version"]=""
 operation_parameters_collection_type["updateFiscalIdentificationType:::x-api-version"]=""
 operation_parameters_collection_type["updateFiscalIdentificationType:::FiscalIdentificationTypeUpdateDto"]=""
+operation_parameters_collection_type["closeFiscalPeriod:::tenantId"]=""
+operation_parameters_collection_type["closeFiscalPeriod:::fiscalPeriodId"]=""
+operation_parameters_collection_type["closeFiscalPeriod:::api-version"]=""
+operation_parameters_collection_type["closeFiscalPeriod:::x-api-version"]=""
 operation_parameters_collection_type["createFiscalPeriod:::tenantId"]=""
 operation_parameters_collection_type["createFiscalPeriod:::api-version"]=""
 operation_parameters_collection_type["createFiscalPeriod:::x-api-version"]=""
@@ -4301,6 +4374,10 @@ operation_parameters_collection_type["getFiscalPeriodsCount:::fiscalAuthorityId"
 operation_parameters_collection_type["getFiscalPeriodsCount:::fiscalYearId"]=""
 operation_parameters_collection_type["getFiscalPeriodsCount:::api-version"]=""
 operation_parameters_collection_type["getFiscalPeriodsCount:::x-api-version"]=""
+operation_parameters_collection_type["openFiscalPeriod:::tenantId"]=""
+operation_parameters_collection_type["openFiscalPeriod:::fiscalPeriodId"]=""
+operation_parameters_collection_type["openFiscalPeriod:::api-version"]=""
+operation_parameters_collection_type["openFiscalPeriod:::x-api-version"]=""
 operation_parameters_collection_type["patchFiscalPeriodAsync:::tenantId"]=""
 operation_parameters_collection_type["patchFiscalPeriodAsync:::fiscalPeriodId"]=""
 operation_parameters_collection_type["patchFiscalPeriodAsync:::api-version"]=""
@@ -4490,12 +4567,6 @@ operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::range
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::api-version"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateInvoiceEnumerationRangeAsync:::InvoiceEnumerationRangeUpdateDto"]=""
-operation_parameters_collection_type["getExpensesSumAsync:::tenantId"]=""
-operation_parameters_collection_type["getExpensesSumAsync:::api-version"]=""
-operation_parameters_collection_type["getExpensesSumAsync:::x-api-version"]=""
-operation_parameters_collection_type["getIncomesSumAsync:::tenantId"]=""
-operation_parameters_collection_type["getIncomesSumAsync:::api-version"]=""
-operation_parameters_collection_type["getIncomesSumAsync:::x-api-version"]=""
 operation_parameters_collection_type["createJournalTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["createJournalTypeAsync:::api-version"]=""
 operation_parameters_collection_type["createJournalTypeAsync:::x-api-version"]=""
@@ -4567,6 +4638,11 @@ operation_parameters_collection_type["getJournalEntriesCountAsync:::tenantId"]="
 operation_parameters_collection_type["getJournalEntriesCountAsync:::journalId"]=""
 operation_parameters_collection_type["getJournalEntriesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getJournalEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getJournalEntryDetailsAsync:::tenantId"]=""
+operation_parameters_collection_type["getJournalEntryDetailsAsync:::journalId"]=""
+operation_parameters_collection_type["getJournalEntryDetailsAsync:::entryId"]=""
+operation_parameters_collection_type["getJournalEntryDetailsAsync:::api-version"]=""
+operation_parameters_collection_type["getJournalEntryDetailsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getJournalsAsync:::tenantId"]=""
 operation_parameters_collection_type["getJournalsAsync:::api-version"]=""
 operation_parameters_collection_type["getJournalsAsync:::x-api-version"]=""
@@ -4581,6 +4657,17 @@ operation_parameters_collection_type["patchJournalEntryAsync:::entryId"]=""
 operation_parameters_collection_type["patchJournalEntryAsync:::api-version"]=""
 operation_parameters_collection_type["patchJournalEntryAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchJournalEntryAsync:::Operation"]=
+operation_parameters_collection_type["postJournalEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["postJournalEntryAsync:::journalId"]=""
+operation_parameters_collection_type["postJournalEntryAsync:::entryId"]=""
+operation_parameters_collection_type["postJournalEntryAsync:::api-version"]=""
+operation_parameters_collection_type["postJournalEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["reverseJournalEntryAsync:::tenantId"]=""
+operation_parameters_collection_type["reverseJournalEntryAsync:::journalId"]=""
+operation_parameters_collection_type["reverseJournalEntryAsync:::entryId"]=""
+operation_parameters_collection_type["reverseJournalEntryAsync:::api-version"]=""
+operation_parameters_collection_type["reverseJournalEntryAsync:::x-api-version"]=""
+operation_parameters_collection_type["reverseJournalEntryAsync:::ReverseJournalEntryRequest"]=""
 operation_parameters_collection_type["updateJournalAsync:::tenantId"]=""
 operation_parameters_collection_type["updateJournalAsync:::journalId"]=""
 operation_parameters_collection_type["updateJournalAsync:::api-version"]=""
@@ -4746,6 +4833,12 @@ operation_parameters_collection_type["patchReceiptAsync:::Operation"]=
 operation_parameters_collection_type["updateReceiptAsync:::tenantId"]=""
 operation_parameters_collection_type["updateReceiptAsync:::receiptId"]=""
 operation_parameters_collection_type["updateReceiptAsync:::ReceiptUpdateDto"]=""
+operation_parameters_collection_type["getTrialBalanceAsync:::tenantId"]=""
+operation_parameters_collection_type["getTrialBalanceAsync:::fiscalPeriodId"]=""
+operation_parameters_collection_type["getTrialBalanceAsync:::financialBookId"]=""
+operation_parameters_collection_type["getTrialBalanceAsync:::currencyId"]=""
+operation_parameters_collection_type["getTrialBalanceAsync:::api-version"]=""
+operation_parameters_collection_type["getTrialBalanceAsync:::x-api-version"]=""
 operation_parameters_collection_type["createShareClass:::tenantId"]=""
 operation_parameters_collection_type["createShareClass:::api-version"]=""
 operation_parameters_collection_type["createShareClass:::x-api-version"]=""
@@ -5469,13 +5562,6 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[accountingEntries]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}getCreditsSumAsync${OFF};Sum tenant accounting-entry credits
-  ${CYAN}getDebitsSumAsync${OFF};Sum tenant accounting-entry debits
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}[accountingPeriods]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createAccountingPeriod${OFF};Creates a new accounting period
@@ -5485,6 +5571,15 @@ read -r -d '' ops <<EOF
   ${CYAN}getAccountingPeriodsCountAsync${OFF};Gets the current tenant accounting periods count
   ${CYAN}patchAccountingPeriodAsync${OFF};Patch an accounting period
   ${CYAN}updateAccountingPeriod${OFF};Updates an existing accounting period
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[accountingSummary]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getCreditsSumAsync${OFF};Sum tenant accounting-entry credits
+  ${CYAN}getDebitsSumAsync${OFF};Sum tenant accounting-entry debits
+  ${CYAN}getExpensesSumAsync${OFF};Sum tenant expenses
+  ${CYAN}getIncomesSumAsync${OFF};Sum tenant incomes
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5690,6 +5785,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -5768,11 +5864,13 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[fiscalPeriods]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}closeFiscalPeriod${OFF};Close a fiscal period
   ${CYAN}createFiscalPeriod${OFF};Create a fiscal period
   ${CYAN}deleteFiscalPeriod${OFF};Delete a fiscal period
   ${CYAN}getFiscalPeriod${OFF};Get fiscal period by ID
   ${CYAN}getFiscalPeriods${OFF};Get fiscal periods for a fiscal year
   ${CYAN}getFiscalPeriodsCount${OFF};Get fiscal periods count
+  ${CYAN}openFiscalPeriod${OFF};Open a fiscal period
   ${CYAN}patchFiscalPeriodAsync${OFF};Patch a fiscal period
   ${CYAN}updateFiscalPeriod${OFF};Update a fiscal period
 EOF
@@ -5849,13 +5947,6 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[journalEntries]${OFF}"
-read -r -d '' ops <<EOF
-  ${CYAN}getExpensesSumAsync${OFF};Sum tenant expenses
-  ${CYAN}getIncomesSumAsync${OFF};Sum tenant incomes
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
     echo -e "${BOLD}${WHITE}[journalTypes]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createJournalTypeAsync${OFF};Creates a new journal type
@@ -5880,9 +5971,12 @@ read -r -d '' ops <<EOF
   ${CYAN}getJournalDetailsAsync${OFF};Get journal by ID
   ${CYAN}getJournalEntriesAsync${OFF};Get journal entries
   ${CYAN}getJournalEntriesCountAsync${OFF};Count journal entries
+  ${CYAN}getJournalEntryDetailsAsync${OFF};Get journal entry by ID
   ${CYAN}getJournalsAsync${OFF};Get all journals
   ${CYAN}patchJournalAsync${OFF};Patch a journal
   ${CYAN}patchJournalEntryAsync${OFF};Patch a journal entry
+  ${CYAN}postJournalEntryAsync${OFF};Post a draft journal entry
+  ${CYAN}reverseJournalEntryAsync${OFF};Reverse a posted journal entry
   ${CYAN}updateJournalAsync${OFF};Update journal
   ${CYAN}updateJournalEntryAsync${OFF};Update journal entry
 EOF
@@ -5947,6 +6041,12 @@ read -r -d '' ops <<EOF
   ${CYAN}getReceiptsCountAsync${OFF};Gets count of tenant receipts
   ${CYAN}patchReceiptAsync${OFF};Patches a receipt
   ${CYAN}updateReceiptAsync${OFF};Updates a receipt
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[reports]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}getTrialBalanceAsync${OFF};Trial balance for a fiscal period
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -6305,58 +6405,6 @@ print_updateAccountGroup_help() {
 }
 ##############################################################################
 #
-# Print help for getCreditsSumAsync operation
-#
-##############################################################################
-print_getCreditsSumAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getCreditsSumAsync - Sum tenant accounting-entry credits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getDebitsSumAsync operation
-#
-##############################################################################
-print_getDebitsSumAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getDebitsSumAsync - Sum tenant accounting-entry debits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for createAccountingPeriod operation
 #
 ##############################################################################
@@ -6555,6 +6603,110 @@ print_updateAccountingPeriod_help() {
 }
 ##############################################################################
 #
+# Print help for getCreditsSumAsync operation
+#
+##############################################################################
+print_getCreditsSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCreditsSumAsync - Sum tenant accounting-entry credits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(AccountingEntry.Credit) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDebitsSumAsync operation
+#
+##############################################################################
+print_getDebitsSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDebitsSumAsync - Sum tenant accounting-entry debits${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(AccountingEntry.Debit) for the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getExpensesSumAsync operation
+#
+##############################################################################
+print_getExpensesSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExpensesSumAsync - Sum tenant expenses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getIncomesSumAsync operation
+#
+##############################################################################
+print_getIncomesSumAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getIncomesSumAsync - Sum tenant incomes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for aggregateAccountsBalanceAsync operation
 #
 ##############################################################################
@@ -6567,7 +6719,7 @@ print_aggregateAccountsBalanceAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
+    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: USD.USA)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6936,7 +7088,7 @@ print_getAccountAggregateAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
+    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: USD.USA)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10677,6 +10829,22 @@ print_accountPerformExternalLoginPost_help() {
 }
 ##############################################################################
 #
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for forgotPasswordPost operation
 #
 ##############################################################################
@@ -11897,6 +12065,35 @@ print_updateFiscalIdentificationType_help() {
 }
 ##############################################################################
 #
+# Print help for closeFiscalPeriod operation
+#
+##############################################################################
+print_closeFiscalPeriod_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}closeFiscalPeriod - Close a fiscal period${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Closes a fiscal period so no further journal entries can post into it. Rejects closing a locked (hard-sealed) period." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalPeriodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createFiscalPeriod operation
 #
 ##############################################################################
@@ -12034,6 +12231,35 @@ print_getFiscalPeriodsCount_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for openFiscalPeriod operation
+#
+##############################################################################
+print_openFiscalPeriod_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}openFiscalPeriod - Open a fiscal period${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Opens a closed fiscal period so journal entries can post into it. Rejects reopening a locked or an already-open period." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: fiscalPeriodId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
@@ -13201,58 +13427,6 @@ print_updateInvoiceEnumerationRangeAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getExpensesSumAsync operation
-#
-##############################################################################
-print_getExpensesSumAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getExpensesSumAsync - Sum tenant expenses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Returns SUM(JournalEntry.Debit) for Debit-direction journal entries in the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getIncomesSumAsync operation
-#
-##############################################################################
-print_getIncomesSumAsync_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getIncomesSumAsync - Sum tenant incomes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Returns SUM(JournalEntry.Credit) for Credit-direction journal entries in the tenant, filtered by the supplied OData date range." | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for createJournalTypeAsync operation
 #
 ##############################################################################
@@ -13434,7 +13608,7 @@ print_aggregateJournalEntryCreditsAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
+    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: USD.USA)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13463,7 +13637,7 @@ print_aggregateJournalEntryDebitsAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
+    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: USD.USA)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13698,6 +13872,34 @@ print_getJournalEntriesCountAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getJournalEntryDetailsAsync operation
+#
+##############################################################################
+print_getJournalEntryDetailsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getJournalEntryDetailsAsync - Get journal entry by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a single journal entry WITH its hydrated posting lines — each line's account, direction, description and currency facets (transaction / functional / account / USD)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getJournalsAsync operation
 #
 ##############################################################################
@@ -13780,6 +13982,70 @@ print_patchJournalEntryAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for postJournalEntryAsync operation
+#
+##############################################################################
+print_postJournalEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}postJournalEntryAsync - Post a draft journal entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Posts a DRAFT journal entry into its own open fiscal period. Enforces the balanced-entry invariant and the open-period gate, then seals the entry (immutable — correct via reversal, never edit/delete). An unbalanced draft or a closed period is rejected. Requires the journals_post permission." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for reverseJournalEntryAsync operation
+#
+##############################################################################
+print_reverseJournalEntryAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}reverseJournalEntryAsync - Reverse a posted journal entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Reverses a POSTED journal entry by writing a balanced compensating counter-entry into the supplied open fiscal period and marking the original Reversed — one atomic operation (append-only audit trail). Requires the journals_reverse permission." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}journalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: journalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}entryId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: entryId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -14946,6 +15212,38 @@ print_updateReceiptAsync_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTrialBalanceAsync operation
+#
+##############################################################################
+print_getTrialBalanceAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTrialBalanceAsync - Trial balance for a fiscal period${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the per-account posted debit/credit totals for the given fiscal period (optionally scoped to a single financial book), plus grand totals and the Σdebits == Σcredits balanced flag. Amounts are normalized to the target currency (default USD) from the stored USD reporting amounts." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}fiscalPeriodId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: fiscalPeriodId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}financialBookId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: financialBookId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}currencyId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: USD.USA)${OFF} - ${YELLOW} Specify as: currencyId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -17523,78 +17821,6 @@ call_updateAccountGroup() {
 
 ##############################################################################
 #
-# Call getCreditsSumAsync operation
-#
-##############################################################################
-call_getCreditsSumAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AccountingService/AccountingEntries/Credits/Sum" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getDebitsSumAsync operation
-#
-##############################################################################
-call_getDebitsSumAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AccountingService/AccountingEntries/Debits/Sum" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call createAccountingPeriod operation
 #
 ##############################################################################
@@ -17962,6 +18188,150 @@ call_updateAccountingPeriod() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call getCreditsSumAsync operation
+#
+##############################################################################
+call_getCreditsSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Summary/Credits/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDebitsSumAsync operation
+#
+##############################################################################
+call_getDebitsSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Summary/Debits/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getExpensesSumAsync operation
+#
+##############################################################################
+call_getExpensesSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Summary/Expenses/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getIncomesSumAsync operation
+#
+##############################################################################
+call_getIncomesSumAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Summary/Incomes/Sum" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -25810,6 +26180,42 @@ call_accountPerformExternalLoginPost() {
 
 ##############################################################################
 #
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call forgotPasswordPost operation
 #
 ##############################################################################
@@ -28474,6 +28880,42 @@ call_updateFiscalIdentificationType() {
 
 ##############################################################################
 #
+# Call closeFiscalPeriod operation
+#
+##############################################################################
+call_closeFiscalPeriod() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalPeriodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/{fiscalPeriodId}/Close" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call createFiscalPeriod operation
 #
 ##############################################################################
@@ -28675,6 +29117,42 @@ call_getFiscalPeriodsCount() {
         exit 1
     fi
     local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call openFiscalPeriod operation
+#
+##############################################################################
+call_openFiscalPeriod() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(fiscalPeriodId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Fiscals/Authorities/FiscalPeriods/{fiscalPeriodId}/Open" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -31042,78 +31520,6 @@ call_updateInvoiceEnumerationRangeAsync() {
 
 ##############################################################################
 #
-# Call getExpensesSumAsync operation
-#
-##############################################################################
-call_getExpensesSumAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AccountingService/JournalEntries/Expenses/Sum" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getIncomesSumAsync operation
-#
-##############################################################################
-call_getIncomesSumAsync() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=()
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId api-version)
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AccountingService/JournalEntries/Incomes/Sum" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call createJournalTypeAsync operation
 #
 ##############################################################################
@@ -31926,6 +32332,42 @@ call_getJournalEntriesCountAsync() {
 
 ##############################################################################
 #
+# Call getJournalEntryDetailsAsync operation
+#
+##############################################################################
+call_getJournalEntryDetailsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(journalId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Journals/{journalId}/Entries/{entryId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getJournalsAsync operation
 #
 ##############################################################################
@@ -32055,6 +32497,118 @@ call_patchJournalEntryAsync() {
         exit 1
     fi
     local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call postJournalEntryAsync operation
+#
+##############################################################################
+call_postJournalEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(journalId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Journals/{journalId}/Entries/{entryId}/Post" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call reverseJournalEntryAsync operation
+#
+##############################################################################
+call_reverseJournalEntryAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(journalId entryId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Journals/{journalId}/Entries/{entryId}/Reverse" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -34493,6 +35047,42 @@ call_updateReceiptAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call getTrialBalanceAsync operation
+#
+##############################################################################
+call_getTrialBalanceAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId fiscalPeriodId financialBookId currencyId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AccountingService/Reports/TrialBalance" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -38742,12 +39332,6 @@ case $key in
     updateAccountGroup)
     operation="updateAccountGroup"
     ;;
-    getCreditsSumAsync)
-    operation="getCreditsSumAsync"
-    ;;
-    getDebitsSumAsync)
-    operation="getDebitsSumAsync"
-    ;;
     createAccountingPeriod)
     operation="createAccountingPeriod"
     ;;
@@ -38768,6 +39352,18 @@ case $key in
     ;;
     updateAccountingPeriod)
     operation="updateAccountingPeriod"
+    ;;
+    getCreditsSumAsync)
+    operation="getCreditsSumAsync"
+    ;;
+    getDebitsSumAsync)
+    operation="getDebitsSumAsync"
+    ;;
+    getExpensesSumAsync)
+    operation="getExpensesSumAsync"
+    ;;
+    getIncomesSumAsync)
+    operation="getIncomesSumAsync"
     ;;
     aggregateAccountsBalanceAsync)
     operation="aggregateAccountsBalanceAsync"
@@ -39219,6 +39815,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -39363,6 +39962,9 @@ case $key in
     updateFiscalIdentificationType)
     operation="updateFiscalIdentificationType"
     ;;
+    closeFiscalPeriod)
+    operation="closeFiscalPeriod"
+    ;;
     createFiscalPeriod)
     operation="createFiscalPeriod"
     ;;
@@ -39377,6 +39979,9 @@ case $key in
     ;;
     getFiscalPeriodsCount)
     operation="getFiscalPeriodsCount"
+    ;;
+    openFiscalPeriod)
+    operation="openFiscalPeriod"
     ;;
     patchFiscalPeriodAsync)
     operation="patchFiscalPeriodAsync"
@@ -39507,12 +40112,6 @@ case $key in
     updateInvoiceEnumerationRangeAsync)
     operation="updateInvoiceEnumerationRangeAsync"
     ;;
-    getExpensesSumAsync)
-    operation="getExpensesSumAsync"
-    ;;
-    getIncomesSumAsync)
-    operation="getIncomesSumAsync"
-    ;;
     createJournalTypeAsync)
     operation="createJournalTypeAsync"
     ;;
@@ -39564,6 +40163,9 @@ case $key in
     getJournalEntriesCountAsync)
     operation="getJournalEntriesCountAsync"
     ;;
+    getJournalEntryDetailsAsync)
+    operation="getJournalEntryDetailsAsync"
+    ;;
     getJournalsAsync)
     operation="getJournalsAsync"
     ;;
@@ -39572,6 +40174,12 @@ case $key in
     ;;
     patchJournalEntryAsync)
     operation="patchJournalEntryAsync"
+    ;;
+    postJournalEntryAsync)
+    operation="postJournalEntryAsync"
+    ;;
+    reverseJournalEntryAsync)
+    operation="reverseJournalEntryAsync"
     ;;
     updateJournalAsync)
     operation="updateJournalAsync"
@@ -39704,6 +40312,9 @@ case $key in
     ;;
     updateReceiptAsync)
     operation="updateReceiptAsync"
+    ;;
+    getTrialBalanceAsync)
+    operation="getTrialBalanceAsync"
     ;;
     createShareClass)
     operation="createShareClass"
@@ -40047,12 +40658,6 @@ case $operation in
     updateAccountGroup)
     call_updateAccountGroup
     ;;
-    getCreditsSumAsync)
-    call_getCreditsSumAsync
-    ;;
-    getDebitsSumAsync)
-    call_getDebitsSumAsync
-    ;;
     createAccountingPeriod)
     call_createAccountingPeriod
     ;;
@@ -40073,6 +40678,18 @@ case $operation in
     ;;
     updateAccountingPeriod)
     call_updateAccountingPeriod
+    ;;
+    getCreditsSumAsync)
+    call_getCreditsSumAsync
+    ;;
+    getDebitsSumAsync)
+    call_getDebitsSumAsync
+    ;;
+    getExpensesSumAsync)
+    call_getExpensesSumAsync
+    ;;
+    getIncomesSumAsync)
+    call_getIncomesSumAsync
     ;;
     aggregateAccountsBalanceAsync)
     call_aggregateAccountsBalanceAsync
@@ -40524,6 +41141,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -40668,6 +41288,9 @@ case $operation in
     updateFiscalIdentificationType)
     call_updateFiscalIdentificationType
     ;;
+    closeFiscalPeriod)
+    call_closeFiscalPeriod
+    ;;
     createFiscalPeriod)
     call_createFiscalPeriod
     ;;
@@ -40682,6 +41305,9 @@ case $operation in
     ;;
     getFiscalPeriodsCount)
     call_getFiscalPeriodsCount
+    ;;
+    openFiscalPeriod)
+    call_openFiscalPeriod
     ;;
     patchFiscalPeriodAsync)
     call_patchFiscalPeriodAsync
@@ -40812,12 +41438,6 @@ case $operation in
     updateInvoiceEnumerationRangeAsync)
     call_updateInvoiceEnumerationRangeAsync
     ;;
-    getExpensesSumAsync)
-    call_getExpensesSumAsync
-    ;;
-    getIncomesSumAsync)
-    call_getIncomesSumAsync
-    ;;
     createJournalTypeAsync)
     call_createJournalTypeAsync
     ;;
@@ -40869,6 +41489,9 @@ case $operation in
     getJournalEntriesCountAsync)
     call_getJournalEntriesCountAsync
     ;;
+    getJournalEntryDetailsAsync)
+    call_getJournalEntryDetailsAsync
+    ;;
     getJournalsAsync)
     call_getJournalsAsync
     ;;
@@ -40877,6 +41500,12 @@ case $operation in
     ;;
     patchJournalEntryAsync)
     call_patchJournalEntryAsync
+    ;;
+    postJournalEntryAsync)
+    call_postJournalEntryAsync
+    ;;
+    reverseJournalEntryAsync)
+    call_reverseJournalEntryAsync
     ;;
     updateJournalAsync)
     call_updateJournalAsync
@@ -41009,6 +41638,9 @@ case $operation in
     ;;
     updateReceiptAsync)
     call_updateReceiptAsync
+    ;;
+    getTrialBalanceAsync)
+    call_getTrialBalanceAsync
     ;;
     createShareClass)
     call_createShareClass

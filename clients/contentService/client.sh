@@ -241,6 +241,7 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -363,8 +364,8 @@ operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::portalI
 operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateWebPortalSettingsAsync:::PortalSettings"]=0
-operation_parameters_minimum_occurrences["getLatestCurrencyRatesModelAsync:::api-version"]=0
-operation_parameters_minimum_occurrences["getLatestCurrencyRatesModelAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateThemesAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateThemesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countWebComponentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebComponentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebComponentsAsync:::x-api-version"]=0
@@ -577,11 +578,9 @@ operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::id"]=1
 operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::tenantId"]=1
-operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::oDataQueryOptions"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::tenantId"]=1
@@ -747,6 +746,7 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
+operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -869,8 +869,8 @@ operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::portalI
 operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateWebPortalSettingsAsync:::PortalSettings"]=0
-operation_parameters_maximum_occurrences["getLatestCurrencyRatesModelAsync:::api-version"]=0
-operation_parameters_maximum_occurrences["getLatestCurrencyRatesModelAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateThemesAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateThemesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countWebComponentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebComponentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebComponentsAsync:::x-api-version"]=0
@@ -1083,11 +1083,9 @@ operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::id"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::tenantId"]=0
-operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::oDataQueryOptions"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::tenantId"]=0
@@ -1250,6 +1248,7 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
+operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -1372,8 +1371,8 @@ operation_parameters_collection_type["updateWebPortalSettingsAsync:::portalId"]=
 operation_parameters_collection_type["updateWebPortalSettingsAsync:::api-version"]=""
 operation_parameters_collection_type["updateWebPortalSettingsAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateWebPortalSettingsAsync:::PortalSettings"]=""
-operation_parameters_collection_type["getLatestCurrencyRatesModelAsync:::api-version"]=""
-operation_parameters_collection_type["getLatestCurrencyRatesModelAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateThemesAsync:::api-version"]=""
+operation_parameters_collection_type["updateThemesAsync:::x-api-version"]=""
 operation_parameters_collection_type["countWebComponentsAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebComponentsAsync:::api-version"]=""
 operation_parameters_collection_type["countWebComponentsAsync:::x-api-version"]=""
@@ -1586,11 +1585,9 @@ operation_parameters_collection_type["getWebsiteThemeByIdAsync:::id"]=""
 operation_parameters_collection_type["getWebsiteThemeByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getWebsiteThemeByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesAsync:::tenantId"]=""
-operation_parameters_collection_type["getWebsiteThemesAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getWebsiteThemesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::tenantId"]=""
-operation_parameters_collection_type["getWebsiteThemesCountAsync:::oDataQueryOptions"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchWebsiteThemeAsync:::tenantId"]=""
@@ -2065,6 +2062,7 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
+  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -2128,7 +2126,7 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[themes]${OFF}"
 read -r -d '' ops <<EOF
-  ${CYAN}getLatestCurrencyRatesModelAsync${OFF};Update base web content themes
+  ${CYAN}updateThemesAsync${OFF};Update base web content themes
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -3493,6 +3491,22 @@ print_accountPerformExternalLoginPost_help() {
 }
 ##############################################################################
 #
+# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for forgotPasswordPost operation
 #
 ##############################################################################
@@ -4528,12 +4542,12 @@ print_updateWebPortalSettingsAsync_help() {
 }
 ##############################################################################
 #
-# Print help for getLatestCurrencyRatesModelAsync operation
+# Print help for updateThemesAsync operation
 #
 ##############################################################################
-print_getLatestCurrencyRatesModelAsync_help() {
+print_updateThemesAsync_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getLatestCurrencyRatesModelAsync - Update base web content themes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateThemesAsync - Update base web content themes${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Triggers an update of the base web content themes." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5957,8 +5971,6 @@ print_getWebsiteThemesAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[WebsiteThemeDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5982,8 +5994,6 @@ print_getWebsiteThemesCountAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}oDataQueryOptions${OFF} ${BLUE}[WebsiteThemeDtoODataQueryOptions]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: oDataQueryOptions=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8424,6 +8434,42 @@ call_accountPerformExternalLoginPost() {
 
 ##############################################################################
 #
+# Call apiV2AIServiceAgentsAgentIdAguiPost operation
+#
+##############################################################################
+call_apiV2AIServiceAgentsAgentIdAguiPost() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(agentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=()
+    local path
+
+    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call forgotPasswordPost operation
 #
 ##############################################################################
@@ -10628,10 +10674,10 @@ call_updateWebPortalSettingsAsync() {
 
 ##############################################################################
 #
-# Call getLatestCurrencyRatesModelAsync operation
+# Call updateThemesAsync operation
 #
 ##############################################################################
-call_getLatestCurrencyRatesModelAsync() {
+call_updateThemesAsync() {
     # ignore error about 'path_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
     local path_parameter_names=()
@@ -13345,7 +13391,7 @@ call_getWebsiteThemesAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes" path_parameter_names query_parameter_names); then
@@ -13381,7 +13427,7 @@ call_getWebsiteThemesCountAsync() {
     local path_parameter_names=()
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(tenantId oDataQueryOptions api-version)
+    local query_parameter_names=(tenantId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/ContentService/WebsiteThemes/Count" path_parameter_names query_parameter_names); then
@@ -13802,6 +13848,9 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    operation="apiV2AIServiceAgentsAgentIdAguiPost"
+    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -13931,8 +13980,8 @@ case $key in
     updateWebPortalSettingsAsync)
     operation="updateWebPortalSettingsAsync"
     ;;
-    getLatestCurrencyRatesModelAsync)
-    operation="getLatestCurrencyRatesModelAsync"
+    updateThemesAsync)
+    operation="updateThemesAsync"
     ;;
     countWebComponentsAsync)
     operation="countWebComponentsAsync"
@@ -14336,6 +14385,9 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
+    apiV2AIServiceAgentsAgentIdAguiPost)
+    call_apiV2AIServiceAgentsAgentIdAguiPost
+    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -14465,8 +14517,8 @@ case $operation in
     updateWebPortalSettingsAsync)
     call_updateWebPortalSettingsAsync
     ;;
-    getLatestCurrencyRatesModelAsync)
-    call_getLatestCurrencyRatesModelAsync
+    updateThemesAsync)
+    call_updateThemesAsync
     ;;
     countWebComponentsAsync)
     call_countWebComponentsAsync
