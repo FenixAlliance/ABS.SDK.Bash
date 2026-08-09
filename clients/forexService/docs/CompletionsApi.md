@@ -4,7 +4,7 @@ All URIs are relative to **
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AiServiceCompletionsCompleteGet**](CompletionsApi.md#apiV2AiServiceCompletionsCompleteGet) | **GET** /api/v2/AiService/Completions/Complete | 
+[**apiV2AiServiceCompletionsCompleteGet**](CompletionsApi.md#apiV2AiServiceCompletionsCompleteGet) | **GET** /api/v2/IntelligenceService/Completions/Complete | 
 
 
 
