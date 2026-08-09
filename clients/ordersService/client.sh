@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -130,6 +129,7 @@ operation_parameters_minimum_occurrences["deleteOrderLine:::tenantId"]=1
 operation_parameters_minimum_occurrences["deleteOrderLine:::orderId"]=1
 operation_parameters_minimum_occurrences["deleteOrderLine:::orderLineId"]=1
 operation_parameters_minimum_occurrences["getExtendedOrders:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExtendedOrders:::ExtendedOrderDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOrder:::tenantId"]=1
 operation_parameters_minimum_occurrences["getOrder:::orderId"]=1
 operation_parameters_minimum_occurrences["getOrderLine:::tenantId"]=1
@@ -138,17 +138,21 @@ operation_parameters_minimum_occurrences["getOrderLine:::orderLineId"]=1
 operation_parameters_minimum_occurrences["getOrderLines:::tenantId"]=1
 operation_parameters_minimum_occurrences["getOrderLines:::orderId"]=1
 operation_parameters_minimum_occurrences["getOrderLines:::itemId"]=0
+operation_parameters_minimum_occurrences["getOrderLines:::OrderLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOrderLinesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getOrderLinesCount:::orderId"]=1
+operation_parameters_minimum_occurrences["getOrderLinesCount:::OrderLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOrders:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrders:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOrdersCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getOrdersCount:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchOrder:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchOrder:::orderId"]=1
-operation_parameters_minimum_occurrences["patchOrder:::Operation"]=0
+operation_parameters_minimum_occurrences["patchOrder:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchOrderLine:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchOrderLine:::orderId"]=1
 operation_parameters_minimum_occurrences["patchOrderLine:::orderLineId"]=1
-operation_parameters_minimum_occurrences["patchOrderLine:::Operation"]=0
+operation_parameters_minimum_occurrences["patchOrderLine:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::orderId"]=1
 operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::tenantId"]=1
 operation_parameters_minimum_occurrences["previewOrderEmailTemplate:::EmailDispatchRequest"]=0
@@ -175,7 +179,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -205,6 +208,7 @@ operation_parameters_maximum_occurrences["deleteOrderLine:::tenantId"]=0
 operation_parameters_maximum_occurrences["deleteOrderLine:::orderId"]=0
 operation_parameters_maximum_occurrences["deleteOrderLine:::orderLineId"]=0
 operation_parameters_maximum_occurrences["getExtendedOrders:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExtendedOrders:::ExtendedOrderDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOrder:::tenantId"]=0
 operation_parameters_maximum_occurrences["getOrder:::orderId"]=0
 operation_parameters_maximum_occurrences["getOrderLine:::tenantId"]=0
@@ -213,17 +217,21 @@ operation_parameters_maximum_occurrences["getOrderLine:::orderLineId"]=0
 operation_parameters_maximum_occurrences["getOrderLines:::tenantId"]=0
 operation_parameters_maximum_occurrences["getOrderLines:::orderId"]=0
 operation_parameters_maximum_occurrences["getOrderLines:::itemId"]=0
+operation_parameters_maximum_occurrences["getOrderLines:::OrderLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOrderLinesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getOrderLinesCount:::orderId"]=0
+operation_parameters_maximum_occurrences["getOrderLinesCount:::OrderLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOrders:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrders:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOrdersCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getOrdersCount:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchOrder:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchOrder:::orderId"]=0
-operation_parameters_maximum_occurrences["patchOrder:::Operation"]=0
+operation_parameters_maximum_occurrences["patchOrder:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchOrderLine:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchOrderLine:::orderId"]=0
 operation_parameters_maximum_occurrences["patchOrderLine:::orderLineId"]=0
-operation_parameters_maximum_occurrences["patchOrderLine:::Operation"]=0
+operation_parameters_maximum_occurrences["patchOrderLine:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::orderId"]=0
 operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::tenantId"]=0
 operation_parameters_maximum_occurrences["previewOrderEmailTemplate:::EmailDispatchRequest"]=0
@@ -247,7 +255,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -277,6 +284,7 @@ operation_parameters_collection_type["deleteOrderLine:::tenantId"]=""
 operation_parameters_collection_type["deleteOrderLine:::orderId"]=""
 operation_parameters_collection_type["deleteOrderLine:::orderLineId"]=""
 operation_parameters_collection_type["getExtendedOrders:::tenantId"]=""
+operation_parameters_collection_type["getExtendedOrders:::ExtendedOrderDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOrder:::tenantId"]=""
 operation_parameters_collection_type["getOrder:::orderId"]=""
 operation_parameters_collection_type["getOrderLine:::tenantId"]=""
@@ -285,17 +293,21 @@ operation_parameters_collection_type["getOrderLine:::orderLineId"]=""
 operation_parameters_collection_type["getOrderLines:::tenantId"]=""
 operation_parameters_collection_type["getOrderLines:::orderId"]=""
 operation_parameters_collection_type["getOrderLines:::itemId"]=""
+operation_parameters_collection_type["getOrderLines:::OrderLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOrderLinesCount:::tenantId"]=""
 operation_parameters_collection_type["getOrderLinesCount:::orderId"]=""
+operation_parameters_collection_type["getOrderLinesCount:::OrderLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOrders:::tenantId"]=""
+operation_parameters_collection_type["getOrders:::OrderDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOrdersCount:::tenantId"]=""
+operation_parameters_collection_type["getOrdersCount:::OrderDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchOrder:::tenantId"]=""
 operation_parameters_collection_type["patchOrder:::orderId"]=""
-operation_parameters_collection_type["patchOrder:::Operation"]=
+operation_parameters_collection_type["patchOrder:::PatchOperation"]=
 operation_parameters_collection_type["patchOrderLine:::tenantId"]=""
 operation_parameters_collection_type["patchOrderLine:::orderId"]=""
 operation_parameters_collection_type["patchOrderLine:::orderLineId"]=""
-operation_parameters_collection_type["patchOrderLine:::Operation"]=
+operation_parameters_collection_type["patchOrderLine:::PatchOperation"]=
 operation_parameters_collection_type["previewOrderEmailTemplate:::orderId"]=""
 operation_parameters_collection_type["previewOrderEmailTemplate:::tenantId"]=""
 operation_parameters_collection_type["previewOrderEmailTemplate:::EmailDispatchRequest"]=""
@@ -702,7 +714,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -848,22 +859,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1255,6 +1250,8 @@ print_getExtendedOrders_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1324,6 +1321,8 @@ print_getOrderLines_help() {
     echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1346,6 +1345,8 @@ print_getOrderLinesCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}orderId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: orderId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1367,6 +1368,8 @@ print_getOrders_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1388,6 +1391,8 @@ print_getOrdersCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1708,42 +1713,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -2876,10 +2845,50 @@ call_getExtendedOrders() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2984,10 +2993,50 @@ call_getOrderLines() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3020,10 +3069,50 @@ call_getOrderLinesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3056,10 +3145,50 @@ call_getOrders() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3092,10 +3221,50 @@ call_getOrdersCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3700,9 +3869,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -3900,9 +4066,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

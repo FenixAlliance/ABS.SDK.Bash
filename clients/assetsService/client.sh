@@ -101,12 +101,14 @@ operation_parameters_minimum_occurrences["createAssetCategory:::AssetCategoryCre
 operation_parameters_minimum_occurrences["deleteAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["deleteAssetCategory:::categoryId"]=1
 operation_parameters_minimum_occurrences["getAssetCategories:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetCategories:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetCategoriesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetCategoriesCount:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetCategory:::categoryId"]=1
 operation_parameters_minimum_occurrences["patchAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetCategory:::categoryId"]=1
-operation_parameters_minimum_occurrences["patchAssetCategory:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetCategory:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAssetCategory:::categoryId"]=1
 operation_parameters_minimum_occurrences["updateAssetCategory:::AssetCategoryUpdateDto"]=0
@@ -117,10 +119,12 @@ operation_parameters_minimum_occurrences["deleteAssetTransferAsync:::transferId"
 operation_parameters_minimum_occurrences["getAssetTransferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTransferAsync:::transferId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfersAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetTransfersAsync:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetTransfersCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetTransfersCountAsync:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchAssetTransferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetTransferAsync:::transferId"]=1
-operation_parameters_minimum_occurrences["patchAssetTransferAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetTransferAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateAssetTransferAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAssetTransferAsync:::transferId"]=1
 operation_parameters_minimum_occurrences["updateAssetTransferAsync:::AssetTransferUpdateDto"]=0
@@ -131,10 +135,12 @@ operation_parameters_minimum_occurrences["deleteAssetType:::typeId"]=1
 operation_parameters_minimum_occurrences["getAssetType:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetType:::typeId"]=1
 operation_parameters_minimum_occurrences["getAssetTypes:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetTypes:::AssetTypeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetTypesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetTypesCount:::AssetTypeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchAssetType:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetType:::typeId"]=1
-operation_parameters_minimum_occurrences["patchAssetType:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetType:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateAssetType:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAssetType:::typeId"]=1
 operation_parameters_minimum_occurrences["updateAssetType:::AssetTypeUpdateDto"]=0
@@ -173,7 +179,9 @@ operation_parameters_minimum_occurrences["deleteAssetValueAmend:::amendId"]=1
 operation_parameters_minimum_occurrences["getAsset:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAsset:::assetId"]=1
 operation_parameters_minimum_occurrences["getAssetAssetCategories:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetAssetCategories:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetAssetCategoriesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetAssetCategoriesCount:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetAssetCategory:::categoryId"]=1
 operation_parameters_minimum_occurrences["getAssetDepreciationRecord:::tenantId"]=1
@@ -181,53 +189,63 @@ operation_parameters_minimum_occurrences["getAssetDepreciationRecord:::assetId"]
 operation_parameters_minimum_occurrences["getAssetDepreciationRecord:::recordId"]=1
 operation_parameters_minimum_occurrences["getAssetDepreciationRecords:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetDepreciationRecords:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetDepreciationRecords:::AssetDepreciationRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetDepreciationRecordsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetDepreciationRecordsCount:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetDepreciationRecordsCount:::AssetDepreciationRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetRepair:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetRepair:::assetId"]=1
 operation_parameters_minimum_occurrences["getAssetRepair:::repairId"]=1
 operation_parameters_minimum_occurrences["getAssetRepairs:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetRepairs:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetRepairs:::AssetRepairDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetRepairsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetRepairsCount:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetRepairsCount:::AssetRepairDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetTransfer:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfer:::assetId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfer:::transferId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfers:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfers:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetTransfers:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetTransfersCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetTransfersCount:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetTransfersCount:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetValueAmend:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetValueAmend:::assetId"]=1
 operation_parameters_minimum_occurrences["getAssetValueAmend:::amendId"]=1
 operation_parameters_minimum_occurrences["getAssetValueAmends:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetValueAmends:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetValueAmends:::AssetValueAmendDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetValueAmendsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAssetValueAmendsCount:::assetId"]=1
+operation_parameters_minimum_occurrences["getAssetValueAmendsCount:::AssetValueAmendDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssets:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssets:::AssetDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAssetsCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAssetsCount:::AssetDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchAsset:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAsset:::assetId"]=1
-operation_parameters_minimum_occurrences["patchAsset:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAsset:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchAssetAssetCategory:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetAssetCategory:::categoryId"]=1
-operation_parameters_minimum_occurrences["patchAssetAssetCategory:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetAssetCategory:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::assetId"]=1
 operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::recordId"]=1
-operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetDepreciationRecord:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchAssetRepair:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetRepair:::assetId"]=1
 operation_parameters_minimum_occurrences["patchAssetRepair:::repairId"]=1
-operation_parameters_minimum_occurrences["patchAssetRepair:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetRepair:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchAssetTransfer:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetTransfer:::assetId"]=1
 operation_parameters_minimum_occurrences["patchAssetTransfer:::transferId"]=1
-operation_parameters_minimum_occurrences["patchAssetTransfer:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetTransfer:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchAssetValueAmend:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAssetValueAmend:::assetId"]=1
 operation_parameters_minimum_occurrences["patchAssetValueAmend:::amendId"]=1
-operation_parameters_minimum_occurrences["patchAssetValueAmend:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAssetValueAmend:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateAsset:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateAsset:::assetId"]=1
 operation_parameters_minimum_occurrences["updateAsset:::AssetUpdateDto"]=0
@@ -254,7 +272,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -281,12 +298,14 @@ operation_parameters_maximum_occurrences["createAssetCategory:::AssetCategoryCre
 operation_parameters_maximum_occurrences["deleteAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["deleteAssetCategory:::categoryId"]=0
 operation_parameters_maximum_occurrences["getAssetCategories:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetCategories:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetCategoriesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetCategoriesCount:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetCategory:::categoryId"]=0
 operation_parameters_maximum_occurrences["patchAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetCategory:::categoryId"]=0
-operation_parameters_maximum_occurrences["patchAssetCategory:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetCategory:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAssetCategory:::categoryId"]=0
 operation_parameters_maximum_occurrences["updateAssetCategory:::AssetCategoryUpdateDto"]=0
@@ -297,10 +316,12 @@ operation_parameters_maximum_occurrences["deleteAssetTransferAsync:::transferId"
 operation_parameters_maximum_occurrences["getAssetTransferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTransferAsync:::transferId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfersAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetTransfersAsync:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetTransfersCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetTransfersCountAsync:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchAssetTransferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetTransferAsync:::transferId"]=0
-operation_parameters_maximum_occurrences["patchAssetTransferAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetTransferAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateAssetTransferAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAssetTransferAsync:::transferId"]=0
 operation_parameters_maximum_occurrences["updateAssetTransferAsync:::AssetTransferUpdateDto"]=0
@@ -311,10 +332,12 @@ operation_parameters_maximum_occurrences["deleteAssetType:::typeId"]=0
 operation_parameters_maximum_occurrences["getAssetType:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetType:::typeId"]=0
 operation_parameters_maximum_occurrences["getAssetTypes:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetTypes:::AssetTypeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetTypesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetTypesCount:::AssetTypeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchAssetType:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetType:::typeId"]=0
-operation_parameters_maximum_occurrences["patchAssetType:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetType:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateAssetType:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAssetType:::typeId"]=0
 operation_parameters_maximum_occurrences["updateAssetType:::AssetTypeUpdateDto"]=0
@@ -353,7 +376,9 @@ operation_parameters_maximum_occurrences["deleteAssetValueAmend:::amendId"]=0
 operation_parameters_maximum_occurrences["getAsset:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAsset:::assetId"]=0
 operation_parameters_maximum_occurrences["getAssetAssetCategories:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetAssetCategories:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetAssetCategoriesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetAssetCategoriesCount:::AssetCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetAssetCategory:::categoryId"]=0
 operation_parameters_maximum_occurrences["getAssetDepreciationRecord:::tenantId"]=0
@@ -361,53 +386,63 @@ operation_parameters_maximum_occurrences["getAssetDepreciationRecord:::assetId"]
 operation_parameters_maximum_occurrences["getAssetDepreciationRecord:::recordId"]=0
 operation_parameters_maximum_occurrences["getAssetDepreciationRecords:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetDepreciationRecords:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetDepreciationRecords:::AssetDepreciationRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetDepreciationRecordsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetDepreciationRecordsCount:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetDepreciationRecordsCount:::AssetDepreciationRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetRepair:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetRepair:::assetId"]=0
 operation_parameters_maximum_occurrences["getAssetRepair:::repairId"]=0
 operation_parameters_maximum_occurrences["getAssetRepairs:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetRepairs:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetRepairs:::AssetRepairDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetRepairsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetRepairsCount:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetRepairsCount:::AssetRepairDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetTransfer:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfer:::assetId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfer:::transferId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfers:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfers:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetTransfers:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetTransfersCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetTransfersCount:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetTransfersCount:::AssetTransferDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmend:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmend:::assetId"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmend:::amendId"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmends:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmends:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetValueAmends:::AssetValueAmendDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmendsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAssetValueAmendsCount:::assetId"]=0
+operation_parameters_maximum_occurrences["getAssetValueAmendsCount:::AssetValueAmendDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssets:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssets:::AssetDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAssetsCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAssetsCount:::AssetDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchAsset:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAsset:::assetId"]=0
-operation_parameters_maximum_occurrences["patchAsset:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAsset:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchAssetAssetCategory:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetAssetCategory:::categoryId"]=0
-operation_parameters_maximum_occurrences["patchAssetAssetCategory:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetAssetCategory:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::assetId"]=0
 operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::recordId"]=0
-operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetDepreciationRecord:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchAssetRepair:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetRepair:::assetId"]=0
 operation_parameters_maximum_occurrences["patchAssetRepair:::repairId"]=0
-operation_parameters_maximum_occurrences["patchAssetRepair:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetRepair:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchAssetTransfer:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetTransfer:::assetId"]=0
 operation_parameters_maximum_occurrences["patchAssetTransfer:::transferId"]=0
-operation_parameters_maximum_occurrences["patchAssetTransfer:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetTransfer:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchAssetValueAmend:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAssetValueAmend:::assetId"]=0
 operation_parameters_maximum_occurrences["patchAssetValueAmend:::amendId"]=0
-operation_parameters_maximum_occurrences["patchAssetValueAmend:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAssetValueAmend:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateAsset:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateAsset:::assetId"]=0
 operation_parameters_maximum_occurrences["updateAsset:::AssetUpdateDto"]=0
@@ -434,7 +469,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -458,12 +492,14 @@ operation_parameters_collection_type["createAssetCategory:::AssetCategoryCreateD
 operation_parameters_collection_type["deleteAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["deleteAssetCategory:::categoryId"]=""
 operation_parameters_collection_type["getAssetCategories:::tenantId"]=""
+operation_parameters_collection_type["getAssetCategories:::AssetCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetCategoriesCount:::tenantId"]=""
+operation_parameters_collection_type["getAssetCategoriesCount:::AssetCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["getAssetCategory:::categoryId"]=""
 operation_parameters_collection_type["patchAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["patchAssetCategory:::categoryId"]=""
-operation_parameters_collection_type["patchAssetCategory:::Operation"]=
+operation_parameters_collection_type["patchAssetCategory:::PatchOperation"]=
 operation_parameters_collection_type["updateAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["updateAssetCategory:::categoryId"]=""
 operation_parameters_collection_type["updateAssetCategory:::AssetCategoryUpdateDto"]=""
@@ -474,10 +510,12 @@ operation_parameters_collection_type["deleteAssetTransferAsync:::transferId"]=""
 operation_parameters_collection_type["getAssetTransferAsync:::tenantId"]=""
 operation_parameters_collection_type["getAssetTransferAsync:::transferId"]=""
 operation_parameters_collection_type["getAssetTransfersAsync:::tenantId"]=""
+operation_parameters_collection_type["getAssetTransfersAsync:::AssetTransferDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetTransfersCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getAssetTransfersCountAsync:::AssetTransferDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchAssetTransferAsync:::tenantId"]=""
 operation_parameters_collection_type["patchAssetTransferAsync:::transferId"]=""
-operation_parameters_collection_type["patchAssetTransferAsync:::Operation"]=
+operation_parameters_collection_type["patchAssetTransferAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateAssetTransferAsync:::tenantId"]=""
 operation_parameters_collection_type["updateAssetTransferAsync:::transferId"]=""
 operation_parameters_collection_type["updateAssetTransferAsync:::AssetTransferUpdateDto"]=""
@@ -488,10 +526,12 @@ operation_parameters_collection_type["deleteAssetType:::typeId"]=""
 operation_parameters_collection_type["getAssetType:::tenantId"]=""
 operation_parameters_collection_type["getAssetType:::typeId"]=""
 operation_parameters_collection_type["getAssetTypes:::tenantId"]=""
+operation_parameters_collection_type["getAssetTypes:::AssetTypeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetTypesCount:::tenantId"]=""
+operation_parameters_collection_type["getAssetTypesCount:::AssetTypeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchAssetType:::tenantId"]=""
 operation_parameters_collection_type["patchAssetType:::typeId"]=""
-operation_parameters_collection_type["patchAssetType:::Operation"]=
+operation_parameters_collection_type["patchAssetType:::PatchOperation"]=
 operation_parameters_collection_type["updateAssetType:::tenantId"]=""
 operation_parameters_collection_type["updateAssetType:::typeId"]=""
 operation_parameters_collection_type["updateAssetType:::AssetTypeUpdateDto"]=""
@@ -530,7 +570,9 @@ operation_parameters_collection_type["deleteAssetValueAmend:::amendId"]=""
 operation_parameters_collection_type["getAsset:::tenantId"]=""
 operation_parameters_collection_type["getAsset:::assetId"]=""
 operation_parameters_collection_type["getAssetAssetCategories:::tenantId"]=""
+operation_parameters_collection_type["getAssetAssetCategories:::AssetCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetAssetCategoriesCount:::tenantId"]=""
+operation_parameters_collection_type["getAssetAssetCategoriesCount:::AssetCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["getAssetAssetCategory:::categoryId"]=""
 operation_parameters_collection_type["getAssetDepreciationRecord:::tenantId"]=""
@@ -538,53 +580,63 @@ operation_parameters_collection_type["getAssetDepreciationRecord:::assetId"]=""
 operation_parameters_collection_type["getAssetDepreciationRecord:::recordId"]=""
 operation_parameters_collection_type["getAssetDepreciationRecords:::tenantId"]=""
 operation_parameters_collection_type["getAssetDepreciationRecords:::assetId"]=""
+operation_parameters_collection_type["getAssetDepreciationRecords:::AssetDepreciationRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetDepreciationRecordsCount:::tenantId"]=""
 operation_parameters_collection_type["getAssetDepreciationRecordsCount:::assetId"]=""
+operation_parameters_collection_type["getAssetDepreciationRecordsCount:::AssetDepreciationRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetRepair:::tenantId"]=""
 operation_parameters_collection_type["getAssetRepair:::assetId"]=""
 operation_parameters_collection_type["getAssetRepair:::repairId"]=""
 operation_parameters_collection_type["getAssetRepairs:::tenantId"]=""
 operation_parameters_collection_type["getAssetRepairs:::assetId"]=""
+operation_parameters_collection_type["getAssetRepairs:::AssetRepairDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetRepairsCount:::tenantId"]=""
 operation_parameters_collection_type["getAssetRepairsCount:::assetId"]=""
+operation_parameters_collection_type["getAssetRepairsCount:::AssetRepairDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetTransfer:::tenantId"]=""
 operation_parameters_collection_type["getAssetTransfer:::assetId"]=""
 operation_parameters_collection_type["getAssetTransfer:::transferId"]=""
 operation_parameters_collection_type["getAssetTransfers:::tenantId"]=""
 operation_parameters_collection_type["getAssetTransfers:::assetId"]=""
+operation_parameters_collection_type["getAssetTransfers:::AssetTransferDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetTransfersCount:::tenantId"]=""
 operation_parameters_collection_type["getAssetTransfersCount:::assetId"]=""
+operation_parameters_collection_type["getAssetTransfersCount:::AssetTransferDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetValueAmend:::tenantId"]=""
 operation_parameters_collection_type["getAssetValueAmend:::assetId"]=""
 operation_parameters_collection_type["getAssetValueAmend:::amendId"]=""
 operation_parameters_collection_type["getAssetValueAmends:::tenantId"]=""
 operation_parameters_collection_type["getAssetValueAmends:::assetId"]=""
+operation_parameters_collection_type["getAssetValueAmends:::AssetValueAmendDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetValueAmendsCount:::tenantId"]=""
 operation_parameters_collection_type["getAssetValueAmendsCount:::assetId"]=""
+operation_parameters_collection_type["getAssetValueAmendsCount:::AssetValueAmendDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssets:::tenantId"]=""
+operation_parameters_collection_type["getAssets:::AssetDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAssetsCount:::tenantId"]=""
+operation_parameters_collection_type["getAssetsCount:::AssetDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchAsset:::tenantId"]=""
 operation_parameters_collection_type["patchAsset:::assetId"]=""
-operation_parameters_collection_type["patchAsset:::Operation"]=
+operation_parameters_collection_type["patchAsset:::PatchOperation"]=
 operation_parameters_collection_type["patchAssetAssetCategory:::tenantId"]=""
 operation_parameters_collection_type["patchAssetAssetCategory:::categoryId"]=""
-operation_parameters_collection_type["patchAssetAssetCategory:::Operation"]=
+operation_parameters_collection_type["patchAssetAssetCategory:::PatchOperation"]=
 operation_parameters_collection_type["patchAssetDepreciationRecord:::tenantId"]=""
 operation_parameters_collection_type["patchAssetDepreciationRecord:::assetId"]=""
 operation_parameters_collection_type["patchAssetDepreciationRecord:::recordId"]=""
-operation_parameters_collection_type["patchAssetDepreciationRecord:::Operation"]=
+operation_parameters_collection_type["patchAssetDepreciationRecord:::PatchOperation"]=
 operation_parameters_collection_type["patchAssetRepair:::tenantId"]=""
 operation_parameters_collection_type["patchAssetRepair:::assetId"]=""
 operation_parameters_collection_type["patchAssetRepair:::repairId"]=""
-operation_parameters_collection_type["patchAssetRepair:::Operation"]=
+operation_parameters_collection_type["patchAssetRepair:::PatchOperation"]=
 operation_parameters_collection_type["patchAssetTransfer:::tenantId"]=""
 operation_parameters_collection_type["patchAssetTransfer:::assetId"]=""
 operation_parameters_collection_type["patchAssetTransfer:::transferId"]=""
-operation_parameters_collection_type["patchAssetTransfer:::Operation"]=
+operation_parameters_collection_type["patchAssetTransfer:::PatchOperation"]=
 operation_parameters_collection_type["patchAssetValueAmend:::tenantId"]=""
 operation_parameters_collection_type["patchAssetValueAmend:::assetId"]=""
 operation_parameters_collection_type["patchAssetValueAmend:::amendId"]=""
-operation_parameters_collection_type["patchAssetValueAmend:::Operation"]=
+operation_parameters_collection_type["patchAssetValueAmend:::PatchOperation"]=
 operation_parameters_collection_type["updateAsset:::tenantId"]=""
 operation_parameters_collection_type["updateAsset:::assetId"]=""
 operation_parameters_collection_type["updateAsset:::AssetUpdateDto"]=""
@@ -611,7 +663,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -1100,7 +1151,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1234,6 +1284,8 @@ print_getAssetCategories_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -1257,6 +1309,8 @@ print_getAssetCategoriesCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -1439,6 +1493,8 @@ print_getAssetTransfersAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1462,6 +1518,8 @@ print_getAssetTransfersCountAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1620,6 +1678,8 @@ print_getAssetTypes_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -1643,6 +1703,8 @@ print_getAssetTypesCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2062,6 +2124,8 @@ print_getAssetAssetCategories_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2085,6 +2149,8 @@ print_getAssetAssetCategoriesCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2160,6 +2226,8 @@ print_getAssetDepreciationRecords_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2184,6 +2252,8 @@ print_getAssetDepreciationRecordsCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2233,6 +2303,8 @@ print_getAssetRepairs_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2257,6 +2329,8 @@ print_getAssetRepairsCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2306,6 +2380,8 @@ print_getAssetTransfers_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2330,6 +2406,8 @@ print_getAssetTransfersCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2379,6 +2457,8 @@ print_getAssetValueAmends_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2403,6 +2483,8 @@ print_getAssetValueAmendsCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}assetId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: assetId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2426,6 +2508,8 @@ print_getAssets_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2449,6 +2533,8 @@ print_getAssetsCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2871,22 +2957,6 @@ print_accountPerformExternalLoginPost_help() {
 }
 ##############################################################################
 #
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
 # Print help for forgotPasswordPost operation
 #
 ##############################################################################
@@ -3263,10 +3333,50 @@ call_getAssetCategories() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3299,10 +3409,50 @@ call_getAssetCategoriesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3671,10 +3821,50 @@ call_getAssetTransfersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3707,10 +3897,50 @@ call_getAssetTransfersCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4043,10 +4273,50 @@ call_getAssetTypes() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4079,10 +4349,50 @@ call_getAssetTypesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4975,10 +5285,50 @@ call_getAssetAssetCategories() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5011,10 +5361,50 @@ call_getAssetAssetCategoriesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5119,10 +5509,50 @@ call_getAssetDepreciationRecords() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5155,10 +5585,50 @@ call_getAssetDepreciationRecordsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5227,10 +5697,50 @@ call_getAssetRepairs() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5263,10 +5773,50 @@ call_getAssetRepairsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5335,10 +5885,50 @@ call_getAssetTransfers() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5371,10 +5961,50 @@ call_getAssetTransfersCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5443,10 +6073,50 @@ call_getAssetValueAmends() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5479,10 +6149,50 @@ call_getAssetValueAmendsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5515,10 +6225,50 @@ call_getAssets() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5551,10 +6301,50 @@ call_getAssetsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6614,42 +7404,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -7755,9 +8509,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -8084,9 +8835,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

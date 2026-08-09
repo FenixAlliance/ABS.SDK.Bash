@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -129,14 +128,16 @@ operation_parameters_minimum_occurrences["getSubscriptionPlanByIdAsync:::x-api-v
 operation_parameters_minimum_occurrences["getSubscriptionPlansAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSubscriptionPlansAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSubscriptionPlansAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSubscriptionPlansAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSubscriptionPlansCountAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::planId"]=1
 operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionPlanAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSubscriptionPlanAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionPlanAsync:::planId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionPlanAsync:::api-version"]=0
@@ -157,14 +158,16 @@ operation_parameters_minimum_occurrences["getSubscriptionByIdAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getSubscriptionsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSubscriptionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSubscriptionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSubscriptionsAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSubscriptionsCountAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSubscriptionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSubscriptionAsync:::subscriptionId"]=1
 operation_parameters_minimum_occurrences["patchSubscriptionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSubscriptionAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSubscriptionAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSubscriptionAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSubscriptionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionAsync:::subscriptionId"]=1
 operation_parameters_minimum_occurrences["updateSubscriptionAsync:::api-version"]=0
@@ -182,7 +185,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -211,14 +213,16 @@ operation_parameters_maximum_occurrences["getSubscriptionPlanByIdAsync:::x-api-v
 operation_parameters_maximum_occurrences["getSubscriptionPlansAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSubscriptionPlansAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSubscriptionPlansCountAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::planId"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionPlanAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionPlanAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionPlanAsync:::planId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionPlanAsync:::api-version"]=0
@@ -239,14 +243,16 @@ operation_parameters_maximum_occurrences["getSubscriptionByIdAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getSubscriptionsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSubscriptionsAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSubscriptionsCountAsync:::SubscriptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionAsync:::subscriptionId"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSubscriptionAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSubscriptionAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSubscriptionAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionAsync:::subscriptionId"]=0
 operation_parameters_maximum_occurrences["updateSubscriptionAsync:::api-version"]=0
@@ -261,7 +267,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -290,14 +295,16 @@ operation_parameters_collection_type["getSubscriptionPlanByIdAsync:::x-api-versi
 operation_parameters_collection_type["getSubscriptionPlansAsync:::tenantId"]=""
 operation_parameters_collection_type["getSubscriptionPlansAsync:::api-version"]=""
 operation_parameters_collection_type["getSubscriptionPlansAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSubscriptionPlansAsync:::SubscriptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSubscriptionPlansCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSubscriptionPlansCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSubscriptionPlansCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSubscriptionPlansCountAsync:::SubscriptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSubscriptionPlanAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSubscriptionPlanAsync:::planId"]=""
 operation_parameters_collection_type["patchSubscriptionPlanAsync:::api-version"]=""
 operation_parameters_collection_type["patchSubscriptionPlanAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSubscriptionPlanAsync:::Operation"]=
+operation_parameters_collection_type["patchSubscriptionPlanAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSubscriptionPlanAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSubscriptionPlanAsync:::planId"]=""
 operation_parameters_collection_type["updateSubscriptionPlanAsync:::api-version"]=""
@@ -318,14 +325,16 @@ operation_parameters_collection_type["getSubscriptionByIdAsync:::x-api-version"]
 operation_parameters_collection_type["getSubscriptionsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSubscriptionsAsync:::api-version"]=""
 operation_parameters_collection_type["getSubscriptionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSubscriptionsAsync:::SubscriptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSubscriptionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSubscriptionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSubscriptionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSubscriptionsCountAsync:::SubscriptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSubscriptionAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSubscriptionAsync:::subscriptionId"]=""
 operation_parameters_collection_type["patchSubscriptionAsync:::api-version"]=""
 operation_parameters_collection_type["patchSubscriptionAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSubscriptionAsync:::Operation"]=
+operation_parameters_collection_type["patchSubscriptionAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSubscriptionAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSubscriptionAsync:::subscriptionId"]=""
 operation_parameters_collection_type["updateSubscriptionAsync:::api-version"]=""
@@ -723,7 +732,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -868,22 +876,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1223,6 +1215,8 @@ print_getSubscriptionPlansAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1249,6 +1243,8 @@ print_getSubscriptionPlansCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1415,6 +1411,8 @@ print_getSubscriptionsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1441,6 +1439,8 @@ print_getSubscriptionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1654,42 +1654,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -2674,10 +2638,50 @@ call_getSubscriptionPlansAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2710,10 +2714,50 @@ call_getSubscriptionPlansCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3046,10 +3090,50 @@ call_getSubscriptionsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3082,10 +3166,50 @@ call_getSubscriptionsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3350,9 +3474,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -3532,9 +3653,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

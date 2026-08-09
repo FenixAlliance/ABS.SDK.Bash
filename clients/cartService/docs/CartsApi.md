@@ -1241,7 +1241,7 @@ Name | Type | Description  | Notes
  **cartId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

@@ -6,10 +6,12 @@ client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/BlockchainBlockCreateDto.md
 docs/BlockchainBlockDto.md
+docs/BlockchainBlockDtoCollectionQueryParameters.md
 docs/BlockchainBlockDtoListEnvelope.md
 docs/BlockchainBlockUpdateDto.md
 docs/BlockchainCreateDto.md
 docs/BlockchainDto.md
+docs/BlockchainDtoCollectionQueryParameters.md
 docs/BlockchainDtoListEnvelope.md
 docs/BlockchainUpdateDto.md
 docs/BlockchainsApi.md
@@ -24,10 +26,11 @@ docs/Int32Envelope.md
 docs/LoginRequest.md
 docs/NonFungibleTokenCreateDto.md
 docs/NonFungibleTokenDto.md
+docs/NonFungibleTokenDtoCollectionQueryParameters.md
 docs/NonFungibleTokenDtoListEnvelope.md
 docs/NonFungibleTokenUpdateDto.md
 docs/NonFungibleTokensApi.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

@@ -32,6 +32,7 @@ Returns the total count of stores for the specified tenant with OData filter sup
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **storeDtoCollectionQueryParameters** | [**StoreDtoCollectionQueryParameters**](StoreDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -43,7 +44,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -175,6 +176,7 @@ Retrieves a list of stores for the specified tenant with OData query support.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **storeDtoCollectionQueryParameters** | [**StoreDtoCollectionQueryParameters**](StoreDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -186,7 +188,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -211,7 +213,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **storeId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

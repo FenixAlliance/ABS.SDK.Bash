@@ -146,6 +146,7 @@ Name | Type | Description  | Notes
  **wikiId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseArticleDtoCollectionQueryParameters** | [**CourseArticleDtoCollectionQueryParameters**](CourseArticleDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -157,7 +158,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -184,6 +185,7 @@ Name | Type | Description  | Notes
  **wikiId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseArticleDtoCollectionQueryParameters** | [**CourseArticleDtoCollectionQueryParameters**](CourseArticleDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -195,7 +197,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -221,6 +223,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseAssignmentDtoCollectionQueryParameters** | [**CourseAssignmentDtoCollectionQueryParameters**](CourseAssignmentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -232,7 +235,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -258,6 +261,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseAssignmentDtoCollectionQueryParameters** | [**CourseAssignmentDtoCollectionQueryParameters**](CourseAssignmentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -269,7 +273,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -333,6 +337,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseCategoryDtoCollectionQueryParameters** | [**CourseCategoryDtoCollectionQueryParameters**](CourseCategoryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -344,7 +349,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -370,6 +375,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseCategoryDtoCollectionQueryParameters** | [**CourseCategoryDtoCollectionQueryParameters**](CourseCategoryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -381,7 +387,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -407,6 +413,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseCohortDtoCollectionQueryParameters** | [**CourseCohortDtoCollectionQueryParameters**](CourseCohortDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -418,7 +425,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -444,6 +451,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseCohortDtoCollectionQueryParameters** | [**CourseCohortDtoCollectionQueryParameters**](CourseCohortDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -455,7 +463,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -482,6 +490,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseEnrollmentDtoCollectionQueryParameters** | [**CourseEnrollmentDtoCollectionQueryParameters**](CourseEnrollmentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -493,7 +502,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -519,6 +528,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseFileDtoCollectionQueryParameters** | [**CourseFileDtoCollectionQueryParameters**](CourseFileDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -530,7 +540,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -556,6 +566,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseFileDtoCollectionQueryParameters** | [**CourseFileDtoCollectionQueryParameters**](CourseFileDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -567,7 +578,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -593,6 +604,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseForumDtoCollectionQueryParameters** | [**CourseForumDtoCollectionQueryParameters**](CourseForumDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -604,7 +616,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -630,6 +642,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseForumDtoCollectionQueryParameters** | [**CourseForumDtoCollectionQueryParameters**](CourseForumDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -641,7 +654,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -667,6 +680,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseHandoutDtoCollectionQueryParameters** | [**CourseHandoutDtoCollectionQueryParameters**](CourseHandoutDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -678,7 +692,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -704,6 +718,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseHandoutDtoCollectionQueryParameters** | [**CourseHandoutDtoCollectionQueryParameters**](CourseHandoutDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -715,7 +730,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -741,6 +756,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseLibraryDtoCollectionQueryParameters** | [**CourseLibraryDtoCollectionQueryParameters**](CourseLibraryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -752,7 +768,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -778,6 +794,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseLibraryDtoCollectionQueryParameters** | [**CourseLibraryDtoCollectionQueryParameters**](CourseLibraryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -789,7 +806,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -815,6 +832,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **coursePageDtoCollectionQueryParameters** | [**CoursePageDtoCollectionQueryParameters**](CoursePageDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -826,7 +844,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -852,6 +870,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **coursePageDtoCollectionQueryParameters** | [**CoursePageDtoCollectionQueryParameters**](CoursePageDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -863,7 +882,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -889,6 +908,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseProblemSetDtoCollectionQueryParameters** | [**CourseProblemSetDtoCollectionQueryParameters**](CourseProblemSetDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -900,7 +920,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -926,6 +946,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseProblemSetDtoCollectionQueryParameters** | [**CourseProblemSetDtoCollectionQueryParameters**](CourseProblemSetDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -937,7 +958,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -963,6 +984,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseSectionDtoCollectionQueryParameters** | [**CourseSectionDtoCollectionQueryParameters**](CourseSectionDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -974,7 +996,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1000,6 +1022,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseSectionDtoCollectionQueryParameters** | [**CourseSectionDtoCollectionQueryParameters**](CourseSectionDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1011,7 +1034,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1037,6 +1060,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseUnitComponentDtoCollectionQueryParameters** | [**CourseUnitComponentDtoCollectionQueryParameters**](CourseUnitComponentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1048,7 +1072,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1074,6 +1098,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseUnitComponentDtoCollectionQueryParameters** | [**CourseUnitComponentDtoCollectionQueryParameters**](CourseUnitComponentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1085,7 +1110,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1112,6 +1137,7 @@ Name | Type | Description  | Notes
  **sectionId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseUnitDtoCollectionQueryParameters** | [**CourseUnitDtoCollectionQueryParameters**](CourseUnitDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1123,7 +1149,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1150,6 +1176,7 @@ Name | Type | Description  | Notes
  **sectionId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseUnitDtoCollectionQueryParameters** | [**CourseUnitDtoCollectionQueryParameters**](CourseUnitDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1161,7 +1188,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1187,6 +1214,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseNewsDtoCollectionQueryParameters** | [**CourseNewsDtoCollectionQueryParameters**](CourseNewsDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1198,7 +1226,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1224,6 +1252,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseNewsDtoCollectionQueryParameters** | [**CourseNewsDtoCollectionQueryParameters**](CourseNewsDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1235,7 +1264,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1261,6 +1290,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseWikiDtoCollectionQueryParameters** | [**CourseWikiDtoCollectionQueryParameters**](CourseWikiDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1272,7 +1302,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1298,6 +1328,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseWikiDtoCollectionQueryParameters** | [**CourseWikiDtoCollectionQueryParameters**](CourseWikiDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1309,7 +1340,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1335,6 +1366,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseDtoCollectionQueryParameters** | [**CourseDtoCollectionQueryParameters**](CourseDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1346,7 +1378,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1372,6 +1404,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **courseDtoCollectionQueryParameters** | [**CourseDtoCollectionQueryParameters**](CourseDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1383,7 +1416,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1558,7 +1591,7 @@ Name | Type | Description  | Notes
  **courseId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

@@ -107,7 +107,6 @@ Class | Method | HTTP request | Description
 *FenixAllianceABSWebApi* | [**accountManageDownloadPersonalDataPost**](docs/FenixAllianceABSWebApi.md#accountmanagedownloadpersonaldatapost) | **POST** /Account/Manage/DownloadPersonalData | 
 *FenixAllianceABSWebApi* | [**accountManageLinkExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountmanagelinkexternalloginpost) | **POST** /Account/Manage/LinkExternalLogin | 
 *FenixAllianceABSWebApi* | [**accountPerformExternalLoginPost**](docs/FenixAllianceABSWebApi.md#accountperformexternalloginpost) | **POST** /Account/PerformExternalLogin | 
-*FenixAllianceABSWebApi* | [**apiV2AIServiceAgentsAgentIdAguiPost**](docs/FenixAllianceABSWebApi.md#apiv2aiserviceagentsagentidaguipost) | **POST** /api/v2/AIService/Agents/{agentId}/agui | 
 *FenixAllianceABSWebApi* | [**forgotPasswordPost**](docs/FenixAllianceABSWebApi.md#forgotpasswordpost) | **POST** /forgotPassword | 
 *FenixAllianceABSWebApi* | [**healthGet**](docs/FenixAllianceABSWebApi.md#healthget) | **GET** /health | 
 *FenixAllianceABSWebApi* | [**helloGet**](docs/FenixAllianceABSWebApi.md#helloget) | **GET** /hello | 
@@ -156,6 +155,7 @@ Class | Method | HTTP request | Description
  - [EmptyEnvelope](docs/EmptyEnvelope.md)
  - [ErrorEnvelope](docs/ErrorEnvelope.md)
  - [ExtendedQuoteDto](docs/ExtendedQuoteDto.md)
+ - [ExtendedQuoteDtoCollectionQueryParameters](docs/ExtendedQuoteDtoCollectionQueryParameters.md)
  - [ExtendedQuoteDtoListEnvelope](docs/ExtendedQuoteDtoListEnvelope.md)
  - [ForgotPasswordRequest](docs/ForgotPasswordRequest.md)
  - [HttpValidationProblemDetails](docs/HttpValidationProblemDetails.md)
@@ -163,13 +163,15 @@ Class | Method | HTTP request | Description
  - [InfoResponse](docs/InfoResponse.md)
  - [Int32Envelope](docs/Int32Envelope.md)
  - [LoginRequest](docs/LoginRequest.md)
- - [Operation](docs/Operation.md)
+ - [PatchOperation](docs/PatchOperation.md)
  - [QuoteCreateDto](docs/QuoteCreateDto.md)
  - [QuoteDto](docs/QuoteDto.md)
+ - [QuoteDtoCollectionQueryParameters](docs/QuoteDtoCollectionQueryParameters.md)
  - [QuoteDtoEnvelope](docs/QuoteDtoEnvelope.md)
  - [QuoteDtoListEnvelope](docs/QuoteDtoListEnvelope.md)
  - [QuoteLineCreateDto](docs/QuoteLineCreateDto.md)
  - [QuoteLineDto](docs/QuoteLineDto.md)
+ - [QuoteLineDtoCollectionQueryParameters](docs/QuoteLineDtoCollectionQueryParameters.md)
  - [QuoteLineDtoEnvelope](docs/QuoteLineDtoEnvelope.md)
  - [QuoteLineDtoListEnvelope](docs/QuoteLineDtoListEnvelope.md)
  - [QuoteLineUpdateDto](docs/QuoteLineUpdateDto.md)

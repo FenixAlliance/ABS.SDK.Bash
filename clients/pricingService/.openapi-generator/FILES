@@ -7,10 +7,12 @@ docs/AccessTokenResponse.md
 docs/CurrencyId.md
 docs/DiscountCreateDto.md
 docs/DiscountDto.md
+docs/DiscountDtoCollectionQueryParameters.md
 docs/DiscountDtoEnvelope.md
 docs/DiscountDtoListEnvelope.md
 docs/DiscountListCreateDto.md
 docs/DiscountListDto.md
+docs/DiscountListDtoCollectionQueryParameters.md
 docs/DiscountListDtoEnvelope.md
 docs/DiscountListDtoListEnvelope.md
 docs/DiscountListUpdateDto.md
@@ -28,15 +30,17 @@ docs/ItemPriceCalculation.md
 docs/ItemPriceCalculationEnvelope.md
 docs/ItemPriceCreateDto.md
 docs/ItemPriceDto.md
+docs/ItemPriceDtoCollectionQueryParameters.md
 docs/ItemPriceDtoEnvelope.md
 docs/ItemPriceDtoListEnvelope.md
 docs/ItemPriceUpdateDto.md
 docs/LoginRequest.md
 docs/Money.md
 docs/MoneyEnvelope.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/PriceListCreateDto.md
 docs/PriceListDto.md
+docs/PriceListDtoCollectionQueryParameters.md
 docs/PriceListDtoEnvelope.md
 docs/PriceListDtoListEnvelope.md
 docs/PriceListUpdateDto.md
@@ -44,6 +48,7 @@ docs/PriceListsApi.md
 docs/PricesApi.md
 docs/PricingRuleCreateDto.md
 docs/PricingRuleDto.md
+docs/PricingRuleDtoCollectionQueryParameters.md
 docs/PricingRuleDtoEnvelope.md
 docs/PricingRuleDtoListEnvelope.md
 docs/PricingRuleUpdateDto.md
@@ -55,6 +60,7 @@ docs/ResetPasswordRequest.md
 docs/RoundingPoliciesApi.md
 docs/RoundingPolicyCreateDto.md
 docs/RoundingPolicyDto.md
+docs/RoundingPolicyDtoCollectionQueryParameters.md
 docs/RoundingPolicyDtoEnvelope.md
 docs/RoundingPolicyDtoListEnvelope.md
 docs/RoundingPolicyUpdateDto.md

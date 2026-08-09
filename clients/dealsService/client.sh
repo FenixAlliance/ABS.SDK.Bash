@@ -113,17 +113,21 @@ operation_parameters_minimum_occurrences["getDealUnitFlowStageAsync:::dealUnitFl
 operation_parameters_minimum_occurrences["getDealUnitFlowStageAsync:::dealUnitFlowStageId"]=1
 operation_parameters_minimum_occurrences["getDealUnitFlowStagesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitFlowStagesAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStagesAsync:::DealUnitFlowStageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowStagesCountAsync:::DealUnitFlowStageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDealUnitFlowsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowsAsync:::DealUnitFlowDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDealUnitFlowsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitFlowsCountAsync:::DealUnitFlowDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::dealUnitFlowId"]=1
-operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDealUnitFlowAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowId"]=1
 operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowStageId"]=1
-operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDealUnitFlowStageAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::dealUnitFlowId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=0
@@ -151,23 +155,28 @@ operation_parameters_minimum_occurrences["getDealUnitAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::itemId"]=0
+operation_parameters_minimum_occurrences["getDealUnitLinesAsync:::DealUnitLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDealUnitLinesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitLinesCountAsync:::dealUnitId"]=1
+operation_parameters_minimum_occurrences["getDealUnitLinesCountAsync:::DealUnitLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDealUnitPriceAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDealUnitPriceAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["getDealUnitPriceAsync:::dealUnitLineId"]=1
 operation_parameters_minimum_occurrences["getDealUnitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitsAsync:::DealUnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDealUnitsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getDealUnitsCountAsync:::DealUnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getExtendedDealUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExtendedDealUnitAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["getExtendedDealUnitsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExtendedDealUnitsAsync:::ExtendedDealUnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchDealUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchDealUnitAsync:::dealUnitId"]=1
-operation_parameters_minimum_occurrences["patchDealUnitAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDealUnitAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::dealUnitLineId"]=1
-operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchDealUnitLineAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateDealUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitAsync:::dealUnitId"]=1
 operation_parameters_minimum_occurrences["updateDealUnitAsync:::DealUnitUpdateDto"]=0
@@ -179,7 +188,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -218,17 +226,21 @@ operation_parameters_maximum_occurrences["getDealUnitFlowStageAsync:::dealUnitFl
 operation_parameters_maximum_occurrences["getDealUnitFlowStageAsync:::dealUnitFlowStageId"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowStagesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowStagesAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStagesAsync:::DealUnitFlowStageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowStagesCountAsync:::DealUnitFlowStageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowsAsync:::DealUnitFlowDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDealUnitFlowsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitFlowsCountAsync:::DealUnitFlowDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::dealUnitFlowId"]=0
-operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowId"]=0
 operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::dealUnitFlowStageId"]=0
-operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDealUnitFlowStageAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::dealUnitFlowId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=0
@@ -256,23 +268,28 @@ operation_parameters_maximum_occurrences["getDealUnitAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::itemId"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesAsync:::DealUnitLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDealUnitLinesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitLinesCountAsync:::dealUnitId"]=0
+operation_parameters_maximum_occurrences["getDealUnitLinesCountAsync:::DealUnitLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDealUnitPriceAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDealUnitPriceAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["getDealUnitPriceAsync:::dealUnitLineId"]=0
 operation_parameters_maximum_occurrences["getDealUnitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitsAsync:::DealUnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDealUnitsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getDealUnitsCountAsync:::DealUnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getExtendedDealUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExtendedDealUnitAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["getExtendedDealUnitsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExtendedDealUnitsAsync:::ExtendedDealUnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchDealUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchDealUnitAsync:::dealUnitId"]=0
-operation_parameters_maximum_occurrences["patchDealUnitAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDealUnitAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::dealUnitLineId"]=0
-operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchDealUnitLineAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateDealUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitAsync:::dealUnitId"]=0
 operation_parameters_maximum_occurrences["updateDealUnitAsync:::DealUnitUpdateDto"]=0
@@ -284,7 +301,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -320,17 +336,21 @@ operation_parameters_collection_type["getDealUnitFlowStageAsync:::dealUnitFlowId
 operation_parameters_collection_type["getDealUnitFlowStageAsync:::dealUnitFlowStageId"]=""
 operation_parameters_collection_type["getDealUnitFlowStagesAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitFlowStagesAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["getDealUnitFlowStagesAsync:::DealUnitFlowStageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::dealUnitFlowId"]=""
+operation_parameters_collection_type["getDealUnitFlowStagesCountAsync:::DealUnitFlowStageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDealUnitFlowsAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowsAsync:::DealUnitFlowDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDealUnitFlowsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitFlowsCountAsync:::DealUnitFlowDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchDealUnitFlowAsync:::tenantId"]=""
 operation_parameters_collection_type["patchDealUnitFlowAsync:::dealUnitFlowId"]=""
-operation_parameters_collection_type["patchDealUnitFlowAsync:::Operation"]=
+operation_parameters_collection_type["patchDealUnitFlowAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchDealUnitFlowStageAsync:::tenantId"]=""
 operation_parameters_collection_type["patchDealUnitFlowStageAsync:::dealUnitFlowId"]=""
 operation_parameters_collection_type["patchDealUnitFlowStageAsync:::dealUnitFlowStageId"]=""
-operation_parameters_collection_type["patchDealUnitFlowStageAsync:::Operation"]=
+operation_parameters_collection_type["patchDealUnitFlowStageAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateDealUnitFlowAsync:::tenantId"]=""
 operation_parameters_collection_type["updateDealUnitFlowAsync:::dealUnitFlowId"]=""
 operation_parameters_collection_type["updateDealUnitFlowAsync:::DealUnitFlowUpdateDto"]=""
@@ -358,23 +378,28 @@ operation_parameters_collection_type["getDealUnitAsync:::dealUnitId"]=""
 operation_parameters_collection_type["getDealUnitLinesAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitLinesAsync:::dealUnitId"]=""
 operation_parameters_collection_type["getDealUnitLinesAsync:::itemId"]=""
+operation_parameters_collection_type["getDealUnitLinesAsync:::DealUnitLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDealUnitLinesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitLinesCountAsync:::dealUnitId"]=""
+operation_parameters_collection_type["getDealUnitLinesCountAsync:::DealUnitLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDealUnitPriceAsync:::tenantId"]=""
 operation_parameters_collection_type["getDealUnitPriceAsync:::dealUnitId"]=""
 operation_parameters_collection_type["getDealUnitPriceAsync:::dealUnitLineId"]=""
 operation_parameters_collection_type["getDealUnitsAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitsAsync:::DealUnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDealUnitsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getDealUnitsCountAsync:::DealUnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getExtendedDealUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["getExtendedDealUnitAsync:::dealUnitId"]=""
 operation_parameters_collection_type["getExtendedDealUnitsAsync:::tenantId"]=""
+operation_parameters_collection_type["getExtendedDealUnitsAsync:::ExtendedDealUnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchDealUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["patchDealUnitAsync:::dealUnitId"]=""
-operation_parameters_collection_type["patchDealUnitAsync:::Operation"]=
+operation_parameters_collection_type["patchDealUnitAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchDealUnitLineAsync:::tenantId"]=""
 operation_parameters_collection_type["patchDealUnitLineAsync:::dealUnitId"]=""
 operation_parameters_collection_type["patchDealUnitLineAsync:::dealUnitLineId"]=""
-operation_parameters_collection_type["patchDealUnitLineAsync:::Operation"]=
+operation_parameters_collection_type["patchDealUnitLineAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateDealUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["updateDealUnitAsync:::dealUnitId"]=""
 operation_parameters_collection_type["updateDealUnitAsync:::DealUnitUpdateDto"]=""
@@ -386,7 +411,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -834,7 +858,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1053,6 +1076,8 @@ print_getDealUnitFlowStagesAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1075,6 +1100,8 @@ print_getDealUnitFlowStagesCountAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitFlowId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitFlowId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1096,6 +1123,8 @@ print_getDealUnitFlowsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1117,6 +1146,8 @@ print_getDealUnitFlowsCountAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1398,6 +1429,8 @@ print_getDealUnitLinesAsync_help() {
     echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1420,6 +1453,8 @@ print_getDealUnitLinesCountAsync_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}dealUnitId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: dealUnitId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1464,6 +1499,8 @@ print_getDealUnitsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1485,6 +1522,8 @@ print_getDealUnitsCountAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1528,6 +1567,8 @@ print_getExtendedDealUnitsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1687,22 +1728,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2270,10 +2295,50 @@ call_getDealUnitFlowStagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2306,10 +2371,50 @@ call_getDealUnitFlowStagesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2342,10 +2447,50 @@ call_getDealUnitFlowsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2378,10 +2523,50 @@ call_getDealUnitFlowsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3050,10 +3235,50 @@ call_getDealUnitLinesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3086,10 +3311,50 @@ call_getDealUnitLinesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3158,10 +3423,50 @@ call_getDealUnitsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3194,10 +3499,50 @@ call_getDealUnitsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3266,10 +3611,50 @@ call_getExtendedDealUnitsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3721,42 +4106,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -4769,9 +5118,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -5005,9 +5351,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

@@ -99,30 +99,39 @@ declare -A operation_parameters_minimum_occurrences
 operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCallingCodesByCountryAsync:::CountryCallingCodeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countCitiesByStateAsync:::countryStateId"]=1
 operation_parameters_minimum_occurrences["countCitiesByStateAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["countCitiesByStateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countCitiesByStateAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCitiesByStateAsync:::CityDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countCountries:::api-version"]=0
 operation_parameters_minimum_occurrences["countCountries:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCountries:::CountryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countCountryStatesAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["countCountryStatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countCountryStatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCountryStatesAsync:::CountryStateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countTimezonesByCountryAsync:::TimezoneDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countTopLevelDomainsByCountryAsync:::CountryTopLevelDomainDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAllCountries:::api-version"]=0
 operation_parameters_minimum_occurrences["getAllCountries:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAllCountries:::CountryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCallingCodesByCountryIdAsync:::CountryCallingCodeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::countryStateId"]=1
 operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCitiesByCountryStateIdAsync:::CityDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCountryById:::countryId"]=1
 operation_parameters_minimum_occurrences["getCountryById:::api-version"]=0
 operation_parameters_minimum_occurrences["getCountryById:::x-api-version"]=0
@@ -130,33 +139,39 @@ operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::countryStat
 operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCountryStateByIdAsync:::CountryStateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCountryStatesAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getCountryStatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCountryStatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCountryStatesAsync:::CountryStateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEnabledCurrenciesByCountryIdAsync:::CurrencyDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZonesByCountryIdAsync:::TimezoneDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::countryId"]=1
 operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTopLevelDomainsByCountryIdAsync:::CountryTopLevelDomainDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["searchCountriesByNameAsync:::countryName"]=1
 operation_parameters_minimum_occurrences["searchCountriesByNameAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["searchCountriesByNameAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countCurrenciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countCurrenciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countCurrenciesAsync:::CurrencyDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCurrencyByIdAsync:::currencyId"]=1
 operation_parameters_minimum_occurrences["getCurrencyByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurrencyByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getEnabledCurrenciesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getEnabledCurrenciesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getEnabledCurrenciesAsync:::CurrencyDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -172,18 +187,22 @@ operation_parameters_minimum_occurrences["resendConfirmationEmailPost:::ResendCo
 operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=1
 operation_parameters_minimum_occurrences["countLanguagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countLanguagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countLanguagesAsync:::CountryLanguageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLanguageByIdAsync:::languageId"]=1
 operation_parameters_minimum_occurrences["getLanguageByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLanguageByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getLanguagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLanguagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLanguagesAsync:::CountryLanguageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countTimezonesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countTimezonesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countTimezonesAsync:::TimezoneDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::timeZoneId"]=1
 operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTimeZoneByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTimeZonesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTimeZonesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTimeZonesAsync:::TimezoneDtoCollectionQueryParameters"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -195,30 +214,39 @@ declare -A operation_parameters_maximum_occurrences
 operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCallingCodesByCountryAsync:::CountryCallingCodeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countCitiesByStateAsync:::countryStateId"]=0
 operation_parameters_maximum_occurrences["countCitiesByStateAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["countCitiesByStateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countCitiesByStateAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCitiesByStateAsync:::CityDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countCountries:::api-version"]=0
 operation_parameters_maximum_occurrences["countCountries:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCountries:::CountryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countCountryStatesAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["countCountryStatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countCountryStatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCountryStatesAsync:::CountryStateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countTimezonesByCountryAsync:::TimezoneDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countTopLevelDomainsByCountryAsync:::CountryTopLevelDomainDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAllCountries:::api-version"]=0
 operation_parameters_maximum_occurrences["getAllCountries:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAllCountries:::CountryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCallingCodesByCountryIdAsync:::CountryCallingCodeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::countryStateId"]=0
 operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCitiesByCountryStateIdAsync:::CityDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCountryById:::countryId"]=0
 operation_parameters_maximum_occurrences["getCountryById:::api-version"]=0
 operation_parameters_maximum_occurrences["getCountryById:::x-api-version"]=0
@@ -226,33 +254,39 @@ operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::countryStat
 operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCountryStateByIdAsync:::CountryStateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCountryStatesAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getCountryStatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCountryStatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCountryStatesAsync:::CountryStateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesByCountryIdAsync:::CurrencyDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZonesByCountryIdAsync:::TimezoneDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::countryId"]=0
 operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTopLevelDomainsByCountryIdAsync:::CountryTopLevelDomainDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["searchCountriesByNameAsync:::countryName"]=0
 operation_parameters_maximum_occurrences["searchCountriesByNameAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["searchCountriesByNameAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countCurrenciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countCurrenciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countCurrenciesAsync:::CurrencyDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCurrencyByIdAsync:::currencyId"]=0
 operation_parameters_maximum_occurrences["getCurrencyByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurrencyByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getEnabledCurrenciesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getEnabledCurrenciesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getEnabledCurrenciesAsync:::CurrencyDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -268,18 +302,22 @@ operation_parameters_maximum_occurrences["resendConfirmationEmailPost:::ResendCo
 operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordRequest"]=0
 operation_parameters_maximum_occurrences["countLanguagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countLanguagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countLanguagesAsync:::CountryLanguageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLanguageByIdAsync:::languageId"]=0
 operation_parameters_maximum_occurrences["getLanguageByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLanguageByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getLanguagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLanguagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLanguagesAsync:::CountryLanguageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countTimezonesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countTimezonesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countTimezonesAsync:::TimezoneDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::timeZoneId"]=0
 operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTimeZoneByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTimeZonesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTimeZonesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTimeZonesAsync:::TimezoneDtoCollectionQueryParameters"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
@@ -288,30 +326,39 @@ declare -A operation_parameters_collection_type
 operation_parameters_collection_type["countCallingCodesByCountryAsync:::countryId"]=""
 operation_parameters_collection_type["countCallingCodesByCountryAsync:::api-version"]=""
 operation_parameters_collection_type["countCallingCodesByCountryAsync:::x-api-version"]=""
+operation_parameters_collection_type["countCallingCodesByCountryAsync:::CountryCallingCodeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countCitiesByStateAsync:::countryStateId"]=""
 operation_parameters_collection_type["countCitiesByStateAsync:::countryId"]=""
 operation_parameters_collection_type["countCitiesByStateAsync:::api-version"]=""
 operation_parameters_collection_type["countCitiesByStateAsync:::x-api-version"]=""
+operation_parameters_collection_type["countCitiesByStateAsync:::CityDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countCountries:::api-version"]=""
 operation_parameters_collection_type["countCountries:::x-api-version"]=""
+operation_parameters_collection_type["countCountries:::CountryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countCountryStatesAsync:::countryId"]=""
 operation_parameters_collection_type["countCountryStatesAsync:::api-version"]=""
 operation_parameters_collection_type["countCountryStatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countCountryStatesAsync:::CountryStateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countTimezonesByCountryAsync:::countryId"]=""
 operation_parameters_collection_type["countTimezonesByCountryAsync:::api-version"]=""
 operation_parameters_collection_type["countTimezonesByCountryAsync:::x-api-version"]=""
+operation_parameters_collection_type["countTimezonesByCountryAsync:::TimezoneDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::countryId"]=""
 operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::api-version"]=""
 operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::x-api-version"]=""
+operation_parameters_collection_type["countTopLevelDomainsByCountryAsync:::CountryTopLevelDomainDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAllCountries:::api-version"]=""
 operation_parameters_collection_type["getAllCountries:::x-api-version"]=""
+operation_parameters_collection_type["getAllCountries:::CountryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::countryId"]=""
 operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::api-version"]=""
 operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCallingCodesByCountryIdAsync:::CountryCallingCodeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::countryStateId"]=""
 operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::countryId"]=""
 operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::api-version"]=""
 operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCitiesByCountryStateIdAsync:::CityDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCountryById:::countryId"]=""
 operation_parameters_collection_type["getCountryById:::api-version"]=""
 operation_parameters_collection_type["getCountryById:::x-api-version"]=""
@@ -319,33 +366,39 @@ operation_parameters_collection_type["getCountryStateByIdAsync:::countryStateId"
 operation_parameters_collection_type["getCountryStateByIdAsync:::countryId"]=""
 operation_parameters_collection_type["getCountryStateByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getCountryStateByIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCountryStateByIdAsync:::CountryStateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCountryStatesAsync:::countryId"]=""
 operation_parameters_collection_type["getCountryStatesAsync:::api-version"]=""
 operation_parameters_collection_type["getCountryStatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCountryStatesAsync:::CountryStateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::countryId"]=""
 operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::api-version"]=""
 operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEnabledCurrenciesByCountryIdAsync:::CurrencyDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::countryId"]=""
 operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::api-version"]=""
 operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTimeZonesByCountryIdAsync:::TimezoneDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::countryId"]=""
 operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::api-version"]=""
 operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTopLevelDomainsByCountryIdAsync:::CountryTopLevelDomainDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["searchCountriesByNameAsync:::countryName"]=""
 operation_parameters_collection_type["searchCountriesByNameAsync:::api-version"]=""
 operation_parameters_collection_type["searchCountriesByNameAsync:::x-api-version"]=""
 operation_parameters_collection_type["countCurrenciesAsync:::api-version"]=""
 operation_parameters_collection_type["countCurrenciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countCurrenciesAsync:::CurrencyDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCurrencyByIdAsync:::currencyId"]=""
 operation_parameters_collection_type["getCurrencyByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getCurrencyByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getEnabledCurrenciesAsync:::api-version"]=""
 operation_parameters_collection_type["getEnabledCurrenciesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getEnabledCurrenciesAsync:::CurrencyDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -361,18 +414,22 @@ operation_parameters_collection_type["resendConfirmationEmailPost:::ResendConfir
 operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]=""
 operation_parameters_collection_type["countLanguagesAsync:::api-version"]=""
 operation_parameters_collection_type["countLanguagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countLanguagesAsync:::CountryLanguageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLanguageByIdAsync:::languageId"]=""
 operation_parameters_collection_type["getLanguageByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getLanguageByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLanguagesAsync:::api-version"]=""
 operation_parameters_collection_type["getLanguagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLanguagesAsync:::CountryLanguageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countTimezonesAsync:::api-version"]=""
 operation_parameters_collection_type["countTimezonesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countTimezonesAsync:::TimezoneDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTimeZoneByIdAsync:::timeZoneId"]=""
 operation_parameters_collection_type["getTimeZoneByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getTimeZoneByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getTimeZonesAsync:::api-version"]=""
 operation_parameters_collection_type["getTimeZonesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTimeZonesAsync:::TimezoneDtoCollectionQueryParameters"]=""
 
 
 ##
@@ -794,7 +851,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -893,6 +949,8 @@ print_countCallingCodesByCountryAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -919,6 +977,8 @@ print_countCitiesByStateAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -943,6 +1003,8 @@ print_countCountries_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -968,6 +1030,8 @@ print_countCountryStatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -993,6 +1057,8 @@ print_countTimezonesByCountryAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1018,6 +1084,8 @@ print_countTopLevelDomainsByCountryAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1042,6 +1110,8 @@ print_getAllCountries_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1067,6 +1137,8 @@ print_getCallingCodesByCountryIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1093,6 +1165,8 @@ print_getCitiesByCountryStateIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1144,6 +1218,8 @@ print_getCountryStateByIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1169,6 +1245,8 @@ print_getCountryStatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1194,6 +1272,8 @@ print_getEnabledCurrenciesByCountryIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1219,6 +1299,8 @@ print_getTimeZonesByCountryIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1244,6 +1326,8 @@ print_getTopLevelDomainsByCountryIdAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1294,6 +1378,8 @@ print_countCurrenciesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1343,6 +1429,8 @@ print_getEnabledCurrenciesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1406,22 +1494,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1677,6 +1749,8 @@ print_countLanguagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1726,6 +1800,8 @@ print_getLanguagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1750,6 +1826,8 @@ print_countTimezonesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1799,6 +1877,8 @@ print_getTimeZonesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1839,10 +1919,52 @@ call_countCallingCodesByCountryAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -1875,10 +1997,52 @@ call_countCitiesByStateAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -1911,10 +2075,52 @@ call_countCountries() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -1947,10 +2153,52 @@ call_countCountryStatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -1983,10 +2231,52 @@ call_countTimezonesByCountryAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2019,10 +2309,52 @@ call_countTopLevelDomainsByCountryAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2055,10 +2387,52 @@ call_getAllCountries() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2091,10 +2465,52 @@ call_getCallingCodesByCountryIdAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2127,10 +2543,52 @@ call_getCitiesByCountryStateIdAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2199,10 +2657,52 @@ call_getCountryStateByIdAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2235,10 +2735,52 @@ call_getCountryStatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2271,10 +2813,52 @@ call_getEnabledCurrenciesByCountryIdAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2307,10 +2891,52 @@ call_getTimeZonesByCountryIdAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2343,10 +2969,52 @@ call_getTopLevelDomainsByCountryIdAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2415,10 +3083,50 @@ call_countCurrenciesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2487,10 +3195,50 @@ call_getEnabledCurrenciesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -2638,42 +3386,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3510,10 +4222,50 @@ call_countLanguagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3582,10 +4334,50 @@ call_getLanguagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3618,10 +4410,50 @@ call_countTimezonesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3690,10 +4522,50 @@ call_getTimeZonesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3862,9 +4734,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -4078,9 +4947,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

@@ -340,6 +340,7 @@ Retrieves a list of extended quotes for the specified tenant, supporting OData q
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **extendedQuoteDtoCollectionQueryParameters** | [**ExtendedQuoteDtoCollectionQueryParameters**](ExtendedQuoteDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -351,7 +352,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -450,6 +451,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **quoteId** | **string** |  | [default to null]
  **itemId** | **string** |  | [optional] [default to null]
+ **quoteLineDtoCollectionQueryParameters** | [**QuoteLineDtoCollectionQueryParameters**](QuoteLineDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -461,7 +463,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -486,6 +488,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **quoteId** | **string** |  | [default to null]
+ **quoteLineDtoCollectionQueryParameters** | [**QuoteLineDtoCollectionQueryParameters**](QuoteLineDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -497,7 +500,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -521,6 +524,7 @@ Retrieves a list of quotes for the specified tenant, supporting OData query opti
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **quoteDtoCollectionQueryParameters** | [**QuoteDtoCollectionQueryParameters**](QuoteDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -532,7 +536,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -556,6 +560,7 @@ Retrieves the total count of quotes for the specified tenant, supporting OData q
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **quoteDtoCollectionQueryParameters** | [**QuoteDtoCollectionQueryParameters**](QuoteDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -567,7 +572,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -592,7 +597,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **quoteId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -630,7 +635,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **quoteId** | **string** |  | [default to null]
  **quoteLineId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

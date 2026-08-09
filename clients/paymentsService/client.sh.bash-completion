@@ -73,7 +73,6 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
-    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -101,6 +100,10 @@ _()
     operations["getPaymentModesCountAsync"]=1
     operations["patchPaymentModeAsync"]=1
     operations["updatePaymentModeAsync"]=1
+    operations["createAsync"]=1
+    operations["getAsync"]=1
+    operations["getCountAsync"]=1
+    operations["rotateKeyAsync"]=1
     operations["createPaymentTermAsync"]=1
     operations["deletePaymentTermAsync"]=1
     operations["getPaymentTermDetailsAsync"]=1
@@ -123,7 +126,6 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
-    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -151,6 +153,10 @@ _()
     operation_parameters["getPaymentModesCountAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchPaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
     operation_parameters["updatePaymentModeAsync"]="paymentModeId= tenantId= api-version= x-api-version: "
+    operation_parameters["createAsync"]="tenantId= "
+    operation_parameters["getAsync"]="tenantId= "
+    operation_parameters["getCountAsync"]="tenantId= "
+    operation_parameters["rotateKeyAsync"]="registrationId= tenantId= "
     operation_parameters["createPaymentTermAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deletePaymentTermAsync"]="paymentTermId= tenantId= api-version= x-api-version: "
     operation_parameters["getPaymentTermDetailsAsync"]="paymentTermId= tenantId= api-version= x-api-version: "

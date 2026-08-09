@@ -7,14 +7,17 @@ docs/AccessTokenResponse.md
 docs/ContactDto.md
 docs/DealUnitCreateDto.md
 docs/DealUnitDto.md
+docs/DealUnitDtoCollectionQueryParameters.md
 docs/DealUnitDtoEnvelope.md
 docs/DealUnitDtoListEnvelope.md
 docs/DealUnitFlowCreateDto.md
 docs/DealUnitFlowDto.md
+docs/DealUnitFlowDtoCollectionQueryParameters.md
 docs/DealUnitFlowDtoEnvelope.md
 docs/DealUnitFlowDtoListEnvelope.md
 docs/DealUnitFlowStageCreateDto.md
 docs/DealUnitFlowStageDto.md
+docs/DealUnitFlowStageDtoCollectionQueryParameters.md
 docs/DealUnitFlowStageDtoEnvelope.md
 docs/DealUnitFlowStageDtoListEnvelope.md
 docs/DealUnitFlowStageUpdateDto.md
@@ -22,6 +25,7 @@ docs/DealUnitFlowUpdateDto.md
 docs/DealUnitFlowsApi.md
 docs/DealUnitLineCreateDto.md
 docs/DealUnitLineDto.md
+docs/DealUnitLineDtoCollectionQueryParameters.md
 docs/DealUnitLineDtoEnvelope.md
 docs/DealUnitLineDtoListEnvelope.md
 docs/DealUnitLineUpdateDto.md
@@ -30,6 +34,7 @@ docs/DealUnitsApi.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/ExtendedDealUnitDto.md
+docs/ExtendedDealUnitDtoCollectionQueryParameters.md
 docs/ExtendedDealUnitDtoEnvelope.md
 docs/ExtendedDealUnitDtoListEnvelope.md
 docs/FenixAllianceABSWebApi.md
@@ -39,7 +44,7 @@ docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

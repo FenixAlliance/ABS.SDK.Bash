@@ -99,18 +99,22 @@ declare -A operation_parameters_minimum_occurrences
 operation_parameters_minimum_occurrences["countBlogPostsByAuthorAsync:::authorId"]=1
 operation_parameters_minimum_occurrences["countBlogPostsByAuthorAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countBlogPostsByAuthorAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countBlogPostsByAuthorAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBlogAuthorByIdAsync:::authorId"]=1
 operation_parameters_minimum_occurrences["getBlogAuthorByIdAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogAuthorByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getBlogAuthorsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getBlogAuthorsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogAuthorsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlogAuthorsAsync:::BlogAuthorDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBlogPostsByAuthorAsync:::authorId"]=1
 operation_parameters_minimum_occurrences["getBlogPostsByAuthorAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogPostsByAuthorAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlogPostsByAuthorAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countBlogPostCategoriesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countBlogPostCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countBlogPostCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countBlogPostCategoriesAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createBlogPostCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createBlogPostCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createBlogPostCategoryAsync:::x-api-version"]=0
@@ -122,6 +126,7 @@ operation_parameters_minimum_occurrences["deleteBlogPostCategoryAsync:::x-api-ve
 operation_parameters_minimum_occurrences["getBlogPostCategoriesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBlogPostCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogPostCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlogPostCategoriesAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::blogPostCategoryId"]=1
 operation_parameters_minimum_occurrences["getBlogPostCategoryByIdAsync:::api-version"]=0
@@ -130,7 +135,7 @@ operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::tenantId"
 operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::blogPostCategoryId"]=1
 operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBlogPostCategoryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::blogPostCategoryId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::api-version"]=0
@@ -139,6 +144,7 @@ operation_parameters_minimum_occurrences["updateBlogPostCategoryAsync:::BlogPost
 operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countBlogPostTagsAsync:::BlogPostTagDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createBlogPostTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createBlogPostTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createBlogPostTagAsync:::x-api-version"]=0
@@ -154,11 +160,12 @@ operation_parameters_minimum_occurrences["getBlogPostTagByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBlogPostTagsAsync:::BlogPostTagDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::blogPostTagId"]=1
 operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBlogPostTagAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateBlogPostTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostTagAsync:::blogPostTagId"]=1
 operation_parameters_minimum_occurrences["updateBlogPostTagAsync:::api-version"]=0
@@ -182,15 +189,21 @@ operation_parameters_minimum_occurrences["deleteCommentFromBlogPostAsync:::blogP
 operation_parameters_minimum_occurrences["deleteCommentFromBlogPostAsync:::commentId"]=1
 operation_parameters_minimum_occurrences["getBlogPostByIdAsync:::blogPostId"]=1
 operation_parameters_minimum_occurrences["getBlogPostsAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getBlogPostsAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBlogPostsCountAsync:::tenantId"]=0
+operation_parameters_minimum_occurrences["getBlogPostsCountAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCategoriesForBlogPostAsync:::blogPostId"]=1
+operation_parameters_minimum_occurrences["getCategoriesForBlogPostAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCommentsForBlogPostAsync:::blogPostId"]=1
+operation_parameters_minimum_occurrences["getCommentsForBlogPostAsync:::BlogPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRepliesForCommentAsync:::commentId"]=1
 operation_parameters_minimum_occurrences["getRepliesForCommentAsync:::blogPostId"]=1
+operation_parameters_minimum_occurrences["getRepliesForCommentAsync:::BlogPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTagsForBlogPostAsync:::blogPostId"]=1
+operation_parameters_minimum_occurrences["getTagsForBlogPostAsync:::BlogPostTagDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchBlogPostAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchBlogPostAsync:::blogPostId"]=1
-operation_parameters_minimum_occurrences["patchBlogPostAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchBlogPostAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["relateCategoryToBlogPostAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["relateCategoryToBlogPostAsync:::blogPostId"]=1
 operation_parameters_minimum_occurrences["relateCategoryToBlogPostAsync:::categoryId"]=1
@@ -225,9 +238,11 @@ operation_parameters_minimum_occurrences["getBusinessDomainByIdAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getBusinessDomainsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessDomainsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessDomainsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessDomainsAsync:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessDomainsCountAsync:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::businessDomainId"]=1
 operation_parameters_minimum_occurrences["updateBusinessDomainAsync:::BusinessDomainUpdateDto"]=1
@@ -241,7 +256,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -258,6 +272,7 @@ operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordReque
 operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countLocalizationStringsAsync:::LocalizationStringDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createLocalizationStringAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createLocalizationStringAsync:::LocalizationStringCreateDto"]=1
 operation_parameters_minimum_occurrences["createLocalizationStringAsync:::api-version"]=0
@@ -273,6 +288,7 @@ operation_parameters_minimum_occurrences["getLocalizationStringByIdAsync:::x-api
 operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocalizationStringsAsync:::LocalizationStringDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::localizationStringId"]=1
 operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::LocalizationStringUpdateDto"]=1
@@ -281,6 +297,7 @@ operation_parameters_minimum_occurrences["updateLocalizationStringAsync:::x-api-
 operation_parameters_minimum_occurrences["countMenuContextsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countMenuContextsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countMenuContextsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countMenuContextsAsync:::MenuContextDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createMenuContextAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createMenuContextAsync:::MenuContextCreateDto"]=1
 operation_parameters_minimum_occurrences["createMenuContextAsync:::api-version"]=0
@@ -296,6 +313,7 @@ operation_parameters_minimum_occurrences["getMenuContextByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getMenuContextsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getMenuContextsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMenuContextsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMenuContextsAsync:::MenuContextDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateMenuContextAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateMenuContextAsync:::menuContextId"]=1
 operation_parameters_minimum_occurrences["updateMenuContextAsync:::MenuContextUpdateDto"]=1
@@ -309,6 +327,7 @@ operation_parameters_minimum_occurrences["bindWebPortalDomainAsync:::x-api-versi
 operation_parameters_minimum_occurrences["countPortalsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countPortalsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countPortalsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countPortalsAsync:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebPortalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPortalAsync:::x-api-version"]=0
@@ -324,6 +343,7 @@ operation_parameters_minimum_occurrences["getCurrentWebPortalOptionsAsync:::x-ap
 operation_parameters_minimum_occurrences["getPortalsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPortalsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPortalsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortalsAsync:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRootWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRootWebPortalAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWebPortalByIdAsync:::portalId"]=1
@@ -345,7 +365,7 @@ operation_parameters_minimum_occurrences["patchWebPortalAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWebPortalAsync:::portalId"]=1
 operation_parameters_minimum_occurrences["patchWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebPortalAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebPortalAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebPortalAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["searchWebPortalAsync:::domain"]=1
 operation_parameters_minimum_occurrences["searchWebPortalAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["searchWebPortalAsync:::x-api-version"]=0
@@ -369,6 +389,7 @@ operation_parameters_minimum_occurrences["updateThemesAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["countWebComponentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebComponentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebComponentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebComponentsAsync:::WebComponentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebComponentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebComponentAsync:::WebComponentCreateDto"]=1
 operation_parameters_minimum_occurrences["createWebComponentAsync:::api-version"]=0
@@ -384,6 +405,7 @@ operation_parameters_minimum_occurrences["getWebComponentByIdAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getWebComponentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebComponentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebComponentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebComponentsAsync:::WebComponentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateWebComponentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebComponentAsync:::webComponentId"]=1
 operation_parameters_minimum_occurrences["updateWebComponentAsync:::WebComponentUpdateDto"]=1
@@ -392,6 +414,7 @@ operation_parameters_minimum_occurrences["updateWebComponentAsync:::x-api-versio
 operation_parameters_minimum_occurrences["countWebContentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebContentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebContentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebContentsAsync:::WebContentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebContentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebContentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebContentAsync:::x-api-version"]=0
@@ -407,11 +430,12 @@ operation_parameters_minimum_occurrences["getWebContentByIdAsync:::x-api-version
 operation_parameters_minimum_occurrences["getWebContentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebContentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebContentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebContentsAsync:::WebContentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWebContentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWebContentAsync:::webContentId"]=1
 operation_parameters_minimum_occurrences["patchWebContentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebContentAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebContentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebContentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateWebContentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebContentAsync:::webContentId"]=1
 operation_parameters_minimum_occurrences["updateWebContentAsync:::api-version"]=0
@@ -420,6 +444,7 @@ operation_parameters_minimum_occurrences["updateWebContentAsync:::WebContentUpda
 operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebPageCategoriesAsync:::WebPageCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebPageCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPageCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageCategoryAsync:::x-api-version"]=0
@@ -431,6 +456,7 @@ operation_parameters_minimum_occurrences["deleteWebPageCategoryAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getWebPageCategoriesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPageCategoriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPageCategoriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebPageCategoriesAsync:::WebPageCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::webPageCategoryId"]=1
 operation_parameters_minimum_occurrences["getWebPageCategoryByIdAsync:::api-version"]=0
@@ -439,7 +465,7 @@ operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::tenantId"]
 operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::webPageCategoryId"]=1
 operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebPageCategoryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::webPageCategoryId"]=1
 operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::api-version"]=0
@@ -448,6 +474,7 @@ operation_parameters_minimum_occurrences["updateWebPageCategoryAsync:::WebPageCa
 operation_parameters_minimum_occurrences["countWebPageTagsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebPageTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebPageTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebPageTagsAsync:::WebPageTagDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebPageTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPageTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageTagAsync:::x-api-version"]=0
@@ -463,11 +490,12 @@ operation_parameters_minimum_occurrences["getWebPageTagByIdAsync:::x-api-version
 operation_parameters_minimum_occurrences["getWebPageTagsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPageTagsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPageTagsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebPageTagsAsync:::WebPageTagDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWebPageTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWebPageTagAsync:::webPageTagId"]=1
 operation_parameters_minimum_occurrences["patchWebPageTagAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebPageTagAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebPageTagAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebPageTagAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateWebPageTagAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebPageTagAsync:::webPageTagId"]=1
 operation_parameters_minimum_occurrences["updateWebPageTagAsync:::api-version"]=0
@@ -476,6 +504,7 @@ operation_parameters_minimum_occurrences["updateWebPageTagAsync:::WebPageTagUpda
 operation_parameters_minimum_occurrences["countWebPagesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebPagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebPagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebPagesAsync:::WebPageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebPageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebPageAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebPageAsync:::x-api-version"]=0
@@ -497,9 +526,11 @@ operation_parameters_minimum_occurrences["deleteWebPageAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getCategoriesByWebPageAsync:::webPageId"]=1
 operation_parameters_minimum_occurrences["getCategoriesByWebPageAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCategoriesByWebPageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCategoriesByWebPageAsync:::WebPageCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTagsByWebPageAsync:::webPageId"]=1
 operation_parameters_minimum_occurrences["getTagsByWebPageAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTagsByWebPageAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTagsByWebPageAsync:::WebPageTagDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWebPageByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPageByIdAsync:::webPageId"]=1
 operation_parameters_minimum_occurrences["getWebPageByIdAsync:::api-version"]=0
@@ -507,11 +538,12 @@ operation_parameters_minimum_occurrences["getWebPageByIdAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getWebPagesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebPagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebPagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebPagesAsync:::WebPageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWebPageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWebPageAsync:::webPageId"]=1
 operation_parameters_minimum_occurrences["patchWebPageAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebPageAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebPageAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebPageAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["relateWebPageToCategoryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["relateWebPageToCategoryAsync:::webPageId"]=1
 operation_parameters_minimum_occurrences["relateWebPageToCategoryAsync:::categoryId"]=1
@@ -540,6 +572,7 @@ operation_parameters_minimum_occurrences["updateWebPageAsync:::WebPageUpdateDto"
 operation_parameters_minimum_occurrences["countWebTemplatesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countWebTemplatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countWebTemplatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countWebTemplatesAsync:::WebTemplateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createWebTemplateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createWebTemplateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createWebTemplateAsync:::x-api-version"]=0
@@ -555,11 +588,12 @@ operation_parameters_minimum_occurrences["getWebTemplateByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getWebTemplatesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebTemplatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebTemplatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebTemplatesAsync:::WebTemplateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWebTemplateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWebTemplateAsync:::webTemplateId"]=1
 operation_parameters_minimum_occurrences["patchWebTemplateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebTemplateAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebTemplateAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebTemplateAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::webTemplateId"]=1
 operation_parameters_minimum_occurrences["updateWebTemplateAsync:::api-version"]=0
@@ -580,14 +614,16 @@ operation_parameters_minimum_occurrences["getWebsiteThemeByIdAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesAsync:::WebsiteThemeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebsiteThemesCountAsync:::WebsiteThemeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWebsiteThemeAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateWebsiteThemeAsync:::api-version"]=0
@@ -604,18 +640,22 @@ declare -A operation_parameters_maximum_occurrences
 operation_parameters_maximum_occurrences["countBlogPostsByAuthorAsync:::authorId"]=0
 operation_parameters_maximum_occurrences["countBlogPostsByAuthorAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countBlogPostsByAuthorAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countBlogPostsByAuthorAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBlogAuthorByIdAsync:::authorId"]=0
 operation_parameters_maximum_occurrences["getBlogAuthorByIdAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogAuthorByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getBlogAuthorsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlogAuthorsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogAuthorsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlogAuthorsAsync:::BlogAuthorDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBlogPostsByAuthorAsync:::authorId"]=0
 operation_parameters_maximum_occurrences["getBlogPostsByAuthorAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogPostsByAuthorAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlogPostsByAuthorAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countBlogPostCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countBlogPostCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countBlogPostCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countBlogPostCategoriesAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createBlogPostCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createBlogPostCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createBlogPostCategoryAsync:::x-api-version"]=0
@@ -627,6 +667,7 @@ operation_parameters_maximum_occurrences["deleteBlogPostCategoryAsync:::x-api-ve
 operation_parameters_maximum_occurrences["getBlogPostCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlogPostCategoriesAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::blogPostCategoryId"]=0
 operation_parameters_maximum_occurrences["getBlogPostCategoryByIdAsync:::api-version"]=0
@@ -635,7 +676,7 @@ operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::tenantId"
 operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::blogPostCategoryId"]=0
 operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBlogPostCategoryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::blogPostCategoryId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::api-version"]=0
@@ -644,6 +685,7 @@ operation_parameters_maximum_occurrences["updateBlogPostCategoryAsync:::BlogPost
 operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countBlogPostTagsAsync:::BlogPostTagDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createBlogPostTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createBlogPostTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createBlogPostTagAsync:::x-api-version"]=0
@@ -659,11 +701,12 @@ operation_parameters_maximum_occurrences["getBlogPostTagByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBlogPostTagsAsync:::BlogPostTagDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::blogPostTagId"]=0
 operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBlogPostTagAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateBlogPostTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostTagAsync:::blogPostTagId"]=0
 operation_parameters_maximum_occurrences["updateBlogPostTagAsync:::api-version"]=0
@@ -687,15 +730,21 @@ operation_parameters_maximum_occurrences["deleteCommentFromBlogPostAsync:::blogP
 operation_parameters_maximum_occurrences["deleteCommentFromBlogPostAsync:::commentId"]=0
 operation_parameters_maximum_occurrences["getBlogPostByIdAsync:::blogPostId"]=0
 operation_parameters_maximum_occurrences["getBlogPostsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlogPostsAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBlogPostsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getBlogPostsCountAsync:::BlogPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCategoriesForBlogPostAsync:::blogPostId"]=0
+operation_parameters_maximum_occurrences["getCategoriesForBlogPostAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCommentsForBlogPostAsync:::blogPostId"]=0
+operation_parameters_maximum_occurrences["getCommentsForBlogPostAsync:::BlogPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRepliesForCommentAsync:::commentId"]=0
 operation_parameters_maximum_occurrences["getRepliesForCommentAsync:::blogPostId"]=0
+operation_parameters_maximum_occurrences["getRepliesForCommentAsync:::BlogPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTagsForBlogPostAsync:::blogPostId"]=0
+operation_parameters_maximum_occurrences["getTagsForBlogPostAsync:::BlogPostTagDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchBlogPostAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchBlogPostAsync:::blogPostId"]=0
-operation_parameters_maximum_occurrences["patchBlogPostAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBlogPostAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["relateCategoryToBlogPostAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["relateCategoryToBlogPostAsync:::blogPostId"]=0
 operation_parameters_maximum_occurrences["relateCategoryToBlogPostAsync:::categoryId"]=0
@@ -730,9 +779,11 @@ operation_parameters_maximum_occurrences["getBusinessDomainByIdAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getBusinessDomainsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessDomainsAsync:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessDomainsCountAsync:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::businessDomainId"]=0
 operation_parameters_maximum_occurrences["updateBusinessDomainAsync:::BusinessDomainUpdateDto"]=0
@@ -746,7 +797,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -763,6 +813,7 @@ operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordReque
 operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countLocalizationStringsAsync:::LocalizationStringDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createLocalizationStringAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createLocalizationStringAsync:::LocalizationStringCreateDto"]=0
 operation_parameters_maximum_occurrences["createLocalizationStringAsync:::api-version"]=0
@@ -778,6 +829,7 @@ operation_parameters_maximum_occurrences["getLocalizationStringByIdAsync:::x-api
 operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocalizationStringsAsync:::LocalizationStringDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::localizationStringId"]=0
 operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::LocalizationStringUpdateDto"]=0
@@ -786,6 +838,7 @@ operation_parameters_maximum_occurrences["updateLocalizationStringAsync:::x-api-
 operation_parameters_maximum_occurrences["countMenuContextsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countMenuContextsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countMenuContextsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countMenuContextsAsync:::MenuContextDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createMenuContextAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createMenuContextAsync:::MenuContextCreateDto"]=0
 operation_parameters_maximum_occurrences["createMenuContextAsync:::api-version"]=0
@@ -801,6 +854,7 @@ operation_parameters_maximum_occurrences["getMenuContextByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getMenuContextsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getMenuContextsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMenuContextsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMenuContextsAsync:::MenuContextDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateMenuContextAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateMenuContextAsync:::menuContextId"]=0
 operation_parameters_maximum_occurrences["updateMenuContextAsync:::MenuContextUpdateDto"]=0
@@ -814,6 +868,7 @@ operation_parameters_maximum_occurrences["bindWebPortalDomainAsync:::x-api-versi
 operation_parameters_maximum_occurrences["countPortalsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countPortalsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countPortalsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countPortalsAsync:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebPortalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPortalAsync:::x-api-version"]=0
@@ -829,6 +884,7 @@ operation_parameters_maximum_occurrences["getCurrentWebPortalOptionsAsync:::x-ap
 operation_parameters_maximum_occurrences["getPortalsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPortalsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPortalsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortalsAsync:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRootWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRootWebPortalAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWebPortalByIdAsync:::portalId"]=0
@@ -850,7 +906,7 @@ operation_parameters_maximum_occurrences["patchWebPortalAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWebPortalAsync:::portalId"]=0
 operation_parameters_maximum_occurrences["patchWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebPortalAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebPortalAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebPortalAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["searchWebPortalAsync:::domain"]=0
 operation_parameters_maximum_occurrences["searchWebPortalAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["searchWebPortalAsync:::x-api-version"]=0
@@ -874,6 +930,7 @@ operation_parameters_maximum_occurrences["updateThemesAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["countWebComponentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebComponentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebComponentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebComponentsAsync:::WebComponentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebComponentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebComponentAsync:::WebComponentCreateDto"]=0
 operation_parameters_maximum_occurrences["createWebComponentAsync:::api-version"]=0
@@ -889,6 +946,7 @@ operation_parameters_maximum_occurrences["getWebComponentByIdAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getWebComponentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebComponentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebComponentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebComponentsAsync:::WebComponentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateWebComponentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebComponentAsync:::webComponentId"]=0
 operation_parameters_maximum_occurrences["updateWebComponentAsync:::WebComponentUpdateDto"]=0
@@ -897,6 +955,7 @@ operation_parameters_maximum_occurrences["updateWebComponentAsync:::x-api-versio
 operation_parameters_maximum_occurrences["countWebContentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebContentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebContentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebContentsAsync:::WebContentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebContentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebContentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebContentAsync:::x-api-version"]=0
@@ -912,11 +971,12 @@ operation_parameters_maximum_occurrences["getWebContentByIdAsync:::x-api-version
 operation_parameters_maximum_occurrences["getWebContentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebContentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebContentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebContentsAsync:::WebContentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWebContentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWebContentAsync:::webContentId"]=0
 operation_parameters_maximum_occurrences["patchWebContentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebContentAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebContentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebContentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::webContentId"]=0
 operation_parameters_maximum_occurrences["updateWebContentAsync:::api-version"]=0
@@ -925,6 +985,7 @@ operation_parameters_maximum_occurrences["updateWebContentAsync:::WebContentUpda
 operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebPageCategoriesAsync:::WebPageCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebPageCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPageCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageCategoryAsync:::x-api-version"]=0
@@ -936,6 +997,7 @@ operation_parameters_maximum_occurrences["deleteWebPageCategoryAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getWebPageCategoriesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebPageCategoriesAsync:::WebPageCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::webPageCategoryId"]=0
 operation_parameters_maximum_occurrences["getWebPageCategoryByIdAsync:::api-version"]=0
@@ -944,7 +1006,7 @@ operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::tenantId"]
 operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::webPageCategoryId"]=0
 operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebPageCategoryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::webPageCategoryId"]=0
 operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::api-version"]=0
@@ -953,6 +1015,7 @@ operation_parameters_maximum_occurrences["updateWebPageCategoryAsync:::WebPageCa
 operation_parameters_maximum_occurrences["countWebPageTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebPageTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebPageTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebPageTagsAsync:::WebPageTagDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebPageTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPageTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageTagAsync:::x-api-version"]=0
@@ -968,11 +1031,12 @@ operation_parameters_maximum_occurrences["getWebPageTagByIdAsync:::x-api-version
 operation_parameters_maximum_occurrences["getWebPageTagsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPageTagsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPageTagsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebPageTagsAsync:::WebPageTagDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWebPageTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWebPageTagAsync:::webPageTagId"]=0
 operation_parameters_maximum_occurrences["patchWebPageTagAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebPageTagAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebPageTagAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebPageTagAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateWebPageTagAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebPageTagAsync:::webPageTagId"]=0
 operation_parameters_maximum_occurrences["updateWebPageTagAsync:::api-version"]=0
@@ -981,6 +1045,7 @@ operation_parameters_maximum_occurrences["updateWebPageTagAsync:::WebPageTagUpda
 operation_parameters_maximum_occurrences["countWebPagesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebPagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebPagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebPagesAsync:::WebPageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebPageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebPageAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebPageAsync:::x-api-version"]=0
@@ -1002,9 +1067,11 @@ operation_parameters_maximum_occurrences["deleteWebPageAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getCategoriesByWebPageAsync:::webPageId"]=0
 operation_parameters_maximum_occurrences["getCategoriesByWebPageAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCategoriesByWebPageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCategoriesByWebPageAsync:::WebPageCategoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTagsByWebPageAsync:::webPageId"]=0
 operation_parameters_maximum_occurrences["getTagsByWebPageAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTagsByWebPageAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTagsByWebPageAsync:::WebPageTagDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWebPageByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPageByIdAsync:::webPageId"]=0
 operation_parameters_maximum_occurrences["getWebPageByIdAsync:::api-version"]=0
@@ -1012,11 +1079,12 @@ operation_parameters_maximum_occurrences["getWebPageByIdAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getWebPagesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebPagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebPagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebPagesAsync:::WebPageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWebPageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWebPageAsync:::webPageId"]=0
 operation_parameters_maximum_occurrences["patchWebPageAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebPageAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebPageAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebPageAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["relateWebPageToCategoryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["relateWebPageToCategoryAsync:::webPageId"]=0
 operation_parameters_maximum_occurrences["relateWebPageToCategoryAsync:::categoryId"]=0
@@ -1045,6 +1113,7 @@ operation_parameters_maximum_occurrences["updateWebPageAsync:::WebPageUpdateDto"
 operation_parameters_maximum_occurrences["countWebTemplatesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countWebTemplatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countWebTemplatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countWebTemplatesAsync:::WebTemplateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createWebTemplateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createWebTemplateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createWebTemplateAsync:::x-api-version"]=0
@@ -1060,11 +1129,12 @@ operation_parameters_maximum_occurrences["getWebTemplateByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getWebTemplatesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebTemplatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebTemplatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebTemplatesAsync:::WebTemplateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWebTemplateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWebTemplateAsync:::webTemplateId"]=0
 operation_parameters_maximum_occurrences["patchWebTemplateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebTemplateAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebTemplateAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebTemplateAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::webTemplateId"]=0
 operation_parameters_maximum_occurrences["updateWebTemplateAsync:::api-version"]=0
@@ -1085,14 +1155,16 @@ operation_parameters_maximum_occurrences["getWebsiteThemeByIdAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesAsync:::WebsiteThemeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebsiteThemesCountAsync:::WebsiteThemeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWebsiteThemeAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateWebsiteThemeAsync:::api-version"]=0
@@ -1106,18 +1178,22 @@ declare -A operation_parameters_collection_type
 operation_parameters_collection_type["countBlogPostsByAuthorAsync:::authorId"]=""
 operation_parameters_collection_type["countBlogPostsByAuthorAsync:::api-version"]=""
 operation_parameters_collection_type["countBlogPostsByAuthorAsync:::x-api-version"]=""
+operation_parameters_collection_type["countBlogPostsByAuthorAsync:::BlogPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBlogAuthorByIdAsync:::authorId"]=""
 operation_parameters_collection_type["getBlogAuthorByIdAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogAuthorByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getBlogAuthorsAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlogAuthorsAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogAuthorsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlogAuthorsAsync:::BlogAuthorDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBlogPostsByAuthorAsync:::authorId"]=""
 operation_parameters_collection_type["getBlogPostsByAuthorAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogPostsByAuthorAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlogPostsByAuthorAsync:::BlogPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countBlogPostCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["countBlogPostCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["countBlogPostCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countBlogPostCategoriesAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createBlogPostCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["createBlogPostCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["createBlogPostCategoryAsync:::x-api-version"]=""
@@ -1129,6 +1205,7 @@ operation_parameters_collection_type["deleteBlogPostCategoryAsync:::x-api-versio
 operation_parameters_collection_type["getBlogPostCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlogPostCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogPostCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlogPostCategoriesAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::blogPostCategoryId"]=""
 operation_parameters_collection_type["getBlogPostCategoryByIdAsync:::api-version"]=""
@@ -1137,7 +1214,7 @@ operation_parameters_collection_type["patchBlogPostCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchBlogPostCategoryAsync:::blogPostCategoryId"]=""
 operation_parameters_collection_type["patchBlogPostCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["patchBlogPostCategoryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchBlogPostCategoryAsync:::Operation"]=
+operation_parameters_collection_type["patchBlogPostCategoryAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::blogPostCategoryId"]=""
 operation_parameters_collection_type["updateBlogPostCategoryAsync:::api-version"]=""
@@ -1146,6 +1223,7 @@ operation_parameters_collection_type["updateBlogPostCategoryAsync:::BlogPostCate
 operation_parameters_collection_type["countBlogPostTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["countBlogPostTagsAsync:::api-version"]=""
 operation_parameters_collection_type["countBlogPostTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countBlogPostTagsAsync:::BlogPostTagDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createBlogPostTagAsync:::tenantId"]=""
 operation_parameters_collection_type["createBlogPostTagAsync:::api-version"]=""
 operation_parameters_collection_type["createBlogPostTagAsync:::x-api-version"]=""
@@ -1161,11 +1239,12 @@ operation_parameters_collection_type["getBlogPostTagByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getBlogPostTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["getBlogPostTagsAsync:::api-version"]=""
 operation_parameters_collection_type["getBlogPostTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBlogPostTagsAsync:::BlogPostTagDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchBlogPostTagAsync:::tenantId"]=""
 operation_parameters_collection_type["patchBlogPostTagAsync:::blogPostTagId"]=""
 operation_parameters_collection_type["patchBlogPostTagAsync:::api-version"]=""
 operation_parameters_collection_type["patchBlogPostTagAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchBlogPostTagAsync:::Operation"]=
+operation_parameters_collection_type["patchBlogPostTagAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateBlogPostTagAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBlogPostTagAsync:::blogPostTagId"]=""
 operation_parameters_collection_type["updateBlogPostTagAsync:::api-version"]=""
@@ -1189,15 +1268,21 @@ operation_parameters_collection_type["deleteCommentFromBlogPostAsync:::blogPostI
 operation_parameters_collection_type["deleteCommentFromBlogPostAsync:::commentId"]=""
 operation_parameters_collection_type["getBlogPostByIdAsync:::blogPostId"]=""
 operation_parameters_collection_type["getBlogPostsAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlogPostsAsync:::BlogPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBlogPostsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getBlogPostsCountAsync:::BlogPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCategoriesForBlogPostAsync:::blogPostId"]=""
+operation_parameters_collection_type["getCategoriesForBlogPostAsync:::BlogPostCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCommentsForBlogPostAsync:::blogPostId"]=""
+operation_parameters_collection_type["getCommentsForBlogPostAsync:::BlogPostCommentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRepliesForCommentAsync:::commentId"]=""
 operation_parameters_collection_type["getRepliesForCommentAsync:::blogPostId"]=""
+operation_parameters_collection_type["getRepliesForCommentAsync:::BlogPostCommentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTagsForBlogPostAsync:::blogPostId"]=""
+operation_parameters_collection_type["getTagsForBlogPostAsync:::BlogPostTagDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchBlogPostAsync:::tenantId"]=""
 operation_parameters_collection_type["patchBlogPostAsync:::blogPostId"]=""
-operation_parameters_collection_type["patchBlogPostAsync:::Operation"]=
+operation_parameters_collection_type["patchBlogPostAsync:::PatchOperation"]=
 operation_parameters_collection_type["relateCategoryToBlogPostAsync:::tenantId"]=""
 operation_parameters_collection_type["relateCategoryToBlogPostAsync:::blogPostId"]=""
 operation_parameters_collection_type["relateCategoryToBlogPostAsync:::categoryId"]=""
@@ -1232,9 +1317,11 @@ operation_parameters_collection_type["getBusinessDomainByIdAsync:::x-api-version
 operation_parameters_collection_type["getBusinessDomainsAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessDomainsAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessDomainsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessDomainsAsync:::BusinessDomainDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessDomainsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessDomainsCountAsync:::BusinessDomainDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateBusinessDomainAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBusinessDomainAsync:::businessDomainId"]=""
 operation_parameters_collection_type["updateBusinessDomainAsync:::BusinessDomainUpdateDto"]=""
@@ -1248,7 +1335,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -1265,6 +1351,7 @@ operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]
 operation_parameters_collection_type["countLocalizationStringsAsync:::tenantId"]=""
 operation_parameters_collection_type["countLocalizationStringsAsync:::api-version"]=""
 operation_parameters_collection_type["countLocalizationStringsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countLocalizationStringsAsync:::LocalizationStringDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createLocalizationStringAsync:::tenantId"]=""
 operation_parameters_collection_type["createLocalizationStringAsync:::LocalizationStringCreateDto"]=""
 operation_parameters_collection_type["createLocalizationStringAsync:::api-version"]=""
@@ -1280,6 +1367,7 @@ operation_parameters_collection_type["getLocalizationStringByIdAsync:::x-api-ver
 operation_parameters_collection_type["getLocalizationStringsAsync:::tenantId"]=""
 operation_parameters_collection_type["getLocalizationStringsAsync:::api-version"]=""
 operation_parameters_collection_type["getLocalizationStringsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocalizationStringsAsync:::LocalizationStringDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateLocalizationStringAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLocalizationStringAsync:::localizationStringId"]=""
 operation_parameters_collection_type["updateLocalizationStringAsync:::LocalizationStringUpdateDto"]=""
@@ -1288,6 +1376,7 @@ operation_parameters_collection_type["updateLocalizationStringAsync:::x-api-vers
 operation_parameters_collection_type["countMenuContextsAsync:::tenantId"]=""
 operation_parameters_collection_type["countMenuContextsAsync:::api-version"]=""
 operation_parameters_collection_type["countMenuContextsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countMenuContextsAsync:::MenuContextDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createMenuContextAsync:::tenantId"]=""
 operation_parameters_collection_type["createMenuContextAsync:::MenuContextCreateDto"]=""
 operation_parameters_collection_type["createMenuContextAsync:::api-version"]=""
@@ -1303,6 +1392,7 @@ operation_parameters_collection_type["getMenuContextByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getMenuContextsAsync:::tenantId"]=""
 operation_parameters_collection_type["getMenuContextsAsync:::api-version"]=""
 operation_parameters_collection_type["getMenuContextsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMenuContextsAsync:::MenuContextDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateMenuContextAsync:::tenantId"]=""
 operation_parameters_collection_type["updateMenuContextAsync:::menuContextId"]=""
 operation_parameters_collection_type["updateMenuContextAsync:::MenuContextUpdateDto"]=""
@@ -1316,6 +1406,7 @@ operation_parameters_collection_type["bindWebPortalDomainAsync:::x-api-version"]
 operation_parameters_collection_type["countPortalsAsync:::tenantId"]=""
 operation_parameters_collection_type["countPortalsAsync:::api-version"]=""
 operation_parameters_collection_type["countPortalsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countPortalsAsync:::WebPortalDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebPortalAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPortalAsync:::x-api-version"]=""
@@ -1331,6 +1422,7 @@ operation_parameters_collection_type["getCurrentWebPortalOptionsAsync:::x-api-ve
 operation_parameters_collection_type["getPortalsAsync:::tenantId"]=""
 operation_parameters_collection_type["getPortalsAsync:::api-version"]=""
 operation_parameters_collection_type["getPortalsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortalsAsync:::WebPortalDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRootWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["getRootWebPortalAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebPortalByIdAsync:::portalId"]=""
@@ -1352,7 +1444,7 @@ operation_parameters_collection_type["patchWebPortalAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebPortalAsync:::portalId"]=""
 operation_parameters_collection_type["patchWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebPortalAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebPortalAsync:::Operation"]=
+operation_parameters_collection_type["patchWebPortalAsync:::PatchOperation"]=
 operation_parameters_collection_type["searchWebPortalAsync:::domain"]=""
 operation_parameters_collection_type["searchWebPortalAsync:::api-version"]=""
 operation_parameters_collection_type["searchWebPortalAsync:::x-api-version"]=""
@@ -1376,6 +1468,7 @@ operation_parameters_collection_type["updateThemesAsync:::x-api-version"]=""
 operation_parameters_collection_type["countWebComponentsAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebComponentsAsync:::api-version"]=""
 operation_parameters_collection_type["countWebComponentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebComponentsAsync:::WebComponentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebComponentAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebComponentAsync:::WebComponentCreateDto"]=""
 operation_parameters_collection_type["createWebComponentAsync:::api-version"]=""
@@ -1391,6 +1484,7 @@ operation_parameters_collection_type["getWebComponentByIdAsync:::x-api-version"]
 operation_parameters_collection_type["getWebComponentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebComponentsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebComponentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebComponentsAsync:::WebComponentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateWebComponentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebComponentAsync:::webComponentId"]=""
 operation_parameters_collection_type["updateWebComponentAsync:::WebComponentUpdateDto"]=""
@@ -1399,6 +1493,7 @@ operation_parameters_collection_type["updateWebComponentAsync:::x-api-version"]=
 operation_parameters_collection_type["countWebContentsAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebContentsAsync:::api-version"]=""
 operation_parameters_collection_type["countWebContentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebContentsAsync:::WebContentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebContentAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebContentAsync:::api-version"]=""
 operation_parameters_collection_type["createWebContentAsync:::x-api-version"]=""
@@ -1414,11 +1509,12 @@ operation_parameters_collection_type["getWebContentByIdAsync:::x-api-version"]="
 operation_parameters_collection_type["getWebContentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebContentsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebContentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebContentsAsync:::WebContentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWebContentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebContentAsync:::webContentId"]=""
 operation_parameters_collection_type["patchWebContentAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebContentAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebContentAsync:::Operation"]=
+operation_parameters_collection_type["patchWebContentAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateWebContentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebContentAsync:::webContentId"]=""
 operation_parameters_collection_type["updateWebContentAsync:::api-version"]=""
@@ -1427,6 +1523,7 @@ operation_parameters_collection_type["updateWebContentAsync:::WebContentUpdateDt
 operation_parameters_collection_type["countWebPageCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebPageCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["countWebPageCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebPageCategoriesAsync:::WebPageCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebPageCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPageCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPageCategoryAsync:::x-api-version"]=""
@@ -1438,6 +1535,7 @@ operation_parameters_collection_type["deleteWebPageCategoryAsync:::x-api-version
 operation_parameters_collection_type["getWebPageCategoriesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPageCategoriesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPageCategoriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebPageCategoriesAsync:::WebPageCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWebPageCategoryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPageCategoryByIdAsync:::webPageCategoryId"]=""
 operation_parameters_collection_type["getWebPageCategoryByIdAsync:::api-version"]=""
@@ -1446,7 +1544,7 @@ operation_parameters_collection_type["patchWebPageCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebPageCategoryAsync:::webPageCategoryId"]=""
 operation_parameters_collection_type["patchWebPageCategoryAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebPageCategoryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebPageCategoryAsync:::Operation"]=
+operation_parameters_collection_type["patchWebPageCategoryAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateWebPageCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebPageCategoryAsync:::webPageCategoryId"]=""
 operation_parameters_collection_type["updateWebPageCategoryAsync:::api-version"]=""
@@ -1455,6 +1553,7 @@ operation_parameters_collection_type["updateWebPageCategoryAsync:::WebPageCatego
 operation_parameters_collection_type["countWebPageTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebPageTagsAsync:::api-version"]=""
 operation_parameters_collection_type["countWebPageTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebPageTagsAsync:::WebPageTagDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebPageTagAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPageTagAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPageTagAsync:::x-api-version"]=""
@@ -1470,11 +1569,12 @@ operation_parameters_collection_type["getWebPageTagByIdAsync:::x-api-version"]="
 operation_parameters_collection_type["getWebPageTagsAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPageTagsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPageTagsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebPageTagsAsync:::WebPageTagDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWebPageTagAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebPageTagAsync:::webPageTagId"]=""
 operation_parameters_collection_type["patchWebPageTagAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebPageTagAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebPageTagAsync:::Operation"]=
+operation_parameters_collection_type["patchWebPageTagAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateWebPageTagAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebPageTagAsync:::webPageTagId"]=""
 operation_parameters_collection_type["updateWebPageTagAsync:::api-version"]=""
@@ -1483,6 +1583,7 @@ operation_parameters_collection_type["updateWebPageTagAsync:::WebPageTagUpdateDt
 operation_parameters_collection_type["countWebPagesAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebPagesAsync:::api-version"]=""
 operation_parameters_collection_type["countWebPagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebPagesAsync:::WebPageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebPageAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebPageAsync:::api-version"]=""
 operation_parameters_collection_type["createWebPageAsync:::x-api-version"]=""
@@ -1504,9 +1605,11 @@ operation_parameters_collection_type["deleteWebPageAsync:::x-api-version"]=""
 operation_parameters_collection_type["getCategoriesByWebPageAsync:::webPageId"]=""
 operation_parameters_collection_type["getCategoriesByWebPageAsync:::api-version"]=""
 operation_parameters_collection_type["getCategoriesByWebPageAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCategoriesByWebPageAsync:::WebPageCategoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTagsByWebPageAsync:::webPageId"]=""
 operation_parameters_collection_type["getTagsByWebPageAsync:::api-version"]=""
 operation_parameters_collection_type["getTagsByWebPageAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTagsByWebPageAsync:::WebPageTagDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWebPageByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPageByIdAsync:::webPageId"]=""
 operation_parameters_collection_type["getWebPageByIdAsync:::api-version"]=""
@@ -1514,11 +1617,12 @@ operation_parameters_collection_type["getWebPageByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWebPagesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebPagesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebPagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebPagesAsync:::WebPageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWebPageAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebPageAsync:::webPageId"]=""
 operation_parameters_collection_type["patchWebPageAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebPageAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebPageAsync:::Operation"]=
+operation_parameters_collection_type["patchWebPageAsync:::PatchOperation"]=
 operation_parameters_collection_type["relateWebPageToCategoryAsync:::tenantId"]=""
 operation_parameters_collection_type["relateWebPageToCategoryAsync:::webPageId"]=""
 operation_parameters_collection_type["relateWebPageToCategoryAsync:::categoryId"]=""
@@ -1547,6 +1651,7 @@ operation_parameters_collection_type["updateWebPageAsync:::WebPageUpdateDto"]=""
 operation_parameters_collection_type["countWebTemplatesAsync:::tenantId"]=""
 operation_parameters_collection_type["countWebTemplatesAsync:::api-version"]=""
 operation_parameters_collection_type["countWebTemplatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countWebTemplatesAsync:::WebTemplateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createWebTemplateAsync:::tenantId"]=""
 operation_parameters_collection_type["createWebTemplateAsync:::api-version"]=""
 operation_parameters_collection_type["createWebTemplateAsync:::x-api-version"]=""
@@ -1562,11 +1667,12 @@ operation_parameters_collection_type["getWebTemplateByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getWebTemplatesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebTemplatesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebTemplatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebTemplatesAsync:::WebTemplateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWebTemplateAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebTemplateAsync:::webTemplateId"]=""
 operation_parameters_collection_type["patchWebTemplateAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebTemplateAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebTemplateAsync:::Operation"]=
+operation_parameters_collection_type["patchWebTemplateAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateWebTemplateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebTemplateAsync:::webTemplateId"]=""
 operation_parameters_collection_type["updateWebTemplateAsync:::api-version"]=""
@@ -1587,14 +1693,16 @@ operation_parameters_collection_type["getWebsiteThemeByIdAsync:::x-api-version"]
 operation_parameters_collection_type["getWebsiteThemesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebsiteThemesAsync:::api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebsiteThemesAsync:::WebsiteThemeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWebsiteThemesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebsiteThemesCountAsync:::WebsiteThemeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWebsiteThemeAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWebsiteThemeAsync:::id"]=""
 operation_parameters_collection_type["patchWebsiteThemeAsync:::api-version"]=""
 operation_parameters_collection_type["patchWebsiteThemeAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWebsiteThemeAsync:::Operation"]=
+operation_parameters_collection_type["patchWebsiteThemeAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateWebsiteThemeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWebsiteThemeAsync:::id"]=""
 operation_parameters_collection_type["updateWebsiteThemeAsync:::api-version"]=""
@@ -2062,7 +2170,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -2287,6 +2394,8 @@ print_countBlogPostsByAuthorAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2334,6 +2443,8 @@ print_getBlogAuthorsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2357,6 +2468,8 @@ print_getBlogPostsByAuthorAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2381,6 +2494,8 @@ print_countBlogPostCategoriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2462,6 +2577,8 @@ print_getBlogPostCategoriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2573,6 +2690,8 @@ print_countBlogPostTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2681,6 +2800,8 @@ print_getBlogPostTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2936,6 +3057,8 @@ print_getBlogPostsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2959,6 +3082,8 @@ print_getBlogPostsCountAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2981,6 +3106,8 @@ print_getCategoriesForBlogPostAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}blogPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3003,6 +3130,8 @@ print_getCommentsForBlogPostAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}blogPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3026,6 +3155,8 @@ print_getRepliesForCommentAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}blogPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3048,6 +3179,8 @@ print_getTagsForBlogPostAsync_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}blogPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: blogPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3337,6 +3470,8 @@ print_getBusinessDomainsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3363,6 +3498,8 @@ print_getBusinessDomainsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3484,22 +3621,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -3757,6 +3878,8 @@ print_countLocalizationStringsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3865,6 +3988,8 @@ print_getLocalizationStringsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3920,6 +4045,8 @@ print_countMenuContextsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4028,6 +4155,8 @@ print_getMenuContextsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4111,6 +4240,8 @@ print_countPortalsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4240,6 +4371,8 @@ print_getPortalsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4579,6 +4712,8 @@ print_countWebComponentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4687,6 +4822,8 @@ print_getWebComponentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4742,6 +4879,8 @@ print_countWebContentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4850,6 +4989,8 @@ print_getWebContentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4934,6 +5075,8 @@ print_countWebPageCategoriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5015,6 +5158,8 @@ print_getWebPageCategoriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5126,6 +5271,8 @@ print_countWebPageTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5234,6 +5381,8 @@ print_getWebPageTagsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5318,6 +5467,8 @@ print_countWebPagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5446,6 +5597,8 @@ print_getCategoriesByWebPageAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5469,6 +5622,8 @@ print_getTagsByWebPageAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5518,6 +5673,8 @@ print_getWebPagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5700,6 +5857,8 @@ print_countWebTemplatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5808,6 +5967,8 @@ print_getWebTemplatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5974,6 +6135,8 @@ print_getWebsiteThemesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5998,6 +6161,8 @@ print_getWebsiteThemesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6094,10 +6259,50 @@ call_countBlogPostsByAuthorAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6166,10 +6371,50 @@ call_getBlogAuthorsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6202,10 +6447,50 @@ call_getBlogPostsByAuthorAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6238,10 +6523,50 @@ call_countBlogPostCategoriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6386,10 +6711,50 @@ call_getBlogPostCategoriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6610,10 +6975,50 @@ call_countBlogPostTagsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6794,10 +7199,50 @@ call_getBlogPostTagsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7394,10 +7839,50 @@ call_getBlogPostsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7430,10 +7915,50 @@ call_getBlogPostsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7466,10 +7991,50 @@ call_getCategoriesForBlogPostAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7502,10 +8067,50 @@ call_getCommentsForBlogPostAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7538,10 +8143,50 @@ call_getRepliesForCommentAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7574,10 +8219,50 @@ call_getTagsForBlogPostAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8130,10 +8815,50 @@ call_getBusinessDomainsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8166,10 +8891,50 @@ call_getBusinessDomainsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8429,42 +9194,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -9301,10 +10030,50 @@ call_countLocalizationStringsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9485,10 +10254,50 @@ call_getLocalizationStringsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9597,10 +10406,50 @@ call_countMenuContextsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9781,10 +10630,50 @@ call_getMenuContextsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9929,10 +10818,50 @@ call_countPortalsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10149,10 +11078,50 @@ call_getPortalsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10737,10 +11706,50 @@ call_countWebComponentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10921,10 +11930,50 @@ call_getWebComponentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11033,10 +12082,50 @@ call_countWebContentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11217,10 +12306,50 @@ call_getWebContentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11405,10 +12534,50 @@ call_countWebPageCategoriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11553,10 +12722,50 @@ call_getWebPageCategoriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11777,10 +12986,50 @@ call_countWebPageTagsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11961,10 +13210,50 @@ call_getWebPageTagsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12149,10 +13438,50 @@ call_countWebPagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12449,10 +13778,50 @@ call_getCategoriesByWebPageAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12485,10 +13854,50 @@ call_getTagsByWebPageAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12557,10 +13966,50 @@ call_getWebPagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12889,10 +14338,50 @@ call_countWebTemplatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13073,10 +14562,50 @@ call_getWebTemplatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13409,10 +14938,50 @@ call_getWebsiteThemesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13445,10 +15014,50 @@ call_getWebsiteThemesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13847,9 +15456,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -14384,9 +15990,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

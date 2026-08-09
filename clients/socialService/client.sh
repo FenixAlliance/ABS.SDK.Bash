@@ -119,18 +119,20 @@ operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::social
 operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesAsync:::CurriculumExperienceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::curriculumId"]=1
 operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumExperiencesCountAsync:::CurriculumExperienceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::curriculumId"]=1
 operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::experienceId"]=1
 operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchCurriculumExperienceAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::curriculumId"]=1
 operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::experienceId"]=1
 operation_parameters_minimum_occurrences["updateCurriculumExperienceAsync:::socialProfileId"]=1
@@ -157,16 +159,18 @@ operation_parameters_minimum_occurrences["getCurriculumsAsync:::socialProfileId"
 operation_parameters_minimum_occurrences["getCurriculumsAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getCurriculumsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurriculumsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumsAsync:::CurriculumDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getCurriculumsCountAsync:::CurriculumDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchCurriculumAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["patchCurriculumAsync:::curriculumId"]=1
 operation_parameters_minimum_occurrences["patchCurriculumAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["patchCurriculumAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchCurriculumAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchCurriculumAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchCurriculumAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateCurriculumAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateCurriculumAsync:::curriculumId"]=1
 operation_parameters_minimum_occurrences["updateCurriculumAsync:::tenantId"]=0
@@ -205,14 +209,16 @@ operation_parameters_minimum_occurrences["getSkillByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSkillsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSkillsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSkillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSkillsAsync:::SkillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSkillsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSkillsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSkillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSkillsCountAsync:::SkillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSkillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSkillAsync:::skillId"]=1
 operation_parameters_minimum_occurrences["patchSkillAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSkillAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSkillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSkillAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSkillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSkillAsync:::skillId"]=1
 operation_parameters_minimum_occurrences["updateSkillAsync:::api-version"]=0
@@ -231,6 +237,7 @@ operation_parameters_minimum_occurrences["deleteFeedPostAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getFeedNotifications:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFeedNotifications:::api-version"]=0
 operation_parameters_minimum_occurrences["getFeedNotifications:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFeedNotifications:::SocialFeedDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getFeedPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFeedPostAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["getFeedPostAsync:::feedPostId"]=1
@@ -240,10 +247,12 @@ operation_parameters_minimum_occurrences["getFeedPostsAsync:::socialProfileId"]=
 operation_parameters_minimum_occurrences["getFeedPostsAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["getFeedPostsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFeedPostsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFeedPostsAsync:::SocialFeedPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getFeedPostsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFeedPostsCountAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["getFeedPostsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFeedPostsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFeedPostsCountAsync:::SocialFeedPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getNotificationAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getNotificationAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["getNotificationAsync:::api-version"]=0
@@ -251,12 +260,13 @@ operation_parameters_minimum_occurrences["getNotificationAsync:::x-api-version"]
 operation_parameters_minimum_occurrences["getNotificationsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getNotificationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNotificationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNotificationsCountAsync:::SocialFeedDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchFeedPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["patchFeedPostAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["patchFeedPostAsync:::feedPostId"]=1
 operation_parameters_minimum_occurrences["patchFeedPostAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchFeedPostAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchFeedPostAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchFeedPostAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateFeedPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateFeedPostAsync:::socialFeedId"]=1
 operation_parameters_minimum_occurrences["updateFeedPostAsync:::feedPostId"]=1
@@ -266,6 +276,7 @@ operation_parameters_minimum_occurrences["updateFeedPostAsync:::SocialFeedPostUp
 operation_parameters_minimum_occurrences["countSocialGroupsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["countSocialGroupsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countSocialGroupsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countSocialGroupsAsync:::SocialGroupDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["createSocialGroupAsync:::api-version"]=0
@@ -283,18 +294,25 @@ operation_parameters_minimum_occurrences["getSocialGroupByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialGroupsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialGroupsAsync:::SocialGroupDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSocialGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["patchSocialGroupAsync:::socialGroupId"]=1
 operation_parameters_minimum_occurrences["patchSocialGroupAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSocialGroupAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSocialGroupAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSocialGroupAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::socialGroupId"]=1
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateSocialGroupAsync:::SocialGroupUpdateDto"]=0
+operation_parameters_minimum_occurrences["createSocialCommentReactionAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["createSocialCommentReactionAsync:::commentId"]=1
+operation_parameters_minimum_occurrences["createSocialCommentReactionAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["createSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["createSocialCommentReactionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["createSocialCommentReactionAsync:::SocialReactionCreateDto"]=0
 operation_parameters_minimum_occurrences["createSocialPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["createSocialPostAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createSocialPostAsync:::x-api-version"]=0
@@ -314,6 +332,12 @@ operation_parameters_minimum_occurrences["createSocialPostReactionAsync:::social
 operation_parameters_minimum_occurrences["createSocialPostReactionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createSocialPostReactionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createSocialPostReactionAsync:::SocialReactionCreateDto"]=0
+operation_parameters_minimum_occurrences["deleteSocialCommentReactionAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["deleteSocialCommentReactionAsync:::commentId"]=1
+operation_parameters_minimum_occurrences["deleteSocialCommentReactionAsync:::reactionId"]=1
+operation_parameters_minimum_occurrences["deleteSocialCommentReactionAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["deleteSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["deleteSocialCommentReactionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["deleteSocialPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["deleteSocialPostAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["deleteSocialPostAsync:::api-version"]=0
@@ -333,6 +357,23 @@ operation_parameters_minimum_occurrences["deleteSocialPostReactionAsync:::social
 operation_parameters_minimum_occurrences["deleteSocialPostReactionAsync:::reactionId"]=1
 operation_parameters_minimum_occurrences["deleteSocialPostReactionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteSocialPostReactionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionAsync:::commentId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionAsync:::reactionId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionsAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionsAsync:::commentId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionsAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionsAsync:::SocialCommentReactionDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionsCountAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionsCountAsync:::commentId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionsCountAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getSocialCommentReactionsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialCommentReactionsCountAsync:::SocialCommentReactionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["getSocialPostAsync:::api-version"]=0
@@ -344,9 +385,11 @@ operation_parameters_minimum_occurrences["getSocialPostAttachmentAsync:::x-api-v
 operation_parameters_minimum_occurrences["getSocialPostAttachmentsAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["getSocialPostAttachmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostAttachmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostAttachmentsAsync:::SocialPostAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostAttachmentsCountAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["getSocialPostAttachmentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostAttachmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostAttachmentsCountAsync:::SocialPostAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostCommentAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["getSocialPostCommentAsync:::commentId"]=1
@@ -354,12 +397,16 @@ operation_parameters_minimum_occurrences["getSocialPostCommentAsync:::api-versio
 operation_parameters_minimum_occurrences["getSocialPostCommentAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostCommentsAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["getSocialPostCommentsAsync:::parentCommentId"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostCommentsAsync:::SocialPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostCommentsCountAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["getSocialPostCommentsCountAsync:::parentCommentId"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostCommentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostCommentsCountAsync:::SocialPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostReactionAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["getSocialPostReactionAsync:::reactionId"]=1
 operation_parameters_minimum_occurrences["getSocialPostReactionAsync:::api-version"]=0
@@ -368,21 +415,32 @@ operation_parameters_minimum_occurrences["getSocialPostReactionsAsync:::socialPo
 operation_parameters_minimum_occurrences["getSocialPostReactionsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostReactionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostReactionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostReactionsAsync:::SocialPostReactionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostReactionsCountAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["getSocialPostReactionsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostReactionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostReactionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostReactionsCountAsync:::SocialPostReactionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostsAsync:::SocialPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialPostsCountAsync:::SocialPostDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSocialPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["patchSocialPostAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["patchSocialPostAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSocialPostAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSocialPostAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSocialPostAsync:::PatchOperation"]=0
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::commentId"]=1
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::reactionId"]=1
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateSocialCommentReactionAsync:::SocialReactionUpdateDto"]=0
 operation_parameters_minimum_occurrences["updateSocialPostAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["updateSocialPostAsync:::socialPostId"]=1
 operation_parameters_minimum_occurrences["updateSocialPostAsync:::api-version"]=0
@@ -406,30 +464,43 @@ operation_parameters_minimum_occurrences["updateSocialPostReactionAsync:::reacti
 operation_parameters_minimum_occurrences["updateSocialPostReactionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSocialPostReactionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateSocialPostReactionAsync:::SocialReactionUpdateDto"]=0
+operation_parameters_minimum_occurrences["uploadSocialPostImageAttachmentAsync:::socialPostId"]=1
+operation_parameters_minimum_occurrences["uploadSocialPostImageAttachmentAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["uploadSocialPostImageAttachmentAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["uploadSocialPostImageAttachmentAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["uploadSocialPostImageAttachmentAsync:::file"]=0
 operation_parameters_minimum_occurrences["countConversationsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countConversationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countConversationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countConversationsAsync:::ConversationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countFollowedProfilesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countFollowedProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countFollowedProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countFollowedProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countFollowerProfilesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countFollowerProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countFollowerProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countFollowerProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countFollowersAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countFollowersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countFollowersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countFollowersAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countFollowsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countFollowsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countFollowsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countFollowsAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countMessagesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countMessagesAsync:::conversationId"]=1
 operation_parameters_minimum_occurrences["countMessagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countMessagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countMessagesAsync:::PrivateMessageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countNotificationsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["countNotificationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countNotificationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["countSocialProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["countSocialProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["countSocialProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createConversationAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["createConversationAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createConversationAsync:::x-api-version"]=0
@@ -455,22 +526,28 @@ operation_parameters_minimum_occurrences["followExistsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getConversationsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getConversationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getConversationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getConversationsAsync:::ConversationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getFollowedProfilesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFollowedProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFollowedProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFollowedProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getFollowerProfilesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFollowerProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFollowerProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFollowerProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getFollowersAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFollowersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFollowersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFollowersAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getFollowsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getFollowsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFollowsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFollowsAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getMessagesAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getMessagesAsync:::conversationId"]=1
 operation_parameters_minimum_occurrences["getMessagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getMessagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getMessagesAsync:::PrivateMessageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getNotificationByIdAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getNotificationByIdAsync:::notificationId"]=1
 operation_parameters_minimum_occurrences["getNotificationByIdAsync:::api-version"]=0
@@ -478,11 +555,17 @@ operation_parameters_minimum_occurrences["getNotificationByIdAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getNotificationsAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getNotificationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getNotificationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getOrCreateDirectConversationAsync:::socialProfileId"]=1
+operation_parameters_minimum_occurrences["getOrCreateDirectConversationAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getOrCreateDirectConversationAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOrCreateDirectConversationAsync:::body"]=0
 operation_parameters_minimum_occurrences["getSocialProfileAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["getSocialProfileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialProfileAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSocialProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSocialProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSocialProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["unfollowAsync:::socialProfileId"]=1
 operation_parameters_minimum_occurrences["unfollowAsync:::followedSocialProfileId"]=1
 operation_parameters_minimum_occurrences["unfollowAsync:::api-version"]=0
@@ -524,18 +607,20 @@ operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::social
 operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesAsync:::CurriculumExperienceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::curriculumId"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumExperiencesCountAsync:::CurriculumExperienceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::curriculumId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::experienceId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchCurriculumExperienceAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::curriculumId"]=0
 operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::experienceId"]=0
 operation_parameters_maximum_occurrences["updateCurriculumExperienceAsync:::socialProfileId"]=0
@@ -562,16 +647,18 @@ operation_parameters_maximum_occurrences["getCurriculumsAsync:::socialProfileId"
 operation_parameters_maximum_occurrences["getCurriculumsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCurriculumsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurriculumsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumsAsync:::CurriculumDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getCurriculumsCountAsync:::CurriculumDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchCurriculumAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumAsync:::curriculumId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchCurriculumAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchCurriculumAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchCurriculumAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchCurriculumAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateCurriculumAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateCurriculumAsync:::curriculumId"]=0
 operation_parameters_maximum_occurrences["updateCurriculumAsync:::tenantId"]=0
@@ -610,14 +697,16 @@ operation_parameters_maximum_occurrences["getSkillByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSkillsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSkillsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSkillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSkillsAsync:::SkillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSkillsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSkillsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSkillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSkillsCountAsync:::SkillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSkillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSkillAsync:::skillId"]=0
 operation_parameters_maximum_occurrences["patchSkillAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSkillAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSkillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSkillAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSkillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSkillAsync:::skillId"]=0
 operation_parameters_maximum_occurrences["updateSkillAsync:::api-version"]=0
@@ -636,6 +725,7 @@ operation_parameters_maximum_occurrences["deleteFeedPostAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getFeedNotifications:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFeedNotifications:::api-version"]=0
 operation_parameters_maximum_occurrences["getFeedNotifications:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFeedNotifications:::SocialFeedDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getFeedPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFeedPostAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["getFeedPostAsync:::feedPostId"]=0
@@ -645,10 +735,12 @@ operation_parameters_maximum_occurrences["getFeedPostsAsync:::socialProfileId"]=
 operation_parameters_maximum_occurrences["getFeedPostsAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["getFeedPostsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFeedPostsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFeedPostsAsync:::SocialFeedPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getFeedPostsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFeedPostsCountAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["getFeedPostsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFeedPostsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFeedPostsCountAsync:::SocialFeedPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getNotificationAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getNotificationAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["getNotificationAsync:::api-version"]=0
@@ -656,12 +748,13 @@ operation_parameters_maximum_occurrences["getNotificationAsync:::x-api-version"]
 operation_parameters_maximum_occurrences["getNotificationsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getNotificationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNotificationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNotificationsCountAsync:::SocialFeedDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchFeedPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["patchFeedPostAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["patchFeedPostAsync:::feedPostId"]=0
 operation_parameters_maximum_occurrences["patchFeedPostAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchFeedPostAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchFeedPostAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchFeedPostAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateFeedPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateFeedPostAsync:::socialFeedId"]=0
 operation_parameters_maximum_occurrences["updateFeedPostAsync:::feedPostId"]=0
@@ -671,6 +764,7 @@ operation_parameters_maximum_occurrences["updateFeedPostAsync:::SocialFeedPostUp
 operation_parameters_maximum_occurrences["countSocialGroupsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["countSocialGroupsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countSocialGroupsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countSocialGroupsAsync:::SocialGroupDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["createSocialGroupAsync:::api-version"]=0
@@ -688,18 +782,25 @@ operation_parameters_maximum_occurrences["getSocialGroupByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialGroupsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialGroupsAsync:::SocialGroupDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSocialGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["patchSocialGroupAsync:::socialGroupId"]=0
 operation_parameters_maximum_occurrences["patchSocialGroupAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSocialGroupAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSocialGroupAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSocialGroupAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::socialGroupId"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateSocialGroupAsync:::SocialGroupUpdateDto"]=0
+operation_parameters_maximum_occurrences["createSocialCommentReactionAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["createSocialCommentReactionAsync:::commentId"]=0
+operation_parameters_maximum_occurrences["createSocialCommentReactionAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["createSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["createSocialCommentReactionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["createSocialCommentReactionAsync:::SocialReactionCreateDto"]=0
 operation_parameters_maximum_occurrences["createSocialPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["createSocialPostAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createSocialPostAsync:::x-api-version"]=0
@@ -719,6 +820,12 @@ operation_parameters_maximum_occurrences["createSocialPostReactionAsync:::social
 operation_parameters_maximum_occurrences["createSocialPostReactionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createSocialPostReactionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createSocialPostReactionAsync:::SocialReactionCreateDto"]=0
+operation_parameters_maximum_occurrences["deleteSocialCommentReactionAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["deleteSocialCommentReactionAsync:::commentId"]=0
+operation_parameters_maximum_occurrences["deleteSocialCommentReactionAsync:::reactionId"]=0
+operation_parameters_maximum_occurrences["deleteSocialCommentReactionAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["deleteSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["deleteSocialCommentReactionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["deleteSocialPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["deleteSocialPostAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["deleteSocialPostAsync:::api-version"]=0
@@ -738,6 +845,23 @@ operation_parameters_maximum_occurrences["deleteSocialPostReactionAsync:::social
 operation_parameters_maximum_occurrences["deleteSocialPostReactionAsync:::reactionId"]=0
 operation_parameters_maximum_occurrences["deleteSocialPostReactionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteSocialPostReactionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionAsync:::commentId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionAsync:::reactionId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsAsync:::commentId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsAsync:::SocialCommentReactionDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsCountAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsCountAsync:::commentId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsCountAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialCommentReactionsCountAsync:::SocialCommentReactionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["getSocialPostAsync:::api-version"]=0
@@ -749,9 +873,11 @@ operation_parameters_maximum_occurrences["getSocialPostAttachmentAsync:::x-api-v
 operation_parameters_maximum_occurrences["getSocialPostAttachmentsAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["getSocialPostAttachmentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostAttachmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostAttachmentsAsync:::SocialPostAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostAttachmentsCountAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["getSocialPostAttachmentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostAttachmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostAttachmentsCountAsync:::SocialPostAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentAsync:::commentId"]=0
@@ -759,12 +885,16 @@ operation_parameters_maximum_occurrences["getSocialPostCommentAsync:::api-versio
 operation_parameters_maximum_occurrences["getSocialPostCommentAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["getSocialPostCommentsAsync:::parentCommentId"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostCommentsAsync:::SocialPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsCountAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["getSocialPostCommentsCountAsync:::parentCommentId"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostCommentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostCommentsCountAsync:::SocialPostCommentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionAsync:::reactionId"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionAsync:::api-version"]=0
@@ -773,21 +903,32 @@ operation_parameters_maximum_occurrences["getSocialPostReactionsAsync:::socialPo
 operation_parameters_maximum_occurrences["getSocialPostReactionsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostReactionsAsync:::SocialPostReactionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionsCountAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostReactionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostReactionsCountAsync:::SocialPostReactionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostsAsync:::SocialPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialPostsCountAsync:::SocialPostDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSocialPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["patchSocialPostAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["patchSocialPostAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSocialPostAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSocialPostAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSocialPostAsync:::PatchOperation"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::commentId"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::reactionId"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateSocialCommentReactionAsync:::SocialReactionUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateSocialPostAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["updateSocialPostAsync:::socialPostId"]=0
 operation_parameters_maximum_occurrences["updateSocialPostAsync:::api-version"]=0
@@ -811,30 +952,43 @@ operation_parameters_maximum_occurrences["updateSocialPostReactionAsync:::reacti
 operation_parameters_maximum_occurrences["updateSocialPostReactionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSocialPostReactionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateSocialPostReactionAsync:::SocialReactionUpdateDto"]=0
+operation_parameters_maximum_occurrences["uploadSocialPostImageAttachmentAsync:::socialPostId"]=0
+operation_parameters_maximum_occurrences["uploadSocialPostImageAttachmentAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["uploadSocialPostImageAttachmentAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["uploadSocialPostImageAttachmentAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["uploadSocialPostImageAttachmentAsync:::file"]=0
 operation_parameters_maximum_occurrences["countConversationsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countConversationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countConversationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countConversationsAsync:::ConversationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countFollowedProfilesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countFollowedProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countFollowedProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countFollowedProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countFollowerProfilesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countFollowerProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countFollowerProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countFollowerProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countFollowersAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countFollowersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countFollowersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countFollowersAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countFollowsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countFollowsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countFollowsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countFollowsAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::conversationId"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countMessagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countMessagesAsync:::PrivateMessageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countNotificationsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["countNotificationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countNotificationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["countSocialProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["countSocialProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["countSocialProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createConversationAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["createConversationAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createConversationAsync:::x-api-version"]=0
@@ -860,22 +1014,28 @@ operation_parameters_maximum_occurrences["followExistsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getConversationsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getConversationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getConversationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getConversationsAsync:::ConversationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getFollowedProfilesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFollowedProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFollowedProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFollowedProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getFollowerProfilesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFollowerProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFollowerProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFollowerProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getFollowersAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFollowersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFollowersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFollowersAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getFollowsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getFollowsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFollowsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFollowsAsync:::FollowRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::conversationId"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getMessagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getMessagesAsync:::PrivateMessageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getNotificationByIdAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getNotificationByIdAsync:::notificationId"]=0
 operation_parameters_maximum_occurrences["getNotificationByIdAsync:::api-version"]=0
@@ -883,11 +1043,17 @@ operation_parameters_maximum_occurrences["getNotificationByIdAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getNotificationsAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getNotificationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getNotificationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getOrCreateDirectConversationAsync:::socialProfileId"]=0
+operation_parameters_maximum_occurrences["getOrCreateDirectConversationAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getOrCreateDirectConversationAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOrCreateDirectConversationAsync:::body"]=0
 operation_parameters_maximum_occurrences["getSocialProfileAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["getSocialProfileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialProfileAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSocialProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSocialProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSocialProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["unfollowAsync:::socialProfileId"]=0
 operation_parameters_maximum_occurrences["unfollowAsync:::followedSocialProfileId"]=0
 operation_parameters_maximum_occurrences["unfollowAsync:::api-version"]=0
@@ -926,18 +1092,20 @@ operation_parameters_collection_type["getCurriculumExperiencesAsync:::socialProf
 operation_parameters_collection_type["getCurriculumExperiencesAsync:::tenantId"]=""
 operation_parameters_collection_type["getCurriculumExperiencesAsync:::api-version"]=""
 operation_parameters_collection_type["getCurriculumExperiencesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumExperiencesAsync:::CurriculumExperienceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::curriculumId"]=""
 operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumExperiencesCountAsync:::CurriculumExperienceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchCurriculumExperienceAsync:::curriculumId"]=""
 operation_parameters_collection_type["patchCurriculumExperienceAsync:::experienceId"]=""
 operation_parameters_collection_type["patchCurriculumExperienceAsync:::socialProfileId"]=""
 operation_parameters_collection_type["patchCurriculumExperienceAsync:::tenantId"]=""
 operation_parameters_collection_type["patchCurriculumExperienceAsync:::api-version"]=""
 operation_parameters_collection_type["patchCurriculumExperienceAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchCurriculumExperienceAsync:::Operation"]=
+operation_parameters_collection_type["patchCurriculumExperienceAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateCurriculumExperienceAsync:::curriculumId"]=""
 operation_parameters_collection_type["updateCurriculumExperienceAsync:::experienceId"]=""
 operation_parameters_collection_type["updateCurriculumExperienceAsync:::socialProfileId"]=""
@@ -964,16 +1132,18 @@ operation_parameters_collection_type["getCurriculumsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getCurriculumsAsync:::tenantId"]=""
 operation_parameters_collection_type["getCurriculumsAsync:::api-version"]=""
 operation_parameters_collection_type["getCurriculumsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumsAsync:::CurriculumDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getCurriculumsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getCurriculumsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getCurriculumsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getCurriculumsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getCurriculumsCountAsync:::CurriculumDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchCurriculumAsync:::socialProfileId"]=""
 operation_parameters_collection_type["patchCurriculumAsync:::curriculumId"]=""
 operation_parameters_collection_type["patchCurriculumAsync:::tenantId"]=""
 operation_parameters_collection_type["patchCurriculumAsync:::api-version"]=""
 operation_parameters_collection_type["patchCurriculumAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchCurriculumAsync:::Operation"]=
+operation_parameters_collection_type["patchCurriculumAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateCurriculumAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateCurriculumAsync:::curriculumId"]=""
 operation_parameters_collection_type["updateCurriculumAsync:::tenantId"]=""
@@ -1012,14 +1182,16 @@ operation_parameters_collection_type["getSkillByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSkillsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSkillsAsync:::api-version"]=""
 operation_parameters_collection_type["getSkillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSkillsAsync:::SkillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSkillsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSkillsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSkillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSkillsCountAsync:::SkillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSkillAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSkillAsync:::skillId"]=""
 operation_parameters_collection_type["patchSkillAsync:::api-version"]=""
 operation_parameters_collection_type["patchSkillAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSkillAsync:::Operation"]=
+operation_parameters_collection_type["patchSkillAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSkillAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSkillAsync:::skillId"]=""
 operation_parameters_collection_type["updateSkillAsync:::api-version"]=""
@@ -1038,6 +1210,7 @@ operation_parameters_collection_type["deleteFeedPostAsync:::x-api-version"]=""
 operation_parameters_collection_type["getFeedNotifications:::socialProfileId"]=""
 operation_parameters_collection_type["getFeedNotifications:::api-version"]=""
 operation_parameters_collection_type["getFeedNotifications:::x-api-version"]=""
+operation_parameters_collection_type["getFeedNotifications:::SocialFeedDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getFeedPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFeedPostAsync:::socialFeedId"]=""
 operation_parameters_collection_type["getFeedPostAsync:::feedPostId"]=""
@@ -1047,10 +1220,12 @@ operation_parameters_collection_type["getFeedPostsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFeedPostsAsync:::socialFeedId"]=""
 operation_parameters_collection_type["getFeedPostsAsync:::api-version"]=""
 operation_parameters_collection_type["getFeedPostsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFeedPostsAsync:::SocialFeedPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getFeedPostsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFeedPostsCountAsync:::socialFeedId"]=""
 operation_parameters_collection_type["getFeedPostsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getFeedPostsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFeedPostsCountAsync:::SocialFeedPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getNotificationAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getNotificationAsync:::socialFeedId"]=""
 operation_parameters_collection_type["getNotificationAsync:::api-version"]=""
@@ -1058,12 +1233,13 @@ operation_parameters_collection_type["getNotificationAsync:::x-api-version"]=""
 operation_parameters_collection_type["getNotificationsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getNotificationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getNotificationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNotificationsCountAsync:::SocialFeedDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchFeedPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["patchFeedPostAsync:::socialFeedId"]=""
 operation_parameters_collection_type["patchFeedPostAsync:::feedPostId"]=""
 operation_parameters_collection_type["patchFeedPostAsync:::api-version"]=""
 operation_parameters_collection_type["patchFeedPostAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchFeedPostAsync:::Operation"]=
+operation_parameters_collection_type["patchFeedPostAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateFeedPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateFeedPostAsync:::socialFeedId"]=""
 operation_parameters_collection_type["updateFeedPostAsync:::feedPostId"]=""
@@ -1073,6 +1249,7 @@ operation_parameters_collection_type["updateFeedPostAsync:::SocialFeedPostUpdate
 operation_parameters_collection_type["countSocialGroupsAsync:::tenantId"]=""
 operation_parameters_collection_type["countSocialGroupsAsync:::api-version"]=""
 operation_parameters_collection_type["countSocialGroupsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countSocialGroupsAsync:::SocialGroupDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["createSocialGroupAsync:::api-version"]=""
@@ -1090,18 +1267,25 @@ operation_parameters_collection_type["getSocialGroupByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getSocialGroupsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSocialGroupsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialGroupsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialGroupsAsync:::SocialGroupDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSocialGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["patchSocialGroupAsync:::socialGroupId"]=""
 operation_parameters_collection_type["patchSocialGroupAsync:::api-version"]=""
 operation_parameters_collection_type["patchSocialGroupAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSocialGroupAsync:::Operation"]=
+operation_parameters_collection_type["patchSocialGroupAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSocialGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::socialGroupId"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::api-version"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateSocialGroupAsync:::SocialGroupUpdateDto"]=""
+operation_parameters_collection_type["createSocialCommentReactionAsync:::socialPostId"]=""
+operation_parameters_collection_type["createSocialCommentReactionAsync:::commentId"]=""
+operation_parameters_collection_type["createSocialCommentReactionAsync:::socialProfileId"]=""
+operation_parameters_collection_type["createSocialCommentReactionAsync:::api-version"]=""
+operation_parameters_collection_type["createSocialCommentReactionAsync:::x-api-version"]=""
+operation_parameters_collection_type["createSocialCommentReactionAsync:::SocialReactionCreateDto"]=""
 operation_parameters_collection_type["createSocialPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["createSocialPostAsync:::api-version"]=""
 operation_parameters_collection_type["createSocialPostAsync:::x-api-version"]=""
@@ -1121,6 +1305,12 @@ operation_parameters_collection_type["createSocialPostReactionAsync:::socialProf
 operation_parameters_collection_type["createSocialPostReactionAsync:::api-version"]=""
 operation_parameters_collection_type["createSocialPostReactionAsync:::x-api-version"]=""
 operation_parameters_collection_type["createSocialPostReactionAsync:::SocialReactionCreateDto"]=""
+operation_parameters_collection_type["deleteSocialCommentReactionAsync:::socialPostId"]=""
+operation_parameters_collection_type["deleteSocialCommentReactionAsync:::commentId"]=""
+operation_parameters_collection_type["deleteSocialCommentReactionAsync:::reactionId"]=""
+operation_parameters_collection_type["deleteSocialCommentReactionAsync:::socialProfileId"]=""
+operation_parameters_collection_type["deleteSocialCommentReactionAsync:::api-version"]=""
+operation_parameters_collection_type["deleteSocialCommentReactionAsync:::x-api-version"]=""
 operation_parameters_collection_type["deleteSocialPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["deleteSocialPostAsync:::socialPostId"]=""
 operation_parameters_collection_type["deleteSocialPostAsync:::api-version"]=""
@@ -1140,6 +1330,23 @@ operation_parameters_collection_type["deleteSocialPostReactionAsync:::socialPost
 operation_parameters_collection_type["deleteSocialPostReactionAsync:::reactionId"]=""
 operation_parameters_collection_type["deleteSocialPostReactionAsync:::api-version"]=""
 operation_parameters_collection_type["deleteSocialPostReactionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionAsync:::socialPostId"]=""
+operation_parameters_collection_type["getSocialCommentReactionAsync:::commentId"]=""
+operation_parameters_collection_type["getSocialCommentReactionAsync:::reactionId"]=""
+operation_parameters_collection_type["getSocialCommentReactionAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionsAsync:::socialPostId"]=""
+operation_parameters_collection_type["getSocialCommentReactionsAsync:::commentId"]=""
+operation_parameters_collection_type["getSocialCommentReactionsAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getSocialCommentReactionsAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionsAsync:::SocialCommentReactionDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getSocialCommentReactionsCountAsync:::socialPostId"]=""
+operation_parameters_collection_type["getSocialCommentReactionsCountAsync:::commentId"]=""
+operation_parameters_collection_type["getSocialCommentReactionsCountAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getSocialCommentReactionsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialCommentReactionsCountAsync:::SocialCommentReactionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostAsync:::socialPostId"]=""
 operation_parameters_collection_type["getSocialPostAsync:::api-version"]=""
@@ -1151,9 +1358,11 @@ operation_parameters_collection_type["getSocialPostAttachmentAsync:::x-api-versi
 operation_parameters_collection_type["getSocialPostAttachmentsAsync:::socialPostId"]=""
 operation_parameters_collection_type["getSocialPostAttachmentsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostAttachmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostAttachmentsAsync:::SocialPostAttachmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostAttachmentsCountAsync:::socialPostId"]=""
 operation_parameters_collection_type["getSocialPostAttachmentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostAttachmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostAttachmentsCountAsync:::SocialPostAttachmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostCommentAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostCommentAsync:::socialPostId"]=""
 operation_parameters_collection_type["getSocialPostCommentAsync:::commentId"]=""
@@ -1161,12 +1370,16 @@ operation_parameters_collection_type["getSocialPostCommentAsync:::api-version"]=
 operation_parameters_collection_type["getSocialPostCommentAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSocialPostCommentsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostCommentsAsync:::socialPostId"]=""
+operation_parameters_collection_type["getSocialPostCommentsAsync:::parentCommentId"]=""
 operation_parameters_collection_type["getSocialPostCommentsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostCommentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostCommentsAsync:::SocialPostCommentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostCommentsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostCommentsCountAsync:::socialPostId"]=""
+operation_parameters_collection_type["getSocialPostCommentsCountAsync:::parentCommentId"]=""
 operation_parameters_collection_type["getSocialPostCommentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostCommentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostCommentsCountAsync:::SocialPostCommentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostReactionAsync:::socialPostId"]=""
 operation_parameters_collection_type["getSocialPostReactionAsync:::reactionId"]=""
 operation_parameters_collection_type["getSocialPostReactionAsync:::api-version"]=""
@@ -1175,21 +1388,32 @@ operation_parameters_collection_type["getSocialPostReactionsAsync:::socialPostId
 operation_parameters_collection_type["getSocialPostReactionsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostReactionsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostReactionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostReactionsAsync:::SocialPostReactionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostReactionsCountAsync:::socialPostId"]=""
 operation_parameters_collection_type["getSocialPostReactionsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostReactionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostReactionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostReactionsCountAsync:::SocialPostReactionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostsAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostsAsync:::SocialPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSocialPostsCountAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialPostsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialPostsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialPostsCountAsync:::SocialPostDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSocialPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["patchSocialPostAsync:::socialPostId"]=""
 operation_parameters_collection_type["patchSocialPostAsync:::api-version"]=""
 operation_parameters_collection_type["patchSocialPostAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSocialPostAsync:::Operation"]=
+operation_parameters_collection_type["patchSocialPostAsync:::PatchOperation"]=
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::socialPostId"]=""
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::commentId"]=""
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::reactionId"]=""
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::socialProfileId"]=""
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::api-version"]=""
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateSocialCommentReactionAsync:::SocialReactionUpdateDto"]=""
 operation_parameters_collection_type["updateSocialPostAsync:::socialProfileId"]=""
 operation_parameters_collection_type["updateSocialPostAsync:::socialPostId"]=""
 operation_parameters_collection_type["updateSocialPostAsync:::api-version"]=""
@@ -1213,30 +1437,43 @@ operation_parameters_collection_type["updateSocialPostReactionAsync:::reactionId
 operation_parameters_collection_type["updateSocialPostReactionAsync:::api-version"]=""
 operation_parameters_collection_type["updateSocialPostReactionAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateSocialPostReactionAsync:::SocialReactionUpdateDto"]=""
+operation_parameters_collection_type["uploadSocialPostImageAttachmentAsync:::socialPostId"]=""
+operation_parameters_collection_type["uploadSocialPostImageAttachmentAsync:::socialProfileId"]=""
+operation_parameters_collection_type["uploadSocialPostImageAttachmentAsync:::api-version"]=""
+operation_parameters_collection_type["uploadSocialPostImageAttachmentAsync:::x-api-version"]=""
+operation_parameters_collection_type["uploadSocialPostImageAttachmentAsync:::file"]=""
 operation_parameters_collection_type["countConversationsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countConversationsAsync:::api-version"]=""
 operation_parameters_collection_type["countConversationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countConversationsAsync:::ConversationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countFollowedProfilesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countFollowedProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["countFollowedProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countFollowedProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countFollowerProfilesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countFollowerProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["countFollowerProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countFollowerProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countFollowersAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countFollowersAsync:::api-version"]=""
 operation_parameters_collection_type["countFollowersAsync:::x-api-version"]=""
+operation_parameters_collection_type["countFollowersAsync:::FollowRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countFollowsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countFollowsAsync:::api-version"]=""
 operation_parameters_collection_type["countFollowsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countFollowsAsync:::FollowRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countMessagesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countMessagesAsync:::conversationId"]=""
 operation_parameters_collection_type["countMessagesAsync:::api-version"]=""
 operation_parameters_collection_type["countMessagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countMessagesAsync:::PrivateMessageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countNotificationsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["countNotificationsAsync:::api-version"]=""
 operation_parameters_collection_type["countNotificationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["countNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["countSocialProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["countSocialProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["countSocialProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createConversationAsync:::socialProfileId"]=""
 operation_parameters_collection_type["createConversationAsync:::api-version"]=""
 operation_parameters_collection_type["createConversationAsync:::x-api-version"]=""
@@ -1262,22 +1499,28 @@ operation_parameters_collection_type["followExistsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getConversationsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getConversationsAsync:::api-version"]=""
 operation_parameters_collection_type["getConversationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getConversationsAsync:::ConversationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getFollowedProfilesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFollowedProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["getFollowedProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFollowedProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getFollowerProfilesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFollowerProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["getFollowerProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFollowerProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getFollowersAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFollowersAsync:::api-version"]=""
 operation_parameters_collection_type["getFollowersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFollowersAsync:::FollowRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getFollowsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getFollowsAsync:::api-version"]=""
 operation_parameters_collection_type["getFollowsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFollowsAsync:::FollowRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getMessagesAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getMessagesAsync:::conversationId"]=""
 operation_parameters_collection_type["getMessagesAsync:::api-version"]=""
 operation_parameters_collection_type["getMessagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getMessagesAsync:::PrivateMessageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getNotificationByIdAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getNotificationByIdAsync:::notificationId"]=""
 operation_parameters_collection_type["getNotificationByIdAsync:::api-version"]=""
@@ -1285,11 +1528,17 @@ operation_parameters_collection_type["getNotificationByIdAsync:::x-api-version"]
 operation_parameters_collection_type["getNotificationsAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getNotificationsAsync:::api-version"]=""
 operation_parameters_collection_type["getNotificationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getOrCreateDirectConversationAsync:::socialProfileId"]=""
+operation_parameters_collection_type["getOrCreateDirectConversationAsync:::api-version"]=""
+operation_parameters_collection_type["getOrCreateDirectConversationAsync:::x-api-version"]=""
+operation_parameters_collection_type["getOrCreateDirectConversationAsync:::body"]=""
 operation_parameters_collection_type["getSocialProfileAsync:::socialProfileId"]=""
 operation_parameters_collection_type["getSocialProfileAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialProfileAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSocialProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["getSocialProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSocialProfilesAsync:::SocialProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["unfollowAsync:::socialProfileId"]=""
 operation_parameters_collection_type["unfollowAsync:::followedSocialProfileId"]=""
 operation_parameters_collection_type["unfollowAsync:::api-version"]=""
@@ -1773,14 +2022,19 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[socialPosts]${OFF}"
 read -r -d '' ops <<EOF
+  ${CYAN}createSocialCommentReactionAsync${OFF};Create a social comment reaction
   ${CYAN}createSocialPostAsync${OFF};Create a social post
   ${CYAN}createSocialPostAttachmentAsync${OFF};Create a social post attachment
   ${CYAN}createSocialPostCommentAsync${OFF};Create a social post comment
   ${CYAN}createSocialPostReactionAsync${OFF};Create a social post reaction
+  ${CYAN}deleteSocialCommentReactionAsync${OFF};Delete a social comment reaction
   ${CYAN}deleteSocialPostAsync${OFF};Delete a social post
   ${CYAN}deleteSocialPostAttachmentAsync${OFF};Delete a social post attachment
   ${CYAN}deleteSocialPostCommentAsync${OFF};Delete a social post comment
   ${CYAN}deleteSocialPostReactionAsync${OFF};Delete a social post reaction
+  ${CYAN}getSocialCommentReactionAsync${OFF};Get social comment reaction by ID
+  ${CYAN}getSocialCommentReactionsAsync${OFF};Get social comment reactions
+  ${CYAN}getSocialCommentReactionsCountAsync${OFF};Count social comment reactions
   ${CYAN}getSocialPostAsync${OFF};Get social post by ID
   ${CYAN}getSocialPostAttachmentAsync${OFF};Get social post attachment by ID
   ${CYAN}getSocialPostAttachmentsAsync${OFF};Get social post attachments
@@ -1794,10 +2048,12 @@ read -r -d '' ops <<EOF
   ${CYAN}getSocialPostsAsync${OFF};Get social posts
   ${CYAN}getSocialPostsCountAsync${OFF};Count social posts
   ${CYAN}patchSocialPostAsync${OFF};Patch a social post
+  ${CYAN}updateSocialCommentReactionAsync${OFF};Update a social comment reaction
   ${CYAN}updateSocialPostAsync${OFF};Update a social post
   ${CYAN}updateSocialPostAttachmentAsync${OFF};Update a social post attachment
   ${CYAN}updateSocialPostCommentAsync${OFF};Update a social post comment
   ${CYAN}updateSocialPostReactionAsync${OFF};Update a social post reaction
+  ${CYAN}uploadSocialPostImageAttachmentAsync${OFF};Upload a social post image attachment
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1824,6 +2080,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getMessagesAsync${OFF};Get Messages
   ${CYAN}getNotificationByIdAsync${OFF};Get Notification
   ${CYAN}getNotificationsAsync${OFF};Get Notifications
+  ${CYAN}getOrCreateDirectConversationAsync${OFF};Get or Create Direct Conversation
   ${CYAN}getSocialProfileAsync${OFF};Get Social Profile
   ${CYAN}getSocialProfilesAsync${OFF};Get Social Profiles
   ${CYAN}unfollowAsync${OFF};Unfollow
@@ -1996,6 +2253,8 @@ print_getCurriculumExperiencesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2025,6 +2284,8 @@ print_getCurriculumExperiencesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2213,6 +2474,8 @@ print_getCurriculumsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2241,6 +2504,8 @@ print_getCurriculumsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2713,6 +2978,8 @@ print_getSkillsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2739,6 +3006,8 @@ print_getSkillsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2836,8 +3105,8 @@ print_createFeedPostAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -2884,6 +3153,8 @@ print_getFeedNotifications_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2939,6 +3210,8 @@ print_getFeedPostsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2966,6 +3239,8 @@ print_getFeedPostsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3019,6 +3294,8 @@ print_getNotificationsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3105,6 +3382,8 @@ print_countSocialGroupsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3217,6 +3496,8 @@ print_getSocialGroupsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3274,6 +3555,36 @@ print_updateSocialGroupAsync_help() {
     echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}socialGroupId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialGroupId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createSocialCommentReactionAsync operation
+#
+##############################################################################
+print_createSocialCommentReactionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createSocialCommentReactionAsync - Create a social comment reaction${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Creates a new reaction on a specific social comment." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3400,8 +3711,37 @@ print_createSocialPostReactionAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteSocialCommentReactionAsync operation
+#
+##############################################################################
+print_deleteSocialCommentReactionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteSocialCommentReactionAsync - Delete a social comment reaction${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes a reaction from a specific social comment." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}reactionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: reactionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -3516,6 +3856,93 @@ print_deleteSocialPostReactionAsync_help() {
 }
 ##############################################################################
 #
+# Print help for getSocialCommentReactionAsync operation
+#
+##############################################################################
+print_getSocialCommentReactionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSocialCommentReactionAsync - Get social comment reaction by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific reaction from a social comment by its ID." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}reactionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: reactionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSocialCommentReactionsAsync operation
+#
+##############################################################################
+print_getSocialCommentReactionsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSocialCommentReactionsAsync - Get social comment reactions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a list of reactions for a specific social comment." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getSocialCommentReactionsCountAsync operation
+#
+##############################################################################
+print_getSocialCommentReactionsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getSocialCommentReactionsCountAsync - Count social comment reactions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of reactions for a specific social comment." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getSocialPostAsync operation
 #
 ##############################################################################
@@ -3583,6 +4010,8 @@ print_getSocialPostAttachmentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3608,6 +4037,8 @@ print_getSocialPostAttachmentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3660,9 +4091,13 @@ print_getSocialPostCommentsAsync_help() {
     echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}parentCommentId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: parentCommentId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3687,9 +4122,13 @@ print_getSocialPostCommentsCountAsync_help() {
     echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}parentCommentId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: parentCommentId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3743,6 +4182,8 @@ print_getSocialPostReactionsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3770,6 +4211,8 @@ print_getSocialPostReactionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3796,6 +4239,8 @@ print_getSocialPostsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3822,6 +4267,8 @@ print_getSocialPostsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3846,6 +4293,37 @@ print_patchSocialPostAsync_help() {
     echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateSocialCommentReactionAsync operation
+#
+##############################################################################
+print_updateSocialCommentReactionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateSocialCommentReactionAsync - Update a social comment reaction${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates an existing reaction on a specific social comment." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}commentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: commentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}reactionId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: reactionId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3981,6 +4459,35 @@ print_updateSocialPostReactionAsync_help() {
 }
 ##############################################################################
 #
+# Print help for uploadSocialPostImageAttachmentAsync operation
+#
+##############################################################################
+print_uploadSocialPostImageAttachmentAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}uploadSocialPostImageAttachmentAsync - Upload a social post image attachment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Uploads an image and attaches it to a social post, storing the bytes through the storage spine." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialPostId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialPostId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: socialProfileId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for countConversationsAsync operation
 #
 ##############################################################################
@@ -3995,6 +4502,8 @@ print_countConversationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4020,6 +4529,8 @@ print_countFollowedProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4045,6 +4556,8 @@ print_countFollowerProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4070,6 +4583,8 @@ print_countFollowersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4095,6 +4610,8 @@ print_countFollowsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4122,6 +4639,8 @@ print_countMessagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4147,6 +4666,8 @@ print_countNotificationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4171,6 +4692,8 @@ print_countSocialProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4332,6 +4855,8 @@ print_getConversationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4357,6 +4882,8 @@ print_getFollowedProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4382,6 +4909,8 @@ print_getFollowerProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4407,6 +4936,8 @@ print_getFollowersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4432,6 +4963,8 @@ print_getFollowsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4459,6 +4992,8 @@ print_getMessagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4510,6 +5045,35 @@ print_getNotificationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOrCreateDirectConversationAsync operation
+#
+##############################################################################
+print_getOrCreateDirectConversationAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOrCreateDirectConversationAsync - Get or Create Direct Conversation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get or create the direct two-party conversation between the acting profile and a counterparty." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}socialProfileId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: socialProfileId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4559,6 +5123,8 @@ print_getSocialProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4803,10 +5369,50 @@ call_getCurriculumExperiencesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4839,10 +5445,50 @@ call_getCurriculumExperiencesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5175,10 +5821,50 @@ call_getCurriculumsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5211,10 +5897,50 @@ call_getCurriculumsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6498,10 +7224,50 @@ call_getSkillsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6534,10 +7300,50 @@ call_getSkillsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6834,10 +7640,50 @@ call_getFeedNotifications() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6906,10 +7752,50 @@ call_getFeedPostsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6942,10 +7828,50 @@ call_getFeedPostsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7014,10 +7940,50 @@ call_getNotificationsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7202,10 +8168,50 @@ call_countSocialGroupsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7386,10 +8392,50 @@ call_getSocialGroupsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7488,6 +8534,82 @@ call_updateSocialGroupAsync() {
         exit 1
     fi
     local method="PUT"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createSocialCommentReactionAsync operation
+#
+##############################################################################
+call_createSocialCommentReactionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId commentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId}/Reactions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -7851,6 +8973,42 @@ call_createSocialPostReactionAsync() {
 
 ##############################################################################
 #
+# Call deleteSocialCommentReactionAsync operation
+#
+##############################################################################
+call_deleteSocialCommentReactionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId commentId reactionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId}/Reactions/{reactionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call deleteSocialPostAsync operation
 #
 ##############################################################################
@@ -7995,6 +9153,194 @@ call_deleteSocialPostReactionAsync() {
 
 ##############################################################################
 #
+# Call getSocialCommentReactionAsync operation
+#
+##############################################################################
+call_getSocialCommentReactionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId commentId reactionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId}/Reactions/{reactionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getSocialCommentReactionsAsync operation
+#
+##############################################################################
+call_getSocialCommentReactionsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId commentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId}/Reactions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getSocialCommentReactionsCountAsync operation
+#
+##############################################################################
+call_getSocialCommentReactionsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId commentId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId}/Reactions/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call getSocialPostAsync operation
 #
 ##############################################################################
@@ -8094,10 +9440,50 @@ call_getSocialPostAttachmentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8130,10 +9516,50 @@ call_getSocialPostAttachmentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8184,7 +9610,7 @@ call_getSocialPostCommentsAsync() {
     local path_parameter_names=(socialPostId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(socialProfileId api-version)
+    local query_parameter_names=(socialProfileId parentCommentId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments" path_parameter_names query_parameter_names); then
@@ -8202,10 +9628,50 @@ call_getSocialPostCommentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8220,7 +9686,7 @@ call_getSocialPostCommentsCountAsync() {
     local path_parameter_names=(socialPostId)
     # ignore error about 'query_parameter_names' being unused; passed by reference
     # shellcheck disable=SC2034
-    local query_parameter_names=(socialProfileId api-version)
+    local query_parameter_names=(socialProfileId parentCommentId api-version)
     local path
 
     if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/Count" path_parameter_names query_parameter_names); then
@@ -8238,10 +9704,50 @@ call_getSocialPostCommentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8310,10 +9816,50 @@ call_getSocialPostReactionsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8346,10 +9892,50 @@ call_getSocialPostReactionsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8382,10 +9968,50 @@ call_getSocialPostsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8418,10 +10044,50 @@ call_getSocialPostsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8444,6 +10110,82 @@ call_patchSocialPostAsync() {
         exit 1
     fi
     local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateSocialCommentReactionAsync operation
+#
+##############################################################################
+call_updateSocialCommentReactionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId commentId reactionId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Comments/{commentId}/Reactions/{reactionId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -8807,6 +10549,43 @@ call_updateSocialPostReactionAsync() {
 
 ##############################################################################
 #
+# Call uploadSocialPostImageAttachmentAsync operation
+#
+##############################################################################
+call_uploadSocialPostImageAttachmentAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialPostId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(socialProfileId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialPosts/{socialPostId}/Attachments/Image" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call countConversationsAsync operation
 #
 ##############################################################################
@@ -8834,10 +10613,50 @@ call_countConversationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8870,10 +10689,50 @@ call_countFollowedProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8906,10 +10765,50 @@ call_countFollowerProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8942,10 +10841,50 @@ call_countFollowersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8978,10 +10917,50 @@ call_countFollowsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9014,10 +10993,50 @@ call_countMessagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9050,10 +11069,50 @@ call_countNotificationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9086,10 +11145,50 @@ call_countSocialProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9382,10 +11481,50 @@ call_getConversationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9418,10 +11557,50 @@ call_getFollowedProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9454,10 +11633,50 @@ call_getFollowerProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9490,10 +11709,50 @@ call_getFollowersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9526,10 +11785,50 @@ call_getFollowsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9562,10 +11861,50 @@ call_getMessagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9634,10 +11973,126 @@ call_getNotificationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getOrCreateDirectConversationAsync operation
+#
+##############################################################################
+call_getOrCreateDirectConversationAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(socialProfileId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SocialService/SocialProfiles/{socialProfileId}/Conversations/Direct" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9706,10 +12161,50 @@ call_getSocialProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10087,6 +12582,9 @@ case $key in
     updateSocialGroupAsync)
     operation="updateSocialGroupAsync"
     ;;
+    createSocialCommentReactionAsync)
+    operation="createSocialCommentReactionAsync"
+    ;;
     createSocialPostAsync)
     operation="createSocialPostAsync"
     ;;
@@ -10099,6 +12597,9 @@ case $key in
     createSocialPostReactionAsync)
     operation="createSocialPostReactionAsync"
     ;;
+    deleteSocialCommentReactionAsync)
+    operation="deleteSocialCommentReactionAsync"
+    ;;
     deleteSocialPostAsync)
     operation="deleteSocialPostAsync"
     ;;
@@ -10110,6 +12611,15 @@ case $key in
     ;;
     deleteSocialPostReactionAsync)
     operation="deleteSocialPostReactionAsync"
+    ;;
+    getSocialCommentReactionAsync)
+    operation="getSocialCommentReactionAsync"
+    ;;
+    getSocialCommentReactionsAsync)
+    operation="getSocialCommentReactionsAsync"
+    ;;
+    getSocialCommentReactionsCountAsync)
+    operation="getSocialCommentReactionsCountAsync"
     ;;
     getSocialPostAsync)
     operation="getSocialPostAsync"
@@ -10150,6 +12660,9 @@ case $key in
     patchSocialPostAsync)
     operation="patchSocialPostAsync"
     ;;
+    updateSocialCommentReactionAsync)
+    operation="updateSocialCommentReactionAsync"
+    ;;
     updateSocialPostAsync)
     operation="updateSocialPostAsync"
     ;;
@@ -10161,6 +12674,9 @@ case $key in
     ;;
     updateSocialPostReactionAsync)
     operation="updateSocialPostReactionAsync"
+    ;;
+    uploadSocialPostImageAttachmentAsync)
+    operation="uploadSocialPostImageAttachmentAsync"
     ;;
     countConversationsAsync)
     operation="countConversationsAsync"
@@ -10224,6 +12740,9 @@ case $key in
     ;;
     getNotificationsAsync)
     operation="getNotificationsAsync"
+    ;;
+    getOrCreateDirectConversationAsync)
+    operation="getOrCreateDirectConversationAsync"
     ;;
     getSocialProfileAsync)
     operation="getSocialProfileAsync"
@@ -10489,6 +13008,9 @@ case $operation in
     updateSocialGroupAsync)
     call_updateSocialGroupAsync
     ;;
+    createSocialCommentReactionAsync)
+    call_createSocialCommentReactionAsync
+    ;;
     createSocialPostAsync)
     call_createSocialPostAsync
     ;;
@@ -10501,6 +13023,9 @@ case $operation in
     createSocialPostReactionAsync)
     call_createSocialPostReactionAsync
     ;;
+    deleteSocialCommentReactionAsync)
+    call_deleteSocialCommentReactionAsync
+    ;;
     deleteSocialPostAsync)
     call_deleteSocialPostAsync
     ;;
@@ -10512,6 +13037,15 @@ case $operation in
     ;;
     deleteSocialPostReactionAsync)
     call_deleteSocialPostReactionAsync
+    ;;
+    getSocialCommentReactionAsync)
+    call_getSocialCommentReactionAsync
+    ;;
+    getSocialCommentReactionsAsync)
+    call_getSocialCommentReactionsAsync
+    ;;
+    getSocialCommentReactionsCountAsync)
+    call_getSocialCommentReactionsCountAsync
     ;;
     getSocialPostAsync)
     call_getSocialPostAsync
@@ -10552,6 +13086,9 @@ case $operation in
     patchSocialPostAsync)
     call_patchSocialPostAsync
     ;;
+    updateSocialCommentReactionAsync)
+    call_updateSocialCommentReactionAsync
+    ;;
     updateSocialPostAsync)
     call_updateSocialPostAsync
     ;;
@@ -10563,6 +13100,9 @@ case $operation in
     ;;
     updateSocialPostReactionAsync)
     call_updateSocialPostReactionAsync
+    ;;
+    uploadSocialPostImageAttachmentAsync)
+    call_uploadSocialPostImageAttachmentAsync
     ;;
     countConversationsAsync)
     call_countConversationsAsync
@@ -10626,6 +13166,9 @@ case $operation in
     ;;
     getNotificationsAsync)
     call_getNotificationsAsync
+    ;;
+    getOrCreateDirectConversationAsync)
+    call_getOrCreateDirectConversationAsync
     ;;
     getSocialProfileAsync)
     call_getSocialProfileAsync

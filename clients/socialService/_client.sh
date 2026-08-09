@@ -346,14 +346,19 @@ case $state in
             "getSocialGroupByIdAsync[Get social group by ID]" \
             "getSocialGroupsAsync[Get social groups]" \
             "patchSocialGroupAsync[Patch a social group]" \
-            "updateSocialGroupAsync[Update a social group]"             "createSocialPostAsync[Create a social post]" \
+            "updateSocialGroupAsync[Update a social group]"             "createSocialCommentReactionAsync[Create a social comment reaction]" \
+            "createSocialPostAsync[Create a social post]" \
             "createSocialPostAttachmentAsync[Create a social post attachment]" \
             "createSocialPostCommentAsync[Create a social post comment]" \
             "createSocialPostReactionAsync[Create a social post reaction]" \
+            "deleteSocialCommentReactionAsync[Delete a social comment reaction]" \
             "deleteSocialPostAsync[Delete a social post]" \
             "deleteSocialPostAttachmentAsync[Delete a social post attachment]" \
             "deleteSocialPostCommentAsync[Delete a social post comment]" \
             "deleteSocialPostReactionAsync[Delete a social post reaction]" \
+            "getSocialCommentReactionAsync[Get social comment reaction by ID]" \
+            "getSocialCommentReactionsAsync[Get social comment reactions]" \
+            "getSocialCommentReactionsCountAsync[Count social comment reactions]" \
             "getSocialPostAsync[Get social post by ID]" \
             "getSocialPostAttachmentAsync[Get social post attachment by ID]" \
             "getSocialPostAttachmentsAsync[Get social post attachments]" \
@@ -367,10 +372,12 @@ case $state in
             "getSocialPostsAsync[Get social posts]" \
             "getSocialPostsCountAsync[Count social posts]" \
             "patchSocialPostAsync[Patch a social post]" \
+            "updateSocialCommentReactionAsync[Update a social comment reaction]" \
             "updateSocialPostAsync[Update a social post]" \
             "updateSocialPostAttachmentAsync[Update a social post attachment]" \
             "updateSocialPostCommentAsync[Update a social post comment]" \
-            "updateSocialPostReactionAsync[Update a social post reaction]"             "countConversationsAsync[Count Conversations]" \
+            "updateSocialPostReactionAsync[Update a social post reaction]" \
+            "uploadSocialPostImageAttachmentAsync[Upload a social post image attachment]"             "countConversationsAsync[Count Conversations]" \
             "countFollowedProfilesAsync[Count Followed Profiles]" \
             "countFollowerProfilesAsync[Count Follower Profiles]" \
             "countFollowersAsync[Count Followers]" \
@@ -391,6 +398,7 @@ case $state in
             "getMessagesAsync[Get Messages]" \
             "getNotificationByIdAsync[Get Notification]" \
             "getNotificationsAsync[Get Notifications]" \
+            "getOrCreateDirectConversationAsync[Get or Create Direct Conversation]" \
             "getSocialProfileAsync[Get Social Profile]" \
             "getSocialProfilesAsync[Get Social Profiles]" \
             "unfollowAsync[Unfollow]" \
@@ -906,6 +914,17 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createSocialCommentReactionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+"commentId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createSocialPostAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -939,6 +958,18 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "socialPostId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteSocialCommentReactionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+"commentId=:[PATH] "
+"reactionId=:[PATH] "
           "socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -982,6 +1013,39 @@ case $state in
         _op_arguments=(
           "socialPostId=:[PATH] "
 "reactionId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSocialCommentReactionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+"commentId=:[PATH] "
+"reactionId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSocialCommentReactionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+"commentId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getSocialCommentReactionsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+"commentId=:[PATH] "
           "socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -1042,6 +1106,7 @@ case $state in
         _op_arguments=(
           "socialPostId=:[PATH] "
           "socialProfileId=:[QUERY] "
+"parentCommentId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1052,6 +1117,7 @@ case $state in
         _op_arguments=(
           "socialPostId=:[PATH] "
           "socialProfileId=:[QUERY] "
+"parentCommentId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
@@ -1115,6 +1181,18 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      updateSocialCommentReactionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
+"commentId=:[PATH] "
+"reactionId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateSocialPostAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1152,6 +1230,16 @@ case $state in
         _op_arguments=(
           "socialPostId=:[PATH] "
 "reactionId=:[PATH] "
+          "socialProfileId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      uploadSocialPostImageAttachmentAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialPostId=:[PATH] "
           "socialProfileId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
@@ -1346,6 +1434,15 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getNotificationsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "socialProfileId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOrCreateDirectConversationAsync)
         local -a _op_arguments
         _op_arguments=(
           "socialProfileId=:[PATH] "

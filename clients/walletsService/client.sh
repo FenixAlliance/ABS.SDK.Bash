@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -149,15 +148,19 @@ operation_parameters_minimum_occurrences["deleteWalletTokenAsync:::x-api-version
 operation_parameters_minimum_occurrences["getIncomingPaymentsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getIncomingPaymentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getIncomingPaymentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getIncomingPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getIncomingPaymentsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getIncomingPaymentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getIncomingPaymentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getIncomingPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getIncomingWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getIncomingWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLocationForWalletAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getLocationForWalletAsync:::locationId"]=1
 operation_parameters_minimum_occurrences["getLocationForWalletAsync:::api-version"]=0
@@ -165,21 +168,27 @@ operation_parameters_minimum_occurrences["getLocationForWalletAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocationsForWalletAsync:::LocationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLocationsForWalletCountAsync:::LocationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutgoingPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOutgoingPaymentsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getOutgoingPaymentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOutgoingPaymentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutgoingPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutgoingWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletBankAccountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletBankAccountAsync:::bankAccountId"]=1
 operation_parameters_minimum_occurrences["getWalletBankAccountAsync:::api-version"]=0
@@ -187,51 +196,66 @@ operation_parameters_minimum_occurrences["getWalletBankAccountAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getWalletBankAccountsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletBankAccountsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletBankAccountsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletBankAccountsAsync:::BankAccountDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletBankAccountsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletBankAccountsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletBankAccountsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletBankAccountsCountAsync:::BankAccountDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletChargebacksAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletChargebacksAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletChargebacksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletChargebacksAsync:::PaymentChargebackDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletChargebacksCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletChargebacksCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletChargebacksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletChargebacksCountAsync:::PaymentChargebackDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletDetailsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletDetailsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletDetailsAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getWalletExtendedOrdersAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletExtendedOrdersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletExtendedOrdersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletExtendedOrdersAsync:::ExtendedOrderDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletInvoicesAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletInvoicesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletInvoicesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletOrdersAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletOrdersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletOrdersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletOrdersAsync:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletOrdersCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletOrdersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletOrdersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletOrdersCountAsync:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletPaymentsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletPaymentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletPaymentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletPaymentsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletPaymentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletPaymentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletQuotesAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletQuotesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletQuotesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletQuotesAsync:::QuoteDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletQuotesCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletQuotesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletQuotesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletQuotesCountAsync:::QuoteDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletRefundsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletRefundsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletRefundsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletRefundsAsync:::PaymentRefundDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletRefundsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletRefundsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletRefundsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletRefundsCountAsync:::PaymentRefundDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletTokenAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletTokenAsync:::tokenId"]=1
 operation_parameters_minimum_occurrences["getWalletTokenAsync:::api-version"]=0
@@ -239,31 +263,37 @@ operation_parameters_minimum_occurrences["getWalletTokenAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getWalletTokensAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletTokensAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletTokensAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletTokensAsync:::PaymentTokenDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletTokensCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletTokensCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletTokensCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletTokensCountAsync:::PaymentTokenDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawRequestsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletWithdrawRequestsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletWithdrawRequestsAsync:::WalletWithdrawRequestDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawRequestsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletWithdrawRequestsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletWithdrawRequestsCountAsync:::WalletWithdrawRequestDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawsAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletWithdrawsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletWithdrawsAsync:::WalletWithdrawDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWalletWithdrawsCountAsync:::WalletWithdrawDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::bankAccountId"]=1
 operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWalletBankAccountAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::tokenId"]=1
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWalletTokenAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWalletTokenAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWalletTokenAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::walletId"]=1
 operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::locationId"]=1
 operation_parameters_minimum_occurrences["updateLocationForWalletAsync:::api-version"]=0
@@ -291,7 +321,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -340,15 +369,19 @@ operation_parameters_maximum_occurrences["deleteWalletTokenAsync:::x-api-version
 operation_parameters_maximum_occurrences["getIncomingPaymentsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getIncomingPaymentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getIncomingPaymentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getIncomingPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getIncomingPaymentsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getIncomingPaymentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getIncomingPaymentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getIncomingPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getIncomingWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getIncomingWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLocationForWalletAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getLocationForWalletAsync:::locationId"]=0
 operation_parameters_maximum_occurrences["getLocationForWalletAsync:::api-version"]=0
@@ -356,21 +389,27 @@ operation_parameters_maximum_occurrences["getLocationForWalletAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletAsync:::LocationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLocationsForWalletCountAsync:::LocationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutgoingPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOutgoingPaymentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutgoingPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutgoingWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountAsync:::bankAccountId"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountAsync:::api-version"]=0
@@ -378,51 +417,66 @@ operation_parameters_maximum_occurrences["getWalletBankAccountAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getWalletBankAccountsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletBankAccountsAsync:::BankAccountDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletBankAccountsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletBankAccountsCountAsync:::BankAccountDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletChargebacksAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletChargebacksAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletChargebacksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletChargebacksAsync:::PaymentChargebackDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletChargebacksCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletChargebacksCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletChargebacksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletChargebacksCountAsync:::PaymentChargebackDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletDetailsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletDetailsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletDetailsAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getWalletExtendedOrdersAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletExtendedOrdersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletExtendedOrdersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletExtendedOrdersAsync:::ExtendedOrderDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletOrdersAsync:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletOrdersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletOrdersCountAsync:::OrderDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletPaymentsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletPaymentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletPaymentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletPaymentsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletPaymentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletPaymentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletQuotesAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletQuotesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletQuotesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletQuotesAsync:::QuoteDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletQuotesCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletQuotesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletQuotesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletQuotesCountAsync:::QuoteDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletRefundsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletRefundsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletRefundsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletRefundsAsync:::PaymentRefundDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletRefundsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletRefundsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletRefundsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletRefundsCountAsync:::PaymentRefundDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletTokenAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletTokenAsync:::tokenId"]=0
 operation_parameters_maximum_occurrences["getWalletTokenAsync:::api-version"]=0
@@ -430,31 +484,37 @@ operation_parameters_maximum_occurrences["getWalletTokenAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getWalletTokensAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletTokensAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletTokensAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletTokensAsync:::PaymentTokenDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletTokensCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletTokensCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletTokensCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletTokensCountAsync:::PaymentTokenDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawRequestsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawRequestsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletWithdrawRequestsAsync:::WalletWithdrawRequestDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawRequestsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawRequestsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletWithdrawRequestsCountAsync:::WalletWithdrawRequestDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletWithdrawsAsync:::WalletWithdrawDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWalletWithdrawsCountAsync:::WalletWithdrawDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::bankAccountId"]=0
 operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWalletBankAccountAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::tokenId"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWalletTokenAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWalletTokenAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWalletTokenAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::walletId"]=0
 operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::locationId"]=0
 operation_parameters_maximum_occurrences["updateLocationForWalletAsync:::api-version"]=0
@@ -479,7 +539,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -528,15 +587,19 @@ operation_parameters_collection_type["deleteWalletTokenAsync:::x-api-version"]="
 operation_parameters_collection_type["getIncomingPaymentsAsync:::walletId"]=""
 operation_parameters_collection_type["getIncomingPaymentsAsync:::api-version"]=""
 operation_parameters_collection_type["getIncomingPaymentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getIncomingPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getIncomingPaymentsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getIncomingPaymentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getIncomingPaymentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getIncomingPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesAsync:::walletId"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesAsync:::api-version"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getIncomingWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::walletId"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getIncomingWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLocationForWalletAsync:::walletId"]=""
 operation_parameters_collection_type["getLocationForWalletAsync:::locationId"]=""
 operation_parameters_collection_type["getLocationForWalletAsync:::api-version"]=""
@@ -544,21 +607,27 @@ operation_parameters_collection_type["getLocationForWalletAsync:::x-api-version"
 operation_parameters_collection_type["getLocationsForWalletAsync:::walletId"]=""
 operation_parameters_collection_type["getLocationsForWalletAsync:::api-version"]=""
 operation_parameters_collection_type["getLocationsForWalletAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocationsForWalletAsync:::LocationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLocationsForWalletCountAsync:::walletId"]=""
 operation_parameters_collection_type["getLocationsForWalletCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLocationsForWalletCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLocationsForWalletCountAsync:::LocationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOutgoingPaymentsAsync:::walletId"]=""
 operation_parameters_collection_type["getOutgoingPaymentsAsync:::api-version"]=""
 operation_parameters_collection_type["getOutgoingPaymentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getOutgoingPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOutgoingPaymentsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getOutgoingPaymentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getOutgoingPaymentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getOutgoingPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOutgoingWalletInvoicesAsync:::walletId"]=""
 operation_parameters_collection_type["getOutgoingWalletInvoicesAsync:::api-version"]=""
 operation_parameters_collection_type["getOutgoingWalletInvoicesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getOutgoingWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getOutgoingWalletInvoicesCountAsync:::walletId"]=""
 operation_parameters_collection_type["getOutgoingWalletInvoicesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getOutgoingWalletInvoicesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getOutgoingWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletBankAccountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletBankAccountAsync:::bankAccountId"]=""
 operation_parameters_collection_type["getWalletBankAccountAsync:::api-version"]=""
@@ -566,51 +635,66 @@ operation_parameters_collection_type["getWalletBankAccountAsync:::x-api-version"
 operation_parameters_collection_type["getWalletBankAccountsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletBankAccountsAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletBankAccountsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletBankAccountsAsync:::BankAccountDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletBankAccountsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletBankAccountsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletBankAccountsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletBankAccountsCountAsync:::BankAccountDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletChargebacksAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletChargebacksAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletChargebacksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletChargebacksAsync:::PaymentChargebackDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletChargebacksCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletChargebacksCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletChargebacksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletChargebacksCountAsync:::PaymentChargebackDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletDetailsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletDetailsAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletDetailsAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWalletExtendedOrdersAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletExtendedOrdersAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletExtendedOrdersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletExtendedOrdersAsync:::ExtendedOrderDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletInvoicesAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletInvoicesAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletInvoicesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletInvoicesAsync:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletInvoicesCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletInvoicesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletInvoicesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletInvoicesCountAsync:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletOrdersAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletOrdersAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletOrdersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletOrdersAsync:::OrderDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletOrdersCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletOrdersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletOrdersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletOrdersCountAsync:::OrderDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletPaymentsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletPaymentsAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletPaymentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletPaymentsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletPaymentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletPaymentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletPaymentsCountAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletQuotesAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletQuotesAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletQuotesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletQuotesAsync:::QuoteDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletQuotesCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletQuotesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletQuotesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletQuotesCountAsync:::QuoteDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletRefundsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletRefundsAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletRefundsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletRefundsAsync:::PaymentRefundDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletRefundsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletRefundsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletRefundsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletRefundsCountAsync:::PaymentRefundDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletTokenAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletTokenAsync:::tokenId"]=""
 operation_parameters_collection_type["getWalletTokenAsync:::api-version"]=""
@@ -618,31 +702,37 @@ operation_parameters_collection_type["getWalletTokenAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWalletTokensAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletTokensAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletTokensAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletTokensAsync:::PaymentTokenDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletTokensCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletTokensCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletTokensCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletTokensCountAsync:::PaymentTokenDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletWithdrawRequestsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletWithdrawRequestsAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletWithdrawRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletWithdrawRequestsAsync:::WalletWithdrawRequestDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletWithdrawRequestsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletWithdrawRequestsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletWithdrawRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletWithdrawRequestsCountAsync:::WalletWithdrawRequestDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletWithdrawsAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletWithdrawsAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletWithdrawsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletWithdrawsAsync:::WalletWithdrawDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWalletWithdrawsCountAsync:::walletId"]=""
 operation_parameters_collection_type["getWalletWithdrawsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWalletWithdrawsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWalletWithdrawsCountAsync:::WalletWithdrawDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWalletBankAccountAsync:::walletId"]=""
 operation_parameters_collection_type["patchWalletBankAccountAsync:::bankAccountId"]=""
 operation_parameters_collection_type["patchWalletBankAccountAsync:::api-version"]=""
 operation_parameters_collection_type["patchWalletBankAccountAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWalletBankAccountAsync:::Operation"]=
+operation_parameters_collection_type["patchWalletBankAccountAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchWalletTokenAsync:::walletId"]=""
 operation_parameters_collection_type["patchWalletTokenAsync:::tokenId"]=""
 operation_parameters_collection_type["patchWalletTokenAsync:::api-version"]=""
 operation_parameters_collection_type["patchWalletTokenAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWalletTokenAsync:::Operation"]=
+operation_parameters_collection_type["patchWalletTokenAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateLocationForWalletAsync:::walletId"]=""
 operation_parameters_collection_type["updateLocationForWalletAsync:::locationId"]=""
 operation_parameters_collection_type["updateLocationForWalletAsync:::api-version"]=""
@@ -1050,7 +1140,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1224,22 +1313,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1709,6 +1782,8 @@ print_getIncomingPaymentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1734,6 +1809,8 @@ print_getIncomingPaymentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1759,6 +1836,8 @@ print_getIncomingWalletInvoicesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1784,6 +1863,8 @@ print_getIncomingWalletInvoicesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1835,6 +1916,8 @@ print_getLocationsForWalletAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1860,6 +1943,8 @@ print_getLocationsForWalletCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1885,6 +1970,8 @@ print_getOutgoingPaymentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1910,6 +1997,8 @@ print_getOutgoingPaymentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1935,6 +2024,8 @@ print_getOutgoingWalletInvoicesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1960,6 +2051,8 @@ print_getOutgoingWalletInvoicesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2011,6 +2104,8 @@ print_getWalletBankAccountsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2036,6 +2131,8 @@ print_getWalletBankAccountsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2061,6 +2158,8 @@ print_getWalletChargebacksAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2086,6 +2185,8 @@ print_getWalletChargebacksCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2136,6 +2237,8 @@ print_getWalletExtendedOrdersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2161,6 +2264,8 @@ print_getWalletInvoicesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2186,6 +2291,8 @@ print_getWalletInvoicesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2211,6 +2318,8 @@ print_getWalletOrdersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2236,6 +2345,8 @@ print_getWalletOrdersCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2261,6 +2372,8 @@ print_getWalletPaymentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2286,6 +2399,8 @@ print_getWalletPaymentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2311,6 +2426,8 @@ print_getWalletQuotesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2336,6 +2453,8 @@ print_getWalletQuotesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2361,6 +2480,8 @@ print_getWalletRefundsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2386,6 +2507,8 @@ print_getWalletRefundsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2437,6 +2560,8 @@ print_getWalletTokensAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2462,6 +2587,8 @@ print_getWalletTokensCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2487,6 +2614,8 @@ print_getWalletWithdrawRequestsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2512,6 +2641,8 @@ print_getWalletWithdrawRequestsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2537,6 +2668,8 @@ print_getWalletWithdrawsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2562,6 +2695,8 @@ print_getWalletWithdrawsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2857,42 +2992,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -4217,10 +4316,50 @@ call_getIncomingPaymentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4253,10 +4392,50 @@ call_getIncomingPaymentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4289,10 +4468,50 @@ call_getIncomingWalletInvoicesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4325,10 +4544,50 @@ call_getIncomingWalletInvoicesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4397,10 +4656,50 @@ call_getLocationsForWalletAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4433,10 +4732,50 @@ call_getLocationsForWalletCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4469,10 +4808,50 @@ call_getOutgoingPaymentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4505,10 +4884,50 @@ call_getOutgoingPaymentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4541,10 +4960,50 @@ call_getOutgoingWalletInvoicesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4577,10 +5036,50 @@ call_getOutgoingWalletInvoicesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4649,10 +5148,50 @@ call_getWalletBankAccountsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4685,10 +5224,50 @@ call_getWalletBankAccountsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4721,10 +5300,50 @@ call_getWalletChargebacksAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4757,10 +5376,50 @@ call_getWalletChargebacksCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4829,10 +5488,50 @@ call_getWalletExtendedOrdersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4865,10 +5564,50 @@ call_getWalletInvoicesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4901,10 +5640,50 @@ call_getWalletInvoicesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4937,10 +5716,50 @@ call_getWalletOrdersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4973,10 +5792,50 @@ call_getWalletOrdersCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5009,10 +5868,50 @@ call_getWalletPaymentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5045,10 +5944,50 @@ call_getWalletPaymentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5081,10 +6020,50 @@ call_getWalletQuotesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5117,10 +6096,50 @@ call_getWalletQuotesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5153,10 +6172,50 @@ call_getWalletRefundsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5189,10 +6248,50 @@ call_getWalletRefundsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5261,10 +6360,50 @@ call_getWalletTokensAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5297,10 +6436,50 @@ call_getWalletTokensCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5333,10 +6512,50 @@ call_getWalletWithdrawRequestsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5369,10 +6588,50 @@ call_getWalletWithdrawRequestsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5405,10 +6664,50 @@ call_getWalletWithdrawsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5441,10 +6740,50 @@ call_getWalletWithdrawsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5937,9 +7276,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -6221,9 +7557,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

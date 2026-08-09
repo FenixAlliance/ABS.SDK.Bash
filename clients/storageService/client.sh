@@ -142,7 +142,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -209,9 +208,27 @@ operation_parameters_minimum_occurrences["getFileThumbnailAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getFilesAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getFilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::top"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::skip"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::count"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::filter"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::orderBy"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::search"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::select"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::expand"]=0
+operation_parameters_minimum_occurrences["getFilesAsync:::isEmpty"]=0
 operation_parameters_minimum_occurrences["getFilesCountAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["getFilesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getFilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::top"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::skip"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::count"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::filter"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::orderBy"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::search"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::select"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::expand"]=0
+operation_parameters_minimum_occurrences["getFilesCountAsync:::isEmpty"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::fileId"]=1
 operation_parameters_minimum_occurrences["updateFileAsync:::tenantId"]=0
 operation_parameters_minimum_occurrences["updateFileAsync:::api-version"]=0
@@ -379,7 +396,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -446,9 +462,27 @@ operation_parameters_maximum_occurrences["getFileThumbnailAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getFilesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::top"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::skip"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::count"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::filter"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::orderBy"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::search"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::select"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::expand"]=0
+operation_parameters_maximum_occurrences["getFilesAsync:::isEmpty"]=0
 operation_parameters_maximum_occurrences["getFilesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getFilesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getFilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::top"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::skip"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::count"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::filter"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::orderBy"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::search"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::select"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::expand"]=0
+operation_parameters_maximum_occurrences["getFilesCountAsync:::isEmpty"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::fileId"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateFileAsync:::api-version"]=0
@@ -613,7 +647,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -680,9 +713,27 @@ operation_parameters_collection_type["getFileThumbnailAsync:::x-api-version"]=""
 operation_parameters_collection_type["getFilesAsync:::tenantId"]=""
 operation_parameters_collection_type["getFilesAsync:::api-version"]=""
 operation_parameters_collection_type["getFilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFilesAsync:::top"]=""
+operation_parameters_collection_type["getFilesAsync:::skip"]=""
+operation_parameters_collection_type["getFilesAsync:::count"]=""
+operation_parameters_collection_type["getFilesAsync:::filter"]=""
+operation_parameters_collection_type["getFilesAsync:::orderBy"]=""
+operation_parameters_collection_type["getFilesAsync:::search"]=""
+operation_parameters_collection_type["getFilesAsync:::select"]=""
+operation_parameters_collection_type["getFilesAsync:::expand"]=""
+operation_parameters_collection_type["getFilesAsync:::isEmpty"]=""
 operation_parameters_collection_type["getFilesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getFilesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getFilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getFilesCountAsync:::top"]=""
+operation_parameters_collection_type["getFilesCountAsync:::skip"]=""
+operation_parameters_collection_type["getFilesCountAsync:::count"]=""
+operation_parameters_collection_type["getFilesCountAsync:::filter"]=""
+operation_parameters_collection_type["getFilesCountAsync:::orderBy"]=""
+operation_parameters_collection_type["getFilesCountAsync:::search"]=""
+operation_parameters_collection_type["getFilesCountAsync:::select"]=""
+operation_parameters_collection_type["getFilesCountAsync:::expand"]=""
+operation_parameters_collection_type["getFilesCountAsync:::isEmpty"]=""
 operation_parameters_collection_type["updateFileAsync:::fileId"]=""
 operation_parameters_collection_type["updateFileAsync:::tenantId"]=""
 operation_parameters_collection_type["updateFileAsync:::api-version"]=""
@@ -1214,7 +1265,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1620,22 +1670,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2837,42 +2871,6 @@ call_accountPerformExternalLoginPost() {
 
 ##############################################################################
 #
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call forgotPasswordPost operation
 #
 ##############################################################################
@@ -3885,10 +3883,11 @@ call_getFilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
     if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3921,10 +3920,11 @@ call_getFilesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
+    body_form_urlencoded=$(body_parameters_to_form_urlencoded)
     if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -4438,9 +4438,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -4662,9 +4659,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

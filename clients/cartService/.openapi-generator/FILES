@@ -34,7 +34,7 @@ docs/ItemToCompareCartRecordDtoEnvelope.md
 docs/ItemToCompareCartRecordDtoListEnvelope.md
 docs/LoginRequest.md
 docs/NewWishListRequest.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/ProductToWishListRequest.md
 docs/RecordsApi.md
 docs/RefreshRequest.md

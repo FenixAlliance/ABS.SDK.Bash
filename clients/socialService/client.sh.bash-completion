@@ -124,14 +124,19 @@ _()
     operations["getSocialGroupsAsync"]=1
     operations["patchSocialGroupAsync"]=1
     operations["updateSocialGroupAsync"]=1
+    operations["createSocialCommentReactionAsync"]=1
     operations["createSocialPostAsync"]=1
     operations["createSocialPostAttachmentAsync"]=1
     operations["createSocialPostCommentAsync"]=1
     operations["createSocialPostReactionAsync"]=1
+    operations["deleteSocialCommentReactionAsync"]=1
     operations["deleteSocialPostAsync"]=1
     operations["deleteSocialPostAttachmentAsync"]=1
     operations["deleteSocialPostCommentAsync"]=1
     operations["deleteSocialPostReactionAsync"]=1
+    operations["getSocialCommentReactionAsync"]=1
+    operations["getSocialCommentReactionsAsync"]=1
+    operations["getSocialCommentReactionsCountAsync"]=1
     operations["getSocialPostAsync"]=1
     operations["getSocialPostAttachmentAsync"]=1
     operations["getSocialPostAttachmentsAsync"]=1
@@ -145,10 +150,12 @@ _()
     operations["getSocialPostsAsync"]=1
     operations["getSocialPostsCountAsync"]=1
     operations["patchSocialPostAsync"]=1
+    operations["updateSocialCommentReactionAsync"]=1
     operations["updateSocialPostAsync"]=1
     operations["updateSocialPostAttachmentAsync"]=1
     operations["updateSocialPostCommentAsync"]=1
     operations["updateSocialPostReactionAsync"]=1
+    operations["uploadSocialPostImageAttachmentAsync"]=1
     operations["countConversationsAsync"]=1
     operations["countFollowedProfilesAsync"]=1
     operations["countFollowerProfilesAsync"]=1
@@ -170,6 +177,7 @@ _()
     operations["getMessagesAsync"]=1
     operations["getNotificationByIdAsync"]=1
     operations["getNotificationsAsync"]=1
+    operations["getOrCreateDirectConversationAsync"]=1
     operations["getSocialProfileAsync"]=1
     operations["getSocialProfilesAsync"]=1
     operations["unfollowAsync"]=1
@@ -233,31 +241,38 @@ _()
     operation_parameters["getSocialGroupsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["patchSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialGroupAsync"]="socialGroupId= tenantId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["createSocialCommentReactionAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostAttachmentAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostCommentAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["createSocialPostReactionAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["deleteSocialCommentReactionAsync"]="socialPostId= commentId= reactionId= socialProfileId= api-version= x-api-version: "
     operation_parameters["deleteSocialPostAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["deleteSocialPostAttachmentAsync"]="socialPostId= attachmentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["deleteSocialPostCommentAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["deleteSocialPostReactionAsync"]="socialPostId= reactionId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["getSocialCommentReactionAsync"]="socialPostId= commentId= reactionId= api-version= x-api-version: "
+    operation_parameters["getSocialCommentReactionsAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["getSocialCommentReactionsCountAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostAttachmentAsync"]="socialPostId= attachmentId= api-version= x-api-version: "
     operation_parameters["getSocialPostAttachmentsAsync"]="socialPostId= api-version= x-api-version: "
     operation_parameters["getSocialPostAttachmentsCountAsync"]="socialPostId= api-version= x-api-version: "
     operation_parameters["getSocialPostCommentAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "
-    operation_parameters["getSocialPostCommentsAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
-    operation_parameters["getSocialPostCommentsCountAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["getSocialPostCommentsAsync"]="socialPostId= socialProfileId= parentCommentId= api-version= x-api-version: "
+    operation_parameters["getSocialPostCommentsCountAsync"]="socialPostId= socialProfileId= parentCommentId= api-version= x-api-version: "
     operation_parameters["getSocialPostReactionAsync"]="socialPostId= reactionId= api-version= x-api-version: "
     operation_parameters["getSocialPostReactionsAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostReactionsCountAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostsAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialPostsCountAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["patchSocialPostAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["updateSocialCommentReactionAsync"]="socialPostId= commentId= reactionId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostAttachmentAsync"]="socialPostId= attachmentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostCommentAsync"]="socialPostId= commentId= socialProfileId= api-version= x-api-version: "
     operation_parameters["updateSocialPostReactionAsync"]="socialPostId= reactionId= socialProfileId= api-version= x-api-version: "
+    operation_parameters["uploadSocialPostImageAttachmentAsync"]="socialPostId= socialProfileId= api-version= x-api-version: "
     operation_parameters["countConversationsAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["countFollowedProfilesAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["countFollowerProfilesAsync"]="socialProfileId= api-version= x-api-version: "
@@ -279,6 +294,7 @@ _()
     operation_parameters["getMessagesAsync"]="conversationId= socialProfileId= api-version= x-api-version: "
     operation_parameters["getNotificationByIdAsync"]="socialProfileId= notificationId= api-version= x-api-version: "
     operation_parameters["getNotificationsAsync"]="socialProfileId= api-version= x-api-version: "
+    operation_parameters["getOrCreateDirectConversationAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialProfileAsync"]="socialProfileId= api-version= x-api-version: "
     operation_parameters["getSocialProfilesAsync"]="api-version= x-api-version: "
     operation_parameters["unfollowAsync"]="socialProfileId= followedSocialProfileId= api-version= x-api-version: "

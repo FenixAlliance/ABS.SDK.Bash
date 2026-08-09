@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **enrollmentId** | **string** |  | [optional] [default to null]
 **journalEntryId** | **string** |  | [optional] [default to null]
@@ -22,7 +23,6 @@ Name | Type | Description | Notes
 **forexRatesSnapshot** | **string** |  | [optional] [default to null]
 **costCentreId** | **string** |  | [optional] [default to null]
 **projectId** | **string** |  | [optional] [default to null]
-**timestamp** | **string** |  | [optional] [default to null]
 **debit** | **float** |  | [optional] [readonly] [default to null]
 **credit** | **float** |  | [optional] [readonly] [default to null]
 **amount** | [**Money**](Money.md) |  | [optional] [default to null]

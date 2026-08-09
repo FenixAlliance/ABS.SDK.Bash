@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -129,14 +128,16 @@ operation_parameters_minimum_occurrences["getPaymentMethodDetailsAsync:::x-api-v
 operation_parameters_minimum_occurrences["getPaymentMethodsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentMethodsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentMethodsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPaymentMethodsAsync:::PaymentMethodDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPaymentMethodsCountAsync:::PaymentMethodDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::paymentMethodId"]=1
 operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPaymentMethodAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updatePaymentMethodAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentMethodAsync:::paymentMethodId"]=1
 operation_parameters_minimum_occurrences["updatePaymentMethodAsync:::api-version"]=0
@@ -157,19 +158,29 @@ operation_parameters_minimum_occurrences["getPaymentModeDetailsAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getPaymentModesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentModesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentModesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPaymentModesAsync:::PaymentModeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPaymentModesCountAsync:::PaymentModeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchPaymentModeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchPaymentModeAsync:::paymentModeId"]=1
 operation_parameters_minimum_occurrences["patchPaymentModeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchPaymentModeAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchPaymentModeAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPaymentModeAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::paymentModeId"]=1
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updatePaymentModeAsync:::PaymentModeUpdateDto"]=0
+operation_parameters_minimum_occurrences["createAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["createAsync:::CreateProviderWebhookRegistrationRequest"]=0
+operation_parameters_minimum_occurrences["getAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getAsync:::PaymentProviderRegistrationDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getCountAsync:::PaymentProviderRegistrationDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["rotateKeyAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["rotateKeyAsync:::registrationId"]=1
 operation_parameters_minimum_occurrences["createPaymentTermAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createPaymentTermAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["createPaymentTermAsync:::x-api-version"]=0
@@ -185,14 +196,16 @@ operation_parameters_minimum_occurrences["getPaymentTermDetailsAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getPaymentTermsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentTermsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentTermsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPaymentTermsAsync:::PaymentTermDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPaymentTermsCountAsync:::PaymentTermDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchPaymentTermAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchPaymentTermAsync:::paymentTermId"]=1
 operation_parameters_minimum_occurrences["patchPaymentTermAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchPaymentTermAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchPaymentTermAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPaymentTermAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updatePaymentTermAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentTermAsync:::paymentTermId"]=1
 operation_parameters_minimum_occurrences["updatePaymentTermAsync:::api-version"]=0
@@ -207,9 +220,10 @@ operation_parameters_minimum_occurrences["getPaymentAsync:::paymentId"]=1
 operation_parameters_minimum_occurrences["getPaymentAsyncV2:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPaymentAsyncV2:::paymentId"]=1
 operation_parameters_minimum_occurrences["getPaymentsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchPaymentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchPaymentAsync:::paymentId"]=1
-operation_parameters_minimum_occurrences["patchPaymentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPaymentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updatePaymentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePaymentAsync:::paymentId"]=1
 operation_parameters_minimum_occurrences["updatePaymentAsync:::PaymentUpdateDto"]=0
@@ -225,7 +239,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -254,14 +267,16 @@ operation_parameters_maximum_occurrences["getPaymentMethodDetailsAsync:::x-api-v
 operation_parameters_maximum_occurrences["getPaymentMethodsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPaymentMethodsAsync:::PaymentMethodDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPaymentMethodsCountAsync:::PaymentMethodDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::paymentMethodId"]=0
 operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPaymentMethodAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updatePaymentMethodAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentMethodAsync:::paymentMethodId"]=0
 operation_parameters_maximum_occurrences["updatePaymentMethodAsync:::api-version"]=0
@@ -282,19 +297,29 @@ operation_parameters_maximum_occurrences["getPaymentModeDetailsAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getPaymentModesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentModesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentModesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPaymentModesAsync:::PaymentModeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPaymentModesCountAsync:::PaymentModeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchPaymentModeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchPaymentModeAsync:::paymentModeId"]=0
 operation_parameters_maximum_occurrences["patchPaymentModeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchPaymentModeAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchPaymentModeAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPaymentModeAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::paymentModeId"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updatePaymentModeAsync:::PaymentModeUpdateDto"]=0
+operation_parameters_maximum_occurrences["createAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["createAsync:::CreateProviderWebhookRegistrationRequest"]=0
+operation_parameters_maximum_occurrences["getAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getAsync:::PaymentProviderRegistrationDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getCountAsync:::PaymentProviderRegistrationDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["rotateKeyAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["rotateKeyAsync:::registrationId"]=0
 operation_parameters_maximum_occurrences["createPaymentTermAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createPaymentTermAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["createPaymentTermAsync:::x-api-version"]=0
@@ -310,14 +335,16 @@ operation_parameters_maximum_occurrences["getPaymentTermDetailsAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getPaymentTermsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPaymentTermsAsync:::PaymentTermDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPaymentTermsCountAsync:::PaymentTermDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchPaymentTermAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchPaymentTermAsync:::paymentTermId"]=0
 operation_parameters_maximum_occurrences["patchPaymentTermAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchPaymentTermAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchPaymentTermAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPaymentTermAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updatePaymentTermAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentTermAsync:::paymentTermId"]=0
 operation_parameters_maximum_occurrences["updatePaymentTermAsync:::api-version"]=0
@@ -332,9 +359,10 @@ operation_parameters_maximum_occurrences["getPaymentAsync:::paymentId"]=0
 operation_parameters_maximum_occurrences["getPaymentAsyncV2:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPaymentAsyncV2:::paymentId"]=0
 operation_parameters_maximum_occurrences["getPaymentsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchPaymentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchPaymentAsync:::paymentId"]=0
-operation_parameters_maximum_occurrences["patchPaymentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPaymentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updatePaymentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePaymentAsync:::paymentId"]=0
 operation_parameters_maximum_occurrences["updatePaymentAsync:::PaymentUpdateDto"]=0
@@ -347,7 +375,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -376,14 +403,16 @@ operation_parameters_collection_type["getPaymentMethodDetailsAsync:::x-api-versi
 operation_parameters_collection_type["getPaymentMethodsAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentMethodsAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentMethodsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPaymentMethodsAsync:::PaymentMethodDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPaymentMethodsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentMethodsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentMethodsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPaymentMethodsCountAsync:::PaymentMethodDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchPaymentMethodAsync:::tenantId"]=""
 operation_parameters_collection_type["patchPaymentMethodAsync:::paymentMethodId"]=""
 operation_parameters_collection_type["patchPaymentMethodAsync:::api-version"]=""
 operation_parameters_collection_type["patchPaymentMethodAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchPaymentMethodAsync:::Operation"]=
+operation_parameters_collection_type["patchPaymentMethodAsync:::PatchOperation"]=
 operation_parameters_collection_type["updatePaymentMethodAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentMethodAsync:::paymentMethodId"]=""
 operation_parameters_collection_type["updatePaymentMethodAsync:::api-version"]=""
@@ -404,19 +433,29 @@ operation_parameters_collection_type["getPaymentModeDetailsAsync:::x-api-version
 operation_parameters_collection_type["getPaymentModesAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentModesAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentModesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPaymentModesAsync:::PaymentModeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPaymentModesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentModesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentModesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPaymentModesCountAsync:::PaymentModeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchPaymentModeAsync:::tenantId"]=""
 operation_parameters_collection_type["patchPaymentModeAsync:::paymentModeId"]=""
 operation_parameters_collection_type["patchPaymentModeAsync:::api-version"]=""
 operation_parameters_collection_type["patchPaymentModeAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchPaymentModeAsync:::Operation"]=
+operation_parameters_collection_type["patchPaymentModeAsync:::PatchOperation"]=
 operation_parameters_collection_type["updatePaymentModeAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentModeAsync:::paymentModeId"]=""
 operation_parameters_collection_type["updatePaymentModeAsync:::api-version"]=""
 operation_parameters_collection_type["updatePaymentModeAsync:::x-api-version"]=""
 operation_parameters_collection_type["updatePaymentModeAsync:::PaymentModeUpdateDto"]=""
+operation_parameters_collection_type["createAsync:::tenantId"]=""
+operation_parameters_collection_type["createAsync:::CreateProviderWebhookRegistrationRequest"]=""
+operation_parameters_collection_type["getAsync:::tenantId"]=""
+operation_parameters_collection_type["getAsync:::PaymentProviderRegistrationDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getCountAsync:::PaymentProviderRegistrationDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["rotateKeyAsync:::tenantId"]=""
+operation_parameters_collection_type["rotateKeyAsync:::registrationId"]=""
 operation_parameters_collection_type["createPaymentTermAsync:::tenantId"]=""
 operation_parameters_collection_type["createPaymentTermAsync:::api-version"]=""
 operation_parameters_collection_type["createPaymentTermAsync:::x-api-version"]=""
@@ -432,14 +471,16 @@ operation_parameters_collection_type["getPaymentTermDetailsAsync:::x-api-version
 operation_parameters_collection_type["getPaymentTermsAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentTermsAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentTermsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPaymentTermsAsync:::PaymentTermDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPaymentTermsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPaymentTermsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPaymentTermsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPaymentTermsCountAsync:::PaymentTermDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchPaymentTermAsync:::tenantId"]=""
 operation_parameters_collection_type["patchPaymentTermAsync:::paymentTermId"]=""
 operation_parameters_collection_type["patchPaymentTermAsync:::api-version"]=""
 operation_parameters_collection_type["patchPaymentTermAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchPaymentTermAsync:::Operation"]=
+operation_parameters_collection_type["patchPaymentTermAsync:::PatchOperation"]=
 operation_parameters_collection_type["updatePaymentTermAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentTermAsync:::paymentTermId"]=""
 operation_parameters_collection_type["updatePaymentTermAsync:::api-version"]=""
@@ -454,9 +495,10 @@ operation_parameters_collection_type["getPaymentAsync:::paymentId"]=""
 operation_parameters_collection_type["getPaymentAsyncV2:::tenantId"]=""
 operation_parameters_collection_type["getPaymentAsyncV2:::paymentId"]=""
 operation_parameters_collection_type["getPaymentsAsync:::tenantId"]=""
+operation_parameters_collection_type["getPaymentsAsync:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchPaymentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchPaymentAsync:::paymentId"]=""
-operation_parameters_collection_type["patchPaymentAsync:::Operation"]=
+operation_parameters_collection_type["patchPaymentAsync:::PatchOperation"]=
 operation_parameters_collection_type["updatePaymentAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePaymentAsync:::paymentId"]=""
 operation_parameters_collection_type["updatePaymentAsync:::PaymentUpdateDto"]=""
@@ -852,7 +894,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -890,6 +931,15 @@ read -r -d '' ops <<EOF
   ${CYAN}getPaymentModesCountAsync${OFF};Counts payment modes
   ${CYAN}patchPaymentModeAsync${OFF};Patch a payment mode
   ${CYAN}updatePaymentModeAsync${OFF};Updates a payment mode
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[paymentProviderRegistrations]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}createAsync${OFF};Provisions a provider webhook registration
+  ${CYAN}getAsync${OFF};Lists the tenant's provider registrations
+  ${CYAN}getCountAsync${OFF};Counts the tenant's provider registrations
+  ${CYAN}rotateKeyAsync${OFF};Rotates a registration's webhook key
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1021,22 +1071,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1376,6 +1410,8 @@ print_getPaymentMethodsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1402,6 +1438,8 @@ print_getPaymentMethodsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1568,6 +1606,8 @@ print_getPaymentModesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1594,6 +1634,8 @@ print_getPaymentModesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1660,6 +1702,109 @@ print_updatePaymentModeAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=403
     echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createAsync operation
+#
+##############################################################################
+print_createAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createAsync - Provisions a provider webhook registration${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Stores the BYO signing secret in the tenant options store, creates + activates the registration, and reveals the one-time plaintext webhook key plus its fully-composed inbound URL." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getAsync operation
+#
+##############################################################################
+print_getAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getAsync - Lists the tenant's provider registrations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets all provider registrations for the current tenant with OData support (no secret is ever returned)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getCountAsync operation
+#
+##############################################################################
+print_getCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getCountAsync - Counts the tenant's provider registrations${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Gets the count of provider registrations for the current tenant (OData sibling of the list)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for rotateKeyAsync operation
+#
+##############################################################################
+print_rotateKeyAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}rotateKeyAsync - Rotates a registration's webhook key${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Mints a fresh webhook key (invalidating the previous one) and reveals it once, plus its composed URL." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}registrationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: registrationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -1760,6 +1905,8 @@ print_getPaymentTermsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1786,6 +1933,8 @@ print_getPaymentTermsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1968,6 +2117,8 @@ print_getPaymentsAsync_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2179,42 +2330,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3199,10 +3314,50 @@ call_getPaymentMethodsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3235,10 +3390,50 @@ call_getPaymentMethodsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3571,10 +3766,50 @@ call_getPaymentModesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3607,10 +3842,50 @@ call_getPaymentModesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3763,6 +4038,270 @@ call_updatePaymentModeAsync() {
         else
             eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
         fi
+    fi
+}
+
+##############################################################################
+#
+# Call createAsync operation
+#
+##############################################################################
+call_createAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentProviderRegistrations" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getAsync operation
+#
+##############################################################################
+call_getAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentProviderRegistrations" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getCountAsync operation
+#
+##############################################################################
+call_getCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentProviderRegistrations/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call rotateKeyAsync operation
+#
+##############################################################################
+call_rotateKeyAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(registrationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/PaymentsService/PaymentProviderRegistrations/{registrationId}/RotateKey" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3943,10 +4482,50 @@ call_getPaymentTermsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3979,10 +4558,50 @@ call_getPaymentTermsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4351,10 +4970,50 @@ call_getPaymentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4619,9 +5278,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -4702,6 +5358,18 @@ case $key in
     ;;
     updatePaymentModeAsync)
     operation="updatePaymentModeAsync"
+    ;;
+    createAsync)
+    operation="createAsync"
+    ;;
+    getAsync)
+    operation="getAsync"
+    ;;
+    getCountAsync)
+    operation="getCountAsync"
+    ;;
+    rotateKeyAsync)
+    operation="rotateKeyAsync"
     ;;
     createPaymentTermAsync)
     operation="createPaymentTermAsync"
@@ -4844,9 +5512,6 @@ case $operation in
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
-    ;;
     forgotPasswordPost)
     call_forgotPasswordPost
     ;;
@@ -4927,6 +5592,18 @@ case $operation in
     ;;
     updatePaymentModeAsync)
     call_updatePaymentModeAsync
+    ;;
+    createAsync)
+    call_createAsync
+    ;;
+    getAsync)
+    call_getAsync
+    ;;
+    getCountAsync)
+    call_getCountAsync
+    ;;
+    rotateKeyAsync)
+    call_rotateKeyAsync
     ;;
     createPaymentTermAsync)
     call_createPaymentTermAsync

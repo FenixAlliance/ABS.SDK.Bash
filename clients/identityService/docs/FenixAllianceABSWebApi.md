@@ -8,7 +8,6 @@ Method | HTTP request | Description
 [**accountManageDownloadPersonalDataPost**](FenixAllianceABSWebApi.md#accountManageDownloadPersonalDataPost) | **POST** /Account/Manage/DownloadPersonalData | 
 [**accountManageLinkExternalLoginPost**](FenixAllianceABSWebApi.md#accountManageLinkExternalLoginPost) | **POST** /Account/Manage/LinkExternalLogin | 
 [**accountPerformExternalLoginPost**](FenixAllianceABSWebApi.md#accountPerformExternalLoginPost) | **POST** /Account/PerformExternalLogin | 
-[**apiV2AIServiceAgentsAgentIdAguiPost**](FenixAllianceABSWebApi.md#apiV2AIServiceAgentsAgentIdAguiPost) | **POST** /api/v2/AIService/Agents/{agentId}/agui | 
 [**forgotPasswordPost**](FenixAllianceABSWebApi.md#forgotPasswordPost) | **POST** /forgotPassword | 
 [**healthGet**](FenixAllianceABSWebApi.md#healthGet) | **GET** /health | 
 [**helloGet**](FenixAllianceABSWebApi.md#helloGet) | **GET** /hello | 
@@ -150,39 +149,6 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: multipart/form-data, application/x-www-form-urlencoded
-- **Accept**: Not Applicable
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-
-## apiV2AIServiceAgentsAgentIdAguiPost
-
-
-
-### Example
-
-```bash
- apiV2AIServiceAgentsAgentIdAguiPost agentId=value
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **agentId** | **string** |  | [default to null]
-
-### Return type
-
-(empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not Applicable
 - **Accept**: Not Applicable
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

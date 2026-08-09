@@ -300,6 +300,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **dealUnitId** | **string** |  | [default to null]
  **itemId** | **string** |  | [optional] [default to null]
+ **dealUnitLineDtoCollectionQueryParameters** | [**DealUnitLineDtoCollectionQueryParameters**](DealUnitLineDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -311,7 +312,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -336,6 +337,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **dealUnitId** | **string** |  | [default to null]
+ **dealUnitLineDtoCollectionQueryParameters** | [**DealUnitLineDtoCollectionQueryParameters**](DealUnitLineDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -347,7 +349,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -408,6 +410,7 @@ Retrieves a list of deal units for the specified tenant with OData query support
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **dealUnitDtoCollectionQueryParameters** | [**DealUnitDtoCollectionQueryParameters**](DealUnitDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -419,7 +422,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -443,6 +446,7 @@ Returns the total count of deal units for the specified tenant with OData filter
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **dealUnitDtoCollectionQueryParameters** | [**DealUnitDtoCollectionQueryParameters**](DealUnitDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -454,7 +458,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -514,6 +518,7 @@ Retrieves a list of deal units with extended details for the specified tenant wi
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **extendedDealUnitDtoCollectionQueryParameters** | [**ExtendedDealUnitDtoCollectionQueryParameters**](ExtendedDealUnitDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -525,7 +530,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -550,7 +555,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **dealUnitId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -588,7 +593,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **dealUnitId** | **string** |  | [default to null]
  **dealUnitLineId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

@@ -71,6 +71,16 @@ _()
     declare -A operations
     operations["getAndStoreTokens"]=1
     operations["isRequestValidAsync"]=1
+    operations["disableGlobalApplicationPrincipal"]=1
+    operations["enableGlobalApplicationPrincipal"]=1
+    operations["getGlobalApplicationPrincipal"]=1
+    operations["getGlobalApplicationPrincipals"]=1
+    operations["getGlobalApplicationPrincipalsCount"]=1
+    operations["grantGlobalApplicationPrincipalPermission"]=1
+    operations["provisionGlobalApplicationPrincipal"]=1
+    operations["provisionPaymentsConnector"]=1
+    operations["revokeGlobalApplicationPrincipalPermission"]=1
+    operations["suspendGlobalApplicationPrincipal"]=1
     operations["deleteSystemBusinessDomain"]=1
     operations["getSystemBusinessDomainById"]=1
     operations["getSystemBusinessDomains"]=1
@@ -80,6 +90,7 @@ _()
     operations["getSystemCartById"]=1
     operations["getSystemCarts"]=1
     operations["getSystemCartsCount"]=1
+    operations["purgeSystemGuestCarts"]=1
     operations["createSystemContactOption"]=1
     operations["deleteSystemContactOption"]=1
     operations["getSystemContactOptionById"]=1
@@ -93,7 +104,6 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
-    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -111,6 +121,19 @@ _()
     operations["getSystemIPLookupById"]=1
     operations["getSystemIPLookups"]=1
     operations["getSystemIPLookupsCount"]=1
+    operations["cancelInboxMessageRetry"]=1
+    operations["deadLetterInboxMessage"]=1
+    operations["expediteInboxMessage"]=1
+    operations["getDuplicateInboxMessages"]=1
+    operations["getDuplicateInboxMessagesCount"]=1
+    operations["getInboxCorrelationChain"]=1
+    operations["getInboxHealth"]=1
+    operations["getInboxMessage"]=1
+    operations["getInboxMessages"]=1
+    operations["getInboxMessagesCount"]=1
+    operations["quarantineInboxMessage"]=1
+    operations["releaseInboxMessageLease"]=1
+    operations["replayInboxMessage"]=1
     operations["getAttributesForLicenseAsync"]=1
     operations["getFeaturesForLicenseAsync"]=1
     operations["getLicenseAssignmentsAsync"]=1
@@ -132,6 +155,16 @@ _()
     operations["patchSystemOption"]=1
     operations["updateSystemOption"]=1
     operations["upsertSystemOption"]=1
+    operations["cancelOutboxMessage"]=1
+    operations["deadLetterOutboxMessage"]=1
+    operations["expediteOutboxMessage"]=1
+    operations["getOutboxCorrelationChain"]=1
+    operations["getOutboxHealth"]=1
+    operations["getOutboxMessage"]=1
+    operations["getOutboxMessages"]=1
+    operations["getOutboxMessagesCount"]=1
+    operations["releaseOutboxMessageLease"]=1
+    operations["replayOutboxMessage"]=1
     operations["getSystemOverview"]=1
     operations["createSystemPortal"]=1
     operations["deleteSystemPortal"]=1
@@ -155,8 +188,10 @@ _()
     operations["getAllTenants"]=1
     operations["getExtendedTenantsCount"]=1
     operations["getTenant"]=1
+    operations["getTenantModuleGrants"]=1
     operations["getTenantsCount"]=1
     operations["patchTenant"]=1
+    operations["setTenantModuleGrants"]=1
     operations["updateTenant"]=1
     operations["createSystemUserOption"]=1
     operations["deleteSystemUserOption"]=1
@@ -172,10 +207,13 @@ _()
     operations["getExtendedAccountHolderAsync"]=1
     operations["getExtendedUsersAsync"]=1
     operations["getExtendedUsersCountAsync"]=1
+    operations["getUserAdminDetailAsync"]=1
     operations["getUserAsync"]=1
     operations["getUsersAsync"]=1
     operations["getUsersCountAsync"]=1
     operations["patchAccountHolderAsync"]=1
+    operations["setUserPasswordAsync"]=1
+    operations["updateAccountHolderAdminProfileAsync"]=1
     operations["updateAccountHolderAsync"]=1
 
     # An associative array of operations to their parameters
@@ -183,6 +221,16 @@ _()
     declare -A operation_parameters
     operation_parameters["getAndStoreTokens"]="api-version= x-api-version: "
     operation_parameters["isRequestValidAsync"]="api-version= x-api-version: "
+    operation_parameters["disableGlobalApplicationPrincipal"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["enableGlobalApplicationPrincipal"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getGlobalApplicationPrincipal"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getGlobalApplicationPrincipals"]="api-version= x-api-version: "
+    operation_parameters["getGlobalApplicationPrincipalsCount"]="api-version= x-api-version: "
+    operation_parameters["grantGlobalApplicationPrincipalPermission"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["provisionGlobalApplicationPrincipal"]="tenantId= api-version= x-api-version: "
+    operation_parameters["provisionPaymentsConnector"]="tenantId= api-version= x-api-version: "
+    operation_parameters["revokeGlobalApplicationPrincipalPermission"]="principalId= permission= tenantId= api-version= x-api-version: "
+    operation_parameters["suspendGlobalApplicationPrincipal"]="principalId= tenantId= api-version= x-api-version: "
     operation_parameters["deleteSystemBusinessDomain"]="businessDomainId= api-version= x-api-version: "
     operation_parameters["getSystemBusinessDomainById"]="businessDomainId= api-version= x-api-version: "
     operation_parameters["getSystemBusinessDomains"]="api-version= x-api-version: "
@@ -192,6 +240,7 @@ _()
     operation_parameters["getSystemCartById"]="cartId= api-version= x-api-version: "
     operation_parameters["getSystemCarts"]="api-version= x-api-version: "
     operation_parameters["getSystemCartsCount"]="api-version= x-api-version: "
+    operation_parameters["purgeSystemGuestCarts"]="api-version= x-api-version: "
     operation_parameters["createSystemContactOption"]="contactId= key= portalId= api-version= x-api-version: "
     operation_parameters["deleteSystemContactOption"]="contactId= optionId= api-version= x-api-version: "
     operation_parameters["getSystemContactOptionById"]="contactId= optionId= api-version= x-api-version: "
@@ -205,7 +254,6 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
-    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -223,6 +271,19 @@ _()
     operation_parameters["getSystemIPLookupById"]="ipLookupId= api-version= x-api-version: "
     operation_parameters["getSystemIPLookups"]="api-version= x-api-version: "
     operation_parameters["getSystemIPLookupsCount"]="api-version= x-api-version: "
+    operation_parameters["cancelInboxMessageRetry"]="id= api-version= x-api-version: "
+    operation_parameters["deadLetterInboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["expediteInboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["getDuplicateInboxMessages"]="api-version= x-api-version: "
+    operation_parameters["getDuplicateInboxMessagesCount"]="api-version= x-api-version: "
+    operation_parameters["getInboxCorrelationChain"]="correlationId= api-version= x-api-version: "
+    operation_parameters["getInboxHealth"]="api-version= x-api-version: "
+    operation_parameters["getInboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["getInboxMessages"]="api-version= x-api-version: "
+    operation_parameters["getInboxMessagesCount"]="api-version= x-api-version: "
+    operation_parameters["quarantineInboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["releaseInboxMessageLease"]="id= api-version= x-api-version: "
+    operation_parameters["replayInboxMessage"]="id= api-version= x-api-version: "
     operation_parameters["getAttributesForLicenseAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getFeaturesForLicenseAsync"]="licenseId= tenantId= api-version= x-api-version: "
     operation_parameters["getLicenseAssignmentsAsync"]="licenseId= tenantId= api-version= x-api-version: "
@@ -244,6 +305,16 @@ _()
     operation_parameters["patchSystemOption"]="optionId= api-version= x-api-version: "
     operation_parameters["updateSystemOption"]="optionId= api-version= x-api-version: "
     operation_parameters["upsertSystemOption"]="key= portalId= api-version= x-api-version: "
+    operation_parameters["cancelOutboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["deadLetterOutboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["expediteOutboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["getOutboxCorrelationChain"]="correlationId= api-version= x-api-version: "
+    operation_parameters["getOutboxHealth"]="api-version= x-api-version: "
+    operation_parameters["getOutboxMessage"]="id= api-version= x-api-version: "
+    operation_parameters["getOutboxMessages"]="api-version= x-api-version: "
+    operation_parameters["getOutboxMessagesCount"]="api-version= x-api-version: "
+    operation_parameters["releaseOutboxMessageLease"]="id= api-version= x-api-version: "
+    operation_parameters["replayOutboxMessage"]="id= api-version= x-api-version: "
     operation_parameters["getSystemOverview"]="api-version= x-api-version: "
     operation_parameters["createSystemPortal"]="api-version= x-api-version: "
     operation_parameters["deleteSystemPortal"]="portalId= api-version= x-api-version: "
@@ -267,8 +338,10 @@ _()
     operation_parameters["getAllTenants"]="api-version= x-api-version: "
     operation_parameters["getExtendedTenantsCount"]="api-version= x-api-version: "
     operation_parameters["getTenant"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getTenantModuleGrants"]="tenantId= api-version= x-api-version: "
     operation_parameters["getTenantsCount"]="api-version= x-api-version: "
     operation_parameters["patchTenant"]="tenantId= api-version= x-api-version: "
+    operation_parameters["setTenantModuleGrants"]="tenantId= api-version= x-api-version: "
     operation_parameters["updateTenant"]="tenantId= api-version= x-api-version: "
     operation_parameters["createSystemUserOption"]="userId= key= portalId= api-version= x-api-version: "
     operation_parameters["deleteSystemUserOption"]="userId= optionId= api-version= x-api-version: "
@@ -284,10 +357,13 @@ _()
     operation_parameters["getExtendedAccountHolderAsync"]="userId= api-version= x-api-version: "
     operation_parameters["getExtendedUsersAsync"]="api-version= x-api-version: "
     operation_parameters["getExtendedUsersCountAsync"]="api-version= x-api-version: "
+    operation_parameters["getUserAdminDetailAsync"]="userId= tenantId= api-version= x-api-version: "
     operation_parameters["getUserAsync"]="userId= api-version= x-api-version: "
     operation_parameters["getUsersAsync"]="api-version= x-api-version: "
     operation_parameters["getUsersCountAsync"]="api-version= x-api-version: "
     operation_parameters["patchAccountHolderAsync"]="userId= api-version= x-api-version: "
+    operation_parameters["setUserPasswordAsync"]="userId= api-version= x-api-version: "
+    operation_parameters["updateAccountHolderAdminProfileAsync"]="userId= api-version= x-api-version: "
     operation_parameters["updateAccountHolderAsync"]="userId= api-version= x-api-version: "
 
     # An associative array of possible values for enum parameters

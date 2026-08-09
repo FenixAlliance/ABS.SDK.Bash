@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [default to null]
-**message** | **string** |  | [default to null]
+**message** | **string** |  | [optional] [default to null]
 **bodyHtml** | **string** |  | [optional] [default to null]
 **bodyFormat** | **string** |  | [optional] [default to null]
 **parentCommentId** | **string** |  | [optional] [default to null]

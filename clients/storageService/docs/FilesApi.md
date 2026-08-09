@@ -243,6 +243,15 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **top** | **integer** |  | [optional] [default to null]
+ **skip** | **integer** |  | [optional] [default to null]
+ **count** | **boolean** |  | [optional] [default to null]
+ **filter** | **string** |  | [optional] [default to null]
+ **orderBy** | **string** |  | [optional] [default to null]
+ **search** | **string** |  | [optional] [default to null]
+ **_select** | **string** |  | [optional] [default to null]
+ **expand** | **string** |  | [optional] [default to null]
+ **isEmpty** | **boolean** |  | [optional] [default to null]
 
 ### Return type
 
@@ -254,7 +263,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: multipart/form-data
 - **Accept**: application/json, image/png
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -278,6 +287,15 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [optional] [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **top** | **integer** |  | [optional] [default to null]
+ **skip** | **integer** |  | [optional] [default to null]
+ **count** | **boolean** |  | [optional] [default to null]
+ **filter** | **string** |  | [optional] [default to null]
+ **orderBy** | **string** |  | [optional] [default to null]
+ **search** | **string** |  | [optional] [default to null]
+ **_select** | **string** |  | [optional] [default to null]
+ **expand** | **string** |  | [optional] [default to null]
+ **isEmpty** | **boolean** |  | [optional] [default to null]
 
 ### Return type
 
@@ -289,7 +307,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: multipart/form-data
 - **Accept**: application/json, image/png
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

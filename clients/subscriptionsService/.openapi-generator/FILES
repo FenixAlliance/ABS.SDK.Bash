@@ -14,13 +14,14 @@ docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md
 docs/ResetPasswordRequest.md
 docs/SubscriptionCreateDto.md
 docs/SubscriptionDto.md
+docs/SubscriptionDtoCollectionQueryParameters.md
 docs/SubscriptionDtoEnvelope.md
 docs/SubscriptionDtoIReadOnlyListEnvelope.md
 docs/SubscriptionPlanCreateDto.md

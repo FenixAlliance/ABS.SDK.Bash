@@ -222,6 +222,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **discountListId** | **string** |  | [default to null]
+ **discountDtoCollectionQueryParameters** | [**DiscountDtoCollectionQueryParameters**](DiscountDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -233,7 +234,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -258,6 +259,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **discountListId** | **string** |  | [default to null]
+ **discountDtoCollectionQueryParameters** | [**DiscountDtoCollectionQueryParameters**](DiscountDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -269,7 +271,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -330,6 +332,7 @@ Gets all discount lists for the current tenant with OData support.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **discountListDtoCollectionQueryParameters** | [**DiscountListDtoCollectionQueryParameters**](DiscountListDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -341,7 +344,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -365,6 +368,7 @@ Gets the count of discount lists for the current tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **discountListDtoCollectionQueryParameters** | [**DiscountListDtoCollectionQueryParameters**](DiscountListDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -376,7 +380,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -401,7 +405,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **discountListId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -439,7 +443,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **discountListId** | **string** |  | [default to null]
  **discountListEntryId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

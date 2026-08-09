@@ -297,7 +297,15 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "createBusinessApplicationAsync[Create a new business application]" \
+            "disableApplicationPrincipalAsync[Disable an application principal]" \
+            "enableApplicationPrincipalAsync[Enable an application principal]" \
+            "getApplicationPrincipalAsync[Get application principal by ID]" \
+            "getApplicationPrincipalsAsync[Get all application principals]" \
+            "getApplicationPrincipalsCountAsync[Get application principals count]" \
+            "grantPermissionAsync[Grant a permission to an application principal]" \
+            "provisionApplicationPrincipalAsync[Provision an application principal]" \
+            "revokePermissionAsync[Revoke a permission from an application principal]" \
+            "suspendApplicationPrincipalAsync[Suspend an application principal]"             "createBusinessApplicationAsync[Create a new business application]" \
             "deleteBusinessApplicationAsync[Delete a business application]" \
             "getBusinessApplicationByIdAsync[Get business application by ID]" \
             "getBusinessApplicationsAsync[Get all business applications]" \
@@ -309,7 +317,6 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
-            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -375,6 +382,94 @@ case $state in
     ;;
   args)
     case $line[1] in
+      disableApplicationPrincipalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      enableApplicationPrincipalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getApplicationPrincipalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getApplicationPrincipalsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getApplicationPrincipalsCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      grantPermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      provisionApplicationPrincipalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokePermissionAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+"permission=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      suspendApplicationPrincipalAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       createBusinessApplicationAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -484,13 +579,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AIServiceAgentsAgentIdAguiPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "agentId=:[PATH] "
-                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

@@ -216,7 +216,7 @@ operation_parameters_minimum_occurrences["isItemInWishLists:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchCartAsync:::cartId"]=1
 operation_parameters_minimum_occurrences["patchCartAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchCartAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchCartAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchCartAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["removeCartLineAsync:::cartId"]=1
 operation_parameters_minimum_occurrences["removeCartLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["removeCartLineAsync:::api-version"]=0
@@ -280,7 +280,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -326,7 +325,7 @@ operation_parameters_minimum_occurrences["isItemAlreadyInCart:::x-api-version"]=
 operation_parameters_minimum_occurrences["patchItemCartRecord:::recordId"]=1
 operation_parameters_minimum_occurrences["patchItemCartRecord:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemCartRecord:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemCartRecord:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemCartRecord:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["removeProductFromCartByParams:::cartId"]=0
 operation_parameters_minimum_occurrences["removeProductFromCartByParams:::productId"]=0
 operation_parameters_minimum_occurrences["removeProductFromCartByParams:::api-version"]=0
@@ -366,7 +365,7 @@ operation_parameters_minimum_occurrences["isProductInWishLists:::x-api-version"]
 operation_parameters_minimum_occurrences["patchWishList:::wishListId"]=1
 operation_parameters_minimum_occurrences["patchWishList:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWishList:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWishList:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWishList:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateProductToWishList:::wishListId"]=1
 operation_parameters_minimum_occurrences["updateProductToWishList:::api-version"]=0
 operation_parameters_minimum_occurrences["updateProductToWishList:::x-api-version"]=0
@@ -505,7 +504,7 @@ operation_parameters_maximum_occurrences["isItemInWishLists:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchCartAsync:::cartId"]=0
 operation_parameters_maximum_occurrences["patchCartAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchCartAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchCartAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchCartAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["removeCartLineAsync:::cartId"]=0
 operation_parameters_maximum_occurrences["removeCartLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["removeCartLineAsync:::api-version"]=0
@@ -569,7 +568,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -615,7 +613,7 @@ operation_parameters_maximum_occurrences["isItemAlreadyInCart:::x-api-version"]=
 operation_parameters_maximum_occurrences["patchItemCartRecord:::recordId"]=0
 operation_parameters_maximum_occurrences["patchItemCartRecord:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemCartRecord:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemCartRecord:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemCartRecord:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["removeProductFromCartByParams:::cartId"]=0
 operation_parameters_maximum_occurrences["removeProductFromCartByParams:::productId"]=0
 operation_parameters_maximum_occurrences["removeProductFromCartByParams:::api-version"]=0
@@ -655,7 +653,7 @@ operation_parameters_maximum_occurrences["isProductInWishLists:::x-api-version"]
 operation_parameters_maximum_occurrences["patchWishList:::wishListId"]=0
 operation_parameters_maximum_occurrences["patchWishList:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWishList:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWishList:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWishList:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateProductToWishList:::wishListId"]=0
 operation_parameters_maximum_occurrences["updateProductToWishList:::api-version"]=0
 operation_parameters_maximum_occurrences["updateProductToWishList:::x-api-version"]=0
@@ -791,7 +789,7 @@ operation_parameters_collection_type["isItemInWishLists:::x-api-version"]=""
 operation_parameters_collection_type["patchCartAsync:::cartId"]=""
 operation_parameters_collection_type["patchCartAsync:::api-version"]=""
 operation_parameters_collection_type["patchCartAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchCartAsync:::Operation"]=
+operation_parameters_collection_type["patchCartAsync:::PatchOperation"]=
 operation_parameters_collection_type["removeCartLineAsync:::cartId"]=""
 operation_parameters_collection_type["removeCartLineAsync:::lineId"]=""
 operation_parameters_collection_type["removeCartLineAsync:::api-version"]=""
@@ -855,7 +853,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -901,7 +898,7 @@ operation_parameters_collection_type["isItemAlreadyInCart:::x-api-version"]=""
 operation_parameters_collection_type["patchItemCartRecord:::recordId"]=""
 operation_parameters_collection_type["patchItemCartRecord:::api-version"]=""
 operation_parameters_collection_type["patchItemCartRecord:::x-api-version"]=""
-operation_parameters_collection_type["patchItemCartRecord:::Operation"]=
+operation_parameters_collection_type["patchItemCartRecord:::PatchOperation"]=
 operation_parameters_collection_type["removeProductFromCartByParams:::cartId"]=""
 operation_parameters_collection_type["removeProductFromCartByParams:::productId"]=""
 operation_parameters_collection_type["removeProductFromCartByParams:::api-version"]=""
@@ -941,7 +938,7 @@ operation_parameters_collection_type["isProductInWishLists:::x-api-version"]=""
 operation_parameters_collection_type["patchWishList:::wishListId"]=""
 operation_parameters_collection_type["patchWishList:::api-version"]=""
 operation_parameters_collection_type["patchWishList:::x-api-version"]=""
-operation_parameters_collection_type["patchWishList:::Operation"]=
+operation_parameters_collection_type["patchWishList:::PatchOperation"]=
 operation_parameters_collection_type["updateProductToWishList:::wishListId"]=""
 operation_parameters_collection_type["updateProductToWishList:::api-version"]=""
 operation_parameters_collection_type["updateProductToWishList:::x-api-version"]=""
@@ -1401,7 +1398,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -2780,22 +2776,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5943,42 +5923,6 @@ call_accountPerformExternalLoginPost() {
 
 ##############################################################################
 #
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
 # Call forgotPasswordPost operation
 #
 ##############################################################################
@@ -8175,9 +8119,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -8528,9 +8469,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

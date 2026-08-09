@@ -7,6 +7,7 @@ docs/AccessTokenResponse.md
 docs/EmptyEnvelope.md
 docs/ErrorEnvelope.md
 docs/ExtendedSalesLiteratureDto.md
+docs/ExtendedSalesLiteratureDtoCollectionQueryParameters.md
 docs/ExtendedSalesLiteratureDtoListEnvelope.md
 docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
@@ -17,14 +18,16 @@ docs/Int32Envelope.md
 docs/LoginRequest.md
 docs/LoyaltyProgramCreateDto.md
 docs/LoyaltyProgramDto.md
+docs/LoyaltyProgramDtoCollectionQueryParameters.md
 docs/LoyaltyProgramDtoEnvelope.md
 docs/LoyaltyProgramDtoListEnvelope.md
 docs/LoyaltyProgramUpdateDto.md
 docs/LoyaltyProgramsApi.md
 docs/MarginsApi.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/PointOfSaleCreateDto.md
 docs/PointOfSaleDto.md
+docs/PointOfSaleDtoCollectionQueryParameters.md
 docs/PointOfSaleDtoEnvelope.md
 docs/PointOfSaleDtoListEnvelope.md
 docs/PointOfSaleUpdateDto.md
@@ -35,6 +38,7 @@ docs/ResendConfirmationEmailRequest.md
 docs/ResetPasswordRequest.md
 docs/SalesLiteratureCreateDto.md
 docs/SalesLiteratureDto.md
+docs/SalesLiteratureDtoCollectionQueryParameters.md
 docs/SalesLiteratureDtoEnvelope.md
 docs/SalesLiteratureDtoListEnvelope.md
 docs/SalesLiteratureTypeDto.md
@@ -42,6 +46,7 @@ docs/SalesLiteratureUpdateDto.md
 docs/SalesLiteraturesApi.md
 docs/StoreCreateDto.md
 docs/StoreDto.md
+docs/StoreDtoCollectionQueryParameters.md
 docs/StoreDtoEnvelope.md
 docs/StoreDtoListEnvelope.md
 docs/StoreUpdateDto.md

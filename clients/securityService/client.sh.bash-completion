@@ -69,6 +69,15 @@ _()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
+    operations["disableApplicationPrincipalAsync"]=1
+    operations["enableApplicationPrincipalAsync"]=1
+    operations["getApplicationPrincipalAsync"]=1
+    operations["getApplicationPrincipalsAsync"]=1
+    operations["getApplicationPrincipalsCountAsync"]=1
+    operations["grantPermissionAsync"]=1
+    operations["provisionApplicationPrincipalAsync"]=1
+    operations["revokePermissionAsync"]=1
+    operations["suspendApplicationPrincipalAsync"]=1
     operations["createBusinessApplicationAsync"]=1
     operations["deleteBusinessApplicationAsync"]=1
     operations["getBusinessApplicationByIdAsync"]=1
@@ -82,7 +91,6 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
-    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -152,6 +160,15 @@ _()
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
+    operation_parameters["disableApplicationPrincipalAsync"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["enableApplicationPrincipalAsync"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getApplicationPrincipalAsync"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["getApplicationPrincipalsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getApplicationPrincipalsCountAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["grantPermissionAsync"]="principalId= tenantId= api-version= x-api-version: "
+    operation_parameters["provisionApplicationPrincipalAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["revokePermissionAsync"]="principalId= permission= tenantId= api-version= x-api-version: "
+    operation_parameters["suspendApplicationPrincipalAsync"]="principalId= tenantId= api-version= x-api-version: "
     operation_parameters["createBusinessApplicationAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["deleteBusinessApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["getBusinessApplicationByIdAsync"]="applicationId= tenantId= api-version= x-api-version: "
@@ -165,7 +182,6 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
-    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""

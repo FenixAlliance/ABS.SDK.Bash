@@ -300,6 +300,7 @@ Retrieves all blog posts, optionally filtered by tenant using OData query option
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [optional] [default to null]
+ **blogPostDtoCollectionQueryParameters** | [**BlogPostDtoCollectionQueryParameters**](BlogPostDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -311,7 +312,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -335,6 +336,7 @@ Returns the total count of blog posts, optionally filtered by tenant using OData
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [optional] [default to null]
+ **blogPostDtoCollectionQueryParameters** | [**BlogPostDtoCollectionQueryParameters**](BlogPostDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -346,7 +348,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -370,6 +372,7 @@ Retrieves all categories related to a specific blog post.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **blogPostId** | **string** |  | [default to null]
+ **blogPostCategoryDtoCollectionQueryParameters** | [**BlogPostCategoryDtoCollectionQueryParameters**](BlogPostCategoryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -381,7 +384,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -405,6 +408,7 @@ Retrieves all comments for a specific blog post.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **blogPostId** | **string** |  | [default to null]
+ **blogPostCommentDtoCollectionQueryParameters** | [**BlogPostCommentDtoCollectionQueryParameters**](BlogPostCommentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -416,7 +420,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -441,6 +445,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **commentId** | **string** |  | [default to null]
  **blogPostId** | **string** |  | [default to null]
+ **blogPostCommentDtoCollectionQueryParameters** | [**BlogPostCommentDtoCollectionQueryParameters**](BlogPostCommentDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -452,7 +457,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -476,6 +481,7 @@ Retrieves all tags related to a specific blog post.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **blogPostId** | **string** |  | [default to null]
+ **blogPostTagDtoCollectionQueryParameters** | [**BlogPostTagDtoCollectionQueryParameters**](BlogPostTagDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -487,7 +493,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -512,7 +518,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **blogPostId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

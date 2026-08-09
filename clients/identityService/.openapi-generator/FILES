@@ -9,6 +9,7 @@ docs/AuthResult.md
 docs/AuthResultEnvelope.md
 docs/CheckerApi.md
 docs/ErrorEnvelope.md
+docs/ExecutionProvenance.md
 docs/FenixAllianceABSWebApi.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md

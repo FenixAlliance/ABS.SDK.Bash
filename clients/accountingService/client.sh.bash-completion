@@ -237,7 +237,6 @@ _()
     operations["accountManageDownloadPersonalDataPost"]=1
     operations["accountManageLinkExternalLoginPost"]=1
     operations["accountPerformExternalLoginPost"]=1
-    operations["apiV2AIServiceAgentsAgentIdAguiPost"]=1
     operations["forgotPasswordPost"]=1
     operations["healthGet"]=1
     operations["helloGet"]=1
@@ -345,6 +344,7 @@ _()
     operations["updateJournalTypeAsync"]=1
     operations["aggregateJournalEntryCreditsAsync"]=1
     operations["aggregateJournalEntryDebitsAsync"]=1
+    operations["assignJournalToBookAsync"]=1
     operations["countJournalsAsync"]=1
     operations["createJournalAsync"]=1
     operations["createJournalEntryAsync"]=1
@@ -396,6 +396,8 @@ _()
     operations["updateLoanApplicationAsync"]=1
     operations["updateLoanAsync"]=1
     operations["updateLoanTypeAsync"]=1
+    operations["countPostingExecutionsAsync"]=1
+    operations["getPostingExecutionsAsync"]=1
     operations["createReceiptAsync"]=1
     operations["deleteReceiptAsync"]=1
     operations["getReceiptDetailsAsync"]=1
@@ -654,7 +656,6 @@ _()
     operation_parameters["accountManageDownloadPersonalDataPost"]=""
     operation_parameters["accountManageLinkExternalLoginPost"]=""
     operation_parameters["accountPerformExternalLoginPost"]=""
-    operation_parameters["apiV2AIServiceAgentsAgentIdAguiPost"]="agentId= "
     operation_parameters["forgotPasswordPost"]=""
     operation_parameters["healthGet"]=""
     operation_parameters["helloGet"]=""
@@ -762,6 +763,7 @@ _()
     operation_parameters["updateJournalTypeAsync"]="journalTypeId= tenantId= api-version= x-api-version: "
     operation_parameters["aggregateJournalEntryCreditsAsync"]="journalId= tenantId= currencyId= api-version= x-api-version: "
     operation_parameters["aggregateJournalEntryDebitsAsync"]="journalId= tenantId= currencyId= api-version= x-api-version: "
+    operation_parameters["assignJournalToBookAsync"]="journalId= tenantId= api-version= x-api-version: "
     operation_parameters["countJournalsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createJournalAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createJournalEntryAsync"]="journalId= tenantId= api-version= x-api-version: "
@@ -813,6 +815,8 @@ _()
     operation_parameters["updateLoanApplicationAsync"]="applicationId= tenantId= api-version= x-api-version: "
     operation_parameters["updateLoanAsync"]="loanId= tenantId= api-version= x-api-version: "
     operation_parameters["updateLoanTypeAsync"]="loanTypeId= tenantId= api-version= x-api-version: "
+    operation_parameters["countPostingExecutionsAsync"]="tenantId= api-version= x-api-version: "
+    operation_parameters["getPostingExecutionsAsync"]="tenantId= api-version= x-api-version: "
     operation_parameters["createReceiptAsync"]="tenantId= "
     operation_parameters["deleteReceiptAsync"]="receiptId= tenantId= "
     operation_parameters["getReceiptDetailsAsync"]="receiptId= tenantId= "

@@ -36,6 +36,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **serviceLevelDtoCollectionQueryParameters** | [**ServiceLevelDtoCollectionQueryParameters**](ServiceLevelDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -47,7 +48,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -151,6 +152,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **serviceLevelDtoCollectionQueryParameters** | [**ServiceLevelDtoCollectionQueryParameters**](ServiceLevelDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -162,7 +164,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -228,6 +230,7 @@ Name | Type | Description  | Notes
  **serviceId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **serviceLevelDtoCollectionQueryParameters** | [**ServiceLevelDtoCollectionQueryParameters**](ServiceLevelDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -239,7 +242,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -266,6 +269,7 @@ Name | Type | Description  | Notes
  **serviceId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **serviceLevelDtoCollectionQueryParameters** | [**ServiceLevelDtoCollectionQueryParameters**](ServiceLevelDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -277,7 +281,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -305,7 +309,7 @@ Name | Type | Description  | Notes
  **serviceLevelId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

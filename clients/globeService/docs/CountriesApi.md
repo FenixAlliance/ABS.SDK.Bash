@@ -43,6 +43,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryCallingCodeDtoCollectionQueryParameters** | [**CountryCallingCodeDtoCollectionQueryParameters**](CountryCallingCodeDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -54,7 +55,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -81,6 +82,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **cityDtoCollectionQueryParameters** | [**CityDtoCollectionQueryParameters**](CityDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -92,7 +94,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -117,6 +119,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryDtoCollectionQueryParameters** | [**CountryDtoCollectionQueryParameters**](CountryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -128,7 +131,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -154,6 +157,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryStateDtoCollectionQueryParameters** | [**CountryStateDtoCollectionQueryParameters**](CountryStateDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -165,7 +169,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -191,6 +195,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **timezoneDtoCollectionQueryParameters** | [**TimezoneDtoCollectionQueryParameters**](TimezoneDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -202,7 +207,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -228,6 +233,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryTopLevelDomainDtoCollectionQueryParameters** | [**CountryTopLevelDomainDtoCollectionQueryParameters**](CountryTopLevelDomainDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -239,7 +245,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -264,6 +270,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryDtoCollectionQueryParameters** | [**CountryDtoCollectionQueryParameters**](CountryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -275,7 +282,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -301,6 +308,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryCallingCodeDtoCollectionQueryParameters** | [**CountryCallingCodeDtoCollectionQueryParameters**](CountryCallingCodeDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -312,7 +320,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -339,6 +347,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **cityDtoCollectionQueryParameters** | [**CityDtoCollectionQueryParameters**](CityDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -350,7 +359,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -414,6 +423,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryStateDtoCollectionQueryParameters** | [**CountryStateDtoCollectionQueryParameters**](CountryStateDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -425,7 +435,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -451,6 +461,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryStateDtoCollectionQueryParameters** | [**CountryStateDtoCollectionQueryParameters**](CountryStateDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -462,7 +473,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -488,6 +499,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **currencyDtoCollectionQueryParameters** | [**CurrencyDtoCollectionQueryParameters**](CurrencyDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -499,7 +511,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -525,6 +537,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **timezoneDtoCollectionQueryParameters** | [**TimezoneDtoCollectionQueryParameters**](TimezoneDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -536,7 +549,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -562,6 +575,7 @@ Name | Type | Description  | Notes
  **countryId** | **string** |  | [default to null]
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
+ **countryTopLevelDomainDtoCollectionQueryParameters** | [**CountryTopLevelDomainDtoCollectionQueryParameters**](CountryTopLevelDomainDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -573,7 +587,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

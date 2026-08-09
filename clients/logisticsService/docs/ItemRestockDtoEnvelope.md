@@ -7,6 +7,9 @@ Name | Type | Description | Notes
 **errorMessage** | **string** |  | [optional] [default to null]
 **correlationId** | **string** |  | [optional] [default to null]
 **timestamp** | **string** |  | [optional] [readonly] [default to null]
+**httpStatus** | **integer** |  | [optional] [default to null]
+**errorCode** | **string** |  | [optional] [default to null]
+**validationDetails** | **map[String, array[string]]** |  | [optional] [default to null]
 **activityId** | **string** |  | [optional] [readonly] [default to null]
 **result** | [**ItemRestockDto**](ItemRestockDto.md) |  | [optional] [default to null]
 

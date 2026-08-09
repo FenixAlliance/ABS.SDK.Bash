@@ -100,6 +100,45 @@ operation_parameters_minimum_occurrences["getAndStoreTokens:::api-version"]=0
 operation_parameters_minimum_occurrences["getAndStoreTokens:::x-api-version"]=0
 operation_parameters_minimum_occurrences["isRequestValidAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["isRequestValidAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["disableGlobalApplicationPrincipal:::principalId"]=1
+operation_parameters_minimum_occurrences["disableGlobalApplicationPrincipal:::tenantId"]=1
+operation_parameters_minimum_occurrences["disableGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_minimum_occurrences["disableGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["enableGlobalApplicationPrincipal:::principalId"]=1
+operation_parameters_minimum_occurrences["enableGlobalApplicationPrincipal:::tenantId"]=1
+operation_parameters_minimum_occurrences["enableGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_minimum_occurrences["enableGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipal:::principalId"]=1
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipals:::api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipals:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipals:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipalsCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipalsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getGlobalApplicationPrincipalsCount:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["grantGlobalApplicationPrincipalPermission:::principalId"]=1
+operation_parameters_minimum_occurrences["grantGlobalApplicationPrincipalPermission:::tenantId"]=1
+operation_parameters_minimum_occurrences["grantGlobalApplicationPrincipalPermission:::ApplicationPrincipalPermissionRequestDto"]=1
+operation_parameters_minimum_occurrences["grantGlobalApplicationPrincipalPermission:::api-version"]=0
+operation_parameters_minimum_occurrences["grantGlobalApplicationPrincipalPermission:::x-api-version"]=0
+operation_parameters_minimum_occurrences["provisionGlobalApplicationPrincipal:::ApplicationPrincipalProvisionRequestDto"]=1
+operation_parameters_minimum_occurrences["provisionGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_minimum_occurrences["provisionGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_minimum_occurrences["provisionGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_minimum_occurrences["provisionPaymentsConnector:::tenantId"]=0
+operation_parameters_minimum_occurrences["provisionPaymentsConnector:::api-version"]=0
+operation_parameters_minimum_occurrences["provisionPaymentsConnector:::x-api-version"]=0
+operation_parameters_minimum_occurrences["revokeGlobalApplicationPrincipalPermission:::principalId"]=1
+operation_parameters_minimum_occurrences["revokeGlobalApplicationPrincipalPermission:::permission"]=1
+operation_parameters_minimum_occurrences["revokeGlobalApplicationPrincipalPermission:::tenantId"]=1
+operation_parameters_minimum_occurrences["revokeGlobalApplicationPrincipalPermission:::api-version"]=0
+operation_parameters_minimum_occurrences["revokeGlobalApplicationPrincipalPermission:::x-api-version"]=0
+operation_parameters_minimum_occurrences["suspendGlobalApplicationPrincipal:::principalId"]=1
+operation_parameters_minimum_occurrences["suspendGlobalApplicationPrincipal:::tenantId"]=1
+operation_parameters_minimum_occurrences["suspendGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_minimum_occurrences["suspendGlobalApplicationPrincipal:::x-api-version"]=0
 operation_parameters_minimum_occurrences["deleteSystemBusinessDomain:::businessDomainId"]=1
 operation_parameters_minimum_occurrences["deleteSystemBusinessDomain:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteSystemBusinessDomain:::x-api-version"]=0
@@ -108,8 +147,10 @@ operation_parameters_minimum_occurrences["getSystemBusinessDomainById:::api-vers
 operation_parameters_minimum_occurrences["getSystemBusinessDomainById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemBusinessDomains:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemBusinessDomains:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomains:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemBusinessDomainsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemBusinessDomainsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemBusinessDomainsCount:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["verifySystemBusinessDomain:::businessDomainId"]=1
 operation_parameters_minimum_occurrences["verifySystemBusinessDomain:::api-version"]=0
 operation_parameters_minimum_occurrences["verifySystemBusinessDomain:::x-api-version"]=0
@@ -121,8 +162,12 @@ operation_parameters_minimum_occurrences["getSystemCartById:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCartById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCarts:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCarts:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCarts:::CartDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemCartsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemCartsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemCartsCount:::CartDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["purgeSystemGuestCarts:::api-version"]=0
+operation_parameters_minimum_occurrences["purgeSystemGuestCarts:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createSystemContactOption:::contactId"]=1
 operation_parameters_minimum_occurrences["createSystemContactOption:::key"]=1
 operation_parameters_minimum_occurrences["createSystemContactOption:::portalId"]=0
@@ -141,15 +186,17 @@ operation_parameters_minimum_occurrences["getSystemContactOptions:::contactId"]=
 operation_parameters_minimum_occurrences["getSystemContactOptions:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptions:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::contactId"]=1
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemContactOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSystemContactOption:::contactId"]=1
 operation_parameters_minimum_occurrences["patchSystemContactOption:::optionId"]=1
 operation_parameters_minimum_occurrences["patchSystemContactOption:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSystemContactOption:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSystemContactOption:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSystemContactOption:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSystemContactOption:::contactId"]=1
 operation_parameters_minimum_occurrences["updateSystemContactOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemContactOption:::api-version"]=0
@@ -165,7 +212,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -187,8 +233,52 @@ operation_parameters_minimum_occurrences["getSystemIPLookupById:::api-version"]=
 operation_parameters_minimum_occurrences["getSystemIPLookupById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookups:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookups:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookups:::IPLookupDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemIPLookupsCount:::IPLookupDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["cancelInboxMessageRetry:::id"]=1
+operation_parameters_minimum_occurrences["cancelInboxMessageRetry:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelInboxMessageRetry:::x-api-version"]=0
+operation_parameters_minimum_occurrences["cancelInboxMessageRetry:::InboxAdminReasonDto"]=0
+operation_parameters_minimum_occurrences["deadLetterInboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["deadLetterInboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["deadLetterInboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deadLetterInboxMessage:::InboxAdminReasonDto"]=0
+operation_parameters_minimum_occurrences["expediteInboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["expediteInboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["expediteInboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDuplicateInboxMessages:::api-version"]=0
+operation_parameters_minimum_occurrences["getDuplicateInboxMessages:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDuplicateInboxMessages:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getDuplicateInboxMessagesCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getDuplicateInboxMessagesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDuplicateInboxMessagesCount:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getInboxCorrelationChain:::correlationId"]=1
+operation_parameters_minimum_occurrences["getInboxCorrelationChain:::api-version"]=0
+operation_parameters_minimum_occurrences["getInboxCorrelationChain:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInboxHealth:::api-version"]=0
+operation_parameters_minimum_occurrences["getInboxHealth:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["getInboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessages:::api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessages:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessages:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getInboxMessagesCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessagesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getInboxMessagesCount:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["quarantineInboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["quarantineInboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["quarantineInboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["quarantineInboxMessage:::InboxAdminReasonDto"]=0
+operation_parameters_minimum_occurrences["releaseInboxMessageLease:::id"]=1
+operation_parameters_minimum_occurrences["releaseInboxMessageLease:::api-version"]=0
+operation_parameters_minimum_occurrences["releaseInboxMessageLease:::x-api-version"]=0
+operation_parameters_minimum_occurrences["replayInboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["replayInboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["replayInboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["replayInboxMessage:::InboxAdminReasonDto"]=0
 operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["getAttributesForLicenseAsync:::api-version"]=0
@@ -248,13 +338,15 @@ operation_parameters_minimum_occurrences["getSystemOptionByKey:::x-api-version"]
 operation_parameters_minimum_occurrences["getSystemOptions:::portalId"]=1
 operation_parameters_minimum_occurrences["getSystemOptions:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemOptionsCount:::portalId"]=1
 operation_parameters_minimum_occurrences["getSystemOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSystemOption:::optionId"]=1
 operation_parameters_minimum_occurrences["patchSystemOption:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSystemOption:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSystemOption:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSystemOption:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSystemOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemOption:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSystemOption:::x-api-version"]=0
@@ -264,6 +356,37 @@ operation_parameters_minimum_occurrences["upsertSystemOption:::portalId"]=0
 operation_parameters_minimum_occurrences["upsertSystemOption:::api-version"]=0
 operation_parameters_minimum_occurrences["upsertSystemOption:::x-api-version"]=0
 operation_parameters_minimum_occurrences["upsertSystemOption:::OptionUpdateDto"]=0
+operation_parameters_minimum_occurrences["cancelOutboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["cancelOutboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["cancelOutboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["cancelOutboxMessage:::OutboxAdminReasonDto"]=0
+operation_parameters_minimum_occurrences["deadLetterOutboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["deadLetterOutboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["deadLetterOutboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["deadLetterOutboxMessage:::OutboxAdminReasonDto"]=0
+operation_parameters_minimum_occurrences["expediteOutboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["expediteOutboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["expediteOutboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxCorrelationChain:::correlationId"]=1
+operation_parameters_minimum_occurrences["getOutboxCorrelationChain:::api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxCorrelationChain:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxHealth:::api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxHealth:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["getOutboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessage:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessages:::api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessages:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessages:::OutboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getOutboxMessagesCount:::api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessagesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getOutboxMessagesCount:::OutboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["releaseOutboxMessageLease:::id"]=1
+operation_parameters_minimum_occurrences["releaseOutboxMessageLease:::api-version"]=0
+operation_parameters_minimum_occurrences["releaseOutboxMessageLease:::x-api-version"]=0
+operation_parameters_minimum_occurrences["replayOutboxMessage:::id"]=1
+operation_parameters_minimum_occurrences["replayOutboxMessage:::api-version"]=0
+operation_parameters_minimum_occurrences["replayOutboxMessage:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemOverview:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemOverview:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createSystemPortal:::api-version"]=0
@@ -277,12 +400,14 @@ operation_parameters_minimum_occurrences["getSystemPortalById:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortalById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortals:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortals:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortals:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemPortalsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemPortalsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemPortalsCount:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSystemPortal:::portalId"]=1
 operation_parameters_minimum_occurrences["patchSystemPortal:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSystemPortal:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSystemPortal:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSystemPortal:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSystemPortal:::portalId"]=1
 operation_parameters_minimum_occurrences["updateSystemPortal:::api-version"]=0
 operation_parameters_minimum_occurrences["updateSystemPortal:::x-api-version"]=0
@@ -305,15 +430,17 @@ operation_parameters_minimum_occurrences["getSystemTenantOptions:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSystemTenantOptions:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptions:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemTenantOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSystemTenantOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSystemTenantOption:::optionId"]=1
 operation_parameters_minimum_occurrences["patchSystemTenantOption:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSystemTenantOption:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSystemTenantOption:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSystemTenantOption:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSystemTenantOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSystemTenantOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemTenantOption:::api-version"]=0
@@ -335,19 +462,30 @@ operation_parameters_minimum_occurrences["deleteTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["deleteTenant:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getAllExtendedTenants:::api-version"]=0
 operation_parameters_minimum_occurrences["getAllExtendedTenants:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAllExtendedTenants:::ExtendedTenantDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAllTenants:::api-version"]=0
 operation_parameters_minimum_occurrences["getAllTenants:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAllTenants:::TenantDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getExtendedTenantsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getExtendedTenantsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedTenantsCount:::ExtendedTenantDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenant:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenant:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantModuleGrants:::tenantId"]=1
+operation_parameters_minimum_occurrences["getTenantModuleGrants:::api-version"]=0
+operation_parameters_minimum_occurrences["getTenantModuleGrants:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantsCount:::TenantDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenant:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenant:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenant:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenant:::PatchOperation"]=0
+operation_parameters_minimum_occurrences["setTenantModuleGrants:::tenantId"]=1
+operation_parameters_minimum_occurrences["setTenantModuleGrants:::api-version"]=0
+operation_parameters_minimum_occurrences["setTenantModuleGrants:::x-api-version"]=0
+operation_parameters_minimum_occurrences["setTenantModuleGrants:::ModuleGrantDto"]=0
 operation_parameters_minimum_occurrences["updateTenant:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenant:::api-version"]=0
 operation_parameters_minimum_occurrences["updateTenant:::x-api-version"]=0
@@ -370,15 +508,17 @@ operation_parameters_minimum_occurrences["getSystemUserOptions:::userId"]=1
 operation_parameters_minimum_occurrences["getSystemUserOptions:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptions:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::userId"]=1
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSystemUserOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSystemUserOption:::userId"]=1
 operation_parameters_minimum_occurrences["patchSystemUserOption:::optionId"]=1
 operation_parameters_minimum_occurrences["patchSystemUserOption:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSystemUserOption:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSystemUserOption:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSystemUserOption:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSystemUserOption:::userId"]=1
 operation_parameters_minimum_occurrences["updateSystemUserOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateSystemUserOption:::api-version"]=0
@@ -403,19 +543,35 @@ operation_parameters_minimum_occurrences["getExtendedAccountHolderAsync:::api-ve
 operation_parameters_minimum_occurrences["getExtendedAccountHolderAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getExtendedUsersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getExtendedUsersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedUsersAsync:::ExtendedUserDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getExtendedUsersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getExtendedUsersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedUsersCountAsync:::ExtendedUserDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getUserAdminDetailAsync:::userId"]=1
+operation_parameters_minimum_occurrences["getUserAdminDetailAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getUserAdminDetailAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getUserAdminDetailAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getUserAsync:::userId"]=1
 operation_parameters_minimum_occurrences["getUserAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUserAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getUsersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUsersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getUsersAsync:::UserDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getUsersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUsersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getUsersCountAsync:::UserDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchAccountHolderAsync:::userId"]=1
 operation_parameters_minimum_occurrences["patchAccountHolderAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchAccountHolderAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchAccountHolderAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAccountHolderAsync:::PatchOperation"]=0
+operation_parameters_minimum_occurrences["setUserPasswordAsync:::userId"]=1
+operation_parameters_minimum_occurrences["setUserPasswordAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["setUserPasswordAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["setUserPasswordAsync:::SetUserPasswordDto"]=0
+operation_parameters_minimum_occurrences["updateAccountHolderAdminProfileAsync:::userId"]=1
+operation_parameters_minimum_occurrences["updateAccountHolderAdminProfileAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["updateAccountHolderAdminProfileAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["updateAccountHolderAdminProfileAsync:::UserAdminUpdateDto"]=0
 operation_parameters_minimum_occurrences["updateAccountHolderAsync:::userId"]=1
 operation_parameters_minimum_occurrences["updateAccountHolderAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["updateAccountHolderAsync:::x-api-version"]=0
@@ -432,6 +588,45 @@ operation_parameters_maximum_occurrences["getAndStoreTokens:::api-version"]=0
 operation_parameters_maximum_occurrences["getAndStoreTokens:::x-api-version"]=0
 operation_parameters_maximum_occurrences["isRequestValidAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["isRequestValidAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["disableGlobalApplicationPrincipal:::principalId"]=0
+operation_parameters_maximum_occurrences["disableGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_maximum_occurrences["disableGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_maximum_occurrences["disableGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["enableGlobalApplicationPrincipal:::principalId"]=0
+operation_parameters_maximum_occurrences["enableGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_maximum_occurrences["enableGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_maximum_occurrences["enableGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipal:::principalId"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipals:::api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipals:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipals:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipalsCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipalsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getGlobalApplicationPrincipalsCount:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["grantGlobalApplicationPrincipalPermission:::principalId"]=0
+operation_parameters_maximum_occurrences["grantGlobalApplicationPrincipalPermission:::tenantId"]=0
+operation_parameters_maximum_occurrences["grantGlobalApplicationPrincipalPermission:::ApplicationPrincipalPermissionRequestDto"]=0
+operation_parameters_maximum_occurrences["grantGlobalApplicationPrincipalPermission:::api-version"]=0
+operation_parameters_maximum_occurrences["grantGlobalApplicationPrincipalPermission:::x-api-version"]=0
+operation_parameters_maximum_occurrences["provisionGlobalApplicationPrincipal:::ApplicationPrincipalProvisionRequestDto"]=0
+operation_parameters_maximum_occurrences["provisionGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_maximum_occurrences["provisionGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_maximum_occurrences["provisionGlobalApplicationPrincipal:::x-api-version"]=0
+operation_parameters_maximum_occurrences["provisionPaymentsConnector:::tenantId"]=0
+operation_parameters_maximum_occurrences["provisionPaymentsConnector:::api-version"]=0
+operation_parameters_maximum_occurrences["provisionPaymentsConnector:::x-api-version"]=0
+operation_parameters_maximum_occurrences["revokeGlobalApplicationPrincipalPermission:::principalId"]=0
+operation_parameters_maximum_occurrences["revokeGlobalApplicationPrincipalPermission:::permission"]=0
+operation_parameters_maximum_occurrences["revokeGlobalApplicationPrincipalPermission:::tenantId"]=0
+operation_parameters_maximum_occurrences["revokeGlobalApplicationPrincipalPermission:::api-version"]=0
+operation_parameters_maximum_occurrences["revokeGlobalApplicationPrincipalPermission:::x-api-version"]=0
+operation_parameters_maximum_occurrences["suspendGlobalApplicationPrincipal:::principalId"]=0
+operation_parameters_maximum_occurrences["suspendGlobalApplicationPrincipal:::tenantId"]=0
+operation_parameters_maximum_occurrences["suspendGlobalApplicationPrincipal:::api-version"]=0
+operation_parameters_maximum_occurrences["suspendGlobalApplicationPrincipal:::x-api-version"]=0
 operation_parameters_maximum_occurrences["deleteSystemBusinessDomain:::businessDomainId"]=0
 operation_parameters_maximum_occurrences["deleteSystemBusinessDomain:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteSystemBusinessDomain:::x-api-version"]=0
@@ -440,8 +635,10 @@ operation_parameters_maximum_occurrences["getSystemBusinessDomainById:::api-vers
 operation_parameters_maximum_occurrences["getSystemBusinessDomainById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemBusinessDomains:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemBusinessDomains:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomains:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemBusinessDomainsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemBusinessDomainsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemBusinessDomainsCount:::BusinessDomainDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["verifySystemBusinessDomain:::businessDomainId"]=0
 operation_parameters_maximum_occurrences["verifySystemBusinessDomain:::api-version"]=0
 operation_parameters_maximum_occurrences["verifySystemBusinessDomain:::x-api-version"]=0
@@ -453,8 +650,12 @@ operation_parameters_maximum_occurrences["getSystemCartById:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCartById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCarts:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCarts:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCarts:::CartDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemCartsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemCartsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemCartsCount:::CartDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["purgeSystemGuestCarts:::api-version"]=0
+operation_parameters_maximum_occurrences["purgeSystemGuestCarts:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createSystemContactOption:::contactId"]=0
 operation_parameters_maximum_occurrences["createSystemContactOption:::key"]=0
 operation_parameters_maximum_occurrences["createSystemContactOption:::portalId"]=0
@@ -473,15 +674,17 @@ operation_parameters_maximum_occurrences["getSystemContactOptions:::contactId"]=
 operation_parameters_maximum_occurrences["getSystemContactOptions:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptions:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::contactId"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemContactOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSystemContactOption:::contactId"]=0
 operation_parameters_maximum_occurrences["patchSystemContactOption:::optionId"]=0
 operation_parameters_maximum_occurrences["patchSystemContactOption:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSystemContactOption:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSystemContactOption:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSystemContactOption:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSystemContactOption:::contactId"]=0
 operation_parameters_maximum_occurrences["updateSystemContactOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemContactOption:::api-version"]=0
@@ -497,7 +700,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -519,8 +721,52 @@ operation_parameters_maximum_occurrences["getSystemIPLookupById:::api-version"]=
 operation_parameters_maximum_occurrences["getSystemIPLookupById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookups:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookups:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookups:::IPLookupDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemIPLookupsCount:::IPLookupDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["cancelInboxMessageRetry:::id"]=0
+operation_parameters_maximum_occurrences["cancelInboxMessageRetry:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelInboxMessageRetry:::x-api-version"]=0
+operation_parameters_maximum_occurrences["cancelInboxMessageRetry:::InboxAdminReasonDto"]=0
+operation_parameters_maximum_occurrences["deadLetterInboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["deadLetterInboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["deadLetterInboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deadLetterInboxMessage:::InboxAdminReasonDto"]=0
+operation_parameters_maximum_occurrences["expediteInboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["expediteInboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["expediteInboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDuplicateInboxMessages:::api-version"]=0
+operation_parameters_maximum_occurrences["getDuplicateInboxMessages:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDuplicateInboxMessages:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getDuplicateInboxMessagesCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getDuplicateInboxMessagesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDuplicateInboxMessagesCount:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getInboxCorrelationChain:::correlationId"]=0
+operation_parameters_maximum_occurrences["getInboxCorrelationChain:::api-version"]=0
+operation_parameters_maximum_occurrences["getInboxCorrelationChain:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInboxHealth:::api-version"]=0
+operation_parameters_maximum_occurrences["getInboxHealth:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["getInboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessages:::api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessages:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessages:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getInboxMessagesCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessagesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getInboxMessagesCount:::InboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["quarantineInboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["quarantineInboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["quarantineInboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["quarantineInboxMessage:::InboxAdminReasonDto"]=0
+operation_parameters_maximum_occurrences["releaseInboxMessageLease:::id"]=0
+operation_parameters_maximum_occurrences["releaseInboxMessageLease:::api-version"]=0
+operation_parameters_maximum_occurrences["releaseInboxMessageLease:::x-api-version"]=0
+operation_parameters_maximum_occurrences["replayInboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["replayInboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["replayInboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["replayInboxMessage:::InboxAdminReasonDto"]=0
 operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["getAttributesForLicenseAsync:::api-version"]=0
@@ -580,13 +826,15 @@ operation_parameters_maximum_occurrences["getSystemOptionByKey:::x-api-version"]
 operation_parameters_maximum_occurrences["getSystemOptions:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemOptions:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSystemOption:::optionId"]=0
 operation_parameters_maximum_occurrences["patchSystemOption:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSystemOption:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSystemOption:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSystemOption:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSystemOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemOption:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSystemOption:::x-api-version"]=0
@@ -596,6 +844,37 @@ operation_parameters_maximum_occurrences["upsertSystemOption:::portalId"]=0
 operation_parameters_maximum_occurrences["upsertSystemOption:::api-version"]=0
 operation_parameters_maximum_occurrences["upsertSystemOption:::x-api-version"]=0
 operation_parameters_maximum_occurrences["upsertSystemOption:::OptionUpdateDto"]=0
+operation_parameters_maximum_occurrences["cancelOutboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["cancelOutboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["cancelOutboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["cancelOutboxMessage:::OutboxAdminReasonDto"]=0
+operation_parameters_maximum_occurrences["deadLetterOutboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["deadLetterOutboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["deadLetterOutboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["deadLetterOutboxMessage:::OutboxAdminReasonDto"]=0
+operation_parameters_maximum_occurrences["expediteOutboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["expediteOutboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["expediteOutboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxCorrelationChain:::correlationId"]=0
+operation_parameters_maximum_occurrences["getOutboxCorrelationChain:::api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxCorrelationChain:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxHealth:::api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxHealth:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["getOutboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessage:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessages:::api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessages:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessages:::OutboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getOutboxMessagesCount:::api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessagesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getOutboxMessagesCount:::OutboxMessageDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["releaseOutboxMessageLease:::id"]=0
+operation_parameters_maximum_occurrences["releaseOutboxMessageLease:::api-version"]=0
+operation_parameters_maximum_occurrences["releaseOutboxMessageLease:::x-api-version"]=0
+operation_parameters_maximum_occurrences["replayOutboxMessage:::id"]=0
+operation_parameters_maximum_occurrences["replayOutboxMessage:::api-version"]=0
+operation_parameters_maximum_occurrences["replayOutboxMessage:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemOverview:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemOverview:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createSystemPortal:::api-version"]=0
@@ -609,12 +888,14 @@ operation_parameters_maximum_occurrences["getSystemPortalById:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortalById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortals:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortals:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortals:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemPortalsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemPortalsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemPortalsCount:::WebPortalDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSystemPortal:::portalId"]=0
 operation_parameters_maximum_occurrences["patchSystemPortal:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSystemPortal:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSystemPortal:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSystemPortal:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSystemPortal:::portalId"]=0
 operation_parameters_maximum_occurrences["updateSystemPortal:::api-version"]=0
 operation_parameters_maximum_occurrences["updateSystemPortal:::x-api-version"]=0
@@ -637,15 +918,17 @@ operation_parameters_maximum_occurrences["getSystemTenantOptions:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptions:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptions:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemTenantOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSystemTenantOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSystemTenantOption:::optionId"]=0
 operation_parameters_maximum_occurrences["patchSystemTenantOption:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSystemTenantOption:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSystemTenantOption:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSystemTenantOption:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSystemTenantOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSystemTenantOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemTenantOption:::api-version"]=0
@@ -667,19 +950,30 @@ operation_parameters_maximum_occurrences["deleteTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["deleteTenant:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getAllExtendedTenants:::api-version"]=0
 operation_parameters_maximum_occurrences["getAllExtendedTenants:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAllExtendedTenants:::ExtendedTenantDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAllTenants:::api-version"]=0
 operation_parameters_maximum_occurrences["getAllTenants:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAllTenants:::TenantDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedTenantsCount:::ExtendedTenantDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenant:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenant:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantModuleGrants:::tenantId"]=0
+operation_parameters_maximum_occurrences["getTenantModuleGrants:::api-version"]=0
+operation_parameters_maximum_occurrences["getTenantModuleGrants:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantsCount:::TenantDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenant:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenant:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenant:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenant:::PatchOperation"]=0
+operation_parameters_maximum_occurrences["setTenantModuleGrants:::tenantId"]=0
+operation_parameters_maximum_occurrences["setTenantModuleGrants:::api-version"]=0
+operation_parameters_maximum_occurrences["setTenantModuleGrants:::x-api-version"]=0
+operation_parameters_maximum_occurrences["setTenantModuleGrants:::ModuleGrantDto"]=0
 operation_parameters_maximum_occurrences["updateTenant:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenant:::api-version"]=0
 operation_parameters_maximum_occurrences["updateTenant:::x-api-version"]=0
@@ -702,15 +996,17 @@ operation_parameters_maximum_occurrences["getSystemUserOptions:::userId"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptions:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptions:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::userId"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSystemUserOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSystemUserOption:::userId"]=0
 operation_parameters_maximum_occurrences["patchSystemUserOption:::optionId"]=0
 operation_parameters_maximum_occurrences["patchSystemUserOption:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSystemUserOption:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSystemUserOption:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSystemUserOption:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSystemUserOption:::userId"]=0
 operation_parameters_maximum_occurrences["updateSystemUserOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateSystemUserOption:::api-version"]=0
@@ -735,19 +1031,35 @@ operation_parameters_maximum_occurrences["getExtendedAccountHolderAsync:::api-ve
 operation_parameters_maximum_occurrences["getExtendedAccountHolderAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getExtendedUsersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getExtendedUsersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedUsersAsync:::ExtendedUserDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getExtendedUsersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getExtendedUsersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedUsersCountAsync:::ExtendedUserDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getUserAdminDetailAsync:::userId"]=0
+operation_parameters_maximum_occurrences["getUserAdminDetailAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getUserAdminDetailAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getUserAdminDetailAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getUserAsync:::userId"]=0
 operation_parameters_maximum_occurrences["getUserAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUserAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getUsersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUsersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getUsersAsync:::UserDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getUsersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUsersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getUsersCountAsync:::UserDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchAccountHolderAsync:::userId"]=0
 operation_parameters_maximum_occurrences["patchAccountHolderAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchAccountHolderAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchAccountHolderAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAccountHolderAsync:::PatchOperation"]=0
+operation_parameters_maximum_occurrences["setUserPasswordAsync:::userId"]=0
+operation_parameters_maximum_occurrences["setUserPasswordAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["setUserPasswordAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["setUserPasswordAsync:::SetUserPasswordDto"]=0
+operation_parameters_maximum_occurrences["updateAccountHolderAdminProfileAsync:::userId"]=0
+operation_parameters_maximum_occurrences["updateAccountHolderAdminProfileAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["updateAccountHolderAdminProfileAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["updateAccountHolderAdminProfileAsync:::UserAdminUpdateDto"]=0
 operation_parameters_maximum_occurrences["updateAccountHolderAsync:::userId"]=0
 operation_parameters_maximum_occurrences["updateAccountHolderAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["updateAccountHolderAsync:::x-api-version"]=0
@@ -761,6 +1073,45 @@ operation_parameters_collection_type["getAndStoreTokens:::api-version"]=""
 operation_parameters_collection_type["getAndStoreTokens:::x-api-version"]=""
 operation_parameters_collection_type["isRequestValidAsync:::api-version"]=""
 operation_parameters_collection_type["isRequestValidAsync:::x-api-version"]=""
+operation_parameters_collection_type["disableGlobalApplicationPrincipal:::principalId"]=""
+operation_parameters_collection_type["disableGlobalApplicationPrincipal:::tenantId"]=""
+operation_parameters_collection_type["disableGlobalApplicationPrincipal:::api-version"]=""
+operation_parameters_collection_type["disableGlobalApplicationPrincipal:::x-api-version"]=""
+operation_parameters_collection_type["enableGlobalApplicationPrincipal:::principalId"]=""
+operation_parameters_collection_type["enableGlobalApplicationPrincipal:::tenantId"]=""
+operation_parameters_collection_type["enableGlobalApplicationPrincipal:::api-version"]=""
+operation_parameters_collection_type["enableGlobalApplicationPrincipal:::x-api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipal:::principalId"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipal:::tenantId"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipal:::api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipal:::x-api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipals:::api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipals:::x-api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipals:::ApplicationPrincipalDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipalsCount:::api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipalsCount:::x-api-version"]=""
+operation_parameters_collection_type["getGlobalApplicationPrincipalsCount:::ApplicationPrincipalDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["grantGlobalApplicationPrincipalPermission:::principalId"]=""
+operation_parameters_collection_type["grantGlobalApplicationPrincipalPermission:::tenantId"]=""
+operation_parameters_collection_type["grantGlobalApplicationPrincipalPermission:::ApplicationPrincipalPermissionRequestDto"]=""
+operation_parameters_collection_type["grantGlobalApplicationPrincipalPermission:::api-version"]=""
+operation_parameters_collection_type["grantGlobalApplicationPrincipalPermission:::x-api-version"]=""
+operation_parameters_collection_type["provisionGlobalApplicationPrincipal:::ApplicationPrincipalProvisionRequestDto"]=""
+operation_parameters_collection_type["provisionGlobalApplicationPrincipal:::tenantId"]=""
+operation_parameters_collection_type["provisionGlobalApplicationPrincipal:::api-version"]=""
+operation_parameters_collection_type["provisionGlobalApplicationPrincipal:::x-api-version"]=""
+operation_parameters_collection_type["provisionPaymentsConnector:::tenantId"]=""
+operation_parameters_collection_type["provisionPaymentsConnector:::api-version"]=""
+operation_parameters_collection_type["provisionPaymentsConnector:::x-api-version"]=""
+operation_parameters_collection_type["revokeGlobalApplicationPrincipalPermission:::principalId"]=""
+operation_parameters_collection_type["revokeGlobalApplicationPrincipalPermission:::permission"]=""
+operation_parameters_collection_type["revokeGlobalApplicationPrincipalPermission:::tenantId"]=""
+operation_parameters_collection_type["revokeGlobalApplicationPrincipalPermission:::api-version"]=""
+operation_parameters_collection_type["revokeGlobalApplicationPrincipalPermission:::x-api-version"]=""
+operation_parameters_collection_type["suspendGlobalApplicationPrincipal:::principalId"]=""
+operation_parameters_collection_type["suspendGlobalApplicationPrincipal:::tenantId"]=""
+operation_parameters_collection_type["suspendGlobalApplicationPrincipal:::api-version"]=""
+operation_parameters_collection_type["suspendGlobalApplicationPrincipal:::x-api-version"]=""
 operation_parameters_collection_type["deleteSystemBusinessDomain:::businessDomainId"]=""
 operation_parameters_collection_type["deleteSystemBusinessDomain:::api-version"]=""
 operation_parameters_collection_type["deleteSystemBusinessDomain:::x-api-version"]=""
@@ -769,8 +1120,10 @@ operation_parameters_collection_type["getSystemBusinessDomainById:::api-version"
 operation_parameters_collection_type["getSystemBusinessDomainById:::x-api-version"]=""
 operation_parameters_collection_type["getSystemBusinessDomains:::api-version"]=""
 operation_parameters_collection_type["getSystemBusinessDomains:::x-api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomains:::BusinessDomainDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemBusinessDomainsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemBusinessDomainsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemBusinessDomainsCount:::BusinessDomainDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["verifySystemBusinessDomain:::businessDomainId"]=""
 operation_parameters_collection_type["verifySystemBusinessDomain:::api-version"]=""
 operation_parameters_collection_type["verifySystemBusinessDomain:::x-api-version"]=""
@@ -782,8 +1135,12 @@ operation_parameters_collection_type["getSystemCartById:::api-version"]=""
 operation_parameters_collection_type["getSystemCartById:::x-api-version"]=""
 operation_parameters_collection_type["getSystemCarts:::api-version"]=""
 operation_parameters_collection_type["getSystemCarts:::x-api-version"]=""
+operation_parameters_collection_type["getSystemCarts:::CartDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemCartsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemCartsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemCartsCount:::CartDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["purgeSystemGuestCarts:::api-version"]=""
+operation_parameters_collection_type["purgeSystemGuestCarts:::x-api-version"]=""
 operation_parameters_collection_type["createSystemContactOption:::contactId"]=""
 operation_parameters_collection_type["createSystemContactOption:::key"]=""
 operation_parameters_collection_type["createSystemContactOption:::portalId"]=""
@@ -802,15 +1159,17 @@ operation_parameters_collection_type["getSystemContactOptions:::contactId"]=""
 operation_parameters_collection_type["getSystemContactOptions:::portalId"]=""
 operation_parameters_collection_type["getSystemContactOptions:::api-version"]=""
 operation_parameters_collection_type["getSystemContactOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemContactOptions:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemContactOptionsCount:::contactId"]=""
 operation_parameters_collection_type["getSystemContactOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemContactOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemContactOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemContactOptionsCount:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSystemContactOption:::contactId"]=""
 operation_parameters_collection_type["patchSystemContactOption:::optionId"]=""
 operation_parameters_collection_type["patchSystemContactOption:::api-version"]=""
 operation_parameters_collection_type["patchSystemContactOption:::x-api-version"]=""
-operation_parameters_collection_type["patchSystemContactOption:::Operation"]=
+operation_parameters_collection_type["patchSystemContactOption:::PatchOperation"]=
 operation_parameters_collection_type["updateSystemContactOption:::contactId"]=""
 operation_parameters_collection_type["updateSystemContactOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemContactOption:::api-version"]=""
@@ -826,7 +1185,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -848,8 +1206,52 @@ operation_parameters_collection_type["getSystemIPLookupById:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookupById:::x-api-version"]=""
 operation_parameters_collection_type["getSystemIPLookups:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookups:::x-api-version"]=""
+operation_parameters_collection_type["getSystemIPLookups:::IPLookupDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemIPLookupsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemIPLookupsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemIPLookupsCount:::IPLookupDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["cancelInboxMessageRetry:::id"]=""
+operation_parameters_collection_type["cancelInboxMessageRetry:::api-version"]=""
+operation_parameters_collection_type["cancelInboxMessageRetry:::x-api-version"]=""
+operation_parameters_collection_type["cancelInboxMessageRetry:::InboxAdminReasonDto"]=""
+operation_parameters_collection_type["deadLetterInboxMessage:::id"]=""
+operation_parameters_collection_type["deadLetterInboxMessage:::api-version"]=""
+operation_parameters_collection_type["deadLetterInboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["deadLetterInboxMessage:::InboxAdminReasonDto"]=""
+operation_parameters_collection_type["expediteInboxMessage:::id"]=""
+operation_parameters_collection_type["expediteInboxMessage:::api-version"]=""
+operation_parameters_collection_type["expediteInboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["getDuplicateInboxMessages:::api-version"]=""
+operation_parameters_collection_type["getDuplicateInboxMessages:::x-api-version"]=""
+operation_parameters_collection_type["getDuplicateInboxMessages:::InboxMessageDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getDuplicateInboxMessagesCount:::api-version"]=""
+operation_parameters_collection_type["getDuplicateInboxMessagesCount:::x-api-version"]=""
+operation_parameters_collection_type["getDuplicateInboxMessagesCount:::InboxMessageDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getInboxCorrelationChain:::correlationId"]=""
+operation_parameters_collection_type["getInboxCorrelationChain:::api-version"]=""
+operation_parameters_collection_type["getInboxCorrelationChain:::x-api-version"]=""
+operation_parameters_collection_type["getInboxHealth:::api-version"]=""
+operation_parameters_collection_type["getInboxHealth:::x-api-version"]=""
+operation_parameters_collection_type["getInboxMessage:::id"]=""
+operation_parameters_collection_type["getInboxMessage:::api-version"]=""
+operation_parameters_collection_type["getInboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["getInboxMessages:::api-version"]=""
+operation_parameters_collection_type["getInboxMessages:::x-api-version"]=""
+operation_parameters_collection_type["getInboxMessages:::InboxMessageDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getInboxMessagesCount:::api-version"]=""
+operation_parameters_collection_type["getInboxMessagesCount:::x-api-version"]=""
+operation_parameters_collection_type["getInboxMessagesCount:::InboxMessageDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["quarantineInboxMessage:::id"]=""
+operation_parameters_collection_type["quarantineInboxMessage:::api-version"]=""
+operation_parameters_collection_type["quarantineInboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["quarantineInboxMessage:::InboxAdminReasonDto"]=""
+operation_parameters_collection_type["releaseInboxMessageLease:::id"]=""
+operation_parameters_collection_type["releaseInboxMessageLease:::api-version"]=""
+operation_parameters_collection_type["releaseInboxMessageLease:::x-api-version"]=""
+operation_parameters_collection_type["replayInboxMessage:::id"]=""
+operation_parameters_collection_type["replayInboxMessage:::api-version"]=""
+operation_parameters_collection_type["replayInboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["replayInboxMessage:::InboxAdminReasonDto"]=""
 operation_parameters_collection_type["getAttributesForLicenseAsync:::tenantId"]=""
 operation_parameters_collection_type["getAttributesForLicenseAsync:::licenseId"]=""
 operation_parameters_collection_type["getAttributesForLicenseAsync:::api-version"]=""
@@ -909,13 +1311,15 @@ operation_parameters_collection_type["getSystemOptionByKey:::x-api-version"]=""
 operation_parameters_collection_type["getSystemOptions:::portalId"]=""
 operation_parameters_collection_type["getSystemOptions:::api-version"]=""
 operation_parameters_collection_type["getSystemOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemOptions:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemOptionsCount:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSystemOption:::optionId"]=""
 operation_parameters_collection_type["patchSystemOption:::api-version"]=""
 operation_parameters_collection_type["patchSystemOption:::x-api-version"]=""
-operation_parameters_collection_type["patchSystemOption:::Operation"]=
+operation_parameters_collection_type["patchSystemOption:::PatchOperation"]=
 operation_parameters_collection_type["updateSystemOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemOption:::api-version"]=""
 operation_parameters_collection_type["updateSystemOption:::x-api-version"]=""
@@ -925,6 +1329,37 @@ operation_parameters_collection_type["upsertSystemOption:::portalId"]=""
 operation_parameters_collection_type["upsertSystemOption:::api-version"]=""
 operation_parameters_collection_type["upsertSystemOption:::x-api-version"]=""
 operation_parameters_collection_type["upsertSystemOption:::OptionUpdateDto"]=""
+operation_parameters_collection_type["cancelOutboxMessage:::id"]=""
+operation_parameters_collection_type["cancelOutboxMessage:::api-version"]=""
+operation_parameters_collection_type["cancelOutboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["cancelOutboxMessage:::OutboxAdminReasonDto"]=""
+operation_parameters_collection_type["deadLetterOutboxMessage:::id"]=""
+operation_parameters_collection_type["deadLetterOutboxMessage:::api-version"]=""
+operation_parameters_collection_type["deadLetterOutboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["deadLetterOutboxMessage:::OutboxAdminReasonDto"]=""
+operation_parameters_collection_type["expediteOutboxMessage:::id"]=""
+operation_parameters_collection_type["expediteOutboxMessage:::api-version"]=""
+operation_parameters_collection_type["expediteOutboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["getOutboxCorrelationChain:::correlationId"]=""
+operation_parameters_collection_type["getOutboxCorrelationChain:::api-version"]=""
+operation_parameters_collection_type["getOutboxCorrelationChain:::x-api-version"]=""
+operation_parameters_collection_type["getOutboxHealth:::api-version"]=""
+operation_parameters_collection_type["getOutboxHealth:::x-api-version"]=""
+operation_parameters_collection_type["getOutboxMessage:::id"]=""
+operation_parameters_collection_type["getOutboxMessage:::api-version"]=""
+operation_parameters_collection_type["getOutboxMessage:::x-api-version"]=""
+operation_parameters_collection_type["getOutboxMessages:::api-version"]=""
+operation_parameters_collection_type["getOutboxMessages:::x-api-version"]=""
+operation_parameters_collection_type["getOutboxMessages:::OutboxMessageDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getOutboxMessagesCount:::api-version"]=""
+operation_parameters_collection_type["getOutboxMessagesCount:::x-api-version"]=""
+operation_parameters_collection_type["getOutboxMessagesCount:::OutboxMessageDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["releaseOutboxMessageLease:::id"]=""
+operation_parameters_collection_type["releaseOutboxMessageLease:::api-version"]=""
+operation_parameters_collection_type["releaseOutboxMessageLease:::x-api-version"]=""
+operation_parameters_collection_type["replayOutboxMessage:::id"]=""
+operation_parameters_collection_type["replayOutboxMessage:::api-version"]=""
+operation_parameters_collection_type["replayOutboxMessage:::x-api-version"]=""
 operation_parameters_collection_type["getSystemOverview:::api-version"]=""
 operation_parameters_collection_type["getSystemOverview:::x-api-version"]=""
 operation_parameters_collection_type["createSystemPortal:::api-version"]=""
@@ -938,12 +1373,14 @@ operation_parameters_collection_type["getSystemPortalById:::api-version"]=""
 operation_parameters_collection_type["getSystemPortalById:::x-api-version"]=""
 operation_parameters_collection_type["getSystemPortals:::api-version"]=""
 operation_parameters_collection_type["getSystemPortals:::x-api-version"]=""
+operation_parameters_collection_type["getSystemPortals:::WebPortalDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemPortalsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemPortalsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemPortalsCount:::WebPortalDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSystemPortal:::portalId"]=""
 operation_parameters_collection_type["patchSystemPortal:::api-version"]=""
 operation_parameters_collection_type["patchSystemPortal:::x-api-version"]=""
-operation_parameters_collection_type["patchSystemPortal:::Operation"]=
+operation_parameters_collection_type["patchSystemPortal:::PatchOperation"]=
 operation_parameters_collection_type["updateSystemPortal:::portalId"]=""
 operation_parameters_collection_type["updateSystemPortal:::api-version"]=""
 operation_parameters_collection_type["updateSystemPortal:::x-api-version"]=""
@@ -966,15 +1403,17 @@ operation_parameters_collection_type["getSystemTenantOptions:::tenantId"]=""
 operation_parameters_collection_type["getSystemTenantOptions:::portalId"]=""
 operation_parameters_collection_type["getSystemTenantOptions:::api-version"]=""
 operation_parameters_collection_type["getSystemTenantOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptions:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemTenantOptionsCount:::tenantId"]=""
 operation_parameters_collection_type["getSystemTenantOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemTenantOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemTenantOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemTenantOptionsCount:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSystemTenantOption:::tenantId"]=""
 operation_parameters_collection_type["patchSystemTenantOption:::optionId"]=""
 operation_parameters_collection_type["patchSystemTenantOption:::api-version"]=""
 operation_parameters_collection_type["patchSystemTenantOption:::x-api-version"]=""
-operation_parameters_collection_type["patchSystemTenantOption:::Operation"]=
+operation_parameters_collection_type["patchSystemTenantOption:::PatchOperation"]=
 operation_parameters_collection_type["updateSystemTenantOption:::tenantId"]=""
 operation_parameters_collection_type["updateSystemTenantOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemTenantOption:::api-version"]=""
@@ -996,19 +1435,30 @@ operation_parameters_collection_type["deleteTenant:::api-version"]=""
 operation_parameters_collection_type["deleteTenant:::x-api-version"]=""
 operation_parameters_collection_type["getAllExtendedTenants:::api-version"]=""
 operation_parameters_collection_type["getAllExtendedTenants:::x-api-version"]=""
+operation_parameters_collection_type["getAllExtendedTenants:::ExtendedTenantDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAllTenants:::api-version"]=""
 operation_parameters_collection_type["getAllTenants:::x-api-version"]=""
+operation_parameters_collection_type["getAllTenants:::TenantDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getExtendedTenantsCount:::api-version"]=""
 operation_parameters_collection_type["getExtendedTenantsCount:::x-api-version"]=""
+operation_parameters_collection_type["getExtendedTenantsCount:::ExtendedTenantDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenant:::tenantId"]=""
 operation_parameters_collection_type["getTenant:::api-version"]=""
 operation_parameters_collection_type["getTenant:::x-api-version"]=""
+operation_parameters_collection_type["getTenantModuleGrants:::tenantId"]=""
+operation_parameters_collection_type["getTenantModuleGrants:::api-version"]=""
+operation_parameters_collection_type["getTenantModuleGrants:::x-api-version"]=""
 operation_parameters_collection_type["getTenantsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantsCount:::TenantDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenant:::tenantId"]=""
 operation_parameters_collection_type["patchTenant:::api-version"]=""
 operation_parameters_collection_type["patchTenant:::x-api-version"]=""
-operation_parameters_collection_type["patchTenant:::Operation"]=
+operation_parameters_collection_type["patchTenant:::PatchOperation"]=
+operation_parameters_collection_type["setTenantModuleGrants:::tenantId"]=""
+operation_parameters_collection_type["setTenantModuleGrants:::api-version"]=""
+operation_parameters_collection_type["setTenantModuleGrants:::x-api-version"]=""
+operation_parameters_collection_type["setTenantModuleGrants:::ModuleGrantDto"]=
 operation_parameters_collection_type["updateTenant:::tenantId"]=""
 operation_parameters_collection_type["updateTenant:::api-version"]=""
 operation_parameters_collection_type["updateTenant:::x-api-version"]=""
@@ -1031,15 +1481,17 @@ operation_parameters_collection_type["getSystemUserOptions:::userId"]=""
 operation_parameters_collection_type["getSystemUserOptions:::portalId"]=""
 operation_parameters_collection_type["getSystemUserOptions:::api-version"]=""
 operation_parameters_collection_type["getSystemUserOptions:::x-api-version"]=""
+operation_parameters_collection_type["getSystemUserOptions:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::userId"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getSystemUserOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["getSystemUserOptionsCount:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSystemUserOption:::userId"]=""
 operation_parameters_collection_type["patchSystemUserOption:::optionId"]=""
 operation_parameters_collection_type["patchSystemUserOption:::api-version"]=""
 operation_parameters_collection_type["patchSystemUserOption:::x-api-version"]=""
-operation_parameters_collection_type["patchSystemUserOption:::Operation"]=
+operation_parameters_collection_type["patchSystemUserOption:::PatchOperation"]=
 operation_parameters_collection_type["updateSystemUserOption:::userId"]=""
 operation_parameters_collection_type["updateSystemUserOption:::optionId"]=""
 operation_parameters_collection_type["updateSystemUserOption:::api-version"]=""
@@ -1064,19 +1516,35 @@ operation_parameters_collection_type["getExtendedAccountHolderAsync:::api-versio
 operation_parameters_collection_type["getExtendedAccountHolderAsync:::x-api-version"]=""
 operation_parameters_collection_type["getExtendedUsersAsync:::api-version"]=""
 operation_parameters_collection_type["getExtendedUsersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getExtendedUsersAsync:::ExtendedUserDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getExtendedUsersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getExtendedUsersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getExtendedUsersCountAsync:::ExtendedUserDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getUserAdminDetailAsync:::userId"]=""
+operation_parameters_collection_type["getUserAdminDetailAsync:::tenantId"]=""
+operation_parameters_collection_type["getUserAdminDetailAsync:::api-version"]=""
+operation_parameters_collection_type["getUserAdminDetailAsync:::x-api-version"]=""
 operation_parameters_collection_type["getUserAsync:::userId"]=""
 operation_parameters_collection_type["getUserAsync:::api-version"]=""
 operation_parameters_collection_type["getUserAsync:::x-api-version"]=""
 operation_parameters_collection_type["getUsersAsync:::api-version"]=""
 operation_parameters_collection_type["getUsersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getUsersAsync:::UserDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getUsersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getUsersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getUsersCountAsync:::UserDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchAccountHolderAsync:::userId"]=""
 operation_parameters_collection_type["patchAccountHolderAsync:::api-version"]=""
 operation_parameters_collection_type["patchAccountHolderAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchAccountHolderAsync:::Operation"]=
+operation_parameters_collection_type["patchAccountHolderAsync:::PatchOperation"]=
+operation_parameters_collection_type["setUserPasswordAsync:::userId"]=""
+operation_parameters_collection_type["setUserPasswordAsync:::api-version"]=""
+operation_parameters_collection_type["setUserPasswordAsync:::x-api-version"]=""
+operation_parameters_collection_type["setUserPasswordAsync:::SetUserPasswordDto"]=""
+operation_parameters_collection_type["updateAccountHolderAdminProfileAsync:::userId"]=""
+operation_parameters_collection_type["updateAccountHolderAdminProfileAsync:::api-version"]=""
+operation_parameters_collection_type["updateAccountHolderAdminProfileAsync:::x-api-version"]=""
+operation_parameters_collection_type["updateAccountHolderAdminProfileAsync:::UserAdminUpdateDto"]=""
 operation_parameters_collection_type["updateAccountHolderAsync:::userId"]=""
 operation_parameters_collection_type["updateAccountHolderAsync:::api-version"]=""
 operation_parameters_collection_type["updateAccountHolderAsync:::x-api-version"]=""
@@ -1474,6 +1942,21 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[applicationPrincipals]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}disableGlobalApplicationPrincipal${OFF};Disable an application principal (global)
+  ${CYAN}enableGlobalApplicationPrincipal${OFF};Enable an application principal (global)
+  ${CYAN}getGlobalApplicationPrincipal${OFF};Get one application principal (any tenant)
+  ${CYAN}getGlobalApplicationPrincipals${OFF};List application principals across all tenants
+  ${CYAN}getGlobalApplicationPrincipalsCount${OFF};Count application principals across all tenants
+  ${CYAN}grantGlobalApplicationPrincipalPermission${OFF};Grant a permission to an application principal (any tenant)
+  ${CYAN}provisionGlobalApplicationPrincipal${OFF};Provision an application principal (any tenant, incl. system-locked)
+  ${CYAN}provisionPaymentsConnector${OFF};Provision the platform payments-connector identity
+  ${CYAN}revokeGlobalApplicationPrincipalPermission${OFF};Revoke a permission from an application principal (any tenant)
+  ${CYAN}suspendGlobalApplicationPrincipal${OFF};Suspend an application principal (global)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[businessDomains]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}deleteSystemBusinessDomain${OFF};Delete a business domain
@@ -1490,6 +1973,7 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemCartById${OFF};Retrieve a single system cart by its ID
   ${CYAN}getSystemCarts${OFF};Retrieve a list of system carts
   ${CYAN}getSystemCartsCount${OFF};Get the count of system carts
+  ${CYAN}purgeSystemGuestCarts${OFF};Purge all guest carts
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1518,7 +2002,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1541,6 +2024,24 @@ read -r -d '' ops <<EOF
   ${CYAN}getSystemIPLookupById${OFF};Retrieve a single system IP lookup by its ID
   ${CYAN}getSystemIPLookups${OFF};Retrieve a list of system IP lookups
   ${CYAN}getSystemIPLookupsCount${OFF};Get the count of system IP lookups
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[inbox]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}cancelInboxMessageRetry${OFF};Cancel a scheduled inbox retry
+  ${CYAN}deadLetterInboxMessage${OFF};Manually dead-letter an inbox message
+  ${CYAN}expediteInboxMessage${OFF};Expedite a retry-scheduled inbox message
+  ${CYAN}getDuplicateInboxMessages${OFF};List duplicate-bearing inbox messages
+  ${CYAN}getDuplicateInboxMessagesCount${OFF};Count duplicate-bearing inbox messages
+  ${CYAN}getInboxCorrelationChain${OFF};Get an inbox correlation chain
+  ${CYAN}getInboxHealth${OFF};Get durable-inbox processor health
+  ${CYAN}getInboxMessage${OFF};Get one inbox message
+  ${CYAN}getInboxMessages${OFF};List inbox messages
+  ${CYAN}getInboxMessagesCount${OFF};Count inbox messages
+  ${CYAN}quarantineInboxMessage${OFF};Manually quarantine an inbox message
+  ${CYAN}releaseInboxMessageLease${OFF};Release a stuck inbox lease
+  ${CYAN}replayInboxMessage${OFF};Replay a terminal inbox message as a new generation
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -1585,6 +2086,21 @@ read -r -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
+    echo -e "${BOLD}${WHITE}[outbox]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}cancelOutboxMessage${OFF};Cancel an outbox message
+  ${CYAN}deadLetterOutboxMessage${OFF};Manually dead-letter an outbox message
+  ${CYAN}expediteOutboxMessage${OFF};Expedite a failed (retry-eligible) outbox message
+  ${CYAN}getOutboxCorrelationChain${OFF};Get an outbox correlation chain
+  ${CYAN}getOutboxHealth${OFF};Get durable-outbox relay health
+  ${CYAN}getOutboxMessage${OFF};Get one outbox message
+  ${CYAN}getOutboxMessages${OFF};List outbox messages
+  ${CYAN}getOutboxMessagesCount${OFF};Count outbox messages
+  ${CYAN}releaseOutboxMessageLease${OFF};Release a stuck outbox lease
+  ${CYAN}replayOutboxMessage${OFF};Replay a dead-lettered or failed outbox message
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[overview]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}getSystemOverview${OFF};Get system overview information
@@ -1625,8 +2141,10 @@ read -r -d '' ops <<EOF
   ${CYAN}getAllTenants${OFF};Get all tenants available on this suite server instance.
   ${CYAN}getExtendedTenantsCount${OFF};Get the total count of extended tenants available on this suite server instance.
   ${CYAN}getTenant${OFF};Get a specific tenant by ID.
+  ${CYAN}getTenantModuleGrants${OFF};Get the per-tenant admin module grants for a specific tenant.
   ${CYAN}getTenantsCount${OFF};Get the total count of tenants available on this suite server instance.
   ${CYAN}patchTenant${OFF};Partially update a specific tenant by ID.
+  ${CYAN}setTenantModuleGrants${OFF};Replace the per-tenant admin module grants for a specific tenant.
   ${CYAN}updateTenant${OFF};Update a specific tenant by ID.
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1652,10 +2170,13 @@ read -r -d '' ops <<EOF
   ${CYAN}getExtendedAccountHolderAsync${OFF};Retrieve an extended user by ID
   ${CYAN}getExtendedUsersAsync${OFF};Retrieve a list of extended users
   ${CYAN}getExtendedUsersCountAsync${OFF};Get the count of extended users
+  ${CYAN}getUserAdminDetailAsync${OFF};Retrieve the admin detail aggregate for a user
   ${CYAN}getUserAsync${OFF};Retrieve a user by ID
   ${CYAN}getUsersAsync${OFF};Retrieve a list of users
   ${CYAN}getUsersCountAsync${OFF};Get the count of users
   ${CYAN}patchAccountHolderAsync${OFF};Partially update a user
+  ${CYAN}setUserPasswordAsync${OFF};Set a user's password
+  ${CYAN}updateAccountHolderAdminProfileAsync${OFF};Update a user's admin-managed profile
   ${CYAN}updateAccountHolderAsync${OFF};Update a user
 EOF
 echo "  $ops" | column -t -s ';'
@@ -1752,6 +2273,297 @@ print_isRequestValidAsync_help() {
 }
 ##############################################################################
 #
+# Print help for disableGlobalApplicationPrincipal operation
+#
+##############################################################################
+print_disableGlobalApplicationPrincipal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}disableGlobalApplicationPrincipal - Disable an application principal (global)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Disables the application principal; dependent unattended execution fails closed (applies to system-locked principals here). tenantId scopes the action to a tenant the principal is enrolled in (required). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for enableGlobalApplicationPrincipal operation
+#
+##############################################################################
+print_enableGlobalApplicationPrincipal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}enableGlobalApplicationPrincipal - Enable an application principal (global)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Reinstates the application principal to the Active lifecycle state (applies to system-locked principals here). tenantId scopes the action to a tenant the principal is enrolled in (required). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGlobalApplicationPrincipal operation
+#
+##############################################################################
+print_getGlobalApplicationPrincipal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGlobalApplicationPrincipal - Get one application principal (any tenant)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns one application principal's detail by id: owning application, an enrollment, the system-locked flag, lifecycle status, and that enrollment's explicit least-privilege grants. Pass tenantId to select the enrollment for a multi-tenant principal; when omitted the principal's first enrollment is used. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGlobalApplicationPrincipals operation
+#
+##############################################################################
+print_getGlobalApplicationPrincipals_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGlobalApplicationPrincipals - List application principals across all tenants${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Lists every non-human application principal enrollment across ALL tenants (payload-safe fields only), including the platform-managed (system-locked) connectors. Use OData to scope — e.g. $filter=SystemLocked eq true for the platform connectors or TenantId eq '{guid}' for one tenant — and to page/order. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGlobalApplicationPrincipalsCount operation
+#
+##############################################################################
+print_getGlobalApplicationPrincipalsCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGlobalApplicationPrincipalsCount - Count application principals across all tenants${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of application principal enrollments across ALL tenants under the same OData shaping as the list read (e.g. $filter=SystemLocked eq true). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for grantGlobalApplicationPrincipalPermission operation
+#
+##############################################################################
+print_grantGlobalApplicationPrincipalPermission_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}grantGlobalApplicationPrincipalPermission - Grant a permission to an application principal (any tenant)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Grants a single least-privilege permission to the application principal's enrollment in the tenantId tenant (grants are per-tenant, so tenantId is required). Owner/admin/wildcard/*_manage permissions are rejected even for a global admin (least-privilege by construction). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for provisionGlobalApplicationPrincipal operation
+#
+##############################################################################
+print_provisionGlobalApplicationPrincipal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}provisionGlobalApplicationPrincipal - Provision an application principal (any tenant, incl. system-locked)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Idempotently provisions the application principal (and its own least-privilege enrollment) for a governed business application. tenantId selects the target tenant (defaults to the platform/root tenant). Unlike the per-tenant lane, a system-locked platform application is provisionable here. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for provisionPaymentsConnector operation
+#
+##############################################################################
+print_provisionPaymentsConnector_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}provisionPaymentsConnector - Provision the platform payments-connector identity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Idempotently stands up the platform payments-connector identity — its well-known business application, its application principal, and its own least-privilege enrollment (payments_create/payments_update/journals_post). tenantId selects the target tenant (defaults to the platform/root tenant). The provisioned connector then appears in this global list and (for its tenant) the per-tenant list. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for revokeGlobalApplicationPrincipalPermission operation
+#
+##############################################################################
+print_revokeGlobalApplicationPrincipalPermission_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}revokeGlobalApplicationPrincipalPermission - Revoke a permission from an application principal (any tenant)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Revokes a direct permission grant from the application principal's enrollment in the tenantId tenant (required). Idempotent. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}permission${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for suspendGlobalApplicationPrincipal operation
+#
+##############################################################################
+print_suspendGlobalApplicationPrincipal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}suspendGlobalApplicationPrincipal - Suspend an application principal (global)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Temporarily suspends the application principal; its identity is retained but it cannot act until reinstated (applies to system-locked principals here). tenantId scopes the action to a tenant the principal is enrolled in (required). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for deleteSystemBusinessDomain operation
 #
 ##############################################################################
@@ -1815,6 +2627,8 @@ print_getSystemBusinessDomains_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1839,6 +2653,8 @@ print_getSystemBusinessDomainsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1940,6 +2756,8 @@ print_getSystemCarts_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1959,6 +2777,32 @@ print_getSystemCartsCount_help() {
     echo -e "${BOLD}${WHITE}getSystemCartsCount - Get the count of system carts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get the count of all carts in the system" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for purgeSystemGuestCarts operation
+#
+##############################################################################
+print_purgeSystemGuestCarts_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}purgeSystemGuestCarts - Purge all guest carts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Deletes every guest cart, cascading its item cart records, compare records and wish lists, and returns the removed-row counts. Idempotent." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
@@ -2074,6 +2918,8 @@ print_getSystemContactOptions_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2101,6 +2947,8 @@ print_getSystemContactOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2268,22 +3116,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2589,6 +3421,8 @@ print_getSystemIPLookups_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2613,6 +3447,8 @@ print_getSystemIPLookupsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2621,6 +3457,370 @@ print_getSystemIPLookupsCount_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelInboxMessageRetry operation
+#
+##############################################################################
+print_cancelInboxMessageRetry_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelInboxMessageRetry - Cancel a scheduled inbox retry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Stops a RetryScheduled message from retrying by operator decision, moving it to the terminal Cancelled state (deliberately distinct from DeadLettered so the dead-letter gauge stays honest). The reason is audit-critical. Only a RetryScheduled message can be cancelled. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deadLetterInboxMessage operation
+#
+##############################################################################
+print_deadLetterInboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deadLetterInboxMessage - Manually dead-letter an inbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Manually moves a non-terminal message to the terminal DeadLettered state. The reason is audit-critical. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for expediteInboxMessage operation
+#
+##############################################################################
+print_expediteInboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}expediteInboxMessage - Expedite a retry-scheduled inbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Pulls a RetryScheduled message's scheduled instant forward to now so the processor claims it on the next poll, bypassing the remaining backoff. Same row, retry budget untouched. Only a RetryScheduled message can be expedited. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDuplicateInboxMessages operation
+#
+##############################################################################
+print_getDuplicateInboxMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDuplicateInboxMessages - List duplicate-bearing inbox messages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Lists inbox messages that have observed a re-delivery (DeliveryCount > 1) — durable evidence that a source is re-sending, surfaced with DeliveryCount / LastDuplicateReceivedAtUtc. Further OData filtering/paging applies. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDuplicateInboxMessagesCount operation
+#
+##############################################################################
+print_getDuplicateInboxMessagesCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDuplicateInboxMessagesCount - Count duplicate-bearing inbox messages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of duplicate-bearing inbox messages under the same OData shaping as the duplicates list. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInboxCorrelationChain operation
+#
+##############################################################################
+print_getInboxCorrelationChain_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInboxCorrelationChain - Get an inbox correlation chain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns every inbox message that shares a correlation id — one logical inbound interaction end-to-end, including its replay generations — oldest-received first. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}correlationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: correlationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInboxHealth operation
+#
+##############################################################################
+print_getInboxHealth_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInboxHealth - Get durable-inbox processor health${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns a single snapshot of the durable-inbox processor: whether it is enabled, the per-status counts (received/accepted/processing/retry-scheduled/rejected/quarantined/dead-lettered/cancelled), the age of the oldest accepted message, and the last successful processing instant. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInboxMessage operation
+#
+##############################################################################
+print_getInboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInboxMessage - Get one inbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns one inbox message's payload-safe detail by id — both lifecycle axes (processing status + independent verification status), the dedup lineage, attempt/generation counters, the recorded failure, and the timestamps. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInboxMessages operation
+#
+##############################################################################
+print_getInboxMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInboxMessages - List inbox messages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Lists durable-inbox messages (payload-safe fields only). Use OData to scope by any projected field — e.g. $filter=Status eq 'Quarantined' for the quarantine review, Status eq 'DeadLettered' for terminal failures, VerificationStatus eq 'Failed' for forged/untrusted callbacks, SourceSystem eq 'stripe', or a ReceivedAtUtc range — and to page/order. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getInboxMessagesCount operation
+#
+##############################################################################
+print_getInboxMessagesCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getInboxMessagesCount - Count inbox messages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of durable-inbox messages under the same OData shaping as the list read (e.g. $filter=Status eq 'Quarantined'). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for quarantineInboxMessage operation
+#
+##############################################################################
+print_quarantineInboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}quarantineInboxMessage - Manually quarantine an inbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Manually holds a non-terminal message for review in the terminal Quarantined state (e.g. an operator judges it suspicious). The reason is audit-critical. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for releaseInboxMessageLease operation
+#
+##############################################################################
+print_releaseInboxMessageLease_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}releaseInboxMessageLease - Release a stuck inbox lease${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Force-releases the lease on a message wedged in Processing (a crashed/hung processor) and returns it to the claimable Accepted state, due now, so the next poll re-drives it. The in-flight attempt is NOT counted — a crash is not a business failure. Only a Processing message can have its lease released. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for replayInboxMessage operation
+#
+##############################################################################
+print_replayInboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}replayInboxMessage - Replay a terminal inbox message as a new generation${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Replays a terminal message as a NEW processing generation over its immutable received evidence — the inbox's recovery lever (distinct from the outbox's same-row requeue). A selected replay-generation row is resolved back to its lineage root before replaying, so numbering stays global and collision-free; the new row is claimable at once with a fresh retry budget, and the root's evidence and budget are never mutated. Legal only from a terminal state whose authenticity passed. Returns the new generation's identity. The reason is audit-critical. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -3043,6 +4243,8 @@ print_getSystemOptions_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3069,6 +4271,8 @@ print_getSystemOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3160,6 +4364,285 @@ print_upsertSystemOption_help() {
     echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for cancelOutboxMessage operation
+#
+##############################################################################
+print_cancelOutboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}cancelOutboxMessage - Cancel an outbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Stops a Pending or Failed message by operator decision, moving it to the terminal Cancelled state (deliberately distinct from DeadLettered so the dead-letter gauge stays honest). The reason is audit-critical. An in-flight (Processing) or already-terminal message is rejected. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deadLetterOutboxMessage operation
+#
+##############################################################################
+print_deadLetterOutboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deadLetterOutboxMessage - Manually dead-letter an outbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Manually moves a Processing or Failed message to the terminal DeadLettered state. The reason is audit-critical. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for expediteOutboxMessage operation
+#
+##############################################################################
+print_expediteOutboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}expediteOutboxMessage - Expedite a failed (retry-eligible) outbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Pulls a Failed message's scheduled instant forward to now so the relay claims it on the next poll, bypassing the remaining backoff. Same row, retry budget untouched (the lighter-touch counterpart to Replay, which also clears the recorded error). Only a Failed message can be expedited. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOutboxCorrelationChain operation
+#
+##############################################################################
+print_getOutboxCorrelationChain_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOutboxCorrelationChain - Get an outbox correlation chain${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns every outbox message that shares a correlation id — one logical unit of async work end-to-end (e.g. a command and the events its handler in turn staged) — oldest-created first. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}correlationId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: correlationId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOutboxHealth operation
+#
+##############################################################################
+print_getOutboxHealth_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOutboxHealth - Get durable-outbox relay health${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns a single snapshot of the durable-outbox relay: whether it is enabled, the per-status counts (pending/processing/failed/dead-lettered), the age of the oldest pending message, and the last successful dispatch instant. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOutboxMessage operation
+#
+##############################################################################
+print_getOutboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOutboxMessage - Get one outbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns one outbox message's payload-safe detail by id — its lifecycle status, the two classification axes (kind + message type), the attempt/ceiling budget, the recorded failure, the idempotency + correlation lineage, and the timestamps. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOutboxMessages operation
+#
+##############################################################################
+print_getOutboxMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOutboxMessages - List outbox messages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Lists durable-outbox messages (payload-safe fields only). Use OData to scope to a state — e.g. $filter=Status eq 'DeadLettered' for the dead-letter set or Status eq 'Failed' for retry-eligible rows — and to page/order. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getOutboxMessagesCount operation
+#
+##############################################################################
+print_getOutboxMessagesCount_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getOutboxMessagesCount - Count outbox messages${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the count of durable-outbox messages under the same OData shaping as the list read (e.g. $filter=Status eq 'DeadLettered'). Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for releaseOutboxMessageLease operation
+#
+##############################################################################
+print_releaseOutboxMessageLease_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}releaseOutboxMessageLease - Release a stuck outbox lease${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Force-releases the lease on a message wedged in Processing (a crashed/hung relay) and returns it to the claimable Pending state, due now, so the next poll re-drives it. The in-flight attempt is NOT counted — a crash is not a business failure. The relay auto-reclaims a crashed row once its lease expires; this manual lever forces the release immediately. Only a Processing message can have its lease released. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for replayOutboxMessage operation
+#
+##############################################################################
+print_replayOutboxMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}replayOutboxMessage - Replay a dead-lettered or failed outbox message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Requeues a DeadLettered or Failed message back to Pending so the relay re-drives it immediately (clearing the lease and recorded error, and bypassing the remaining backoff). The attempt budget is preserved — a replay grants one more pass, not a fresh budget. Replaying a message that is already Pending/Processing or is Succeeded/Cancelled is rejected. Global-administrator only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=422
+    echo -e "${result_color_table[${code:0:1}]}  422;Unprocessable Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 ##############################################################################
 #
@@ -3276,6 +4759,8 @@ print_getSystemPortals_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3300,6 +4785,8 @@ print_getSystemPortalsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3464,6 +4951,8 @@ print_getSystemTenantOptions_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3491,6 +4980,8 @@ print_getSystemTenantOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3668,6 +5159,8 @@ print_getAllExtendedTenants_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3692,6 +5185,8 @@ print_getAllTenants_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3716,6 +5211,8 @@ print_getExtendedTenantsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3752,6 +5249,31 @@ print_getTenant_help() {
 }
 ##############################################################################
 #
+# Print help for getTenantModuleGrants operation
+#
+##############################################################################
+print_getTenantModuleGrants_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTenantModuleGrants - Get the per-tenant admin module grants for a specific tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getTenantsCount operation
 #
 ##############################################################################
@@ -3765,6 +5287,8 @@ print_getTenantsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3784,6 +5308,33 @@ print_patchTenant_help() {
     echo -e "${BOLD}${WHITE}patchTenant - Partially update a specific tenant by ID.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for setTenantModuleGrants operation
+#
+##############################################################################
+print_setTenantModuleGrants_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}setTenantModuleGrants - Replace the per-tenant admin module grants for a specific tenant.${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This action is only available for global administrators. Grants supplement licensing." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: tenantId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -3929,6 +5480,8 @@ print_getSystemUserOptions_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3956,6 +5509,8 @@ print_getSystemUserOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4164,6 +5719,8 @@ print_getExtendedUsersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4185,6 +5742,35 @@ print_getExtendedUsersCountAsync_help() {
     echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getUserAdminDetailAsync operation
+#
+##############################################################################
+print_getUserAdminDetailAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getUserAdminDetailAsync - Retrieve the admin detail aggregate for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns the user's orders, external logins, and — for the supplied tenant — the enrollment with its granted roles/permissions and the tenant role/permission catalogs. Global administrators only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4237,6 +5823,8 @@ print_getUsersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4261,6 +5849,8 @@ print_getUsersCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4280,6 +5870,62 @@ print_patchAccountHolderAsync_help() {
     echo -e "${BOLD}${WHITE}patchAccountHolderAsync - Partially update a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This action is only available for global administrators." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for setUserPasswordAsync operation
+#
+##############################################################################
+print_setUserPasswordAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}setUserPasswordAsync - Set a user's password${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Replaces the user's password with the supplied value. Global administrators only." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateAccountHolderAdminProfileAsync operation
+#
+##############################################################################
+print_updateAccountHolderAdminProfileAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateAccountHolderAdminProfileAsync - Update a user's admin-managed profile${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Updates the identity fields (email/username, re-normalized by Identity) and display fields a global administrator may change on a user, and toggles two-factor and lockout. Normalized email/username and the access-failed count are never accepted. This action is only available for global administrators." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}userId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: userId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -4400,6 +6046,526 @@ call_isRequestValidAsync() {
 
 ##############################################################################
 #
+# Call disableGlobalApplicationPrincipal operation
+#
+##############################################################################
+call_disableGlobalApplicationPrincipal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/{principalId}/Disable" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call enableGlobalApplicationPrincipal operation
+#
+##############################################################################
+call_enableGlobalApplicationPrincipal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/{principalId}/Enable" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getGlobalApplicationPrincipal operation
+#
+##############################################################################
+call_getGlobalApplicationPrincipal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/{principalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getGlobalApplicationPrincipals operation
+#
+##############################################################################
+call_getGlobalApplicationPrincipals() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getGlobalApplicationPrincipalsCount operation
+#
+##############################################################################
+call_getGlobalApplicationPrincipalsCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call grantGlobalApplicationPrincipalPermission operation
+#
+##############################################################################
+call_grantGlobalApplicationPrincipalPermission() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/{principalId}/Permissions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call provisionGlobalApplicationPrincipal operation
+#
+##############################################################################
+call_provisionGlobalApplicationPrincipal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/Provision" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call provisionPaymentsConnector operation
+#
+##############################################################################
+call_provisionPaymentsConnector() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/PaymentsConnector" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call revokeGlobalApplicationPrincipalPermission operation
+#
+##############################################################################
+call_revokeGlobalApplicationPrincipalPermission() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId permission)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/{principalId}/Permissions/{permission}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call suspendGlobalApplicationPrincipal operation
+#
+##############################################################################
+call_suspendGlobalApplicationPrincipal() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/ApplicationPrincipals/{principalId}/Suspend" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call deleteSystemBusinessDomain operation
 #
 ##############################################################################
@@ -4499,10 +6665,50 @@ call_getSystemBusinessDomains() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4535,10 +6741,50 @@ call_getSystemBusinessDomainsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4679,10 +6925,50 @@ call_getSystemCarts() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4705,6 +6991,82 @@ call_getSystemCartsCount() {
         exit 1
     fi
     local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call purgeSystemGuestCarts operation
+#
+##############################################################################
+call_purgeSystemGuestCarts() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Carts/Guests" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -4899,10 +7261,50 @@ call_getSystemContactOptions() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4935,10 +7337,50 @@ call_getSystemContactOptionsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5390,42 +7832,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -6334,10 +8740,50 @@ call_getSystemIPLookups() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6370,10 +8816,838 @@ call_getSystemIPLookupsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call cancelInboxMessageRetry operation
+#
+##############################################################################
+call_cancelInboxMessageRetry() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}/CancelRetry" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deadLetterInboxMessage operation
+#
+##############################################################################
+call_deadLetterInboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}/DeadLetter" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call expediteInboxMessage operation
+#
+##############################################################################
+call_expediteInboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}/Expedite" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
     if [[ "$print_curl" = true ]]; then
         echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDuplicateInboxMessages operation
+#
+##############################################################################
+call_getDuplicateInboxMessages() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Duplicates" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getDuplicateInboxMessagesCount operation
+#
+##############################################################################
+call_getDuplicateInboxMessagesCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Duplicates/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getInboxCorrelationChain operation
+#
+##############################################################################
+call_getInboxCorrelationChain() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(correlationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Correlations/{correlationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInboxHealth operation
+#
+##############################################################################
+call_getInboxHealth() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInboxMessage operation
+#
+##############################################################################
+call_getInboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getInboxMessages operation
+#
+##############################################################################
+call_getInboxMessages() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getInboxMessagesCount operation
+#
+##############################################################################
+call_getInboxMessagesCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call quarantineInboxMessage operation
+#
+##############################################################################
+call_quarantineInboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}/Quarantine" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call releaseInboxMessageLease operation
+#
+##############################################################################
+call_releaseInboxMessageLease() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}/ReleaseLease" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call replayInboxMessage operation
+#
+##############################################################################
+call_replayInboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Inbox/Messages/{id}/Replay" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7184,10 +10458,50 @@ call_getSystemOptions() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7220,10 +10534,50 @@ call_getSystemOptionsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7457,6 +10811,526 @@ call_upsertSystemOption() {
 
 ##############################################################################
 #
+# Call cancelOutboxMessage operation
+#
+##############################################################################
+call_cancelOutboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/{id}/Cancel" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deadLetterOutboxMessage operation
+#
+##############################################################################
+call_deadLetterOutboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/{id}/DeadLetter" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call expediteOutboxMessage operation
+#
+##############################################################################
+call_expediteOutboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/{id}/Expedite" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOutboxCorrelationChain operation
+#
+##############################################################################
+call_getOutboxCorrelationChain() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(correlationId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Correlations/{correlationId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOutboxHealth operation
+#
+##############################################################################
+call_getOutboxHealth() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Health" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOutboxMessage operation
+#
+##############################################################################
+call_getOutboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/{id}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getOutboxMessages operation
+#
+##############################################################################
+call_getOutboxMessages() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getOutboxMessagesCount operation
+#
+##############################################################################
+call_getOutboxMessagesCount() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call releaseOutboxMessageLease operation
+#
+##############################################################################
+call_releaseOutboxMessageLease() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/{id}/ReleaseLease" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call replayOutboxMessage operation
+#
+##############################################################################
+call_replayOutboxMessage() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(id)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Outbox/Messages/{id}/Replay" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getSystemOverview operation
 #
 ##############################################################################
@@ -7668,10 +11542,50 @@ call_getSystemPortals() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7704,10 +11618,50 @@ call_getSystemPortalsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8040,10 +11994,50 @@ call_getSystemTenantOptions() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8076,10 +12070,50 @@ call_getSystemTenantOptionsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8528,10 +12562,50 @@ call_getAllExtendedTenants() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8564,10 +12638,50 @@ call_getAllTenants() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8600,10 +12714,50 @@ call_getExtendedTenantsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8622,6 +12776,42 @@ call_getTenant() {
     local path
 
     if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTenantModuleGrants operation
+#
+##############################################################################
+call_getTenantModuleGrants() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/ModuleGrants" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -8672,10 +12862,50 @@ call_getTenantsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8698,6 +12928,82 @@ call_patchTenant() {
         exit 1
     fi
     local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call setTenantModuleGrants operation
+#
+##############################################################################
+call_setTenantModuleGrants() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(tenantId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Tenants/{tenantId}/ModuleGrants" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -9008,10 +13314,50 @@ call_getSystemUserOptions() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9044,10 +13390,50 @@ call_getSystemUserOptionsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9532,10 +13918,50 @@ call_getExtendedUsersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9554,6 +13980,82 @@ call_getExtendedUsersCountAsync() {
     local path
 
     if ! path=$(build_request_path "/api/v2/SystemService/Users/Extended/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getUserAdminDetailAsync operation
+#
+##############################################################################
+call_getUserAdminDetailAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/AdminDetail" path_parameter_names query_parameter_names); then
         ERROR_MSG=$path
         exit 1
     fi
@@ -9640,10 +14142,50 @@ call_getUsersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9676,10 +14218,50 @@ call_getUsersCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9702,6 +14284,158 @@ call_patchAccountHolderAsync() {
         exit 1
     fi
     local method="PATCH"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call setUserPasswordAsync operation
+#
+##############################################################################
+call_setUserPasswordAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/Password" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateAccountHolderAdminProfileAsync operation
+#
+##############################################################################
+call_updateAccountHolderAdminProfileAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(userId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SystemService/Users/{userId}/AdminProfile" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl
     headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
@@ -9938,6 +14672,36 @@ case $key in
     isRequestValidAsync)
     operation="isRequestValidAsync"
     ;;
+    disableGlobalApplicationPrincipal)
+    operation="disableGlobalApplicationPrincipal"
+    ;;
+    enableGlobalApplicationPrincipal)
+    operation="enableGlobalApplicationPrincipal"
+    ;;
+    getGlobalApplicationPrincipal)
+    operation="getGlobalApplicationPrincipal"
+    ;;
+    getGlobalApplicationPrincipals)
+    operation="getGlobalApplicationPrincipals"
+    ;;
+    getGlobalApplicationPrincipalsCount)
+    operation="getGlobalApplicationPrincipalsCount"
+    ;;
+    grantGlobalApplicationPrincipalPermission)
+    operation="grantGlobalApplicationPrincipalPermission"
+    ;;
+    provisionGlobalApplicationPrincipal)
+    operation="provisionGlobalApplicationPrincipal"
+    ;;
+    provisionPaymentsConnector)
+    operation="provisionPaymentsConnector"
+    ;;
+    revokeGlobalApplicationPrincipalPermission)
+    operation="revokeGlobalApplicationPrincipalPermission"
+    ;;
+    suspendGlobalApplicationPrincipal)
+    operation="suspendGlobalApplicationPrincipal"
+    ;;
     deleteSystemBusinessDomain)
     operation="deleteSystemBusinessDomain"
     ;;
@@ -9964,6 +14728,9 @@ case $key in
     ;;
     getSystemCartsCount)
     operation="getSystemCartsCount"
+    ;;
+    purgeSystemGuestCarts)
+    operation="purgeSystemGuestCarts"
     ;;
     createSystemContactOption)
     operation="createSystemContactOption"
@@ -10003,9 +14770,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -10057,6 +14821,45 @@ case $key in
     ;;
     getSystemIPLookupsCount)
     operation="getSystemIPLookupsCount"
+    ;;
+    cancelInboxMessageRetry)
+    operation="cancelInboxMessageRetry"
+    ;;
+    deadLetterInboxMessage)
+    operation="deadLetterInboxMessage"
+    ;;
+    expediteInboxMessage)
+    operation="expediteInboxMessage"
+    ;;
+    getDuplicateInboxMessages)
+    operation="getDuplicateInboxMessages"
+    ;;
+    getDuplicateInboxMessagesCount)
+    operation="getDuplicateInboxMessagesCount"
+    ;;
+    getInboxCorrelationChain)
+    operation="getInboxCorrelationChain"
+    ;;
+    getInboxHealth)
+    operation="getInboxHealth"
+    ;;
+    getInboxMessage)
+    operation="getInboxMessage"
+    ;;
+    getInboxMessages)
+    operation="getInboxMessages"
+    ;;
+    getInboxMessagesCount)
+    operation="getInboxMessagesCount"
+    ;;
+    quarantineInboxMessage)
+    operation="quarantineInboxMessage"
+    ;;
+    releaseInboxMessageLease)
+    operation="releaseInboxMessageLease"
+    ;;
+    replayInboxMessage)
+    operation="replayInboxMessage"
     ;;
     getAttributesForLicenseAsync)
     operation="getAttributesForLicenseAsync"
@@ -10120,6 +14923,36 @@ case $key in
     ;;
     upsertSystemOption)
     operation="upsertSystemOption"
+    ;;
+    cancelOutboxMessage)
+    operation="cancelOutboxMessage"
+    ;;
+    deadLetterOutboxMessage)
+    operation="deadLetterOutboxMessage"
+    ;;
+    expediteOutboxMessage)
+    operation="expediteOutboxMessage"
+    ;;
+    getOutboxCorrelationChain)
+    operation="getOutboxCorrelationChain"
+    ;;
+    getOutboxHealth)
+    operation="getOutboxHealth"
+    ;;
+    getOutboxMessage)
+    operation="getOutboxMessage"
+    ;;
+    getOutboxMessages)
+    operation="getOutboxMessages"
+    ;;
+    getOutboxMessagesCount)
+    operation="getOutboxMessagesCount"
+    ;;
+    releaseOutboxMessageLease)
+    operation="releaseOutboxMessageLease"
+    ;;
+    replayOutboxMessage)
+    operation="replayOutboxMessage"
     ;;
     getSystemOverview)
     operation="getSystemOverview"
@@ -10190,11 +15023,17 @@ case $key in
     getTenant)
     operation="getTenant"
     ;;
+    getTenantModuleGrants)
+    operation="getTenantModuleGrants"
+    ;;
     getTenantsCount)
     operation="getTenantsCount"
     ;;
     patchTenant)
     operation="patchTenant"
+    ;;
+    setTenantModuleGrants)
+    operation="setTenantModuleGrants"
     ;;
     updateTenant)
     operation="updateTenant"
@@ -10241,6 +15080,9 @@ case $key in
     getExtendedUsersCountAsync)
     operation="getExtendedUsersCountAsync"
     ;;
+    getUserAdminDetailAsync)
+    operation="getUserAdminDetailAsync"
+    ;;
     getUserAsync)
     operation="getUserAsync"
     ;;
@@ -10252,6 +15094,12 @@ case $key in
     ;;
     patchAccountHolderAsync)
     operation="patchAccountHolderAsync"
+    ;;
+    setUserPasswordAsync)
+    operation="setUserPasswordAsync"
+    ;;
+    updateAccountHolderAdminProfileAsync)
+    operation="updateAccountHolderAdminProfileAsync"
     ;;
     updateAccountHolderAsync)
     operation="updateAccountHolderAsync"
@@ -10349,6 +15197,36 @@ case $operation in
     isRequestValidAsync)
     call_isRequestValidAsync
     ;;
+    disableGlobalApplicationPrincipal)
+    call_disableGlobalApplicationPrincipal
+    ;;
+    enableGlobalApplicationPrincipal)
+    call_enableGlobalApplicationPrincipal
+    ;;
+    getGlobalApplicationPrincipal)
+    call_getGlobalApplicationPrincipal
+    ;;
+    getGlobalApplicationPrincipals)
+    call_getGlobalApplicationPrincipals
+    ;;
+    getGlobalApplicationPrincipalsCount)
+    call_getGlobalApplicationPrincipalsCount
+    ;;
+    grantGlobalApplicationPrincipalPermission)
+    call_grantGlobalApplicationPrincipalPermission
+    ;;
+    provisionGlobalApplicationPrincipal)
+    call_provisionGlobalApplicationPrincipal
+    ;;
+    provisionPaymentsConnector)
+    call_provisionPaymentsConnector
+    ;;
+    revokeGlobalApplicationPrincipalPermission)
+    call_revokeGlobalApplicationPrincipalPermission
+    ;;
+    suspendGlobalApplicationPrincipal)
+    call_suspendGlobalApplicationPrincipal
+    ;;
     deleteSystemBusinessDomain)
     call_deleteSystemBusinessDomain
     ;;
@@ -10375,6 +15253,9 @@ case $operation in
     ;;
     getSystemCartsCount)
     call_getSystemCartsCount
+    ;;
+    purgeSystemGuestCarts)
+    call_purgeSystemGuestCarts
     ;;
     createSystemContactOption)
     call_createSystemContactOption
@@ -10414,9 +15295,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost
@@ -10468,6 +15346,45 @@ case $operation in
     ;;
     getSystemIPLookupsCount)
     call_getSystemIPLookupsCount
+    ;;
+    cancelInboxMessageRetry)
+    call_cancelInboxMessageRetry
+    ;;
+    deadLetterInboxMessage)
+    call_deadLetterInboxMessage
+    ;;
+    expediteInboxMessage)
+    call_expediteInboxMessage
+    ;;
+    getDuplicateInboxMessages)
+    call_getDuplicateInboxMessages
+    ;;
+    getDuplicateInboxMessagesCount)
+    call_getDuplicateInboxMessagesCount
+    ;;
+    getInboxCorrelationChain)
+    call_getInboxCorrelationChain
+    ;;
+    getInboxHealth)
+    call_getInboxHealth
+    ;;
+    getInboxMessage)
+    call_getInboxMessage
+    ;;
+    getInboxMessages)
+    call_getInboxMessages
+    ;;
+    getInboxMessagesCount)
+    call_getInboxMessagesCount
+    ;;
+    quarantineInboxMessage)
+    call_quarantineInboxMessage
+    ;;
+    releaseInboxMessageLease)
+    call_releaseInboxMessageLease
+    ;;
+    replayInboxMessage)
+    call_replayInboxMessage
     ;;
     getAttributesForLicenseAsync)
     call_getAttributesForLicenseAsync
@@ -10531,6 +15448,36 @@ case $operation in
     ;;
     upsertSystemOption)
     call_upsertSystemOption
+    ;;
+    cancelOutboxMessage)
+    call_cancelOutboxMessage
+    ;;
+    deadLetterOutboxMessage)
+    call_deadLetterOutboxMessage
+    ;;
+    expediteOutboxMessage)
+    call_expediteOutboxMessage
+    ;;
+    getOutboxCorrelationChain)
+    call_getOutboxCorrelationChain
+    ;;
+    getOutboxHealth)
+    call_getOutboxHealth
+    ;;
+    getOutboxMessage)
+    call_getOutboxMessage
+    ;;
+    getOutboxMessages)
+    call_getOutboxMessages
+    ;;
+    getOutboxMessagesCount)
+    call_getOutboxMessagesCount
+    ;;
+    releaseOutboxMessageLease)
+    call_releaseOutboxMessageLease
+    ;;
+    replayOutboxMessage)
+    call_replayOutboxMessage
     ;;
     getSystemOverview)
     call_getSystemOverview
@@ -10601,11 +15548,17 @@ case $operation in
     getTenant)
     call_getTenant
     ;;
+    getTenantModuleGrants)
+    call_getTenantModuleGrants
+    ;;
     getTenantsCount)
     call_getTenantsCount
     ;;
     patchTenant)
     call_patchTenant
+    ;;
+    setTenantModuleGrants)
+    call_setTenantModuleGrants
     ;;
     updateTenant)
     call_updateTenant
@@ -10652,6 +15605,9 @@ case $operation in
     getExtendedUsersCountAsync)
     call_getExtendedUsersCountAsync
     ;;
+    getUserAdminDetailAsync)
+    call_getUserAdminDetailAsync
+    ;;
     getUserAsync)
     call_getUserAsync
     ;;
@@ -10663,6 +15619,12 @@ case $operation in
     ;;
     patchAccountHolderAsync)
     call_patchAccountHolderAsync
+    ;;
+    setUserPasswordAsync)
+    call_setUserPasswordAsync
+    ;;
+    updateAccountHolderAdminProfileAsync)
+    call_updateAccountHolderAdminProfileAsync
     ;;
     updateAccountHolderAsync)
     call_updateAccountHolderAsync

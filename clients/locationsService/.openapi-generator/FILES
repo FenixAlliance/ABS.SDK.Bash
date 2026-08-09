@@ -14,12 +14,13 @@ docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LocationCreateDto.md
 docs/LocationDto.md
+docs/LocationDtoCollectionQueryParameters.md
 docs/LocationDtoEnvelope.md
 docs/LocationDtoIReadOnlyListEnvelope.md
 docs/LocationUpdateDto.md
 docs/LocationsApi.md
 docs/LoginRequest.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md

@@ -84,7 +84,6 @@ Name | Type | Description | Notes
 **priceListItemId** | **string** |  | [optional] [default to null]
 **unitId** | **string** |  | [optional] [default to null]
 **unitGroupId** | **string** |  | [optional] [default to null]
-**forexRatesSnapshot** | **string** |  | [optional] [default to null]
 **totalBaseAmountInUsd** | **float** |  | [optional] [default to null]
 **totalProfitInUsd** | **float** |  | [optional] [default to null]
 **totalDetailAmountInUsd** | **float** |  | [optional] [default to null]

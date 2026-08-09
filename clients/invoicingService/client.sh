@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -167,7 +166,9 @@ operation_parameters_minimum_occurrences["deleteInvoiceReference:::invoiceRefere
 operation_parameters_minimum_occurrences["getExtendedInvoice:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExtendedInvoice:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getExtendedInvoices:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExtendedInvoices:::ExtendedInvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getExtendedInvoicesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getExtendedInvoicesCount:::ExtendedInvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoice:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoice:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceAdjustment:::tenantId"]=1
@@ -175,57 +176,71 @@ operation_parameters_minimum_occurrences["getInvoiceAdjustment:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceAdjustment:::invoiceAdjustmentId"]=1
 operation_parameters_minimum_occurrences["getInvoiceAdjustments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceAdjustments:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoiceAdjustments:::InvoiceAdjustmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceAdjustmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceAdjustmentsCount:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoiceAdjustmentsCount:::InvoiceAdjustmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceLine:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLine:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLine:::invoiceLineId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLineTaxes:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLineTaxes:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLineTaxes:::invoiceLineId"]=1
+operation_parameters_minimum_occurrences["getInvoiceLineTaxes:::InvoiceLineAppliedTaxDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceLineTaxesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLineTaxesCount:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLineTaxesCount:::invoiceLineId"]=1
+operation_parameters_minimum_occurrences["getInvoiceLineTaxesCount:::InvoiceLineAppliedTaxDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceLines:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLines:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLines:::itemId"]=0
+operation_parameters_minimum_occurrences["getInvoiceLines:::InvoiceLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceLinesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceLinesCount:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoiceLinesCount:::InvoiceLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoicePayments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoicePayments:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoicePayments:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoicePaymentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoicePaymentsCount:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoicePaymentsCount:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceReference:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReference:::invoiceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReference:::invoiceReferenceId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReferences:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReferences:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoiceReferences:::InvoiceReferenceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoiceReferencesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getInvoiceReferencesCount:::invoiceId"]=1
+operation_parameters_minimum_occurrences["getInvoiceReferencesCount:::InvoiceReferenceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoices:::tenantId"]=1
+operation_parameters_minimum_occurrences["getInvoices:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getInvoicesCount:::tenantId"]=1
+operation_parameters_minimum_occurrences["getInvoicesCount:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPurchaseInvoicesSum:::tenantId"]=1
+operation_parameters_minimum_occurrences["getPurchaseInvoicesSum:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSalesInvoicesSum:::tenantId"]=1
+operation_parameters_minimum_occurrences["getSalesInvoicesSum:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchInvoice:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchInvoice:::invoiceId"]=1
-operation_parameters_minimum_occurrences["patchInvoice:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoice:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::invoiceId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::invoiceAdjustmentId"]=1
-operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceAdjustment:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchInvoiceLine:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceLine:::invoiceId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceLine:::invoiceLineId"]=1
-operation_parameters_minimum_occurrences["patchInvoiceLine:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceLine:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchInvoiceLineTax:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceLineTax:::invoiceId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceLineTax:::invoiceLineId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceLineTax:::invoiceLineTaxId"]=1
-operation_parameters_minimum_occurrences["patchInvoiceLineTax:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceLineTax:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchInvoiceReference:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceReference:::invoiceId"]=1
 operation_parameters_minimum_occurrences["patchInvoiceReference:::invoiceReferenceId"]=1
-operation_parameters_minimum_occurrences["patchInvoiceReference:::Operation"]=0
+operation_parameters_minimum_occurrences["patchInvoiceReference:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["previewInvoiceEmail:::invoiceId"]=1
 operation_parameters_minimum_occurrences["previewInvoiceEmail:::tenantId"]=1
 operation_parameters_minimum_occurrences["previewInvoiceEmail:::EmailDispatchRequest"]=0
@@ -264,7 +279,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -331,7 +345,9 @@ operation_parameters_maximum_occurrences["deleteInvoiceReference:::invoiceRefere
 operation_parameters_maximum_occurrences["getExtendedInvoice:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExtendedInvoice:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getExtendedInvoices:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExtendedInvoices:::ExtendedInvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getExtendedInvoicesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getExtendedInvoicesCount:::ExtendedInvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoice:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoice:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceAdjustment:::tenantId"]=0
@@ -339,57 +355,71 @@ operation_parameters_maximum_occurrences["getInvoiceAdjustment:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceAdjustment:::invoiceAdjustmentId"]=0
 operation_parameters_maximum_occurrences["getInvoiceAdjustments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceAdjustments:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoiceAdjustments:::InvoiceAdjustmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceAdjustmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceAdjustmentsCount:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoiceAdjustmentsCount:::InvoiceAdjustmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceLine:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLine:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLine:::invoiceLineId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLineTaxes:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLineTaxes:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLineTaxes:::invoiceLineId"]=0
+operation_parameters_maximum_occurrences["getInvoiceLineTaxes:::InvoiceLineAppliedTaxDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceLineTaxesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLineTaxesCount:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLineTaxesCount:::invoiceLineId"]=0
+operation_parameters_maximum_occurrences["getInvoiceLineTaxesCount:::InvoiceLineAppliedTaxDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceLines:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLines:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLines:::itemId"]=0
+operation_parameters_maximum_occurrences["getInvoiceLines:::InvoiceLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceLinesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceLinesCount:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoiceLinesCount:::InvoiceLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoicePayments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoicePayments:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoicePayments:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoicePaymentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoicePaymentsCount:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoicePaymentsCount:::PaymentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceReference:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReference:::invoiceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReference:::invoiceReferenceId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReferences:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReferences:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoiceReferences:::InvoiceReferenceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoiceReferencesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getInvoiceReferencesCount:::invoiceId"]=0
+operation_parameters_maximum_occurrences["getInvoiceReferencesCount:::InvoiceReferenceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoices:::tenantId"]=0
+operation_parameters_maximum_occurrences["getInvoices:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getInvoicesCount:::tenantId"]=0
+operation_parameters_maximum_occurrences["getInvoicesCount:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPurchaseInvoicesSum:::tenantId"]=0
+operation_parameters_maximum_occurrences["getPurchaseInvoicesSum:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSalesInvoicesSum:::tenantId"]=0
+operation_parameters_maximum_occurrences["getSalesInvoicesSum:::InvoiceDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchInvoice:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchInvoice:::invoiceId"]=0
-operation_parameters_maximum_occurrences["patchInvoice:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoice:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::invoiceId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::invoiceAdjustmentId"]=0
-operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceAdjustment:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLine:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLine:::invoiceId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLine:::invoiceLineId"]=0
-operation_parameters_maximum_occurrences["patchInvoiceLine:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLine:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLineTax:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLineTax:::invoiceId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLineTax:::invoiceLineId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceLineTax:::invoiceLineTaxId"]=0
-operation_parameters_maximum_occurrences["patchInvoiceLineTax:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceLineTax:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchInvoiceReference:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceReference:::invoiceId"]=0
 operation_parameters_maximum_occurrences["patchInvoiceReference:::invoiceReferenceId"]=0
-operation_parameters_maximum_occurrences["patchInvoiceReference:::Operation"]=0
+operation_parameters_maximum_occurrences["patchInvoiceReference:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["previewInvoiceEmail:::invoiceId"]=0
 operation_parameters_maximum_occurrences["previewInvoiceEmail:::tenantId"]=0
 operation_parameters_maximum_occurrences["previewInvoiceEmail:::EmailDispatchRequest"]=0
@@ -425,7 +455,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -492,7 +521,9 @@ operation_parameters_collection_type["deleteInvoiceReference:::invoiceReferenceI
 operation_parameters_collection_type["getExtendedInvoice:::tenantId"]=""
 operation_parameters_collection_type["getExtendedInvoice:::invoiceId"]=""
 operation_parameters_collection_type["getExtendedInvoices:::tenantId"]=""
+operation_parameters_collection_type["getExtendedInvoices:::ExtendedInvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getExtendedInvoicesCount:::tenantId"]=""
+operation_parameters_collection_type["getExtendedInvoicesCount:::ExtendedInvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoice:::tenantId"]=""
 operation_parameters_collection_type["getInvoice:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceAdjustment:::tenantId"]=""
@@ -500,57 +531,71 @@ operation_parameters_collection_type["getInvoiceAdjustment:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceAdjustment:::invoiceAdjustmentId"]=""
 operation_parameters_collection_type["getInvoiceAdjustments:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceAdjustments:::invoiceId"]=""
+operation_parameters_collection_type["getInvoiceAdjustments:::InvoiceAdjustmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceAdjustmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceAdjustmentsCount:::invoiceId"]=""
+operation_parameters_collection_type["getInvoiceAdjustmentsCount:::InvoiceAdjustmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceLine:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceLine:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceLine:::invoiceLineId"]=""
 operation_parameters_collection_type["getInvoiceLineTaxes:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceLineTaxes:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceLineTaxes:::invoiceLineId"]=""
+operation_parameters_collection_type["getInvoiceLineTaxes:::InvoiceLineAppliedTaxDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceLineTaxesCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceLineTaxesCount:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceLineTaxesCount:::invoiceLineId"]=""
+operation_parameters_collection_type["getInvoiceLineTaxesCount:::InvoiceLineAppliedTaxDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceLines:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceLines:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceLines:::itemId"]=""
+operation_parameters_collection_type["getInvoiceLines:::InvoiceLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceLinesCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceLinesCount:::invoiceId"]=""
+operation_parameters_collection_type["getInvoiceLinesCount:::InvoiceLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoicePayments:::tenantId"]=""
 operation_parameters_collection_type["getInvoicePayments:::invoiceId"]=""
+operation_parameters_collection_type["getInvoicePayments:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoicePaymentsCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoicePaymentsCount:::invoiceId"]=""
+operation_parameters_collection_type["getInvoicePaymentsCount:::PaymentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceReference:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceReference:::invoiceId"]=""
 operation_parameters_collection_type["getInvoiceReference:::invoiceReferenceId"]=""
 operation_parameters_collection_type["getInvoiceReferences:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceReferences:::invoiceId"]=""
+operation_parameters_collection_type["getInvoiceReferences:::InvoiceReferenceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoiceReferencesCount:::tenantId"]=""
 operation_parameters_collection_type["getInvoiceReferencesCount:::invoiceId"]=""
+operation_parameters_collection_type["getInvoiceReferencesCount:::InvoiceReferenceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoices:::tenantId"]=""
+operation_parameters_collection_type["getInvoices:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getInvoicesCount:::tenantId"]=""
+operation_parameters_collection_type["getInvoicesCount:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPurchaseInvoicesSum:::tenantId"]=""
+operation_parameters_collection_type["getPurchaseInvoicesSum:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSalesInvoicesSum:::tenantId"]=""
+operation_parameters_collection_type["getSalesInvoicesSum:::InvoiceDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchInvoice:::tenantId"]=""
 operation_parameters_collection_type["patchInvoice:::invoiceId"]=""
-operation_parameters_collection_type["patchInvoice:::Operation"]=
+operation_parameters_collection_type["patchInvoice:::PatchOperation"]=
 operation_parameters_collection_type["patchInvoiceAdjustment:::tenantId"]=""
 operation_parameters_collection_type["patchInvoiceAdjustment:::invoiceId"]=""
 operation_parameters_collection_type["patchInvoiceAdjustment:::invoiceAdjustmentId"]=""
-operation_parameters_collection_type["patchInvoiceAdjustment:::Operation"]=
+operation_parameters_collection_type["patchInvoiceAdjustment:::PatchOperation"]=
 operation_parameters_collection_type["patchInvoiceLine:::tenantId"]=""
 operation_parameters_collection_type["patchInvoiceLine:::invoiceId"]=""
 operation_parameters_collection_type["patchInvoiceLine:::invoiceLineId"]=""
-operation_parameters_collection_type["patchInvoiceLine:::Operation"]=
+operation_parameters_collection_type["patchInvoiceLine:::PatchOperation"]=
 operation_parameters_collection_type["patchInvoiceLineTax:::tenantId"]=""
 operation_parameters_collection_type["patchInvoiceLineTax:::invoiceId"]=""
 operation_parameters_collection_type["patchInvoiceLineTax:::invoiceLineId"]=""
 operation_parameters_collection_type["patchInvoiceLineTax:::invoiceLineTaxId"]=""
-operation_parameters_collection_type["patchInvoiceLineTax:::Operation"]=
+operation_parameters_collection_type["patchInvoiceLineTax:::PatchOperation"]=
 operation_parameters_collection_type["patchInvoiceReference:::tenantId"]=""
 operation_parameters_collection_type["patchInvoiceReference:::invoiceId"]=""
 operation_parameters_collection_type["patchInvoiceReference:::invoiceReferenceId"]=""
-operation_parameters_collection_type["patchInvoiceReference:::Operation"]=
+operation_parameters_collection_type["patchInvoiceReference:::PatchOperation"]=
 operation_parameters_collection_type["previewInvoiceEmail:::invoiceId"]=""
 operation_parameters_collection_type["previewInvoiceEmail:::tenantId"]=""
 operation_parameters_collection_type["previewInvoiceEmail:::EmailDispatchRequest"]=""
@@ -969,7 +1014,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1145,22 +1189,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1814,6 +1842,8 @@ print_getExtendedInvoices_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1835,6 +1865,8 @@ print_getExtendedInvoicesCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -1900,6 +1932,8 @@ print_getInvoiceAdjustments_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1920,6 +1954,8 @@ print_getInvoiceAdjustmentsCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1962,6 +1998,8 @@ print_getInvoiceLineTaxes_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1983,6 +2021,8 @@ print_getInvoiceLineTaxesCount_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceLineId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceLineId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2005,6 +2045,8 @@ print_getInvoiceLines_help() {
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}itemId${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: itemId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2025,6 +2067,8 @@ print_getInvoiceLinesCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2045,6 +2089,8 @@ print_getInvoicePayments_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2065,6 +2111,8 @@ print_getInvoicePaymentsCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2106,6 +2154,8 @@ print_getInvoiceReferences_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2126,6 +2176,8 @@ print_getInvoiceReferencesCount_help() {
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}invoiceId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: invoiceId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2145,6 +2197,8 @@ print_getInvoices_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -2166,6 +2220,8 @@ print_getInvoicesCount_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=404
@@ -2187,6 +2243,8 @@ print_getPurchaseInvoicesSum_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2210,6 +2268,8 @@ print_getSalesInvoicesSum_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=401
@@ -2647,42 +2707,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -4567,10 +4591,50 @@ call_getExtendedInvoices() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4603,10 +4667,50 @@ call_getExtendedInvoicesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4711,10 +4815,50 @@ call_getInvoiceAdjustments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4747,10 +4891,50 @@ call_getInvoiceAdjustmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4819,10 +5003,50 @@ call_getInvoiceLineTaxes() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4855,10 +5079,50 @@ call_getInvoiceLineTaxesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4891,10 +5155,50 @@ call_getInvoiceLines() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4927,10 +5231,50 @@ call_getInvoiceLinesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4963,10 +5307,50 @@ call_getInvoicePayments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4999,10 +5383,50 @@ call_getInvoicePaymentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5071,10 +5495,50 @@ call_getInvoiceReferences() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5107,10 +5571,50 @@ call_getInvoiceReferencesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5143,10 +5647,50 @@ call_getInvoices() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5179,10 +5723,50 @@ call_getInvoicesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5215,10 +5799,50 @@ call_getPurchaseInvoicesSum() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5251,10 +5875,50 @@ call_getSalesInvoicesSum() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6279,9 +6943,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -6569,9 +7230,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

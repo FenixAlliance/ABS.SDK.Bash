@@ -13,9 +13,10 @@ docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/ProjectCreateDto.md
 docs/ProjectDto.md
+docs/ProjectDtoCollectionQueryParameters.md
 docs/ProjectDtoEnvelope.md
 docs/ProjectDtoListEnvelope.md
 docs/ProjectHoursApprovalApproverUpdateDto.md
@@ -27,12 +28,14 @@ docs/ProjectPeriodDtoListEnvelope.md
 docs/ProjectPeriodUpdateDto.md
 docs/ProjectTaskCreateDto.md
 docs/ProjectTaskDto.md
+docs/ProjectTaskDtoCollectionQueryParameters.md
 docs/ProjectTaskDtoEnvelope.md
 docs/ProjectTaskDtoListEnvelope.md
 docs/ProjectTaskUpdateDto.md
 docs/ProjectTasksApi.md
 docs/ProjectTimeLogCreateDto.md
 docs/ProjectTimeLogDto.md
+docs/ProjectTimeLogDtoCollectionQueryParameters.md
 docs/ProjectTimeLogDtoEnvelope.md
 docs/ProjectTimeLogDtoListEnvelope.md
 docs/ProjectTimeLogUpdateDto.md
@@ -45,6 +48,7 @@ docs/ResetPasswordRequest.md
 docs/TaskCategoriesApi.md
 docs/TaskCategoryCreateDto.md
 docs/TaskCategoryDto.md
+docs/TaskCategoryDtoCollectionQueryParameters.md
 docs/TaskCategoryDtoListEnvelope.md
 docs/TaskCategoryUpdateDto.md
 docs/TaskTypeCreateDto.md

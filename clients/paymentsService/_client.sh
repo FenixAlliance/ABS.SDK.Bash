@@ -301,7 +301,6 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
-            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -326,7 +325,10 @@ case $state in
             "getPaymentModesAsync[Retrieves all payment modes]" \
             "getPaymentModesCountAsync[Counts payment modes]" \
             "patchPaymentModeAsync[Patch a payment mode]" \
-            "updatePaymentModeAsync[Updates a payment mode]"             "createPaymentTermAsync[Creates a new payment term]" \
+            "updatePaymentModeAsync[Updates a payment mode]"             "createAsync[Provisions a provider webhook registration]" \
+            "getAsync[Lists the tenant's provider registrations]" \
+            "getCountAsync[Counts the tenant's provider registrations]" \
+            "rotateKeyAsync[Rotates a registration's webhook key]"             "createPaymentTermAsync[Creates a new payment term]" \
             "deletePaymentTermAsync[Deletes a payment term]" \
             "getPaymentTermDetailsAsync[Gets a payment term by ID]" \
             "getPaymentTermsAsync[Retrieves all payment terms]" \
@@ -368,13 +370,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AIServiceAgentsAgentIdAguiPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "agentId=:[PATH] "
-                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)
@@ -594,6 +589,35 @@ case $state in
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getCountAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      rotateKeyAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "registrationId=:[PATH] "
+          "tenantId=:[QUERY] "
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createPaymentTermAsync)

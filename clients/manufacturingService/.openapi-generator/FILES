@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 Dockerfile
 README.md
 _client.sh
@@ -14,9 +13,10 @@ docs/InfoRequest.md
 docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
-docs/Operation.md
+docs/PatchOperation.md
 docs/ProductionPlanCreateDto.md
 docs/ProductionPlanDto.md
+docs/ProductionPlanDtoCollectionQueryParameters.md
 docs/ProductionPlanDtoListEnvelope.md
 docs/ProductionPlanUpdateDto.md
 docs/ProductionPlansApi.md
@@ -28,9 +28,11 @@ docs/TwoFactorRequest.md
 docs/TwoFactorResponse.md
 docs/WorkOrderCreateDto.md
 docs/WorkOrderDto.md
+docs/WorkOrderDtoCollectionQueryParameters.md
 docs/WorkOrderDtoListEnvelope.md
 docs/WorkOrderTypeCreateDto.md
 docs/WorkOrderTypeDto.md
+docs/WorkOrderTypeDtoCollectionQueryParameters.md
 docs/WorkOrderTypeDtoListEnvelope.md
 docs/WorkOrderTypeUpdateDto.md
 docs/WorkOrderTypesApi.md
@@ -38,6 +40,7 @@ docs/WorkOrderUpdateDto.md
 docs/WorkOrdersApi.md
 docs/WorkstationCreateDto.md
 docs/WorkstationDto.md
+docs/WorkstationDtoCollectionQueryParameters.md
 docs/WorkstationDtoListEnvelope.md
 docs/WorkstationUpdateDto.md
 docs/WorkstationsApi.md

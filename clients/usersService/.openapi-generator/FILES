@@ -5,6 +5,7 @@ client.sh
 client.sh.bash-completion
 docs/AccessTokenResponse.md
 docs/AddressDto.md
+docs/AddressDtoCollectionQueryParameters.md
 docs/AddressDtoListEnvelope.md
 docs/CartDto.md
 docs/CartDtoEnvelope.md
@@ -18,6 +19,7 @@ docs/ExtendedUserDto.md
 docs/ExtendedUserDtoEnvelope.md
 docs/FenixAllianceABSWebApi.md
 docs/FollowRecordDto.md
+docs/FollowRecordDtoCollectionQueryParameters.md
 docs/FollowRecordDtoListEnvelope.md
 docs/ForgotPasswordRequest.md
 docs/HttpValidationProblemDetails.md
@@ -26,14 +28,16 @@ docs/InfoResponse.md
 docs/Int32Envelope.md
 docs/LoginRequest.md
 docs/NotificationDto.md
+docs/NotificationDtoCollectionQueryParameters.md
 docs/NotificationDtoListEnvelope.md
-docs/Operation.md
 docs/OptionCreateDto.md
 docs/OptionDto.md
+docs/OptionDtoCollectionQueryParameters.md
 docs/OptionDtoEnvelope.md
 docs/OptionDtoListEnvelope.md
 docs/OptionUpdateDto.md
 docs/OptionsApi.md
+docs/PatchOperation.md
 docs/RefreshRequest.md
 docs/RegisterRequest.md
 docs/ResendConfirmationEmailRequest.md
@@ -41,6 +45,7 @@ docs/ResetPasswordRequest.md
 docs/SocialProfileDto.md
 docs/SocialProfileDtoEnvelope.md
 docs/TenantDto.md
+docs/TenantDtoCollectionQueryParameters.md
 docs/TenantDtoListEnvelope.md
 docs/TenantEnrollmentDto.md
 docs/TenantEnrollmentDtoEnvelope.md

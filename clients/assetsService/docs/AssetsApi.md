@@ -543,6 +543,7 @@ Retrieves all asset categories for the authenticated tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **assetCategoryDtoCollectionQueryParameters** | [**AssetCategoryDtoCollectionQueryParameters**](AssetCategoryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -554,7 +555,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -578,6 +579,7 @@ Returns the total number of asset categories for the authenticated tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **assetCategoryDtoCollectionQueryParameters** | [**AssetCategoryDtoCollectionQueryParameters**](AssetCategoryDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -589,7 +591,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -687,6 +689,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetDepreciationRecordDtoCollectionQueryParameters** | [**AssetDepreciationRecordDtoCollectionQueryParameters**](AssetDepreciationRecordDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -698,7 +701,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -723,6 +726,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetDepreciationRecordDtoCollectionQueryParameters** | [**AssetDepreciationRecordDtoCollectionQueryParameters**](AssetDepreciationRecordDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -734,7 +738,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -796,6 +800,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetRepairDtoCollectionQueryParameters** | [**AssetRepairDtoCollectionQueryParameters**](AssetRepairDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -807,7 +812,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -832,6 +837,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetRepairDtoCollectionQueryParameters** | [**AssetRepairDtoCollectionQueryParameters**](AssetRepairDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -843,7 +849,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -905,6 +911,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetTransferDtoCollectionQueryParameters** | [**AssetTransferDtoCollectionQueryParameters**](AssetTransferDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -916,7 +923,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -941,6 +948,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetTransferDtoCollectionQueryParameters** | [**AssetTransferDtoCollectionQueryParameters**](AssetTransferDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -952,7 +960,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1014,6 +1022,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetValueAmendDtoCollectionQueryParameters** | [**AssetValueAmendDtoCollectionQueryParameters**](AssetValueAmendDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1025,7 +1034,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1050,6 +1059,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
+ **assetValueAmendDtoCollectionQueryParameters** | [**AssetValueAmendDtoCollectionQueryParameters**](AssetValueAmendDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1061,7 +1071,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1085,6 +1095,7 @@ Retrieves all assets for the authenticated tenant with optional filtering.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **assetDtoCollectionQueryParameters** | [**AssetDtoCollectionQueryParameters**](AssetDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1096,7 +1107,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1120,6 +1131,7 @@ Returns the total number of assets for the authenticated tenant.
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **assetDtoCollectionQueryParameters** | [**AssetDtoCollectionQueryParameters**](AssetDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -1131,7 +1143,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -1156,7 +1168,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -1193,7 +1205,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **categoryId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -1231,7 +1243,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
  **recordId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -1269,7 +1281,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
  **repairId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -1307,7 +1319,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
  **transferId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -1345,7 +1357,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **assetId** | **string** |  | [default to null]
  **amendId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 

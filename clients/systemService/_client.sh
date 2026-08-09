@@ -298,14 +298,24 @@ case $state in
     # Operations
     _values "Operations" \
             "getAndStoreTokens[Get and store antiforgery tokens]" \
-            "isRequestValidAsync[Validate antiforgery request]"             "deleteSystemBusinessDomain[Delete a business domain]" \
+            "isRequestValidAsync[Validate antiforgery request]"             "disableGlobalApplicationPrincipal[Disable an application principal (global)]" \
+            "enableGlobalApplicationPrincipal[Enable an application principal (global)]" \
+            "getGlobalApplicationPrincipal[Get one application principal (any tenant)]" \
+            "getGlobalApplicationPrincipals[List application principals across all tenants]" \
+            "getGlobalApplicationPrincipalsCount[Count application principals across all tenants]" \
+            "grantGlobalApplicationPrincipalPermission[Grant a permission to an application principal (any tenant)]" \
+            "provisionGlobalApplicationPrincipal[Provision an application principal (any tenant, incl. system-locked)]" \
+            "provisionPaymentsConnector[Provision the platform payments-connector identity]" \
+            "revokeGlobalApplicationPrincipalPermission[Revoke a permission from an application principal (any tenant)]" \
+            "suspendGlobalApplicationPrincipal[Suspend an application principal (global)]"             "deleteSystemBusinessDomain[Delete a business domain]" \
             "getSystemBusinessDomainById[Retrieve a business domain by its ID]" \
             "getSystemBusinessDomains[Retrieve all business domains in the system]" \
             "getSystemBusinessDomainsCount[Get the count of all business domains in the system]" \
             "verifySystemBusinessDomain[Verify a business domain]"             "deleteSystemCart[Delete a system cart]" \
             "getSystemCartById[Retrieve a single system cart by its ID]" \
             "getSystemCarts[Retrieve a list of system carts]" \
-            "getSystemCartsCount[Get the count of system carts]"             "createSystemContactOption[Create a new contact option (admin)]" \
+            "getSystemCartsCount[Get the count of system carts]" \
+            "purgeSystemGuestCarts[Purge all guest carts]"             "createSystemContactOption[Create a new contact option (admin)]" \
             "deleteSystemContactOption[Delete a contact option (admin)]" \
             "getSystemContactOptionById[Retrieve a single contact option by its ID (admin)]" \
             "getSystemContactOptions[Retrieve a list of contact options (admin)]" \
@@ -316,7 +326,6 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
-            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -332,7 +341,19 @@ case $state in
             "versionGet[]"             "deleteSystemIPLookup[Delete a system IP lookup]" \
             "getSystemIPLookupById[Retrieve a single system IP lookup by its ID]" \
             "getSystemIPLookups[Retrieve a list of system IP lookups]" \
-            "getSystemIPLookupsCount[Get the count of system IP lookups]"             "getAttributesForLicenseAsync[Retrieve license attributes]" \
+            "getSystemIPLookupsCount[Get the count of system IP lookups]"             "cancelInboxMessageRetry[Cancel a scheduled inbox retry]" \
+            "deadLetterInboxMessage[Manually dead-letter an inbox message]" \
+            "expediteInboxMessage[Expedite a retry-scheduled inbox message]" \
+            "getDuplicateInboxMessages[List duplicate-bearing inbox messages]" \
+            "getDuplicateInboxMessagesCount[Count duplicate-bearing inbox messages]" \
+            "getInboxCorrelationChain[Get an inbox correlation chain]" \
+            "getInboxHealth[Get durable-inbox processor health]" \
+            "getInboxMessage[Get one inbox message]" \
+            "getInboxMessages[List inbox messages]" \
+            "getInboxMessagesCount[Count inbox messages]" \
+            "quarantineInboxMessage[Manually quarantine an inbox message]" \
+            "releaseInboxMessageLease[Release a stuck inbox lease]" \
+            "replayInboxMessage[Replay a terminal inbox message as a new generation]"             "getAttributesForLicenseAsync[Retrieve license attributes]" \
             "getFeaturesForLicenseAsync[Retrieve license features]" \
             "getLicenseAssignmentsAsync[Retrieve license assignments]" \
             "getLicenseByIdAsync[Retrieve a license by ID]" \
@@ -349,7 +370,16 @@ case $state in
             "getSystemOptionsCount[Get the count of system options]" \
             "patchSystemOption[Partially update a system option]" \
             "updateSystemOption[Update a system option]" \
-            "upsertSystemOption[Create or update a system option by key]"             "getSystemOverview[Get system overview information]"             "createSystemPortal[Create a new system portal]" \
+            "upsertSystemOption[Create or update a system option by key]"             "cancelOutboxMessage[Cancel an outbox message]" \
+            "deadLetterOutboxMessage[Manually dead-letter an outbox message]" \
+            "expediteOutboxMessage[Expedite a failed (retry-eligible) outbox message]" \
+            "getOutboxCorrelationChain[Get an outbox correlation chain]" \
+            "getOutboxHealth[Get durable-outbox relay health]" \
+            "getOutboxMessage[Get one outbox message]" \
+            "getOutboxMessages[List outbox messages]" \
+            "getOutboxMessagesCount[Count outbox messages]" \
+            "releaseOutboxMessageLease[Release a stuck outbox lease]" \
+            "replayOutboxMessage[Replay a dead-lettered or failed outbox message]"             "getSystemOverview[Get system overview information]"             "createSystemPortal[Create a new system portal]" \
             "deleteSystemPortal[Delete a system portal]" \
             "getSystemPortalById[Retrieve a single system portal by its ID]" \
             "getSystemPortals[Retrieve a list of system portals]" \
@@ -369,8 +399,10 @@ case $state in
             "getAllTenants[Get all tenants available on this suite server instance.]" \
             "getExtendedTenantsCount[Get the total count of extended tenants available on this suite server instance.]" \
             "getTenant[Get a specific tenant by ID.]" \
+            "getTenantModuleGrants[Get the per-tenant admin module grants for a specific tenant.]" \
             "getTenantsCount[Get the total count of tenants available on this suite server instance.]" \
             "patchTenant[Partially update a specific tenant by ID.]" \
+            "setTenantModuleGrants[Replace the per-tenant admin module grants for a specific tenant.]" \
             "updateTenant[Update a specific tenant by ID.]"             "createSystemUserOption[Create a new user option (admin)]" \
             "deleteSystemUserOption[Delete a user option (admin)]" \
             "getSystemUserOptionById[Retrieve a single user option by its ID (admin)]" \
@@ -384,10 +416,13 @@ case $state in
             "getExtendedAccountHolderAsync[Retrieve an extended user by ID]" \
             "getExtendedUsersAsync[Retrieve a list of extended users]" \
             "getExtendedUsersCountAsync[Get the count of extended users]" \
+            "getUserAdminDetailAsync[Retrieve the admin detail aggregate for a user]" \
             "getUserAsync[Retrieve a user by ID]" \
             "getUsersAsync[Retrieve a list of users]" \
             "getUsersCountAsync[Get the count of users]" \
             "patchAccountHolderAsync[Partially update a user]" \
+            "setUserPasswordAsync[Set a user's password]" \
+            "updateAccountHolderAdminProfileAsync[Update a user's admin-managed profile]" \
             "updateAccountHolderAsync[Update a user]" \
 
     _arguments "(--help)--help[Print information about operation]"
@@ -408,6 +443,101 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      disableGlobalApplicationPrincipal)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      enableGlobalApplicationPrincipal)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getGlobalApplicationPrincipal)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getGlobalApplicationPrincipals)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getGlobalApplicationPrincipalsCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      grantGlobalApplicationPrincipalPermission)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      provisionGlobalApplicationPrincipal)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      provisionPaymentsConnector)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      revokeGlobalApplicationPrincipalPermission)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+"permission=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      suspendGlobalApplicationPrincipal)
+        local -a _op_arguments
+        _op_arguments=(
+          "principalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -482,6 +612,14 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getSystemCartsCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      purgeSystemGuestCarts)
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
@@ -600,13 +738,6 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2AIServiceAgentsAgentIdAguiPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "agentId=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
@@ -722,6 +853,118 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelInboxMessageRetry)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deadLetterInboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      expediteInboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDuplicateInboxMessages)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDuplicateInboxMessagesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInboxCorrelationChain)
+        local -a _op_arguments
+        _op_arguments=(
+          "correlationId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInboxHealth)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInboxMessages)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getInboxMessagesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      quarantineInboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      releaseInboxMessageLease)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      replayInboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -918,6 +1161,93 @@ case $state in
           "key=:[PATH] "
           "portalId=:[QUERY] "
 "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      cancelOutboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deadLetterOutboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      expediteOutboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOutboxCorrelationChain)
+        local -a _op_arguments
+        _op_arguments=(
+          "correlationId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOutboxHealth)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOutboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOutboxMessages)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getOutboxMessagesCount)
+        local -a _op_arguments
+        _op_arguments=(
+                    "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      releaseOutboxMessageLease)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      replayOutboxMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] "
+          "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1129,6 +1459,15 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getTenantModuleGrants)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getTenantsCount)
         local -a _op_arguments
         _op_arguments=(
@@ -1138,6 +1477,15 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       patchTenant)
+        local -a _op_arguments
+        _op_arguments=(
+          "tenantId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      setTenantModuleGrants)
         local -a _op_arguments
         _op_arguments=(
           "tenantId=:[PATH] "
@@ -1286,6 +1634,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getUserAdminDetailAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getUserAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -1312,6 +1670,24 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       patchAccountHolderAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      setUserPasswordAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "userId=:[PATH] "
+          "api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateAccountHolderAdminProfileAsync)
         local -a _op_arguments
         _op_arguments=(
           "userId=:[PATH] "

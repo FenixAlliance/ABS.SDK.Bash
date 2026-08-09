@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **applicationId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  |
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  |
  **apiVersion** | **string** |  | [optional] [default to null]
  **xApiVersion** | **string** |  | [optional] [default to null]
 

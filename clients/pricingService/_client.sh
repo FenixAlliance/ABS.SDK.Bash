@@ -314,7 +314,6 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
-            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -498,13 +497,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      apiV2AIServiceAgentsAgentIdAguiPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "agentId=:[PATH] "
-                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       forgotPasswordPost)

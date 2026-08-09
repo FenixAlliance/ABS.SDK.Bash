@@ -121,16 +121,20 @@ operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::billId"]=1
 operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::billId"]=1
 operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAirwayBillsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAirwayBillsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAirwayBillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillsAsync:::AirwayBillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getAirwayBillsCountAsync:::AirwayBillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["issueAirwayBillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["issueAirwayBillAsync:::billId"]=1
 operation_parameters_minimum_occurrences["issueAirwayBillAsync:::api-version"]=0
@@ -151,13 +155,13 @@ operation_parameters_minimum_occurrences["patchAirwayBillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAirwayBillAsync:::billId"]=1
 operation_parameters_minimum_occurrences["patchAirwayBillAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchAirwayBillAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchAirwayBillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAirwayBillAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::billId"]=1
 operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchAirwayBillLineAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::billId"]=1
 operation_parameters_minimum_occurrences["removeAirwayBillLineAsync:::lineId"]=1
@@ -189,9 +193,11 @@ operation_parameters_minimum_occurrences["getDeliveryNoteByIdAsync:::x-api-versi
 operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNotesAsync:::DeliveryNoteDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getDeliveryNotesCountAsync:::DeliveryNoteDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::deliveryNoteId"]=1
 operation_parameters_minimum_occurrences["updateDeliveryNoteAsync:::api-version"]=0
@@ -201,7 +207,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -241,10 +246,12 @@ operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::tenan
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::packingSlipId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesAsync:::ItemPackingSlipEntryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::packingSlipId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipEntriesCountAsync:::ItemPackingSlipEntryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::packingSlipId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::entryId"]=1
@@ -253,20 +260,22 @@ operation_parameters_minimum_occurrences["getItemPackingSlipEntryByIdAsync:::x-a
 operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipsAsync:::ItemPackingSlipDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPackingSlipsCountAsync:::ItemPackingSlipDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchItemPackingSlipAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemPackingSlipAsync:::packingSlipId"]=1
 operation_parameters_minimum_occurrences["patchItemPackingSlipAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemPackingSlipAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemPackingSlipAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemPackingSlipAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::packingSlipId"]=1
 operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::entryId"]=1
 operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemPackingSlipEntryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::packingSlipId"]=1
 operation_parameters_minimum_occurrences["updateItemPackingSlipAsync:::api-version"]=0
@@ -304,10 +313,12 @@ operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::tenantId
 operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::pickListId"]=1
 operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntriesAsync:::ItemPickListEntryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::pickListId"]=1
 operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListEntriesCountAsync:::ItemPickListEntryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::pickListId"]=1
 operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::entryId"]=1
@@ -316,20 +327,22 @@ operation_parameters_minimum_occurrences["getItemPickListEntryByIdAsync:::x-api-
 operation_parameters_minimum_occurrences["getItemPickListsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPickListsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPickListsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListsAsync:::ItemPickListDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemPickListsCountAsync:::ItemPickListDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchItemPickListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemPickListAsync:::pickListId"]=1
 operation_parameters_minimum_occurrences["patchItemPickListAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemPickListAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemPickListAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemPickListAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::pickListId"]=1
 operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::entryId"]=1
 operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemPickListEntryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateItemPickListAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemPickListAsync:::pickListId"]=1
 operation_parameters_minimum_occurrences["updateItemPickListAsync:::api-version"]=0
@@ -367,10 +380,12 @@ operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::tenantId"
 operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::restockId"]=1
 operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntriesAsync:::ItemRestockEntryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::restockId"]=1
 operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestockEntriesCountAsync:::ItemRestockEntryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::restockId"]=1
 operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::entryId"]=1
@@ -379,20 +394,22 @@ operation_parameters_minimum_occurrences["getItemRestockEntryByIdAsync:::x-api-v
 operation_parameters_minimum_occurrences["getItemRestocksAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemRestocksAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRestocksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestocksAsync:::ItemRestockDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRestocksCountAsync:::ItemRestockDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchItemRestockAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemRestockAsync:::restockId"]=1
 operation_parameters_minimum_occurrences["patchItemRestockAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemRestockAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemRestockAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemRestockAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::restockId"]=1
 operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::entryId"]=1
 operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemRestockEntryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateItemRestockAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemRestockAsync:::restockId"]=1
 operation_parameters_minimum_occurrences["updateItemRestockAsync:::api-version"]=0
@@ -419,14 +436,16 @@ operation_parameters_minimum_occurrences["getItemRetainSampleByIdAsync:::x-api-v
 operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSamplesAsync:::ItemRetainSampleDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getItemRetainSamplesCountAsync:::ItemRetainSampleDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchItemRetainSampleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchItemRetainSampleAsync:::retainSampleId"]=1
 operation_parameters_minimum_occurrences["patchItemRetainSampleAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchItemRetainSampleAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchItemRetainSampleAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchItemRetainSampleAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::retainSampleId"]=1
 operation_parameters_minimum_occurrences["updateItemRetainSampleAsync:::api-version"]=0
@@ -447,14 +466,16 @@ operation_parameters_minimum_occurrences["getPortByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getPortsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPortsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPortsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortsAsync:::PortDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPortsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPortsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPortsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPortsCountAsync:::PortDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchPortAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchPortAsync:::portId"]=1
 operation_parameters_minimum_occurrences["patchPortAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchPortAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchPortAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchPortAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updatePortAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updatePortAsync:::portId"]=1
 operation_parameters_minimum_occurrences["updatePortAsync:::api-version"]=0
@@ -504,27 +525,31 @@ operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::tenantI
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::podId"]=1
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesAsync:::ProofOfDeliveryLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::podId"]=1
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofOfDeliveryLinesCountAsync:::ProofOfDeliveryLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofsOfDeliveryAsync:::ProofOfDeliveryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProofsOfDeliveryCountAsync:::ProofOfDeliveryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchProofOfDeliveryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchProofOfDeliveryAsync:::podId"]=1
 operation_parameters_minimum_occurrences["patchProofOfDeliveryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchProofOfDeliveryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchProofOfDeliveryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchProofOfDeliveryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::podId"]=1
 operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchProofOfDeliveryLineAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::podId"]=1
 operation_parameters_minimum_occurrences["rejectProofOfDeliveryAsync:::api-version"]=0
@@ -576,16 +601,20 @@ operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::tenantId"]=
 operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRailWaybillsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRailWaybillsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRailWaybillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillsAsync:::RailWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRailWaybillsCountAsync:::RailWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["issueRailWaybillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["issueRailWaybillAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["issueRailWaybillAsync:::api-version"]=0
@@ -602,13 +631,13 @@ operation_parameters_minimum_occurrences["patchRailWaybillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchRailWaybillAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["patchRailWaybillAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchRailWaybillAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchRailWaybillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchRailWaybillAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchRailWaybillLineAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["removeRailWaybillLineAsync:::lineId"]=1
@@ -654,16 +683,20 @@ operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::tenantId"]=
 operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillsAsync:::RoadWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRoadWaybillsCountAsync:::RoadWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["issueRoadWaybillAsync:::api-version"]=0
@@ -680,13 +713,13 @@ operation_parameters_minimum_occurrences["patchRoadWaybillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchRoadWaybillAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["patchRoadWaybillAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchRoadWaybillAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchRoadWaybillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchRoadWaybillAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchRoadWaybillLineAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::waybillId"]=1
 operation_parameters_minimum_occurrences["removeRoadWaybillLineAsync:::lineId"]=1
@@ -728,16 +761,20 @@ operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::billId"]=1
 operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::billId"]=1
 operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSeawayBillsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSeawayBillsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSeawayBillsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillsAsync:::SeawayBillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSeawayBillsCountAsync:::SeawayBillDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["issueSeawayBillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["issueSeawayBillAsync:::billId"]=1
 operation_parameters_minimum_occurrences["issueSeawayBillAsync:::api-version"]=0
@@ -754,13 +791,13 @@ operation_parameters_minimum_occurrences["patchSeawayBillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSeawayBillAsync:::billId"]=1
 operation_parameters_minimum_occurrences["patchSeawayBillAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSeawayBillAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSeawayBillAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSeawayBillAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::billId"]=1
 operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::lineId"]=1
 operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSeawayBillLineAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::billId"]=1
 operation_parameters_minimum_occurrences["releaseSeawayBillAsync:::api-version"]=0
@@ -796,14 +833,16 @@ operation_parameters_minimum_occurrences["getSupplierProfileByIdAsync:::x-api-ve
 operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfilesAsync:::SupplierProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSupplierProfilesCountAsync:::SupplierProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSupplierProfileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSupplierProfileAsync:::supplierProfileId"]=1
 operation_parameters_minimum_occurrences["patchSupplierProfileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSupplierProfileAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSupplierProfileAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSupplierProfileAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::supplierProfileId"]=1
 operation_parameters_minimum_occurrences["updateSupplierProfileAsync:::api-version"]=0
@@ -832,14 +871,16 @@ operation_parameters_minimum_occurrences["getTruckDriverByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getTruckDriversAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTruckDriversAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTruckDriversAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriversAsync:::TruckDriverDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckDriversCountAsync:::TruckDriverDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTruckDriverAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTruckDriverAsync:::driverId"]=1
 operation_parameters_minimum_occurrences["patchTruckDriverAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTruckDriverAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTruckDriverAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTruckDriverAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTruckDriverAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTruckDriverAsync:::driverId"]=1
 operation_parameters_minimum_occurrences["updateTruckDriverAsync:::api-version"]=0
@@ -896,27 +937,31 @@ operation_parameters_minimum_occurrences["getTruckTripsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTruckTripsAsync:::truckId"]=1
 operation_parameters_minimum_occurrences["getTruckTripsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTruckTripsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckTripsAsync:::TruckTripDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::truckId"]=1
 operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTruckTripsCountAsync:::TruckTripDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTrucksAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTrucksAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTrucksAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTrucksAsync:::TruckDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTrucksCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTrucksCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTrucksCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTrucksCountAsync:::TruckDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTruckAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTruckAsync:::truckId"]=1
 operation_parameters_minimum_occurrences["patchTruckAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTruckAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTruckAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTruckAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchTruckTripAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTruckTripAsync:::truckId"]=1
 operation_parameters_minimum_occurrences["patchTruckTripAsync:::tripId"]=1
 operation_parameters_minimum_occurrences["patchTruckTripAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTruckTripAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTruckTripAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTruckTripAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTruckAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTruckAsync:::truckId"]=1
 operation_parameters_minimum_occurrences["updateTruckAsync:::api-version"]=0
@@ -943,14 +988,16 @@ operation_parameters_minimum_occurrences["getVesselByIdAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getVesselsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getVesselsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getVesselsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVesselsAsync:::VesselDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getVesselsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getVesselsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getVesselsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVesselsCountAsync:::VesselDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchVesselAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchVesselAsync:::vesselId"]=1
 operation_parameters_minimum_occurrences["patchVesselAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchVesselAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchVesselAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchVesselAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateVesselAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateVesselAsync:::vesselId"]=1
 operation_parameters_minimum_occurrences["updateVesselAsync:::api-version"]=0
@@ -990,27 +1037,31 @@ operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::voyageId"]=1
 operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagePortCallsAsync:::VoyagePortCallDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::voyageId"]=1
 operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagePortCallsCountAsync:::VoyagePortCallDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getVoyagesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getVoyagesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getVoyagesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagesAsync:::VoyageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getVoyagesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getVoyagesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getVoyagesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getVoyagesCountAsync:::VoyageDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchVoyageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchVoyageAsync:::voyageId"]=1
 operation_parameters_minimum_occurrences["patchVoyageAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchVoyageAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchVoyageAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchVoyageAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::voyageId"]=1
 operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::portCallId"]=1
 operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchVoyagePortCallAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["startVoyageAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["startVoyageAsync:::voyageId"]=1
 operation_parameters_minimum_occurrences["startVoyageAsync:::api-version"]=0
@@ -1041,14 +1092,16 @@ operation_parameters_minimum_occurrences["getWarehouseByIdAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getWarehousesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWarehousesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWarehousesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarehousesAsync:::WarehouseDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWarehousesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWarehousesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWarehousesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWarehousesCountAsync:::WarehouseDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchWarehouseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchWarehouseAsync:::warehouseId"]=1
 operation_parameters_minimum_occurrences["patchWarehouseAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchWarehouseAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchWarehouseAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchWarehouseAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateWarehouseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateWarehouseAsync:::warehouseId"]=1
 operation_parameters_minimum_occurrences["updateWarehouseAsync:::api-version"]=0
@@ -1087,16 +1140,20 @@ operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::billId"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::billId"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAirwayBillsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAirwayBillsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAirwayBillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsAsync:::AirwayBillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getAirwayBillsCountAsync:::AirwayBillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["issueAirwayBillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["issueAirwayBillAsync:::billId"]=0
 operation_parameters_maximum_occurrences["issueAirwayBillAsync:::api-version"]=0
@@ -1117,13 +1174,13 @@ operation_parameters_maximum_occurrences["patchAirwayBillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillAsync:::billId"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchAirwayBillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAirwayBillAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::billId"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchAirwayBillLineAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::billId"]=0
 operation_parameters_maximum_occurrences["removeAirwayBillLineAsync:::lineId"]=0
@@ -1155,9 +1212,11 @@ operation_parameters_maximum_occurrences["getDeliveryNoteByIdAsync:::x-api-versi
 operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesAsync:::DeliveryNoteDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getDeliveryNotesCountAsync:::DeliveryNoteDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::deliveryNoteId"]=0
 operation_parameters_maximum_occurrences["updateDeliveryNoteAsync:::api-version"]=0
@@ -1167,7 +1226,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -1207,10 +1265,12 @@ operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::tenan
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::packingSlipId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesAsync:::ItemPackingSlipEntryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::packingSlipId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipEntriesCountAsync:::ItemPackingSlipEntryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::packingSlipId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::entryId"]=0
@@ -1219,20 +1279,22 @@ operation_parameters_maximum_occurrences["getItemPackingSlipEntryByIdAsync:::x-a
 operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsAsync:::ItemPackingSlipDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPackingSlipsCountAsync:::ItemPackingSlipDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipAsync:::packingSlipId"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemPackingSlipAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemPackingSlipAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::packingSlipId"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::entryId"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemPackingSlipEntryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::packingSlipId"]=0
 operation_parameters_maximum_occurrences["updateItemPackingSlipAsync:::api-version"]=0
@@ -1270,10 +1332,12 @@ operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::tenantId
 operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::pickListId"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesAsync:::ItemPickListEntryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::pickListId"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListEntriesCountAsync:::ItemPickListEntryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::pickListId"]=0
 operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::entryId"]=0
@@ -1282,20 +1346,22 @@ operation_parameters_maximum_occurrences["getItemPickListEntryByIdAsync:::x-api-
 operation_parameters_maximum_occurrences["getItemPickListsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPickListsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPickListsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListsAsync:::ItemPickListDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemPickListsCountAsync:::ItemPickListDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchItemPickListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemPickListAsync:::pickListId"]=0
 operation_parameters_maximum_occurrences["patchItemPickListAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemPickListAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemPickListAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemPickListAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::pickListId"]=0
 operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::entryId"]=0
 operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemPickListEntryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateItemPickListAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemPickListAsync:::pickListId"]=0
 operation_parameters_maximum_occurrences["updateItemPickListAsync:::api-version"]=0
@@ -1333,10 +1399,12 @@ operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::tenantId"
 operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::restockId"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesAsync:::ItemRestockEntryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::restockId"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestockEntriesCountAsync:::ItemRestockEntryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::restockId"]=0
 operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::entryId"]=0
@@ -1345,20 +1413,22 @@ operation_parameters_maximum_occurrences["getItemRestockEntryByIdAsync:::x-api-v
 operation_parameters_maximum_occurrences["getItemRestocksAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRestocksAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRestocksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestocksAsync:::ItemRestockDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRestocksCountAsync:::ItemRestockDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchItemRestockAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemRestockAsync:::restockId"]=0
 operation_parameters_maximum_occurrences["patchItemRestockAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemRestockAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemRestockAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemRestockAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::restockId"]=0
 operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::entryId"]=0
 operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemRestockEntryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateItemRestockAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemRestockAsync:::restockId"]=0
 operation_parameters_maximum_occurrences["updateItemRestockAsync:::api-version"]=0
@@ -1385,14 +1455,16 @@ operation_parameters_maximum_occurrences["getItemRetainSampleByIdAsync:::x-api-v
 operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesAsync:::ItemRetainSampleDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getItemRetainSamplesCountAsync:::ItemRetainSampleDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchItemRetainSampleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchItemRetainSampleAsync:::retainSampleId"]=0
 operation_parameters_maximum_occurrences["patchItemRetainSampleAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchItemRetainSampleAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchItemRetainSampleAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchItemRetainSampleAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::retainSampleId"]=0
 operation_parameters_maximum_occurrences["updateItemRetainSampleAsync:::api-version"]=0
@@ -1413,14 +1485,16 @@ operation_parameters_maximum_occurrences["getPortByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getPortsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPortsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPortsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortsAsync:::PortDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPortsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPortsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPortsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPortsCountAsync:::PortDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchPortAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchPortAsync:::portId"]=0
 operation_parameters_maximum_occurrences["patchPortAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchPortAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchPortAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPortAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updatePortAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updatePortAsync:::portId"]=0
 operation_parameters_maximum_occurrences["updatePortAsync:::api-version"]=0
@@ -1470,27 +1544,31 @@ operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::tenantI
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::podId"]=0
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesAsync:::ProofOfDeliveryLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::podId"]=0
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofOfDeliveryLinesCountAsync:::ProofOfDeliveryLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryAsync:::ProofOfDeliveryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProofsOfDeliveryCountAsync:::ProofOfDeliveryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryAsync:::podId"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchProofOfDeliveryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchProofOfDeliveryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::podId"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchProofOfDeliveryLineAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::podId"]=0
 operation_parameters_maximum_occurrences["rejectProofOfDeliveryAsync:::api-version"]=0
@@ -1542,16 +1620,20 @@ operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::tenantId"]=
 operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRailWaybillsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRailWaybillsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRailWaybillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsAsync:::RailWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRailWaybillsCountAsync:::RailWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["issueRailWaybillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["issueRailWaybillAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["issueRailWaybillAsync:::api-version"]=0
@@ -1568,13 +1650,13 @@ operation_parameters_maximum_occurrences["patchRailWaybillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchRailWaybillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchRailWaybillAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchRailWaybillLineAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["removeRailWaybillLineAsync:::lineId"]=0
@@ -1620,16 +1702,20 @@ operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::tenantId"]=
 operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsAsync:::RoadWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRoadWaybillsCountAsync:::RoadWaybillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["issueRoadWaybillAsync:::api-version"]=0
@@ -1646,13 +1732,13 @@ operation_parameters_maximum_occurrences["patchRoadWaybillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchRoadWaybillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchRoadWaybillAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchRoadWaybillLineAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::waybillId"]=0
 operation_parameters_maximum_occurrences["removeRoadWaybillLineAsync:::lineId"]=0
@@ -1694,16 +1780,20 @@ operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::billId"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::billId"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSeawayBillsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSeawayBillsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSeawayBillsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsAsync:::SeawayBillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSeawayBillsCountAsync:::SeawayBillDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["issueSeawayBillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["issueSeawayBillAsync:::billId"]=0
 operation_parameters_maximum_occurrences["issueSeawayBillAsync:::api-version"]=0
@@ -1720,13 +1810,13 @@ operation_parameters_maximum_occurrences["patchSeawayBillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillAsync:::billId"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSeawayBillAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSeawayBillAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::billId"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::lineId"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSeawayBillLineAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::billId"]=0
 operation_parameters_maximum_occurrences["releaseSeawayBillAsync:::api-version"]=0
@@ -1762,14 +1852,16 @@ operation_parameters_maximum_occurrences["getSupplierProfileByIdAsync:::x-api-ve
 operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesAsync:::SupplierProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSupplierProfilesCountAsync:::SupplierProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSupplierProfileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSupplierProfileAsync:::supplierProfileId"]=0
 operation_parameters_maximum_occurrences["patchSupplierProfileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSupplierProfileAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSupplierProfileAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSupplierProfileAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::supplierProfileId"]=0
 operation_parameters_maximum_occurrences["updateSupplierProfileAsync:::api-version"]=0
@@ -1798,14 +1890,16 @@ operation_parameters_maximum_occurrences["getTruckDriverByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getTruckDriversAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTruckDriversAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTruckDriversAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriversAsync:::TruckDriverDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckDriversCountAsync:::TruckDriverDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTruckDriverAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTruckDriverAsync:::driverId"]=0
 operation_parameters_maximum_occurrences["patchTruckDriverAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTruckDriverAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTruckDriverAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTruckDriverAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTruckDriverAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTruckDriverAsync:::driverId"]=0
 operation_parameters_maximum_occurrences["updateTruckDriverAsync:::api-version"]=0
@@ -1862,27 +1956,31 @@ operation_parameters_maximum_occurrences["getTruckTripsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTruckTripsAsync:::truckId"]=0
 operation_parameters_maximum_occurrences["getTruckTripsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTruckTripsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckTripsAsync:::TruckTripDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::truckId"]=0
 operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTruckTripsCountAsync:::TruckTripDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTrucksAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTrucksAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTrucksAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTrucksAsync:::TruckDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTrucksCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTrucksCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTrucksCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTrucksCountAsync:::TruckDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTruckAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTruckAsync:::truckId"]=0
 operation_parameters_maximum_occurrences["patchTruckAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTruckAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTruckAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTruckAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchTruckTripAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTruckTripAsync:::truckId"]=0
 operation_parameters_maximum_occurrences["patchTruckTripAsync:::tripId"]=0
 operation_parameters_maximum_occurrences["patchTruckTripAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTruckTripAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTruckTripAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTruckTripAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTruckAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTruckAsync:::truckId"]=0
 operation_parameters_maximum_occurrences["updateTruckAsync:::api-version"]=0
@@ -1909,14 +2007,16 @@ operation_parameters_maximum_occurrences["getVesselByIdAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getVesselsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getVesselsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getVesselsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVesselsAsync:::VesselDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getVesselsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getVesselsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getVesselsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVesselsCountAsync:::VesselDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchVesselAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchVesselAsync:::vesselId"]=0
 operation_parameters_maximum_occurrences["patchVesselAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchVesselAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchVesselAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchVesselAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateVesselAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateVesselAsync:::vesselId"]=0
 operation_parameters_maximum_occurrences["updateVesselAsync:::api-version"]=0
@@ -1956,27 +2056,31 @@ operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::voyageId"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsAsync:::VoyagePortCallDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::voyageId"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagePortCallsCountAsync:::VoyagePortCallDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getVoyagesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getVoyagesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getVoyagesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagesAsync:::VoyageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getVoyagesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getVoyagesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getVoyagesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getVoyagesCountAsync:::VoyageDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchVoyageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchVoyageAsync:::voyageId"]=0
 operation_parameters_maximum_occurrences["patchVoyageAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchVoyageAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchVoyageAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchVoyageAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::voyageId"]=0
 operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::portCallId"]=0
 operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchVoyagePortCallAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["startVoyageAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["startVoyageAsync:::voyageId"]=0
 operation_parameters_maximum_occurrences["startVoyageAsync:::api-version"]=0
@@ -2007,14 +2111,16 @@ operation_parameters_maximum_occurrences["getWarehouseByIdAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getWarehousesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWarehousesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWarehousesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarehousesAsync:::WarehouseDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWarehousesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWarehousesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWarehousesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWarehousesCountAsync:::WarehouseDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchWarehouseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchWarehouseAsync:::warehouseId"]=0
 operation_parameters_maximum_occurrences["patchWarehouseAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchWarehouseAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchWarehouseAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchWarehouseAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateWarehouseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateWarehouseAsync:::warehouseId"]=0
 operation_parameters_maximum_occurrences["updateWarehouseAsync:::api-version"]=0
@@ -2050,16 +2156,20 @@ operation_parameters_collection_type["getAirwayBillLinesAsync:::tenantId"]=""
 operation_parameters_collection_type["getAirwayBillLinesAsync:::billId"]=""
 operation_parameters_collection_type["getAirwayBillLinesAsync:::api-version"]=""
 operation_parameters_collection_type["getAirwayBillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAirwayBillLinesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getAirwayBillLinesCountAsync:::billId"]=""
 operation_parameters_collection_type["getAirwayBillLinesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getAirwayBillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAirwayBillsAsync:::tenantId"]=""
 operation_parameters_collection_type["getAirwayBillsAsync:::api-version"]=""
 operation_parameters_collection_type["getAirwayBillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillsAsync:::AirwayBillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getAirwayBillsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getAirwayBillsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getAirwayBillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getAirwayBillsCountAsync:::AirwayBillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["issueAirwayBillAsync:::tenantId"]=""
 operation_parameters_collection_type["issueAirwayBillAsync:::billId"]=""
 operation_parameters_collection_type["issueAirwayBillAsync:::api-version"]=""
@@ -2080,13 +2190,13 @@ operation_parameters_collection_type["patchAirwayBillAsync:::tenantId"]=""
 operation_parameters_collection_type["patchAirwayBillAsync:::billId"]=""
 operation_parameters_collection_type["patchAirwayBillAsync:::api-version"]=""
 operation_parameters_collection_type["patchAirwayBillAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchAirwayBillAsync:::Operation"]=
+operation_parameters_collection_type["patchAirwayBillAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchAirwayBillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["patchAirwayBillLineAsync:::billId"]=""
 operation_parameters_collection_type["patchAirwayBillLineAsync:::lineId"]=""
 operation_parameters_collection_type["patchAirwayBillLineAsync:::api-version"]=""
 operation_parameters_collection_type["patchAirwayBillLineAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchAirwayBillLineAsync:::Operation"]=
+operation_parameters_collection_type["patchAirwayBillLineAsync:::PatchOperation"]=
 operation_parameters_collection_type["removeAirwayBillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["removeAirwayBillLineAsync:::billId"]=""
 operation_parameters_collection_type["removeAirwayBillLineAsync:::lineId"]=""
@@ -2118,9 +2228,11 @@ operation_parameters_collection_type["getDeliveryNoteByIdAsync:::x-api-version"]
 operation_parameters_collection_type["getDeliveryNotesAsync:::tenantId"]=""
 operation_parameters_collection_type["getDeliveryNotesAsync:::api-version"]=""
 operation_parameters_collection_type["getDeliveryNotesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDeliveryNotesAsync:::DeliveryNoteDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getDeliveryNotesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getDeliveryNotesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getDeliveryNotesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getDeliveryNotesCountAsync:::DeliveryNoteDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateDeliveryNoteAsync:::tenantId"]=""
 operation_parameters_collection_type["updateDeliveryNoteAsync:::deliveryNoteId"]=""
 operation_parameters_collection_type["updateDeliveryNoteAsync:::api-version"]=""
@@ -2130,7 +2242,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -2170,10 +2281,12 @@ operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::tenantId"
 operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::packingSlipId"]=""
 operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesAsync:::ItemPackingSlipEntryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::packingSlipId"]=""
 operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipEntriesCountAsync:::ItemPackingSlipEntryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::packingSlipId"]=""
 operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::entryId"]=""
@@ -2182,20 +2295,22 @@ operation_parameters_collection_type["getItemPackingSlipEntryByIdAsync:::x-api-v
 operation_parameters_collection_type["getItemPackingSlipsAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPackingSlipsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPackingSlipsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipsAsync:::ItemPackingSlipDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemPackingSlipsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPackingSlipsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPackingSlipsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPackingSlipsCountAsync:::ItemPackingSlipDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchItemPackingSlipAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemPackingSlipAsync:::packingSlipId"]=""
 operation_parameters_collection_type["patchItemPackingSlipAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemPackingSlipAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemPackingSlipAsync:::Operation"]=
+operation_parameters_collection_type["patchItemPackingSlipAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::packingSlipId"]=""
 operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::entryId"]=""
 operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::Operation"]=
+operation_parameters_collection_type["patchItemPackingSlipEntryAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateItemPackingSlipAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemPackingSlipAsync:::packingSlipId"]=""
 operation_parameters_collection_type["updateItemPackingSlipAsync:::api-version"]=""
@@ -2233,10 +2348,12 @@ operation_parameters_collection_type["getItemPickListEntriesAsync:::tenantId"]="
 operation_parameters_collection_type["getItemPickListEntriesAsync:::pickListId"]=""
 operation_parameters_collection_type["getItemPickListEntriesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPickListEntriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListEntriesAsync:::ItemPickListEntryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemPickListEntriesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPickListEntriesCountAsync:::pickListId"]=""
 operation_parameters_collection_type["getItemPickListEntriesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPickListEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListEntriesCountAsync:::ItemPickListEntryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemPickListEntryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPickListEntryByIdAsync:::pickListId"]=""
 operation_parameters_collection_type["getItemPickListEntryByIdAsync:::entryId"]=""
@@ -2245,20 +2362,22 @@ operation_parameters_collection_type["getItemPickListEntryByIdAsync:::x-api-vers
 operation_parameters_collection_type["getItemPickListsAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPickListsAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPickListsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListsAsync:::ItemPickListDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemPickListsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemPickListsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemPickListsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemPickListsCountAsync:::ItemPickListDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchItemPickListAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemPickListAsync:::pickListId"]=""
 operation_parameters_collection_type["patchItemPickListAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemPickListAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemPickListAsync:::Operation"]=
+operation_parameters_collection_type["patchItemPickListAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchItemPickListEntryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemPickListEntryAsync:::pickListId"]=""
 operation_parameters_collection_type["patchItemPickListEntryAsync:::entryId"]=""
 operation_parameters_collection_type["patchItemPickListEntryAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemPickListEntryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemPickListEntryAsync:::Operation"]=
+operation_parameters_collection_type["patchItemPickListEntryAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateItemPickListAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemPickListAsync:::pickListId"]=""
 operation_parameters_collection_type["updateItemPickListAsync:::api-version"]=""
@@ -2296,10 +2415,12 @@ operation_parameters_collection_type["getItemRestockEntriesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRestockEntriesAsync:::restockId"]=""
 operation_parameters_collection_type["getItemRestockEntriesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRestockEntriesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestockEntriesAsync:::ItemRestockEntryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemRestockEntriesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRestockEntriesCountAsync:::restockId"]=""
 operation_parameters_collection_type["getItemRestockEntriesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRestockEntriesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestockEntriesCountAsync:::ItemRestockEntryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemRestockEntryByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRestockEntryByIdAsync:::restockId"]=""
 operation_parameters_collection_type["getItemRestockEntryByIdAsync:::entryId"]=""
@@ -2308,20 +2429,22 @@ operation_parameters_collection_type["getItemRestockEntryByIdAsync:::x-api-versi
 operation_parameters_collection_type["getItemRestocksAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRestocksAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRestocksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestocksAsync:::ItemRestockDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemRestocksCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRestocksCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRestocksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRestocksCountAsync:::ItemRestockDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchItemRestockAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemRestockAsync:::restockId"]=""
 operation_parameters_collection_type["patchItemRestockAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemRestockAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemRestockAsync:::Operation"]=
+operation_parameters_collection_type["patchItemRestockAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchItemRestockEntryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemRestockEntryAsync:::restockId"]=""
 operation_parameters_collection_type["patchItemRestockEntryAsync:::entryId"]=""
 operation_parameters_collection_type["patchItemRestockEntryAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemRestockEntryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemRestockEntryAsync:::Operation"]=
+operation_parameters_collection_type["patchItemRestockEntryAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateItemRestockAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemRestockAsync:::restockId"]=""
 operation_parameters_collection_type["updateItemRestockAsync:::api-version"]=""
@@ -2348,14 +2471,16 @@ operation_parameters_collection_type["getItemRetainSampleByIdAsync:::x-api-versi
 operation_parameters_collection_type["getItemRetainSamplesAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRetainSamplesAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRetainSamplesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRetainSamplesAsync:::ItemRetainSampleDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getItemRetainSamplesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getItemRetainSamplesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getItemRetainSamplesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getItemRetainSamplesCountAsync:::ItemRetainSampleDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchItemRetainSampleAsync:::tenantId"]=""
 operation_parameters_collection_type["patchItemRetainSampleAsync:::retainSampleId"]=""
 operation_parameters_collection_type["patchItemRetainSampleAsync:::api-version"]=""
 operation_parameters_collection_type["patchItemRetainSampleAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchItemRetainSampleAsync:::Operation"]=
+operation_parameters_collection_type["patchItemRetainSampleAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateItemRetainSampleAsync:::tenantId"]=""
 operation_parameters_collection_type["updateItemRetainSampleAsync:::retainSampleId"]=""
 operation_parameters_collection_type["updateItemRetainSampleAsync:::api-version"]=""
@@ -2376,14 +2501,16 @@ operation_parameters_collection_type["getPortByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPortsAsync:::tenantId"]=""
 operation_parameters_collection_type["getPortsAsync:::api-version"]=""
 operation_parameters_collection_type["getPortsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortsAsync:::PortDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPortsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPortsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPortsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPortsCountAsync:::PortDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchPortAsync:::tenantId"]=""
 operation_parameters_collection_type["patchPortAsync:::portId"]=""
 operation_parameters_collection_type["patchPortAsync:::api-version"]=""
 operation_parameters_collection_type["patchPortAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchPortAsync:::Operation"]=
+operation_parameters_collection_type["patchPortAsync:::PatchOperation"]=
 operation_parameters_collection_type["updatePortAsync:::tenantId"]=""
 operation_parameters_collection_type["updatePortAsync:::portId"]=""
 operation_parameters_collection_type["updatePortAsync:::api-version"]=""
@@ -2433,27 +2560,31 @@ operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::tenantId"]=
 operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::podId"]=""
 operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::api-version"]=""
 operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesAsync:::ProofOfDeliveryLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::podId"]=""
 operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofOfDeliveryLinesCountAsync:::ProofOfDeliveryLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getProofsOfDeliveryAsync:::tenantId"]=""
 operation_parameters_collection_type["getProofsOfDeliveryAsync:::api-version"]=""
 operation_parameters_collection_type["getProofsOfDeliveryAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofsOfDeliveryAsync:::ProofOfDeliveryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::api-version"]=""
 operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProofsOfDeliveryCountAsync:::ProofOfDeliveryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchProofOfDeliveryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchProofOfDeliveryAsync:::podId"]=""
 operation_parameters_collection_type["patchProofOfDeliveryAsync:::api-version"]=""
 operation_parameters_collection_type["patchProofOfDeliveryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchProofOfDeliveryAsync:::Operation"]=
+operation_parameters_collection_type["patchProofOfDeliveryAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::tenantId"]=""
 operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::podId"]=""
 operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::lineId"]=""
 operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::api-version"]=""
 operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::Operation"]=
+operation_parameters_collection_type["patchProofOfDeliveryLineAsync:::PatchOperation"]=
 operation_parameters_collection_type["rejectProofOfDeliveryAsync:::tenantId"]=""
 operation_parameters_collection_type["rejectProofOfDeliveryAsync:::podId"]=""
 operation_parameters_collection_type["rejectProofOfDeliveryAsync:::api-version"]=""
@@ -2505,16 +2636,20 @@ operation_parameters_collection_type["getRailWaybillLinesAsync:::tenantId"]=""
 operation_parameters_collection_type["getRailWaybillLinesAsync:::waybillId"]=""
 operation_parameters_collection_type["getRailWaybillLinesAsync:::api-version"]=""
 operation_parameters_collection_type["getRailWaybillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRailWaybillLinesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getRailWaybillLinesCountAsync:::waybillId"]=""
 operation_parameters_collection_type["getRailWaybillLinesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getRailWaybillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRailWaybillsAsync:::tenantId"]=""
 operation_parameters_collection_type["getRailWaybillsAsync:::api-version"]=""
 operation_parameters_collection_type["getRailWaybillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillsAsync:::RailWaybillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRailWaybillsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getRailWaybillsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getRailWaybillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRailWaybillsCountAsync:::RailWaybillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["issueRailWaybillAsync:::tenantId"]=""
 operation_parameters_collection_type["issueRailWaybillAsync:::waybillId"]=""
 operation_parameters_collection_type["issueRailWaybillAsync:::api-version"]=""
@@ -2531,13 +2666,13 @@ operation_parameters_collection_type["patchRailWaybillAsync:::tenantId"]=""
 operation_parameters_collection_type["patchRailWaybillAsync:::waybillId"]=""
 operation_parameters_collection_type["patchRailWaybillAsync:::api-version"]=""
 operation_parameters_collection_type["patchRailWaybillAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchRailWaybillAsync:::Operation"]=
+operation_parameters_collection_type["patchRailWaybillAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchRailWaybillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["patchRailWaybillLineAsync:::waybillId"]=""
 operation_parameters_collection_type["patchRailWaybillLineAsync:::lineId"]=""
 operation_parameters_collection_type["patchRailWaybillLineAsync:::api-version"]=""
 operation_parameters_collection_type["patchRailWaybillLineAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchRailWaybillLineAsync:::Operation"]=
+operation_parameters_collection_type["patchRailWaybillLineAsync:::PatchOperation"]=
 operation_parameters_collection_type["removeRailWaybillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["removeRailWaybillLineAsync:::waybillId"]=""
 operation_parameters_collection_type["removeRailWaybillLineAsync:::lineId"]=""
@@ -2583,16 +2718,20 @@ operation_parameters_collection_type["getRoadWaybillLinesAsync:::tenantId"]=""
 operation_parameters_collection_type["getRoadWaybillLinesAsync:::waybillId"]=""
 operation_parameters_collection_type["getRoadWaybillLinesAsync:::api-version"]=""
 operation_parameters_collection_type["getRoadWaybillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::waybillId"]=""
 operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRoadWaybillsAsync:::tenantId"]=""
 operation_parameters_collection_type["getRoadWaybillsAsync:::api-version"]=""
 operation_parameters_collection_type["getRoadWaybillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillsAsync:::RoadWaybillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRoadWaybillsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getRoadWaybillsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getRoadWaybillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRoadWaybillsCountAsync:::RoadWaybillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["issueRoadWaybillAsync:::tenantId"]=""
 operation_parameters_collection_type["issueRoadWaybillAsync:::waybillId"]=""
 operation_parameters_collection_type["issueRoadWaybillAsync:::api-version"]=""
@@ -2609,13 +2748,13 @@ operation_parameters_collection_type["patchRoadWaybillAsync:::tenantId"]=""
 operation_parameters_collection_type["patchRoadWaybillAsync:::waybillId"]=""
 operation_parameters_collection_type["patchRoadWaybillAsync:::api-version"]=""
 operation_parameters_collection_type["patchRoadWaybillAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchRoadWaybillAsync:::Operation"]=
+operation_parameters_collection_type["patchRoadWaybillAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchRoadWaybillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["patchRoadWaybillLineAsync:::waybillId"]=""
 operation_parameters_collection_type["patchRoadWaybillLineAsync:::lineId"]=""
 operation_parameters_collection_type["patchRoadWaybillLineAsync:::api-version"]=""
 operation_parameters_collection_type["patchRoadWaybillLineAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchRoadWaybillLineAsync:::Operation"]=
+operation_parameters_collection_type["patchRoadWaybillLineAsync:::PatchOperation"]=
 operation_parameters_collection_type["removeRoadWaybillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["removeRoadWaybillLineAsync:::waybillId"]=""
 operation_parameters_collection_type["removeRoadWaybillLineAsync:::lineId"]=""
@@ -2657,16 +2796,20 @@ operation_parameters_collection_type["getSeawayBillLinesAsync:::tenantId"]=""
 operation_parameters_collection_type["getSeawayBillLinesAsync:::billId"]=""
 operation_parameters_collection_type["getSeawayBillLinesAsync:::api-version"]=""
 operation_parameters_collection_type["getSeawayBillLinesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillLinesAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSeawayBillLinesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSeawayBillLinesCountAsync:::billId"]=""
 operation_parameters_collection_type["getSeawayBillLinesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSeawayBillLinesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillLinesCountAsync:::WaybillLineDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSeawayBillsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSeawayBillsAsync:::api-version"]=""
 operation_parameters_collection_type["getSeawayBillsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillsAsync:::SeawayBillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSeawayBillsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSeawayBillsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSeawayBillsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSeawayBillsCountAsync:::SeawayBillDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["issueSeawayBillAsync:::tenantId"]=""
 operation_parameters_collection_type["issueSeawayBillAsync:::billId"]=""
 operation_parameters_collection_type["issueSeawayBillAsync:::api-version"]=""
@@ -2683,13 +2826,13 @@ operation_parameters_collection_type["patchSeawayBillAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSeawayBillAsync:::billId"]=""
 operation_parameters_collection_type["patchSeawayBillAsync:::api-version"]=""
 operation_parameters_collection_type["patchSeawayBillAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSeawayBillAsync:::Operation"]=
+operation_parameters_collection_type["patchSeawayBillAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchSeawayBillLineAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSeawayBillLineAsync:::billId"]=""
 operation_parameters_collection_type["patchSeawayBillLineAsync:::lineId"]=""
 operation_parameters_collection_type["patchSeawayBillLineAsync:::api-version"]=""
 operation_parameters_collection_type["patchSeawayBillLineAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSeawayBillLineAsync:::Operation"]=
+operation_parameters_collection_type["patchSeawayBillLineAsync:::PatchOperation"]=
 operation_parameters_collection_type["releaseSeawayBillAsync:::tenantId"]=""
 operation_parameters_collection_type["releaseSeawayBillAsync:::billId"]=""
 operation_parameters_collection_type["releaseSeawayBillAsync:::api-version"]=""
@@ -2725,14 +2868,16 @@ operation_parameters_collection_type["getSupplierProfileByIdAsync:::x-api-versio
 operation_parameters_collection_type["getSupplierProfilesAsync:::tenantId"]=""
 operation_parameters_collection_type["getSupplierProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["getSupplierProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupplierProfilesAsync:::SupplierProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSupplierProfilesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSupplierProfilesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSupplierProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSupplierProfilesCountAsync:::SupplierProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSupplierProfileAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSupplierProfileAsync:::supplierProfileId"]=""
 operation_parameters_collection_type["patchSupplierProfileAsync:::api-version"]=""
 operation_parameters_collection_type["patchSupplierProfileAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSupplierProfileAsync:::Operation"]=
+operation_parameters_collection_type["patchSupplierProfileAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSupplierProfileAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSupplierProfileAsync:::supplierProfileId"]=""
 operation_parameters_collection_type["updateSupplierProfileAsync:::api-version"]=""
@@ -2761,14 +2906,16 @@ operation_parameters_collection_type["getTruckDriverByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getTruckDriversAsync:::tenantId"]=""
 operation_parameters_collection_type["getTruckDriversAsync:::api-version"]=""
 operation_parameters_collection_type["getTruckDriversAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckDriversAsync:::TruckDriverDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTruckDriversCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTruckDriversCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTruckDriversCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckDriversCountAsync:::TruckDriverDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTruckDriverAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTruckDriverAsync:::driverId"]=""
 operation_parameters_collection_type["patchTruckDriverAsync:::api-version"]=""
 operation_parameters_collection_type["patchTruckDriverAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTruckDriverAsync:::Operation"]=
+operation_parameters_collection_type["patchTruckDriverAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateTruckDriverAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTruckDriverAsync:::driverId"]=""
 operation_parameters_collection_type["updateTruckDriverAsync:::api-version"]=""
@@ -2825,27 +2972,31 @@ operation_parameters_collection_type["getTruckTripsAsync:::tenantId"]=""
 operation_parameters_collection_type["getTruckTripsAsync:::truckId"]=""
 operation_parameters_collection_type["getTruckTripsAsync:::api-version"]=""
 operation_parameters_collection_type["getTruckTripsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckTripsAsync:::TruckTripDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTruckTripsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTruckTripsCountAsync:::truckId"]=""
 operation_parameters_collection_type["getTruckTripsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTruckTripsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTruckTripsCountAsync:::TruckTripDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTrucksAsync:::tenantId"]=""
 operation_parameters_collection_type["getTrucksAsync:::api-version"]=""
 operation_parameters_collection_type["getTrucksAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTrucksAsync:::TruckDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTrucksCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTrucksCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTrucksCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTrucksCountAsync:::TruckDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTruckAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTruckAsync:::truckId"]=""
 operation_parameters_collection_type["patchTruckAsync:::api-version"]=""
 operation_parameters_collection_type["patchTruckAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTruckAsync:::Operation"]=
+operation_parameters_collection_type["patchTruckAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchTruckTripAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTruckTripAsync:::truckId"]=""
 operation_parameters_collection_type["patchTruckTripAsync:::tripId"]=""
 operation_parameters_collection_type["patchTruckTripAsync:::api-version"]=""
 operation_parameters_collection_type["patchTruckTripAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTruckTripAsync:::Operation"]=
+operation_parameters_collection_type["patchTruckTripAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateTruckAsync:::tenantId"]=""
 operation_parameters_collection_type["updateTruckAsync:::truckId"]=""
 operation_parameters_collection_type["updateTruckAsync:::api-version"]=""
@@ -2872,14 +3023,16 @@ operation_parameters_collection_type["getVesselByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getVesselsAsync:::tenantId"]=""
 operation_parameters_collection_type["getVesselsAsync:::api-version"]=""
 operation_parameters_collection_type["getVesselsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVesselsAsync:::VesselDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getVesselsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getVesselsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getVesselsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVesselsCountAsync:::VesselDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchVesselAsync:::tenantId"]=""
 operation_parameters_collection_type["patchVesselAsync:::vesselId"]=""
 operation_parameters_collection_type["patchVesselAsync:::api-version"]=""
 operation_parameters_collection_type["patchVesselAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchVesselAsync:::Operation"]=
+operation_parameters_collection_type["patchVesselAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateVesselAsync:::tenantId"]=""
 operation_parameters_collection_type["updateVesselAsync:::vesselId"]=""
 operation_parameters_collection_type["updateVesselAsync:::api-version"]=""
@@ -2919,27 +3072,31 @@ operation_parameters_collection_type["getVoyagePortCallsAsync:::tenantId"]=""
 operation_parameters_collection_type["getVoyagePortCallsAsync:::voyageId"]=""
 operation_parameters_collection_type["getVoyagePortCallsAsync:::api-version"]=""
 operation_parameters_collection_type["getVoyagePortCallsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagePortCallsAsync:::VoyagePortCallDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getVoyagePortCallsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getVoyagePortCallsCountAsync:::voyageId"]=""
 operation_parameters_collection_type["getVoyagePortCallsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getVoyagePortCallsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagePortCallsCountAsync:::VoyagePortCallDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getVoyagesAsync:::tenantId"]=""
 operation_parameters_collection_type["getVoyagesAsync:::api-version"]=""
 operation_parameters_collection_type["getVoyagesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagesAsync:::VoyageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getVoyagesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getVoyagesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getVoyagesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getVoyagesCountAsync:::VoyageDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchVoyageAsync:::tenantId"]=""
 operation_parameters_collection_type["patchVoyageAsync:::voyageId"]=""
 operation_parameters_collection_type["patchVoyageAsync:::api-version"]=""
 operation_parameters_collection_type["patchVoyageAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchVoyageAsync:::Operation"]=
+operation_parameters_collection_type["patchVoyageAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchVoyagePortCallAsync:::tenantId"]=""
 operation_parameters_collection_type["patchVoyagePortCallAsync:::voyageId"]=""
 operation_parameters_collection_type["patchVoyagePortCallAsync:::portCallId"]=""
 operation_parameters_collection_type["patchVoyagePortCallAsync:::api-version"]=""
 operation_parameters_collection_type["patchVoyagePortCallAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchVoyagePortCallAsync:::Operation"]=
+operation_parameters_collection_type["patchVoyagePortCallAsync:::PatchOperation"]=
 operation_parameters_collection_type["startVoyageAsync:::tenantId"]=""
 operation_parameters_collection_type["startVoyageAsync:::voyageId"]=""
 operation_parameters_collection_type["startVoyageAsync:::api-version"]=""
@@ -2970,14 +3127,16 @@ operation_parameters_collection_type["getWarehouseByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getWarehousesAsync:::tenantId"]=""
 operation_parameters_collection_type["getWarehousesAsync:::api-version"]=""
 operation_parameters_collection_type["getWarehousesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarehousesAsync:::WarehouseDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWarehousesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getWarehousesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWarehousesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWarehousesCountAsync:::WarehouseDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchWarehouseAsync:::tenantId"]=""
 operation_parameters_collection_type["patchWarehouseAsync:::warehouseId"]=""
 operation_parameters_collection_type["patchWarehouseAsync:::api-version"]=""
 operation_parameters_collection_type["patchWarehouseAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchWarehouseAsync:::Operation"]=
+operation_parameters_collection_type["patchWarehouseAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateWarehouseAsync:::tenantId"]=""
 operation_parameters_collection_type["updateWarehouseAsync:::warehouseId"]=""
 operation_parameters_collection_type["updateWarehouseAsync:::api-version"]=""
@@ -3409,7 +3568,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -3890,6 +4048,8 @@ print_getAirwayBillLinesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3915,6 +4075,8 @@ print_getAirwayBillLinesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3939,6 +4101,8 @@ print_getAirwayBillsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3965,6 +4129,8 @@ print_getAirwayBillsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4301,6 +4467,8 @@ print_getDeliveryNotesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4327,6 +4495,8 @@ print_getDeliveryNotesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -4413,22 +4583,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -4816,6 +4970,8 @@ print_getItemPackingSlipEntriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -4839,6 +4995,8 @@ print_getItemPackingSlipEntriesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -4887,6 +5045,8 @@ print_getItemPackingSlipsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4913,6 +5073,8 @@ print_getItemPackingSlipsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5175,6 +5337,8 @@ print_getItemPickListEntriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5198,6 +5362,8 @@ print_getItemPickListEntriesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5246,6 +5412,8 @@ print_getItemPickListsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5272,6 +5440,8 @@ print_getItemPickListsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5534,6 +5704,8 @@ print_getItemRestockEntriesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5557,6 +5729,8 @@ print_getItemRestockEntriesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5605,6 +5779,8 @@ print_getItemRestocksAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5631,6 +5807,8 @@ print_getItemRestocksCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -5839,6 +6017,8 @@ print_getItemRetainSamplesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5865,6 +6045,8 @@ print_getItemRetainSamplesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -6017,6 +6199,8 @@ print_getPortsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6043,6 +6227,8 @@ print_getPortsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6358,6 +6544,8 @@ print_getProofOfDeliveryLinesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6383,6 +6571,8 @@ print_getProofOfDeliveryLinesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6407,6 +6597,8 @@ print_getProofsOfDeliveryAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6433,6 +6625,8 @@ print_getProofsOfDeliveryCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6784,6 +6978,8 @@ print_getRailWaybillLinesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6809,6 +7005,8 @@ print_getRailWaybillLinesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6833,6 +7031,8 @@ print_getRailWaybillsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6859,6 +7059,8 @@ print_getRailWaybillsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7248,6 +7450,8 @@ print_getRoadWaybillLinesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7273,6 +7477,8 @@ print_getRoadWaybillLinesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7297,6 +7503,8 @@ print_getRoadWaybillsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7323,6 +7531,8 @@ print_getRoadWaybillsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7687,6 +7897,8 @@ print_getSeawayBillLinesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7712,6 +7924,8 @@ print_getSeawayBillLinesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7736,6 +7950,8 @@ print_getSeawayBillsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7762,6 +7978,8 @@ print_getSeawayBillsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8098,6 +8316,8 @@ print_getSupplierProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8124,6 +8344,8 @@ print_getSupplierProfilesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8328,6 +8550,8 @@ print_getTruckDriversAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8354,6 +8578,8 @@ print_getTruckDriversCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8696,6 +8922,8 @@ print_getTruckTripsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8721,6 +8949,8 @@ print_getTruckTripsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8745,6 +8975,8 @@ print_getTrucksAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8771,6 +9003,8 @@ print_getTrucksCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8989,6 +9223,8 @@ print_getVesselsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9015,6 +9251,8 @@ print_getVesselsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9277,6 +9515,8 @@ print_getVoyagePortCallsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9302,6 +9542,8 @@ print_getVoyagePortCallsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9326,6 +9568,8 @@ print_getVoyagesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9352,6 +9596,8 @@ print_getVoyagesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9595,6 +9841,8 @@ print_getWarehousesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -9621,6 +9869,8 @@ print_getWarehousesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -9975,10 +10225,50 @@ call_getAirwayBillLinesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10011,10 +10301,50 @@ call_getAirwayBillLinesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10047,10 +10377,50 @@ call_getAirwayBillsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10083,10 +10453,50 @@ call_getAirwayBillsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10751,10 +11161,50 @@ call_getDeliveryNotesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10787,10 +11237,50 @@ call_getDeliveryNotesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11014,42 +11504,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -12146,10 +12600,50 @@ call_getItemPackingSlipEntriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12182,10 +12676,50 @@ call_getItemPackingSlipEntriesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12254,10 +12788,50 @@ call_getItemPackingSlipsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12290,10 +12864,50 @@ call_getItemPackingSlipsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12890,10 +13504,50 @@ call_getItemPickListEntriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12926,10 +13580,50 @@ call_getItemPickListEntriesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12998,10 +13692,50 @@ call_getItemPickListsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13034,10 +13768,50 @@ call_getItemPickListsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13634,10 +14408,50 @@ call_getItemRestockEntriesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13670,10 +14484,50 @@ call_getItemRestockEntriesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13742,10 +14596,50 @@ call_getItemRestocksAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13778,10 +14672,50 @@ call_getItemRestocksCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14266,10 +15200,50 @@ call_getItemRetainSamplesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14302,10 +15276,50 @@ call_getItemRetainSamplesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14638,10 +15652,50 @@ call_getPortsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14674,10 +15728,50 @@ call_getPortsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15306,10 +16400,50 @@ call_getProofOfDeliveryLinesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15342,10 +16476,50 @@ call_getProofOfDeliveryLinesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15378,10 +16552,50 @@ call_getProofsOfDeliveryAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15414,10 +16628,50 @@ call_getProofsOfDeliveryCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16202,10 +17456,50 @@ call_getRailWaybillLinesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16238,10 +17532,50 @@ call_getRailWaybillLinesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16274,10 +17608,50 @@ call_getRailWaybillsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16310,10 +17684,50 @@ call_getRailWaybillsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17090,10 +18504,50 @@ call_getRoadWaybillLinesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17126,10 +18580,50 @@ call_getRoadWaybillLinesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17162,10 +18656,50 @@ call_getRoadWaybillsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17198,10 +18732,50 @@ call_getRoadWaybillsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17942,10 +19516,50 @@ call_getSeawayBillLinesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17978,10 +19592,50 @@ call_getSeawayBillLinesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -18014,10 +19668,50 @@ call_getSeawayBillsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -18050,10 +19744,50 @@ call_getSeawayBillsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -18718,10 +20452,50 @@ call_getSupplierProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -18754,10 +20528,50 @@ call_getSupplierProfilesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19162,10 +20976,50 @@ call_getTruckDriversAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19198,10 +21052,50 @@ call_getTruckDriversCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19826,10 +21720,50 @@ call_getTruckTripsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19862,10 +21796,50 @@ call_getTruckTripsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19898,10 +21872,50 @@ call_getTrucksAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -19934,10 +21948,50 @@ call_getTrucksCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -20422,10 +22476,50 @@ call_getVesselsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -20458,10 +22552,50 @@ call_getVesselsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -20978,10 +23112,50 @@ call_getVoyagePortCallsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -21014,10 +23188,50 @@ call_getVoyagePortCallsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -21050,10 +23264,50 @@ call_getVoyagesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -21086,10 +23340,50 @@ call_getVoyagesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -21610,10 +23904,50 @@ call_getWarehousesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -21646,10 +23980,50 @@ call_getWarehousesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -21985,9 +24359,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -22777,9 +25148,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

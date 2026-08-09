@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -121,9 +120,11 @@ operation_parameters_minimum_occurrences["getSignatureByIdAsync:::x-api-version"
 operation_parameters_minimum_occurrences["getSignaturesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSignaturesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSignaturesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSignaturesAsync:::SignatureDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSignaturesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSignaturesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSignaturesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSignaturesCountAsync:::SignatureDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["freezeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["freezeAsync:::signedDocumentId"]=1
 operation_parameters_minimum_occurrences["freezeAsync:::api-version"]=0
@@ -156,14 +157,16 @@ operation_parameters_minimum_occurrences["getSignedDocumentAttachmentByIdAsync::
 operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsAsync:::SignedDocumentAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSignedDocumentAttachmentsCountAsync:::SignedDocumentAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSignedDocumentAttachmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSignedDocumentAttachmentAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchSignedDocumentAttachmentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSignedDocumentAttachmentAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSignedDocumentAttachmentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSignedDocumentAttachmentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSignedDocumentAttachmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSignedDocumentAttachmentAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateSignedDocumentAttachmentAsync:::api-version"]=0
@@ -184,14 +187,16 @@ operation_parameters_minimum_occurrences["getSignedDocumentByIdAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getSignedDocumentsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSignedDocumentsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSignedDocumentsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSignedDocumentsAsync:::SignedDocumentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSignedDocumentsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSignedDocumentsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSignedDocumentsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSignedDocumentsCountAsync:::SignedDocumentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSignedDocumentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSignedDocumentAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchSignedDocumentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSignedDocumentAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSignedDocumentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSignedDocumentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["prepareAndQuickSignAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["prepareAndQuickSignAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["prepareAndQuickSignAsync:::x-api-version"]=0
@@ -231,9 +236,11 @@ operation_parameters_minimum_occurrences["getSigningCertificateByIdAsync:::x-api
 operation_parameters_minimum_occurrences["getSigningCertificatesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningCertificatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningCertificatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningCertificatesAsync:::SigningCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningCertificatesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningCertificatesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningCertificatesCountAsync:::SigningCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["importSigningCertificateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["importSigningCertificateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["importSigningCertificateAsync:::x-api-version"]=0
@@ -246,7 +253,7 @@ operation_parameters_minimum_occurrences["patchSigningCertificateAsync:::tenantI
 operation_parameters_minimum_occurrences["patchSigningCertificateAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchSigningCertificateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSigningCertificateAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSigningCertificateAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSigningCertificateAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSigningCertificateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSigningCertificateAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateSigningCertificateAsync:::api-version"]=0
@@ -255,9 +262,11 @@ operation_parameters_minimum_occurrences["updateSigningCertificateAsync:::Signin
 operation_parameters_minimum_occurrences["getProvidersAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProvidersAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getProvidersAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProvidersAsync:::TrustSigningProviderDescriptorDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getProvidersCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getProvidersCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getProvidersCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getProvidersCountAsync:::TrustSigningProviderDescriptorDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["previewAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["previewAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["previewAsync:::x-api-version"]=0
@@ -269,9 +278,11 @@ operation_parameters_minimum_occurrences["getSigningLogByIdAsync:::x-api-version
 operation_parameters_minimum_occurrences["getSigningLogsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningLogsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningLogsAsync:::SigningLogDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningLogsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningLogsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningLogsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningLogsCountAsync:::SigningLogDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningParticipantByIdAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningParticipantByIdAsync:::id"]=1
 operation_parameters_minimum_occurrences["getSigningParticipantByIdAsync:::api-version"]=0
@@ -279,9 +290,11 @@ operation_parameters_minimum_occurrences["getSigningParticipantByIdAsync:::x-api
 operation_parameters_minimum_occurrences["getSigningParticipantsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningParticipantsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningParticipantsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningParticipantsAsync:::SigningParticipantDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningParticipantsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningParticipantsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningParticipantsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningParticipantsCountAsync:::SigningParticipantDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["markViewedAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["markViewedAsync:::id"]=1
 operation_parameters_minimum_occurrences["markViewedAsync:::api-version"]=0
@@ -306,14 +319,16 @@ operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentati
 operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::SigningProfileGraphicalRepresentationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::SigningProfileGraphicalRepresentationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSigningProfileGraphicalRepresentationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSigningProfileGraphicalRepresentationAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateSigningProfileGraphicalRepresentationAsync:::api-version"]=0
@@ -334,14 +349,16 @@ operation_parameters_minimum_occurrences["getSigningProfileByIdAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getSigningProfilesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningProfilesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningProfilesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningProfilesAsync:::SigningProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningProfilesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningProfilesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningProfilesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningProfilesCountAsync:::SigningProfileDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchSigningProfileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchSigningProfileAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchSigningProfileAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchSigningProfileAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchSigningProfileAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchSigningProfileAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateSigningProfileAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateSigningProfileAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateSigningProfileAsync:::api-version"]=0
@@ -382,9 +399,11 @@ operation_parameters_minimum_occurrences["getSigningRequestParticipantsAsync:::x
 operation_parameters_minimum_occurrences["getSigningRequestsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningRequestsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningRequestsAsync:::SigningRequestDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSigningRequestsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSigningRequestsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSigningRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSigningRequestsCountAsync:::SigningRequestDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["prepareAndCreateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["prepareAndCreateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["prepareAndCreateAsync:::x-api-version"]=0
@@ -418,7 +437,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -439,9 +457,11 @@ operation_parameters_maximum_occurrences["getSignatureByIdAsync:::x-api-version"
 operation_parameters_maximum_occurrences["getSignaturesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSignaturesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSignaturesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSignaturesAsync:::SignatureDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSignaturesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSignaturesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSignaturesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSignaturesCountAsync:::SignatureDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["freezeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["freezeAsync:::signedDocumentId"]=0
 operation_parameters_maximum_occurrences["freezeAsync:::api-version"]=0
@@ -474,14 +494,16 @@ operation_parameters_maximum_occurrences["getSignedDocumentAttachmentByIdAsync::
 operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsAsync:::SignedDocumentAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSignedDocumentAttachmentsCountAsync:::SignedDocumentAttachmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAttachmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAttachmentAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAttachmentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAttachmentAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSignedDocumentAttachmentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSignedDocumentAttachmentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSignedDocumentAttachmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSignedDocumentAttachmentAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateSignedDocumentAttachmentAsync:::api-version"]=0
@@ -502,14 +524,16 @@ operation_parameters_maximum_occurrences["getSignedDocumentByIdAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getSignedDocumentsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSignedDocumentsAsync:::SignedDocumentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSignedDocumentsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSignedDocumentsCountAsync:::SignedDocumentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSignedDocumentAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSignedDocumentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSignedDocumentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["prepareAndQuickSignAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["prepareAndQuickSignAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["prepareAndQuickSignAsync:::x-api-version"]=0
@@ -549,9 +573,11 @@ operation_parameters_maximum_occurrences["getSigningCertificateByIdAsync:::x-api
 operation_parameters_maximum_occurrences["getSigningCertificatesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningCertificatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningCertificatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningCertificatesAsync:::SigningCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningCertificatesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningCertificatesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningCertificatesCountAsync:::SigningCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["importSigningCertificateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["importSigningCertificateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["importSigningCertificateAsync:::x-api-version"]=0
@@ -564,7 +590,7 @@ operation_parameters_maximum_occurrences["patchSigningCertificateAsync:::tenantI
 operation_parameters_maximum_occurrences["patchSigningCertificateAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchSigningCertificateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSigningCertificateAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSigningCertificateAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSigningCertificateAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSigningCertificateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSigningCertificateAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateSigningCertificateAsync:::api-version"]=0
@@ -573,9 +599,11 @@ operation_parameters_maximum_occurrences["updateSigningCertificateAsync:::Signin
 operation_parameters_maximum_occurrences["getProvidersAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProvidersAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getProvidersAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProvidersAsync:::TrustSigningProviderDescriptorDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getProvidersCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getProvidersCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getProvidersCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getProvidersCountAsync:::TrustSigningProviderDescriptorDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["previewAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["previewAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["previewAsync:::x-api-version"]=0
@@ -587,9 +615,11 @@ operation_parameters_maximum_occurrences["getSigningLogByIdAsync:::x-api-version
 operation_parameters_maximum_occurrences["getSigningLogsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningLogsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningLogsAsync:::SigningLogDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningLogsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningLogsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningLogsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningLogsCountAsync:::SigningLogDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantByIdAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantByIdAsync:::id"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantByIdAsync:::api-version"]=0
@@ -597,9 +627,11 @@ operation_parameters_maximum_occurrences["getSigningParticipantByIdAsync:::x-api
 operation_parameters_maximum_occurrences["getSigningParticipantsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningParticipantsAsync:::SigningParticipantDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningParticipantsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningParticipantsCountAsync:::SigningParticipantDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["markViewedAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["markViewedAsync:::id"]=0
 operation_parameters_maximum_occurrences["markViewedAsync:::api-version"]=0
@@ -624,14 +656,16 @@ operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentati
 operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsAsync:::SigningProfileGraphicalRepresentationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningProfileGraphicalRepresentationsCountAsync:::SigningProfileGraphicalRepresentationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSigningProfileGraphicalRepresentationAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSigningProfileGraphicalRepresentationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSigningProfileGraphicalRepresentationAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateSigningProfileGraphicalRepresentationAsync:::api-version"]=0
@@ -652,14 +686,16 @@ operation_parameters_maximum_occurrences["getSigningProfileByIdAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getSigningProfilesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningProfilesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningProfilesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningProfilesAsync:::SigningProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningProfilesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningProfilesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningProfilesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningProfilesCountAsync:::SigningProfileDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchSigningProfileAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchSigningProfileAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchSigningProfileAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateSigningProfileAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateSigningProfileAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateSigningProfileAsync:::api-version"]=0
@@ -700,9 +736,11 @@ operation_parameters_maximum_occurrences["getSigningRequestParticipantsAsync:::x
 operation_parameters_maximum_occurrences["getSigningRequestsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningRequestsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningRequestsAsync:::SigningRequestDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSigningRequestsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSigningRequestsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSigningRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSigningRequestsCountAsync:::SigningRequestDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["prepareAndCreateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["prepareAndCreateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["prepareAndCreateAsync:::x-api-version"]=0
@@ -733,7 +771,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -754,9 +791,11 @@ operation_parameters_collection_type["getSignatureByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSignaturesAsync:::tenantId"]=""
 operation_parameters_collection_type["getSignaturesAsync:::api-version"]=""
 operation_parameters_collection_type["getSignaturesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSignaturesAsync:::SignatureDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSignaturesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSignaturesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSignaturesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSignaturesCountAsync:::SignatureDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["freezeAsync:::tenantId"]=""
 operation_parameters_collection_type["freezeAsync:::signedDocumentId"]=""
 operation_parameters_collection_type["freezeAsync:::api-version"]=""
@@ -789,14 +828,16 @@ operation_parameters_collection_type["getSignedDocumentAttachmentByIdAsync:::x-a
 operation_parameters_collection_type["getSignedDocumentAttachmentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSignedDocumentAttachmentsAsync:::api-version"]=""
 operation_parameters_collection_type["getSignedDocumentAttachmentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSignedDocumentAttachmentsAsync:::SignedDocumentAttachmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSignedDocumentAttachmentsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSignedDocumentAttachmentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSignedDocumentAttachmentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSignedDocumentAttachmentsCountAsync:::SignedDocumentAttachmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSignedDocumentAttachmentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSignedDocumentAttachmentAsync:::id"]=""
 operation_parameters_collection_type["patchSignedDocumentAttachmentAsync:::api-version"]=""
 operation_parameters_collection_type["patchSignedDocumentAttachmentAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSignedDocumentAttachmentAsync:::Operation"]=
+operation_parameters_collection_type["patchSignedDocumentAttachmentAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSignedDocumentAttachmentAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSignedDocumentAttachmentAsync:::id"]=""
 operation_parameters_collection_type["updateSignedDocumentAttachmentAsync:::api-version"]=""
@@ -817,14 +858,16 @@ operation_parameters_collection_type["getSignedDocumentByIdAsync:::x-api-version
 operation_parameters_collection_type["getSignedDocumentsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSignedDocumentsAsync:::api-version"]=""
 operation_parameters_collection_type["getSignedDocumentsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSignedDocumentsAsync:::SignedDocumentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSignedDocumentsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSignedDocumentsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSignedDocumentsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSignedDocumentsCountAsync:::SignedDocumentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSignedDocumentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSignedDocumentAsync:::id"]=""
 operation_parameters_collection_type["patchSignedDocumentAsync:::api-version"]=""
 operation_parameters_collection_type["patchSignedDocumentAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSignedDocumentAsync:::Operation"]=
+operation_parameters_collection_type["patchSignedDocumentAsync:::PatchOperation"]=
 operation_parameters_collection_type["prepareAndQuickSignAsync:::tenantId"]=""
 operation_parameters_collection_type["prepareAndQuickSignAsync:::api-version"]=""
 operation_parameters_collection_type["prepareAndQuickSignAsync:::x-api-version"]=""
@@ -864,9 +907,11 @@ operation_parameters_collection_type["getSigningCertificateByIdAsync:::x-api-ver
 operation_parameters_collection_type["getSigningCertificatesAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningCertificatesAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningCertificatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningCertificatesAsync:::SigningCertificateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningCertificatesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningCertificatesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningCertificatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningCertificatesCountAsync:::SigningCertificateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["importSigningCertificateAsync:::tenantId"]=""
 operation_parameters_collection_type["importSigningCertificateAsync:::api-version"]=""
 operation_parameters_collection_type["importSigningCertificateAsync:::x-api-version"]=""
@@ -879,7 +924,7 @@ operation_parameters_collection_type["patchSigningCertificateAsync:::tenantId"]=
 operation_parameters_collection_type["patchSigningCertificateAsync:::id"]=""
 operation_parameters_collection_type["patchSigningCertificateAsync:::api-version"]=""
 operation_parameters_collection_type["patchSigningCertificateAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSigningCertificateAsync:::Operation"]=
+operation_parameters_collection_type["patchSigningCertificateAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSigningCertificateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSigningCertificateAsync:::id"]=""
 operation_parameters_collection_type["updateSigningCertificateAsync:::api-version"]=""
@@ -888,9 +933,11 @@ operation_parameters_collection_type["updateSigningCertificateAsync:::SigningCer
 operation_parameters_collection_type["getProvidersAsync:::tenantId"]=""
 operation_parameters_collection_type["getProvidersAsync:::api-version"]=""
 operation_parameters_collection_type["getProvidersAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProvidersAsync:::TrustSigningProviderDescriptorDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getProvidersCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getProvidersCountAsync:::api-version"]=""
 operation_parameters_collection_type["getProvidersCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getProvidersCountAsync:::TrustSigningProviderDescriptorDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["previewAsync:::tenantId"]=""
 operation_parameters_collection_type["previewAsync:::api-version"]=""
 operation_parameters_collection_type["previewAsync:::x-api-version"]=""
@@ -902,9 +949,11 @@ operation_parameters_collection_type["getSigningLogByIdAsync:::x-api-version"]="
 operation_parameters_collection_type["getSigningLogsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningLogsAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningLogsAsync:::SigningLogDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningLogsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningLogsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningLogsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningLogsCountAsync:::SigningLogDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningParticipantByIdAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningParticipantByIdAsync:::id"]=""
 operation_parameters_collection_type["getSigningParticipantByIdAsync:::api-version"]=""
@@ -912,9 +961,11 @@ operation_parameters_collection_type["getSigningParticipantByIdAsync:::x-api-ver
 operation_parameters_collection_type["getSigningParticipantsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningParticipantsAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningParticipantsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningParticipantsAsync:::SigningParticipantDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningParticipantsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningParticipantsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningParticipantsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningParticipantsCountAsync:::SigningParticipantDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["markViewedAsync:::tenantId"]=""
 operation_parameters_collection_type["markViewedAsync:::id"]=""
 operation_parameters_collection_type["markViewedAsync:::api-version"]=""
@@ -939,14 +990,16 @@ operation_parameters_collection_type["getSigningProfileGraphicalRepresentationBy
 operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsAsync:::SigningProfileGraphicalRepresentationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningProfileGraphicalRepresentationsCountAsync:::SigningProfileGraphicalRepresentationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSigningProfileGraphicalRepresentationAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSigningProfileGraphicalRepresentationAsync:::id"]=""
 operation_parameters_collection_type["patchSigningProfileGraphicalRepresentationAsync:::api-version"]=""
 operation_parameters_collection_type["patchSigningProfileGraphicalRepresentationAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSigningProfileGraphicalRepresentationAsync:::Operation"]=
+operation_parameters_collection_type["patchSigningProfileGraphicalRepresentationAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSigningProfileGraphicalRepresentationAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSigningProfileGraphicalRepresentationAsync:::id"]=""
 operation_parameters_collection_type["updateSigningProfileGraphicalRepresentationAsync:::api-version"]=""
@@ -967,14 +1020,16 @@ operation_parameters_collection_type["getSigningProfileByIdAsync:::x-api-version
 operation_parameters_collection_type["getSigningProfilesAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningProfilesAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningProfilesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningProfilesAsync:::SigningProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningProfilesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningProfilesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningProfilesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningProfilesCountAsync:::SigningProfileDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchSigningProfileAsync:::tenantId"]=""
 operation_parameters_collection_type["patchSigningProfileAsync:::id"]=""
 operation_parameters_collection_type["patchSigningProfileAsync:::api-version"]=""
 operation_parameters_collection_type["patchSigningProfileAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchSigningProfileAsync:::Operation"]=
+operation_parameters_collection_type["patchSigningProfileAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateSigningProfileAsync:::tenantId"]=""
 operation_parameters_collection_type["updateSigningProfileAsync:::id"]=""
 operation_parameters_collection_type["updateSigningProfileAsync:::api-version"]=""
@@ -1015,9 +1070,11 @@ operation_parameters_collection_type["getSigningRequestParticipantsAsync:::x-api
 operation_parameters_collection_type["getSigningRequestsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningRequestsAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningRequestsAsync:::SigningRequestDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSigningRequestsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSigningRequestsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSigningRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSigningRequestsCountAsync:::SigningRequestDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["prepareAndCreateAsync:::tenantId"]=""
 operation_parameters_collection_type["prepareAndCreateAsync:::api-version"]=""
 operation_parameters_collection_type["prepareAndCreateAsync:::x-api-version"]=""
@@ -1431,7 +1488,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1676,22 +1732,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1976,6 +2016,8 @@ print_getSignaturesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2000,6 +2042,8 @@ print_getSignaturesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2217,6 +2261,8 @@ print_getSignedDocumentAttachmentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2241,6 +2287,8 @@ print_getSignedDocumentAttachmentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2405,6 +2453,8 @@ print_getSignedDocumentsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2429,6 +2479,8 @@ print_getSignedDocumentsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2679,6 +2731,8 @@ print_getSigningCertificatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2703,6 +2757,8 @@ print_getSigningCertificatesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2811,6 +2867,8 @@ print_getProvidersAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2835,6 +2893,8 @@ print_getProvidersCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2914,6 +2974,8 @@ print_getSigningLogsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2938,6 +3000,8 @@ print_getSigningLogsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2983,6 +3047,8 @@ print_getSigningParticipantsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3005,6 +3071,8 @@ print_getSigningParticipantsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -3155,6 +3223,8 @@ print_getSigningProfileGraphicalRepresentationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3179,6 +3249,8 @@ print_getSigningProfileGraphicalRepresentationsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3343,6 +3415,8 @@ print_getSigningProfilesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3367,6 +3441,8 @@ print_getSigningProfilesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3610,6 +3686,8 @@ print_getSigningRequestsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3632,6 +3710,8 @@ print_getSigningRequestsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3857,42 +3937,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -4765,10 +4809,50 @@ call_getSignaturesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4801,10 +4885,50 @@ call_getSignaturesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5129,10 +5253,50 @@ call_getSignedDocumentAttachmentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5165,10 +5329,50 @@ call_getSignedDocumentAttachmentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5501,10 +5705,50 @@ call_getSignedDocumentsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5537,10 +5781,50 @@ call_getSignedDocumentsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6022,10 +6306,50 @@ call_getSigningCertificatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6058,10 +6382,50 @@ call_getSigningCertificatesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6283,10 +6647,50 @@ call_getProvidersAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6319,10 +6723,50 @@ call_getProvidersCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6467,10 +6911,50 @@ call_getSigningLogsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6503,10 +6987,50 @@ call_getSigningLogsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6575,10 +7099,50 @@ call_getSigningParticipantsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6611,10 +7175,50 @@ call_getSigningParticipantsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6907,10 +7511,50 @@ call_getSigningProfileGraphicalRepresentationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6943,10 +7587,50 @@ call_getSigningProfileGraphicalRepresentationsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7279,10 +7963,50 @@ call_getSigningProfilesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7315,10 +8039,50 @@ call_getSigningProfilesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7915,10 +8679,50 @@ call_getSigningRequestsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7951,10 +8755,50 @@ call_getSigningRequestsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8215,9 +9059,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -8563,9 +9404,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

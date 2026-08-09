@@ -452,7 +452,6 @@ case $state in
             "accountManageDownloadPersonalDataPost[]" \
             "accountManageLinkExternalLoginPost[]" \
             "accountPerformExternalLoginPost[]" \
-            "apiV2AIServiceAgentsAgentIdAguiPost[]" \
             "forgotPasswordPost[]" \
             "healthGet[]" \
             "helloGet[]" \
@@ -546,6 +545,7 @@ case $state in
             "patchJournalTypeAsync[Patch a journal type]" \
             "updateJournalTypeAsync[Updates an existing journal type]"             "aggregateJournalEntryCreditsAsync[Aggregate journal entry credits]" \
             "aggregateJournalEntryDebitsAsync[Aggregate journal entry debits]" \
+            "assignJournalToBookAsync[Bind a journal to a financial book]" \
             "countJournalsAsync[Count journals]" \
             "createJournalAsync[Create journal]" \
             "createJournalEntryAsync[Create journal entry]" \
@@ -593,7 +593,8 @@ case $state in
             "patchLoanTypeAsync[Patches a loan type]" \
             "updateLoanApplicationAsync[Updates a loan application]" \
             "updateLoanAsync[Updates a loan]" \
-            "updateLoanTypeAsync[Updates a loan type]"             "createReceiptAsync[Creates a new receipt]" \
+            "updateLoanTypeAsync[Updates a loan type]"             "countPostingExecutionsAsync[Count posting executions]" \
+            "getPostingExecutionsAsync[List posting executions]"             "createReceiptAsync[Creates a new receipt]" \
             "deleteReceiptAsync[Deletes a receipt]" \
             "getReceiptDetailsAsync[Gets details of a receipt]" \
             "getReceiptsAsync[Retrieves tenant receipts]" \
@@ -2318,13 +2319,6 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      apiV2AIServiceAgentsAgentIdAguiPost)
-        local -a _op_arguments
-        _op_arguments=(
-          "agentId=:[PATH] "
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       forgotPasswordPost)
         local -a _op_arguments
         _op_arguments=(
@@ -3346,6 +3340,16 @@ case $state in
 )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      assignJournalToBookAsync)
+        local -a _op_arguments
+        _op_arguments=(
+          "journalId=:[PATH] "
+          "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       countJournalsAsync)
         local -a _op_arguments
         _op_arguments=(
@@ -3839,6 +3843,24 @@ case $state in
         _op_arguments=(
           "loanTypeId=:[PATH] "
           "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      countPostingExecutionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
+"api-version=:[QUERY] "
+          "x-api-version\::[HEADER] "
+)
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPostingExecutionsAsync)
+        local -a _op_arguments
+        _op_arguments=(
+                    "tenantId=:[QUERY] "
 "api-version=:[QUERY] "
           "x-api-version\::[HEADER] "
 )

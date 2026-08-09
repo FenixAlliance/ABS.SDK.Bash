@@ -96,6 +96,44 @@ declare -a result_color_table=( "$WHITE" "$WHITE" "$GREEN" "$YELLOW" "$WHITE" "$
 # 0 - optional
 # 1 - required
 declare -A operation_parameters_minimum_occurrences
+operation_parameters_minimum_occurrences["disableApplicationPrincipalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["disableApplicationPrincipalAsync:::principalId"]=1
+operation_parameters_minimum_occurrences["disableApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["disableApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["enableApplicationPrincipalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["enableApplicationPrincipalAsync:::principalId"]=1
+operation_parameters_minimum_occurrences["enableApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["enableApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getApplicationPrincipalAsync:::principalId"]=1
+operation_parameters_minimum_occurrences["getApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalsAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getApplicationPrincipalsAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalsAsync:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalsCountAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["getApplicationPrincipalsCountAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getApplicationPrincipalsCountAsync:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_minimum_occurrences["grantPermissionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["grantPermissionAsync:::principalId"]=1
+operation_parameters_minimum_occurrences["grantPermissionAsync:::ApplicationPrincipalPermissionRequestDto"]=1
+operation_parameters_minimum_occurrences["grantPermissionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["grantPermissionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["provisionApplicationPrincipalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["provisionApplicationPrincipalAsync:::ApplicationPrincipalProvisionRequestDto"]=1
+operation_parameters_minimum_occurrences["provisionApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["provisionApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["revokePermissionAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["revokePermissionAsync:::principalId"]=1
+operation_parameters_minimum_occurrences["revokePermissionAsync:::permission"]=1
+operation_parameters_minimum_occurrences["revokePermissionAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["revokePermissionAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["suspendApplicationPrincipalAsync:::tenantId"]=1
+operation_parameters_minimum_occurrences["suspendApplicationPrincipalAsync:::principalId"]=1
+operation_parameters_minimum_occurrences["suspendApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_minimum_occurrences["suspendApplicationPrincipalAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["createBusinessApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createBusinessApplicationAsync:::BusinessApplicationCreateDto"]=1
 operation_parameters_minimum_occurrences["createBusinessApplicationAsync:::api-version"]=0
@@ -111,9 +149,11 @@ operation_parameters_minimum_occurrences["getBusinessApplicationByIdAsync:::x-ap
 operation_parameters_minimum_occurrences["getBusinessApplicationsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessApplicationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessApplicationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessApplicationsAsync:::BusinessApplicationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessApplicationsCountAsync:::BusinessApplicationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::applicationId"]=1
 operation_parameters_minimum_occurrences["getPermissionsByApplicationAsync:::api-version"]=0
@@ -124,7 +164,7 @@ operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::api-versi
 operation_parameters_minimum_occurrences["getRolesByApplicationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::applicationId"]=1
-operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::PatchOperation"]=1
 operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchBusinessApplicationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateBusinessApplicationAsync:::tenantId"]=1
@@ -136,7 +176,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -153,9 +192,11 @@ operation_parameters_minimum_occurrences["resetPasswordPost:::ResetPasswordReque
 operation_parameters_minimum_occurrences["getLogsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLogsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLogsAsync:::LogDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLogsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLogsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLogsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLogsCountAsync:::LogDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["createOAuthApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["createOAuthApplicationAsync:::OAuthApplicationCreateDto"]=1
 operation_parameters_minimum_occurrences["createOAuthApplicationAsync:::api-version"]=0
@@ -188,7 +229,7 @@ operation_parameters_minimum_occurrences["getOAuthAuthorizationsCountAsync:::api
 operation_parameters_minimum_occurrences["getOAuthAuthorizationsCountAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::applicationId"]=1
-operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::PatchOperation"]=1
 operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchOAuthApplicationAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["updateOAuthApplicationAsync:::tenantId"]=1
@@ -234,6 +275,7 @@ operation_parameters_minimum_occurrences["getPermissionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getPermissionsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPermissionsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPermissionsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPermissionsAsync:::SecurityPermissionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getPermissionsByEnrollmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPermissionsByEnrollmentAsync:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["getPermissionsByEnrollmentAsync:::api-version"]=0
@@ -241,13 +283,14 @@ operation_parameters_minimum_occurrences["getPermissionsByEnrollmentAsync:::x-ap
 operation_parameters_minimum_occurrences["getPermissionsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getPermissionsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getPermissionsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getPermissionsCountAsync:::SecurityPermissionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::securityPermissionId"]=1
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRolesByPermissionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["patchPermissionAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchPermissionAsync:::securityPermissionId"]=1
-operation_parameters_minimum_occurrences["patchPermissionAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchPermissionAsync:::PatchOperation"]=1
 operation_parameters_minimum_occurrences["patchPermissionAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchPermissionAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["revokePermissionFromBusinessApplicationAsync:::tenantId"]=1
@@ -312,6 +355,7 @@ operation_parameters_minimum_occurrences["getRolePermissionsAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getRolesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRolesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRolesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRolesAsync:::SecurityRoleDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getRolesByEnrollmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRolesByEnrollmentAsync:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["getRolesByEnrollmentAsync:::api-version"]=0
@@ -319,9 +363,10 @@ operation_parameters_minimum_occurrences["getRolesByEnrollmentAsync:::x-api-vers
 operation_parameters_minimum_occurrences["getRolesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getRolesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getRolesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getRolesCountAsync:::SecurityRoleDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchRoleAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchRoleAsync:::securityRoleId"]=1
-operation_parameters_minimum_occurrences["patchRoleAsync:::Operation"]=1
+operation_parameters_minimum_occurrences["patchRoleAsync:::PatchOperation"]=1
 operation_parameters_minimum_occurrences["patchRoleAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchRoleAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["revokePermissionFromRoleAsync:::tenantId"]=1
@@ -347,21 +392,27 @@ operation_parameters_minimum_occurrences["updateRoleAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getSecurityCertificatesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSecurityCertificatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSecurityCertificatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSecurityCertificatesAsync:::SecurityCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSecurityCertificatesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSecurityCertificatesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSecurityCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSecurityCertificatesCountAsync:::SecurityCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSecurityLogsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSecurityLogsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSecurityLogsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSecurityLogsAsync:::BusinessSecurityLogDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getSecurityLogsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getSecurityLogsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getSecurityLogsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getSecurityLogsCountAsync:::BusinessSecurityLogDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWebhookRequestsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebhookRequestsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebhookRequestsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebhookRequestsAsync:::WebhookRequestDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getWebhookRequestsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getWebhookRequestsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getWebhookRequestsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getWebhookRequestsCountAsync:::WebhookRequestDtoCollectionQueryParameters"]=0
 
 ##
 # This array stores the maximum number of allowed occurrences for parameter
@@ -370,6 +421,44 @@ operation_parameters_minimum_occurrences["getWebhookRequestsCountAsync:::x-api-v
 # N - N values
 # 0 - unlimited
 declare -A operation_parameters_maximum_occurrences
+operation_parameters_maximum_occurrences["disableApplicationPrincipalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["disableApplicationPrincipalAsync:::principalId"]=0
+operation_parameters_maximum_occurrences["disableApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["disableApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["enableApplicationPrincipalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["enableApplicationPrincipalAsync:::principalId"]=0
+operation_parameters_maximum_occurrences["enableApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["enableApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalAsync:::principalId"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsAsync:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsCountAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsCountAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getApplicationPrincipalsCountAsync:::ApplicationPrincipalDtoCollectionQueryParameters"]=0
+operation_parameters_maximum_occurrences["grantPermissionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["grantPermissionAsync:::principalId"]=0
+operation_parameters_maximum_occurrences["grantPermissionAsync:::ApplicationPrincipalPermissionRequestDto"]=0
+operation_parameters_maximum_occurrences["grantPermissionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["grantPermissionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["provisionApplicationPrincipalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["provisionApplicationPrincipalAsync:::ApplicationPrincipalProvisionRequestDto"]=0
+operation_parameters_maximum_occurrences["provisionApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["provisionApplicationPrincipalAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["revokePermissionAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["revokePermissionAsync:::principalId"]=0
+operation_parameters_maximum_occurrences["revokePermissionAsync:::permission"]=0
+operation_parameters_maximum_occurrences["revokePermissionAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["revokePermissionAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["suspendApplicationPrincipalAsync:::tenantId"]=0
+operation_parameters_maximum_occurrences["suspendApplicationPrincipalAsync:::principalId"]=0
+operation_parameters_maximum_occurrences["suspendApplicationPrincipalAsync:::api-version"]=0
+operation_parameters_maximum_occurrences["suspendApplicationPrincipalAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["createBusinessApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createBusinessApplicationAsync:::BusinessApplicationCreateDto"]=0
 operation_parameters_maximum_occurrences["createBusinessApplicationAsync:::api-version"]=0
@@ -385,9 +474,11 @@ operation_parameters_maximum_occurrences["getBusinessApplicationByIdAsync:::x-ap
 operation_parameters_maximum_occurrences["getBusinessApplicationsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessApplicationsAsync:::BusinessApplicationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessApplicationsCountAsync:::BusinessApplicationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::applicationId"]=0
 operation_parameters_maximum_occurrences["getPermissionsByApplicationAsync:::api-version"]=0
@@ -398,7 +489,7 @@ operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::api-versi
 operation_parameters_maximum_occurrences["getRolesByApplicationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::applicationId"]=0
-operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchBusinessApplicationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateBusinessApplicationAsync:::tenantId"]=0
@@ -410,7 +501,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -427,9 +517,11 @@ operation_parameters_maximum_occurrences["resetPasswordPost:::ResetPasswordReque
 operation_parameters_maximum_occurrences["getLogsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLogsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLogsAsync:::LogDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLogsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLogsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLogsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLogsCountAsync:::LogDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["createOAuthApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["createOAuthApplicationAsync:::OAuthApplicationCreateDto"]=0
 operation_parameters_maximum_occurrences["createOAuthApplicationAsync:::api-version"]=0
@@ -462,7 +554,7 @@ operation_parameters_maximum_occurrences["getOAuthAuthorizationsCountAsync:::api
 operation_parameters_maximum_occurrences["getOAuthAuthorizationsCountAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::applicationId"]=0
-operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchOAuthApplicationAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["updateOAuthApplicationAsync:::tenantId"]=0
@@ -508,6 +600,7 @@ operation_parameters_maximum_occurrences["getPermissionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getPermissionsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPermissionsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPermissionsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPermissionsAsync:::SecurityPermissionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getPermissionsByEnrollmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPermissionsByEnrollmentAsync:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["getPermissionsByEnrollmentAsync:::api-version"]=0
@@ -515,13 +608,14 @@ operation_parameters_maximum_occurrences["getPermissionsByEnrollmentAsync:::x-ap
 operation_parameters_maximum_occurrences["getPermissionsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getPermissionsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getPermissionsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getPermissionsCountAsync:::SecurityPermissionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::securityPermissionId"]=0
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRolesByPermissionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["patchPermissionAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchPermissionAsync:::securityPermissionId"]=0
-operation_parameters_maximum_occurrences["patchPermissionAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchPermissionAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchPermissionAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchPermissionAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromBusinessApplicationAsync:::tenantId"]=0
@@ -586,6 +680,7 @@ operation_parameters_maximum_occurrences["getRolePermissionsAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getRolesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRolesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRolesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRolesAsync:::SecurityRoleDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getRolesByEnrollmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRolesByEnrollmentAsync:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["getRolesByEnrollmentAsync:::api-version"]=0
@@ -593,9 +688,10 @@ operation_parameters_maximum_occurrences["getRolesByEnrollmentAsync:::x-api-vers
 operation_parameters_maximum_occurrences["getRolesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getRolesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getRolesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getRolesCountAsync:::SecurityRoleDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchRoleAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchRoleAsync:::securityRoleId"]=0
-operation_parameters_maximum_occurrences["patchRoleAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchRoleAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchRoleAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchRoleAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["revokePermissionFromRoleAsync:::tenantId"]=0
@@ -621,26 +717,70 @@ operation_parameters_maximum_occurrences["updateRoleAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getSecurityCertificatesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSecurityCertificatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSecurityCertificatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSecurityCertificatesAsync:::SecurityCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSecurityCertificatesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSecurityCertificatesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSecurityCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSecurityCertificatesCountAsync:::SecurityCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSecurityLogsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSecurityLogsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSecurityLogsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSecurityLogsAsync:::BusinessSecurityLogDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getSecurityLogsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getSecurityLogsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getSecurityLogsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getSecurityLogsCountAsync:::BusinessSecurityLogDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWebhookRequestsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebhookRequestsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebhookRequestsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebhookRequestsAsync:::WebhookRequestDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getWebhookRequestsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getWebhookRequestsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getWebhookRequestsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getWebhookRequestsCountAsync:::WebhookRequestDtoCollectionQueryParameters"]=0
 
 ##
 # The type of collection for specifying multiple values for parameter:
 # - multi, csv, ssv, tsv
 declare -A operation_parameters_collection_type
+operation_parameters_collection_type["disableApplicationPrincipalAsync:::tenantId"]=""
+operation_parameters_collection_type["disableApplicationPrincipalAsync:::principalId"]=""
+operation_parameters_collection_type["disableApplicationPrincipalAsync:::api-version"]=""
+operation_parameters_collection_type["disableApplicationPrincipalAsync:::x-api-version"]=""
+operation_parameters_collection_type["enableApplicationPrincipalAsync:::tenantId"]=""
+operation_parameters_collection_type["enableApplicationPrincipalAsync:::principalId"]=""
+operation_parameters_collection_type["enableApplicationPrincipalAsync:::api-version"]=""
+operation_parameters_collection_type["enableApplicationPrincipalAsync:::x-api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalAsync:::tenantId"]=""
+operation_parameters_collection_type["getApplicationPrincipalAsync:::principalId"]=""
+operation_parameters_collection_type["getApplicationPrincipalAsync:::api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalAsync:::x-api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalsAsync:::tenantId"]=""
+operation_parameters_collection_type["getApplicationPrincipalsAsync:::api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalsAsync:::ApplicationPrincipalDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["getApplicationPrincipalsCountAsync:::tenantId"]=""
+operation_parameters_collection_type["getApplicationPrincipalsCountAsync:::api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getApplicationPrincipalsCountAsync:::ApplicationPrincipalDtoCollectionQueryParameters"]=""
+operation_parameters_collection_type["grantPermissionAsync:::tenantId"]=""
+operation_parameters_collection_type["grantPermissionAsync:::principalId"]=""
+operation_parameters_collection_type["grantPermissionAsync:::ApplicationPrincipalPermissionRequestDto"]=""
+operation_parameters_collection_type["grantPermissionAsync:::api-version"]=""
+operation_parameters_collection_type["grantPermissionAsync:::x-api-version"]=""
+operation_parameters_collection_type["provisionApplicationPrincipalAsync:::tenantId"]=""
+operation_parameters_collection_type["provisionApplicationPrincipalAsync:::ApplicationPrincipalProvisionRequestDto"]=""
+operation_parameters_collection_type["provisionApplicationPrincipalAsync:::api-version"]=""
+operation_parameters_collection_type["provisionApplicationPrincipalAsync:::x-api-version"]=""
+operation_parameters_collection_type["revokePermissionAsync:::tenantId"]=""
+operation_parameters_collection_type["revokePermissionAsync:::principalId"]=""
+operation_parameters_collection_type["revokePermissionAsync:::permission"]=""
+operation_parameters_collection_type["revokePermissionAsync:::api-version"]=""
+operation_parameters_collection_type["revokePermissionAsync:::x-api-version"]=""
+operation_parameters_collection_type["suspendApplicationPrincipalAsync:::tenantId"]=""
+operation_parameters_collection_type["suspendApplicationPrincipalAsync:::principalId"]=""
+operation_parameters_collection_type["suspendApplicationPrincipalAsync:::api-version"]=""
+operation_parameters_collection_type["suspendApplicationPrincipalAsync:::x-api-version"]=""
 operation_parameters_collection_type["createBusinessApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["createBusinessApplicationAsync:::BusinessApplicationCreateDto"]=""
 operation_parameters_collection_type["createBusinessApplicationAsync:::api-version"]=""
@@ -656,9 +796,11 @@ operation_parameters_collection_type["getBusinessApplicationByIdAsync:::x-api-ve
 operation_parameters_collection_type["getBusinessApplicationsAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessApplicationsAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessApplicationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessApplicationsAsync:::BusinessApplicationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBusinessApplicationsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessApplicationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessApplicationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessApplicationsCountAsync:::BusinessApplicationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPermissionsByApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["getPermissionsByApplicationAsync:::applicationId"]=""
 operation_parameters_collection_type["getPermissionsByApplicationAsync:::api-version"]=""
@@ -669,7 +811,7 @@ operation_parameters_collection_type["getRolesByApplicationAsync:::api-version"]
 operation_parameters_collection_type["getRolesByApplicationAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchBusinessApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["patchBusinessApplicationAsync:::applicationId"]=""
-operation_parameters_collection_type["patchBusinessApplicationAsync:::Operation"]=
+operation_parameters_collection_type["patchBusinessApplicationAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchBusinessApplicationAsync:::api-version"]=""
 operation_parameters_collection_type["patchBusinessApplicationAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateBusinessApplicationAsync:::tenantId"]=""
@@ -681,7 +823,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -698,9 +839,11 @@ operation_parameters_collection_type["resetPasswordPost:::ResetPasswordRequest"]
 operation_parameters_collection_type["getLogsAsync:::tenantId"]=""
 operation_parameters_collection_type["getLogsAsync:::api-version"]=""
 operation_parameters_collection_type["getLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLogsAsync:::LogDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLogsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLogsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLogsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLogsCountAsync:::LogDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["createOAuthApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["createOAuthApplicationAsync:::OAuthApplicationCreateDto"]=""
 operation_parameters_collection_type["createOAuthApplicationAsync:::api-version"]=""
@@ -733,7 +876,7 @@ operation_parameters_collection_type["getOAuthAuthorizationsCountAsync:::api-ver
 operation_parameters_collection_type["getOAuthAuthorizationsCountAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchOAuthApplicationAsync:::tenantId"]=""
 operation_parameters_collection_type["patchOAuthApplicationAsync:::applicationId"]=""
-operation_parameters_collection_type["patchOAuthApplicationAsync:::Operation"]=
+operation_parameters_collection_type["patchOAuthApplicationAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchOAuthApplicationAsync:::api-version"]=""
 operation_parameters_collection_type["patchOAuthApplicationAsync:::x-api-version"]=""
 operation_parameters_collection_type["updateOAuthApplicationAsync:::tenantId"]=""
@@ -779,6 +922,7 @@ operation_parameters_collection_type["getPermissionAsync:::x-api-version"]=""
 operation_parameters_collection_type["getPermissionsAsync:::tenantId"]=""
 operation_parameters_collection_type["getPermissionsAsync:::api-version"]=""
 operation_parameters_collection_type["getPermissionsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPermissionsAsync:::SecurityPermissionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getPermissionsByEnrollmentAsync:::tenantId"]=""
 operation_parameters_collection_type["getPermissionsByEnrollmentAsync:::enrollmentId"]=""
 operation_parameters_collection_type["getPermissionsByEnrollmentAsync:::api-version"]=""
@@ -786,13 +930,14 @@ operation_parameters_collection_type["getPermissionsByEnrollmentAsync:::x-api-ve
 operation_parameters_collection_type["getPermissionsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getPermissionsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getPermissionsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getPermissionsCountAsync:::SecurityPermissionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::securityPermissionId"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::api-version"]=""
 operation_parameters_collection_type["getRolesByPermissionAsync:::x-api-version"]=""
 operation_parameters_collection_type["patchPermissionAsync:::tenantId"]=""
 operation_parameters_collection_type["patchPermissionAsync:::securityPermissionId"]=""
-operation_parameters_collection_type["patchPermissionAsync:::Operation"]=
+operation_parameters_collection_type["patchPermissionAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchPermissionAsync:::api-version"]=""
 operation_parameters_collection_type["patchPermissionAsync:::x-api-version"]=""
 operation_parameters_collection_type["revokePermissionFromBusinessApplicationAsync:::tenantId"]=""
@@ -857,6 +1002,7 @@ operation_parameters_collection_type["getRolePermissionsAsync:::x-api-version"]=
 operation_parameters_collection_type["getRolesAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesAsync:::api-version"]=""
 operation_parameters_collection_type["getRolesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRolesAsync:::SecurityRoleDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getRolesByEnrollmentAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesByEnrollmentAsync:::enrollmentId"]=""
 operation_parameters_collection_type["getRolesByEnrollmentAsync:::api-version"]=""
@@ -864,9 +1010,10 @@ operation_parameters_collection_type["getRolesByEnrollmentAsync:::x-api-version"
 operation_parameters_collection_type["getRolesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getRolesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getRolesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getRolesCountAsync:::SecurityRoleDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchRoleAsync:::tenantId"]=""
 operation_parameters_collection_type["patchRoleAsync:::securityRoleId"]=""
-operation_parameters_collection_type["patchRoleAsync:::Operation"]=
+operation_parameters_collection_type["patchRoleAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchRoleAsync:::api-version"]=""
 operation_parameters_collection_type["patchRoleAsync:::x-api-version"]=""
 operation_parameters_collection_type["revokePermissionFromRoleAsync:::tenantId"]=""
@@ -892,21 +1039,27 @@ operation_parameters_collection_type["updateRoleAsync:::x-api-version"]=""
 operation_parameters_collection_type["getSecurityCertificatesAsync:::tenantId"]=""
 operation_parameters_collection_type["getSecurityCertificatesAsync:::api-version"]=""
 operation_parameters_collection_type["getSecurityCertificatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSecurityCertificatesAsync:::SecurityCertificateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSecurityCertificatesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSecurityCertificatesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSecurityCertificatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSecurityCertificatesCountAsync:::SecurityCertificateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSecurityLogsAsync:::tenantId"]=""
 operation_parameters_collection_type["getSecurityLogsAsync:::api-version"]=""
 operation_parameters_collection_type["getSecurityLogsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSecurityLogsAsync:::BusinessSecurityLogDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getSecurityLogsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getSecurityLogsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getSecurityLogsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getSecurityLogsCountAsync:::BusinessSecurityLogDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWebhookRequestsAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebhookRequestsAsync:::api-version"]=""
 operation_parameters_collection_type["getWebhookRequestsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebhookRequestsAsync:::WebhookRequestDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getWebhookRequestsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getWebhookRequestsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getWebhookRequestsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getWebhookRequestsCountAsync:::WebhookRequestDtoCollectionQueryParameters"]=""
 
 
 ##
@@ -1293,6 +1446,20 @@ ${BOLD}${WHITE}Usage${OFF}
 EOF
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
+    echo -e "${BOLD}${WHITE}[applicationPrincipals]${OFF}"
+read -r -d '' ops <<EOF
+  ${CYAN}disableApplicationPrincipalAsync${OFF};Disable an application principal
+  ${CYAN}enableApplicationPrincipalAsync${OFF};Enable an application principal
+  ${CYAN}getApplicationPrincipalAsync${OFF};Get application principal by ID
+  ${CYAN}getApplicationPrincipalsAsync${OFF};Get all application principals
+  ${CYAN}getApplicationPrincipalsCountAsync${OFF};Get application principals count
+  ${CYAN}grantPermissionAsync${OFF};Grant a permission to an application principal
+  ${CYAN}provisionApplicationPrincipalAsync${OFF};Provision an application principal
+  ${CYAN}revokePermissionAsync${OFF};Revoke a permission from an application principal
+  ${CYAN}suspendApplicationPrincipalAsync${OFF};Suspend an application principal
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
     echo -e "${BOLD}${WHITE}[applications]${OFF}"
 read -r -d '' ops <<EOF
   ${CYAN}createBusinessApplicationAsync${OFF};Create a new business application
@@ -1313,7 +1480,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1469,6 +1635,269 @@ print_version() {
 
 ##############################################################################
 #
+# Print help for disableApplicationPrincipalAsync operation
+#
+##############################################################################
+print_disableApplicationPrincipalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}disableApplicationPrincipalAsync - Disable an application principal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Disables the application principal; dependent unattended execution fails closed." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for enableApplicationPrincipalAsync operation
+#
+##############################################################################
+print_enableApplicationPrincipalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}enableApplicationPrincipalAsync - Enable an application principal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Reinstates the application principal to the Active lifecycle state." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getApplicationPrincipalAsync operation
+#
+##############################################################################
+print_getApplicationPrincipalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getApplicationPrincipalAsync - Get application principal by ID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves a specific application principal: owning application, tenant enrollment, lifecycle status, system-locked flag, and its explicit least-privilege permission grants." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getApplicationPrincipalsAsync operation
+#
+##############################################################################
+print_getApplicationPrincipalsAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getApplicationPrincipalsAsync - Get all application principals${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the non-human application principals enrolled in the specified tenant (including read-only system-locked platform principals)." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getApplicationPrincipalsCountAsync operation
+#
+##############################################################################
+print_getApplicationPrincipalsCountAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getApplicationPrincipalsCountAsync - Get application principals count${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Retrieves the count of application principals enrolled in the specified tenant." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for grantPermissionAsync operation
+#
+##############################################################################
+print_grantPermissionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}grantPermissionAsync - Grant a permission to an application principal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Grants a single least-privilege permission to the application principal's enrollment. Owner/admin/wildcard/*_manage permissions are rejected; system-locked principals require a platform administrator." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for provisionApplicationPrincipalAsync operation
+#
+##############################################################################
+print_provisionApplicationPrincipalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}provisionApplicationPrincipalAsync - Provision an application principal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Idempotently provisions the application principal (and its own least-privilege enrollment) for a governed business application in the specified tenant. System-locked platform applications require a platform administrator." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF} ${RED}(required)${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for revokePermissionAsync operation
+#
+##############################################################################
+print_revokePermissionAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}revokePermissionAsync - Revoke a permission from an application principal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Revokes a direct permission grant from the application principal's enrollment. System-locked principals require a platform administrator." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}permission${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for suspendApplicationPrincipalAsync operation
+#
+##############################################################################
+print_suspendApplicationPrincipalAsync_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}suspendApplicationPrincipalAsync - Suspend an application principal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Temporarily suspends the application principal; its identity is retained but it cannot act until reinstated." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}tenantId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: tenantId=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}principalId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: principalId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createBusinessApplicationAsync operation
 #
 ##############################################################################
@@ -1570,6 +1999,8 @@ print_getBusinessApplicationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1596,6 +2027,8 @@ print_getBusinessApplicationsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1775,22 +2208,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -2048,6 +2465,8 @@ print_getLogsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2074,6 +2493,8 @@ print_getLogsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2613,6 +3034,8 @@ print_getPermissionsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2666,6 +3089,8 @@ print_getPermissionsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3128,6 +3553,8 @@ print_getRolesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3181,6 +3608,8 @@ print_getRolesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3359,6 +3788,8 @@ print_getSecurityCertificatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3385,6 +3816,8 @@ print_getSecurityCertificatesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3411,6 +3844,8 @@ print_getSecurityLogsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3437,6 +3872,8 @@ print_getSecurityLogsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3463,6 +3900,8 @@ print_getWebhookRequestsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3489,6 +3928,8 @@ print_getWebhookRequestsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3499,6 +3940,490 @@ print_getWebhookRequestsCountAsync_help() {
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
 }
 
+
+##############################################################################
+#
+# Call disableApplicationPrincipalAsync operation
+#
+##############################################################################
+call_disableApplicationPrincipalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/{principalId}/Disable" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call enableApplicationPrincipalAsync operation
+#
+##############################################################################
+call_enableApplicationPrincipalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/{principalId}/Enable" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getApplicationPrincipalAsync operation
+#
+##############################################################################
+call_getApplicationPrincipalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/{principalId}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getApplicationPrincipalsAsync operation
+#
+##############################################################################
+call_getApplicationPrincipalsAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getApplicationPrincipalsCountAsync operation
+#
+##############################################################################
+call_getApplicationPrincipalsCountAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/Count" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call grantPermissionAsync operation
+#
+##############################################################################
+call_grantPermissionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/{principalId}/Permissions" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call provisionApplicationPrincipalAsync operation
+#
+##############################################################################
+call_provisionApplicationPrincipalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=()
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/Provision" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call revokePermissionAsync operation
+#
+##############################################################################
+call_revokePermissionAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId permission)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/{principalId}/Permissions/{permission}" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call suspendApplicationPrincipalAsync operation
+#
+##############################################################################
+call_suspendApplicationPrincipalAsync() {
+    # ignore error about 'path_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local path_parameter_names=(principalId)
+    # ignore error about 'query_parameter_names' being unused; passed by reference
+    # shellcheck disable=SC2034
+    local query_parameter_names=(tenantId api-version)
+    local path
+
+    if ! path=$(build_request_path "/api/v2/SecurityService/ApplicationPrincipals/{principalId}/Suspend" path_parameter_names query_parameter_names); then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl
+    headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
 
 ##############################################################################
 #
@@ -3677,10 +4602,50 @@ call_getBusinessApplicationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3713,10 +4678,50 @@ call_getBusinessApplicationsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4088,42 +5093,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -4960,10 +5929,50 @@ call_getLogsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4996,10 +6005,50 @@ call_getLogsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5840,10 +6889,50 @@ call_getPermissionsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5912,10 +7001,50 @@ call_getPermissionsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6608,10 +7737,50 @@ call_getRolesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6680,10 +7849,50 @@ call_getRolesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -6976,10 +8185,50 @@ call_getSecurityCertificatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7012,10 +8261,50 @@ call_getSecurityCertificatesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7048,10 +8337,50 @@ call_getSecurityLogsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7084,10 +8413,50 @@ call_getSecurityLogsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7120,10 +8489,50 @@ call_getWebhookRequestsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7156,10 +8565,50 @@ call_getWebhookRequestsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -7260,6 +8709,33 @@ case $key in
         OFF=""
         result_color_table=( "" "" "" "" "" "" "" )
     ;;
+    disableApplicationPrincipalAsync)
+    operation="disableApplicationPrincipalAsync"
+    ;;
+    enableApplicationPrincipalAsync)
+    operation="enableApplicationPrincipalAsync"
+    ;;
+    getApplicationPrincipalAsync)
+    operation="getApplicationPrincipalAsync"
+    ;;
+    getApplicationPrincipalsAsync)
+    operation="getApplicationPrincipalsAsync"
+    ;;
+    getApplicationPrincipalsCountAsync)
+    operation="getApplicationPrincipalsCountAsync"
+    ;;
+    grantPermissionAsync)
+    operation="grantPermissionAsync"
+    ;;
+    provisionApplicationPrincipalAsync)
+    operation="provisionApplicationPrincipalAsync"
+    ;;
+    revokePermissionAsync)
+    operation="revokePermissionAsync"
+    ;;
+    suspendApplicationPrincipalAsync)
+    operation="suspendApplicationPrincipalAsync"
+    ;;
     createBusinessApplicationAsync)
     operation="createBusinessApplicationAsync"
     ;;
@@ -7298,9 +8774,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -7584,6 +9057,33 @@ fi
 
 # Run cURL command based on the operation ID
 case $operation in
+    disableApplicationPrincipalAsync)
+    call_disableApplicationPrincipalAsync
+    ;;
+    enableApplicationPrincipalAsync)
+    call_enableApplicationPrincipalAsync
+    ;;
+    getApplicationPrincipalAsync)
+    call_getApplicationPrincipalAsync
+    ;;
+    getApplicationPrincipalsAsync)
+    call_getApplicationPrincipalsAsync
+    ;;
+    getApplicationPrincipalsCountAsync)
+    call_getApplicationPrincipalsCountAsync
+    ;;
+    grantPermissionAsync)
+    call_grantPermissionAsync
+    ;;
+    provisionApplicationPrincipalAsync)
+    call_provisionApplicationPrincipalAsync
+    ;;
+    revokePermissionAsync)
+    call_revokePermissionAsync
+    ;;
+    suspendApplicationPrincipalAsync)
+    call_suspendApplicationPrincipalAsync
+    ;;
     createBusinessApplicationAsync)
     call_createBusinessApplicationAsync
     ;;
@@ -7622,9 +9122,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

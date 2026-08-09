@@ -111,9 +111,11 @@ operation_parameters_minimum_occurrences["getBusinessRelationshipByIdAsync:::x-a
 operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipsAsync:::BusinessRelationshipDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getBusinessRelationshipsCountAsync:::BusinessRelationshipDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::businessRelationshipId"]=1
 operation_parameters_minimum_occurrences["updateBusinessRelationshipAsync:::BusinessRelationshipUpdateDto"]=1
@@ -134,14 +136,16 @@ operation_parameters_minimum_occurrences["getTenantDepartmentById:::x-api-versio
 operation_parameters_minimum_occurrences["getTenantDepartments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantDepartments:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantDepartments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantDepartments:::TenantDepartmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantDepartmentsCount:::TenantDepartmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::tenantDepartmentId"]=1
 operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantDepartmentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantDepartment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantDepartment:::tenantDepartmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantDepartment:::api-version"]=0
@@ -162,14 +166,16 @@ operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentById:::x-ap
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollments:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantEmployeeEnrollments:::TenantTeamEmployeeEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantEmployeeEnrollmentsCount:::TenantTeamEmployeeEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantEmployeeEnrollmentId"]=1
 operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantEmployeeEnrollmentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantEmployeeEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantEmployeeEnrollment:::tenantEmployeeEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantEmployeeEnrollment:::api-version"]=0
@@ -186,9 +192,11 @@ operation_parameters_minimum_occurrences["deleteTenantEnrollment:::x-api-version
 operation_parameters_minimum_occurrences["getExtendedTenantEnrollments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExtendedTenantEnrollments:::api-version"]=0
 operation_parameters_minimum_occurrences["getExtendedTenantEnrollments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedTenantEnrollments:::ExtendedTenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getExtendedTenantEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getExtendedTenantEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getExtendedTenantEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getExtendedTenantEnrollmentsCount:::ExtendedTenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantEnrollmentById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollmentById:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollmentById:::userId"]=1
@@ -197,14 +205,16 @@ operation_parameters_minimum_occurrences["getTenantEnrollmentById:::x-api-versio
 operation_parameters_minimum_occurrences["getTenantEnrollments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollments:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEnrollments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantEnrollments:::TenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantEnrollmentsCount:::TenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantEnrollmentAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantEnrollment:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantEnrollment:::api-version"]=0
@@ -214,7 +224,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -239,9 +248,11 @@ operation_parameters_minimum_occurrences["deleteTenantIndustry:::x-api-version"]
 operation_parameters_minimum_occurrences["getTenantIndustries:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantIndustries:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantIndustries:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantIndustries:::TenantIndustryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantIndustriesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantIndustriesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantIndustriesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantIndustriesCount:::TenantIndustryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantIndustryById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantIndustryById:::tenantIndustryId"]=1
 operation_parameters_minimum_occurrences["getTenantIndustryById:::api-version"]=0
@@ -250,7 +261,7 @@ operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::tenantId"]=
 operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::tenantIndustryId"]=1
 operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantIndustryAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantIndustry:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantIndustry:::tenantIndustryId"]=1
 operation_parameters_minimum_occurrences["updateTenantIndustry:::api-version"]=0
@@ -273,9 +284,11 @@ operation_parameters_minimum_occurrences["getTenantInvitationById:::x-api-versio
 operation_parameters_minimum_occurrences["getTenantInvitations:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantInvitations:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantInvitations:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantInvitations:::TenantInvitationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantInvitationsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantInvitationsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantInvitationsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantInvitationsCount:::TenantInvitationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["sendTenantInvitation:::tenantId"]=1
 operation_parameters_minimum_occurrences["sendTenantInvitation:::api-version"]=0
 operation_parameters_minimum_occurrences["sendTenantInvitation:::x-api-version"]=0
@@ -303,15 +316,17 @@ operation_parameters_minimum_occurrences["getTenantOptions:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantOptions:::portalId"]=0
 operation_parameters_minimum_occurrences["getTenantOptions:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantOptions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::portalId"]=0
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantOptionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantOption:::optionId"]=1
 operation_parameters_minimum_occurrences["patchTenantOption:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantOption:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantOption:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantOption:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantOption:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantOption:::optionId"]=1
 operation_parameters_minimum_occurrences["updateTenantOption:::api-version"]=0
@@ -338,14 +353,16 @@ operation_parameters_minimum_occurrences["getTenantPositionById:::x-api-version"
 operation_parameters_minimum_occurrences["getTenantPositions:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantPositions:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantPositions:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantPositions:::TenantPositionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantPositionsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantPositionsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantPositionsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantPositionsCount:::TenantPositionDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantPosition:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantPosition:::tenantPositionId"]=1
 operation_parameters_minimum_occurrences["patchTenantPosition:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantPosition:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantPosition:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantPosition:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantPosition:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantPosition:::tenantPositionId"]=1
 operation_parameters_minimum_occurrences["updateTenantPosition:::api-version"]=0
@@ -366,14 +383,16 @@ operation_parameters_minimum_occurrences["getTenantSegmentById:::x-api-version"]
 operation_parameters_minimum_occurrences["getTenantSegments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantSegments:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSegments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantSegments:::TenantSegmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantSegmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantSegmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSegmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantSegmentsCount:::TenantSegmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantSegment:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantSegment:::tenantSegmentId"]=1
 operation_parameters_minimum_occurrences["patchTenantSegment:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantSegment:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantSegment:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantSegment:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantSegment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantSegment:::tenantSegmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantSegment:::api-version"]=0
@@ -394,14 +413,16 @@ operation_parameters_minimum_occurrences["getTenantSizeById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSizes:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantSizes:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSizes:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantSizes:::TenantSizeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantSizesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantSizesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantSizesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantSizesCount:::TenantSizeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantSize:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantSize:::tenantSizeId"]=1
 operation_parameters_minimum_occurrences["patchTenantSize:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantSize:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantSize:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantSize:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantSize:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantSize:::tenantSizeId"]=1
 operation_parameters_minimum_occurrences["updateTenantSize:::api-version"]=0
@@ -422,14 +443,16 @@ operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentById:::x
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollments:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamContactEnrollments:::TenantTeamContactEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamContactEnrollmentsCount:::TenantTeamContactEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamContactEnrollment:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeamContactEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamContactEnrollment:::api-version"]=0
@@ -450,14 +473,16 @@ operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentById:::x
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollments:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollments:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollments:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollments:::TenantTeamProjectEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamProjectEnrollmentsCount:::TenantTeamProjectEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamProjectEnrollment:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeamProjectEnrollment:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamProjectEnrollment:::api-version"]=0
@@ -478,14 +503,16 @@ operation_parameters_minimum_occurrences["getTenantTeamRecordById:::x-api-versio
 operation_parameters_minimum_occurrences["getTenantTeamRecords:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamRecords:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamRecords:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamRecords:::TenantTeamRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamRecordsCount:::TenantTeamRecordDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantTeamRecord:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeamRecord:::tenantTeamRecordId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeamRecord:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantTeamRecord:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantTeamRecord:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantTeamRecord:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeamRecord:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamRecord:::tenantTeamRecordId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeamRecord:::api-version"]=0
@@ -506,14 +533,16 @@ operation_parameters_minimum_occurrences["getTenantTeamById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeams:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeams:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeams:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeams:::TenantTeamDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTeamsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTeamsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTeamsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTeamsCount:::TenantTeamDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantTeam:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeam:::tenantTeamId"]=1
 operation_parameters_minimum_occurrences["patchTenantTeam:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantTeam:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantTeam:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantTeam:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantTeam:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeam:::tenantTeamId"]=1
 operation_parameters_minimum_occurrences["updateTenantTeam:::api-version"]=0
@@ -586,9 +615,11 @@ operation_parameters_minimum_occurrences["getTenantLicensesAsync:::x-api-version
 operation_parameters_minimum_occurrences["getTenantNotificationsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantNotificationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantNotificationsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantNotificationsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantNotificationsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantNotificationsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantNotificationsCountAsync:::NotificationDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantPendingInvitationsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantPendingInvitationsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantPendingInvitationsAsync:::x-api-version"]=0
@@ -613,7 +644,7 @@ operation_parameters_minimum_occurrences["getTenantWebPortalsAsync:::x-api-versi
 operation_parameters_minimum_occurrences["patchTenantAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["revokeLicenseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["revokeLicenseAsync:::enrollmentId"]=1
 operation_parameters_minimum_occurrences["revokeLicenseAsync:::licenseId"]=1
@@ -652,9 +683,11 @@ operation_parameters_minimum_occurrences["deleteTenantTerritory:::x-api-version"
 operation_parameters_minimum_occurrences["getTenantTerritories:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTerritories:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTerritories:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTerritories:::TenantTerritoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTerritoriesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTerritoriesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTerritoriesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTerritoriesCount:::TenantTerritoryDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTerritoryById:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTerritoryById:::tenantTerritoryId"]=1
 operation_parameters_minimum_occurrences["getTenantTerritoryById:::api-version"]=0
@@ -663,7 +696,7 @@ operation_parameters_minimum_occurrences["patchTenantTerritory:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantTerritory:::tenantTerritoryId"]=1
 operation_parameters_minimum_occurrences["patchTenantTerritory:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantTerritory:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantTerritory:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantTerritory:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantTerritory:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantTerritory:::tenantTerritoryId"]=1
 operation_parameters_minimum_occurrences["updateTenantTerritory:::api-version"]=0
@@ -684,14 +717,16 @@ operation_parameters_minimum_occurrences["getTenantTypeById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTypes:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTypes:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTypes:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTypes:::TenantTypeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantTypesCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantTypesCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantTypesCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantTypesCount:::TenantTypeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantType:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantType:::tenantTypeId"]=1
 operation_parameters_minimum_occurrences["patchTenantType:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantType:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantType:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantType:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantType:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantType:::tenantTypeId"]=1
 operation_parameters_minimum_occurrences["updateTenantType:::api-version"]=0
@@ -727,28 +762,32 @@ operation_parameters_minimum_occurrences["getUnitGroupAsync:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getUnitGroupsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getUnitGroupsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUnitGroupsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getUnitGroupsAsync:::UnitGroupDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getUnitGroupsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getUnitGroupsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUnitGroupsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getUnitGroupsCountAsync:::UnitGroupDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getUnitsAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getUnitsAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["getUnitsAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUnitsAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getUnitsAsync:::UnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getUnitsCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getUnitsCountAsync:::UnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchUnitAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["patchUnitAsync:::unitId"]=1
 operation_parameters_minimum_occurrences["patchUnitAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchUnitAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchUnitAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchUnitAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["patchUnitGroupAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchUnitGroupAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["patchUnitGroupAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchUnitGroupAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchUnitGroupAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchUnitGroupAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateUnitAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateUnitAsync:::unitGroupId"]=1
 operation_parameters_minimum_occurrences["updateUnitAsync:::unitId"]=1
@@ -775,14 +814,16 @@ operation_parameters_minimum_occurrences["getTenantUnitById:::x-api-version"]=0
 operation_parameters_minimum_occurrences["getTenantUnits:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantUnits:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantUnits:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantUnits:::TenantUnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getTenantUnitsCount:::tenantId"]=1
 operation_parameters_minimum_occurrences["getTenantUnitsCount:::api-version"]=0
 operation_parameters_minimum_occurrences["getTenantUnitsCount:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getTenantUnitsCount:::TenantUnitDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchTenantUnit:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchTenantUnit:::tenantUnitId"]=1
 operation_parameters_minimum_occurrences["patchTenantUnit:::api-version"]=0
 operation_parameters_minimum_occurrences["patchTenantUnit:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchTenantUnit:::Operation"]=0
+operation_parameters_minimum_occurrences["patchTenantUnit:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateTenantUnit:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateTenantUnit:::tenantUnitId"]=1
 operation_parameters_minimum_occurrences["updateTenantUnit:::api-version"]=0
@@ -811,9 +852,11 @@ operation_parameters_maximum_occurrences["getBusinessRelationshipByIdAsync:::x-a
 operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsAsync:::BusinessRelationshipDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getBusinessRelationshipsCountAsync:::BusinessRelationshipDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::businessRelationshipId"]=0
 operation_parameters_maximum_occurrences["updateBusinessRelationshipAsync:::BusinessRelationshipUpdateDto"]=0
@@ -834,14 +877,16 @@ operation_parameters_maximum_occurrences["getTenantDepartmentById:::x-api-versio
 operation_parameters_maximum_occurrences["getTenantDepartments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantDepartments:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantDepartments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantDepartments:::TenantDepartmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantDepartmentsCount:::TenantDepartmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::tenantDepartmentId"]=0
 operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantDepartmentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantDepartment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantDepartment:::tenantDepartmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantDepartment:::api-version"]=0
@@ -862,14 +907,16 @@ operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentById:::x-ap
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollments:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantEmployeeEnrollments:::TenantTeamEmployeeEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantEmployeeEnrollmentsCount:::TenantTeamEmployeeEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::tenantEmployeeEnrollmentId"]=0
 operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantEmployeeEnrollmentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantEmployeeEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantEmployeeEnrollment:::tenantEmployeeEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantEmployeeEnrollment:::api-version"]=0
@@ -886,9 +933,11 @@ operation_parameters_maximum_occurrences["deleteTenantEnrollment:::x-api-version
 operation_parameters_maximum_occurrences["getExtendedTenantEnrollments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantEnrollments:::api-version"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantEnrollments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedTenantEnrollments:::ExtendedTenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getExtendedTenantEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getExtendedTenantEnrollmentsCount:::ExtendedTenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentById:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentById:::userId"]=0
@@ -897,14 +946,16 @@ operation_parameters_maximum_occurrences["getTenantEnrollmentById:::x-api-versio
 operation_parameters_maximum_occurrences["getTenantEnrollments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollments:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantEnrollments:::TenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantEnrollmentsCount:::TenantEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantEnrollmentAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantEnrollment:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantEnrollment:::api-version"]=0
@@ -914,7 +965,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -939,9 +989,11 @@ operation_parameters_maximum_occurrences["deleteTenantIndustry:::x-api-version"]
 operation_parameters_maximum_occurrences["getTenantIndustries:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantIndustries:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantIndustries:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantIndustries:::TenantIndustryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantIndustriesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantIndustriesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantIndustriesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantIndustriesCount:::TenantIndustryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantIndustryById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantIndustryById:::tenantIndustryId"]=0
 operation_parameters_maximum_occurrences["getTenantIndustryById:::api-version"]=0
@@ -950,7 +1002,7 @@ operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::tenantId"]=
 operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::tenantIndustryId"]=0
 operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantIndustryAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantIndustry:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantIndustry:::tenantIndustryId"]=0
 operation_parameters_maximum_occurrences["updateTenantIndustry:::api-version"]=0
@@ -973,9 +1025,11 @@ operation_parameters_maximum_occurrences["getTenantInvitationById:::x-api-versio
 operation_parameters_maximum_occurrences["getTenantInvitations:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantInvitations:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantInvitations:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantInvitations:::TenantInvitationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantInvitationsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantInvitationsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantInvitationsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantInvitationsCount:::TenantInvitationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["sendTenantInvitation:::tenantId"]=0
 operation_parameters_maximum_occurrences["sendTenantInvitation:::api-version"]=0
 operation_parameters_maximum_occurrences["sendTenantInvitation:::x-api-version"]=0
@@ -1003,15 +1057,17 @@ operation_parameters_maximum_occurrences["getTenantOptions:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantOptions:::portalId"]=0
 operation_parameters_maximum_occurrences["getTenantOptions:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantOptions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantOptions:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::portalId"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantOptionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantOptionsCount:::OptionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantOption:::optionId"]=0
 operation_parameters_maximum_occurrences["patchTenantOption:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantOption:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantOption:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantOption:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantOption:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantOption:::optionId"]=0
 operation_parameters_maximum_occurrences["updateTenantOption:::api-version"]=0
@@ -1038,14 +1094,16 @@ operation_parameters_maximum_occurrences["getTenantPositionById:::x-api-version"
 operation_parameters_maximum_occurrences["getTenantPositions:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantPositions:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantPositions:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantPositions:::TenantPositionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantPositionsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantPositionsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantPositionsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantPositionsCount:::TenantPositionDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantPosition:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantPosition:::tenantPositionId"]=0
 operation_parameters_maximum_occurrences["patchTenantPosition:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantPosition:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantPosition:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantPosition:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantPosition:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantPosition:::tenantPositionId"]=0
 operation_parameters_maximum_occurrences["updateTenantPosition:::api-version"]=0
@@ -1066,14 +1124,16 @@ operation_parameters_maximum_occurrences["getTenantSegmentById:::x-api-version"]
 operation_parameters_maximum_occurrences["getTenantSegments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantSegments:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSegments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantSegments:::TenantSegmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantSegmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantSegmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSegmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantSegmentsCount:::TenantSegmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantSegment:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantSegment:::tenantSegmentId"]=0
 operation_parameters_maximum_occurrences["patchTenantSegment:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantSegment:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantSegment:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantSegment:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantSegment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantSegment:::tenantSegmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantSegment:::api-version"]=0
@@ -1094,14 +1154,16 @@ operation_parameters_maximum_occurrences["getTenantSizeById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSizes:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantSizes:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSizes:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantSizes:::TenantSizeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantSizesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantSizesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantSizesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantSizesCount:::TenantSizeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantSize:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantSize:::tenantSizeId"]=0
 operation_parameters_maximum_occurrences["patchTenantSize:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantSize:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantSize:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantSize:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantSize:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantSize:::tenantSizeId"]=0
 operation_parameters_maximum_occurrences["updateTenantSize:::api-version"]=0
@@ -1122,14 +1184,16 @@ operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentById:::x
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollments:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamContactEnrollments:::TenantTeamContactEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamContactEnrollmentsCount:::TenantTeamContactEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamContactEnrollment:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamContactEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamContactEnrollment:::api-version"]=0
@@ -1150,14 +1214,16 @@ operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentById:::x
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollments:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollments:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollments:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollments:::TenantTeamProjectEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamProjectEnrollmentsCount:::TenantTeamProjectEnrollmentDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamProjectEnrollment:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamProjectEnrollment:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamProjectEnrollment:::api-version"]=0
@@ -1178,14 +1244,16 @@ operation_parameters_maximum_occurrences["getTenantTeamRecordById:::x-api-versio
 operation_parameters_maximum_occurrences["getTenantTeamRecords:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecords:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecords:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamRecords:::TenantTeamRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamRecordsCount:::TenantTeamRecordDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamRecord:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamRecord:::tenantTeamRecordId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamRecord:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantTeamRecord:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantTeamRecord:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantTeamRecord:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamRecord:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamRecord:::tenantTeamRecordId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeamRecord:::api-version"]=0
@@ -1206,14 +1274,16 @@ operation_parameters_maximum_occurrences["getTenantTeamById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeams:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeams:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeams:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeams:::TenantTeamDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTeamsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTeamsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTeamsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTeamsCount:::TenantTeamDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantTeam:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeam:::tenantTeamId"]=0
 operation_parameters_maximum_occurrences["patchTenantTeam:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantTeam:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantTeam:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantTeam:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantTeam:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeam:::tenantTeamId"]=0
 operation_parameters_maximum_occurrences["updateTenantTeam:::api-version"]=0
@@ -1286,9 +1356,11 @@ operation_parameters_maximum_occurrences["getTenantLicensesAsync:::x-api-version
 operation_parameters_maximum_occurrences["getTenantNotificationsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantNotificationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantNotificationsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantNotificationsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantNotificationsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantNotificationsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantNotificationsCountAsync:::NotificationDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantPendingInvitationsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantPendingInvitationsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantPendingInvitationsAsync:::x-api-version"]=0
@@ -1313,7 +1385,7 @@ operation_parameters_maximum_occurrences["getTenantWebPortalsAsync:::x-api-versi
 operation_parameters_maximum_occurrences["patchTenantAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["revokeLicenseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["revokeLicenseAsync:::enrollmentId"]=0
 operation_parameters_maximum_occurrences["revokeLicenseAsync:::licenseId"]=0
@@ -1352,9 +1424,11 @@ operation_parameters_maximum_occurrences["deleteTenantTerritory:::x-api-version"
 operation_parameters_maximum_occurrences["getTenantTerritories:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTerritories:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTerritories:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTerritories:::TenantTerritoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoriesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoriesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoriesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTerritoriesCount:::TenantTerritoryDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoryById:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoryById:::tenantTerritoryId"]=0
 operation_parameters_maximum_occurrences["getTenantTerritoryById:::api-version"]=0
@@ -1363,7 +1437,7 @@ operation_parameters_maximum_occurrences["patchTenantTerritory:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantTerritory:::tenantTerritoryId"]=0
 operation_parameters_maximum_occurrences["patchTenantTerritory:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantTerritory:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantTerritory:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantTerritory:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantTerritory:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantTerritory:::tenantTerritoryId"]=0
 operation_parameters_maximum_occurrences["updateTenantTerritory:::api-version"]=0
@@ -1384,14 +1458,16 @@ operation_parameters_maximum_occurrences["getTenantTypeById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTypes:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTypes:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTypes:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTypes:::TenantTypeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantTypesCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantTypesCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantTypesCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantTypesCount:::TenantTypeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantType:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantType:::tenantTypeId"]=0
 operation_parameters_maximum_occurrences["patchTenantType:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantType:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantType:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantType:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantType:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantType:::tenantTypeId"]=0
 operation_parameters_maximum_occurrences["updateTenantType:::api-version"]=0
@@ -1427,28 +1503,32 @@ operation_parameters_maximum_occurrences["getUnitGroupAsync:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getUnitGroupsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getUnitGroupsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUnitGroupsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getUnitGroupsAsync:::UnitGroupDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getUnitGroupsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getUnitGroupsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUnitGroupsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getUnitGroupsCountAsync:::UnitGroupDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getUnitsAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getUnitsAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["getUnitsAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUnitsAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getUnitsAsync:::UnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getUnitsCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getUnitsCountAsync:::UnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchUnitAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["patchUnitAsync:::unitId"]=0
 operation_parameters_maximum_occurrences["patchUnitAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchUnitAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchUnitAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchUnitAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["patchUnitGroupAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchUnitGroupAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["patchUnitGroupAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchUnitGroupAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchUnitGroupAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchUnitGroupAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateUnitAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateUnitAsync:::unitGroupId"]=0
 operation_parameters_maximum_occurrences["updateUnitAsync:::unitId"]=0
@@ -1475,14 +1555,16 @@ operation_parameters_maximum_occurrences["getTenantUnitById:::x-api-version"]=0
 operation_parameters_maximum_occurrences["getTenantUnits:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantUnits:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantUnits:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantUnits:::TenantUnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getTenantUnitsCount:::tenantId"]=0
 operation_parameters_maximum_occurrences["getTenantUnitsCount:::api-version"]=0
 operation_parameters_maximum_occurrences["getTenantUnitsCount:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getTenantUnitsCount:::TenantUnitDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchTenantUnit:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchTenantUnit:::tenantUnitId"]=0
 operation_parameters_maximum_occurrences["patchTenantUnit:::api-version"]=0
 operation_parameters_maximum_occurrences["patchTenantUnit:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchTenantUnit:::Operation"]=0
+operation_parameters_maximum_occurrences["patchTenantUnit:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateTenantUnit:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateTenantUnit:::tenantUnitId"]=0
 operation_parameters_maximum_occurrences["updateTenantUnit:::api-version"]=0
@@ -1508,9 +1590,11 @@ operation_parameters_collection_type["getBusinessRelationshipByIdAsync:::x-api-v
 operation_parameters_collection_type["getBusinessRelationshipsAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessRelationshipsAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessRelationshipsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipsAsync:::BusinessRelationshipDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getBusinessRelationshipsCountAsync:::BusinessRelationshipDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateBusinessRelationshipAsync:::tenantId"]=""
 operation_parameters_collection_type["updateBusinessRelationshipAsync:::businessRelationshipId"]=""
 operation_parameters_collection_type["updateBusinessRelationshipAsync:::BusinessRelationshipUpdateDto"]=""
@@ -1531,14 +1615,16 @@ operation_parameters_collection_type["getTenantDepartmentById:::x-api-version"]=
 operation_parameters_collection_type["getTenantDepartments:::tenantId"]=""
 operation_parameters_collection_type["getTenantDepartments:::api-version"]=""
 operation_parameters_collection_type["getTenantDepartments:::x-api-version"]=""
+operation_parameters_collection_type["getTenantDepartments:::TenantDepartmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantDepartmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantDepartmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantDepartmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantDepartmentsCount:::TenantDepartmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantDepartmentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTenantDepartmentAsync:::tenantDepartmentId"]=""
 operation_parameters_collection_type["patchTenantDepartmentAsync:::api-version"]=""
 operation_parameters_collection_type["patchTenantDepartmentAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantDepartmentAsync:::Operation"]=
+operation_parameters_collection_type["patchTenantDepartmentAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantDepartment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantDepartment:::tenantDepartmentId"]=""
 operation_parameters_collection_type["updateTenantDepartment:::api-version"]=""
@@ -1559,14 +1645,16 @@ operation_parameters_collection_type["getTenantEmployeeEnrollmentById:::x-api-ve
 operation_parameters_collection_type["getTenantEmployeeEnrollments:::tenantId"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollments:::api-version"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollments:::x-api-version"]=""
+operation_parameters_collection_type["getTenantEmployeeEnrollments:::TenantTeamEmployeeEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantEmployeeEnrollmentsCount:::TenantTeamEmployeeEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::tenantEmployeeEnrollmentId"]=""
 operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::api-version"]=""
 operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::Operation"]=
+operation_parameters_collection_type["patchTenantEmployeeEnrollmentAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantEmployeeEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantEmployeeEnrollment:::tenantEmployeeEnrollmentId"]=""
 operation_parameters_collection_type["updateTenantEmployeeEnrollment:::api-version"]=""
@@ -1583,9 +1671,11 @@ operation_parameters_collection_type["deleteTenantEnrollment:::x-api-version"]="
 operation_parameters_collection_type["getExtendedTenantEnrollments:::tenantId"]=""
 operation_parameters_collection_type["getExtendedTenantEnrollments:::api-version"]=""
 operation_parameters_collection_type["getExtendedTenantEnrollments:::x-api-version"]=""
+operation_parameters_collection_type["getExtendedTenantEnrollments:::ExtendedTenantEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getExtendedTenantEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getExtendedTenantEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getExtendedTenantEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getExtendedTenantEnrollmentsCount:::ExtendedTenantEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantEnrollmentById:::tenantId"]=""
 operation_parameters_collection_type["getTenantEnrollmentById:::enrollmentId"]=""
 operation_parameters_collection_type["getTenantEnrollmentById:::userId"]=""
@@ -1594,14 +1684,16 @@ operation_parameters_collection_type["getTenantEnrollmentById:::x-api-version"]=
 operation_parameters_collection_type["getTenantEnrollments:::tenantId"]=""
 operation_parameters_collection_type["getTenantEnrollments:::api-version"]=""
 operation_parameters_collection_type["getTenantEnrollments:::x-api-version"]=""
+operation_parameters_collection_type["getTenantEnrollments:::TenantEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantEnrollmentsCount:::TenantEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantEnrollmentAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTenantEnrollmentAsync:::enrollmentId"]=""
 operation_parameters_collection_type["patchTenantEnrollmentAsync:::api-version"]=""
 operation_parameters_collection_type["patchTenantEnrollmentAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantEnrollmentAsync:::Operation"]=
+operation_parameters_collection_type["patchTenantEnrollmentAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantEnrollment:::enrollmentId"]=""
 operation_parameters_collection_type["updateTenantEnrollment:::api-version"]=""
@@ -1611,7 +1703,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -1636,9 +1727,11 @@ operation_parameters_collection_type["deleteTenantIndustry:::x-api-version"]=""
 operation_parameters_collection_type["getTenantIndustries:::tenantId"]=""
 operation_parameters_collection_type["getTenantIndustries:::api-version"]=""
 operation_parameters_collection_type["getTenantIndustries:::x-api-version"]=""
+operation_parameters_collection_type["getTenantIndustries:::TenantIndustryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantIndustriesCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantIndustriesCount:::api-version"]=""
 operation_parameters_collection_type["getTenantIndustriesCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantIndustriesCount:::TenantIndustryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantIndustryById:::tenantId"]=""
 operation_parameters_collection_type["getTenantIndustryById:::tenantIndustryId"]=""
 operation_parameters_collection_type["getTenantIndustryById:::api-version"]=""
@@ -1647,7 +1740,7 @@ operation_parameters_collection_type["patchTenantIndustryAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTenantIndustryAsync:::tenantIndustryId"]=""
 operation_parameters_collection_type["patchTenantIndustryAsync:::api-version"]=""
 operation_parameters_collection_type["patchTenantIndustryAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantIndustryAsync:::Operation"]=
+operation_parameters_collection_type["patchTenantIndustryAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantIndustry:::tenantId"]=""
 operation_parameters_collection_type["updateTenantIndustry:::tenantIndustryId"]=""
 operation_parameters_collection_type["updateTenantIndustry:::api-version"]=""
@@ -1670,9 +1763,11 @@ operation_parameters_collection_type["getTenantInvitationById:::x-api-version"]=
 operation_parameters_collection_type["getTenantInvitations:::tenantId"]=""
 operation_parameters_collection_type["getTenantInvitations:::api-version"]=""
 operation_parameters_collection_type["getTenantInvitations:::x-api-version"]=""
+operation_parameters_collection_type["getTenantInvitations:::TenantInvitationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantInvitationsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantInvitationsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantInvitationsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantInvitationsCount:::TenantInvitationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["sendTenantInvitation:::tenantId"]=""
 operation_parameters_collection_type["sendTenantInvitation:::api-version"]=""
 operation_parameters_collection_type["sendTenantInvitation:::x-api-version"]=""
@@ -1700,15 +1795,17 @@ operation_parameters_collection_type["getTenantOptions:::tenantId"]=""
 operation_parameters_collection_type["getTenantOptions:::portalId"]=""
 operation_parameters_collection_type["getTenantOptions:::api-version"]=""
 operation_parameters_collection_type["getTenantOptions:::x-api-version"]=""
+operation_parameters_collection_type["getTenantOptions:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::portalId"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantOptionsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantOptionsCount:::OptionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantOption:::tenantId"]=""
 operation_parameters_collection_type["patchTenantOption:::optionId"]=""
 operation_parameters_collection_type["patchTenantOption:::api-version"]=""
 operation_parameters_collection_type["patchTenantOption:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantOption:::Operation"]=
+operation_parameters_collection_type["patchTenantOption:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantOption:::tenantId"]=""
 operation_parameters_collection_type["updateTenantOption:::optionId"]=""
 operation_parameters_collection_type["updateTenantOption:::api-version"]=""
@@ -1735,14 +1832,16 @@ operation_parameters_collection_type["getTenantPositionById:::x-api-version"]=""
 operation_parameters_collection_type["getTenantPositions:::tenantId"]=""
 operation_parameters_collection_type["getTenantPositions:::api-version"]=""
 operation_parameters_collection_type["getTenantPositions:::x-api-version"]=""
+operation_parameters_collection_type["getTenantPositions:::TenantPositionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantPositionsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantPositionsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantPositionsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantPositionsCount:::TenantPositionDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantPosition:::tenantId"]=""
 operation_parameters_collection_type["patchTenantPosition:::tenantPositionId"]=""
 operation_parameters_collection_type["patchTenantPosition:::api-version"]=""
 operation_parameters_collection_type["patchTenantPosition:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantPosition:::Operation"]=
+operation_parameters_collection_type["patchTenantPosition:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantPosition:::tenantId"]=""
 operation_parameters_collection_type["updateTenantPosition:::tenantPositionId"]=""
 operation_parameters_collection_type["updateTenantPosition:::api-version"]=""
@@ -1763,14 +1862,16 @@ operation_parameters_collection_type["getTenantSegmentById:::x-api-version"]=""
 operation_parameters_collection_type["getTenantSegments:::tenantId"]=""
 operation_parameters_collection_type["getTenantSegments:::api-version"]=""
 operation_parameters_collection_type["getTenantSegments:::x-api-version"]=""
+operation_parameters_collection_type["getTenantSegments:::TenantSegmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantSegmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantSegmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantSegmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantSegmentsCount:::TenantSegmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantSegment:::tenantId"]=""
 operation_parameters_collection_type["patchTenantSegment:::tenantSegmentId"]=""
 operation_parameters_collection_type["patchTenantSegment:::api-version"]=""
 operation_parameters_collection_type["patchTenantSegment:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantSegment:::Operation"]=
+operation_parameters_collection_type["patchTenantSegment:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantSegment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantSegment:::tenantSegmentId"]=""
 operation_parameters_collection_type["updateTenantSegment:::api-version"]=""
@@ -1791,14 +1892,16 @@ operation_parameters_collection_type["getTenantSizeById:::x-api-version"]=""
 operation_parameters_collection_type["getTenantSizes:::tenantId"]=""
 operation_parameters_collection_type["getTenantSizes:::api-version"]=""
 operation_parameters_collection_type["getTenantSizes:::x-api-version"]=""
+operation_parameters_collection_type["getTenantSizes:::TenantSizeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantSizesCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantSizesCount:::api-version"]=""
 operation_parameters_collection_type["getTenantSizesCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantSizesCount:::TenantSizeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantSize:::tenantId"]=""
 operation_parameters_collection_type["patchTenantSize:::tenantSizeId"]=""
 operation_parameters_collection_type["patchTenantSize:::api-version"]=""
 operation_parameters_collection_type["patchTenantSize:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantSize:::Operation"]=
+operation_parameters_collection_type["patchTenantSize:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantSize:::tenantId"]=""
 operation_parameters_collection_type["updateTenantSize:::tenantSizeId"]=""
 operation_parameters_collection_type["updateTenantSize:::api-version"]=""
@@ -1819,14 +1922,16 @@ operation_parameters_collection_type["getTenantTeamContactEnrollmentById:::x-api
 operation_parameters_collection_type["getTenantTeamContactEnrollments:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollments:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollments:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamContactEnrollments:::TenantTeamContactEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamContactEnrollmentsCount:::TenantTeamContactEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantTeamContactEnrollment:::tenantId"]=""
 operation_parameters_collection_type["patchTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=""
 operation_parameters_collection_type["patchTenantTeamContactEnrollment:::api-version"]=""
 operation_parameters_collection_type["patchTenantTeamContactEnrollment:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantTeamContactEnrollment:::Operation"]=
+operation_parameters_collection_type["patchTenantTeamContactEnrollment:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantTeamContactEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeamContactEnrollment:::tenantTeamContactEnrollmentId"]=""
 operation_parameters_collection_type["updateTenantTeamContactEnrollment:::api-version"]=""
@@ -1847,14 +1952,16 @@ operation_parameters_collection_type["getTenantTeamProjectEnrollmentById:::x-api
 operation_parameters_collection_type["getTenantTeamProjectEnrollments:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollments:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollments:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamProjectEnrollments:::TenantTeamProjectEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamProjectEnrollmentsCount:::TenantTeamProjectEnrollmentDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::tenantId"]=""
 operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=""
 operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::api-version"]=""
 operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::Operation"]=
+operation_parameters_collection_type["patchTenantTeamProjectEnrollment:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantTeamProjectEnrollment:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeamProjectEnrollment:::tenantTeamProjectEnrollmentId"]=""
 operation_parameters_collection_type["updateTenantTeamProjectEnrollment:::api-version"]=""
@@ -1875,14 +1982,16 @@ operation_parameters_collection_type["getTenantTeamRecordById:::x-api-version"]=
 operation_parameters_collection_type["getTenantTeamRecords:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamRecords:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamRecords:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamRecords:::TenantTeamRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTeamRecordsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamRecordsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamRecordsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamRecordsCount:::TenantTeamRecordDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantTeamRecord:::tenantId"]=""
 operation_parameters_collection_type["patchTenantTeamRecord:::tenantTeamRecordId"]=""
 operation_parameters_collection_type["patchTenantTeamRecord:::api-version"]=""
 operation_parameters_collection_type["patchTenantTeamRecord:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantTeamRecord:::Operation"]=
+operation_parameters_collection_type["patchTenantTeamRecord:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantTeamRecord:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeamRecord:::tenantTeamRecordId"]=""
 operation_parameters_collection_type["updateTenantTeamRecord:::api-version"]=""
@@ -1903,14 +2012,16 @@ operation_parameters_collection_type["getTenantTeamById:::x-api-version"]=""
 operation_parameters_collection_type["getTenantTeams:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeams:::api-version"]=""
 operation_parameters_collection_type["getTenantTeams:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeams:::TenantTeamDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTeamsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTeamsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTeamsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTeamsCount:::TenantTeamDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantTeam:::tenantId"]=""
 operation_parameters_collection_type["patchTenantTeam:::tenantTeamId"]=""
 operation_parameters_collection_type["patchTenantTeam:::api-version"]=""
 operation_parameters_collection_type["patchTenantTeam:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantTeam:::Operation"]=
+operation_parameters_collection_type["patchTenantTeam:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantTeam:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTeam:::tenantTeamId"]=""
 operation_parameters_collection_type["updateTenantTeam:::api-version"]=""
@@ -1983,9 +2094,11 @@ operation_parameters_collection_type["getTenantLicensesAsync:::x-api-version"]="
 operation_parameters_collection_type["getTenantNotificationsAsync:::tenantId"]=""
 operation_parameters_collection_type["getTenantNotificationsAsync:::api-version"]=""
 operation_parameters_collection_type["getTenantNotificationsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTenantNotificationsAsync:::NotificationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantNotificationsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getTenantNotificationsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getTenantNotificationsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getTenantNotificationsCountAsync:::NotificationDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantPendingInvitationsAsync:::tenantId"]=""
 operation_parameters_collection_type["getTenantPendingInvitationsAsync:::api-version"]=""
 operation_parameters_collection_type["getTenantPendingInvitationsAsync:::x-api-version"]=""
@@ -2010,7 +2123,7 @@ operation_parameters_collection_type["getTenantWebPortalsAsync:::x-api-version"]
 operation_parameters_collection_type["patchTenantAsync:::tenantId"]=""
 operation_parameters_collection_type["patchTenantAsync:::api-version"]=""
 operation_parameters_collection_type["patchTenantAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantAsync:::Operation"]=
+operation_parameters_collection_type["patchTenantAsync:::PatchOperation"]=
 operation_parameters_collection_type["revokeLicenseAsync:::tenantId"]=""
 operation_parameters_collection_type["revokeLicenseAsync:::enrollmentId"]=""
 operation_parameters_collection_type["revokeLicenseAsync:::licenseId"]=""
@@ -2049,9 +2162,11 @@ operation_parameters_collection_type["deleteTenantTerritory:::x-api-version"]=""
 operation_parameters_collection_type["getTenantTerritories:::tenantId"]=""
 operation_parameters_collection_type["getTenantTerritories:::api-version"]=""
 operation_parameters_collection_type["getTenantTerritories:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTerritories:::TenantTerritoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTerritoriesCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTerritoriesCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTerritoriesCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTerritoriesCount:::TenantTerritoryDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTerritoryById:::tenantId"]=""
 operation_parameters_collection_type["getTenantTerritoryById:::tenantTerritoryId"]=""
 operation_parameters_collection_type["getTenantTerritoryById:::api-version"]=""
@@ -2060,7 +2175,7 @@ operation_parameters_collection_type["patchTenantTerritory:::tenantId"]=""
 operation_parameters_collection_type["patchTenantTerritory:::tenantTerritoryId"]=""
 operation_parameters_collection_type["patchTenantTerritory:::api-version"]=""
 operation_parameters_collection_type["patchTenantTerritory:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantTerritory:::Operation"]=
+operation_parameters_collection_type["patchTenantTerritory:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantTerritory:::tenantId"]=""
 operation_parameters_collection_type["updateTenantTerritory:::tenantTerritoryId"]=""
 operation_parameters_collection_type["updateTenantTerritory:::api-version"]=""
@@ -2081,14 +2196,16 @@ operation_parameters_collection_type["getTenantTypeById:::x-api-version"]=""
 operation_parameters_collection_type["getTenantTypes:::tenantId"]=""
 operation_parameters_collection_type["getTenantTypes:::api-version"]=""
 operation_parameters_collection_type["getTenantTypes:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTypes:::TenantTypeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantTypesCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantTypesCount:::api-version"]=""
 operation_parameters_collection_type["getTenantTypesCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantTypesCount:::TenantTypeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantType:::tenantId"]=""
 operation_parameters_collection_type["patchTenantType:::tenantTypeId"]=""
 operation_parameters_collection_type["patchTenantType:::api-version"]=""
 operation_parameters_collection_type["patchTenantType:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantType:::Operation"]=
+operation_parameters_collection_type["patchTenantType:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantType:::tenantId"]=""
 operation_parameters_collection_type["updateTenantType:::tenantTypeId"]=""
 operation_parameters_collection_type["updateTenantType:::api-version"]=""
@@ -2124,28 +2241,32 @@ operation_parameters_collection_type["getUnitGroupAsync:::x-api-version"]=""
 operation_parameters_collection_type["getUnitGroupsAsync:::tenantId"]=""
 operation_parameters_collection_type["getUnitGroupsAsync:::api-version"]=""
 operation_parameters_collection_type["getUnitGroupsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getUnitGroupsAsync:::UnitGroupDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getUnitGroupsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getUnitGroupsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getUnitGroupsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getUnitGroupsCountAsync:::UnitGroupDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getUnitsAsync:::tenantId"]=""
 operation_parameters_collection_type["getUnitsAsync:::unitGroupId"]=""
 operation_parameters_collection_type["getUnitsAsync:::api-version"]=""
 operation_parameters_collection_type["getUnitsAsync:::x-api-version"]=""
+operation_parameters_collection_type["getUnitsAsync:::UnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::unitGroupId"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::api-version"]=""
 operation_parameters_collection_type["getUnitsCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getUnitsCountAsync:::UnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["patchUnitAsync:::unitGroupId"]=""
 operation_parameters_collection_type["patchUnitAsync:::unitId"]=""
 operation_parameters_collection_type["patchUnitAsync:::api-version"]=""
 operation_parameters_collection_type["patchUnitAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchUnitAsync:::Operation"]=
+operation_parameters_collection_type["patchUnitAsync:::PatchOperation"]=
 operation_parameters_collection_type["patchUnitGroupAsync:::tenantId"]=""
 operation_parameters_collection_type["patchUnitGroupAsync:::unitGroupId"]=""
 operation_parameters_collection_type["patchUnitGroupAsync:::api-version"]=""
 operation_parameters_collection_type["patchUnitGroupAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchUnitGroupAsync:::Operation"]=
+operation_parameters_collection_type["patchUnitGroupAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateUnitAsync:::tenantId"]=""
 operation_parameters_collection_type["updateUnitAsync:::unitGroupId"]=""
 operation_parameters_collection_type["updateUnitAsync:::unitId"]=""
@@ -2172,14 +2293,16 @@ operation_parameters_collection_type["getTenantUnitById:::x-api-version"]=""
 operation_parameters_collection_type["getTenantUnits:::tenantId"]=""
 operation_parameters_collection_type["getTenantUnits:::api-version"]=""
 operation_parameters_collection_type["getTenantUnits:::x-api-version"]=""
+operation_parameters_collection_type["getTenantUnits:::TenantUnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getTenantUnitsCount:::tenantId"]=""
 operation_parameters_collection_type["getTenantUnitsCount:::api-version"]=""
 operation_parameters_collection_type["getTenantUnitsCount:::x-api-version"]=""
+operation_parameters_collection_type["getTenantUnitsCount:::TenantUnitDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchTenantUnit:::tenantId"]=""
 operation_parameters_collection_type["patchTenantUnit:::tenantUnitId"]=""
 operation_parameters_collection_type["patchTenantUnit:::api-version"]=""
 operation_parameters_collection_type["patchTenantUnit:::x-api-version"]=""
-operation_parameters_collection_type["patchTenantUnit:::Operation"]=
+operation_parameters_collection_type["patchTenantUnit:::PatchOperation"]=
 operation_parameters_collection_type["updateTenantUnit:::tenantId"]=""
 operation_parameters_collection_type["updateTenantUnit:::tenantUnitId"]=""
 operation_parameters_collection_type["updateTenantUnit:::api-version"]=""
@@ -2626,7 +2749,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -3015,6 +3137,8 @@ print_getBusinessRelationshipsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3043,6 +3167,8 @@ print_getBusinessRelationshipsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3182,6 +3308,8 @@ print_getTenantDepartments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3208,6 +3336,8 @@ print_getTenantDepartmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3374,6 +3504,8 @@ print_getTenantEmployeeEnrollments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3400,6 +3532,8 @@ print_getTenantEmployeeEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3539,6 +3673,8 @@ print_getExtendedTenantEnrollments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3565,6 +3701,8 @@ print_getExtendedTenantEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3620,6 +3758,8 @@ print_getTenantEnrollments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3646,6 +3786,8 @@ print_getTenantEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -3767,22 +3909,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -4095,6 +4221,8 @@ print_getTenantIndustries_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4121,6 +4249,8 @@ print_getTenantIndustriesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4336,6 +4466,8 @@ print_getTenantInvitations_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4362,6 +4494,8 @@ print_getTenantInvitationsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4533,6 +4667,8 @@ print_getTenantOptions_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4561,6 +4697,8 @@ print_getTenantOptionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4758,6 +4896,8 @@ print_getTenantPositions_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4784,6 +4924,8 @@ print_getTenantPositionsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4950,6 +5092,8 @@ print_getTenantSegments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -4976,6 +5120,8 @@ print_getTenantSegmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5142,6 +5288,8 @@ print_getTenantSizes_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5168,6 +5316,8 @@ print_getTenantSizesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5334,6 +5484,8 @@ print_getTenantTeamContactEnrollments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5360,6 +5512,8 @@ print_getTenantTeamContactEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5526,6 +5680,8 @@ print_getTenantTeamProjectEnrollments_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5552,6 +5708,8 @@ print_getTenantTeamProjectEnrollmentsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5718,6 +5876,8 @@ print_getTenantTeamRecords_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5744,6 +5904,8 @@ print_getTenantTeamRecordsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5910,6 +6072,8 @@ print_getTenantTeams_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -5936,6 +6100,8 @@ print_getTenantTeamsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6502,6 +6668,8 @@ print_getTenantNotificationsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6527,6 +6695,8 @@ print_getTenantNotificationsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6970,6 +7140,8 @@ print_getTenantTerritories_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -6996,6 +7168,8 @@ print_getTenantTerritoriesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7189,6 +7363,8 @@ print_getTenantTypes_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7215,6 +7391,8 @@ print_getTenantTypesCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7466,6 +7644,8 @@ print_getUnitGroupsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7492,6 +7672,8 @@ print_getUnitGroupsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7519,6 +7701,8 @@ print_getUnitsAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7546,6 +7730,8 @@ print_getUnitsCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7772,6 +7958,8 @@ print_getTenantUnits_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -7798,6 +7986,8 @@ print_getTenantUnitsCount_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -8044,10 +8234,50 @@ call_getBusinessRelationshipsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8080,10 +8310,50 @@ call_getBusinessRelationshipsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8340,10 +8610,50 @@ call_getTenantDepartments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8376,10 +8686,50 @@ call_getTenantDepartmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8712,10 +9062,50 @@ call_getTenantEmployeeEnrollments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -8748,10 +9138,50 @@ call_getTenantEmployeeEnrollmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9048,10 +9478,50 @@ call_getExtendedTenantEnrollments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9084,10 +9554,50 @@ call_getExtendedTenantEnrollmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9156,10 +9666,50 @@ call_getTenantEnrollments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9192,10 +9742,50 @@ call_getTenantEnrollmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -9495,42 +10085,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -10479,10 +11033,50 @@ call_getTenantIndustries() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10515,10 +11109,50 @@ call_getTenantIndustriesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10883,10 +11517,50 @@ call_getTenantInvitations() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -10919,10 +11593,50 @@ call_getTenantInvitationsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11215,10 +11929,50 @@ call_getTenantOptions() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11251,10 +12005,50 @@ call_getTenantOptionsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11663,10 +12457,50 @@ call_getTenantPositions() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -11699,10 +12533,50 @@ call_getTenantPositionsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12035,10 +12909,50 @@ call_getTenantSegments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12071,10 +12985,50 @@ call_getTenantSegmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12407,10 +13361,50 @@ call_getTenantSizes() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12443,10 +13437,50 @@ call_getTenantSizesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12779,10 +13813,50 @@ call_getTenantTeamContactEnrollments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -12815,10 +13889,50 @@ call_getTenantTeamContactEnrollmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13151,10 +14265,50 @@ call_getTenantTeamProjectEnrollments() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13187,10 +14341,50 @@ call_getTenantTeamProjectEnrollmentsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13523,10 +14717,50 @@ call_getTenantTeamRecords() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13559,10 +14793,50 @@ call_getTenantTeamRecordsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13895,10 +15169,50 @@ call_getTenantTeams() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -13931,10 +15245,50 @@ call_getTenantTeamsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14843,10 +16197,50 @@ call_getTenantNotificationsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -14879,10 +16273,50 @@ call_getTenantNotificationsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15612,10 +17046,50 @@ call_getTenantTerritories() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -15648,10 +17122,50 @@ call_getTenantTerritoriesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16020,10 +17534,50 @@ call_getTenantTypes() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16056,10 +17610,50 @@ call_getTenantTypesCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16540,10 +18134,50 @@ call_getUnitGroupsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16576,10 +18210,50 @@ call_getUnitGroupsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16612,10 +18286,50 @@ call_getUnitsAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -16648,10 +18362,50 @@ call_getUnitsCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17136,10 +18890,50 @@ call_getTenantUnits() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17172,10 +18966,50 @@ call_getTenantUnitsCount() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -17526,9 +19360,6 @@ case $key in
     ;;
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
     ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
@@ -18180,9 +20011,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

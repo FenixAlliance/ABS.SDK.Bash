@@ -100,7 +100,6 @@ operation_parameters_minimum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_minimum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_minimum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_minimum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=1
 operation_parameters_minimum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::LoginRequest"]=1
 operation_parameters_minimum_occurrences["loginPost:::useCookies"]=0
@@ -129,14 +128,16 @@ operation_parameters_minimum_occurrences["getLicenseAttributeByIdAsync:::x-api-v
 operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseAttributesAsync:::LicenseAttributeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLicenseAttributesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseAttributesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseAttributesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseAttributesCountAsync:::LicenseAttributeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchLicenseAttributeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchLicenseAttributeAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchLicenseAttributeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchLicenseAttributeAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchLicenseAttributeAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchLicenseAttributeAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateLicenseAttributeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLicenseAttributeAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateLicenseAttributeAsync:::api-version"]=0
@@ -157,14 +158,16 @@ operation_parameters_minimum_occurrences["getLicenseFeatureByIdAsync:::x-api-ver
 operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseFeaturesAsync:::LicenseFeatureDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLicenseFeaturesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseFeaturesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseFeaturesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseFeaturesCountAsync:::LicenseFeatureDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchLicenseFeatureAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchLicenseFeatureAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchLicenseFeatureAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchLicenseFeatureAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchLicenseFeatureAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchLicenseFeatureAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateLicenseFeatureAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLicenseFeatureAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateLicenseFeatureAsync:::api-version"]=0
@@ -185,14 +188,16 @@ operation_parameters_minimum_occurrences["getLicenseTypeByIdAsync:::x-api-versio
 operation_parameters_minimum_occurrences["getLicenseTypesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseTypesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseTypesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseTypesAsync:::LicenseTypeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLicenseTypesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicenseTypesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicenseTypesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicenseTypesCountAsync:::LicenseTypeDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchLicenseTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchLicenseTypeAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchLicenseTypeAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchLicenseTypeAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchLicenseTypeAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchLicenseTypeAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateLicenseTypeAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLicenseTypeAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateLicenseTypeAsync:::api-version"]=0
@@ -213,9 +218,11 @@ operation_parameters_minimum_occurrences["getLicenseByIdAsync:::x-api-version"]=
 operation_parameters_minimum_occurrences["getLicensesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicensesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicensesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicensesAsync:::LicenseDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLicensesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicensesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicensesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicensesCountAsync:::LicenseDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["updateLicenseAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLicenseAsync:::licenseId"]=1
 operation_parameters_minimum_occurrences["updateLicenseAsync:::api-version"]=0
@@ -236,14 +243,16 @@ operation_parameters_minimum_occurrences["getLicensingCertificateByIdAsync:::x-a
 operation_parameters_minimum_occurrences["getLicensingCertificatesAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicensingCertificatesAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicensingCertificatesAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicensingCertificatesAsync:::LicensingCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["getLicensingCertificatesCountAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["getLicensingCertificatesCountAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["getLicensingCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_minimum_occurrences["getLicensingCertificatesCountAsync:::LicensingCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_minimum_occurrences["patchLicensingCertificateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["patchLicensingCertificateAsync:::id"]=1
 operation_parameters_minimum_occurrences["patchLicensingCertificateAsync:::api-version"]=0
 operation_parameters_minimum_occurrences["patchLicensingCertificateAsync:::x-api-version"]=0
-operation_parameters_minimum_occurrences["patchLicensingCertificateAsync:::Operation"]=0
+operation_parameters_minimum_occurrences["patchLicensingCertificateAsync:::PatchOperation"]=0
 operation_parameters_minimum_occurrences["updateLicensingCertificateAsync:::tenantId"]=1
 operation_parameters_minimum_occurrences["updateLicensingCertificateAsync:::id"]=1
 operation_parameters_minimum_occurrences["updateLicensingCertificateAsync:::api-version"]=0
@@ -261,7 +270,6 @@ operation_parameters_maximum_occurrences["accountLogoutPost:::returnUrl"]=0
 operation_parameters_maximum_occurrences["accountManageLinkExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::provider"]=0
 operation_parameters_maximum_occurrences["accountPerformExternalLoginPost:::returnUrl"]=0
-operation_parameters_maximum_occurrences["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=0
 operation_parameters_maximum_occurrences["forgotPasswordPost:::ForgotPasswordRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::LoginRequest"]=0
 operation_parameters_maximum_occurrences["loginPost:::useCookies"]=0
@@ -290,14 +298,16 @@ operation_parameters_maximum_occurrences["getLicenseAttributeByIdAsync:::x-api-v
 operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseAttributesAsync:::LicenseAttributeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseAttributesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseAttributesCountAsync:::LicenseAttributeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchLicenseAttributeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchLicenseAttributeAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchLicenseAttributeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchLicenseAttributeAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchLicenseAttributeAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchLicenseAttributeAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateLicenseAttributeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLicenseAttributeAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateLicenseAttributeAsync:::api-version"]=0
@@ -318,14 +328,16 @@ operation_parameters_maximum_occurrences["getLicenseFeatureByIdAsync:::x-api-ver
 operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseFeaturesAsync:::LicenseFeatureDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseFeaturesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseFeaturesCountAsync:::LicenseFeatureDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchLicenseFeatureAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchLicenseFeatureAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchLicenseFeatureAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchLicenseFeatureAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchLicenseFeatureAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchLicenseFeatureAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateLicenseFeatureAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLicenseFeatureAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateLicenseFeatureAsync:::api-version"]=0
@@ -346,14 +358,16 @@ operation_parameters_maximum_occurrences["getLicenseTypeByIdAsync:::x-api-versio
 operation_parameters_maximum_occurrences["getLicenseTypesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseTypesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseTypesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseTypesAsync:::LicenseTypeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLicenseTypesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicenseTypesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicenseTypesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicenseTypesCountAsync:::LicenseTypeDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchLicenseTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchLicenseTypeAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchLicenseTypeAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchLicenseTypeAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchLicenseTypeAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchLicenseTypeAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateLicenseTypeAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLicenseTypeAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateLicenseTypeAsync:::api-version"]=0
@@ -374,9 +388,11 @@ operation_parameters_maximum_occurrences["getLicenseByIdAsync:::x-api-version"]=
 operation_parameters_maximum_occurrences["getLicensesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicensesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicensesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicensesAsync:::LicenseDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLicensesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicensesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicensesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicensesCountAsync:::LicenseDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["updateLicenseAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLicenseAsync:::licenseId"]=0
 operation_parameters_maximum_occurrences["updateLicenseAsync:::api-version"]=0
@@ -397,14 +413,16 @@ operation_parameters_maximum_occurrences["getLicensingCertificateByIdAsync:::x-a
 operation_parameters_maximum_occurrences["getLicensingCertificatesAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicensingCertificatesAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicensingCertificatesAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicensingCertificatesAsync:::LicensingCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["getLicensingCertificatesCountAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["getLicensingCertificatesCountAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["getLicensingCertificatesCountAsync:::x-api-version"]=0
+operation_parameters_maximum_occurrences["getLicensingCertificatesCountAsync:::LicensingCertificateDtoCollectionQueryParameters"]=0
 operation_parameters_maximum_occurrences["patchLicensingCertificateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["patchLicensingCertificateAsync:::id"]=0
 operation_parameters_maximum_occurrences["patchLicensingCertificateAsync:::api-version"]=0
 operation_parameters_maximum_occurrences["patchLicensingCertificateAsync:::x-api-version"]=0
-operation_parameters_maximum_occurrences["patchLicensingCertificateAsync:::Operation"]=0
+operation_parameters_maximum_occurrences["patchLicensingCertificateAsync:::PatchOperation"]=0
 operation_parameters_maximum_occurrences["updateLicensingCertificateAsync:::tenantId"]=0
 operation_parameters_maximum_occurrences["updateLicensingCertificateAsync:::id"]=0
 operation_parameters_maximum_occurrences["updateLicensingCertificateAsync:::api-version"]=0
@@ -419,7 +437,6 @@ operation_parameters_collection_type["accountLogoutPost:::returnUrl"]=""
 operation_parameters_collection_type["accountManageLinkExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::provider"]=""
 operation_parameters_collection_type["accountPerformExternalLoginPost:::returnUrl"]=""
-operation_parameters_collection_type["apiV2AIServiceAgentsAgentIdAguiPost:::agentId"]=""
 operation_parameters_collection_type["forgotPasswordPost:::ForgotPasswordRequest"]=""
 operation_parameters_collection_type["loginPost:::LoginRequest"]=""
 operation_parameters_collection_type["loginPost:::useCookies"]=""
@@ -448,14 +465,16 @@ operation_parameters_collection_type["getLicenseAttributeByIdAsync:::x-api-versi
 operation_parameters_collection_type["getLicenseAttributesAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseAttributesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseAttributesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseAttributesAsync:::LicenseAttributeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLicenseAttributesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseAttributesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseAttributesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseAttributesCountAsync:::LicenseAttributeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchLicenseAttributeAsync:::tenantId"]=""
 operation_parameters_collection_type["patchLicenseAttributeAsync:::id"]=""
 operation_parameters_collection_type["patchLicenseAttributeAsync:::api-version"]=""
 operation_parameters_collection_type["patchLicenseAttributeAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchLicenseAttributeAsync:::Operation"]=
+operation_parameters_collection_type["patchLicenseAttributeAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateLicenseAttributeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLicenseAttributeAsync:::id"]=""
 operation_parameters_collection_type["updateLicenseAttributeAsync:::api-version"]=""
@@ -476,14 +495,16 @@ operation_parameters_collection_type["getLicenseFeatureByIdAsync:::x-api-version
 operation_parameters_collection_type["getLicenseFeaturesAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseFeaturesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseFeaturesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseFeaturesAsync:::LicenseFeatureDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLicenseFeaturesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseFeaturesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseFeaturesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseFeaturesCountAsync:::LicenseFeatureDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchLicenseFeatureAsync:::tenantId"]=""
 operation_parameters_collection_type["patchLicenseFeatureAsync:::id"]=""
 operation_parameters_collection_type["patchLicenseFeatureAsync:::api-version"]=""
 operation_parameters_collection_type["patchLicenseFeatureAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchLicenseFeatureAsync:::Operation"]=
+operation_parameters_collection_type["patchLicenseFeatureAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateLicenseFeatureAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLicenseFeatureAsync:::id"]=""
 operation_parameters_collection_type["updateLicenseFeatureAsync:::api-version"]=""
@@ -504,14 +525,16 @@ operation_parameters_collection_type["getLicenseTypeByIdAsync:::x-api-version"]=
 operation_parameters_collection_type["getLicenseTypesAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseTypesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseTypesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseTypesAsync:::LicenseTypeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLicenseTypesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicenseTypesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLicenseTypesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicenseTypesCountAsync:::LicenseTypeDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchLicenseTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["patchLicenseTypeAsync:::id"]=""
 operation_parameters_collection_type["patchLicenseTypeAsync:::api-version"]=""
 operation_parameters_collection_type["patchLicenseTypeAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchLicenseTypeAsync:::Operation"]=
+operation_parameters_collection_type["patchLicenseTypeAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateLicenseTypeAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLicenseTypeAsync:::id"]=""
 operation_parameters_collection_type["updateLicenseTypeAsync:::api-version"]=""
@@ -532,9 +555,11 @@ operation_parameters_collection_type["getLicenseByIdAsync:::x-api-version"]=""
 operation_parameters_collection_type["getLicensesAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicensesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicensesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicensesAsync:::LicenseDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLicensesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicensesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLicensesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicensesCountAsync:::LicenseDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["updateLicenseAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLicenseAsync:::licenseId"]=""
 operation_parameters_collection_type["updateLicenseAsync:::api-version"]=""
@@ -555,14 +580,16 @@ operation_parameters_collection_type["getLicensingCertificateByIdAsync:::x-api-v
 operation_parameters_collection_type["getLicensingCertificatesAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicensingCertificatesAsync:::api-version"]=""
 operation_parameters_collection_type["getLicensingCertificatesAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicensingCertificatesAsync:::LicensingCertificateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["getLicensingCertificatesCountAsync:::tenantId"]=""
 operation_parameters_collection_type["getLicensingCertificatesCountAsync:::api-version"]=""
 operation_parameters_collection_type["getLicensingCertificatesCountAsync:::x-api-version"]=""
+operation_parameters_collection_type["getLicensingCertificatesCountAsync:::LicensingCertificateDtoCollectionQueryParameters"]=""
 operation_parameters_collection_type["patchLicensingCertificateAsync:::tenantId"]=""
 operation_parameters_collection_type["patchLicensingCertificateAsync:::id"]=""
 operation_parameters_collection_type["patchLicensingCertificateAsync:::api-version"]=""
 operation_parameters_collection_type["patchLicensingCertificateAsync:::x-api-version"]=""
-operation_parameters_collection_type["patchLicensingCertificateAsync:::Operation"]=
+operation_parameters_collection_type["patchLicensingCertificateAsync:::PatchOperation"]=
 operation_parameters_collection_type["updateLicensingCertificateAsync:::tenantId"]=""
 operation_parameters_collection_type["updateLicensingCertificateAsync:::id"]=""
 operation_parameters_collection_type["updateLicensingCertificateAsync:::api-version"]=""
@@ -960,7 +987,6 @@ read -r -d '' ops <<EOF
   ${CYAN}accountManageDownloadPersonalDataPost${OFF};
   ${CYAN}accountManageLinkExternalLoginPost${OFF};
   ${CYAN}accountPerformExternalLoginPost${OFF};
-  ${CYAN}apiV2AIServiceAgentsAgentIdAguiPost${OFF};
   ${CYAN}forgotPasswordPost${OFF};
   ${CYAN}healthGet${OFF};
   ${CYAN}helloGet${OFF};
@@ -1140,22 +1166,6 @@ print_accountPerformExternalLoginPost_help() {
     echo -e "${BOLD}${WHITE}accountPerformExternalLoginPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-print_apiV2AIServiceAgentsAgentIdAguiPost_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}apiV2AIServiceAgentsAgentIdAguiPost - ${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}agentId${OFF} ${BLUE}[string]${OFF} ${RED}(required)${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: agentId=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -1495,6 +1505,8 @@ print_getLicenseAttributesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1519,6 +1531,8 @@ print_getLicenseAttributesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1683,6 +1697,8 @@ print_getLicenseFeaturesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1707,6 +1723,8 @@ print_getLicenseFeaturesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1871,6 +1889,8 @@ print_getLicenseTypesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -1895,6 +1915,8 @@ print_getLicenseTypesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2059,6 +2081,8 @@ print_getLicensesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2083,6 +2107,8 @@ print_getLicensesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2218,6 +2244,8 @@ print_getLicensingCertificatesAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2242,6 +2270,8 @@ print_getLicensingCertificatesCountAsync_help() {
     echo -e "  * ${GREEN}api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} - ${YELLOW} Specify as: api-version=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}x-api-version${OFF} ${BLUE}[string]${OFF} ${CYAN}(default: null)${OFF} -  ${YELLOW}Specify as: x-api-version:value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json,application/xml]${OFF}${OFF} - " | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=403
@@ -2453,42 +2483,6 @@ call_accountPerformExternalLoginPost() {
         echo "curl ${body_form_urlencoded} ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${body_form_urlencoded} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call apiV2AIServiceAgentsAgentIdAguiPost operation
-#
-##############################################################################
-call_apiV2AIServiceAgentsAgentIdAguiPost() {
-    # ignore error about 'path_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local path_parameter_names=(agentId)
-    # ignore error about 'query_parameter_names' being unused; passed by reference
-    # shellcheck disable=SC2034
-    local query_parameter_names=()
-    local path
-
-    if ! path=$(build_request_path "/api/v2/AIService/Agents/{agentId}/agui" path_parameter_names query_parameter_names); then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl
-    headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     fi
 }
 
@@ -3473,10 +3467,50 @@ call_getLicenseAttributesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3509,10 +3543,50 @@ call_getLicenseAttributesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3845,10 +3919,50 @@ call_getLicenseFeaturesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -3881,10 +3995,50 @@ call_getLicenseFeaturesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4217,10 +4371,50 @@ call_getLicenseTypesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4253,10 +4447,50 @@ call_getLicenseTypesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4589,10 +4823,50 @@ call_getLicensesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4625,10 +4899,50 @@ call_getLicensesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4885,10 +5199,50 @@ call_getLicensingCertificatesAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -4921,10 +5275,50 @@ call_getLicensingCertificatesCountAsync() {
     if [[ -n $basic_auth_credential ]]; then
         basic_auth_option="-u ${basic_auth_credential}"
     fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the OpenAPI specification
+    # if values produces and consumes are defined unambiguously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\\t- application/json"
+        echo -e "\\t- application/xml"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
     else
-        eval "curl -d '' ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -5189,9 +5583,6 @@ case $key in
     accountPerformExternalLoginPost)
     operation="accountPerformExternalLoginPost"
     ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    operation="apiV2AIServiceAgentsAgentIdAguiPost"
-    ;;
     forgotPasswordPost)
     operation="forgotPasswordPost"
     ;;
@@ -5431,9 +5822,6 @@ case $operation in
     ;;
     accountPerformExternalLoginPost)
     call_accountPerformExternalLoginPost
-    ;;
-    apiV2AIServiceAgentsAgentIdAguiPost)
-    call_apiV2AIServiceAgentsAgentIdAguiPost
     ;;
     forgotPasswordPost)
     call_forgotPasswordPost

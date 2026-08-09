@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] [default to null]
+**timestamp** | **string** |  | [optional] [default to null]
 **tenantId** | **string** |  | [optional] [default to null]
 **enrollmentId** | **string** |  | [optional] [default to null]
 **journalId** | **string** |  | [optional] [default to null]
@@ -24,7 +25,6 @@ Name | Type | Description | Notes
 **postedBy** | **string** |  | [optional] [default to null]
 **forexRate** | **float** |  | [optional] [default to null]
 **forexRatesSnapshot** | **string** |  | [optional] [default to null]
-**timestamp** | **string** |  | [optional] [default to null]
 **debitInUsd** | **float** |  | [optional] [default to null]
 **creditInUsd** | **float** |  | [optional] [default to null]
 **accountingEntries** | [**array[AccountingEntryDto]**](AccountingEntryDto.md) |  | [optional] [default to null]
@@ -32,6 +32,8 @@ Name | Type | Description | Notes
 **totalCredit** | **float** |  | [optional] [readonly] [default to null]
 **totalDebitAmount** | [**Money**](Money.md) |  | [optional] [default to null]
 **totalCreditAmount** | [**Money**](Money.md) |  | [optional] [default to null]
+**debitInUsdAmount** | [**Money**](Money.md) |  | [optional] [default to null]
+**creditInUsdAmount** | [**Money**](Money.md) |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -259,6 +259,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **dealUnitFlowId** | **string** |  | [default to null]
+ **dealUnitFlowStageDtoCollectionQueryParameters** | [**DealUnitFlowStageDtoCollectionQueryParameters**](DealUnitFlowStageDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -270,7 +271,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -295,6 +296,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **dealUnitFlowId** | **string** |  | [default to null]
+ **dealUnitFlowStageDtoCollectionQueryParameters** | [**DealUnitFlowStageDtoCollectionQueryParameters**](DealUnitFlowStageDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -306,7 +308,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -330,6 +332,7 @@ Retrieves a list of deal unit flows for the specified tenant with OData query su
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **dealUnitFlowDtoCollectionQueryParameters** | [**DealUnitFlowDtoCollectionQueryParameters**](DealUnitFlowDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -341,7 +344,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -365,6 +368,7 @@ Returns the total count of deal unit flows for the specified tenant with OData f
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
+ **dealUnitFlowDtoCollectionQueryParameters** | [**DealUnitFlowDtoCollectionQueryParameters**](DealUnitFlowDtoCollectionQueryParameters.md) |  | [optional]
 
 ### Return type
 
@@ -376,7 +380,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: Not Applicable
+- **Content-Type**: application/json, application/xml
 - **Accept**: application/json, application/xml
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
@@ -401,7 +405,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tenantId** | **string** |  | [default to null]
  **dealUnitFlowId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
@@ -439,7 +443,7 @@ Name | Type | Description  | Notes
  **tenantId** | **string** |  | [default to null]
  **dealUnitFlowId** | **string** |  | [default to null]
  **dealUnitFlowStageId** | **string** |  | [default to null]
- **operation** | [**array[Operation]**](Operation.md) |  | [optional]
+ **patchOperation** | [**array[PatchOperation]**](PatchOperation.md) |  | [optional]
 
 ### Return type
 
